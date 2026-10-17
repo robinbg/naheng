@@ -1,0 +1,22 @@
+{
+  "derived_from_frozen_request_sha256": "8c3d794a6b30e701fa3270bee8af813ff488e555109f5a31a4c501660cf88eea",
+  "files": {
+    "forward.json": {
+      "bytes": 27361,
+      "original": "<PROJECT_ROOT>\\artifacts\\handoff\\x00-calibration-fixture-refresh-20261015-a\\runs\\d03ae7af\\staging-root\\artifacts\\calibration\\prepared-builtin-1977f8a08879\\forward.json",
+      "sha256": "fd137154b8d41c6a04a22fe426f0412ccf58c906be7952a1c6b5085929e8371c"
+    },
+    "request.json": {
+      "bytes": 24394,
+      "original": "<PROJECT_ROOT>\\artifacts\\handoff\\x00-calibration-fixture-refresh-20261015-a\\runs\\d03ae7af\\staging-root\\generator-evidence\\evidence\\builtin-inputs-1977f8a08879\\request.json",
+      "sha256": "a87ca08d4827ad6cea342be8ff76115ab0a568d096cf723574b513bd4012c6af"
+    },
+    "sensor-source.json": {
+      "bytes": 6395,
+      "original": "<PROJECT_ROOT>\\artifacts\\handoff\\x00-calibration-fixture-refresh-20261015-a\\runs\\d03ae7af\\staging-root\\data\\synthetic\\e02-train-1977f8a08879.json",
+      "sha256": "75236c847b7ee815a6e389f5c6a9c14afc7230ea7b1a7ec5a889564a147832f7"
+    }
+  },
+  "original_request_sha256": "a87ca08d4827ad6cea342be8ff76115ab0a568d096cf723574b513bd4012c6af",
+  "scope": "New derived immutable synthetic sensor/PF/actual-forward fixture from the unchanged original recipe and original observations; no real-cell calibration or independent scientific sample."
+}

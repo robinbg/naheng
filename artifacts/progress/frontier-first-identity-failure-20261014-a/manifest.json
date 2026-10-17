@@ -1,0 +1,11 @@
+{
+  "code_hash": "4cd0184c5f51cd0a1c1d3e284667a7a5ae5b4cbf6672ddc7f91c49efcaa71c5a",
+  "scope": "First public8 bundle actual0 but independent identity scope1375/1376 exit1; numeric results retained",
+  "files": {
+    "src/naheng/runtime/baseline_frontier.py": "d8ea516b7ef7bac06283b6474fa36872435176f7de0c7cccb8fdc644b1c91604",
+    "tests/integration/test_baseline_frontier.py": "bf32c9a92425bdcd230c095c9bb4e70d39469ea4080999c4d259f24c4383fe8f",
+    "src/naheng/cli.py": "575921fe6a75636c0990e8376c009b656b45a2966ea1e566bc7d7f2e01d76897",
+    "configs/experiments/fixed-baseline-frontier-v1.json": "91ced3850d27d753672749d7eccf814c774cdcb3908ba74a645626837ef43eea"
+  },
+  "receipt": "artifacts/validation/C01-eight-fixed-baseline-train-freeze-paired-evaluation-27bc42c2/command.json"
+}

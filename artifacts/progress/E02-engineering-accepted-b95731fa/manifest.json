@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-13T22:27:57.450703+00:00",
+  "exit_code": 0,
+  "task_id": "E02",
+  "status": "done",
+  "code_hash": "79443b43602693001a5e5969ffba7cbe6bf706c682b73900c6798814cf9ffaae",
+  "original_task_gates_unchanged": true,
+  "original_required_test_file_executed": true,
+  "current_full_regression": "artifacts/progress/E02-current-regression-c00ee2cd/manifest.json",
+  "real_current_entry_completed_updates": 2,
+  "independent_artifact_checks": 241,
+  "evidence": {
+    "artifacts/review/e02-task-acceptance-scope-independent-20261014-a/scope-report-r1.json": "e891cef1ab109a7f53362c77a2513f08bdedb3a099dbb730220be7006214524d",
+    "artifacts/progress/E02-current-regression-c00ee2cd/manifest.json": "8735b04bb2f03f91dd492b95369179a81052560ec841ddcbcdebbfda6a84404f",
+    "artifacts/review/joint-gaussian-observer-independent-20261014-a/actual-current-first-review/report.json": "4f7f2ad306a11ba1bebcb736fe8dbae3a77c83edce3972c812aaba06e5f897f8",
+    "docs/JOINT_GAUSSIAN_OBSERVER.md": "ff915ec22e5789c9da05365dab63465307f0691c08af43dd8f99707f6f9d75a3",
+    "src/naheng/estimation/joint_gaussian_observer.py": "4a77bbbf0e8941d6547bd6ccffa4f9c2a7f0b1bfda37b3bda89e262306d8491f",
+    "src/naheng/runtime/joint_scenario_calibration.py": "b97dc9290723e5af86a9d2c5140b3eacf148d3cf3e86dc0936d2a80006bbd341",
+    "artifacts/review/joint-gaussian-observer-independent-20261014-a/handoff.json": "0988ba5d02c2deadd69fa3ac56f87efaebbd477bff05aa01b109087c79d25466",
+    "artifacts/progress/joint-first-entry-failure-63b14c04/manifest.json": "f2940e05b139855735df871828aef1459a5a457a292762070349d254ee607e7d",
+    "artifacts/validation/E02-public-current-joint-observer-shared-posterior-acceptance-ec4b99c9/command.json": "7f38591a77ee55c697be1b29c40783db22b269c45a32e47b6716256ea2af5e40",
+    "artifacts/validation/E02-public-current-joint-observer-shared-posterior-quoted-recovery-2e7aba4c/command.json": "88d03fdeca04544cd393e02b32bf6cc0cc411f4084b79da7d258ad96d8238af6",
+    "artifacts/validation/E02-independent-original-task-vs-downstream-scientific-gate-scope-audit-d8f96e8a/command.json": "f4f2e4a345b91acda334b350dc824fff8870d9c9874b0979e8e88de04d264660",
+    "artifacts/validation/E02-public-current-joint-observer-original-shared-posterior-binding-recovery-6d6617ad/command.json": "2d1a137663290045a8f67543619274ff51293f278a1633659a6cada82a6cd438",
+    "artifacts/validation/E02-actual-registered-descriptor-identity-and-compact-mismatch-controls-0a037e49/command.json": "aa05d3a321286d7923ff534718f63e7974ec0a11fa6dddd44b62f4ebcac0efc3",
+    "artifacts/validation/E02-current-final-real-correlated-biased-source-calibration-5ff6581e/command.json": "1526e77a971f5256d3f58b71fd38f91b2da84c9cd829c5fa73b1ac22df166b85",
+    "artifacts/validation/E02-current-final-real-correlated-biased-sensor-replanning-entry-e57e10fb/command.json": "6dce5a7567d466a6c3d8835db883faaa508240c3dd09e4a4e7f2799c0cc7f68f",
+    "artifacts/validation/E02-joint-independent-current-real-artifact-scalar-Bayes-physics-RNG-ledger-d6eb90dc/command.json": "630f1adcf5088316feca3eb6a3e03f500097da0065d770aed865a3efa11d3a66",
+    "artifacts/validation/E02-F02-final-current-complete-regression-owned-Windows-worker-f7ffddcb/command.json": "b6bf4bb6ee722869e2578c812c0a02f75d7d7be4b5ef2d60783d16c9893503f1"
+  },
+  "counts": {
+    "done": 21,
+    "in_progress": 6,
+    "todo": 18
+  },
+  "remaining_required_tasks": 24,
+  "full_project_complete": false,
+  "scientific_external_acceptance_passed": false
+}

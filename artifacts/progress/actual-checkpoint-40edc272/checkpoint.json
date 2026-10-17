@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-13T19:39:58.162552+00:00",
+  "exit_code": 0,
+  "code_hash": "fcee85ee0c6acecfbd00614ea00cf50e47c35092efe0adf30a31fa7a25f09801",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 20,
+    "in_progress": 7,
+    "todo": 18
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/README.md": {
+      "sha256": "90ecad413602884c6110025f909cc53d4a041bfa4f2fd70c04260ce8a7e350f5"
+    },
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/result-corrected.json": {
+      "sha256": "b2caedab99e3b35f263fedcdfe3212323a1c82eebbdc5f3d1be794f253a93c2d"
+    },
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/native-execution-receipt.json": {
+      "sha256": "f758e259da939c366d110f6356eb66b701605e3e49c997b4038c2192403a2dfe"
+    },
+    "artifacts/review/c-drive-cleanup-independent-20261014-a/report-recovered.json": {
+      "sha256": "2bfe8baab23454e3ff18fa5ba7c03d9ccae8a746f1298b705c419bca0c301d41"
+    },
+    "artifacts/validation/C-drive-cleanup-independent-recorded-scope-review-recovered-256ba103/command.json": {
+      "sha256": "ab8224fff77ff1673fd5a0dd7fd7b4cb89fdff120285cb722f4f45f1d2d7ead1",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/c-drive-cleanup-independent-20261014-a/review-recovered.py"
+      ],
+      "wall_s": 0.8956327000014426,
+      "timed_out": false
+    },
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/post-development-space-20261014-a.json": {
+      "sha256": "a268a5f3ebb29c1b40cb7432d89fd3377b7fd9d4b5e35894f6b6b79d9165c71f"
+    },
+    "artifacts/current-release-20261014-a.json": {
+      "sha256": "5f088cb5d85baa0cb4ed3e13363352c3b82516c1d34aa155ca29e59cb0d7211c"
+    },
+    "artifacts/validation/R02-current-release-required-gate-honest-status-5744b17f/command.json": {
+      "sha256": "0bb5325d5d895f4977851a373ca35cd46c55cbda699a0198baba04c9f74393c9",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "release",
+        "--out",
+        "artifacts/current-release-20261014-a.json"
+      ],
+      "wall_s": 0.6773455000002286,
+      "timed_out": false
+    },
+    "artifacts/progress/E02-current-regression-e230195d/manifest.json": {
+      "sha256": "b8f6bf383c2e8262b0967a025ae5986a3fd569d3e63400b4cf0e4a42661ca9c6"
+    },
+    "artifacts/review/final-checkpoint-independent-20261014-a/handoff.json": {
+      "sha256": "30d7b913b2b955bbd0869e72c6f1e4cf9cb4248a156898f3692c0339dbe91f54"
+    },
+    "artifacts/review/final-checkpoint-independent-20261014-a/report-chain-recovered.json": {
+      "sha256": "e497a3ea2e209ab614378f3e80e1670f4d4478ae941714bf2d48f15ac3822c83"
+    },
+    "artifacts/validation/Final-two-checkpoint-chain-independent-preserved-scope-review-981bb8b7/command.json": {
+      "sha256": "23b798f881130d58b1b8864d577d8306385f7da4c95ef47c3d22b7e0995fae53",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/final-checkpoint-independent-20261014-a/review-chain-recovered.py"
+      ],
+      "wall_s": 0.49890659999800846,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

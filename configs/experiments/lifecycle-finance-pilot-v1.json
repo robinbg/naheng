@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "registration_revision": 4,
+  "suite": "lifecycle-finance",
+  "profile": "pilot",
+  "cycles": 12,
+  "phase_duration_s": 2.0,
+  "maximum_replacements": 1,
+  "alpha": 0.05,
+  "worker_timeout_s": 120,
+  "worker_memory_limit_bytes": 8589934592,
+  "default_output_parent": "artifacts/lifecycle_finance",
+  "protocol": {"protocol_id": "synthetic_capacity_v1", "retirement_ratio": 0.995},
+  "energy_economics": {"source_id": "synthetic-lifecycle-finance-pilot-v1"},
+  "financial_assumptions": {
+    "source_ref": "registered synthetic assumptions lifecycle-finance-pilot-v1",
+    "terminal_rule_id": "common-protocol-capacity-stored-energy-lineage-rul-unknown-v1",
+    "scheduled_horizon_s": 48.0,
+    "unserved_value_CNY_per_s": 0.001,
+    "service_enabled": false
+  },
+  "cases": [
+    {"case_id": "ordinary", "model_overrides": {}},
+    {"case_id": "accelerated-synthetic", "model_overrides": {"side_rate_s_inv": [0.0003, 0.0004], "accelerated_synthetic": true}}
+  ],
+  "policies": [
+    {"policy_id": "fixed-gentle-100mA", "discharge_A": 0.1, "charge_A": -0.1},
+    {"policy_id": "fixed-nominal-200mA", "discharge_A": 0.2, "charge_A": -0.2}
+  ],
+  "event_definition": "any operating phase domain event OR protocol retirement detection; unknown and early exits retained conservatively",
+  "information_permissions": "fixed policies ignore callback SOH, state, age and future/evaluator data; identical registered constants",
+  "risk_scope": "finite registered deterministic synthetic cases; zero independent operating trajectories",
+  "risk_metric": "conservative_registered_case_fraction",
+  "macro_audit": {"case_id": "ordinary", "policy_id": "fixed-nominal-200mA", "included_in_actual_frontier": false,
+                  "protocol": {"protocol_id": "synthetic_capacity_v1", "retirement_ratio": 0.8}},
+  "early_exit_audit": {"case_id": "accelerated-synthetic", "policy_id": "fixed-nominal-200mA",
+                       "maximum_replacements": 0, "included_in_actual_frontier": false},
+  "thermal_audit": {"case_id": "ordinary", "policy_id": "fixed-nominal-200mA",
+                    "thermal_W": 0.02, "included_in_actual_frontier": false},
+  "module_audit": {"case_id": "ordinary", "policy_id": "fixed-nominal-200mA", "topology": "4s",
+                   "coupling_W_per_K": 0.04, "included_in_actual_frontier": false,
+                   "cell_overrides": [{"side_rate_s_inv": [0.0003, 0.0004], "accelerated_synthetic": true}, {}, {}, {}]},
+  "provenance_type": "synthetic",
+  "assumption_scope": "uncalibrated numerical cases and synthetic prices; no actual market income, life extrapolation or operating probability claim"
+}

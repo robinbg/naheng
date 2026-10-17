@@ -1,0 +1,33 @@
+{
+  "command": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "<PROJECT_ROOT>\\artifacts\\handoff\\r01-learning-figures-20261016-a\\test_figures.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "<PROJECT_ROOT>\\artifacts\\review\\r01-learning-figures-independent-20261016-c\\t"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "executed": true,
+  "timeout_s": 120,
+  "memory_limit_bytes": 8589934592,
+  "memory_limit_enforced": true,
+  "is_code_execution_sandbox": false,
+  "cleanup_errors": [],
+  "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+  "owned_pid": 10740,
+  "owned_final_tree_stop": {
+    "method": "windows_job_object",
+    "exit_code": 0
+  },
+  "owned_active_processes_after_cleanup": 0,
+  "owned_job_handle_closed": true,
+  "native_exit_code": 0,
+  "wall_s": 5.148056500001985,
+  "resource_cleanup_confirmed": true,
+  "status": "passed"
+}

@@ -1,0 +1,135 @@
+{
+  "profile": "smoke",
+  "checks": [
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/unit",
+        "tests/integration",
+        "tests/test_registry_dsl.py",
+        "--basetemp",
+        "<HOST_TEMP_ROOT>\\smoke-dadd49f060\\pytest",
+        "-o",
+        "cache_dir=artifacts/.pytest_cache",
+        "-q"
+      ],
+      "exit_code": 2,
+      "timed_out": true,
+      "executed": true,
+      "timeout_s": 1440,
+      "memory_limit_bytes": 8589934592,
+      "memory_limit_enforced": true,
+      "is_code_execution_sandbox": false,
+      "cleanup_errors": [],
+      "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+      "owned_pid": 6764,
+      "owned_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_final_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_active_processes_after_cleanup": 0,
+      "owned_job_handle_closed": true,
+      "native_exit_code": 1,
+      "wall_s": 1440.4551083000001,
+      "resource_cleanup_confirmed": true,
+      "status": "blocked",
+      "id": "numerical_tests",
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-dadd49f060"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "demo",
+        "--scenario",
+        "acceptance_loop",
+        "--out",
+        "artifacts/smoke_demo"
+      ],
+      "exit_code": 2,
+      "timed_out": true,
+      "executed": true,
+      "timeout_s": 120,
+      "memory_limit_bytes": 8589934592,
+      "memory_limit_enforced": true,
+      "is_code_execution_sandbox": false,
+      "cleanup_errors": [],
+      "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+      "owned_pid": 21288,
+      "owned_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_final_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_active_processes_after_cleanup": 0,
+      "owned_job_handle_closed": true,
+      "native_exit_code": 1,
+      "wall_s": 120.02509270000019,
+      "resource_cleanup_confirmed": true,
+      "status": "blocked",
+      "id": "real_demo",
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-dadd49f060"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "foundation"
+      ],
+      "exit_code": 2,
+      "timed_out": true,
+      "executed": true,
+      "timeout_s": 120,
+      "memory_limit_bytes": 8589934592,
+      "memory_limit_enforced": true,
+      "is_code_execution_sandbox": false,
+      "cleanup_errors": [],
+      "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+      "owned_pid": 11196,
+      "owned_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_final_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_active_processes_after_cleanup": 0,
+      "owned_job_handle_closed": true,
+      "native_exit_code": 1,
+      "wall_s": 120.06931080000004,
+      "resource_cleanup_confirmed": true,
+      "status": "blocked",
+      "id": "foundation",
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-dadd49f060"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "tools/check_ui_acceptance.py"
+      ],
+      "exit_code": 2,
+      "status": "blocked",
+      "executed": false,
+      "reason": "Remaining 1800s batch budget cannot admit this gate",
+      "wall_s": 0,
+      "id": "ui_acceptance",
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-dadd49f060"
+    }
+  ],
+  "source_hash": "93ef403a9fe57520ebfa8063e8e19d67b00c478fa3520f08551321f82ffb035a"
+}

@@ -1,0 +1,25 @@
+{
+  "argv": [
+    ".bootstrap/bin/uv.exe",
+    "run",
+    "--frozen",
+    "--offline",
+    "--no-sync",
+    "--extra",
+    "dev",
+    "--extra",
+    "reference",
+    "naheng",
+    "verify",
+    "--profile",
+    "release",
+    "--out",
+    "artifacts/release_audit.json"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "exit_code": 2,
+  "wall_s": 2.147206499997992,
+  "utc": "2026-10-09T17:44:18.115112+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\R02-final-release-audit-872ab8ad\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\R02-final-release-audit-872ab8ad\\stderr.log"
+}

@@ -1,0 +1,23 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "artifacts/handoff/a03-constrained-search-20261016-a/tests",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:06:03.132013+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-constrained-search-budget-feedback-and-recovery-controls-r2-a59aefa6\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-constrained-search-budget-feedback-and-recovery-controls-r2-a59aefa6\\stderr.log",
+  "timeout_s": 90,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 1,
+  "owned_pid": 26764,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 5.6922180999972625
+}

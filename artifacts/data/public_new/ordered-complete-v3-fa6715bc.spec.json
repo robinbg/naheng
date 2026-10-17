@@ -1,0 +1,46 @@
+{
+  "source_id": "zenodo17459188_cvut_sib_0001",
+  "source_url": "https://zenodo.org/records/17459188",
+  "chemistry_id": "public_cvut_hakadi_sodium_4s11p_17459188",
+  "current_sign": "positive_charge",
+  "units": {
+    "time": "s",
+    "current": "A",
+    "voltage": "V",
+    "temperature": "degC"
+  },
+  "columns": {
+    "time": "time_s",
+    "current": "vendor_current_A",
+    "voltage": "voltage_V",
+    "temperature": "T1_degC",
+    "event_index": "source_serial",
+    "source_row": "workbook_row",
+    "instrument_step": "step_id"
+  },
+  "license_id": "CC-BY-4.0",
+  "license_evidence_sha256": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+  "raw_sha256": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+  "provenance_type": "public_measurement",
+  "delimiter": ",",
+  "encoding": "utf-8",
+  "decimal_separator": ".",
+  "fixed_cell_id": "cvut_hakadi_sib_4s11p_pack_group",
+  "fixed_batch_id": "cvut_single_sib_pack_campaign",
+  "fixed_trajectory_id": "cvut_sib_16V_minus15C_0001_complete",
+  "identity_evidence": "Author README maps D_0001 to one Hakadi18650 sodium-ion 4s11p pack precharged16V at ambient -15degC; no physical individual-cell serials supplied. Pack-group identity is conservative; Step IDs are instrument segments, not independent experimental units.",
+  "current_sign_evidence": "Original workbook record rows33-34 label CC DChg and Current(A)(A)=-199.9752, so discharge is negative; internal discharge-positive current=-vendor current. Charging records are not present in this selected file.",
+  "source_registry_path": "data/manifests/retrieval-zenodo17459188-0001-ordered-v3-fa6715bc.yaml",
+  "source_registry_sha256": "5d0802df603b57a82fc494be06718aab5114b166efd0300f6648dcad104d5de4",
+  "ordering_policy": "instrument_event_order",
+  "ordering_evidence_path": "artifacts/data/public_new/ordered-event-order-v3-fa6715bc.json",
+  "ordering_evidence_sha256": "de021924e2a205f8b3ffcf28365fd496d7a0107ef798949b1f932486c2c6c515",
+  "temperature_channels": {
+    "T1": "T1_degC",
+    "T2": "T2_degC",
+    "T3": "T3_degC",
+    "T4": "T4_degC",
+    "T5": "T5_degC",
+    "T6": "T6_degC"
+  }
+}

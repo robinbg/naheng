@@ -1,0 +1,13 @@
+{
+  "suite": "reduction",
+  "status": "blocked",
+  "exit_code": 2,
+  "checked": false,
+  "commands": [],
+  "evidence": [],
+  "reason": "Suite reduction has no implemented exported targets; requirements remain incomplete",
+  "generated_at_utc": "2026-10-13T05:03:08.513532+00:00",
+  "source_hashes": {},
+  "targets": [],
+  "audit": null
+}

@@ -1,0 +1,35 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "artifacts/handoff/a03-pairing-priority-20261016-b/run_tests.py"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "executed": true,
+  "timeout_s": 120,
+  "memory_limit_bytes": 8589934592,
+  "memory_limit_enforced": true,
+  "is_code_execution_sandbox": false,
+  "cleanup_errors": [],
+  "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+  "owned_pid": 29120,
+  "owned_final_tree_stop": {
+    "method": "windows_job_object",
+    "exit_code": 0
+  },
+  "owned_active_processes_after_cleanup": 0,
+  "owned_job_handle_closed": true,
+  "native_exit_code": 0,
+  "wall_s": 21.29347879999841,
+  "resource_cleanup_confirmed": true,
+  "status": "completed",
+  "utc": "2026-10-16T06:07:14.528770+00:00",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "artifacts/handoff/a03-pairing-priority-20261016-b/run_tests.py"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-b-original44-independent-root-13a89de2\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-b-original44-independent-root-13a89de2\\stderr.log",
+  "native_status": "passed"
+}

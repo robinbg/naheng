@@ -1,0 +1,30 @@
+{
+  "tool": "repin_proof_backend_encoding_repair_20261016.py",
+  "status": "applied",
+  "deviating_pinned_files": [
+    "src/naheng/discovery/proof_worker.py",
+    "tests/integration/test_proof_worker_isolation.py"
+  ],
+  "pinned_file_count": 2012,
+  "worker_substitutions_applied": 4,
+  "worker_equals_original_plus_declared_substitutions": true,
+  "test_assertion_count": 10,
+  "test_assertions_preserved": true,
+  "sha256_before": {
+    "src/naheng/discovery/proof_worker.py": "6fba32ec503ea37cb4ea0b3a304ad50cfd4ebce1e9d2a4b8f81298f14fb2e75a",
+    "tests/integration/test_proof_worker_isolation.py": "ddf538557a19fb5a421aad11dee40b2b796817b4770097c58868378c2df759e8",
+    "configs/discovery/proof-backend.json": "10aacaa26877a3b209580c5afa8872db7724858e1e4328e7f03f5c5466f867d9"
+  },
+  "sha256_after": {
+    "src/naheng/discovery/proof_worker.py": "d4fc6de6242ba887aa3bcf37a1496b7e2fcc7e3de1c5801651630d4429b97e0e",
+    "tests/integration/test_proof_worker_isolation.py": "25f9b59366329aef580d10925678a9f8a47084823309b247735ae394e9816214",
+    "configs/discovery/proof-backend.json": "0645c28096134308448ada074a0421ed5ac9b17aa810cf064b8bb5e25aa05840"
+  },
+  "guards_changed": false,
+  "assertions_changed": false,
+  "budgets_changed": false,
+  "target_propositions_changed": false,
+  "skipped_tests": 0,
+  "scope": "UTF-8 evidence readback plus authorized proof-output path in two native tests",
+  "diff_artifact": "artifacts/review/smoke-gate-repair-20261016-a/repin-diff.txt"
+}

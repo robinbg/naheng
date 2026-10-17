@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T11:36:41.522422+00:00",
+  "task_id": "A01",
+  "status": "in_progress",
+  "required_acceptance_and_contracts_unchanged": true,
+  "actual_start_receipt": "artifacts/validation/A01-original-public-discover-pilot-541683e9/command.json",
+  "actual_exit_code": 0,
+  "scientific_acceptance_complete": false
+}

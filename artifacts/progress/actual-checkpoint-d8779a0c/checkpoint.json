@@ -1,0 +1,101 @@
+{
+  "utc": "2026-10-15T12:15:25.457750+00:00",
+  "exit_code": 0,
+  "code_hash": "032a1197110f257f23cd664d6778430e8452fe1f1eddadb16252ce285471c388",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/Record-current-GUI-independent-publication-and-private-repair-35ca12bc/command.json": {
+      "sha256": "3d1d6f92efaa5431d861826faea4631d41f2550bed9d4e416802fe1df88afd43",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/record_execution_checkpoint.py",
+        "artifacts/progress/current-GUI-independently-published-20261015-a.input.json"
+      ],
+      "wall_s": 0.8011373999997886,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/proof-current-c40a72af/metadata/get-only-181ed75b/command.json": {
+      "sha256": "8fa77f129abe71d3e21850a12d5c455d1567c8a195fafa5409e59c703e650b26",
+      "exit_code": 0,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\tools\\build_x00_current_ui_record.py",
+        "--worker",
+        "--output",
+        "<PROJECT_ROOT>\\artifacts\\ui\\proof-current-c40a72af\\metadata\\get-only-181ed75b"
+      ],
+      "wall_s": 2.9323279999998704,
+      "source_timing_field": "elapsed_s",
+      "timed_out": false
+    },
+    "artifacts/review/x00-current-GUI-independent-20261015-a/final-review.json": {
+      "sha256": "b8df15628d3476e1ba4fffaa02f39aae5fe34ccd41599b84a5575b7be363cfe0"
+    },
+    "artifacts/review/x00-current-GUI-independent-20261015-a/final-review.seal.json": {
+      "sha256": "89b7e06edc53e6c781343a35fa4da9a389cf4bbd0018c65b2603e6fb96863ef4"
+    },
+    "artifacts/validation/X00-publish-current-actual-GUI-reviewed-record-29687c5d/command.json": {
+      "sha256": "1b6d3a9f5915dfe145e880b9ac6b2d88067042b76e64510d532ba8e40498210d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/publish_current_complete_ui.py",
+        "artifacts/ui/proof-current-c40a72af/metadata/get-only-181ed75b/partial-record.json",
+        "artifacts/review/x00-current-GUI-independent-20261015-a/final-review.json",
+        "--record-sha",
+        "4d230fdd46f628ca06f8b2ec5c1b4fc8e72d8c1ab17d0f64226477e079ca5097",
+        "--review-sha",
+        "b8df15628d3476e1ba4fffaa02f39aae5fe34ccd41599b84a5575b7be363cfe0"
+      ],
+      "wall_s": 10.192432899999403,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/X00-complete-GUI-reviewed-record-consistent-metadata-1adcf7bb/command.json": {
+      "sha256": "1a0aa2fdf098f78da6fdcdc3702d13bc07e876aaa562c81fc076e721a1e0c553",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/publish_current_complete_ui.py",
+        "artifacts/ui/proof-current-c40a72af/metadata/get-only-181ed75b/partial-record.json",
+        "artifacts/review/x00-current-GUI-independent-20261015-a/final-review.json",
+        "--record-sha",
+        "4d230fdd46f628ca06f8b2ec5c1b4fc8e72d8c1ab17d0f64226477e079ca5097",
+        "--review-sha",
+        "b8df15628d3476e1ba4fffaa02f39aae5fe34ccd41599b84a5575b7be363cfe0"
+      ],
+      "wall_s": 5.944534100000055,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/current-reviewed-d08185a3/observations.json": {
+      "sha256": "8c1c8dd1ec8b5ddd5eb93ea264a5071d9022837ba02f196a4bcd7a3d2e3fd486"
+    },
+    "artifacts/ui/current-reviewed-d08185a3/publication-checks.json": {
+      "sha256": "65167e202341ae953cdee08a7c8b00373c8a6d98effc7620ce6c2901e28c058c"
+    },
+    "artifacts/review/p02-projection-integrity-repair-independent-20261015-a/review.json": {
+      "sha256": "9548a2b8f4bbcaa425960bfb46e65a6c178e9d1869b388cf3bc5f0c8b80e353d"
+    },
+    "artifacts/review/p02-projection-integrity-repair-independent-20261015-a/seal.json": {
+      "sha256": "744cdd688f4c9cadfcf08b2e8fa4695b5c49364584da919e30a0954a2d2048f4"
+    },
+    "artifacts/handoff/d02-primary-mapping-research-20261015-a/manifest.json": {
+      "sha256": "de68cc448698fcde1cb5d0afa556f498358f30a664b19ad58fcaef212fdadbe6"
+    },
+    "docs/DATA_VALIDATION.md": {
+      "sha256": "cf3bfa6af0144fb93b981dd7c724cf62c877d3fe0d8e32b95da9864ad419bdc8"
+    }
+  },
+  "full_acceptance_complete": false
+}

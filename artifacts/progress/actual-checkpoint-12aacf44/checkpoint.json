@@ -1,0 +1,157 @@
+{
+  "utc": "2026-10-15T17:48:59.586918+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-sole-System32-WHvGetCapability-readonly-342ed9d9/command.json": {
+      "sha256": "eada0ff1c3fe4bb2d9210ce2bbda3a45ed7fadfb8f5f0d56c8bbe06aa2d48bf0",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/whpx_capability_readonly.py"
+      ],
+      "wall_s": 0.22542060000023412,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-four-bounded-official-MSYS2-ranges-retain-prefix-7cc958eb/command.json": {
+      "sha256": "2ac440bcf04be52a2b27381e43317181f58e840d71900307d16c29be142df856",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/ranged_dependency_fetch.py",
+        "--asset",
+        "msys2-qemu"
+      ],
+      "wall_s": 589.8477003999997,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-native-System32-tar-verified-zstd-package-list-6319cef3/command.json": {
+      "sha256": "7a420aea832ce9efce43340072cc9f7d71ae49b48aab4249f0d1e456598d1aef",
+      "exit_code": 0,
+      "argv": [
+        "C:/Windows/System32/tar.exe",
+        "-tf",
+        "<HOST_MAINTENANCE_ROOT>/a02-msys2-qemu-20261016-a/mingw-w64-ucrt-x86_64-qemu-11.1.2-1-any.pkg.tar.zst"
+      ],
+      "wall_s": 0.8809255999995003,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-MSYS2-official-documented-signer-catalog-verification-65dfd4e6/command.json": {
+      "sha256": "4662bd91d576841d89bee7ccbb689a69f50432479f36fd2133fb08376f5764ec",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/authenticate_msys_catalog.py"
+      ],
+      "wall_s": 4.772699199999806,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-Ubuntu-minimal-official-signed-metadata-c1f268a1/command.json": {
+      "sha256": "e622ec533a137ea76630095e672a55fbb74b345626a590c54c0d9c9d7242619f",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/prepare_minimal_image_metadata.py"
+      ],
+      "wall_s": 3.807709099999556,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-Ubuntu-cloud-documented-key-saved-metadata-verification-a39514f7/command.json": {
+      "sha256": "74e1f1a807d54fe809e104020f53f87a51f67ef7a1c5b0e388268e1750b20aec",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/authenticate_cloud_image_metadata.py"
+      ],
+      "wall_s": 2.8921582000002672,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-signed-Ubuntu-minimal-four-range-stage1-50fc71df/command.json": {
+      "sha256": "f3d33eb554898bd9293aacd65d7d34f250a6477e695512e97b3d98822974b43f",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/resume_ubuntu_image.py"
+      ],
+      "wall_s": 116.35843120000027,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-signed-runtime-DLL-dependencies-wave1-89df4ff4/command.json": {
+      "sha256": "95f86dca39ec18c36caf3ca18aa7b94bbabe1a4e1867e130bab5e74730e4d08b",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/fetch_runtime_packages.py",
+        "--plan",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/runtime-dependencies-wave1-resolved.json"
+      ],
+      "wall_s": 233.99674959999993,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-signed-runtime-DLL-dependencies-wave1-r2-retry-ee1e496e/command.json": {
+      "sha256": "43b05d8b64cffb6281cc5ec3b72942224a2a42cf474b3d00ede525d9dcd10a68",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/fetch_runtime_packages_r2.py",
+        "--plan",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/runtime-dependencies-wave1-resolved.json"
+      ],
+      "wall_s": 4.739528399999472,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/maintenance/a02-VM-dependency-preparation-20261016-a/snapshots.json": {
+      "sha256": "cbff96f593f8b8b54a4ff62606b2f63cafd2ffd38fc301a1466b1fb057caf407"
+    },
+    "artifacts/handoff/a02-delegated-backend-20261016-a/runtime-staging-r2-review.json": {
+      "sha256": "77abe77e0774858a8c8c3d0a66a1675f4b333252e15c965c190fc7eb03787d4a"
+    },
+    "artifacts/handoff/d02-source-completion-20261016-a/handoff.json": {
+      "sha256": "e4cdae19e4a3981abcee4867f7a5d18028c7b99e63b493f52e324d807700a2aa"
+    },
+    "artifacts/handoff/d02-source-completion-20261016-a/REPORT.md": {
+      "sha256": "bb3bc4aebc6dfee1550b5bfb1e0e60b430a96d8324f0fd4294404d49bc07410d"
+    },
+    "artifacts/validation/D02-new-official-Methods-metadata-access-exact-public-hosts-6e7a3643/command.json": {
+      "sha256": "33026e5c487d84abd0d664894884b53f657892bf95ac649571d17acc40c67a0b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/d02-source-completion-20261016-a/fetch_primary.py"
+      ],
+      "wall_s": 5.2983807000000525,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/D02-new-primary-access-saved-evidence-check-5d6ac39d/command.json": {
+      "sha256": "30940f610aec17abdee432cee5bd75d8e05d834dccb65237f6153bc96af1e402",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/d02-source-completion-20261016-a/check_evidence.py"
+      ],
+      "wall_s": 0.3918192999999519,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

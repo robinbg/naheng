@@ -1,0 +1,262 @@
+{
+  "utc": "2026-10-16T06:37:11.201717+00:00",
+  "exit_code": 0,
+  "code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 35,
+    "in_progress": 2,
+    "todo": 8
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A03-public-9593-original36-25caf3b6/command.json": {
+      "sha256": "8023bc377ec2d250e57d7cc7e574886604dfcc165018e286218047c530058d19",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "optimize",
+        "--profile",
+        "pilot",
+        "--out",
+        "artifacts/optimization/public-9593-20261016-c"
+      ],
+      "wall_s": 471.50243030000274,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a03-new-9593-independent-20261016-c/main-4166aae4/handoff.json": {
+      "sha256": "eb34ca8568bdcdb288863eaead2fac705b2097ea46689c3539c9d06503f3ae8e"
+    },
+    "artifacts/validation/A03-9593-random-original36-5e5cb7d9/command.json": {
+      "sha256": "d352219c52de026fe2936eac44642c26d52ea53d900da07469079c683a966fb0",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/compare_full_policy_queries_20261016.py",
+        "--strategy",
+        "random"
+      ],
+      "wall_s": 453.8242964000019,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a03-new-9593-independent-20261016-c/random-7dc0856d/handoff.json": {
+      "sha256": "6325dc097e0fda425b3c4cd8c18b430d32132f900e161feefdf72dac7e3eb137"
+    },
+    "artifacts/validation/A03-9593-uncertainty-original36-c9991e33/command.json": {
+      "sha256": "a178d20d12a55ac01512c7e5793e0fa1f681473382502aad81b88ffce3d65441",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/compare_full_policy_queries_20261016.py",
+        "--strategy",
+        "uncertainty"
+      ],
+      "wall_s": 390.9055889999945,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a03-new-9593-independent-20261016-c/uncertainty-64937204/handoff.json": {
+      "sha256": "25c0e5f123f90a4073a51a39c9b33d3ec25cad29ecd738236c9228b27787f6fd"
+    },
+    "artifacts/validation/A03-P03-R00-current-original-targeted-tests-fe8fd72b/command.json": {
+      "sha256": "ccc128094492752ac37d43426dc6aec9855ac74ece5262aeefbdfa31bd9fe1d4",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_learning_budget.py",
+        "tests/integration/test_evidence_withdrawal.py",
+        "tests/security",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "<HOST_DATA_ROOT>"
+      ],
+      "wall_s": 13.626794600000721,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/original-engineering-gates-20261016-c/handoff.json": {
+      "sha256": "01a6d44f24f7fc7e2e6d2d156b07c3461fae4c8345049643b1a2885195e53744"
+    },
+    "artifacts/validation/R00-9593-clean-delivery-build-f169c187/command.json": {
+      "sha256": "b7680367d1db48017cd0ebf380a6ef3c8a444df3fd00f6e50c888b6a1d7a9a2f",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/build_delivery.py",
+        "--destination",
+        "<HOST_DELIVERY_ROOT>/app",
+        "--built-frontend",
+        "artifacts/web/release-9593-stage",
+        "--frontend-receipt",
+        "artifacts/web/release-9593-stage.json"
+      ],
+      "wall_s": 2.270815299998503,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/R00-9593-fresh-offline-install-1c723e80/command.json": {
+      "sha256": "6fe2383364a83058e5deee43ba2ac506b875c7da23177dba76b90a31c2bbdfde",
+      "exit_code": 0,
+      "argv": [
+        ".bootstrap/bin/uv.exe",
+        "sync",
+        "--project",
+        "<HOST_DELIVERY_ROOT>/app",
+        "--cache-dir",
+        ".bootstrap/uv-cache",
+        "--frozen",
+        "--offline",
+        "--extra",
+        "dev",
+        "--extra",
+        "reference",
+        "--python",
+        ".venv/Scripts/python.exe"
+      ],
+      "wall_s": 13.232894699998724,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/R00-9593-installed-delivery-startup-check-eb201567/command.json": {
+      "sha256": "21df2ff8f365ef06d5d1109eaff493e6fd5ad4da9fef2b067de61ca39b1415e7",
+      "exit_code": 0,
+      "argv": [
+        "<HOST_DELIVERY_ROOT>/app/.venv/Scripts/python.exe",
+        "<HOST_DELIVERY_ROOT>/app/tools/start_local.py",
+        "--project-root",
+        "<HOST_DELIVERY_ROOT>/app",
+        "--check-only"
+      ],
+      "wall_s": 1.772458400002506,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/r00-clean-9593-independent-20261016-d/handoff-pre-ui.json": {
+      "sha256": "b7b65dc2054db85eddd8df9ff1c8a8bb8451d0145be5b12849a82cbdd01b32af"
+    },
+    "artifacts/validation/R00-9593-manifested-source-archive-2dcfef28/command.json": {
+      "sha256": "c7bbfbaf59ef0f535206a3163f2d45c5d77844ba6b3f78fb9a7280bce215b406",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/archive_checked_delivery_9593.py"
+      ],
+      "wall_s": 2.641461299994262,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/R00-9593-new-clean-browser-server-36138318/command.json": {
+      "sha256": "969123d363c98e6a7ffded4271562ed52f86d6827c2d11b76969a82c3e85a2d8",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_fresh_delivery_acceptance_20261016.py",
+        "--lifetime-s",
+        "900"
+      ],
+      "wall_s": 441.19401970000035,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/R00-9593-original-browser-tests-a3f4e7a8/command.json": {
+      "sha256": "7a0eda028c29851a1e52fe454abea2b27bb3b76a31b1eb04060c67967910a6e2",
+      "exit_code": 1,
+      "argv": [
+        "C:/Program Files/nodejs/node.exe",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "--prefix",
+        "frontend",
+        "run",
+        "test:e2e"
+      ],
+      "wall_s": 11.82942030000413,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/UI-9593-independent-publication-920530c6/command.json": {
+      "sha256": "6de840d17153d674648634768b987187195614ac563114dda7264228e4c0b307",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/publish_ui_9593_review_20261016.py"
+      ],
+      "wall_s": 2.335442499999772,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/R01-reviewed-report-only-install-1eaffa46/command.json": {
+      "sha256": "765eadc409015a1fd7c622000f1583db72df3e706710c161c3ef420316018675",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/install_reviewed_evidence_report_20261016.py"
+      ],
+      "wall_s": 0.6147054999964894,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/R01-public-report39-5bb7e837/command.json": {
+      "sha256": "ac78aaae336b90a059b911b8815c851f3041a20f7923bbf8c4b15ca3cf823bbc",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_evidence_report.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "artifacts/report-test-9593"
+      ],
+      "wall_s": 3.0438475999981165,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/R01-reviewed-ledger-figure-tool-install-ab2a67a5/command.json": {
+      "sha256": "e927ed1139f1342f6e56015d3552fef3e5113272751a60887ee2a8ac7e2baf1b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/install_checked_learning_figures_20261016.py"
+      ],
+      "wall_s": 0.4114789000013843,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/r01-learning-figures-independent-20261016-c/handoff.json": {
+      "sha256": "f0d3691e0ff91dfed6ae5c8a0f7205837ad544647d6d7745494318ad68e96dba"
+    },
+    "artifacts/validation/R01-public-real-three-arm-figures-22dec8a4/command.json": {
+      "sha256": "9ad77779dbb774c861d13640366b829a723d8423526ef0eebf5ffeafd07508c1",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/render_learning_evidence.py",
+        "--root",
+        ".",
+        "--selection",
+        "artifacts/handoff/r01-final-evidence-20261016-a/three-arm-selection.json",
+        "--out",
+        "artifacts/reports/learning-9593-20261016-d"
+      ],
+      "wall_s": 0.41773249999823747,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/reports/learning-9593-20261016-d/visual-review.json": {
+      "sha256": "3f129f2f4390fdde40d1c91b434fba468ff5857708d1388699808211bfa28dc0"
+    }
+  },
+  "full_acceptance_complete": false
+}

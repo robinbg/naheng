@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "central_source_appended",
+  "source_id": "zenodo17459188_cvut_sib_0001",
+  "original_sources_preserved": 7,
+  "original_model_identities_preserved": 4,
+  "central_registry_before_sha256": "e473e4069674cc7815093a19a610e356d09c9ae2458b19d00787147c30ee921b",
+  "central_registry_after_sha256": "6d1da567113e4786b98974f3b52ee84473ab27867975fb6981e22dabb63213aa",
+  "original_registry_snapshot": "artifacts/data/public_new/root_registry_sources_before-b292ea73.json",
+  "raw_sodium_bytes": 17143,
+  "raw_sodium_sha256": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+  "independent_review_sha256": "71b00639e25c0f10e15dd4c9c3925aef91ed0a05b4baf373550dd0161c9c4fc3",
+  "original_v2_audit_sha256": "18d6695b61090f522c8e288d8053a5084e517d0bd47b151f4a5c8b30c88c7625",
+  "holdout_snapshot_sha256": "93f7f123d64e7714d6997bd154caba1307c144d8b6498e4335f44aa3d918ae03",
+  "active_view_registry_sha256": {
+    "complete": "8cb9a464f69a85be05004846899b8231c5163873f5a4e68d1280090debdaf9eb",
+    "instrument_step": "cc46da78b589c028f57ac1b7a04ddc910552039014e63ac6f907ae9b8f3b01f0"
+  },
+  "full_chronological_import_exit_code": 1,
+  "instrument_step_import_exit_code": 0,
+  "external_model_validation": "not_performed",
+  "D01_complete": false,
+  "D02_complete": false
+}

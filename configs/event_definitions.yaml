@@ -1,0 +1,16 @@
+events:
+  voltage_limit:
+    comparison: voltage_V outside model_package voltage domain
+    kind: operational_limit
+  temperature_limit:
+    comparison: temperature_K outside model_package temperature domain
+    kind: operational_limit
+  retirement:
+    comparison: protocol capacity below configured capacity ratio
+    kind: protocol_endpoint
+  sodium_plating:
+    supported: false
+    reason: no sodium-reference electrode potential or calibrated proxy available in synthetic fixture
+  fire:
+    supported: false
+    reason: no fire mechanism or labelled failure data

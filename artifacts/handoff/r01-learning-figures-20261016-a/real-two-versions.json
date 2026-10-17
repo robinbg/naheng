@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "scope": "frozen_A03_learning_ledgers",
+  "arms": [
+    {
+      "id": "historical-0a2",
+      "label": "historical-0a2 / historical version panel, not fair comparison",
+      "strategy": "learned",
+      "files": {
+        "protocol": {
+          "path": "artifacts/optimization/public-0a2-20261016-c/protocol.json",
+          "sha256": "ca3b1385480e3872823add95ec43b97bb50a2b0c0119e06c0bfae9a92b800d8e"
+        },
+        "checkpoint": {
+          "path": "artifacts/optimization/public-0a2-20261016-c/checkpoint.json",
+          "sha256": "e01cad25cf4c02b62d0167e81e4d37700daf3478579ed084c08389846129f361"
+        },
+        "result": {
+          "path": "artifacts/optimization/public-0a2-20261016-c/result.json",
+          "sha256": "e5aa8cada8b5583e112c308824d87d310e569141a8ae5328f730eecc27c053dc"
+        },
+        "receipt": {
+          "path": "artifacts/validation/A03-public-nine-coordinate-original36-pilot-88a497f0/command.json",
+          "sha256": "bddf2ec621a0f82d31b62ac95d26be02e29fe7280e9d933eb887428b3a68e6c4"
+        }
+      }
+    },
+    {
+      "id": "current-9593",
+      "label": "current-9593 / historical version panel, not fair comparison",
+      "strategy": "learned",
+      "files": {
+        "protocol": {
+          "path": "artifacts/optimization/public-9593-20261016-c/protocol.json",
+          "sha256": "85e6c1ccc8ee2f7262cd98ca89184d2b9e3ce9bc5e508e2ad333af3fccfab276"
+        },
+        "checkpoint": {
+          "path": "artifacts/optimization/public-9593-20261016-c/checkpoint.json",
+          "sha256": "a52a9d3ee2ef9007101d9a9c8cb9d25a292974941ade587c17cee7be8e16b1c1"
+        },
+        "result": {
+          "path": "artifacts/optimization/public-9593-20261016-c/result.json",
+          "sha256": "8d546fb447f3bb4b085beac99784becbce70c40771a8d98fbdc695aa60a3e821"
+        },
+        "receipt": {
+          "path": "artifacts/validation/A03-public-9593-original36-25caf3b6/command.json",
+          "sha256": "8023bc377ec2d250e57d7cc7e574886604dfcc165018e286218047c530058d19"
+        }
+      }
+    }
+  ]
+}

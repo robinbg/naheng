@@ -1,0 +1,797 @@
+{
+  "analysis_id": "e02-builtin-63af43a7e68a",
+  "batch": {
+    "assimilation_prefix_snapshot_id": "snapshot-71d1c2cdea06c80061ea49ba",
+    "available_until_s": 40.0,
+    "binding": {
+      "chemistry_id": "synthetic_two_site",
+      "chemistry_identity_status": "declared_compatible",
+      "model_id": "two_site_current_adapter_v1",
+      "model_package_id": "research_base-v1",
+      "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+      "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+      "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+      "provenance_type": "synthetic",
+      "source_id": "e02-synthetic-train-63af43a7e68a",
+      "source_identity_status": "declared_compatible",
+      "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+      "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+    },
+    "cell_id": "synthetic-cell-63af43a7e68a",
+    "channels": [
+      "voltage_V",
+      "temperature_K"
+    ],
+    "compatibility_declaration_ref": "data/synthetic/e02-train-63af43a7e68a.json",
+    "compatible_train_declared": true,
+    "input_scope": "declared_training_data",
+    "nominal_predictions": [
+      [
+        3.2021549071471735,
+        299.2526143311854
+      ],
+      [
+        3.2023859004585553,
+        299.2506073917848
+      ],
+      [
+        3.202615237163306,
+        299.24864016830185
+      ],
+      [
+        3.2028428668427575,
+        299.24671187478106
+      ]
+    ],
+    "observations": [
+      {
+        "binding": {
+          "chemistry_id": "synthetic_two_site",
+          "chemistry_identity_status": "declared_compatible",
+          "model_id": "two_site_current_adapter_v1",
+          "model_package_id": "research_base-v1",
+          "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+          "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+          "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+          "provenance_type": "synthetic",
+          "source_id": "e02-synthetic-train-63af43a7e68a",
+          "source_identity_status": "declared_compatible",
+          "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+          "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+        },
+        "observation_id": "e02-builtin-63af43a7e68a-obs-1",
+        "role": "train",
+        "timestamp_s": 10.0,
+        "values": [
+          3.164543230323702,
+          299.24015589799654
+        ]
+      },
+      {
+        "binding": {
+          "chemistry_id": "synthetic_two_site",
+          "chemistry_identity_status": "declared_compatible",
+          "model_id": "two_site_current_adapter_v1",
+          "model_package_id": "research_base-v1",
+          "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+          "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+          "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+          "provenance_type": "synthetic",
+          "source_id": "e02-synthetic-train-63af43a7e68a",
+          "source_identity_status": "declared_compatible",
+          "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+          "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+        },
+        "observation_id": "e02-builtin-63af43a7e68a-obs-2",
+        "role": "train",
+        "timestamp_s": 20.0,
+        "values": [
+          3.195087768126197,
+          299.28381123386185
+        ]
+      },
+      {
+        "binding": {
+          "chemistry_id": "synthetic_two_site",
+          "chemistry_identity_status": "declared_compatible",
+          "model_id": "two_site_current_adapter_v1",
+          "model_package_id": "research_base-v1",
+          "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+          "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+          "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+          "provenance_type": "synthetic",
+          "source_id": "e02-synthetic-train-63af43a7e68a",
+          "source_identity_status": "declared_compatible",
+          "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+          "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+        },
+        "observation_id": "e02-builtin-63af43a7e68a-obs-3",
+        "role": "train",
+        "timestamp_s": 30.0,
+        "values": [
+          3.159028171729889,
+          299.6367789475939
+        ]
+      },
+      {
+        "binding": {
+          "chemistry_id": "synthetic_two_site",
+          "chemistry_identity_status": "declared_compatible",
+          "model_id": "two_site_current_adapter_v1",
+          "model_package_id": "research_base-v1",
+          "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+          "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+          "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+          "provenance_type": "synthetic",
+          "source_id": "e02-synthetic-train-63af43a7e68a",
+          "source_identity_status": "declared_compatible",
+          "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+          "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+        },
+        "observation_id": "e02-builtin-63af43a7e68a-obs-4",
+        "role": "train",
+        "timestamp_s": 40.0,
+        "values": [
+          3.191723442564488,
+          299.1272985469289
+        ]
+      }
+    ],
+    "particle_ids": [
+      "88cbf41a150e8c8e5931de0eddf7b6da80534b193f538356dd8b03946b1cce68",
+      "0755008f7ec5f011bf37d0c6af8828f52787359355e3978701a2017bf2e3ed21",
+      "f9c05291af764f57d28c960be1f4f371773e749a0ce30ff5bcf5b778970823c2",
+      "9a03dd68391062c8fcf0b82d117089fd9d679ced900da8eeb17f76f039726b69",
+      "bf3e434d36f6e0699b9b133351d8f19cbebac1361e22db2e96621aa939862186",
+      "6ee219188b13a04b423a30fcf5bd6ac392f7c16062686b4f7304534f085dc003",
+      "4e0ff407321c5f005390400ffbcde4acbc6b1520937b599f05de64a6c84f7dce",
+      "313fc86bbc5f0ce88e968f9eed8172b61a89994404a5df2352fc2f787c299819"
+    ],
+    "particle_predictions": [
+      [
+        [
+          3.2885105441376306,
+          298.9977440137277
+        ],
+        [
+          3.18427698526881,
+          299.16219168003715
+        ],
+        [
+          3.1051075361966682,
+          299.291228639649
+        ],
+        [
+          3.2519900407687716,
+          299.01430222769756
+        ],
+        [
+          3.1978873794263256,
+          299.3770908504336
+        ],
+        [
+          3.168190165117336,
+          299.0371899570999
+        ],
+        [
+          3.193147728915148,
+          299.3389757096495
+        ],
+        [
+          3.227207792624683,
+          299.2404577900512
+        ]
+      ],
+      [
+        [
+          3.2884602078850294,
+          299.00078345342985
+        ],
+        [
+          3.1842523629257498,
+          299.1619748913923
+        ],
+        [
+          3.104502325159795,
+          299.28845383061434
+        ],
+        [
+          3.252684688973103,
+          299.01701723461304
+        ],
+        [
+          3.198091002009496,
+          299.37261966156046
+        ],
+        [
+          3.168105568118732,
+          299.0394470434938
+        ],
+        [
+          3.1933841112914263,
+          299.33525929082106
+        ],
+        [
+          3.227686696659419,
+          299.23868958475356
+        ]
+      ],
+      [
+        [
+          3.288408592202903,
+          299.0037627062853
+        ],
+        [
+          3.1842267498756365,
+          299.1617623850691
+        ],
+        [
+          3.103903831737356,
+          299.2857339504579
+        ],
+        [
+          3.2533793138724483,
+          299.0196784569202
+        ],
+        [
+          3.198293775882576,
+          299.3682369786079
+        ],
+        [
+          3.1680206487257805,
+          299.0416594258837
+        ],
+        [
+          3.1936195286421767,
+          299.3316164200569
+        ],
+        [
+          3.228163740356244,
+          299.2369563800139
+        ]
+      ],
+      [
+        [
+          3.2883557312640503,
+          299.00668296407486
+        ],
+        [
+          3.1842001560343993,
+          299.161554076424
+        ],
+        [
+          3.103312263809492,
+          299.283067911982
+        ],
+        [
+          3.254073791400891,
+          299.0222869600398
+        ],
+        [
+          3.1984956609832285,
+          299.3639410495739
+        ],
+        [
+          3.1679354221660163,
+          299.0438279897056
+        ],
+        [
+          3.193853897891965,
+          299.32804564202615
+        ],
+        [
+          3.22863881891884,
+          299.23525748301745
+        ]
+      ]
+    ],
+    "posterior_content_sha256": "12e214edefdbb7daf6f89078062a4f41876be818a4cf5bdc2e2bac4c744423dc",
+    "prediction_binding": {
+      "chemistry_id": "synthetic_two_site",
+      "chemistry_identity_status": "declared_compatible",
+      "model_id": "two_site_current_adapter_v1",
+      "model_package_id": "research_base-v1",
+      "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+      "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+      "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+      "provenance_type": "synthetic",
+      "source_id": "e02-synthetic-train-63af43a7e68a",
+      "source_identity_status": "declared_compatible",
+      "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+      "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+    },
+    "propagated_derived_observables": [
+      {
+        "name": "soc",
+        "particle_values": [
+          0.7358883413614253,
+          0.5067281717723342,
+          0.2361429027299374,
+          0.8017490607081649,
+          0.5961746327984199,
+          0.4541975488370317,
+          0.5742006082922942,
+          0.6968958962666164
+        ],
+        "unit": "1"
+      }
+    ],
+    "propagated_joint_samples": [
+      [
+        0.9443666573651454,
+        0.42317086735584536,
+        0.00019497729748324202,
+        0.024821759605262447,
+        299.00668296407486,
+        0.9731653449781593,
+        1.0404686715427782
+      ],
+      [
+        0.6818597309925397,
+        0.2440308329420261,
+        0.00011612417986568445,
+        0.024900614321843637,
+        299.161554076424,
+        0.865433228996811,
+        1.5630150375585579
+      ],
+      [
+        0.27931065636352104,
+        0.17139127227956197,
+        5.524082426987072e-05,
+        0.024961403298368635,
+        299.283067911982,
+        1.0220871871585178,
+        1.2018386061240718
+      ],
+      [
+        0.7512415647963364,
+        0.8775103045759076,
+        0.0001679412054618185,
+        0.024848906593506685,
+        299.0222869600398,
+        0.8943073239022191,
+        1.3975210355038759
+      ],
+      [
+        0.4948424259532693,
+        0.7481729430661457,
+        0.000149401222490883,
+        0.024867365692347893,
+        299.3639410495739,
+        0.8828332702669944,
+        1.2336728354366295
+      ],
+      [
+        0.6205851382217382,
+        0.20461616475997188,
+        3.793571440118003e-05,
+        0.024978759960951405,
+        299.0438279897056,
+        1.1716709886877583,
+        1.2788578664530874
+      ],
+      [
+        0.4545499729694463,
+        0.7536765612765662,
+        9.251449722202182e-05,
+        0.024924253508576705,
+        299.32804564202615,
+        1.1753342479636304,
+        1.2648065189157194
+      ],
+      [
+        0.688390377054602,
+        0.7096541750846378,
+        5.108938156482432e-05,
+        0.02496559596083776,
+        299.23525748301745,
+        1.0217715262191345,
+        0.6309299920574176
+      ]
+    ],
+    "propagated_until_s": 40.0,
+    "propagation_evidence": {
+      "artifact_sha256": "00af251e1de7885b8d3318ade693374658c74a694729505e5a06abf7540657bb",
+      "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+      "parent_content_sha256": "12e214edefdbb7daf6f89078062a4f41876be818a4cf5bdc2e2bac4c744423dc",
+      "source_ref": "artifacts/calibration/prepared-builtin-63af43a7e68a/forward.json"
+    },
+    "snapshot_id": "snapshot-71d1c2cdea06c80061ea49ba",
+    "trajectory_id": "e02-synthetic-train-63af43a7e68a",
+    "unassimilated_observation_ids": [
+      "e02-builtin-63af43a7e68a-obs-1",
+      "e02-builtin-63af43a7e68a-obs-2",
+      "e02-builtin-63af43a7e68a-obs-3",
+      "e02-builtin-63af43a7e68a-obs-4"
+    ],
+    "units": [
+      "V",
+      "K"
+    ]
+  },
+  "execution_history": [
+    {
+      "ambient_K": 299.15,
+      "current_A": 0.04,
+      "thermal_W": 0.0,
+      "timestamp_s": 10.0
+    },
+    {
+      "ambient_K": 299.15,
+      "current_A": 0.04,
+      "thermal_W": 0.0,
+      "timestamp_s": 20.0
+    },
+    {
+      "ambient_K": 299.15,
+      "current_A": 0.04,
+      "thermal_W": 0.0,
+      "timestamp_s": 30.0
+    },
+    {
+      "ambient_K": 299.15,
+      "current_A": 0.04,
+      "thermal_W": 0.0,
+      "timestamp_s": 40.0
+    }
+  ],
+  "model_package": {
+    "artifact_hashes": {},
+    "binding_hashes": {
+      "configs/models/two_site_research.yaml": "1d9349afbfe8b0c5f15459d50374a6ca87ef090cd087c6d63111f9ea5545f932",
+      "src/naheng/models/degradation.py": "ab69e7a7d9cfabc2ee329ed63f20e30e09b2ef27f1df3378f25ff672a4ae5413",
+      "src/naheng/models/site_model.py": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+      "src/naheng/models/thermal.py": "26aa374a71e5542c178989dcfc03d6a35054d3dab46ba7c102d7441510e2f815"
+    },
+    "chemistry_id": "synthetic_two_site",
+    "domain": {
+      "channel_rates": null,
+      "drive": "bounded_effective_potential_current_root",
+      "max_current_A": 0.3,
+      "provenance_type": "synthetic",
+      "temperature_K": [
+        273.15,
+        333.15
+      ]
+    },
+    "dynamics_ast": {
+      "model": "two_site_current_adapter_v1",
+      "source": "configs/models/two_site_research.yaml",
+      "states": [
+        "x1",
+        "x2",
+        "trapped_mol",
+        "reservoir_mol",
+        "temperature_K"
+      ]
+    },
+    "error_contracts": [
+      {
+        "bound": null,
+        "comparison_reference": "real_cell",
+        "reason": "Uncalibrated fixture; no reality discrepancy certificate",
+        "status": "unknown",
+        "target": "voltage_V"
+      }
+    ],
+    "evidence_refs": [],
+    "evidence_validity": "unverified",
+    "execution_binding": "builtin_site_v1",
+    "fallback_refs": [],
+    "lifting_map": {
+      "kind": "uncertain_set",
+      "reason": "Total sodium alone does not identify site occupancies"
+    },
+    "package_hash": "e919981a96c86ba7a524167ebe8a468ee342438dbec09e5d4459a05f1a068baf",
+    "package_id": "research_base-v1",
+    "parameter_hash": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+    "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+    "parameters": {
+      "accelerated_synthetic": false,
+      "base_voltage_V": 3.2,
+      "drive_max_V": 1.0,
+      "drive_min_V": -1.0,
+      "drive_scale_V": 0.12,
+      "equilibrium_drive_V": [
+        -0.08,
+        0.12
+      ],
+      "faraday_C_per_mol": 96485.33212,
+      "model_kind": "theory_fixture",
+      "rate_s_inv": [
+        0.001,
+        0.0006
+      ],
+      "reservoir_initial_mol": 0.025,
+      "resistance_ohm": 0.05,
+      "side_heat_J_per_mol": 5000.0,
+      "side_rate_s_inv": [
+        2e-07,
+        4e-07
+      ],
+      "site_capacity_mol": [
+        0.012,
+        0.008
+      ],
+      "source_id": "synthetic-two-site-v1",
+      "temperature_max_K": 333.15,
+      "temperature_min_K": 273.15,
+      "thermal_capacity_J_per_K": 40.0,
+      "thermal_conductance_W_per_K": 0.08,
+      "thermal_cop": 1.0,
+      "voltage_max_V": 4.2,
+      "voltage_min_V": 2.0
+    },
+    "readout_ast": {
+      "model": "synthetic_voltage_thermal_v1"
+    },
+    "reduction_map": {
+      "q": "N1*x1+N2*x2"
+    },
+    "state_definition": {
+      "reservoir_mol": "mol",
+      "temperature_K": "K",
+      "trapped_mol": "mol",
+      "x1": "1",
+      "x2": "1"
+    },
+    "validation_status": "executable",
+    "validity_monitor": {
+      "on_hash_change": "stale",
+      "on_unknown": "no_strict_admission"
+    }
+  },
+  "noise": {
+    "assumption_text": "Declared conditional Gaussian total-error likelihood. Actual private reference has model discrepancy; residuals do not identify pure measurement noise.",
+    "bias": [
+      0.0,
+      0.0
+    ],
+    "binding": {
+      "chemistry_id": "synthetic_two_site",
+      "chemistry_identity_status": "declared_compatible",
+      "model_id": "two_site_current_adapter_v1",
+      "model_package_id": "research_base-v1",
+      "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+      "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+      "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+      "provenance_type": "synthetic",
+      "source_id": "e02-synthetic-train-63af43a7e68a",
+      "source_identity_status": "declared_compatible",
+      "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+      "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+    },
+    "channels": [
+      "voltage_V",
+      "temperature_K"
+    ],
+    "component_scope": "combined_error_assumption",
+    "covariance": [
+      [
+        0.0006250000000000001,
+        0.0
+      ],
+      [
+        0.0,
+        0.0625
+      ]
+    ],
+    "noise_id": "synthetic-combined-error-assumption-63af43a7e68a",
+    "operating_distribution_calibrated": false,
+    "source_ref": "data/synthetic/e02-train-63af43a7e68a.json",
+    "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e",
+    "temporally_independent_likelihood_declared": true,
+    "units": [
+      "V",
+      "K"
+    ]
+  },
+  "prior": {
+    "binding": {
+      "chemistry_id": "synthetic_two_site",
+      "chemistry_identity_status": "declared_compatible",
+      "model_id": "two_site_current_adapter_v1",
+      "model_package_id": "research_base-v1",
+      "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+      "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+      "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+      "provenance_type": "synthetic",
+      "source_id": "e02-synthetic-train-63af43a7e68a",
+      "source_identity_status": "declared_compatible",
+      "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+      "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+    },
+    "derived_observables": [
+      {
+        "name": "soc",
+        "particle_values": [
+          0.7367251864987093,
+          0.5075650968578005,
+          0.2369751088618626,
+          0.8025914506565897,
+          0.5970129785403587,
+          0.4550323326046611,
+          0.5750390085822306,
+          0.6977301633867453
+        ],
+        "unit": "1"
+      }
+    ],
+    "ess": 5.06566239643017,
+    "identifiability": [
+      "site_composition_not_identified_by_single_voltage",
+      "side_reaction_rate_not_identified_by_short_trace",
+      "synthetic_parameter_prior_uncalibrated",
+      "initial_temperature_uniform_domain_prior_measurement_proposal"
+    ],
+    "mean": [
+      0.5624079780337521,
+      0.6533802513086631,
+      0.0001026347630690266,
+      0.024897365236930973,
+      299.25466178832556,
+      0.99677526450633,
+      1.1871178723956222,
+      0.5987968873437165
+    ],
+    "model_package_id": "research_base-v1",
+    "obs_until_s": 0.0,
+    "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+    "parameter_state_names": [
+      "rate_scale",
+      "side_rate_scale"
+    ],
+    "quantiles": [
+      [
+        0.2984296215623071,
+        0.5206205527621808,
+        0.6868211555635996
+      ],
+      [
+        0.21090416221759883,
+        0.7513882195523854,
+        0.8326813885166849
+      ],
+      [
+        3.782287049917883e-05,
+        9.093450572906597e-05,
+        0.00015286168792013046
+      ],
+      [
+        0.024826963883723886,
+        0.024884919041658515,
+        0.024953627609094763
+      ],
+      [
+        299.00819776426385,
+        299.23140550701,
+        299.37385582314033
+      ],
+      [
+        0.865433228996811,
+        0.9751033345759456,
+        1.174509642417136
+      ],
+      [
+        0.6309299920574176,
+        1.2393163061487456,
+        1.5171113612916118
+      ],
+      [
+        0.37841256540096324,
+        0.5768510816954405,
+        0.7485070895259973
+      ]
+    ],
+    "run_id": "e02-builtin-63af43a7e68a",
+    "samples": [
+      [
+        0.9442837485190072,
+        0.42538734346826246,
+        0.00019482322618857975,
+        0.024805176773811423,
+        298.9946431713224,
+        0.9731653449781593,
+        1.0404686715427782
+      ],
+      [
+        0.6759485368973497,
+        0.2549899367984767,
+        0.00011596850960695067,
+        0.02488403149039305,
+        299.16241283735417,
+        0.865433228996811,
+        1.5630150375585579
+      ],
+      [
+        0.2647683023038654,
+        0.1952853186988584,
+        5.5179533081951006e-05,
+        0.02494482046691805,
+        299.29405948670944,
+        1.0220871871585178,
+        1.2018386061240718
+      ],
+      [
+        0.7310167367381756,
+        0.909953521534211,
+        0.00016767623794388574,
+        0.024832323762056116,
+        299.0115323492226,
+        0.8943073239022191,
+        1.3975210355038759
+      ],
+      [
+        0.46700936292758405,
+        0.7920184019595208,
+        0.00014921713910236243,
+        0.02485078286089764,
+        299.3816523326111,
+        0.8828332702669944,
+        1.2336728354366295
+      ],
+      [
+        0.6121437331738055,
+        0.21936523175094444,
+        3.782287049917883e-05,
+        0.024962177129500822,
+        299.0348872633724,
+        1.1716709886877583,
+        1.2788578664530874
+      ],
+      [
+        0.41449955418495077,
+        0.8158481901781505,
+        9.232932287373357e-05,
+        0.024907670677126268,
+        299.34276716124447,
+        1.1753342479636304,
+        1.2648065189157194
+      ],
+      [
+        0.6660013826498637,
+        0.7453233344920677,
+        5.098687061282545e-05,
+        0.024949013129387177,
+        299.24226170271214,
+        1.0217715262191345,
+        0.6309299920574176
+      ]
+    ],
+    "snapshot_id": "snapshot-71d1c2cdea06c80061ea49ba",
+    "source_snapshot_sha256": "47e5866cac50c9e533f318fafc203a91871dea2fa4f70814bd4608fda1209f14",
+    "state_names": [
+      "x1",
+      "x2",
+      "trapped_mol",
+      "reservoir_mol",
+      "temperature_K",
+      "rate_scale",
+      "side_rate_scale"
+    ],
+    "state_units": [
+      "1",
+      "1",
+      "mol",
+      "mol",
+      "K",
+      "1",
+      "1"
+    ],
+    "weights": [
+      0.0011303418150409286,
+      0.18026225295363715,
+      6.442122664088988e-05,
+      0.06089215327776483,
+      0.2493755154935029,
+      0.0769867752132426,
+      0.22212191583271126,
+      0.2091666241874595
+    ]
+  },
+  "training_source": {
+    "path": "data/synthetic/e02-train-63af43a7e68a.json",
+    "sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e"
+  }
+}

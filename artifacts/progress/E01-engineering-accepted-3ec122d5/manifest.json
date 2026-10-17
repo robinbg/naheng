@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T09:09:32.349214+00:00",
+  "task_id": "E01",
+  "counts": {
+    "done": 26,
+    "in_progress": 4,
+    "todo": 15
+  },
+  "code_hash": "28a5084647bd29779f4f0bfabeb4746d96bb4858a1f2179599e96471f641d3aa",
+  "original_gates_and_other_statuses_unchanged": true,
+  "full_science_GUI_release_completed": false,
+  "evidence": {
+    "artifacts/review/e01-f03-independent-20261014-a/public-repaired/handoff.json": "a2b59f7fa916ca0742cbd37488c0ea80dcf36b3c94b7b46f238284db73911618",
+    "artifacts/validation/E01-public-all-original-assertions-and-three-protocol-fault-controls-298e9d5a/command.json": "b15f8cbea7301d8fa1d0bd5d542ff8d9a3e52b3b507734adfa4e777352c5dfb6",
+    "artifacts/lifecycle/observation-repair-1fb1d623/manifest.json": "59734b5969ece1c8eaa3ee13fe7c374084e71c2e3671dfa4f7ef51244744117f",
+    "artifacts/lifecycle/observation-repair-1fb1d623/fixture-upgrade.json": "67bc778578c39e33ef952d89d69437a7200f6a855712857eb9a44c16c1d1c18f"
+  }
+}

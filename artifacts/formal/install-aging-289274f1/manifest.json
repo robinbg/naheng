@@ -1,0 +1,25 @@
+{
+  "exit_code": 0,
+  "installed": [
+    {
+      "source": "artifacts/handoff/f03-completion-20261014-a/Completion.lean",
+      "source_sha256": "fbb40862ba2febeb5e73bd2361b31e3457ca064e50117bc9c267ae58609c0e94",
+      "public_leaf": "formal/Naheng/Aging/Completion.lean",
+      "public_sha256": "fbb40862ba2febeb5e73bd2361b31e3457ca064e50117bc9c267ae58609c0e94",
+      "only_import_replacement": false,
+      "fresh_public_build_required": true
+    },
+    {
+      "source": "artifacts/handoff/f03-completion-20261014-b/FilmLimits.lean",
+      "source_sha256": "dd8721ac9baa891833bc926a8cb592d0a5d263a1bd9eda3facbf4ce448c130b5",
+      "public_leaf": "formal/Naheng/Aging/FilmLimits.lean",
+      "public_sha256": "194c0d9327018b90858651b4f97d4e15f0821d3dd57235e8757f12a34c7b9ae6",
+      "only_import_replacement": true,
+      "fresh_public_build_required": true
+    }
+  ],
+  "target_count": 30,
+  "original_aging_gate_passed": false,
+  "task_status_changed": false,
+  "full_project_completed": false
+}

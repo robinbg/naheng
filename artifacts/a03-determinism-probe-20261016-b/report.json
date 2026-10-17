@@ -1,0 +1,111 @@
+{
+  "tool": "probe_a03_label_determinism_20261016.py",
+  "sealed_input": {
+    "arm": "artifacts/full-policy-uncertainty-6ecf182273",
+    "ordinal": 6,
+    "fidelity": "low",
+    "candidate_id": "fba7c09c6506d37dd7463973757a8b276fc2ee38e712376ff22b4a3f92666a26",
+    "reservation_id": "2712a7384b1d41799ba6cd04656d3c7c",
+    "timeout_s": 120.0,
+    "parameters": {
+      "charge_high_A": 0.01098846907731266,
+      "charge_low_A": 0.010497756578732163,
+      "cooling_permission_W": 0.012440302990900449,
+      "cutoff_voltage_V": 3.376529148572846,
+      "discharge_high_A": 0.012107811767047564,
+      "discharge_low_A": 0.00906165071588393,
+      "heating_permission_W": 0.013572133538912639,
+      "max_dod": 0.00028971112098613995,
+      "rest_duration_s": 3.1920249010625046
+    }
+  },
+  "calibration_packet": "artifacts/a03-determinism-probe-20261016-b/calibration",
+  "calibration_packet_built_for_current_source": {
+    "preflight": {
+      "exit_code": 0,
+      "artifact_dir": "<PROJECT_ROOT>\\artifacts\\a03-determinism-probe-20261016-b\\calibration",
+      "complete": true,
+      "scope": "Conditional calibration candidate; existing runs and filters preserved"
+    },
+    "elapsed_s": 5.3583690999948885
+  },
+  "repetitions": 5,
+  "distinct_statuses": [
+    "unknown"
+  ],
+  "distinct_work_counters": [],
+  "distinct_completed_utilities": [],
+  "distinct_completed_margins": [],
+  "label_determined_by_candidate": true,
+  "worker_wall_s_observed": {
+    "min": null,
+    "max": null,
+    "declared_wall_backstop_s": 25.0
+  },
+  "rows": [
+    {
+      "repetition": 0,
+      "status": "unknown",
+      "reason": "ValueError: Current calibration packet must be under controlled artifacts/calibration",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 5.400697500008391,
+      "reported_cost_s": 5.198884799989173,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    },
+    {
+      "repetition": 1,
+      "status": "unknown",
+      "reason": "ValueError: Current calibration packet must be under controlled artifacts/calibration",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 5.471269999994547,
+      "reported_cost_s": 5.2259082999953534,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    },
+    {
+      "repetition": 2,
+      "status": "unknown",
+      "reason": "ValueError: Current calibration packet must be under controlled artifacts/calibration",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 5.572760999988532,
+      "reported_cost_s": 5.38755709999532,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    },
+    {
+      "repetition": 3,
+      "status": "unknown",
+      "reason": "ValueError: Current calibration packet must be under controlled artifacts/calibration",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 5.709741699989536,
+      "reported_cost_s": 5.574033700002474,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    },
+    {
+      "repetition": 4,
+      "status": "unknown",
+      "reason": "ValueError: Current calibration packet must be under controlled artifacts/calibration",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 5.381521100003738,
+      "reported_cost_s": 5.241624700007378,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    }
+  ],
+  "scope": "repeated execution of one sealed synthetic training candidate",
+  "scientific_N_added": 0,
+  "risk_certificate": false,
+  "invented_labels": 0
+}

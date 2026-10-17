@@ -1,0 +1,26 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/integration/test_discovery_loop.py",
+    "tests/integration/test_proof_worker_isolation.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "artifacts/test-temp/a02-public-20261016-c"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:39:10.628667+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A02-public-original-eight-real-isolated-Lean-f83d2adf\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A02-public-original-eight-real-isolated-Lean-f83d2adf\\stderr.log",
+  "timeout_s": 1800,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 33956,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 645.9854841999986
+}

@@ -1,0 +1,34 @@
+{
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task": "X00",
+  "status": "done",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "only_X00_status_promoted": true,
+  "original_contracts_unchanged_except_X00_status": true,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "task_count": 45,
+  "requirement_count": 18,
+  "actual_evidence": {
+    "artifacts/validation/X00-next-session-original-complete-smoke-1ff82002/command.json": "b79efc60e2aa12ace27256cdee46556d5939c09675797c61afbfd81d0be7f672",
+    "artifacts/validation/X00-original-current142e-default-demo-20261016-614a94d0/command.json": "5586ea3402526516780dcefb55636f9996d1917eccfe797977730edebd61b5df",
+    "artifacts/handoff/x00-completion-current142e-20261016-a/executions/4da32684/command.json": "b7efcc479739195a62465dab86b7ab2fc8278d9ebc25dd32c83a2972c73f87d7",
+    "artifacts/handoff/x00-completion-current142e-20261016-a/runs/8a823421/result.json": "cb43845201cdeb7babe81aa4bfd09da576bfc38eddea65d92b959c42503da282",
+    "artifacts/validation/X00-current142e-readonly-completion-evidence-owned-baseline-dc7518ed/command.json": "b37c7f6e6985e1732a8374876af285f076973bcb92518a8fa5b63878c9f8d435",
+    "artifacts/smoke-current142e-core-20261016-a.json": "8e02c36ba017d3f9c0993356541eae78912cf1f1439d74b1f20155b1995f25dd",
+    "artifacts/verification/release-71146b9417/audit.json": "90c6e5c26a9ff4cfcf61cf68cc2c8018c9a8a68467c5b26c62c17b2ca3d51473",
+    "artifacts/handoff/x00-completion-current142e-20261016-a/preparation.json": "7fae67cd644fa828f6ce1872bc73ce97121d5aea79c7c3b2c663282fbe63ced4",
+    "artifacts/handoff/x00-completion-current142e-20261016-a/executions/f975a5ad/command.json": "2cc8c1f4cecda5b5056abcd31728118bfa671fec20332f6f02710ef89212cda5"
+  },
+  "current_files": {
+    "TASKS.yaml": "2ad2c5e97129309ff8bd642aa527ac05dc4ae6b5abb8646c5baa5ac217b175ec",
+    "PLANS.md": "44ed5c6e2487e0554ab6eb837e7707699aceacb42aadc1ccedb0da4abdb3dd72",
+    "docs/STATUS.md": "d72df3c8661af485acb4dfb132cd5b4455cdd321fa1acc8ae4fee4e1378ba1bf"
+  },
+  "new_independent_agent_review": "UNAVAILABLE_USAGE_LIMIT; same-source prior independent UI review and independently authored reader reused honestly",
+  "scientific_or_release_complete": false
+}

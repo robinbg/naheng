@@ -1,0 +1,35 @@
+services:
+  naheng:
+    build:
+      context: .
+      args:
+        PYTHON_IMAGE: ${NAHENG_PYTHON_IMAGE:?Set an approved Python 3.11-3.13 image pinned by sha256}
+        UV_IMAGE: ${NAHENG_UV_IMAGE:?Set an approved uv image pinned by sha256}
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - naheng-data:/app/artifacts
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=256m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 256
+    mem_limit: 8g
+    cpus: 2
+    restart: "no"
+    environment:
+      PYTHONPATH: /app/src
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONUNBUFFERED: "1"
+      UV_CACHE_DIR: /tmp/uv-cache
+    healthcheck:
+      test: ["CMD", "/app/.venv/bin/python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health',timeout=5).read()"]
+      interval: 30s
+      timeout: 6s
+      retries: 3
+      start_period: 15s
+volumes:
+  naheng-data:

@@ -1,0 +1,125 @@
+{
+  "utc": "2026-10-12T06:41:40.500759+00:00",
+  "commands": {
+    "complete_core": {
+      "path": "artifacts/validation/F04-current-complete-core-gate-af41ed1e/command.json",
+      "sha256": "185a7e855730613420835a7008bbefc304a61d2082db0cbbdf56d5b8fa1b69b6",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "core",
+        "--out",
+        "artifacts/formal/core-final-continuation-20261012"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 2,
+      "timeout_s": 120,
+      "status": "completed",
+      "utc": "2026-10-12T06:27:55.256873+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F04-current-complete-core-gate-af41ed1e\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F04-current-complete-core-gate-af41ed1e\\stderr.log",
+      "owned_pid": 22180,
+      "timed_out": false,
+      "wall_s": 0.3232927999997628
+    },
+    "current_ui": {
+      "path": "artifacts/validation/W01-current-final-UI-evidence-gate-dd7c1f76/command.json",
+      "sha256": "ab670969648f3bd2902b89123290b23dd171b48b0f7a7c5c70b5edf5f2fa26a1",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_ui_acceptance.py"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 2,
+      "timeout_s": 60,
+      "status": "completed",
+      "utc": "2026-10-12T06:35:12.995387+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\W01-current-final-UI-evidence-gate-dd7c1f76\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\W01-current-final-UI-evidence-gate-dd7c1f76\\stderr.log",
+      "owned_pid": 23048,
+      "timed_out": false,
+      "wall_s": 0.3118962000007741
+    },
+    "complete_release": {
+      "path": "artifacts/validation/R02-current-complete-release-gate-51c91ff0/command.json",
+      "sha256": "f4afa464b6ee04732a22c135d3078fe890903c7d00b476d375439d9f192b988d",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_release.py"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 2,
+      "timeout_s": 60,
+      "status": "completed",
+      "utc": "2026-10-12T06:35:11.880548+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\R02-current-complete-release-gate-51c91ff0\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\R02-current-complete-release-gate-51c91ff0\\stderr.log",
+      "owned_pid": 12656,
+      "timed_out": false,
+      "wall_s": 1.0328324000001885
+    },
+    "handoff_structure": {
+      "path": "artifacts/validation/G00-current-handoff-structure-aa7df87e/command.json",
+      "sha256": "d3a7cd6036e7ce9125c77affaddeed81ac585cb5f6e6963046f9275992ace251",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_handoff.py",
+        "--write",
+        "artifacts/handoff_continuation_20261012_final.json"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "timeout_s": 60,
+      "status": "completed",
+      "utc": "2026-10-12T06:35:21.018082+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G00-current-handoff-structure-aa7df87e\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G00-current-handoff-structure-aa7df87e\\stderr.log",
+      "owned_pid": 3708,
+      "timed_out": false,
+      "wall_s": 0.45985129999826313
+    }
+  },
+  "incomplete_tasks": [
+    "W01",
+    "X00",
+    "D01",
+    "S05",
+    "E02",
+    "D02",
+    "C01",
+    "C02",
+    "W02",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "A00",
+    "A01",
+    "A02",
+    "P02",
+    "A03",
+    "P03",
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "R00",
+    "R01",
+    "R02"
+  ],
+  "incomplete_experiments": [
+    "theory",
+    "application",
+    "linkage",
+    "public_validation"
+  ],
+  "current_ui_missing": [
+    "report_opened"
+  ],
+  "complete_project": false,
+  "note": "Handoff command describes pre-append tracker bytes; a final structure check must use a new output filename after this tracker append"
+}

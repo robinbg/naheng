@@ -1,0 +1,36 @@
+{
+  "before_code_hash": "0a2ffc9f5a8020f5f6e62bda5caa1358521d12126acacb40f589b65ebb485d9d",
+  "handoff_sha256": "5a32ab9ec85e53f4729a09dff191e8a5fd9d12fab98fe92521c4ac36f8bffe40",
+  "review_sha256": "cd279086a2f8df0ff42475194f8df2c6e2cddfb9a73ef9181b9644489781c27a",
+  "validation_sha256": "88ba3c4640c4ec805e61608870c1ed789144f16923dc82385c6a127feb71d5c6",
+  "changes": {
+    "src/naheng/learning/constrained_bo.py": {
+      "before_sha256": "9cd0abb58a8c4da4c08ea060c66d777192650fb4811b822d57f73600bc02328c",
+      "after_sha256": "40d3f1758d44d796435021863a06b5f5e06c8cb73df4b9d2d1a0f7dd9ac42a98"
+    },
+    "src/naheng/learning/multifidelity.py": {
+      "before_sha256": "774075293f1cf1149463e04cacfcb8d861f339fc48cb984d64f09c58a112e9d4",
+      "after_sha256": "7575464c9e94359afaeaf1ad8c06f38fa08c1e95723b3e7967454019b86ba248"
+    },
+    "tools/compare_full_policy_queries_20261016.py": {
+      "before_sha256": "5bae317a8cc60b36dbc87ddb851583ea932cb5ab1a729633e312ac2a7a713245",
+      "after_sha256": "dd5a2142e5da75ee2f353c8484ae7d53055240f3c6df4677395c4734e356344f"
+    },
+    "frontend/src/pages/WorkbenchPages.tsx": {
+      "before_sha256": "8e9fe2fe9323590632cd77ad6fba30800edb0828cc79e11a1922c93e27ab7b6c",
+      "after_sha256": "b9232fc6e3f26db531e93abcc187feb679947ba39519b41b7785e5bfc14c9305"
+    }
+  },
+  "physical_and_gates_unchanged": {
+    "src/naheng/control/mpc.py": "72c5709eee63f7dbe7095312818ac1ff4f062c9ca47958debd0bf233428790cb",
+    "src/naheng/learning/strategy_mpc.py": "66c5b1049272e2c0ea1d9cd90bb83286eabd3c75689a166468174d0efd89efd5",
+    "src/naheng/learning/operational_oracle.py": "c22b8f9c9665c552c99db67b86485e75cc6eab31eee244c2f619f1430684544f",
+    "src/naheng/learning/policy_space.py": "c4cec28bfee935ca9434ddead67e2b7aeb8d289aac1e4cb7abff736771208abd",
+    "configs/gates.yaml": "fb42e9f954b062d60aac7cc8c44873187013a3da919c69967bba3f6d450dbb80",
+    "configs/execution.yaml": "dc78585e0cdf65a5e06ec359e25d53808e97a11edc75272bbb137dddb796141e"
+  },
+  "scope": "Finite diagnostic allocation, actual pairing priority, truthful fitted/default rho metadata, UI label clarification; no changes to physical model, query budgets, or acceptance gates",
+  "code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "full_acceptance_complete": false,
+  "old_runs_rewritten": false
+}

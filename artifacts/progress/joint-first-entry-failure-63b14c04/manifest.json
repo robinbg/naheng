@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-13T22:18:18.697152+00:00",
+  "exit_code": 0,
+  "reason": "Use existing registry default-JSON parameter serializer; compact calibration serializer remains for state/noise/snapshot identities",
+  "before": {
+    "src/naheng/estimation/joint_gaussian_observer.py": "541392ee088f096a35237aa69554fa6a198da7e62219aba721c444aa376c2903",
+    "tests/integration/test_joint_gaussian_observer.py": "1aa8afb62429a2547436be20f1875712231d0733192215ba90b6f4ae297ecc10"
+  },
+  "after": {
+    "src/naheng/estimation/joint_gaussian_observer.py": "4a77bbbf0e8941d6547bd6ccffa4f9c2a7f0b1bfda37b3bda89e262306d8491f",
+    "tests/integration/test_joint_gaussian_observer.py": "63ec814f417c1f516e091bdf225a223ff2a447d3ff509f606c440a0dd4bf0468"
+  },
+  "all_existing_new_test_methods_ast_unchanged": true,
+  "test_fixture_helper_only_repaired": true,
+  "original_hashes_preserved": {
+    "src/naheng/estimation/particle_filter.py": "9714e821c431451e23a5dadb5225d65bcff944746ff2179305ac27cdd0442ddd",
+    "src/naheng/runtime/calibration_observer.py": "4747480e6aa13354c2c9c0e63ba689288165f07ade1fb9abfe2a5765ca8b839a",
+    "src/naheng/packages/registry.py": "d2ef2709296fc7fd9ea05818e22189eebdd75196ea22f06a5b4acaa9a1c5fc98",
+    "tests/integration/test_shared_posterior.py": "ad5d7473f5a0b8dfdb9a47a9eda448e8c1414c4dcba3c0fee2fb5f77bd43350f",
+    "tests/integration/test_joint_scenario_calibration.py": "358433a55bd7550458389543513e5b1bdce45c53ebdc1f6e9357fa3ab07911b3"
+  },
+  "first_actual_entry_failure": "artifacts/validation/E02-public-current-joint-observer-shared-posterior-quoted-recovery-2e7aba4c/command.json",
+  "first_usage_error": "artifacts/validation/E02-public-current-joint-observer-shared-posterior-acceptance-ec4b99c9/command.json",
+  "first_actual_artifact": "artifacts/joint_scenario_calibration/public-loop-test-6e9fc135",
+  "public_acceptance_passed": false
+}

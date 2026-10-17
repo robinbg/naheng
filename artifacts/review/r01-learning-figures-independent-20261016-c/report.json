@@ -1,0 +1,31 @@
+{
+  "status": "PASS_FROZEN_FIGURE_SCOPE",
+  "file_hash_checks": 40,
+  "datasets": [
+    {
+      "name": "historical",
+      "same_code": false,
+      "total_requests": 72,
+      "outer_states": [
+        "UNKNOWN",
+        "confirmed_command_outcome"
+      ]
+    },
+    {
+      "name": "current",
+      "same_code": true,
+      "total_requests": 72,
+      "outer_states": [
+        "confirmed_command_outcome",
+        "confirmed_command_outcome"
+      ]
+    }
+  ],
+  "byte_reproduced_artifacts": 6,
+  "svg_injection_controls_passed": true,
+  "original_cost_and_status_unchanged": true,
+  "per_case_physics_revalidated": false,
+  "scientific_N_added": 0,
+  "comparative_advantage": null,
+  "R01_complete": false
+}

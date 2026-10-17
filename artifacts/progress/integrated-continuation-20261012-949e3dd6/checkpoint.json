@@ -1,0 +1,278 @@
+{
+  "utc": "2026-10-12T06:34:32.871458+00:00",
+  "counts": {
+    "done": 19,
+    "in_progress": 5,
+    "blocked": 1,
+    "todo": 20
+  },
+  "required_tasks": 45,
+  "required_requirements": 18,
+  "formal_counts": {
+    "foundation": 17,
+    "reduction_exact": 7,
+    "aging_film": 5
+  },
+  "M1_complete": false,
+  "complete_project": false,
+  "evidence": {
+    "artifacts/validation/G00-current-integrated-full-pytest-e86614eb/command.json": {
+      "sha256": "db6199c50e9ae25c2f069efe36ca0b54c31e49158f781a6686f859d3d6e3ddd7",
+      "bytes": 948,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-20261012-full",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/nh-t-20261012-full"
+      ],
+      "exit_code": 0,
+      "wall_s": 229.16976950000026,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G00-current-integrated-full-pytest-e86614eb\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G00-current-integrated-full-pytest-e86614eb\\stderr.log"
+    },
+    "artifacts/review/independent-finish-20261012-23b6e119/manifest.json": {
+      "sha256": "21e9b0c72433f8f5d84543175b9e8d181f1161e98593a1c9a45051400305e242",
+      "bytes": 22634
+    },
+    "artifacts/formal/foundation-refreshed-20261012/manifest.json": {
+      "sha256": "0e0cee7b6ecfe26e6bc312f23587150da9fd7cb972f36e505439bbac17104cfb",
+      "bytes": 71379
+    },
+    "artifacts/formal/active_foundation.json": {
+      "sha256": "7c429c06fcf80be6dcd7d1200076024757439b3cd16e3b51afe70f91e8c8b129",
+      "bytes": 1736
+    },
+    "artifacts/validation/F02-F03-actual-published-slice-checks-e519df2d/command.json": {
+      "sha256": "11cd42b7e6f65e322504dc97591e36fba9c2e4934a48f9d7cc1f5b3b2e458fa5",
+      "bytes": 796,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_published_slices.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 413.01991180000005,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F02-F03-actual-published-slice-checks-e519df2d\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F02-F03-actual-published-slice-checks-e519df2d\\stderr.log"
+    },
+    "artifacts/formal/reduction-exact-published-20261012/manifest.json": {
+      "sha256": "8907156be148d50ea13f46508acbc4f70d539c7e20d38f7f649fdb72c966d225",
+      "bytes": 32447
+    },
+    "artifacts/review/residual_delivery-f65e1805.json": {
+      "sha256": "2cfb161229b00b5b5f2ec6bb65269c817a693d2ecf1fe338a8f1ddcb70b0d53c",
+      "bytes": 8200
+    },
+    "artifacts/validation/F02-residual-candidate-sum-scope-repair-0f08746b/command.json": {
+      "sha256": "db1db68e1a11f4221269e5fe01319c0ae543bc24eb300d398d50180a78135133",
+      "bytes": 850,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_residual_candidate.py",
+        "../../work/formal/ReductionResidual.lean"
+      ],
+      "exit_code": 0,
+      "wall_s": 61.94992739999907,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F02-residual-candidate-sum-scope-repair-0f08746b\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F02-residual-candidate-sum-scope-repair-0f08746b\\stderr.log"
+    },
+    "artifacts/formal/aging-film-published-20261012/manifest.json": {
+      "sha256": "b901f5d1769de7c828d25b36d4d51caa41ced8e5995e379c27f6a9c9d1102cae",
+      "bytes": 23434
+    },
+    "artifacts/validation/P01-activate-refreshed-foundation-2ff9cb46/command.json": {
+      "sha256": "aaf056327c7ca7a78793673650061fc5e571833d855e4633c9b9790c1fbb6287",
+      "bytes": 851,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/activate_foundation.py",
+        "artifacts/formal/foundation-refreshed-20261012/manifest.json"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.4211542000011832,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-activate-refreshed-foundation-2ff9cb46\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-activate-refreshed-foundation-2ff9cb46\\stderr.log"
+    },
+    "artifacts/validation/P01-independent-actual17-proof-worker-frozen-scope-d433847b/command.json": {
+      "sha256": "757118c683187a8c07e92e491f3a157de58dfb44c7c57b563e82fac6c5d7a25c",
+      "bytes": 839,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/review_proof_run_independent.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.5791838000004645,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-independent-actual17-proof-worker-frozen-scope-d433847b\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-independent-actual17-proof-worker-frozen-scope-d433847b\\stderr.log"
+    },
+    "artifacts/review/proof-run-independent-225d1f8b/manifest.json": {
+      "sha256": "9d33c87aece5c82429aabe668d3f8b9d45fed8e9be7c592e040fc0153d75d2ab",
+      "bytes": 26658
+    },
+    "artifacts/review/two-user-Runs-replay-independent-8c4677ad/manifest.json": {
+      "sha256": "c0dd2ebb30a78c8f8be38d2afa1a56bb25930e010c598e540378406b520cfe54",
+      "bytes": 50970
+    },
+    "artifacts/validation/C01-integrated-proof-backed-MPC-worker-a59a9fce/command.json": {
+      "sha256": "e098815830778f442e8092371d5961d9d8c87a3a70f9892368063ec3dcecce33",
+      "bytes": 886,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "demo",
+        "--scenario",
+        "mpc_loop",
+        "--out",
+        "artifacts/demo-MPC-20261012"
+      ],
+      "exit_code": 0,
+      "wall_s": 69.70766850000109,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\C01-integrated-proof-backed-MPC-worker-a59a9fce\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\C01-integrated-proof-backed-MPC-worker-a59a9fce\\stderr.log"
+    },
+    "artifacts/validation/C01-independent-MPC-faithful-payload-review-f24c2797/command.json": {
+      "sha256": "b08f12a9324f6f27d506da5bb774a661a302377fabb7dd344babc020c2076ebd",
+      "bytes": 830,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/review_integrated_mpc_independent.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 20.864849699999468,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\C01-independent-MPC-faithful-payload-review-f24c2797\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\C01-independent-MPC-faithful-payload-review-f24c2797\\stderr.log"
+    },
+    "artifacts/review/MPC-worker-independent-49eb3017/manifest.json": {
+      "sha256": "5a81ee3b707bcf166a79749dbddb5dc4179b73fa2b203f210de7537f7920a4d3",
+      "bytes": 31646
+    },
+    "artifacts/validation/W00-forecast-actual-HTTP-2fbdeda8/command.json": {
+      "sha256": "3f011b67d456d93fd883db925fc91b4ca9098391c9456572890e0d1259dcae56",
+      "bytes": 837,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/validate_forecast_http.py",
+        "--source-run-id",
+        "nh-6ec6eee11f2c46308445237771c5feea"
+      ],
+      "exit_code": 0,
+      "wall_s": 49.92789409999932,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\W00-forecast-actual-HTTP-2fbdeda8\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\W00-forecast-actual-HTTP-2fbdeda8\\stderr.log"
+    },
+    "artifacts/validation/W00-independent-HTTP-query-parameter-identity-review-d645921c/command.json": {
+      "sha256": "d40d16d3409336dc1987e11532630942d22479c882792e4c3b796f8a85f73dbd",
+      "bytes": 847,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/review_forecast_HTTP_independent.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.6069664000024204,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\W00-independent-HTTP-query-parameter-identity-review-d645921c\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\W00-independent-HTTP-query-parameter-identity-review-d645921c\\stderr.log"
+    },
+    "artifacts/review/forecast-HTTP-independent-e576d66b/manifest.json": {
+      "sha256": "b77097f824d6ab5ea16c8e526f95881767ebd3664ccb7646d3628bd26a3c3e78",
+      "bytes": 47285
+    },
+    "artifacts/validation/W00-independent-two-user-Runs-and-replay-review-43accdf5/command.json": {
+      "sha256": "9a19e919e1dd8d38c264609e2daad07348db8f00d8aa53b203287232ce09e687",
+      "bytes": 848,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/review_two_user_Runs_and_replay_independent.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.8593638999991526,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\W00-independent-two-user-Runs-and-replay-review-43accdf5\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\W00-independent-two-user-Runs-and-replay-review-43accdf5\\stderr.log"
+    },
+    "artifacts/validation/W01-build-current-async-and-proof-ui-993787f8/command.json": {
+      "sha256": "acba5d8f54e8d428bfeb3f625036bd423f32c6f968228c49634329c792b43b63",
+      "bytes": 796,
+      "argv": [
+        "npm.cmd",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "wall_s": 46.80343809999977,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\W01-build-current-async-and-proof-ui-993787f8\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\W01-build-current-async-and-proof-ui-993787f8\\stderr.log"
+    },
+    "artifacts/web/frontend_build_proof_manifest.json": {
+      "sha256": "6bb0c0bcf2498bc7b9b9cc1fb24f0e13687ddcae51ae097bb8671897fbe79f14",
+      "bytes": 2236
+    },
+    "artifacts/validation/W01-current-UI-observations-and-download-903286be/command.json": {
+      "sha256": "101b6f8b7e897a43e43bd52cd918590d31f351cebdcff651858442f23dc0d5fc",
+      "bytes": 810,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/record_current_ui_observations.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.28087910000249394,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\W01-current-UI-observations-and-download-903286be\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\W01-current-UI-observations-and-download-903286be\\stderr.log"
+    },
+    "artifacts/ui/proof-current-f31e71d0/observations.json": {
+      "sha256": "e64d0fd8989f8a07c57dfcbf84fe5e8ac596a11c6a9ebaaed74fdfd0424d968f",
+      "bytes": 6158
+    },
+    "artifacts/review/public-v3-independent-0618a9ae/manifest.json": {
+      "sha256": "c0f45891b5a20d3fd6b5669cc97d398ec965381082d54b512c197dc62bf4367d",
+      "bytes": 12432
+    },
+    "artifacts/validation/D01-independent-public-v3-byte-review-corrected-28fc92dc/command.json": {
+      "sha256": "7539dd25e04ed8cb817047236d98cf00f08759775045aabac744c55e4968d1ac",
+      "bytes": 833,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/review_public_v3_independent.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.2893300999994608,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-independent-public-v3-byte-review-corrected-28fc92dc\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-independent-public-v3-byte-review-corrected-28fc92dc\\stderr.log"
+    },
+    "artifacts/validation/F04-current-complete-core-gate-af41ed1e/command.json": {
+      "sha256": "185a7e855730613420835a7008bbefc304a61d2082db0cbbdf56d5b8fa1b69b6",
+      "bytes": 902,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "core",
+        "--out",
+        "artifacts/formal/core-final-continuation-20261012"
+      ],
+      "exit_code": 2,
+      "wall_s": 0.3232927999997628,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F04-current-complete-core-gate-af41ed1e\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F04-current-complete-core-gate-af41ed1e\\stderr.log"
+    },
+    "artifacts/formal/core-final-continuation-20261012/manifest.json": {
+      "sha256": "5cd1cd64b1d18b1a3a6568b8fc7abc7fa24c4684643aa30a384fdb2fc3e8ff04",
+      "bytes": 339
+    }
+  },
+  "current_ui": {
+    "path": "artifacts/ui/acceptance.json",
+    "sha256": "7b8edf2ecc6614552c11c64aedb847955fc4048aee54e07bed45996245171e8e",
+    "status": "partial"
+  },
+  "next_command": ".venv/Scripts/python.exe tools/run_evidence.py --label F02-residual-publication-inputs --timeout 60 -- .venv/Scripts/python.exe tools/inspect_residual_publication_inputs.py",
+  "source_scope": "No business source changes after full346 test; new evidence tools/docs only"
+}

@@ -1,0 +1,45 @@
+{
+  "suite": "foundation",
+  "status": "blocked",
+  "exit_code": 2,
+  "checked": false,
+  "commands": [
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-10T00:52:37.138601+00:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_s": 20.371,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\foundation-after-lean\\version.log"
+    }
+  ],
+  "evidence": [],
+  "reason": "Lean version/toolchain cannot be resolved",
+  "generated_at_utc": "2026-10-10T00:52:35.340667+00:00",
+  "source_hashes": {
+    "Naheng\\Chemistry\\Balance.lean": "f32cda0a269dce17cf9024766e625a1076dff6e4ae2c3c740be84807aba533cb",
+    "Naheng\\Chemistry\\Reaction.lean": "d47522b598362b8cf24c217e0184b684d31d41d509d8613f452966cc4f770843",
+    "Naheng\\Chemistry\\Sites.lean": "01b8398b84eb930335a4eeb3058a79e8c6433aea069484cad5ceef1c879c77aa",
+    "Naheng\\Chemistry\\Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+    "Naheng\\Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+    "Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8"
+  },
+  "targets": [
+    "Naheng.Chemistry.element_stoichiometry_balanced",
+    "Naheng.Chemistry.charge_stoichiometry_balanced",
+    "Naheng.Chemistry.weighted_rate_from_ports",
+    "Naheng.Chemistry.element_rate_from_ports",
+    "Naheng.Chemistry.charge_rate_from_ports",
+    "Naheng.Chemistry.site_lower_boundary",
+    "Naheng.Chemistry.site_upper_boundary",
+    "Naheng.Chemistry.constant_rate_trajectory_invariant"
+  ],
+  "audit": null,
+  "toolchain_lock": "leanprover/lean4:v4.19.0"
+}

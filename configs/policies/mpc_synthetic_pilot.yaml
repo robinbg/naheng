@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "policy_id": "nominal-mpc-synthetic-pilot-v1",
+  "provenance_type": "synthetic",
+  "scope": "Standalone receding-loop engineering acceptance; not external cell validation",
+  "seed": 20261012,
+  "filter_particles": 8,
+  "replanning_steps": 3,
+  "initial_soc": 0.6,
+  "initial_temperature_K": 298.15,
+  "parameters": {
+    "current_limit_A": 0.2,
+    "soc_min": 0.10,
+    "soc_max": 0.95,
+    "max_dod": 0.7,
+    "soc_bands": [[0.2, 0.2, 0.2], [0.8, 0.2, 0.2], [1.0, 0.2, 0.2]],
+    "thermal_min_W": -0.2,
+    "thermal_max_W": 0.1,
+    "nominal_terminal_buffer": 0.001,
+    "max_iterations": 25,
+    "max_candidate_evaluations": 120,
+    "wall_budget_s": 25,
+    "tariff_source": "declared_synthetic_time_schedule"
+  },
+  "schedule": [
+    {"duration_s": 30, "buy_price_per_kWh": 0.05, "sell_price_per_kWh": 0.04, "ambient_K": 298.15},
+    {"duration_s": 30, "buy_price_per_kWh": 0.15, "sell_price_per_kWh": 0.40, "ambient_K": 298.20},
+    {"duration_s": 30, "buy_price_per_kWh": 0.15, "sell_price_per_kWh": 0.20, "ambient_K": 298.15},
+    {"duration_s": 30, "buy_price_per_kWh": 0.05, "sell_price_per_kWh": 0.04, "ambient_K": 298.20},
+    {"duration_s": 30, "buy_price_per_kWh": 0.15, "sell_price_per_kWh": 0.40, "ambient_K": 298.15}
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "utc": "2026-10-16T03:15:14.801118+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/progress/session-close-20261016-b/observed-state.json": {
+      "sha256": "099206d7a880754cb05392dac773a7e68fe84a4019a01a09728b13be427260e5"
+    },
+    "artifacts/validation/A02-offline-VM-canaries-r6-initial-namespace-credential-readback-3573a995/command.json": {
+      "sha256": "486b411bb590229757c66dc6ba35f75b4194eb545314a0c0e4c8a574a9d9c19c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/boot_owned_canary_r6.py"
+      ],
+      "wall_s": 199.20187110000006,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-frozen-learned-events-actual-counterexample-replay-and-source-binding-f1441279/command.json": {
+      "sha256": "54ee13936984f755b63a117b224fde477ce24afaef7fd1a5a4a8f7401fc0f60c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/prepare_actual_loop_sources.py"
+      ],
+      "wall_s": 4.9579814999997325,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/a02-delegated-backend-20261016-a/actual-loop-sources-784c0f2a7989/result.json": {
+      "sha256": "641031512c4f7962dad72694df908df22aa5c72dad7daf27e7e8bcc92ca72660"
+    },
+    "artifacts/validation/A02-existing-public-payload-hardlinks-small-readonly-blob-views-37384311/command.json": {
+      "sha256": "870a21e1805ce0d813659bf68b1772f3536d1e0e259e718b284003dfafe6ea42",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/prepare_blob_views.py"
+      ],
+      "wall_s": 11.862308800000392,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-Linux-runtime-selected-size-no-extraction-1783be45/command.json": {
+      "sha256": "e652dc6d8ac64422522ce00e1fc6168d76483320e98a383716c0b255e0a2cdd7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/measure_linux_runtime.py"
+      ],
+      "wall_s": 10.447621500003152,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-fixed-40-source-proof-seed-with-readonly-blobs-8e542c61/command.json": {
+      "sha256": "3287af6190194a7209bb572f5c8620a871df436f3e28540c0fe99183466f1f2b",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/prepare_proof_seed.py"
+      ],
+      "wall_s": 1.5925152999989223,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/a02-delegated-backend-20261016-a/utf8-fix-not-yet-executed.json": {
+      "sha256": "36704a69be49941877c732c02785d2fbf6ce3cee05335a16bafb19fa5ee819c5"
+    },
+    "artifacts/handoff/a02-delegated-backend-20261016-a/real-outer-credential-validator-controls.json": {
+      "sha256": "736fc30b1c0d6b3509f0b993151f55452870df280218ebc8a5db2248e99562a3"
+    },
+    "artifacts/validation/A02-real-stable-libzstd-stream-buffer-and-corruption-controls-96bc572d/command.json": {
+      "sha256": "32c50a374c052ddc949b9294712f8a4e2cc1e794e06799620c48dc11b676e22c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/check_zstd_decoder.py"
+      ],
+      "wall_s": 57.279703600001085,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

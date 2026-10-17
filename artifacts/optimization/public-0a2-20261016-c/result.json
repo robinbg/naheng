@@ -1,0 +1,543 @@
+{
+  "exit_code": 0,
+  "status": "completed",
+  "within_wall_budget": true,
+  "source_unchanged": true,
+  "source_check_error": null,
+  "requested_queries": 36,
+  "actual_reserved_queries": 36,
+  "completed_results": 2,
+  "unknown_results": 34,
+  "high_calls": 24,
+  "best_training_candidate": {
+    "candidate_id": "9e010dccd064768f17330f92ca64b8464c4d6f2d0e5d91d3bb290d5597e75ed4",
+    "parameters": {
+      "charge_high_A": 0.009791852774330874,
+      "charge_low_A": 0.008309532664801311,
+      "cooling_permission_W": 0.013588401728491455,
+      "cutoff_voltage_V": 3.3337525991139687,
+      "discharge_high_A": 0.018058015253796036,
+      "discharge_low_A": 0.007712673434864286,
+      "heating_permission_W": 0.0015022740484366848,
+      "max_dod": 0.001686187589503434,
+      "rest_duration_s": 2.651404524189501
+    },
+    "x": [
+      0.5659877311942394,
+      0.16496661891437936,
+      0.6794200864245727,
+      0.7350103964558744,
+      0.8612868038425741,
+      0.3927227862386905,
+      0.07511370242183424,
+      0.8415088835875929,
+      0.5302809048379002
+    ],
+    "selection": "failure_dominated_high_fidelity_probe",
+    "low_failure_probe_of": null,
+    "failed_low_attempts": 11,
+    "completed_low_attempts": 1,
+    "low_failure_is_physical_label": false,
+    "multifidelity_discrepancy_identified": false,
+    "fitted_models": {
+      "utility": {
+        "model": "rho_times_low_plus_fitted_discrepancy",
+        "rho": 1.0,
+        "paired_count": 0,
+        "low": {
+          "kind": "RBF_GP",
+          "x": [
+            [
+              0.6657057564427216,
+              0.3212683270522973,
+              0.6220151495450225,
+              0.9061165942913849,
+              0.4362722690748259,
+              0.5051375596569941,
+              0.6786066769456319,
+              0.13621773787178784,
+              0.6384049802125009
+            ]
+          ],
+          "y": [
+            3.0302705698157835e-09
+          ],
+          "length_scales": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "mean": 3.0302705698157835e-09,
+          "scale": 1e-06,
+          "noise_variance_normalized": 1e-06,
+          "fit_status": "fitted_fixed_initial_kernel",
+          "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+        },
+        "discrepancy": {
+          "kind": "RBF_GP",
+          "x": [],
+          "y": [],
+          "length_scales": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "mean": 0.0,
+          "scale": 0.001,
+          "noise_variance_normalized": 1e-06,
+          "fit_status": "prior_no_observations",
+          "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+        },
+        "limitations": [
+          "fixed fitted hyperparameters",
+          "independence approximation between low GP and discrepancy",
+          "no calibration or independent operational risk guarantee"
+        ]
+      },
+      "constraint": {
+        "model": "rho_times_low_plus_fitted_discrepancy",
+        "rho": 1.0,
+        "paired_count": 0,
+        "low": {
+          "kind": "RBF_GP",
+          "x": [
+            [
+              0.6657057564427216,
+              0.3212683270522973,
+              0.6220151495450225,
+              0.9061165942913849,
+              0.4362722690748259,
+              0.5051375596569941,
+              0.6786066769456319,
+              0.13621773787178784,
+              0.6384049802125009
+            ]
+          ],
+          "y": [
+            -1e-12
+          ],
+          "length_scales": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "mean": -1e-12,
+          "scale": 1e-06,
+          "noise_variance_normalized": 1e-06,
+          "fit_status": "fitted_fixed_initial_kernel",
+          "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+        },
+        "discrepancy": {
+          "kind": "RBF_GP",
+          "x": [],
+          "y": [],
+          "length_scales": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "mean": 0.0,
+          "scale": 0.001,
+          "noise_variance_normalized": 1e-06,
+          "fit_status": "prior_no_observations",
+          "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+        },
+        "limitations": [
+          "fixed fitted hyperparameters",
+          "independence approximation between low GP and discrepancy",
+          "no calibration or independent operational risk guarantee"
+        ]
+      }
+    },
+    "model_feasibility_is_risk_certificate": false,
+    "fidelity": "high",
+    "reservation_id": "721236b187614122b0648793db278a70",
+    "ordinal": 26,
+    "protocol_sha256": "472dc9a7b44eb3895713f48a81f6f49f892c3a54ec8c6d9bd41c97623e797e8a",
+    "timeout_s": 120.0,
+    "result": {
+      "status": "completed",
+      "utility": 9.150322435911632e-09,
+      "constraint_margin": -1e-12,
+      "cost_s": 31.168564500003413,
+      "source_id": "fixed-training-full-policy-world-2026101401",
+      "run_id": "full-policy-721236b187614122b0648793db278a70",
+      "evidence_sha256": "06d950d35c605abed67f85fda40d00e55fa0ed60aa97c785fb6e8f414165f93d",
+      "reason": null
+    }
+  },
+  "diagnostic_best_training_candidate": {
+    "candidate_id": "9e010dccd064768f17330f92ca64b8464c4d6f2d0e5d91d3bb290d5597e75ed4",
+    "parameters": {
+      "charge_high_A": 0.009791852774330874,
+      "charge_low_A": 0.008309532664801311,
+      "cooling_permission_W": 0.013588401728491455,
+      "cutoff_voltage_V": 3.3337525991139687,
+      "discharge_high_A": 0.018058015253796036,
+      "discharge_low_A": 0.007712673434864286,
+      "heating_permission_W": 0.0015022740484366848,
+      "max_dod": 0.001686187589503434,
+      "rest_duration_s": 2.651404524189501
+    },
+    "x": [
+      0.5659877311942394,
+      0.16496661891437936,
+      0.6794200864245727,
+      0.7350103964558744,
+      0.8612868038425741,
+      0.3927227862386905,
+      0.07511370242183424,
+      0.8415088835875929,
+      0.5302809048379002
+    ],
+    "selection": "failure_dominated_high_fidelity_probe",
+    "low_failure_probe_of": null,
+    "failed_low_attempts": 11,
+    "completed_low_attempts": 1,
+    "low_failure_is_physical_label": false,
+    "multifidelity_discrepancy_identified": false,
+    "fitted_models": {
+      "utility": {
+        "model": "rho_times_low_plus_fitted_discrepancy",
+        "rho": 1.0,
+        "paired_count": 0,
+        "low": {
+          "kind": "RBF_GP",
+          "x": [
+            [
+              0.6657057564427216,
+              0.3212683270522973,
+              0.6220151495450225,
+              0.9061165942913849,
+              0.4362722690748259,
+              0.5051375596569941,
+              0.6786066769456319,
+              0.13621773787178784,
+              0.6384049802125009
+            ]
+          ],
+          "y": [
+            3.0302705698157835e-09
+          ],
+          "length_scales": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "mean": 3.0302705698157835e-09,
+          "scale": 1e-06,
+          "noise_variance_normalized": 1e-06,
+          "fit_status": "fitted_fixed_initial_kernel",
+          "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+        },
+        "discrepancy": {
+          "kind": "RBF_GP",
+          "x": [],
+          "y": [],
+          "length_scales": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "mean": 0.0,
+          "scale": 0.001,
+          "noise_variance_normalized": 1e-06,
+          "fit_status": "prior_no_observations",
+          "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+        },
+        "limitations": [
+          "fixed fitted hyperparameters",
+          "independence approximation between low GP and discrepancy",
+          "no calibration or independent operational risk guarantee"
+        ]
+      },
+      "constraint": {
+        "model": "rho_times_low_plus_fitted_discrepancy",
+        "rho": 1.0,
+        "paired_count": 0,
+        "low": {
+          "kind": "RBF_GP",
+          "x": [
+            [
+              0.6657057564427216,
+              0.3212683270522973,
+              0.6220151495450225,
+              0.9061165942913849,
+              0.4362722690748259,
+              0.5051375596569941,
+              0.6786066769456319,
+              0.13621773787178784,
+              0.6384049802125009
+            ]
+          ],
+          "y": [
+            -1e-12
+          ],
+          "length_scales": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "mean": -1e-12,
+          "scale": 1e-06,
+          "noise_variance_normalized": 1e-06,
+          "fit_status": "fitted_fixed_initial_kernel",
+          "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+        },
+        "discrepancy": {
+          "kind": "RBF_GP",
+          "x": [],
+          "y": [],
+          "length_scales": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "mean": 0.0,
+          "scale": 0.001,
+          "noise_variance_normalized": 1e-06,
+          "fit_status": "prior_no_observations",
+          "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+        },
+        "limitations": [
+          "fixed fitted hyperparameters",
+          "independence approximation between low GP and discrepancy",
+          "no calibration or independent operational risk guarantee"
+        ]
+      }
+    },
+    "model_feasibility_is_risk_certificate": false,
+    "fidelity": "high",
+    "reservation_id": "721236b187614122b0648793db278a70",
+    "ordinal": 26,
+    "protocol_sha256": "472dc9a7b44eb3895713f48a81f6f49f892c3a54ec8c6d9bd41c97623e797e8a",
+    "timeout_s": 120.0,
+    "result": {
+      "status": "completed",
+      "utility": 9.150322435911632e-09,
+      "constraint_margin": -1e-12,
+      "cost_s": 31.168564500003413,
+      "source_id": "fixed-training-full-policy-world-2026101401",
+      "run_id": "full-policy-721236b187614122b0648793db278a70",
+      "evidence_sha256": "06d950d35c605abed67f85fda40d00e55fa0ed60aa97c785fb6e8f414165f93d",
+      "reason": null
+    }
+  },
+  "utility_model": {
+    "model": "rho_times_low_plus_fitted_discrepancy",
+    "rho": 1.0,
+    "paired_count": 0,
+    "low": {
+      "kind": "RBF_GP",
+      "x": [
+        [
+          0.6657057564427216,
+          0.3212683270522973,
+          0.6220151495450225,
+          0.9061165942913849,
+          0.4362722690748259,
+          0.5051375596569941,
+          0.6786066769456319,
+          0.13621773787178784,
+          0.6384049802125009
+        ]
+      ],
+      "y": [
+        3.0302705698157835e-09
+      ],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 3.0302705698157835e-09,
+      "scale": 1e-06,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "fitted_fixed_initial_kernel",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "discrepancy": {
+      "kind": "RBF_GP",
+      "x": [
+        [
+          0.5659877311942394,
+          0.16496661891437936,
+          0.6794200864245727,
+          0.7350103964558744,
+          0.8612868038425741,
+          0.3927227862386905,
+          0.07511370242183424,
+          0.8415088835875929,
+          0.5302809048379002
+        ]
+      ],
+      "y": [
+        6.120051866095848e-09
+      ],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 6.120051866095848e-09,
+      "scale": 1e-09,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "fitted_fixed_initial_kernel",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "limitations": [
+      "fixed fitted hyperparameters",
+      "independence approximation between low GP and discrepancy",
+      "no calibration or independent operational risk guarantee"
+    ]
+  },
+  "constraint_model": {
+    "model": "rho_times_low_plus_fitted_discrepancy",
+    "rho": 1.0,
+    "paired_count": 0,
+    "low": {
+      "kind": "RBF_GP",
+      "x": [
+        [
+          0.6657057564427216,
+          0.3212683270522973,
+          0.6220151495450225,
+          0.9061165942913849,
+          0.4362722690748259,
+          0.5051375596569941,
+          0.6786066769456319,
+          0.13621773787178784,
+          0.6384049802125009
+        ]
+      ],
+      "y": [
+        -1e-12
+      ],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": -1e-12,
+      "scale": 1e-06,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "fitted_fixed_initial_kernel",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "discrepancy": {
+      "kind": "RBF_GP",
+      "x": [
+        [
+          0.5659877311942394,
+          0.16496661891437936,
+          0.6794200864245727,
+          0.7350103964558744,
+          0.8612868038425741,
+          0.3927227862386905,
+          0.07511370242183424,
+          0.8415088835875929,
+          0.5302809048379002
+        ]
+      ],
+      "y": [
+        0.0
+      ],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 0.0,
+      "scale": 1e-09,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "fitted_fixed_initial_kernel",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "limitations": [
+      "fixed fitted hyperparameters",
+      "independence approximation between low GP and discrepancy",
+      "no calibration or independent operational risk guarantee"
+    ]
+  },
+  "elapsed_s": 432.6764752999952,
+  "protocol_sha256": "ca3b1385480e3872823add95ec43b97bb50a2b0c0119e06c0bfae9a92b800d8e",
+  "checkpoint_sha256": "e01cad25cf4c02b62d0167e81e4d37700daf3478579ed084c08389846129f361",
+  "scientific_N_added": 0,
+  "risk_certificate": false,
+  "physical_reference_calls": 0,
+  "A03_complete": false,
+  "scope": "Nine-coordinate policy in one fixed synthetic world; computational effort levels only",
+  "out": "<PROJECT_ROOT>\\artifacts\\optimization\\public-0a2-20261016-c"
+}

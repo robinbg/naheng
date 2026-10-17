@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-13T23:23:46.329353+00:00",
+  "task_id": "D02",
+  "status": "in_progress",
+  "required_acceptance_and_contracts_unchanged": true,
+  "actual_start_receipt": "artifacts/validation/D02-final-current-public-frozen-licensed-voltage-transfer-pilot-fc7f8ba3/command.json",
+  "actual_exit_code": 2,
+  "scientific_acceptance_complete": false
+}

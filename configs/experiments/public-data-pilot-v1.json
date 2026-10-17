@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "suite": "public-data",
+  "profile": "pilot",
+  "default_manifest": "data/splits/zenodo13836819-eight-provenance-20261013-c.json",
+  "default_manifest_sha256": "c86f34c674f77fe7972f614ad1b88d0cf37531dc51d457479b17b4f837a4b539",
+  "default_output_parent": "artifacts/public_validation",
+  "ridge_alpha": 1.0,
+  "max_gap_s": 60.0,
+  "batch_rows": 4096,
+  "worker_timeout_s": 120,
+  "worker_memory_limit_bytes": 8589934592,
+  "batch_wall_budget_s": 1800,
+  "independent_physical_sample_count": null,
+  "missing_physical_mapping_exit_code": 2,
+  "D02_complete": false,
+  "scope": "Frozen source-provenance voltage method transfer pilot; same-cell physical DFN comparison remains blocked"
+}

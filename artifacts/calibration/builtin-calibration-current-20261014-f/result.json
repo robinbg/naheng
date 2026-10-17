@@ -1,0 +1,607 @@
+{
+  "schema_version": 1,
+  "analysis_id": "e02-builtin-63af43a7e68a",
+  "exit_code": 0,
+  "calibration": {
+    "status": "PASS",
+    "reasons": [
+      "conditional_candidate_requires_explicit_new_run_adoption"
+    ],
+    "residual_statistics": {
+      "residuals": [
+        [
+          -0.03761167682347155,
+          -0.01245843318883999
+        ],
+        [
+          -0.007298132332358431,
+          0.03320384207705729
+        ],
+        [
+          -0.04358706543341695,
+          0.388138779292035
+        ],
+        [
+          -0.01111942427826973,
+          -0.11941332785215764
+        ]
+      ],
+      "mean_bias": [
+        -0.024904074716879165,
+        0.07236771508202366
+      ],
+      "covariance": [
+        [
+          0.0003368410294584757,
+          -0.0027182541500019052
+        ],
+        [
+          -0.0027182541500019052,
+          0.048406872600155026
+        ]
+      ],
+      "std": [
+        0.01835322940134721,
+        0.22001561899136848
+      ],
+      "observed_span_s": 30.0,
+      "interpretation": "empirical_combined_observation_and_model_residual",
+      "measurement_noise_identified": false
+    },
+    "candidate": {
+      "posterior": {
+        "snapshot_id": "calibrated-326467d32b3700b90925e0cd",
+        "run_id": "e02-builtin-63af43a7e68a",
+        "model_package_id": "research_base-v1",
+        "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+        "obs_until_s": 40.0,
+        "binding": {
+          "chemistry_id": "synthetic_two_site",
+          "model_id": "two_site_current_adapter_v1",
+          "model_package_id": "research_base-v1",
+          "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+          "source_id": "e02-synthetic-train-63af43a7e68a",
+          "source_revision": "synthetic-training-source-v1-63af43a7e68a",
+          "model_source_sha256": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+          "parameter_sha256": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+          "source_sha256": "f632ddbd088ad57072452cc657bf6bd61414680eac0e732109c05cccd7c73d4e",
+          "chemistry_identity_status": "declared_compatible",
+          "source_identity_status": "declared_compatible",
+          "provenance_type": "synthetic"
+        },
+        "source_snapshot_sha256": "47e5866cac50c9e533f318fafc203a91871dea2fa4f70814bd4608fda1209f14",
+        "state_names": [
+          "x1",
+          "x2",
+          "trapped_mol",
+          "reservoir_mol",
+          "temperature_K",
+          "rate_scale",
+          "side_rate_scale"
+        ],
+        "state_units": [
+          "1",
+          "1",
+          "mol",
+          "mol",
+          "K",
+          "1",
+          "1"
+        ],
+        "parameter_state_names": [
+          "rate_scale",
+          "side_rate_scale"
+        ],
+        "samples": [
+          [
+            0.9443666573651454,
+            0.42317086735584536,
+            0.00019497729748324202,
+            0.024821759605262447,
+            299.00668296407486,
+            0.9731653449781593,
+            1.0404686715427782
+          ],
+          [
+            0.6818597309925397,
+            0.2440308329420261,
+            0.00011612417986568445,
+            0.024900614321843637,
+            299.161554076424,
+            0.865433228996811,
+            1.5630150375585579
+          ],
+          [
+            0.27931065636352104,
+            0.17139127227956197,
+            5.524082426987072e-05,
+            0.024961403298368635,
+            299.283067911982,
+            1.0220871871585178,
+            1.2018386061240718
+          ],
+          [
+            0.7512415647963364,
+            0.8775103045759076,
+            0.0001679412054618185,
+            0.024848906593506685,
+            299.0222869600398,
+            0.8943073239022191,
+            1.3975210355038759
+          ],
+          [
+            0.4948424259532693,
+            0.7481729430661457,
+            0.000149401222490883,
+            0.024867365692347893,
+            299.3639410495739,
+            0.8828332702669944,
+            1.2336728354366295
+          ],
+          [
+            0.6205851382217382,
+            0.20461616475997188,
+            3.793571440118003e-05,
+            0.024978759960951405,
+            299.0438279897056,
+            1.1716709886877583,
+            1.2788578664530874
+          ],
+          [
+            0.4545499729694463,
+            0.7536765612765662,
+            9.251449722202182e-05,
+            0.024924253508576705,
+            299.32804564202615,
+            1.1753342479636304,
+            1.2648065189157194
+          ],
+          [
+            0.688390377054602,
+            0.7096541750846378,
+            5.108938156482432e-05,
+            0.02496559596083776,
+            299.23525748301745,
+            1.0217715262191345,
+            0.6309299920574176
+          ]
+        ],
+        "weights": [
+          1.5563008812716232e-21,
+          0.29612756151183706,
+          8.517176130925167e-12,
+          1.7310170908063827e-10,
+          0.25752702239745,
+          0.019566384694894384,
+          0.4265589774097435,
+          0.0002200538044561783
+        ],
+        "derived_observables": [
+          {
+            "name": "soc",
+            "unit": "1",
+            "particle_values": [
+              0.7358883413614253,
+              0.5067281717723342,
+              0.2361429027299374,
+              0.8017490607081649,
+              0.5961746327984199,
+              0.4541975488370317,
+              0.5742006082922942,
+              0.6968958962666164
+            ]
+          }
+        ],
+        "mean": [
+          0.5355392181993104,
+          0.5905862698837315,
+          0.00011307881874137653,
+          0.024903678735695916,
+          299.28240540775255,
+          1.008131640221072,
+          1.3452319627133897,
+          0.5575580388730788
+        ],
+        "quantiles": [
+          [
+            0.29985169826588653,
+            0.46604049121452473,
+            0.6715592851133888
+          ],
+          [
+            0.20866688817920137,
+            0.7371882406590902,
+            0.753031443194093
+          ],
+          [
+            5.7880952527435604e-05,
+            9.679227432623869e-05,
+            0.00014294033885230414
+          ],
+          [
+            0.024852490508430535,
+            0.024894590088983325,
+            0.0249225791234159
+          ],
+          [
+            299.0559269324582,
+            299.30247852304103,
+            299.35697179888837
+          ],
+          [
+            0.865433228996811,
+            0.8792080508020046,
+            1.1749048513889624
+          ],
+          [
+            1.207992159282617,
+            1.2513543900412203,
+            1.5350720117203387
+          ],
+          [
+            0.4595962248722552,
+            0.5358814170978701,
+            0.5919270561999433
+          ]
+        ],
+        "ess": 2.9731186694975955,
+        "identifiability": [
+          "site_composition_not_identified_by_single_voltage",
+          "side_reaction_rate_not_identified_by_short_trace",
+          "synthetic_parameter_prior_uncalibrated",
+          "initial_temperature_uniform_domain_prior_measurement_proposal",
+          "conditional_gaussian_likelihood_assumption",
+          "residual_scatter_not_identified_measurement_noise",
+          "finite_joint_particles_not_full_parameter_domain",
+          "posterior_need_not_narrow",
+          "runtime_forward_and_source_freshness_not_verified_here"
+        ]
+      },
+      "parent_content_sha256": "12e214edefdbb7daf6f89078062a4f41876be818a4cf5bdc2e2bac4c744423dc",
+      "calibration_input_sha256": "e70528f8c0871460bae519137ca96a51912ace2a3e4a9ad8722e106062255e14",
+      "noise_sha256": "187fc954b59a0c96e0f7ffd9bc0eb0fe6dcdf13e1d8ec2cea6ba3e12482fb4ea",
+      "noise_id": "synthetic-combined-error-assumption-63af43a7e68a",
+      "calibration_revision": "calibration-326467d32b3700b90925e0cd",
+      "scope": "conditional_gaussian_joint_particle_candidate",
+      "requires_explicit_new_run_adoption": true,
+      "source_files_freshness_verified_here": false,
+      "actual_forward_dynamics_verified_here": false,
+      "operating_risk_certificate": false
+    },
+    "candidate_content_sha256": "ebf951ba31f7833dd6520617c47d9a103fc34d485c84940503eadd793b321875",
+    "posterior_content_sha256": "ef5908894de8f054a4d4c71e7b1a24c6ee39b1ea29a211bce14ee811f07786ff",
+    "posterior_contract": {
+      "schema_version": 1,
+      "snapshot_id": "calibrated-326467d32b3700b90925e0cd",
+      "run_id": "e02-builtin-63af43a7e68a",
+      "model_package_id": "research_base-v1",
+      "parameter_revision": "synthetic-prior-v2-a9a3ca96b430",
+      "obs_until_s": 40.0,
+      "state_names": [
+        "x1",
+        "x2",
+        "trapped_mol",
+        "reservoir_mol",
+        "temperature_K",
+        "rate_scale",
+        "side_rate_scale"
+      ],
+      "state_units": [
+        "1",
+        "1",
+        "mol",
+        "mol",
+        "K",
+        "1",
+        "1"
+      ],
+      "samples": [
+        [
+          0.9443666573651454,
+          0.42317086735584536,
+          0.00019497729748324202,
+          0.024821759605262447,
+          299.00668296407486,
+          0.9731653449781593,
+          1.0404686715427782
+        ],
+        [
+          0.6818597309925397,
+          0.2440308329420261,
+          0.00011612417986568445,
+          0.024900614321843637,
+          299.161554076424,
+          0.865433228996811,
+          1.5630150375585579
+        ],
+        [
+          0.27931065636352104,
+          0.17139127227956197,
+          5.524082426987072e-05,
+          0.024961403298368635,
+          299.283067911982,
+          1.0220871871585178,
+          1.2018386061240718
+        ],
+        [
+          0.7512415647963364,
+          0.8775103045759076,
+          0.0001679412054618185,
+          0.024848906593506685,
+          299.0222869600398,
+          0.8943073239022191,
+          1.3975210355038759
+        ],
+        [
+          0.4948424259532693,
+          0.7481729430661457,
+          0.000149401222490883,
+          0.024867365692347893,
+          299.3639410495739,
+          0.8828332702669944,
+          1.2336728354366295
+        ],
+        [
+          0.6205851382217382,
+          0.20461616475997188,
+          3.793571440118003e-05,
+          0.024978759960951405,
+          299.0438279897056,
+          1.1716709886877583,
+          1.2788578664530874
+        ],
+        [
+          0.4545499729694463,
+          0.7536765612765662,
+          9.251449722202182e-05,
+          0.024924253508576705,
+          299.32804564202615,
+          1.1753342479636304,
+          1.2648065189157194
+        ],
+        [
+          0.688390377054602,
+          0.7096541750846378,
+          5.108938156482432e-05,
+          0.02496559596083776,
+          299.23525748301745,
+          1.0217715262191345,
+          0.6309299920574176
+        ]
+      ],
+      "weights": [
+        1.5563008812716232e-21,
+        0.29612756151183706,
+        8.517176130925167e-12,
+        1.7310170908063827e-10,
+        0.25752702239745,
+        0.019566384694894384,
+        0.4265589774097435,
+        0.0002200538044561783
+      ],
+      "mean": {
+        "x1": 0.5355392181993104,
+        "x2": 0.5905862698837315,
+        "trapped_mol": 0.00011307881874137653,
+        "reservoir_mol": 0.024903678735695916,
+        "temperature_K": 299.28240540775255,
+        "rate_scale": 1.008131640221072,
+        "side_rate_scale": 1.3452319627133897,
+        "soc": 0.5575580388730788
+      },
+      "quantiles": {
+        "x1": [
+          0.29985169826588653,
+          0.46604049121452473,
+          0.6715592851133888
+        ],
+        "x2": [
+          0.20866688817920137,
+          0.7371882406590902,
+          0.753031443194093
+        ],
+        "trapped_mol": [
+          5.7880952527435604e-05,
+          9.679227432623869e-05,
+          0.00014294033885230414
+        ],
+        "reservoir_mol": [
+          0.024852490508430535,
+          0.024894590088983325,
+          0.0249225791234159
+        ],
+        "temperature_K": [
+          299.0559269324582,
+          299.30247852304103,
+          299.35697179888837
+        ],
+        "rate_scale": [
+          0.865433228996811,
+          0.8792080508020046,
+          1.1749048513889624
+        ],
+        "side_rate_scale": [
+          1.207992159282617,
+          1.2513543900412203,
+          1.5350720117203387
+        ],
+        "soc": [
+          0.4595962248722552,
+          0.5358814170978701,
+          0.5919270561999433
+        ]
+      },
+      "ess": 2.9731186694975955,
+      "identifiability": [
+        "site_composition_not_identified_by_single_voltage",
+        "side_reaction_rate_not_identified_by_short_trace",
+        "synthetic_parameter_prior_uncalibrated",
+        "initial_temperature_uniform_domain_prior_measurement_proposal",
+        "conditional_gaussian_likelihood_assumption",
+        "residual_scatter_not_identified_measurement_noise",
+        "finite_joint_particles_not_full_parameter_domain",
+        "posterior_need_not_narrow",
+        "runtime_forward_and_source_freshness_not_verified_here"
+      ]
+    }
+  },
+  "discrepancy": {
+    "status": "within_declared_bounds",
+    "reasons": [
+      "threshold_flags_are_empirical_discrepancy_not_incident_probability",
+      "operating_distribution_calibration_not_verified_here",
+      "overlapping_windows_not_independent_trajectories",
+      "joint_whitened_norm_threshold_is_declared_policy_not_p_value",
+      "whitened_components_are_mixed_coordinates_not_physical_channel_attribution"
+    ],
+    "observations": [
+      {
+        "observation_id": "e02-builtin-63af43a7e68a-obs-1",
+        "timestamp_s": 10.0,
+        "residual": [
+          -0.03761167682347155,
+          -0.01245843318883999
+        ],
+        "standardized_innovation": [
+          -1.504467072938862,
+          -0.04983373275535996
+        ],
+        "whitened_innovation": [
+          -1.504467072938862,
+          -0.04983373275535996
+        ],
+        "mahalanobis_sq": 2.26590457447756,
+        "joint_exceeded": false,
+        "rolling_bias": [
+          -0.03761167682347155,
+          -0.01245843318883999
+        ],
+        "rolling_standardized_bias": [
+          -1.504467072938862,
+          -0.04983373275535996
+        ],
+        "window_count": 1,
+        "status": "UNKNOWN_insufficient_history",
+        "exceeded_channels": []
+      },
+      {
+        "observation_id": "e02-builtin-63af43a7e68a-obs-2",
+        "timestamp_s": 20.0,
+        "residual": [
+          -0.007298132332358431,
+          0.03320384207705729
+        ],
+        "standardized_innovation": [
+          -0.29192529329433725,
+          0.13281536830822915
+        ],
+        "whitened_innovation": [
+          -0.29192529329433725,
+          0.13281536830822915
+        ],
+        "mahalanobis_sq": 0.10286029892383539,
+        "joint_exceeded": false,
+        "rolling_bias": [
+          -0.02245490457791499,
+          0.010372704444108649
+        ],
+        "rolling_standardized_bias": [
+          -0.8981961831165997,
+          0.041490817776434596
+        ],
+        "window_count": 2,
+        "status": "UNKNOWN_insufficient_history",
+        "exceeded_channels": []
+      },
+      {
+        "observation_id": "e02-builtin-63af43a7e68a-obs-3",
+        "timestamp_s": 30.0,
+        "residual": [
+          -0.04358706543341695,
+          0.388138779292035
+        ],
+        "standardized_innovation": [
+          -1.743482617336678,
+          1.55255511716814
+        ],
+        "whitened_innovation": [
+          -1.743482617336678,
+          1.55255511716814
+        ],
+        "mahalanobis_sq": 5.45015902880013,
+        "joint_exceeded": false,
+        "rolling_bias": [
+          -0.029498958196415643,
+          0.13629472939341744
+        ],
+        "rolling_standardized_bias": [
+          -1.1799583278566257,
+          0.5451789175736698
+        ],
+        "window_count": 3,
+        "status": "within_declared_bounds",
+        "exceeded_channels": []
+      },
+      {
+        "observation_id": "e02-builtin-63af43a7e68a-obs-4",
+        "timestamp_s": 40.0,
+        "residual": [
+          -0.01111942427826973,
+          -0.11941332785215764
+        ],
+        "standardized_innovation": [
+          -0.4447769711307892,
+          -0.47765331140863054
+        ],
+        "whitened_innovation": [
+          -0.4447769711307892,
+          -0.47765331140863054
+        ],
+        "mahalanobis_sq": 0.4259792399479091,
+        "joint_exceeded": false,
+        "rolling_bias": [
+          -0.024904074716879165,
+          0.07236771508202366
+        ],
+        "rolling_standardized_bias": [
+          -0.9961629886751666,
+          0.28947086032809466
+        ],
+        "window_count": 4,
+        "status": "within_declared_bounds",
+        "exceeded_channels": []
+      }
+    ],
+    "input_sha256": "e70528f8c0871460bae519137ca96a51912ace2a3e4a9ad8722e106062255e14",
+    "noise_sha256": "187fc954b59a0c96e0f7ffd9bc0eb0fe6dcdf13e1d8ec2cea6ba3e12482fb4ea",
+    "joint_innovation_limit": 3.0,
+    "joint_threshold_scope": "declared_empirical_whitened_norm_not_probability",
+    "joint_exceedance_count": 0,
+    "empirical_scope": "Supplied nominal predictions, explicit conditional residual/noise assumption and overlapping-window bias diagnostics",
+    "incident_probability": null,
+    "operating_risk_certificate": false
+  },
+  "integration_verification": {
+    "status": "PASS",
+    "source_bytes_and_headers_match": true,
+    "initial_sensor_assimilation_recomputed": true,
+    "actual_parent_forward_predictions_recomputed": true,
+    "same_particle_SOC_recomputed": true,
+    "parents": 8,
+    "training_observations": 4,
+    "channels": [
+      "voltage_V",
+      "temperature_K"
+    ],
+    "model_binding_hashes": {
+      "configs/models/two_site_research.yaml": "1d9349afbfe8b0c5f15459d50374a6ca87ef090cd087c6d63111f9ea5545f932",
+      "src/naheng/models/degradation.py": "ab69e7a7d9cfabc2ee329ed63f20e30e09b2ef27f1df3378f25ff672a4ae5413",
+      "src/naheng/models/site_model.py": "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4",
+      "src/naheng/models/thermal.py": "26aa374a71e5542c178989dcfc03d6a35054d3dab46ba7c102d7441510e2f815"
+    },
+    "scope": "Declared synthetic sensor source and actual builtin numerical solves; not real sensors or validated solver error bounds"
+  },
+  "existing_run_or_filter_modified": false,
+  "independent_experiment": false,
+  "scope": "Conditional synthetic joint-particle calibration candidate; no automatic adoption, real-cell fit or risk certificate"
+}

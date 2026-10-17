@@ -1,0 +1,69 @@
+status: engineering_defaults_for_codex_to_implement_not_runtime_configuration_already_supported
+project: naheng
+default_profile: smoke
+resources:
+  worker_rule: max(1,min(4,floor(available_logical_cores/2)))
+  gpu_enabled: false
+  memory_soft_limit_gib: 8
+  artifact_soft_limit_gib: 5
+  single_simulation_timeout_s: 120
+  proof_attempt_timeout_s: 120
+  local_batch_wall_minutes: 30
+  session_local_compute_wall_minutes: 240
+  download_data_limit_gib: 1
+  network_retries: 2
+  dependency_install_separate_audit: true
+permissions:
+  remote_llm_enabled: false
+  paid_compute_enabled: false
+  external_publish_enabled: false
+  real_hardware_control_enabled: false
+  public_data_download: allowlisted_and_license_checked_within_budget
+  dependency_install: project_scoped_subject_to_environment_permissions
+profiles:
+  smoke:
+    seed: 20261009
+    synthetic_only: true
+    filter_particles: 64
+    forecast_paths: 16
+    trajectory_minutes: 30
+    minimum_ui_real_run: true
+    provides_risk_certificate: false
+  pilot:
+    seed: 20261010
+    filter_particles: 256
+    forecast_paths: 64
+    learning_initial_points: 12
+    learning_iterations: 24
+    reference_query_budget: 24
+    proof_attempt_budget: 40
+    independent_trajectories: 30
+    provides_small_risk_claim: false
+  release:
+    enabled_after_preregistration: true
+    risk_target: 0.01
+    confidence_alpha: 0.05
+    independent_trajectory_count: fixed_before_test_from_risk_target_power_and_alpha_allocation
+    fixed_zero_event_single_test_example_n: 299
+    multiple_testing_required: true
+    requires_external_sodium_data: true
+    requires_formal_core: true
+    requires_ET_EA_EL: true
+    optional_stopping_allowed: false
+required_source_fields_for_parameter:
+- name
+- value
+- unit
+- source_id
+- chemistry_id
+- scope
+- assumption_status
+unresolved:
+  deadline: null
+  official_scoring_rubric: null
+  official_cell_identity: null
+  target_repository: null
+  external_llm_provider: null
+  external_llm_budget: null
+  real_tariff_rules: null
+blocker_rule: 缺少未指定资料不阻塞本地可行任务；对应科学验收不得伪通过。预算耗尽记录检查点，不删除必需功能。

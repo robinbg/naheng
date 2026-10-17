@@ -1,0 +1,204 @@
+{
+  "utc": "2026-10-13T21:44:43.473610+00:00",
+  "exit_code": 0,
+  "code_hash": "556f9472aac248ea2fed7c5b8eaa668d1299c76757096633be45d7d6ba471ec4",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 20,
+    "in_progress": 7,
+    "todo": 18
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "docs/BASELINE_FRONTIER.md": {
+      "sha256": "27d95e6fa70c984a5fe1fa936af9913fc9db6ed5658d5e20ec300ae98e9a6c2b"
+    },
+    "src/naheng/control/fixed_baseline.py": {
+      "sha256": "e0730631dbb66726777c54939a6eef10a63bba037de468c7e40f56d3b823d3e6"
+    },
+    "src/naheng/runtime/baseline_frontier.py": {
+      "sha256": "7a358192a91156f6acc58735ab43db8fe70ce6bab92d4196c13a86a4a6d7e3f5"
+    },
+    "configs/experiments/fixed-baseline-frontier-v2.json": {
+      "sha256": "ed3100e13dff68a973a83c52a06277353cf310f46388c477816efcd8e0ca0f57"
+    },
+    "artifacts/handoff/fixed-baseline-buffer-20261014-a/handoff.json": {
+      "sha256": "41acc90075e2d8bc9502f6c953a99b177c939fa7a6c52c1061fb8475cebb9dea"
+    },
+    "artifacts/review/fixed-baseline-buffer-independent-20261014-a/handoff.json": {
+      "sha256": "7475ff4e725ad467906a414e244859abdbb66e894185d830a33adb8b21e3730a"
+    },
+    "artifacts/validation/C01-fixed-baseline-final-real-controls-ab618304/command.json": {
+      "sha256": "578be364f3cd3bf9462a6abbb7241696870a7a22200bed9ae3e2f93b32ca9ace",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_fixed_baseline.py",
+        "-q",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/.nh-fb-final-20261014-a"
+      ],
+      "wall_s": 21.97967300000164,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-public-frontier-training-freeze-paired-entry-regressions-first-07be3a33/command.json": {
+      "sha256": "430416a1e2f9b362f04ac0a816be867c5d2f91505127078ea33012bfe0936285",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_baseline_frontier.py",
+        "-q",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/.nh-frontier-tests-20261014-a"
+      ],
+      "wall_s": 24.085136400004558,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-final-family-frontier-case-identity-public-entry-tests-68af575d/command.json": {
+      "sha256": "c6580a2d7456d1fc2aea1cacecb7ae2055bd28a316e535ccfb1b44e9c8b43e80",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_baseline_frontier.py",
+        "-q",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/.nh-frontier-tests-20261014-d"
+      ],
+      "wall_s": 27.27608709999913,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-v2-current-buffer-family-source-calibration-050425ee/command.json": {
+      "sha256": "db66d6a99acf6328277b0c97830df368113186c6cfe6a06693e1fbc1a286ccb2",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "calibrate",
+        "--input",
+        "tests/fixtures/calibration_builtin/request.json",
+        "--out",
+        "artifacts/calibration/frontier-current-20261014-b"
+      ],
+      "wall_s": 2.508504500001436,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-twelve-fixed-baseline-family-tuning-freeze-new-paired-evaluation-5e7f94e9/command.json": {
+      "sha256": "8d68d8d3ecf1ef6cd29708a7a38051d5e17572d3cb50b9967840c9fbb5314836",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "baseline-frontier",
+        "--input",
+        "configs/experiments/fixed-baseline-frontier-v2.json",
+        "--calibration-dir",
+        "artifacts/calibration/frontier-current-20261014-b",
+        "--out",
+        "artifacts/baseline_frontier/public-twelve-20261014-b"
+      ],
+      "wall_s": 186.70574630000192,
+      "timed_out": false
+    },
+    "artifacts/baseline_frontier/public-twelve-20261014-b/manifest.json": {
+      "sha256": "08456ad94028aa53c1a76eab1a55987f4785c0d6934dc5c9598be97d505ef8c7"
+    },
+    "artifacts/baseline_frontier/public-twelve-20261014-b/freeze.json": {
+      "sha256": "b2b38a5c8ab0a0e94d41342755b87e06a071ac990d1232223a49a640f753ff76"
+    },
+    "artifacts/review/baseline-frontier-independent-20261014-a/handoff.json": {
+      "sha256": "aeeda4f3e34d872ebbf800a5323d73ba6e027b41a9a56f74eb41d3f451298be1"
+    },
+    "artifacts/review/baseline-frontier-independent-20261014-a/run-cf7ec0d8/command.json": {
+      "sha256": "903f0e385b1ea72074826ac257a502b1cc9a265194043e16047a097b915cbf06",
+      "exit_code": 0,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\artifacts\\review\\baseline-frontier-independent-20261014-a\\review_artifacts_caseid.py",
+        "artifacts/baseline_frontier/public-twelve-20261014-b",
+        "artifacts/validation/C01-twelve-fixed-baseline-family-tuning-freeze-new-paired-evaluation-5e7f94e9/command.json",
+        "artifact-report-current-v2-r1.json",
+        "artifacts/validation/C01-v2-current-buffer-family-source-calibration-050425ee/command.json"
+      ],
+      "wall_s": 1.3326999000055366,
+      "timed_out": false
+    },
+    "artifacts/review/baseline-frontier-independent-20261014-a/run-03ba11dd/command.json": {
+      "sha256": "4d1a58d0339a9c8804680e2fbbc4802d0b00252e1e4ecb07a5e0d23a86a29c63",
+      "exit_code": 0,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\artifacts\\review\\baseline-frontier-independent-20261014-a\\derive_costs.py",
+        "artifacts/baseline_frontier/public-twelve-20261014-b",
+        "cost-current-v2-r1"
+      ],
+      "wall_s": 0.542839499998081,
+      "timed_out": false
+    },
+    "artifacts/review/baseline-frontier-independent-20261014-a/run-40e90869/command.json": {
+      "sha256": "8ced514d0837944fd77fb02aeb5dcc651a8fb528205484334c7e39ee6b77c6cd",
+      "exit_code": 1,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\artifacts\\review\\baseline-frontier-independent-20261014-a\\review_artifacts.py",
+        "artifacts/baseline_frontier/public-eight-20261014-a",
+        "artifacts/validation/C01-eight-fixed-baseline-train-freeze-paired-evaluation-27bc42c2/command.json",
+        "artifact-report-first-r1.json"
+      ],
+      "wall_s": 0.6984647000062978,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-final-current-full-regression-fixed-frontier-0adec1eb/command.json": {
+      "sha256": "2dee1dfe3b6ed6562773fa01054d1c6478905e2e90d9a7fa6b0a482a216bb550",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "tools/run_current_source_regression.py"
+      ],
+      "wall_s": 234.38120500000514,
+      "timed_out": false
+    },
+    "artifacts/progress/E02-current-regression-b0fd6775/manifest.json": {
+      "sha256": "ae767c82e6dad59bd755a2f6ad30a227ab493dc1edeeca4d1e96593eec35ce54"
+    },
+    "artifacts/calibration/frontier-current-20261014-b/manifest.json": {
+      "sha256": "df95d5dbdbf285e31474d61c28f704d4a0209966cce94e941954de305833296f"
+    },
+    "artifacts/baseline_frontier/public-twelve-20261014-b/registration.json": {
+      "sha256": "ee754cb1407e7d2b28252a706ad4f50d4abfec2fd99ebe8193998e6ce9605438"
+    },
+    "artifacts/review/baseline-frontier-independent-20261014-a/artifact-report-current-v2-r1.json": {
+      "sha256": "acd429b4b0a1fa8b46dec186e149bdc4f2d14a167f22745a80cba8bf2e6b9453"
+    },
+    "artifacts/release-fixed-frontier-20261014-b.json": {
+      "sha256": "286353c27d1faeeed7951114cc250fbe86187fc6db1627996ee87fef411da891"
+    },
+    "artifacts/validation/R02-current-fixed-frontier-release-required-gates-8d3925d8/command.json": {
+      "sha256": "d54714e9ca969bd9729b5fea8b220fc59138162fba19a64a4a7d1ab589ae1cda",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "release",
+        "--out",
+        "artifacts/release-fixed-frontier-20261014-b.json"
+      ],
+      "wall_s": 0.670516400001361,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

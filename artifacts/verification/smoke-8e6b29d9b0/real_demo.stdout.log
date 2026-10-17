@@ -1,0 +1,7 @@
+{
+  "run_id": "nh-7465481b955746ac81a2c27eb2e3f2ae",
+  "state": "succeeded",
+  "artifact_dir": "<PROJECT_ROOT>\\artifacts\\runs\\nh-7465481b955746ac81a2c27eb2e3f2ae",
+  "report": "<PROJECT_ROOT>\\artifacts\\runs\\nh-7465481b955746ac81a2c27eb2e3f2ae\\report.html",
+  "scope": "synthetic numerical loop; proof and public data gates separate"
+}

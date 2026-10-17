@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 主张与证据边界
+    url: https://github.com/robinbg/naheng/blob/main/docs/CLAIMS.md
+    about: 先确认你要讨论的内容属于"工程通过""UNKNOWN"还是"科研未验收"
+  - name: 参与共建指南
+    url: https://github.com/robinbg/naheng/blob/main/CONTRIBUTING.md
+    about: 环境准备、跑测试、墙钟预算与主机负载的注意事项

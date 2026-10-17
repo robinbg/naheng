@@ -1,0 +1,13 @@
+{
+  "suite": "core",
+  "status": "blocked",
+  "exit_code": 2,
+  "checked": false,
+  "commands": [],
+  "evidence": [],
+  "reason": "Suite core has no implemented exported targets; requirements remain incomplete",
+  "generated_at_utc": "2026-10-12T06:27:55.543670+00:00",
+  "source_hashes": {},
+  "targets": [],
+  "audit": null
+}

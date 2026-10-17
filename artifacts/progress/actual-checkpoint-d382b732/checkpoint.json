@@ -1,0 +1,118 @@
+{
+  "utc": "2026-10-16T05:30:40.701960+00:00",
+  "exit_code": 0,
+  "code_hash": "ef4420d0b42dfaab99a962b9a0130f4bfa8fd225ef6ee86e7d98fec1c896d30a",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-P02-P03-reviewed-runtime-bundle-install-39a7d236/command.json": {
+      "sha256": "a499e921e08cae6b4540a53a069795b462bf8c307e41e047c44e5c048618870d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/apply_reviewed_runtime_bundle_20261016.py",
+        "--apply"
+      ],
+      "wall_s": 2.2669752999936463,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-framed-public-original-eight-3c331b5c/command.json": {
+      "sha256": "b258b9e418feba4438dbc4a2a867b3f3e9dab132278b8d8c08c913f481269ebd",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_discovery_loop.py",
+        "tests/integration/test_proof_worker_isolation.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "artifacts/test-temp/a02-framed-20261016-c"
+      ],
+      "wall_s": 7.480701699998463,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/P02-P03-public-affected-runtime-regression-bb4e7561/command.json": {
+      "sha256": "c73b8603d68aed3ea59c983dfaab4f111b18b95576e8dbcd98fd439d3a0269ab",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_forecast_jobs.py",
+        "tests/integration/test_lifecycle_feedback.py",
+        "tests/integration/test_api_flow.py",
+        "tests/integration/test_evidence_in_runtime.py",
+        "tests/integration/test_runtime_binding.py",
+        "tests/integration/test_reduction_runtime_link.py",
+        "tests/integration/test_evidence_withdrawal.py",
+        "tests/integration/test_mapping_review_history.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "<HOST_TEMP_ROOT>"
+      ],
+      "wall_s": 101.13382419999834,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/P03-real-browser-monitor-bias-saved-evidence-189b51a0/command.json": {
+      "sha256": "32c8fd456a4186f542406ed38231828b0acaa4289cdc0451d5262b5d00d44db7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/capture_p03_ui_evidence_20261016.py"
+      ],
+      "wall_s": 1.1320711000007577,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/p03-ef44-20261016-c/task.json": {
+      "sha256": "76510622da32bfec28bbcd3c5b67e54cfc6f430be4f166f15e746c9c56b1461a"
+    },
+    "artifacts/ui/p03-ef44-20261016-c/observations.json": {
+      "sha256": "717cf2a7e6d311d97036ae04d39049554fb819df177a574279546e4dd880b2d7"
+    },
+    "artifacts/validation/W01-public-monitor-frontend-build-readable-parent-b2d75a20/command.json": {
+      "sha256": "2316dd89e9d0db666912786988d2d1f4e79f3115c4b6e4dfe5396c9413521cc0",
+      "exit_code": 0,
+      "argv": [
+        "C:/Program Files/nodejs/npm.cmd",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 7.326229300000705,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A03-initial-low-actual-budget-diagnostic-d3cd6cf5/command.json": {
+      "sha256": "5a4b4234cf15708506b1e13c37ec809853c8cb1b257564a354201f5ca7a3b149",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/probe_a03_initial_low_20261016.py"
+      ],
+      "wall_s": 44.28336760000093,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/a03-exploration-recovery-20261016-a/manifest.json": {
+      "sha256": "1a220121d43a0ef20c7febb2b7c22b88c889f45209579ede5da2a99abf2a5fe0"
+    }
+  },
+  "full_acceptance_complete": false
+}

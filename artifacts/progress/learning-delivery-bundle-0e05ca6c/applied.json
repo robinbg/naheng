@@ -1,0 +1,153 @@
+{
+  "code_hash": "0a2ffc9f5a8020f5f6e62bda5caa1358521d12126acacb40f589b65ebb485d9d",
+  "before_code_hash": "ef4420d0b42dfaab99a962b9a0130f4bfa8fd225ef6ee86e7d98fec1c896d30a",
+  "changes": {
+    "src/naheng/learning/calibration_request.json": {
+      "before_sha256": null,
+      "after_sha256": "a87ca08d4827ad6cea342be8ff76115ab0a568d096cf723574b513bd4012c6af",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\calibration_request.json"
+    },
+    "src/naheng/learning/constrained_bo.py": {
+      "before_sha256": null,
+      "after_sha256": "9cd0abb58a8c4da4c08ea060c66d777192650fb4811b822d57f73600bc02328c",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\constrained_bo.py"
+    },
+    "src/naheng/learning/multifidelity.py": {
+      "before_sha256": null,
+      "after_sha256": "774075293f1cf1149463e04cacfcb8d861f339fc48cb984d64f09c58a112e9d4",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\multifidelity.py"
+    },
+    "src/naheng/learning/operational_oracle.py": {
+      "before_sha256": null,
+      "after_sha256": "c22b8f9c9665c552c99db67b86485e75cc6eab31eee244c2f619f1430684544f",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\operational_oracle.py"
+    },
+    "src/naheng/learning/pilot.py": {
+      "before_sha256": null,
+      "after_sha256": "6e0847ce44277f4e6ef4a958f552165aa65c0bfd180876cc7db2d33d388c4e60",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\pilot.py"
+    },
+    "src/naheng/learning/policy_space.py": {
+      "before_sha256": null,
+      "after_sha256": "c4cec28bfee935ca9434ddead67e2b7aeb8d289aac1e4cb7abff736771208abd",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\policy_space.py"
+    },
+    "src/naheng/learning/query_policy.py": {
+      "before_sha256": null,
+      "after_sha256": "1c59c4165a5cd7faa0ca6c203acf4bcab445641188d359ada3050bf00cac2db5",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\query_policy.py"
+    },
+    "src/naheng/learning/strategy_mpc.py": {
+      "before_sha256": null,
+      "after_sha256": "66c5b1049272e2c0ea1d9cd90bb83286eabd3c75689a166468174d0efd89efd5",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\strategy_mpc.py"
+    },
+    "src/naheng/learning/__init__.py": {
+      "before_sha256": null,
+      "after_sha256": "05a79058a56fbffdb49cc054a078915c98faedffec6bddfe07bebad4f5649594",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-low-incumbent-20261016-a\\candidate\\learning\\__init__.py"
+    },
+    "configs/experiments/pilot.yaml": {
+      "before_sha256": null,
+      "after_sha256": "30a7a2af650a3e0b11dfff52ee2ec15bf9cd75efa05983d57983a4f0bd6c6f8b",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\x01-preregistration-20261016-d\\candidate\\configs\\experiments\\pilot.yaml"
+    },
+    "configs/experiments/release.yaml": {
+      "before_sha256": null,
+      "after_sha256": "12fd1e81cc68f235ea297709c72977bc4ada8775133f62b97373ac5d1e8a05ae",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\x01-preregistration-20261016-d\\candidate\\configs\\experiments\\release.yaml"
+    },
+    "experiments/protocols/README.md": {
+      "before_sha256": null,
+      "after_sha256": "8de79014628def425abe66bb104bebd259acc320cb67874a50b485b2cd0fece0",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\x01-preregistration-20261016-d\\candidate\\experiments\\protocols\\README.md"
+    },
+    "src/naheng/experiments/__init__.py": {
+      "before_sha256": null,
+      "after_sha256": "8d53a77f3abd44ef4be10941240ce1c50ae1f734f88bd92a2b3bdde24ab684e4",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\x01-preregistration-20261016-d\\candidate\\src\\naheng\\experiments\\__init__.py"
+    },
+    "src/naheng/experiments/preregistration.py": {
+      "before_sha256": null,
+      "after_sha256": "b83c03f3d54a6714137b1ea9dc300c36eb783742439b83bd78fed7d59330d5c7",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\x01-preregistration-20261016-d\\candidate\\src\\naheng\\experiments\\preregistration.py"
+    },
+    "src/naheng/cli.py": {
+      "before_sha256": "3ccb966bada123f2e20bc3620d6e5e3be2d9ec60d6bf80d34b19f75e61863422",
+      "after_sha256": "1eeb07448682f47756da2064a7b847085d49561712f526070c8c9c3f90aff722",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\root-public-interfaces-20261016-c\\cli.py"
+    },
+    "tests/integration/test_learning_budget.py": {
+      "before_sha256": null,
+      "after_sha256": "f124994faec238ed988235507e76f2d256007c523b1337c6911eb96d710b7829",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-public-policy-20261016-c\\tests\\integration\\test_learning_budget.py"
+    },
+    "tools/compare_full_policy_queries_20261016.py": {
+      "before_sha256": "615cef104c49b4ea05e44342e3f912bd366a23b4a970dc1e8cb51ca95379a8fc",
+      "after_sha256": "5bae317a8cc60b36dbc87ddb851583ea932cb5ab1a729633e312ac2a7a713245",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\a03-comparison-recovery-20261016-a\\candidate\\tools\\compare_full_policy_queries_20261016.py"
+    },
+    ".dockerignore": {
+      "before_sha256": null,
+      "after_sha256": "b1eecfe412a81717cb54319c0e3614499487e731f1694896c2e911612423f831",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-20261016-c\\candidate\\.dockerignore"
+    },
+    "compose.yaml": {
+      "before_sha256": null,
+      "after_sha256": "2228bcd52f5e98aa7145f09206f576556537c67811443f7212ff60e3a27dab77",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-20261016-c\\candidate\\compose.yaml"
+    },
+    "Dockerfile": {
+      "before_sha256": null,
+      "after_sha256": "b032f5d5a5d86d9e65aa97d00bfbe873e6ea93bb3f413e55899a0b2b4fcab8e0",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-hardening-20261016-d\\candidate\\Dockerfile"
+    },
+    "docs/USER_GUIDE.md": {
+      "before_sha256": "ce459fe15b9a12e4964dee3a173436a1d8467f23b82ac192d875699480441a51",
+      "after_sha256": "9d51881976b5dc17cf17d517046a1e2940090bfa5e67cb102d7d83ac5af4294f",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-20261016-c\\candidate\\docs\\USER_GUIDE.md"
+    },
+    "tests/security/test_api_boundaries.py": {
+      "before_sha256": null,
+      "after_sha256": "900049cde6090e855ebf377a7cb59be4d7b0f6f864e06705db474431c5c67cb9",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-20261016-c\\candidate\\tests\\security\\test_api_boundaries.py"
+    },
+    "tests/security/test_delivery_boundaries.py": {
+      "before_sha256": null,
+      "after_sha256": "336579a0443b34167f78536abc3981de8a246262cd73bdd4235103defedfa373",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-20261016-c\\candidate\\tests\\security\\test_delivery_boundaries.py"
+    },
+    "tools/build_delivery.py": {
+      "before_sha256": null,
+      "after_sha256": "8ef0effc4e62c99a9d0694e04ab6903afafe47ff3aee2fc2f9698906116d6ecc",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-hardening-20261016-e\\candidate\\tools\\build_delivery.py"
+    },
+    "tools/build_frontend.py": {
+      "before_sha256": null,
+      "after_sha256": "06e409da36504d28ba4bfb5e823873f1fe58a3317f3a04598c2509dca833bf8c",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-20261016-c\\candidate\\tools\\build_frontend.py"
+    },
+    "tools/start_local.py": {
+      "before_sha256": "a5d4911882ac968be9130d1d01014a086355c9ca64e97fbbfabf13b3a6479ebb",
+      "after_sha256": "a54e5cbeea660ad38f859bc8a61bbbafb5ce4b2054381fcb6b626c7fae220a99",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-hardening-20261016-e\\candidate\\tools\\start_local.py"
+    },
+    "tests/security/test_reparse_packaging.py": {
+      "before_sha256": null,
+      "after_sha256": "bb34291459c0ff1ec3f1d2e09e5c127ef4fda10155995c4ad5ffd01fec5f7610",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-hardening-20261016-d\\candidate\\tests\\security\\test_reparse_packaging.py"
+    },
+    "tools/container_entry.py": {
+      "before_sha256": null,
+      "after_sha256": "88dfa988f9c7e93079c219ab0f2ec0a85646262fa7fadf6900a7a3202fe2ce6d",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-hardening-20261016-d\\candidate\\tools\\container_entry.py"
+    },
+    "tests/security/test_sensitive_packaging.py": {
+      "before_sha256": null,
+      "after_sha256": "855f7d285adb2df91a7080a1be5af83c65631c47807f34cb510bc6d4f2e38829",
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\r00-delivery-hardening-20261016-e\\candidate\\tests\\security\\test_sensitive_packaging.py"
+    }
+  },
+  "reset_user_changes": false,
+  "full_acceptance_complete": false
+}

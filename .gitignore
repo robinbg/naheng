@@ -1,0 +1,42 @@
+# The working tree ignores artifacts/ wholesale; this repository ships a curated
+# evidence subset that must be tracked.
+.venv/
+.bootstrap/
+.tools/
+__pycache__/
+*.pyc
+.pytest_cache/
+formal/.lake/
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+frontend/tsconfig.tsbuildinfo
+*.egg-info/
+data/raw/
+configs/discovery/proof-backend-host.json
+
+# Runtime residue created by running the test suite or the CLI in a clone.
+# Curated evidence under artifacts/ stays tracked; only generated output is
+# ignored. The two directories tests need to exist keep a tracked .gitkeep.
+artifacts/test-temp/*
+!artifacts/test-temp/.gitkeep
+artifacts/discovery/*
+!artifacts/discovery/.gitkeep
+artifacts/runs/
+artifacts/recovery/
+artifacts/demo/
+artifacts/smoke_demo/
+artifacts/calibration/consumer-*/
+artifacts/calibration/consumer-test-input-*/
+artifacts/calibration/a03-determinism-*/
+artifacts/calibration/learning-current-*/
+artifacts/calibration/comparison-*/
+artifacts/calibration/frontier-*/
+artifacts/calibration/diag-probe-*/
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx

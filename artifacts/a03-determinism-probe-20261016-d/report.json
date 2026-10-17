@@ -1,0 +1,192 @@
+{
+  "tool": "probe_a03_label_determinism_20261016.py",
+  "sealed_input": {
+    "arm": "artifacts/optimization/public-9593-20261016-c",
+    "ordinal": 12,
+    "fidelity": "high",
+    "candidate_id": "fba7c09c6506d37dd7463973757a8b276fc2ee38e712376ff22b4a3f92666a26",
+    "reservation_id": "dbc6771a56ba4ce089b957ed293aadde",
+    "timeout_s": 120.0,
+    "parameters": {
+      "charge_high_A": 0.01098846907731266,
+      "charge_low_A": 0.010497756578732163,
+      "cooling_permission_W": 0.012440302990900449,
+      "cutoff_voltage_V": 3.376529148572846,
+      "discharge_high_A": 0.012107811767047564,
+      "discharge_low_A": 0.00906165071588393,
+      "heating_permission_W": 0.013572133538912639,
+      "max_dod": 0.00028971112098613995,
+      "rest_duration_s": 3.1920249010625046
+    }
+  },
+  "calibration_packet": "artifacts/calibration/a03-determinism-ed6606f3ad",
+  "calibration_packet_built_for_current_source": null,
+  "repetitions": 3,
+  "distinct_statuses": [
+    "completed"
+  ],
+  "distinct_work_counters": [
+    "(25, 132)",
+    "(27, 140)",
+    "(40, 192)"
+  ],
+  "distinct_completed_utilities": [
+    "1.2052483836389859e-08"
+  ],
+  "distinct_completed_margins": [
+    "-1e-12"
+  ],
+  "plan_steps_per_repetition": [
+    4,
+    4,
+    4
+  ],
+  "every_repetition_reached_the_planner": true,
+  "label_determined_by_candidate": false,
+  "worker_wall_s_observed": {
+    "min": 1.3458859999955166,
+    "max": 2.042272300008335,
+    "declared_wall_backstop_s": 25.0
+  },
+  "rows": [
+    {
+      "repetition": 0,
+      "status": "completed",
+      "reason": null,
+      "utility": 1.2052483836389859e-08,
+      "constraint_margin": -1e-12,
+      "measured_cost_s": 37.77858639998885,
+      "reported_cost_s": 37.514421600004425,
+      "case_status": "completed",
+      "completed_sensor_replans": 4,
+      "plans": [
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 25,
+          "completed_integrations": 132,
+          "worker_wall_s": 2.03906760000973,
+          "plan_wall_s": 8.744988800011924,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 27,
+          "completed_integrations": 140,
+          "worker_wall_s": 1.54942850000225,
+          "plan_wall_s": 6.983283399997163,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 27,
+          "completed_integrations": 140,
+          "worker_wall_s": 1.516516000003321,
+          "plan_wall_s": 6.921652199991513,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 40,
+          "completed_integrations": 192,
+          "worker_wall_s": 1.9175357000058284,
+          "plan_wall_s": 6.981413399989833,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "repetition": 1,
+      "status": "completed",
+      "reason": null,
+      "utility": 1.2052483836389859e-08,
+      "constraint_margin": -1e-12,
+      "measured_cost_s": 38.06694340000104,
+      "reported_cost_s": 37.5905167000019,
+      "case_status": "completed",
+      "completed_sensor_replans": 4,
+      "plans": [
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 25,
+          "completed_integrations": 132,
+          "worker_wall_s": 1.4269320000021253,
+          "plan_wall_s": 6.755438699998194,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 27,
+          "completed_integrations": 140,
+          "worker_wall_s": 1.5590593999950215,
+          "plan_wall_s": 6.859300700001768,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 27,
+          "completed_integrations": 140,
+          "worker_wall_s": 1.4787986000010278,
+          "plan_wall_s": 8.16759219999949,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 40,
+          "completed_integrations": 192,
+          "worker_wall_s": 2.014668100004201,
+          "plan_wall_s": 7.636716499997419,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "repetition": 2,
+      "status": "completed",
+      "reason": null,
+      "utility": 1.2052483836389859e-08,
+      "constraint_margin": -1e-12,
+      "measured_cost_s": 37.470929600007366,
+      "reported_cost_s": 37.28161930000351,
+      "case_status": "completed",
+      "completed_sensor_replans": 4,
+      "plans": [
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 25,
+          "completed_integrations": 132,
+          "worker_wall_s": 1.4112217999936547,
+          "plan_wall_s": 7.2178857999970205,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 27,
+          "completed_integrations": 140,
+          "worker_wall_s": 1.775411599999643,
+          "plan_wall_s": 7.5543565999978455,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 27,
+          "completed_integrations": 140,
+          "worker_wall_s": 1.3458859999955166,
+          "plan_wall_s": 7.090052800005651,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 40,
+          "completed_integrations": 192,
+          "worker_wall_s": 2.042272300008335,
+          "plan_wall_s": 7.2746618000091985,
+          "timed_out": false
+        }
+      ]
+    }
+  ],
+  "scope": "repeated execution of one sealed synthetic training candidate",
+  "scientific_N_added": 0,
+  "risk_certificate": false,
+  "invented_labels": 0
+}

@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-15T13:55:43.568390+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/X00-current142e-actual-GUI-GET-only-assembly-0982ed66/command.json": {
+      "sha256": "5917ee7c898e122ab84e5967d65247af604d6e2d59b8873f959db838a1ed879a",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/build_x00_current142e_ui_record.py",
+        "--collect"
+      ],
+      "wall_s": 7.306578899999295,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/proof-current-142e-20261015-c/metadata/get-only-e336093c/partial-record.json": {
+      "sha256": "3f4aa39dece3873a3fdce5a05b03c190872bbb178bfdcd80458e623b85ef8ed8"
+    },
+    "artifacts/review/x00-current142e-GUI-independent-20261015-c/final-review.json": {
+      "sha256": "041715f0ae078ee0aa984465d6a6c950e339ec3959fda2f40371f1e47878935c"
+    },
+    "artifacts/review/x00-current142e-GUI-independent-20261015-c/final-review.seal.json": {
+      "sha256": "2e53ba3211dadc1c478907992a3332854b2430109a98372fd4928dba34794fbd"
+    },
+    "artifacts/review/x00-current142e-GUI-independent-20261015-c/BUDGET_SEAL.json": {
+      "sha256": "050e36745b932b2df8661b84cf88383ebd4bb4e8dc5739c05b58681c36f300a4"
+    },
+    "artifacts/validation/X00-publish-current142e-real-GUI-independent-complete-d60f20d7/command.json": {
+      "sha256": "84792641b3188739c66d11ab15ea92feadfb6e0dd17107373d41de82627eb2d7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/publish_current_complete_ui.py",
+        "artifacts/ui/proof-current-142e-20261015-c/metadata/get-only-e336093c/partial-record.json",
+        "artifacts/review/x00-current142e-GUI-independent-20261015-c/final-review.json",
+        "--record-sha",
+        "3f4aa39dece3873a3fdce5a05b03c190872bbb178bfdcd80458e623b85ef8ed8",
+        "--review-sha",
+        "041715f0ae078ee0aa984465d6a6c950e339ec3959fda2f40371f1e47878935c"
+      ],
+      "wall_s": 6.896413099999336,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/current-reviewed-9c0f467d/observations.json": {
+      "sha256": "5624f31fb567e4376979aa9eacccad48a257adcce385c6efbecb969dd7332dcb"
+    },
+    "artifacts/validation/X00-current142e-original-complete-smoke-short-owner-03bc7acf/command.json": {
+      "sha256": "b86176e56d763e33857873da540cbd23b53100aee7e7a1cbc7259ca3074d0fa1",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "smoke",
+        "--out",
+        "artifacts/smoke-current142e-core-20261015-c.json"
+      ],
+      "wall_s": 1429.6633181999987,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/smoke-current142e-core-20261015-c.json": {
+      "sha256": "96232ee68f52d567475d8d25be5176435242facaa2a59e8822b741328da0e394"
+    },
+    "artifacts/verification/release-2eed78048c/audit.json": {
+      "sha256": "e9e1e705402ae88d049f5959387059713d2ab9975119bb7aa667755cac2f543d"
+    }
+  },
+  "full_acceptance_complete": false
+}

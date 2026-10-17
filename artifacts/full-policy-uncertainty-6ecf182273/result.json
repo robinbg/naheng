@@ -1,0 +1,130 @@
+{
+  "exit_code": 2,
+  "status": "insufficient_completed_evidence",
+  "source_check_error": null,
+  "strategy": "uncertainty",
+  "requested_queries": 36,
+  "actual_reserved_queries": 36,
+  "completed_results": 0,
+  "unknown_results": 36,
+  "high_calls": 24,
+  "best_training_candidate": null,
+  "diagnostic_best_training_candidate": null,
+  "within_original_wall_budget": true,
+  "utility_model": {
+    "model": "rho_times_low_plus_fitted_discrepancy",
+    "rho": 1.0,
+    "paired_count": 0,
+    "rho_fitted_from_pairs": false,
+    "paired_low_centered_sum_squares": 0.0,
+    "rho_estimation": "default_unit_not_identified",
+    "low": {
+      "kind": "RBF_GP",
+      "x": [],
+      "y": [],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 0.0,
+      "scale": 1.0,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "prior_no_observations",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "discrepancy": {
+      "kind": "RBF_GP",
+      "x": [],
+      "y": [],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 0.0,
+      "scale": 1.0,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "prior_no_observations",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "limitations": [
+      "fixed fitted hyperparameters",
+      "independence approximation between low GP and discrepancy",
+      "no calibration or independent operational risk guarantee"
+    ]
+  },
+  "constraint_model": {
+    "model": "rho_times_low_plus_fitted_discrepancy",
+    "rho": 1.0,
+    "paired_count": 0,
+    "rho_fitted_from_pairs": false,
+    "paired_low_centered_sum_squares": 0.0,
+    "rho_estimation": "default_unit_not_identified",
+    "low": {
+      "kind": "RBF_GP",
+      "x": [],
+      "y": [],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 0.0,
+      "scale": 1.0,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "prior_no_observations",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "discrepancy": {
+      "kind": "RBF_GP",
+      "x": [],
+      "y": [],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 0.0,
+      "scale": 1.0,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "prior_no_observations",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "limitations": [
+      "fixed fitted hyperparameters",
+      "independence approximation between low GP and discrepancy",
+      "no calibration or independent operational risk guarantee"
+    ]
+  },
+  "protocol_sha256": "f6f9569d97569d9adceb33ee48202666e8519a862da383662350d994ac1d67a2",
+  "checkpoint_sha256": "e5a5961f28fd4dbfd4e16a241cd69c8a270a56269c4220fba2f61ba4cb9695fb",
+  "elapsed_s": 385.43801440000243,
+  "source_unchanged": true,
+  "scientific_N_added": 0,
+  "risk_certificate": false
+}

@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "source_sha256": "d868afdaaec74e3e1b9c7ed7eebe67f2028ca12d15e4807f90d83f724b708357",
+  "original_tests_sha256": "cb92556c8729f933ccb6bb9d8d19a3366b5c26f6931991d01c764fbcd887e84b",
+  "installed_tests_sha256": "f24b39e67ced9e18e0509218c0eb6958acec58d800abc55f960b2cc3320f0f4c",
+  "original_method_bodies_unchanged": true,
+  "original_method_count": 28,
+  "scope": "Installed frozen source; imports/root and fresh actual calibration setup only; public CLI acceptance pending"
+}

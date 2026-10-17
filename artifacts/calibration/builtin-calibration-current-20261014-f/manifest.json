@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "exit_code": 0,
+  "code_hash": "fcee85ee0c6acecfbd00614ea00cf50e47c35092efe0adf30a31fa7a25f09801",
+  "input_sha256": "8c3d794a6b30e701fa3270bee8af813ff488e555109f5a31a4c501660cf88eea",
+  "result_sha256": "b4e4af5dace8b54e686b5b5ab9b78c353778457e0e31cae992c2920045d5a789",
+  "existing_run_or_filter_modified": false,
+  "independent_experiment": false,
+  "scope": "Bounded owned worker for a conditional calibration candidate; source and forward verification recorded separately"
+}

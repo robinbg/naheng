@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-15T13:46:25.538906+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-record-actual-prepared-image-and-retained-failures-4860ffdd/command.json": {
+      "sha256": "d9f576d07311cd554fa42bfb54a372d3519b02db5cebaf4e74cac7916c682111",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/record_a02_prepared_image_evidence.py"
+      ],
+      "wall_s": 0.19085029999951075,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/maintenance/a02-prepared-image-receipts-fa93c8a3/index.json": {
+      "sha256": "466209b71848a9cd466704c04dccd6abd513c02be06f0d2f165dccbe25f86742"
+    },
+    "artifacts/review/a02-linux-prepared-rootfs-independent-20261015-b/handoff.json": {
+      "sha256": "aa4416f1207d10fac4a9532c00861496b312d0212be64e8b72c455425d998236"
+    },
+    "artifacts/review/a02-linux-prepared-rootfs-independent-20261015-b/seal.json": {
+      "sha256": "2b362d4ee8c0d412772b662b62733dbccd8ea431100aa92956e9a99cda92c2f5"
+    },
+    "artifacts/review/a02-linux-prepared-rootfs-independent-20261015-b/REVIEW.md": {
+      "sha256": "2b090f1db8f81f11ba95a92496c86a3e0c0b7c6ee37b2bec88ef977224a22940"
+    }
+  },
+  "full_acceptance_complete": false
+}

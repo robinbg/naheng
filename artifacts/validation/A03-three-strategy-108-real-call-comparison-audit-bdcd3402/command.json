@@ -1,0 +1,21 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "tools/audit_a03_comparison_20261016.py",
+    "artifacts/a03-pilot-9ba04a8b",
+    "artifacts/a03-random-ebd41a8a",
+    "artifacts/a03-uncertainty-cf50f124"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:36:07.711195+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-three-strategy-108-real-call-comparison-audit-bdcd3402\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-three-strategy-108-real-call-comparison-audit-bdcd3402\\stderr.log",
+  "timeout_s": 120,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 17076,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 0.4556096999949659
+}

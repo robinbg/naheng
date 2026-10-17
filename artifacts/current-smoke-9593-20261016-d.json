@@ -1,0 +1,146 @@
+{
+  "profile": "smoke",
+  "exit_code": 1,
+  "status": "failed",
+  "checks": [
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/unit",
+        "tests/integration",
+        "tests/test_registry_dsl.py",
+        "--basetemp",
+        "<HOST_DATA_ROOT>\\smoke-8e6b29d9b0\\pytest",
+        "-o",
+        "cache_dir=artifacts/.pytest_cache",
+        "-q"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "executed": true,
+      "timeout_s": 1440,
+      "memory_limit_bytes": 8589934592,
+      "memory_limit_enforced": true,
+      "is_code_execution_sandbox": false,
+      "cleanup_errors": [],
+      "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+      "owned_pid": 32400,
+      "owned_final_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_active_processes_after_cleanup": 0,
+      "owned_job_handle_closed": true,
+      "native_exit_code": 1,
+      "wall_s": 932.3343731999994,
+      "resource_cleanup_confirmed": true,
+      "status": "failed",
+      "id": "numerical_tests",
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-8e6b29d9b0"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "demo",
+        "--scenario",
+        "acceptance_loop",
+        "--out",
+        "artifacts/smoke_demo"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "executed": true,
+      "timeout_s": 120,
+      "memory_limit_bytes": 8589934592,
+      "memory_limit_enforced": true,
+      "is_code_execution_sandbox": false,
+      "cleanup_errors": [],
+      "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+      "owned_pid": 34812,
+      "owned_final_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_active_processes_after_cleanup": 0,
+      "owned_job_handle_closed": true,
+      "native_exit_code": 0,
+      "wall_s": 48.277990800001135,
+      "resource_cleanup_confirmed": true,
+      "status": "passed",
+      "id": "real_demo",
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-8e6b29d9b0"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "foundation"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "executed": true,
+      "timeout_s": 120,
+      "memory_limit_bytes": 8589934592,
+      "memory_limit_enforced": true,
+      "is_code_execution_sandbox": false,
+      "cleanup_errors": [],
+      "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+      "owned_pid": 22212,
+      "owned_final_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_active_processes_after_cleanup": 0,
+      "owned_job_handle_closed": true,
+      "native_exit_code": 0,
+      "wall_s": 61.12247550000029,
+      "resource_cleanup_confirmed": true,
+      "status": "passed",
+      "id": "foundation",
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-8e6b29d9b0"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "tools/check_ui_acceptance.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "executed": true,
+      "timeout_s": 120,
+      "memory_limit_bytes": 8589934592,
+      "memory_limit_enforced": true,
+      "is_code_execution_sandbox": false,
+      "cleanup_errors": [],
+      "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+      "owned_pid": 27676,
+      "owned_final_tree_stop": {
+        "method": "windows_job_object",
+        "exit_code": 0
+      },
+      "owned_active_processes_after_cleanup": 0,
+      "owned_job_handle_closed": true,
+      "native_exit_code": 0,
+      "wall_s": 1.6329028999971342,
+      "resource_cleanup_confirmed": true,
+      "status": "passed",
+      "id": "ui_acceptance",
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-8e6b29d9b0"
+    }
+  ],
+  "scope": "Only listed gates; smoke is not release",
+  "utc": "2026-10-16T06:58:48.872291+00:00",
+  "code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "source_and_gates_unchanged": true,
+  "gates_sha256": "fb42e9f954b062d60aac7cc8c44873187013a3da919c69967bba3f6d450dbb80",
+  "temporary_owner": "<HOST_DATA_ROOT>\\smoke-8e6b29d9b0",
+  "aggregate_wall_s": 1043.4534383999999
+}

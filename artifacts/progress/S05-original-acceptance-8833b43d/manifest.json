@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-13T17:18:35.735763+00:00",
+  "exit_code": 0,
+  "code_hash": "8722828ee2b0236abc2167f6354108f545446fad1e16d8e62e403c225fcffa11",
+  "counts": {
+    "done": 20,
+    "in_progress": 7,
+    "todo": 18
+  },
+  "task_count": 45,
+  "requirement_count": 18,
+  "original_gates_unchanged": true,
+  "status_changes": {
+    "S05": "done",
+    "E02": "in_progress"
+  },
+  "regression_command": "artifacts/validation/S05-current-complete-regression-approved-short-path-ae2b7423/command.json",
+  "reports": [
+    [
+      "repaired-ica-impedance-report.json",
+      "2ed141a1e95b591dd7e3589df972af9e5f486bb34d86c5e547157ba7c447aa0b",
+      99,
+      "S05-independent-repaired-ICA-EIS-hand-and-bad-controls-11d56bd8"
+    ],
+    [
+      "identifiability-report.json",
+      "2f896923683e471058b09de36b12f4836baa9804c714ce3c3fe29e35e9ac0338",
+      128,
+      "S05-independent-local-SVD-covariance-binding-and-option-controls-63a4e179"
+    ],
+    [
+      "public-cli-report.json",
+      "5a4e40be014d3f6b65b4adf68de1de2fa15998805816d522aa4d21b5a718a5b5",
+      75,
+      "S05-independent-real-CLI-train-prefix-and-saved-posterior-scope-recovered-816f1d5c"
+    ]
+  ],
+  "full_scientific_or_product_acceptance": false,
+  "D02_complete": false
+}

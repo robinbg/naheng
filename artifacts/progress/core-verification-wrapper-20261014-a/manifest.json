@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "new_code_hash": "15f328a2d6397958528426db5e22bd036cd09d44551c43231140f77b051d026e",
+  "config_sha256": "cb9349dac53dea2ec3399d9e2ff2576dd6a4eeb7883b6c2f09892dccd5f031fd",
+  "whole_suite_wrapper_s": 1500,
+  "single_native_proof_s": 120,
+  "aggregate_local_budget_s": 1800,
+  "all_gate_commands_and_other_fields_unchanged": true,
+  "targets_statements_axiom_whitelist_unchanged": true,
+  "scientific_release_granted": false
+}

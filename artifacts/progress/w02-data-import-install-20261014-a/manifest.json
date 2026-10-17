@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "before_code_hash": "66e5c9521803d4d48b1ef3e31c979bfff28d867103b66d7171d1ef4fa031170d",
+  "after_code_hash": "0d7160d7a940e98b6376a8d7f8a1666b08c156095f6d4d78ac42bc744b2074a6",
+  "files": {
+    "src/naheng/api/datasets.py": "785d06282a1f0edc3e71758bfc8f41becf667a0a4d4a52d5347e9f3f2aa91bbd",
+    "src/naheng/api/reports.py": "7ec480fe50facd18b74de7b7c11258eee69a7b7cff75a8f03c1087c48d2a73f1",
+    "frontend/src/components/DatasetPanel.tsx": "9336f99d3f92917d027ece1aa1206a85d6892726044bdfd25f656855a9feed0a",
+    "tests/integration/test_dataset_import.py": "1f3cf7c52e5de934d5d832325eb3904f8d0e69bfacda36935da9183f019cebba"
+  },
+  "prior_api_and_ui_preserved": true,
+  "original_tests_modified": false,
+  "acceptance_passed": false
+}

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-15T13:26:49.245877+00:00",
+  "exit_code": 0,
+  "old_code_hash": "139f425e07fc30984a8d14932c7e63a1cfa351f7c047a4da4619fbf527b52929",
+  "new_code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "old_gates_sha256": "4793a851d1ec7b83eb5c68724a9dabf9c31063c4d986c2ce655dc744f2df9dd3",
+  "new_gates_sha256": "fb42e9f954b062d60aac7cc8c44873187013a3da919c69967bba3f6d450dbb80",
+  "sole_semantic_change": "aggregate numerical suite timeout 1200 -> 1440 seconds",
+  "original_test_files": 102,
+  "original_collected_tests": 1061,
+  "test_commands_assertions_or_requirements_removed": 0,
+  "native_proof_and_simulation_timeout_s": 120,
+  "memory_limit_bytes": 8589934592,
+  "whole_batch_timeout_s": 1800,
+  "sum_smoke_gate_admission_timeouts_s": 1800,
+  "previous_failures_preserved": true,
+  "short_fresh_absolute_test_owner_required": "<HOST_TEMP_ROOT>",
+  "fresh_GUI_and_smoke_required": true,
+  "ADR": "docs/adr/0023-full-smoke-aggregate-and-short-windows-test-owner.md"
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "status": "frozen_scoped_registry_integration",
+  "utc": "2026-10-12T02:03:18.779948+00:00",
+  "source_id": "zenodo17459188_cvut_sib_0001",
+  "central_registry_sha256": "6d1da567113e4786b98974f3b52ee84473ab27867975fb6981e22dabb63213aa",
+  "original_source_objects_preserved": 7,
+  "original_model_identity_objects_preserved": 4,
+  "raw_sodium_bytes": 17143,
+  "raw_sodium_sha256": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+  "official_md5": "0d04ab461817bef013766db23b8089be",
+  "license": "CC-BY-4.0",
+  "frozen_files_sha256": {
+    "data/manifests/sources.yaml": "6d1da567113e4786b98974f3b52ee84473ab27867975fb6981e22dabb63213aa",
+    "artifacts/data/public_new/root_registry_sources_before-b292ea73.json": "e473e4069674cc7815093a19a610e356d09c9ae2458b19d00787147c30ee921b",
+    "artifacts/data/public_new/root_registry_review-d680c2de.json": "9caf75cc0a32559eed647543424a16fbdfe1b9893654bb795cc0c6fe2e7d0a97",
+    "artifacts/data/public_new/root_registry_v2_audit-d680c2de.json": "a8838eacbb54ac8584d770c8c3455ebf5d7a432bf98911987b653b64942ead2f",
+    "artifacts/data/public_new/root_registry_merge-b292ea73.json": "a0742102dc97984a327ffe743865d83ee39ceb9c4c6305e1e67c9b4f5f5fb4ff",
+    "artifacts/data/public_new/root_registry_merge.py": "dcdf3d87380bb2db9f169dbcbb5388042b77e14485dda87f672f171543f6642f",
+    "artifacts/data/public_new/root_registry_review_check.py": "1b042929f65376dbf9ad1eb45812588fce0f106cca92b3cabd75ccb84ec92abe",
+    "artifacts/data/public_new/root_registry_freeze.py": "a106082a1a3c9d82390f45aa39f989c3c76ba8c01f158f9bc3d88a60e8f187d5",
+    "artifacts/data/public_new/independent_review.json": "71b00639e25c0f10e15dd4c9c3925aef91ed0a05b4baf373550dd0161c9c4fc3",
+    "artifacts/validation/D01-root-central-source-merge-c1666121/command.json": "468e427832e30f04310c981783af37e568675170c9ba0f0958e77478c8a596cf",
+    "artifacts/validation/D01-root-protected-v2-review-4cfe0b27/command.json": "2c39ecb93c7220b5d6b6d72b33eab452d6e74b103368a940973eba897d70c269",
+    "artifacts/validation/D01-root-central-source-tests-12cdf1d9/command.json": "ccc0883d82b7f83fae5dce307d400ede965cae003d8838c007d769a9e83d1be6",
+    "artifacts/validation/D01-root-central-source-merge-c1666121/stdout.log": "5fc16416557b9a7c194459be4c506cef396c7bb555436b5b33d7d14374ff6966",
+    "artifacts/validation/D01-root-central-source-merge-c1666121/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-root-protected-v2-review-4cfe0b27/stdout.log": "ad2557f2df5aa35fe0ec21695fe687c95cc3c39893047d546bbb475f9a5b3f24",
+    "artifacts/validation/D01-root-protected-v2-review-4cfe0b27/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-root-central-source-tests-12cdf1d9/stdout.log": "514af261e53715184f246cc5bb92e66847f92beb8ff2a801d311d49e204c3cb8",
+    "artifacts/validation/D01-root-central-source-tests-12cdf1d9/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "preserved_originals_sha256": {
+    "artifacts/data/public_new/check_import_and_split_v2.py": "248685f29a66361599a29ea7a40bdba3b8eccbcd6d705b47f15150c2f341a4d0",
+    "artifacts/data/public_new/import_and_split_audit_v2.json": "18d6695b61090f522c8e288d8053a5084e517d0bd47b151f4a5c8b30c88c7625",
+    "artifacts/data/public_new/holdout_only_snapshot_v2.json": "93f7f123d64e7714d6997bd154caba1307c144d8b6498e4335f44aa3d918ae03",
+    "data/manifests/sources.yaml": "6d1da567113e4786b98974f3b52ee84473ab27867975fb6981e22dabb63213aa",
+    "artifacts/data/public_new/independent_review.json": "71b00639e25c0f10e15dd4c9c3925aef91ed0a05b4baf373550dd0161c9c4fc3",
+    "artifacts/data/public_new/imported_instrument_step_v2/manifest.json": "b72f6e4eaf26f6cc2db46e8e3321410f25bae0e00dbeecd83a5c766c77a77c83",
+    "artifacts/data/public_new/imported_instrument_step_v2/observations.jsonl": "d2ef66109fced38f9e9f59d140ae75ded6b51b20771ebbb323a622f07abc5470",
+    "artifacts/data/public_new/zenodo-17459188.metadata.json": "6581cc1c36a2916611abe10263fedf81be16d7d9533fd5e19a6fb2bf49b886a4",
+    "src/naheng/data/importers.py": "dba7bb68a05e6771a22858a9c5d952804aa99bf23a7b26d32fda48bca54ab238",
+    "src/naheng/data/splits.py": "ab83529c5a6fd93edffe45d9e8f63a5b8198207bd14f68d55d3d9ea37297ba82",
+    "data/manifests/retrieval-zenodo17459188-0001-complete-v2.yaml": "8cb9a464f69a85be05004846899b8231c5163873f5a4e68d1280090debdaf9eb",
+    "artifacts/data/public_new/cvut_sodium_0001_complete.v2.spec.json": "ab4a0b45ad469417a8c748874c31be0b1e6bd1db8ee0945064a1fe601a0b00d5",
+    "artifacts/data/public_new/cvut_sodium_0001_complete.csv": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+    "artifacts/data/public_new/first_complete_registry_snapshot.json": "5e3f5c9f31f7a89fde24b6688f67bebb3080321f206b3b85305b661c8b1b793a",
+    "data/manifests/retrieval-zenodo17459188-0001-instrument_step-v2.yaml": "cc46da78b589c028f57ac1b7a04ddc910552039014e63ac6f907ae9b8f3b01f0",
+    "artifacts/data/public_new/cvut_sodium_0001_instrument_step.v2.spec.json": "095133dd158d1778b2303a15216096e15829721fefe0235c8765d07cb08336a5",
+    "artifacts/data/public_new/cvut_sodium_0001_instrument_step.csv": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+    "artifacts/data/public_new/first_instrument_step_registry_snapshot.json": "d325d0a620c963ca3a40098c553c465017c0f359e3f8f5c1bfd73a31bc4e4fec",
+    "data/raw/public_new/zenodo17459188/RMF-VZ1_044_021_CVUT_S.txt": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+    "data/raw/public_new/zenodo17459188/VZ1_044_021_CVUT_D_0001_v1.xlsx": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+    "data/raw/public_new/zenodo17459188/VZ1_044_021_CVUT_D_00011_v1.xlsx": "9f6f4d79ffab3cac7f72c78fa5ab4c0e9f45ae573fa0f82b814f25cafaf3b7b9"
+  },
+  "actual_command_records": [
+    {
+      "path": "artifacts/validation/D01-root-central-source-merge-c1666121/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/data/public_new/root_registry_merge.py",
+        "--integrated-on",
+        "2026-10-12"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.8143218999975943
+    },
+    {
+      "path": "artifacts/validation/D01-root-protected-v2-review-4cfe0b27/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/data/public_new/root_registry_review_check.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.7160306999999193
+    },
+    {
+      "path": "artifacts/validation/D01-root-central-source-tests-12cdf1d9/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_source_manifest.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/data/public_new/root_registry_pytest_cache-20261012",
+        "--basetemp",
+        "artifacts/data/public_new/root_registry_pytest_temp-20261012"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.8677224999996724
+    }
+  ],
+  "tests": {
+    "existing_source_manifest_tests": 3,
+    "exit_code": 0,
+    "pytest_s": 0.12
+  },
+  "write_guard": {
+    "negative_write_calibrations_rejected": 3,
+    "redirected_output_count": 1,
+    "original_audit_and_holdout_byte_preservation": true,
+    "scope": "Trusted local review script write-scope validation; not an arbitrary-code sandbox"
+  },
+  "full_chronological_import": {
+    "status": "failed_duplicate_timestamp_preserved",
+    "exception_type": "ValueError",
+    "message": "Nonmonotonic or duplicate time in complete trajectory at CSV line 33"
+  },
+  "limitations": [
+    "Full chronological importer rejects duplicate timestamps; step-view import does not accept complete instrument semantics.",
+    "Only one conservative physical 4s11p pack group; all 64 rows are frozen holdout, train/validation have zero rows.",
+    "Instrument steps, 44 constituent cells, six thermocouples and overlapping views are not independent test objects.",
+    "Observed discharge is 0.1 s; 3 s is only the planned maximum. Ambient -15 C is a setting, not the measured thermocouple temperature.",
+    "Individual cell serials and electrode materials are unavailable; pack data do not establish individual-cell truth.",
+    "Lead-acid D_00011 comparator is excluded from sodium measurements and independent sodium sample counts.",
+    "No charging records, capacity-aging labels, RUL labels or operating-incident population in this selected file.",
+    "No model fit, external model validation, calibrated risk probability or real revenue superiority; D01/D02 remain incomplete."
+  ],
+  "D01_complete": false,
+  "D02_complete": false,
+  "external_model_validation": "not_performed",
+  "next_readonly_command": ".venv/Scripts/python.exe tools/run_evidence.py --label D01-root-protected-v2-recheck --timeout 60 -- .venv/Scripts/python.exe artifacts/data/public_new/root_registry_review_check.py"
+}

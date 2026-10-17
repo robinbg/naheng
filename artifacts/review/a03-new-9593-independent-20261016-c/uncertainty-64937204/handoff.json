@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "EVIDENCE_CONSISTENT_EXPERIMENT_EXIT2_BLOCKED",
+  "original_experiment_native_exit_code": 2,
+  "original_experiment_status": "insufficient_completed_evidence",
+  "audit_command_success_is_not_experiment_pass": true,
+  "recommend_A03_status": "in_progress",
+  "main_engineering_entry_passed_separately": true,
+  "same_three_arm_inputs_checked": true,
+  "completed": 0,
+  "unknown": 36,
+  "normal_variance_requests": 21,
+  "rho_data_fitted": false,
+  "source_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "prepared_auditor_manifest_sha256": "c3c7c6ce11ae5cf1a7c80a788ad26da1ef3c5e6d2a33874d81dd2ac9c47aae65",
+  "comparison_script_sha256": "0c62a8dd0f33e13b3c902a1810691e51c3f64a0e78b059f83421a3b1f50f6244",
+  "files": {
+    "assess_boundary.py": {
+      "sha256": "179dde244b5c3775925a7bd3794ef1e2d376affa30649965060a0e00b6e98281",
+      "bytes": 4261
+    },
+    "command.json": {
+      "sha256": "38e7dbf3e5b87f593f9d6f3e5a7b833dc6ac2ad80e65a5da62098d7fc287110a",
+      "bytes": 1396
+    },
+    "report.json": {
+      "sha256": "fa565ee6765b56212721c82bb766d3e14fd6c7af151d9acecc7a6c9026490302",
+      "bytes": 47783
+    },
+    "REVIEW.md": {
+      "sha256": "f2366ebfef5fd702750d581e755d402738f74545971ff51ab14fe0983f8585ac",
+      "bytes": 3417
+    },
+    "run-file-hashes.json": {
+      "sha256": "fcefb396250be053462edcac8e4f4525967ab8f88eb071bd5d449df69b1215f5",
+      "bytes": 41576
+    },
+    "run_boundary.py": {
+      "sha256": "fc4caa7558bb41fa79e7324216ca0c4d2d876a6b13bae942421ad9933eadd5e6",
+      "bytes": 617
+    },
+    "seal.py": {
+      "sha256": "d6a875ed3718b07951aee375b0fed90cf9ba03ad075260256f8b08609cdf5945",
+      "bytes": 1823
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stdout.log": {
+      "sha256": "79a4c0429b2eef115a359e68f7a1cd572b2fb1554ea3cf3b497a6d49ea878ab1",
+      "bytes": 2231
+    },
+    "task-boundary-command/command.json": {
+      "sha256": "06dfabf24950c02906c14d0cbaa687f05155343ce849378b070b321dd4ec7605",
+      "bytes": 1011
+    },
+    "task-boundary-command/stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "task-boundary-command/stdout.log": {
+      "sha256": "d078c4dbcbd0329cc4d8a4933045dfc3d3e3eeedd1d4d4341f0c7973d591d972",
+      "bytes": 700
+    },
+    "task-boundary.json": {
+      "sha256": "487f50d38aaf39fddba6ac7e2f56b6e0a6c1661d43523387b0fa7402124b3b90",
+      "bytes": 5719
+    }
+  }
+}

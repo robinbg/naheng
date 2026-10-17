@@ -1,0 +1,189 @@
+{
+  "utc": "2026-10-14T08:13:58.183574+00:00",
+  "exit_code": 0,
+  "code_hash": "87ce0fccd584119bd9a437f52c4a3637b239cfa940015ab83f46ec18412e048d",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 23,
+    "in_progress": 6,
+    "todo": 16
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/W01-lifecycle-cancel-finalize-checksum-partial-report-real-tests-ab15fd2c/command.json": {
+      "sha256": "c1b9f002df8428e684d38670c9aea1491babb16610cc52580d17e65b108bd1d4",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/integration/test_lifecycle_workbench.py",
+        "tests/integration/test_api_flow.py",
+        "tests/unit/test_no_double_count.py",
+        "tests/unit/test_terminal_value.py",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/nh-life-web-20261014-c"
+      ],
+      "wall_s": 52.94402860000264,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-lifecycle-final-cancel-partial-report-workbench-build-2a6cfe30/command.json": {
+      "sha256": "0f851ffa48543e7836b36cc7cc4ba47f8a1a4bec31e636b6317bb1bc5ec01346",
+      "exit_code": 0,
+      "argv": [
+        "C:/Program Files/nodejs/node.exe",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 7.313564900003257,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-original-smoke-unchanged-assertions-installed-Edge-real-service-0d19baae/command.json": {
+      "sha256": "80406dfa19b4ba8ffcd6dd3d83c6dd280dd07d2927064c6ffb548f7a8e3ffb2c",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_workbench_e2e.py",
+        "--grep",
+        "smoke"
+      ],
+      "wall_s": 384.98766910000995,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-original-smoke-D-temp-unchanged-assertions-Edge-234928be/command.json": {
+      "sha256": "903a111dfca5832f78e66de4229a10683b86dd0246b112ec7ce50733293d5104",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_workbench_e2e.py",
+        "--grep",
+        "smoke"
+      ],
+      "wall_s": 388.28354659999604,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-original-smoke-current-form-repair-D-temp-Edge-fdb7e1ba/command.json": {
+      "sha256": "c21b25072f53d0f6a91fe5288b15310490e9024c0f2f50a0270e4171f7e1da17",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_workbench_e2e.py",
+        "--grep",
+        "smoke"
+      ],
+      "wall_s": 43.39387169999827,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-actual-lifecycle-GUI-source-build-download-seal-76a7ffa5/command.json": {
+      "sha256": "6e625b7abe5b1f1fdf4a55ef5ca3ef500000b1b560f11ec416138107e334adbd",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/seal_lifecycle_gui_evidence.py"
+      ],
+      "wall_s": 0.3262838999944506,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-preserve-standard-research-form-while-life-selected-9e21eb83/command.json": {
+      "sha256": "c6b00454cd556e3fa67272624c05f22b6eb91e58271d4b035c3ded04958500f4",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/keep_research_creation_visible.py"
+      ],
+      "wall_s": 0.5652776999922935,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-build-research-form-regression-repair-3a675e89/command.json": {
+      "sha256": "3aeb0fd2f6c168fa1191914ba86cb7a71a82ad435fecb8e4c22fb1cc0d48d3b4",
+      "exit_code": 0,
+      "argv": [
+        "C:/Program Files/nodejs/node.exe",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 9.14254259999143,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-build-unambiguous-lifecycle-price-labels-0d02e3ba/command.json": {
+      "sha256": "6fb70a402f9ab7e6614b973491ceaef126027d9e315cb1fd5e86b35eeb540990",
+      "exit_code": 0,
+      "argv": [
+        "C:/Program Files/nodejs/node.exe",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 7.6177121000073384,
+      "timed_out": false
+    },
+    "artifacts/ui/lifecycle-workbench-20261014-a/manifest.json": {
+      "sha256": "91556b2f48098377de98210141c606fe7f3baac4e31c60968daf5cc9e7de5c74"
+    },
+    "artifacts/review/lifecycle-workbench-independent-20261014-a/handoff.json": {
+      "sha256": "9670d281a8950d3fcfb26781e7cf644308e0112276b13f8555d5e885450794d2"
+    },
+    "artifacts/web/native-browser-69b96127/manifest.json": {
+      "sha256": "326d424f9a1a0eea789d24ba6a7fcf3bc395e85c0ab2d0c400adae0446813af8"
+    },
+    "artifacts/web/native-browser-83247754/manifest.json": {
+      "sha256": "01399c552f8e4cb78f6e6289a1da1134ebaa1a7464457d488516d62b45822d65"
+    },
+    "artifacts/web/native-browser-53b1dcd2/manifest.json": {
+      "sha256": "76075e9f81366fa79080e16db5302e0991030636eb5016b6b4d0fd37bea797ee"
+    },
+    "artifacts/handoff/f02-completion-20261014-a/handoff.json": {
+      "sha256": "a34b93bff4f8b4987eac94777f1d1d6d9d0a5010ee20fb31970445d311c0054e"
+    },
+    "artifacts/review/f02-completion-independent-20261014-a/handoff.json": {
+      "sha256": "bfa54136a4e0c6653c7fa4deb3737bc15c1f5ba03397bb0eec7cf8c5d56c0b7d"
+    },
+    "artifacts/formal/install-full-reduction-2f56a055/manifest.json": {
+      "sha256": "70c66651bd88115e237b2ff7523d3074898fa60540c47b30cb57cc713505f3f8"
+    },
+    "artifacts/validation/F02-install-unchanged-26-reviewed-kernel-candidates-required-72-target-suite-96662584/command.json": {
+      "sha256": "9f8ebcc70afe1359daa9ec161eddca9b46647100321e62b9314887aeb9a244c7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/install_f02_complete_candidate.py"
+      ],
+      "wall_s": 0.19400049999239855,
+      "timed_out": false
+    },
+    "artifacts/validation/F02-public-ClassSufficiency-real-build-2ce72382/command.json": {
+      "sha256": "bb4a899c3e1313fbe14e9bef973edea20fc4c5b9184a86ebfd7349d8e8920696",
+      "exit_code": 2,
+      "argv": [
+        ".tools/lean/bin/lake.exe",
+        "--dir",
+        "formal",
+        "build",
+        "Naheng.Reduction.ClassSufficiency"
+      ],
+      "wall_s": 121.99644630000694,
+      "timed_out": true
+    },
+    "artifacts/handoff/f03-completion-20261014-a/handoff.json": {
+      "sha256": "1d4c37521ae004fe3ef553c8b6edbf84e65b013dc341b1c7c0a7c292b624cf4b"
+    },
+    "artifacts/handoff/f03-completion-20261014-b/handoff.json": {
+      "sha256": "c9629c26da199f017853b483b98fbcbc07b0735d14817646e3799431d508afd2"
+    },
+    "artifacts/review/lifecycle-workbench-independent-20261014-a/e01/review.md": {
+      "sha256": "7308556cc19dc9afcb41af615bb041a98aa4b07955eb05f0a66fb769fcfb9012"
+    }
+  },
+  "full_acceptance_complete": false
+}

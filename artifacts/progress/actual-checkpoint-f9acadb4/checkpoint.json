@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-16T03:24:44.474014+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/C-preserve-owned-Mathlib-pack-paths-migrate-D-2479b5c7/command.json": {
+      "sha256": "81da6d07cbf02e9fcb15a28a2f0c3572dc9e15f6ed8a5024aa3d1a84caf3fe1c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/migrate_owned_mathlib_pack_20261016.py"
+      ],
+      "wall_s": 30.212580399995204,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/maintenance/mathlib-pack-to-d-dd6df0258c92/result.json": {
+      "sha256": "b50a2b1dfc4e3d48200fb45532a90e87d052eef7f720596c615a0e3090aa5cf2"
+    },
+    "artifacts/progress/session-20261016-c.json": {
+      "sha256": "9270a0478e567a7a3b4157c69e7f93a23d9077f3b6aa84c69bf76196e2b76a1d"
+    },
+    "artifacts/validation/A02-fixed-40-source-proof-seed-UTF8-r2-f0e69815/command.json": {
+      "sha256": "7ac0d241910925deff0d3846cf2bf424710f9bba57c36ccea704dfe40cea9fea",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/prepare_proof_seed_utf8_r2.py"
+      ],
+      "wall_s": 1.540804999996908,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-real-offline-Linux-Lean-fixed-proof-workload-r1-a1ad308c/command.json": {
+      "sha256": "c2961de8790fc782335a74bd6e5ce2b479ece98b5d0718528fd2d2899e811d99",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/boot_fixed_proofs_r1.py"
+      ],
+      "wall_s": 3.560978800000157,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-readonly-blob-pair-specific-guard-e8f9a5fb/command.json": {
+      "sha256": "2746c850e8391aa346939742f05accbba5b7bbaafeeea041fb58a7dbffd4b2fb",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/prepare_private_proof_boot_r2_20261016.py"
+      ],
+      "wall_s": 0.3892153999986476,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/a02-delegated-backend-20261016-a/boot-fixed-proofs-r2-plan.json": {
+      "sha256": "fb301a3adfae0cbf66421af0cb282a57d0b27d4089175eea34e7128a7e389b37"
+    }
+  },
+  "full_acceptance_complete": false
+}

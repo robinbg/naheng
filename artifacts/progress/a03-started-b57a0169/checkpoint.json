@@ -1,0 +1,18 @@
+{
+  "code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "status_change": {
+    "A03": [
+      "todo",
+      "in_progress"
+    ]
+  },
+  "dependency_status": {
+    "P02": "done",
+    "C01": "done",
+    "S02": "done",
+    "A01": "done"
+  },
+  "protocol": "artifacts\\optimization\\public-9593-20261016-c\\protocol.json",
+  "original_task_contracts_unchanged": true,
+  "full_acceptance_complete": false
+}

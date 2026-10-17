@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-12T20:20:47.865365+00:00",
+  "exit_code": 0,
+  "code_hash": "9d1cbd275619ef7690928981bb17bb8d7274107c29651616139b46d1ff8bc2d3",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 18,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 20
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/review/current-gui-attachment-independent-20261013/report.json": {
+      "sha256": "50b473eb3c8372413c0d833c17321744125ae2b403200472e935eabd2c3fb895"
+    },
+    "artifacts/validation/W01-current9d-attachment-independent-readonly-f8b37d15/command.json": {
+      "sha256": "e1a488883122aa3030527478a65287c48b54a5553545f0b7072aa74703c9fd25",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "artifacts/review/current-gui-attachment-independent-20261013/review.py"
+      ],
+      "wall_s": 1.04052159999992,
+      "timed_out": false
+    },
+    "artifacts/review/gui-publisher-conflict-guard-3b47122b/report.json": {
+      "sha256": "f23b2d60936c014276fee1635fabfeab3707dbd25e292e1ddd3860a9f4a98212"
+    },
+    "artifacts/validation/W01-current9d-publisher-conflicting-hash-regressions-2d459e0c/command.json": {
+      "sha256": "9d022c5d464da97676c108cc3b6d46017f330cff73ba850c6fd81b1b17a149e4",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_gui_publisher_hash_conflicts.py"
+      ],
+      "wall_s": 0.7614680999995471,
+      "timed_out": false
+    },
+    "artifacts/validation/X00-current9d-release-gate-c220677b/command.json": {
+      "sha256": "dc3d87ad40a82297c97699e218222e5e0bef0691add61075887614003f5b3977",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "release",
+        "--out",
+        "artifacts/verification/release-9d1cbd-20261013"
+      ],
+      "wall_s": 4.043488699999216,
+      "timed_out": false
+    },
+    "artifacts/verification/release-2d63a390ce/audit.json": {
+      "sha256": "ce5cb33c6512b6df9e20e6183f7d013aac94b2dc22f1c2d43b3c95d98bb01c0a"
+    },
+    "artifacts/verification/release-2d63a390ce/all_required_tasks.stdout.log": {
+      "sha256": "c67391a3f97fef3d11babe4145c9b394d6d998d8511e9a4b3bc531bfdc18628b"
+    },
+    "artifacts/verification/release-2d63a390ce/formal_core.stdout.log": {
+      "sha256": "f75091818e16685841cad7151cacca68dbadbaf01ded6a89dc22cc50ea20aa13"
+    }
+  },
+  "full_acceptance_complete": false
+}

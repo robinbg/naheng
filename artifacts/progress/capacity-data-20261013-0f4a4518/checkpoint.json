@@ -1,0 +1,109 @@
+{
+  "utc": "2026-10-12T18:12:38.112569+00:00",
+  "exit_code": 0,
+  "before": {
+    "TASKS.yaml": "79d38b57cfc5dad068da361c6d04cd825588ad59814ab9d8a268a42b3751df26",
+    "PLANS.md": "807e471a01d7f0eb4020f24b44400b6fa5eba4fa5099c060ba3ed6a20b76ede0",
+    "docs/STATUS.md": "2a97d1517acf994c623ecbbf4af5d3cfd73a40de72b61d3f1359baacebea226f",
+    "docs/NOVELTY.md": "9df5bb1c52ace24cc0f84609e9ae5de29cfff6718a5ab184b15e4ef161090722"
+  },
+  "counts": {
+    "done": 18,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 20
+  },
+  "task_count": 45,
+  "requirement_count": 18,
+  "evidence": {
+    "artifacts/validation/G00-owner-trajectory-current-full-pytest-5bc6eaa0/command.json": {
+      "sha256": "1881e44c2643013a2136864e2ea91f64132ba8fde27ee3d1678e4239468d31f7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp",
+        "C:/nh-test-20261013-b8146",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-20261013-b8146"
+      ],
+      "wall_s": 780.0095064
+    },
+    "artifacts/formal/reduction-trajectory-cached-entry-20261013-67e8ab13/manifest.json": {
+      "sha256": "1e89f15e570d5537b5f5eb61445a2cfe9261cdfe562c3e1c4f536f17290fbe85"
+    },
+    "artifacts/review/trajectory-publication-independent-20261013/report.json": {
+      "sha256": "44073b502023dc2efea651fb75aff8c36b22d57a29331d3db4f858225fa612b0"
+    },
+    "artifacts/validation/D01-F03-duplicate-read-installed-regressions-9a766de3/command.json": {
+      "sha256": "ed9a7b806e5244cf1799f5fffa711e79d3dc433f1dc68d35b914b5e365acfd8b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/unit/test_zenodo_csv.py",
+        "tests/unit/test_capacity_protocol_exits.py",
+        "tests/unit/test_capacity_protocol.py",
+        "tests/integration/test_evidence_import.py",
+        "tests/integration/test_reduction_rate_binding.py",
+        "tests/integration/test_runtime_binding.py",
+        "--basetemp",
+        "C:/nh-test-20261013-d8729",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-20261013-d8729"
+      ],
+      "wall_s": 22.841765300000134
+    },
+    "artifacts/formal/candidates/AgingCapacityEndpoint-12fe201e/manifest.json": {
+      "sha256": "0c539645bb439a71764790bda74717327ceb36b23b8efddb8e19ed9cbe3df36c"
+    },
+    "artifacts/review/aging-four-window-delivery-368f0cff/manifest.json": {
+      "sha256": "c00ac1e050e62c0db64a0683566998d1f3c2d45d53abc78286445e093e5b8c29"
+    },
+    "artifacts/formal/publication/capacity-endpoint-cf96d71d/manifest.json": {
+      "sha256": "6b02bf77c84dfb9a73d5738c557c8d3a397e6470467937b6c9c4871c8487ff00"
+    },
+    "artifacts/integration/data-capacity-87b8ea70/manifest.json": {
+      "sha256": "61674623ee68ce1a5be8f0cf11b7c850cb4830ee2f2db61022cecf7af7b8204b"
+    },
+    "artifacts/review/data-integration-zenodo-public-tests-command-20261013-g/command.json": {
+      "sha256": "2fd30e524f1647c25e8545873ec7e1bfeefa4d0cb8d92778ace02ba1658b7075",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_zenodo_csv.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/review/zc-c-g41",
+        "--basetemp",
+        "artifacts/review/zc-t-g41"
+      ],
+      "wall_s": 5.751540399999612
+    },
+    "artifacts/profiles/actual-stages-76ec6897/manifest.json": {
+      "sha256": "ceba5d67ff4c4713637fd6f3190fe184b34a9e5be9fdbf97f16813788f48a381"
+    },
+    "artifacts/profiles/actual-stages-47c86089/manifest.json": {
+      "sha256": "defb62810dc59b8fb594d11b204aa5c8ba6cdd1d79ef381b272bdcac4ac3b810"
+    },
+    "artifacts/validation/W01-preserve-rate-bound-current-build-085ba07c/command.json": {
+      "sha256": "ecb452d8e964f53ff50209c2219eba95c16fdab3ae6154c3ff09de6711ef54ca",
+      "exit_code": 0,
+      "argv": [
+        "npm.cmd",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 28.572784700000057
+    }
+  },
+  "full_acceptance_complete": false
+}

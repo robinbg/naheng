@@ -1,0 +1,166 @@
+{
+  "utc": "2026-10-10T00:37:03.719868+00:00",
+  "status": "toolchain_recovery_passed",
+  "exit_code": 0,
+  "scope": "G03 PyBaMM short solve and tiny Lean kernel probe; project foundation pending",
+  "installation": {
+    "source_url": "https://github.com/leanprover/lean4/releases/download/v4.19.0/lean-4.19.0-windows.zip",
+    "asset_id": 250981931,
+    "official_size": 478683633,
+    "publisher_digest": null,
+    "scope": "official HTTPS source; local checksum and full ZIP CRC, no publisher checksum claim",
+    "archive_sha256": "2c197a74b6d9c4d46363e34e06591165ed848237ba66de849f8b8d5539eb3895",
+    "bytes": 478683633,
+    "zip_crc": "all_members_passed",
+    "members": 5062,
+    "uncompressed_bytes": 1681110243,
+    "status": "installed_pending_execution_probe",
+    "exit_code": 0,
+    "target": "<PROJECT_ROOT>\\.tools\\lean",
+    "wall_s": 55.79541329998756
+  },
+  "capabilities": {
+    "pybamm_sodium_short_solve": {
+      "status": "passed",
+      "version": "25.10.2"
+    },
+    "lean_kernel_probe": {
+      "status": "passed",
+      "version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+      "reason": ""
+    }
+  },
+  "commands": {
+    "artifacts/validation/G03-Lean-official-resume-93350221/command.json": {
+      "argv": [
+        "curl.exe",
+        "--location",
+        "--fail",
+        "--continue-at",
+        "-",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "180",
+        "--output",
+        "<PROJECT_ROOT>\\.tools\\downloads\\lean-4.19.0-windows.zip.part",
+        "--write-out",
+        "HTTP:%{http_code} bytes_new:%{size_download} speed:%{speed_download} elapsed:%{time_total}",
+        "https://github.com/leanprover/lean4/releases/download/v4.19.0/lean-4.19.0-windows.zip"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "wall_s": 64.06795490003424,
+      "utc": "2026-10-10T00:24:57.362544+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G03-Lean-official-resume-93350221\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G03-Lean-official-resume-93350221\\stderr.log"
+    },
+    "artifacts/validation/G03-Lean-local-integrity-install-49df1758/command.json": {
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "<HOST_HOME>/Documents/Codex/2026-10-09/agents-md-plans-md-tasks-yaml/work/install_lean_local.py"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "wall_s": 56.161128899955656,
+      "utc": "2026-10-10T00:27:04.999053+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G03-Lean-local-integrity-install-49df1758\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G03-Lean-local-integrity-install-49df1758\\stderr.log"
+    },
+    "artifacts/validation/G03-Lean-version-execution-fea9794d/command.json": {
+      "argv": [
+        ".tools/lean/bin/lean.exe",
+        "--version"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "wall_s": 0.5404214000445791,
+      "utc": "2026-10-10T00:27:46.477805+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G03-Lean-version-execution-fea9794d\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G03-Lean-version-execution-fea9794d\\stderr.log"
+    },
+    "artifacts/validation/G03-Lake-version-execution-d6adeca0/command.json": {
+      "argv": [
+        ".tools/lean/bin/lake.exe",
+        "--version"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "wall_s": 0.8063621000037529,
+      "utc": "2026-10-10T00:27:47.578997+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G03-Lake-version-execution-d6adeca0\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G03-Lake-version-execution-d6adeca0\\stderr.log"
+    },
+    "artifacts/validation/G03-restored-backend-probes-c43abba2/command.json": {
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/probe_backends.py",
+        "--out",
+        "artifacts/probes/lean-restored"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "wall_s": 14.047813099983614,
+      "utc": "2026-10-10T00:28:02.067085+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G03-restored-backend-probes-c43abba2\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G03-restored-backend-probes-c43abba2\\stderr.log"
+    },
+    "artifacts/validation/G01-doctor-local-Lean-tests-dce0900b/command.json": {
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_cli.py",
+        "tests/unit/test_formal_audit.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/.pytest_cache",
+        "--basetemp",
+        "artifacts/pytest_tmp/local-lean"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "wall_s": 3.327166600036435,
+      "utc": "2026-10-10T00:29:02.090523+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G01-doctor-local-Lean-tests-dce0900b\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G01-doctor-local-Lean-tests-dce0900b\\stderr.log"
+    },
+    "artifacts/validation/G01-doctor-Lean-restored-d475c941/command.json": {
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "doctor",
+        "--out",
+        "artifacts/environment_lean_restored.json"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "wall_s": 3.993949400028214,
+      "utc": "2026-10-10T00:29:06.535425+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G01-doctor-Lean-restored-d475c941\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G01-doctor-Lean-restored-d475c941\\stderr.log"
+    },
+    "artifacts/validation/F00-narrow-import-preparation-614be6ea/command.json": {
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/formal/setup/prepare_imports.py"
+      ],
+      "cwd": "<PROJECT_ROOT>",
+      "exit_code": 0,
+      "wall_s": 51.474337799998466,
+      "utc": "2026-10-10T00:33:36.935223+00:00",
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F00-narrow-import-preparation-614be6ea\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F00-narrow-import-preparation-614be6ea\\stderr.log"
+    }
+  },
+  "affected_tests": {
+    "passed": 7,
+    "full_smoke_rerun": false
+  },
+  "source_hashes": {
+    "src/naheng/runtime/environment.py": "4864635b5b4ab941fc890a95052a67dd2ae958ebb94ce976e229e185b1dae281"
+  },
+  "project_chemistry_proofs_checked": false,
+  "original_failures_preserved": true
+}

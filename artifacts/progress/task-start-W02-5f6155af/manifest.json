@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T09:00:32.926428+00:00",
+  "task_id": "W02",
+  "status": "in_progress",
+  "required_acceptance_and_contracts_unchanged": true,
+  "actual_start_receipt": "artifacts/validation/W02-build-actual-capacity-observation-censoring-view-cd9eb8e6/command.json",
+  "actual_exit_code": 0,
+  "scientific_acceptance_complete": false
+}

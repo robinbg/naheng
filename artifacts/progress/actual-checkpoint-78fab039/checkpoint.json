@@ -1,0 +1,90 @@
+{
+  "utc": "2026-10-15T11:22:39.704363+00:00",
+  "exit_code": 0,
+  "code_hash": "c91a9024ac239a8c051a1a15fb9dc5cc219c88fe8e1908529faf1f87332ef125",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/X00-original-default-acceptance-loop-demo-073e697a/command.json": {
+      "sha256": "0476e1dc17dff66068b83ebbfc1a75dd3c49cd8d765128e13879d1d1593300bd",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "demo",
+        "--scenario",
+        "acceptance_loop",
+        "--out",
+        "artifacts/demo"
+      ],
+      "wall_s": 120.08119109999996,
+      "timed_out": true
+    },
+    "artifacts/validation/X00-real-owned-gate-timeout-and-native-error-controls-c86213ff/command.json": {
+      "sha256": "7ec708db5cc24a53a572e8cc5a4a05edc87c7e36f26e8258384d2e16d2579c71",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_validation_process_tree.py",
+        "tests/unit/test_ui_gate.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "artifacts/test_tmp/validation-owner-20261015-a"
+      ],
+      "wall_s": 4.886954199999991,
+      "timed_out": false
+    },
+    "artifacts/validation/X00-original-integration-real-lineage-and-native-profile-codes-2b025359/command.json": {
+      "sha256": "5411fb733e3e941f940878d0b81387883969e5d2fe6e6d5b90176d7dc19c751f",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/integration/test_acceptance_loop.py",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/x00-integration-20261015-a"
+      ],
+      "wall_s": 25.913808400000107,
+      "timed_out": false
+    },
+    "artifacts/validation/X00-one-interval-frozen-worker-diagnostic-profile-12e6b25c/command.json": {
+      "sha256": "73ed7354a28f7cf5048c8ea03f0da608f282a0eebd8068d072b5c1506c4d8eff",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/profile_acceptance_loop.py"
+      ],
+      "wall_s": 42.8818024000002,
+      "timed_out": false
+    },
+    "artifacts/progress/x00-one-interval-profile-20261015-b/result.json": {
+      "sha256": "12c6fe0f89c62c2175a22db6e4ef59e021576a2921e5cedfa2004d6ce6303e90"
+    },
+    "artifacts/progress/x00-one-interval-profile-20261015-b/cumulative.txt": {
+      "sha256": "02e2e904f4058ab56ef00ab77709af78971c644d6b671ed73e0f334d7eda3f71"
+    },
+    "artifacts/handoff/a02-isolation-feasibility-20261014-a/compatibility-20261015-a/handoff.json": {
+      "sha256": "2ed07d149b0079dcbda6816d8fee0e5b0331dcb9b0f469c2ecc85536dcac46a4"
+    },
+    "artifacts/handoff/a02-isolation-feasibility-20261014-a/compatibility-20261015-a/driver-diagnostics.json": {
+      "sha256": "83ab68831f3c12603d66631cb17ea10c21d32819505a635931ffee76b522512f"
+    }
+  },
+  "full_acceptance_complete": false
+}

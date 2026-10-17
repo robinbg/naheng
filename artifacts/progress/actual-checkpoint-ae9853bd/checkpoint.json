@@ -1,0 +1,154 @@
+{
+  "utc": "2026-10-13T22:42:52.667287+00:00",
+  "exit_code": 0,
+  "code_hash": "79443b43602693001a5e5969ffba7cbe6bf706c682b73900c6798814cf9ffaae",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 21,
+    "in_progress": 6,
+    "todo": 18
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/formal/current-heterogeneous-partials-7f00a1d9/manifest.json": {
+      "sha256": "32d9401c8ec372c7b176f6165c7b4f1693f38889765267e8979feb2b50d265a5"
+    },
+    "artifacts/review/heterogeneous-publication-independent-20261014-a/handoff.json": {
+      "sha256": "2e3ffd1792bc8c204d0d56ffd3ca13fa8b0c3f02c0236f4de42debd6cf4209ee"
+    },
+    "artifacts/validation/F02-independent-all-nine-fresh-publication-eighty-two-binding-and-pointer-review-7f7975d8/command.json": {
+      "sha256": "5bf05abb504d7b0bbc5bebde5a141b0c8293ebd3df1025484a464a1f870d3f37",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/heterogeneous-publication-independent-20261014-a/review_publication.py",
+        "artifacts/formal/current-heterogeneous-partials-7f00a1d9/manifest.json",
+        "artifacts/validation/F02-all-nine-current-defining-module-builds-and-strict-axiom-audits-f6544d43/command.json",
+        "publication-report-r1.json"
+      ],
+      "wall_s": 0.36490060000505764,
+      "timed_out": false
+    },
+    "artifacts/calibration/frontier-current-20261014-d/manifest.json": {
+      "sha256": "ffb230d59d65b2a88fbe16e1611f0f6ea518d66069c70193987c99d7d0619d7d"
+    },
+    "artifacts/validation/C01-final-current-diagonal-source-for-repeated-v2-d5ffe1d4/command.json": {
+      "sha256": "5d6aa58f9044a5a4623d8703642e864deb6f3f811f75b859133d5d2846879996",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "calibrate",
+        "--input",
+        "tests/fixtures/calibration_builtin/request.json",
+        "--out",
+        "artifacts/calibration/frontier-current-20261014-d"
+      ],
+      "wall_s": 2.6282534999991185,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-final-current-v2-repeated-seeds-version-consistency-51cb0b73/command.json": {
+      "sha256": "02894ed9a258301cc5177dc328bcc72d9583a7f6c00c86879198f994e8677e01",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "baseline-frontier",
+        "--input",
+        "configs/experiments/fixed-baseline-frontier-v2.json",
+        "--calibration-dir",
+        "artifacts/calibration/frontier-current-20261014-d",
+        "--out",
+        "artifacts/baseline_frontier/public-twelve-20261014-d"
+      ],
+      "wall_s": 197.20747049999773,
+      "timed_out": false
+    },
+    "artifacts/baseline_frontier/public-twelve-20261014-d/manifest.json": {
+      "sha256": "e12b96a93dfe3c04af537240faad5c3385ca6ac71a0c7554c538902119f3badb"
+    },
+    "artifacts/review/baseline-frontier-current-after-joint-independent-20261014-a/handoff.json": {
+      "sha256": "46aa8b045a715b49af4f3aa5997b57b68823dafd3aaf17776d65510ce94340e6"
+    },
+    "artifacts/validation/C01-current-after-joint-independent-all-original-artifact-checks-7a82d9eb/command.json": {
+      "sha256": "27b43576166283064e53a4a18d6cc272e93619d236ccf3a53f8946b016719a05",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/baseline-frontier-current-after-joint-independent-20261014-a/review_artifacts_caseid.py",
+        "artifacts/baseline_frontier/public-twelve-20261014-d",
+        "artifacts/validation/C01-final-current-v2-repeated-seeds-version-consistency-51cb0b73/command.json",
+        "artifact-report-current-r1.json",
+        "artifacts/validation/C01-final-current-diagonal-source-for-repeated-v2-d5ffe1d4/command.json"
+      ],
+      "wall_s": 1.3573258000033093,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-current-after-joint-independent-repeated-seed-physical-comparison-dbaed6ed/command.json": {
+      "sha256": "e5afbdb73853d6e41f706989409f8064fe973f5968e9443e8d314c9dd02dd9e4",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/baseline-frontier-current-after-joint-independent-20261014-a/compare_repeated_seeds.py"
+      ],
+      "wall_s": 0.9321596999943722,
+      "timed_out": false
+    },
+    "artifacts/review/c01-original-action-scope-independent-20261014-a/report.json": {
+      "sha256": "39d9aa57d4a76da0894b827793d3ed72561141308ac227d076d40a082d2fdb48"
+    },
+    "artifacts/progress/E02-engineering-accepted-b95731fa/manifest.json": {
+      "sha256": "650767de3af26803a7544e90e6ffec7510cd18388c34305aae216ab28db56614"
+    },
+    "artifacts/validation/E02-original-current-engineering-acceptance-close-with-scientific-gates-preserved-196ce380/command.json": {
+      "sha256": "170c99332e12284de649fc97e7bdcd777be81d8316cd9450b91d0c363a3e85c5",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/close_e02_engineering_acceptance.py"
+      ],
+      "wall_s": 0.46663640000042506,
+      "timed_out": false
+    },
+    "artifacts/progress/E02-current-regression-c00ee2cd/manifest.json": {
+      "sha256": "8735b04bb2f03f91dd492b95369179a81052560ec841ddcbcdebbfda6a84404f"
+    },
+    "artifacts/validation/E02-F02-final-current-complete-regression-owned-Windows-worker-f7ffddcb/command.json": {
+      "sha256": "b6bf4bb6ee722869e2578c812c0a02f75d7d7be4b5ef2d60783d16c9893503f1",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_current_source_regression.py"
+      ],
+      "wall_s": 259.4630277999968,
+      "timed_out": false
+    },
+    "artifacts/review/joint-gaussian-observer-independent-20261014-a/handoff.json": {
+      "sha256": "0988ba5d02c2deadd69fa3ac56f87efaebbd477bff05aa01b109087c79d25466"
+    },
+    "artifacts/release-E02-accepted-20261014-a.json": {
+      "sha256": "080376eae1f471e7da5154f3e122f5db7a9860b64bae51728534d3161cd25ba6"
+    },
+    "artifacts/validation/R02-current-E02-accepted-required-release-gates-fb5caa79/command.json": {
+      "sha256": "6112d8ec1301752eb09e5a90a1065bc3e7655394b8b605b4b5b8e30f3fc81f26",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "release",
+        "--out",
+        "artifacts/release-E02-accepted-20261014-a.json"
+      ],
+      "wall_s": 0.4922138000038103,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

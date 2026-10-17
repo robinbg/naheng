@@ -1,0 +1,89 @@
+{
+  "created_at_utc": "2026-10-14T14:49:18.560153+00:00",
+  "exit_code": 1,
+  "actual_calibration_exit": 1,
+  "wall_s": 0.6983626999999615,
+  "timeout_s": 120,
+  "memory_limit_bytes": 8589934592,
+  "memory_limit_enforced": true,
+  "case_count": 32,
+  "incorrectly_accepted_bad_reports": 24,
+  "native1_projection_guard_failed": true,
+  "candidate_source_hashes": {
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/runtime/public_capacity_session.py": "4c634a72801aca860f0a62707986c4f956ad708388b615700ad26c9a717775a8",
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/experiments/public_capacity.py": "09290f4871f2cc7bec0e4cc0963c85d328d98a3a31f271a688e606fadc96f5c2",
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/handoff.json": "5cb9d1a141e5afb0cd078153422ff1d122a9bb5b51cdc1f2fdec2da1c05651a1",
+    "artifacts/handoff/d02-capacity-protocol-20261014-a/protocol_capacity_measurement.py": "0f5f3e7f60497604c485a1fc430e5386170374b79cdee2933379ed900651e381",
+    "artifacts/handoff/d02-capacity-protocol-20261014-a/actual-frozen-report.json": "f224c349335baf08fc4ea89868eb5d0d7ee32ecaaaccebf822591929e34cc60a",
+    "data/splits/zenodo13836819-eight-provenance-20261013-c.json": "c86f34c674f77fe7972f614ad1b88d0cf37531dc51d457479b17b4f837a4b539",
+    "artifacts/review/zenodo-csv-public-12-20261013-h/member-1-Pulse_data_temp-5_bat3/manifest.json": "99c5a1dde1b2bbe17e59408449c58b7cac50010047eef92012bcccff90799ecc",
+    "artifacts/review/zenodo-csv-public-12-20261013-h/member-2-Pulse_data_temp-5_bat4/manifest.json": "4bee64fa5504ac2e51fa243010cff4d8e5d0d4058c8e34ffaefbe74d25098f90",
+    "artifacts/review/zenodo-csv-public-3-20261013-h/member-3-Pulse_data_temp15_bat3/manifest.json": "1197276c1df1bc644eea6af493092a1fbeeba3379ef36fc3e15b111b2946bddf",
+    "artifacts/review/zenodo-csv-public-4-20261013-h/member-4-Pulse_data_temp15_bat4/manifest.json": "9dbc5c0b18cfea3e1a8f7613405aa497c1bed9dc4c437ff4915945b21aa57140",
+    "artifacts/review/zenodo-csv-public-5-20261013-h/member-5-Pulse_data_temp25_bat3/manifest.json": "1b802b78c44f9384f284c88cece7ce6ddcafed82a53df47199b744fd6c4a47da",
+    "artifacts/review/zenodo-csv-public-6-20261013-h/member-6-Pulse_data_temp25_bat4/manifest.json": "9712d7d5febcbcf2d39a38d3327e6b8c4a7ed7414d20819db24c3d54e116f348",
+    "artifacts/review/zenodo-csv-public-7-20261013-i/member-7-Driving_cycle_data_temp-5_bat5/manifest.json": "228ec65d4fda40d7de9f3de46bc4b3d7d83bc77c56970bc42bb34bed6c511abe",
+    "data/processed/zenodo13836819-bat1-public-20261013-a/manifest.json": "d111e409b977bf7c301cd8881c09ceffb9242c9886e0f004cd0b8e597a2e6bf0"
+  },
+  "read_bytes_unchanged": true,
+  "scope": "Pure saved report/aggregate validation, not actual public CLI",
+  "raw_replays": 0,
+  "business_workers_spawned": 0,
+  "Lean_invocations": 0,
+  "GUI_tested": false,
+  "approved_for_public_completion": false,
+  "artifact_inventory": {
+    "calibrate_guards.py": {
+      "sha256": "5c5324316c899809e842b9d615a9bb51f554509324a5b26268e6be43bcc21643",
+      "bytes": 11698
+    },
+    "command.json": {
+      "sha256": "c4654e5cf6335626393dcbee48fa5bc451558c9f0cf10ce449c61be2bc5a6067",
+      "bytes": 682
+    },
+    "first-27-command.json": {
+      "sha256": "3dd2f885c2e3f7d65b84ae458829248d83e2240dfc59f87cc13c2f349dbcd867",
+      "bytes": 681
+    },
+    "first-27-guard-results.json": {
+      "sha256": "e97951d3cfcbaa7befdce19c5e5018db4772cef90333f17c98b9caa4f5b698db",
+      "bytes": 13783
+    },
+    "first-27-stdout.log": {
+      "sha256": "2cbc5c35582a94b49675982e4876ca9455bab50950cfbd54e2e60985801c1781",
+      "bytes": 866
+    },
+    "guard-results.json": {
+      "sha256": "5670e19ade04bae30dc1e1c4324f8405823cc3814230c0394e4c0b16a29cdaf6",
+      "bytes": 15062
+    },
+    "positive-full-report.json": {
+      "sha256": "e6e9684f6a44ee36334c83d3408fa44ef8e18c06c14a4b62f560e072ef7c4c22",
+      "bytes": 506131
+    },
+    "positive-multiple-report.json": {
+      "sha256": "1eb66753440751411c199eba4cd608a57264ce26ce55d96aa75166715f432734",
+      "bytes": 515888
+    },
+    "REVIEW.md": {
+      "sha256": "6cc587181861b99fac9948d4a2633484404b6dea86212e29b90dfb32ac8f8e61",
+      "bytes": 3599
+    },
+    "run_review.py": {
+      "sha256": "95ed0a9eba7868bb6a7f414696a3fa19477b0fd7cfb45b99968be5a4628cfd42",
+      "bytes": 1583
+    },
+    "seal_review.py": {
+      "sha256": "b5d91a39b931a92fc991fcb19c9a16bcce37e1dca7c9b1154a0ec6e79b280fd7",
+      "bytes": 1389
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stdout.log": {
+      "sha256": "a8f075d0cf73205ad3085b1cf55d0155ac56066404cbc5f098e5fc5124a1eb6e",
+      "bytes": 992
+    }
+  }
+}

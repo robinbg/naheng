@@ -1,0 +1,12 @@
+{
+  "manifest": "artifacts/formal/reduction_residual-current-core-20261014-a/manifest.json",
+  "sha256": "4d7a01bae0892624a057a63ee6ab6ebad700b1aee9acaf6be298512ed78757ae",
+  "evidence_ids": [
+    "lean.reduction_residual.Naheng.Reduction.detailed_rate_residual_identity.17e6119da240e698",
+    "lean.reduction_residual.Naheng.Reduction.detailed_rate_residual_abs_bound.0c3cdb9d298cbcac",
+    "lean.reduction_residual.Naheng.Reduction.robust_rate_upper_bound.85ed360eb3fa7315"
+  ],
+  "scope": "Instantaneous finite-site stored-sodium rate polynomial only",
+  "grants_future_reduction": false,
+  "grants_strict_safety": false
+}

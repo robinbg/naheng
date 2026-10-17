@@ -1,0 +1,159 @@
+{
+  "utc": "2026-10-16T06:15:44.591324+00:00",
+  "exit_code": 0,
+  "code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 35,
+    "in_progress": 2,
+    "todo": 8
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A03-public-nine-coordinate-original36-pilot-88a497f0/command.json": {
+      "sha256": "bddf2ec621a0f82d31b62ac95d26be02e29fe7280e9d933eb887428b3a68e6c4",
+      "exit_code": 0,
+      "argv": [
+        ".bootstrap/bin/uv.exe",
+        "run",
+        "--frozen",
+        "--offline",
+        "--no-sync",
+        "--extra",
+        "dev",
+        "--extra",
+        "reference",
+        "naheng",
+        "optimize",
+        "--profile",
+        "pilot",
+        "--out",
+        "artifacts/optimization/public-0a2-20261016-c"
+      ],
+      "wall_s": 439.19681839999976,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/optimization/public-0a2-20261016-c/result.json": {
+      "sha256": "e5aa8cada8b5583e112c308824d87d310e569141a8ae5328f730eecc27c053dc"
+    },
+    "artifacts/validation/A03-b-original44-independent-root-13a89de2/command.json": {
+      "sha256": "88ba3c4640c4ec805e61608870c1ed789144f16923dc82385c6a127feb71d5c6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a03-pairing-priority-20261016-b/run_tests.py"
+      ],
+      "wall_s": 21.29347879999841,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a03-b-independent-20261016-c/handoff.json": {
+      "sha256": "cd279086a2f8df0ff42475194f8df2c6e2cddfb9a73ef9181b9644489781c27a"
+    },
+    "artifacts/validation/A03-b-UI-label-reviewed-install-2853eb7b/command.json": {
+      "sha256": "4499e8e641eff97007c8c066e8bf2a75dbcb13778d343e2af8b3d68fadb8a44a",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/apply_reviewed_acquisition_b_20261016.py"
+      ],
+      "wall_s": 0.2956525999979931,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/progress/acquisition-b-adoption-3133c129/applied.json": {
+      "sha256": "1bd2e91d6e746ac3cd301de251b8edb6ec084cf37d2be631bd104652e1b5afab"
+    },
+    "artifacts/progress/a03-started-b57a0169/checkpoint.json": {
+      "sha256": "96da61b73240ac352cd971a0690fb4ed8916fb3a156ae4cd949d6fabab3aaad0"
+    },
+    "artifacts/validation/R00-lock-install-delivered-project-offline-2f59c5dc/command.json": {
+      "sha256": "6529124d2bce873c6c408ea59722e3ba143fe41b984ab75651d0176ccff66eb8",
+      "exit_code": 0,
+      "argv": [
+        ".bootstrap/bin/uv.exe",
+        "sync",
+        "--project",
+        "<HOST_DELIVERY_ROOT>/app",
+        "--frozen",
+        "--offline",
+        "--extra",
+        "dev",
+        "--extra",
+        "reference",
+        "--python",
+        "<HOST_DELIVERY_ROOT>/venv/Scripts/python.exe"
+      ],
+      "wall_s": 2.8857287999999244,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/R00-clean-installed-browser-server-3b117ff3/command.json": {
+      "sha256": "f707e41d5bab5135c9aa7f088193c56e30935c4adf07435726a51e094e75b553",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_clean_delivery_acceptance_server_20261016.py",
+        "--lifetime-s",
+        "600"
+      ],
+      "wall_s": 465.96929519999685,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/clean-delivery-0a2-20261016-c/independent-review.json": {
+      "sha256": "80da5bd9e2b8e940b0154549762128fd0f73060b4ca9333a3de163e47c2f05a9"
+    },
+    "artifacts/review/r00-clean-installed-independent-20261016-c/ui-handoff.json": {
+      "sha256": "b5975c4654f438f9f24d1a7ab0a60f6f0019afa86e50878fc71fa7cb0a92692b"
+    },
+    "artifacts/validation/frontend-9593-current-build-7d0ee010/command.json": {
+      "sha256": "1edf4ef5d3099f4c2cbf92c04e477c285180866e2ef8602df305532f90b281df",
+      "exit_code": 1,
+      "argv": [
+        "C:/Program Files/nodejs/node.exe",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 4.955161699996097,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/frontend-9593-current-build-authorized-65c32b07/command.json": {
+      "sha256": "7862e2a0854f3719dee58a3a20df19d93ee1a48c70ced2376cd468da4726dcfd",
+      "exit_code": 0,
+      "argv": [
+        "C:/Program Files/nodejs/node.exe",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 5.586560499999905,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/frontend-9593-real-build-record-248df81f/command.json": {
+      "sha256": "31e3c3efb9a75b3de82112dca296a07257cc42ab0acfbce5a0df7132d98f411d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/record_ui_candidate_build.py",
+        "record",
+        "--build-command",
+        "artifacts/validation/frontend-9593-current-build-authorized-65c32b07/command.json"
+      ],
+      "wall_s": 0.19619909999892116,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

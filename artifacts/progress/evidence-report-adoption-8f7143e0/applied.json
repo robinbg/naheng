@@ -1,0 +1,35 @@
+{
+  "code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "entries": [
+    {
+      "target": "tools/evidence_report.py",
+      "candidate": "artifacts/handoff/r01-install-current-20261016-b/candidate/tools/evidence_report.py",
+      "candidate_sha256": "77b8604f7934da9b47a1129d42e41ca607965672e94941f243d679f016fcca2c",
+      "target_existed_at_preparation": false,
+      "target_sha256_at_preparation": null
+    },
+    {
+      "target": "tests/unit/test_evidence_report.py",
+      "candidate": "artifacts/handoff/r01-install-current-20261016-b/candidate/tests/unit/test_evidence_report.py",
+      "candidate_sha256": "ecd2be72a7434c67d5611038f8fff3a23e9aa72e67c68599169ae0ddaeea7c81",
+      "target_existed_at_preparation": false,
+      "target_sha256_at_preparation": null
+    },
+    {
+      "target": "tests/fixtures/evidence_report/legacy-command.json",
+      "candidate": "artifacts/handoff/r01-install-current-20261016-b/candidate/tests/fixtures/evidence_report/legacy-command.json",
+      "candidate_sha256": "35aaa4f4f961d2326c6386ba2ed4b55052490189d640c374d56097a8d2aec9e7",
+      "target_existed_at_preparation": false,
+      "target_sha256_at_preparation": null
+    },
+    {
+      "target": "docs/EVIDENCE_REPORT.md",
+      "candidate": "artifacts/handoff/r01-install-current-20261016-b/candidate/docs/EVIDENCE_REPORT.md",
+      "candidate_sha256": "06ceac66f46d71c8a5dff422506c5675add765c49683eae1fbe8f4582116cc07",
+      "target_existed_at_preparation": false,
+      "target_sha256_at_preparation": null
+    }
+  ],
+  "source_unchanged": true,
+  "R01_complete": false
+}

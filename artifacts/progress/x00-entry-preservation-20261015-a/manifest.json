@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "preserved_original_files": {
+    "artifacts/ui/acceptance.json": "e677fb105571f423924c8581d330d24e5da329e8c2d39360af7408f2700a81d8",
+    "artifacts/web/frontend_build_proof_manifest.json": "8961579a8a0e6281b48b7f6788fd88d5c69d0358c10adc6738fd91ce05a8aef1",
+    "artifacts/demo/latest.json": "bdb3dccfc35a82839d393ec284178c80fe9e47726660071dfc459dde44311ed1"
+  }
+}

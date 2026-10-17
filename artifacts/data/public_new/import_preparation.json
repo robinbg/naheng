@@ -1,0 +1,39 @@
+{
+  "views": [
+    {
+      "view": "complete",
+      "csv": "artifacts\\data\\public_new\\cvut_sodium_0001_complete.csv",
+      "spec": "artifacts/data/public_new/cvut_sodium_0001_complete.spec.json",
+      "registry": "data\\manifests\\retrieval-zenodo17459188-0001-complete.yaml",
+      "records": 64,
+      "co_timed_records": {
+        "30.000": [
+          32,
+          33
+        ],
+        "30.100": [
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "view": "instrument_step",
+      "csv": "artifacts\\data\\public_new\\cvut_sodium_0001_instrument_step.csv",
+      "spec": "artifacts/data/public_new/cvut_sodium_0001_instrument_step.spec.json",
+      "registry": "data\\manifests\\retrieval-zenodo17459188-0001-instrument_step.yaml",
+      "records": 64,
+      "co_timed_records": {
+        "30.000": [
+          32,
+          33
+        ],
+        "30.100": [
+          34,
+          35
+        ]
+      }
+    }
+  ],
+  "source_sha256": "f09ee05aca1adcc763d2713173470e3a2cad47624d998776e225d8d76c5cb9f1"
+}

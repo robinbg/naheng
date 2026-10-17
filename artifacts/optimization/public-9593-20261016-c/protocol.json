@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "space_id": "synthetic-site-full-policy-v1",
+  "bounds": {
+    "charge_low_A": [
+      0.006,
+      0.02
+    ],
+    "charge_high_A": [
+      0.003,
+      0.015
+    ],
+    "discharge_low_A": [
+      0.003,
+      0.015
+    ],
+    "discharge_high_A": [
+      0.006,
+      0.02
+    ],
+    "cutoff_voltage_V": [
+      3.15,
+      3.4
+    ],
+    "max_dod": [
+      2e-05,
+      0.002
+    ],
+    "cooling_permission_W": [
+      0.0,
+      0.02
+    ],
+    "heating_permission_W": [
+      0.0,
+      0.02
+    ],
+    "rest_duration_s": [
+      0.0,
+      5.0
+    ]
+  },
+  "units": {
+    "charge_low_A": "A",
+    "charge_high_A": "A",
+    "discharge_low_A": "A",
+    "discharge_high_A": "A",
+    "cutoff_voltage_V": "V",
+    "max_dod": "1",
+    "cooling_permission_W": "W",
+    "heating_permission_W": "W",
+    "rest_duration_s": "s"
+  },
+  "sources": {
+    "fixed-training-full-policy-world-2026101401": "train",
+    "heldout-full-policy-2026101411": "test"
+  },
+  "limits": {
+    "initial_points": 12,
+    "iterations": 24,
+    "high_fidelity_calls": 24,
+    "single_execution_s": 120.0,
+    "wall_s": 1800.0,
+    "retry_limit": 2,
+    "seed": 20261016
+  },
+  "implementations": {
+    "multifidelity.py": "7575464c9e94359afaeaf1ad8c06f38fa08c1e95723b3e7967454019b86ba248",
+    "query_policy.py": "1c59c4165a5cd7faa0ca6c203acf4bcab445641188d359ada3050bf00cac2db5",
+    "constrained_bo.py": "40d3f1758d44d796435021863a06b5f5e06c8cb73df4b9d2d1a0f7dd9ac42a98",
+    "policy_space.py": "c4cec28bfee935ca9434ddead67e2b7aeb8d289aac1e4cb7abff736771208abd",
+    "strategy_mpc.py": "66c5b1049272e2c0ea1d9cd90bb83286eabd3c75689a166468174d0efd89efd5",
+    "operational_oracle.py": "c22b8f9c9665c552c99db67b86485e75cc6eab31eee244c2f619f1430684544f",
+    "pilot.py": "6e0847ce44277f4e6ef4a958f552165aa65c0bfd180876cc7db2d33d388c4e60",
+    "calibration_request.json": "a87ca08d4827ad6cea342be8ff76115ab0a568d096cf723574b513bd4012c6af"
+  },
+  "code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "world": {
+    "world_id": "synthetic-fixed-tariff-ten-second-service-v1",
+    "stages": [
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.15,
+        "sell_price_per_kWh": 0.4,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.15,
+        "sell_price_per_kWh": 0.4,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      }
+    ],
+    "execution_steps": 4,
+    "prediction_steps": 4,
+    "service_seconds": 10.0,
+    "clock_step_s": 2.5,
+    "tariff_source": "synthetic_frontier_predeclared_tariff_v1",
+    "provenance_type": "synthetic",
+    "scientific_N_added": 0
+  },
+  "calibration_packet": "<PROJECT_ROOT>\\artifacts\\calibration\\learning-current-ff1f6f1e5f79",
+  "calibration_manifest_sha256": "cdef6f745517072476c793bf10f948fc2afda5933c4ab188586497fd574d813d",
+  "scope": "Nine-coordinate policy in one fixed synthetic world; computational effort levels only",
+  "unknown_handling": "Unknown/refused/incomplete executions consume budget but never receive numeric fit labels",
+  "scientific_N_added": 0,
+  "risk_certificate": false,
+  "physical_reference_calls": 0,
+  "A03_complete": false
+}

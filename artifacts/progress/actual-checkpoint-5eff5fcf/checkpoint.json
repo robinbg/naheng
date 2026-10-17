@@ -1,0 +1,199 @@
+{
+  "utc": "2026-10-13T23:24:50.205190+00:00",
+  "exit_code": 0,
+  "code_hash": "08705aadc91cfc2afc7a9f3212e8dca1fa538c41ef3aeb9808d916d9294344d2",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 21,
+    "in_progress": 7,
+    "todo": 17
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/progress/guarded-execution-install-ed08c9bd/manifest.json": {
+      "sha256": "784648de5b13932e5cc0d90df91f8b694a6be5b9464a22ccd40a320261a3c45e"
+    },
+    "artifacts/progress/control-callsite-before-06429380/manifest.json": {
+      "sha256": "3c2e82fca013117891f7f00f47ce57aba798c63431446a0dea64724d890db79c"
+    },
+    "artifacts/validation/C01-E02-current-original-mpc-shared-posterior-and-guarded-public-replans-7a78ca86/command.json": {
+      "sha256": "d4b4ba524b70811a5abcbc6ce07c209867d44d2606e94ceb0a0746933c78b5b1",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/integration/test_mpc_feasibility.py",
+        "tests/integration/test_scenario_mpc.py",
+        "tests/integration/test_fixed_baseline.py",
+        "tests/integration/test_baseline_frontier.py",
+        "tests/integration/test_scenario_calibration.py",
+        "tests/integration/test_joint_scenario_calibration.py",
+        "tests/integration/test_shared_posterior.py",
+        "--basetemp=.nh-c01-20261014-a"
+      ],
+      "wall_s": 123.91262000000279,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-native-guard-frozen-failure-recovery-ledger-field-recovery-e83a5da6/command.json": {
+      "sha256": "7eea2c751ca51e25148cfe7587a86a761bcb87850259a3e788737d9b22038546",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/integration/test_guarded_execution.py",
+        "tests/integration/test_executed_failure_accounting.py",
+        "tests/integration/test_artifact_publication.py",
+        "tests/integration/test_public_sodium_entry.py",
+        "--basetemp=.nh-guard-20261014-c"
+      ],
+      "wall_s": 4.643147199996747,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-actual-execution-bookkeeping-and-checkpoint-IO-database-recovery-guard-38d18820/command.json": {
+      "sha256": "4596a47232431e839da0d643b82c2dbdf7df46c0453b0bbc3aa78c6ead93ea50",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/integration/test_executed_failure_accounting.py",
+        "tests/integration/test_artifact_publication.py",
+        "tests/integration/test_checkpoint_recovery.py",
+        "--basetemp=.nh-io-20261014-a"
+      ],
+      "wall_s": 44.59969909999927,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-original-recovery-full-boundary-ledger-and-prediction-reserve-fixes-c392f086/command.json": {
+      "sha256": "39cf0043e62d3785536d35b5509979070386f3e76ef4781479fa7ed207664f4a",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/integration/test_executed_failure_accounting.py",
+        "tests/integration/test_artifact_publication.py",
+        "tests/integration/test_checkpoint_recovery.py",
+        "tests/integration/test_execution_reserve_scope.py",
+        "--basetemp=.nh-io-20261014-b"
+      ],
+      "wall_s": 42.90916229999857,
+      "timed_out": false
+    },
+    "artifacts/validation/C01-actual-hard-exit-intent-and-old-normal-checkpoint-recovery-84025691/command.json": {
+      "sha256": "acfbe7dc93c884500e76b055f3250232f71bdea7061fce0f13e891f62574ce34",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/integration/test_hard_exit_execution_recovery.py",
+        "tests/integration/test_executed_failure_accounting.py",
+        "tests/integration/test_checkpoint_recovery.py",
+        "tests/integration/test_execution_reserve_scope.py",
+        "--basetemp=.nh-hard-20261014-a"
+      ],
+      "wall_s": 49.96130830000038,
+      "timed_out": false
+    },
+    "artifacts/review/guarded-execution-independent-20261014-a/handoff.json": {
+      "sha256": "3158c0bf31281c605ad5c4f2fca3bc1299018b948d5492af67dea6fd29b7abb5"
+    },
+    "artifacts/review/c01-four-callsites-pending-original-scope-independent-20261014-a/runs/f80bf7a4/report.json": {
+      "sha256": "eef252b8edb6a4d61b9f49c23c35ffa0bbd2f0cdffe7e5825448ecd315d106b9"
+    },
+    "artifacts/handoff/guarded-mpc-thermal-current-20261014-a/handoff.json": {
+      "sha256": "1ea48f29bf78e14b1089c153078b1a5a33eeae2006a6bfd549bca94eda00b885"
+    },
+    "artifacts/progress/public-sodium-install-efa00505/manifest.json": {
+      "sha256": "7f5ee5f4fc3aba161969fa50c9f93c9320e6ee332fc94df4660a3965c7823c94"
+    },
+    "artifacts/validation/D02-reviewed-public-voltage-source-and-suite-installation-d2c5b680/command.json": {
+      "sha256": "ef2df22783882ea0509ead376316d0ddca8668d5e815bb2f20c2759153cc1832",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/install_public_sodium_pilot.py"
+      ],
+      "wall_s": 0.1406245999969542,
+      "timed_out": false
+    },
+    "artifacts/validation/D02-public-entry-owned-job-truncated-report-and-resolved-default-guards-6eb06189/command.json": {
+      "sha256": "7820c59809cda89c872b499f4cb342fe4f4c50fc5fbed0b4364873985243cdbc",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/integration/test_public_sodium_entry.py",
+        "--basetemp=.nh-d02-20261014-b"
+      ],
+      "wall_s": 0.8575311999957194,
+      "timed_out": false
+    },
+    "artifacts/progress/task-start-D02-51cf71cf/manifest.json": {
+      "sha256": "d09a4ba014ed5022db04418157c25a8822f545c26c6f094ba7740da537d967fa"
+    },
+    "artifacts/validation/D02-real-public-experiment-start-original-gates-preserved-6a28a67f/command.json": {
+      "sha256": "2258cd5b4bb838851ad72be3d7a5fc8a987d369cdc2d0ee78cc48a48d55588b8",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/start_dependency_satisfied_task.py",
+        "D02",
+        "artifacts/validation/D02-final-current-public-frozen-licensed-voltage-transfer-pilot-fc7f8ba3/command.json"
+      ],
+      "wall_s": 0.5885959000006551,
+      "timed_out": false
+    },
+    "artifacts/validation/D02-final-current-public-frozen-licensed-voltage-transfer-pilot-fc7f8ba3/command.json": {
+      "sha256": "94fe5e96599915772f43383eb9d663f7f5e655b5fcec3191e73ac527380df1ad",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "experiment",
+        "run",
+        "--suite",
+        "public-data",
+        "--profile",
+        "pilot",
+        "--out",
+        "artifacts/public_validation/pilot-current-20261014-a"
+      ],
+      "wall_s": 78.24480210000183,
+      "timed_out": false
+    },
+    "artifacts/review/public-sodium-causal-independent-20261014-a/handoff.json": {
+      "sha256": "bd4a7226191f639473f770f29ca5da6f1b2fb19743dde77755d3261c3aae1122"
+    },
+    "artifacts/review/public-sodium-public-entry-independent-20261014-a/handoff.json": {
+      "sha256": "c65327d7e431b2f291ba073f29f6336501d7521924faa7c412f2209103b78625"
+    },
+    "artifacts/progress/E02-current-regression-92f8fe74/manifest.json": {
+      "sha256": "71f79de36fff8cd7e60b2116cf0d8ecd74f1993f32f036667047d4af6d5f031c"
+    },
+    "artifacts/validation/C01-D02-final-current-complete-regression-owned-Windows-worker-988efda6/command.json": {
+      "sha256": "e4ce35d6a217c64fe1f2f72cc91c50c2eac32f6e349aacf463848f0d08c886b3",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_current_source_regression.py"
+      ],
+      "wall_s": 273.72783390000404,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

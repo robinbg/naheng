@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T11:36:45.611811+00:00",
+  "counts": {
+    "done": 29,
+    "in_progress": 4,
+    "todo": 12
+  },
+  "code_hash": "2e8b7cb195d918d99c19e4cb5e95edf22224556ebec35dce1f2109eb292dfbb0",
+  "evidence": {
+    "artifacts\\discovery\\public-pilot-20261014-a\\manifest.json": "a845ce844cbb844489c80ebd46293516313acec15dc7669a86536374f9ba0fd9",
+    "artifacts\\validation\\A01-original-public-discover-pilot-541683e9\\command.json": "b497ae830adf940d78935dc4a380f59b61b401f96ac3391a0667de4123ba0ce7",
+    "artifacts\\review\\a01-independent-integration-20261014-a\\report.json": "f52a4772a9bbda4f0b95b64130948da0d37d2c3a60e9fc85bc1c225b3a713de5",
+    "artifacts\\validation\\A01-independent-saved-model-matrix-feedback-choice-no-new-ODE-31137d35\\command.json": "bc77e3f484c951f92e8adeb380bacd62df8fe1fbc8d61273d2e99442e9800dfd"
+  },
+  "original_gates_unchanged": true,
+  "full_project_completed": false
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "status": "sealed_pending_additional_member_candidate",
+  "central_index_sha256": "b41c746c7514aabb28e443cf78a63c7137fc5a5025856fc7b949aab62a37740f",
+  "central_index_unchanged": true,
+  "raw_recovery_manifest": {
+    "path": "<PROJECT_ROOT>\\artifacts\\data\\public_independent\\zenodo13836819-additional-20261013-a\\manifest.json",
+    "sha256": "7861afeb6f63a50c9fc710395b941b069b3e08c07a34321c4573265817cad955"
+  },
+  "source_only_handoff": {
+    "path": "<PROJECT_ROOT>\\artifacts\\review\\data-integration-extra-member-budget-20261013-a\\source-only-handoff.json",
+    "sha256": "67e061ff7c90e5998e1f4a28dbbca16e2d13ccea3cb5b6e76589a29aece14adf"
+  },
+  "sources": [
+    {
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "kind": "additional_source_only_pending_candidate",
+      "url": "https://zenodo.org/records/13836819",
+      "doi": "10.5281/zenodo.13836819",
+      "provenance_type": "public_measurement",
+      "verification_status": "complete_member_crc_verified",
+      "license_id": "CC-BY-4.0",
+      "license_evidence_path": "artifacts/data/public_independent/zenodo13836819-670b8554/metadata.json.attempt1",
+      "license_evidence_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+      "archives": [
+        {
+          "official_filename": "Data for 3.2Ah sodium-ion batteries.zip",
+          "archive_url": "https://zenodo.org/api/records/13836819/files/Data%20for%203.2Ah%20sodium-ion%20batteries.zip/content",
+          "official_archive_size": 129024711,
+          "official_archive_md5": "md5:f087bc5b711df82ad8093e95476c2a58",
+          "archive_md5_status": "UNKNOWN",
+          "whole_archive_official_md5_verified": false
+        }
+      ],
+      "raw_members": [
+        {
+          "name": "Pulse_data_temp25_bat1.CSV",
+          "path": "data/raw/public_independent/zenodo13836819-additional-20261013-a/Pulse_data_temp25_bat1.CSV",
+          "archive_member_name": "1_Enhanced pulse test data/Pulse_data_temp25_bat1.CSV",
+          "sha256": "97968feaed448ed39e84f1fd541612cb73fadd811eafab09613c833dd2a93d5e",
+          "bytes": 22087098,
+          "crc32": "87cf69ae",
+          "crc_status": "complete_member_crc_verified",
+          "rows": 131664,
+          "author_group": "zenodo13836819_3p2Ah_bat1",
+          "author_battery_number": 1,
+          "manufacturer_serial_id": null,
+          "physical_independence_status": "UNKNOWN",
+          "source_protocol": "Pulse",
+          "source_temperature_condition_degC": 25.0,
+          "field_audit": {
+            "raw_headers": [
+              "Data Point",
+              "Date Time",
+              "Test Time (s)",
+              "Step Time (s)",
+              "Cycle Index",
+              "Step Index",
+              "TC_Counter1",
+              "TC_Counter2",
+              "TC_Counter3",
+              "TC_Counter4",
+              "Current (A)",
+              "Voltage (V)",
+              "Power (W)",
+              "Charge Capacity (Ah)",
+              "Discharge Capacity (Ah)",
+              "Charge Energy (Wh)",
+              "Discharge Energy (Wh)",
+              "Capacity (Ah)",
+              "mAh/g",
+              "ACR (Ohm)",
+              "dV/dt (V/s)",
+              "Internal Resistance (Ohm)",
+              "dQ/dV (Ah/V)",
+              "dV/dQ (V/Ah)",
+              "Aux_Temperature_1 (C)",
+              "Aux_dT/dt_1 (C/s)"
+            ],
+            "source_columns": 26,
+            "actual_csv_rows": 131664,
+            "csv_final_line_number": 131665,
+            "malformed_column_count_rows": 0,
+            "scope": "Full source row/column count only; canonical sign and units not yet audited"
+          }
+        }
+      ],
+      "raw_member_count": 1,
+      "raw_rows_including_duplicate": 131664,
+      "conservative_split_components": [
+        [
+          "zenodo13836819_3p2Ah_bat1"
+        ]
+      ],
+      "conservative_split_component_count": 1,
+      "independent_physical_groups": null,
+      "physical_independence_status": "UNKNOWN",
+      "canonical_import_status": "not_performed",
+      "split_assignment_status": "not_performed",
+      "frozen_split": null,
+      "model_fit_status": "not_performed",
+      "external_model_validation": "not_performed",
+      "D01_complete": false,
+      "D02_complete": false,
+      "limitations": [
+        "Pending local candidate only; not attached to the central accepted seven-member layer.",
+        "Author battery1 is a provenance label, not independently confirmed physical cell.",
+        "Singleton view component is no train/validation/test role; cross-row leakage remains untested."
+      ]
+    }
+  ]
+}

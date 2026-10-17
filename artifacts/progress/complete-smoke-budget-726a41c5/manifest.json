@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-15T12:25:14.545811+00:00",
+  "exit_code": 0,
+  "old_code_hash": "032a1197110f257f23cd664d6778430e8452fe1f1eddadb16252ce285471c388",
+  "new_code_hash": "139f425e07fc30984a8d14932c7e63a1cfa351f7c047a4da4619fbf527b52929",
+  "old_gates_sha256": "cb9349dac53dea2ec3399d9e2ff2576dd6a4eeb7883b6c2f09892dccd5f031fd",
+  "new_gates_sha256": "4793a851d1ec7b83eb5c68724a9dabf9c31063c4d986c2ce655dc744f2df9dd3",
+  "sole_semantic_change": "smoke numerical_tests aggregate suite timeout 600 -> 1200 seconds",
+  "proof_and_simulation_native_timeout_s": 120,
+  "memory_limit_bytes": 8589934592,
+  "maximum_whole_batch_s": 1800,
+  "sum_smoke_gate_admission_budgets_s": 1560,
+  "tests_commands_and_assertions_removed": 0,
+  "previous_actual_failures_preserved": true,
+  "original_failed_fixture_source_hash_guard_unmodified": true,
+  "requires_fresh_current_source_GUI_and_smoke": true,
+  "ADR": "docs/adr/0022-current-complete-smoke-suite-budget.md"
+}

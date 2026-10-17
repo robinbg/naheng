@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "before_code_hash": "7a706feaeec5948ba747fb5e039bb6b5ffb8c564c95a7f650fc1270c8077cc7e",
+  "after_code_hash": "8722828ee2b0236abc2167f6354108f545446fad1e16d8e62e403c225fcffa11",
+  "stage_hashes": {
+    "ica.py": "889bd73245aa65e218783fed9e1f2b91e8b191a8c90d4d83ee4e71d7e22a5fc5",
+    "impedance.py": "8021dab98d436531689c52981eab95526ad967411e0dd6f03909c37c81e897f4",
+    "identifiability.py": "c114cde2a2f1168b0cb2fada50d15c27b63bd4067bd7ece1eb8e152171315299",
+    "test_diagnostic_features.py": "3985faa74706ccf8b42a3fd3ba8d3202262f5d464ad4fe82e7e53d12159e1d38"
+  },
+  "installed": {
+    "src\\naheng\\estimation\\ica.py": "889bd73245aa65e218783fed9e1f2b91e8b191a8c90d4d83ee4e71d7e22a5fc5",
+    "src\\naheng\\estimation\\impedance.py": "8021dab98d436531689c52981eab95526ad967411e0dd6f03909c37c81e897f4",
+    "src\\naheng\\estimation\\identifiability.py": "c114cde2a2f1168b0cb2fada50d15c27b63bd4067bd7ece1eb8e152171315299",
+    "tests\\unit\\test_diagnostic_features.py": "4f3ee2455ac86b71ca26cd04ca42dc68d5a17a80c358a0d5695c6eeac17512e6"
+  },
+  "test_body_unchanged_except_three_imports": true,
+  "existing_files_overwritten": 0,
+  "task_status_changed": false,
+  "scope": "Installation only; public tests and original S05 acceptance still required"
+}

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-12T20:45:22.028896+00:00",
+  "exit_code": 0,
+  "before": "4e473ad9d072eacde8b17899d70e8c6ebe97fc5701d78bb2e8377ca5baf90527",
+  "after": "d8462a97064652f497441c5608efb2e89e82b7d5bc7cfce80ea0216898adb53c",
+  "candidate_proof_status": "UNKNOWN_ALL_EIGHT_UNEXAMINED",
+  "published_target_count": 66,
+  "full_acceptance_complete": false
+}

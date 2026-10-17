@@ -1,0 +1,73 @@
+{
+  "utc": "2026-10-16T03:48:13.746946+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-original-eight-tests-private-real-VM-adapter-2dc2c070/command.json": {
+      "sha256": "8fc502fd45b2be3f2aa7c68c0926c2b7896a456f4327d1adf68ca2ba77091950",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-a/invoke.py",
+        "tests",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-a/evidence/original-eight-20261016-a"
+      ],
+      "wall_s": 712.1846370999992,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-old-pass-evidence-missing-native-start-correctly-rejected-db834c79/command.json": {
+      "sha256": "479ee7b27bf1bac802127984e7b8ff39e25cd1bbb6b52008a17cb3be54f32e59",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_original_a02_native_tests_20261016.py",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-a",
+        "artifacts/validation/A02-original-eight-tests-private-real-VM-adapter-2dc2c070/command.json"
+      ],
+      "wall_s": 2.7526168000040343,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-old-eight-pass-native-start-absence-confirmed-31c0f2df/command.json": {
+      "sha256": "92242bfe143ff69ea94f51bc688a6c54fda5e3c89962d9a6e31f42dfbc183eb7",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_original_a02_native_tests_r2_20261016.py",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-a",
+        "artifacts/validation/A02-original-eight-tests-private-real-VM-adapter-2dc2c070/command.json"
+      ],
+      "wall_s": 2.1655183999973815,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a02-native-test-root-audit-0b60a86ddd10/report.json": {
+      "sha256": "d9fbfbc4ae369fad90bcbaf13d68b6defb51b81da388de9e0bc311dcc805c93a"
+    },
+    "artifacts/validation/A02-native-Lean-start-receipt-before-timeout-preparation-39a58dbb/command.json": {
+      "sha256": "2adb96ffc1adfb37595679e9076b5426263e2575a66d1109636c103967dc2baf",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/prepare_native_start_confirmation_20261016.py"
+      ],
+      "wall_s": 0.40907319999678293,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/a02-integrated-vm-worker-20261016-b/preparation.json": {
+      "sha256": "a8ba46561139e5b8705cc8dfdaa63740f958741b36426821fbd9944d34eb62fc"
+    }
+  },
+  "full_acceptance_complete": false
+}

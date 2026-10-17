@@ -1,0 +1,1622 @@
+{
+  "schema_version": 1,
+  "project": "naheng",
+  "registered_on": "2026-10-09",
+  "state_definitions": {
+    "source_read": "landing page or document read; not data validation",
+    "downloaded": "local source bytes present with checksum",
+    "verified": "field/protocol/chemistry and license accepted after validation",
+    "source_bytes_verified": "actual source bytes, official checksum/size, license and measurement identity reviewed; not full importer compatibility or external model validation",
+    "complete_member_crc_verified": "Complete locally retained original ZIP members have size/CRC/SHA and field audits; whole archive MD5 and physical independence remain unknown. This byte-audit state grants no canonical or model acceptance; canonical_view_acceptance separately records the reviewed unit views."
+  },
+  "sources": [
+    {
+      "source_id": "proposal_user_package",
+      "kind": "user_proposal",
+      "url": null,
+      "local_path": "docs/source/PROPOSAL.md",
+      "chemistry_id": "unspecified_official_cell",
+      "read_status": "read",
+      "read_on": "2026-10-09",
+      "read_origin": "current_repository",
+      "download_status": "provided_by_user",
+      "checksum": null,
+      "verification_status": "requirements_only",
+      "license": "user_provided_project_material",
+      "supports": [
+        "project requirements"
+      ],
+      "limitations": [
+        "not experimental evidence"
+      ]
+    },
+    {
+      "source_id": "lean_axioms",
+      "kind": "official_documentation",
+      "url": "https://lean-lang.org/doc/reference/latest/Axioms/",
+      "chemistry_id": null,
+      "read_status": "read",
+      "read_on": "2026-10-09",
+      "read_origin": "current_web_read",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "source_read",
+      "license": "documentation; redistribution_not_checked",
+      "supports": [
+        "transitive #print axioms audit direction"
+      ],
+      "limitations": [
+        "toolchain not yet compiled",
+        "latest docs are separate from locked toolchain"
+      ]
+    },
+    {
+      "source_id": "pybamm_sodium_25_10_2",
+      "kind": "official_model_documentation",
+      "url": "https://docs.pybamm.org/en/v25.10.2/source/examples/notebooks/models/sodium-ion.html",
+      "chemistry_id": "reference_sodium_chayambuka2022_comsol",
+      "read_status": "read",
+      "read_on": "2026-10-09",
+      "read_origin": "current_web_read",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "source_read",
+      "license": "PyBaMM license to be inspected when installed",
+      "supports": [
+        "sodium_ion.BasicDFN exists in the documented version",
+        "parameters are based on Chayambuka 2022 with COMSOL example values"
+      ],
+      "limitations": [
+        "web example is not this project solve",
+        "thermal aging and side reactions are not established by the example"
+      ]
+    },
+    {
+      "source_id": "rwth_sodium_gassing_987579",
+      "kind": "public_measurement_candidate",
+      "url": "https://publications.rwth-aachen.de/record/987579",
+      "doi": "10.18154/RWTH-2024-05745",
+      "chemistry_id": "public_rwth_commercial_sodium_gassing_cell_identity_pending",
+      "read_status": "read",
+      "read_on": "2026-10-09",
+      "read_origin": "current_web_read",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "source_read",
+      "license": "landing_page_reports_CC_BY_4.0; archive_license_pending",
+      "files": [
+        {
+          "url": "https://publications.rwth-aachen.de/record/987579/files/ReadMe.pdf",
+          "status": "not_downloaded"
+        },
+        {
+          "url": "https://publications.rwth-aachen.de/record/987579/files/Data_Failure_Mode_and_Degradation_Analysis_of_a_Commercial_Sodium-Ion_Battery_With_Severe_Gassing_Issue.zip",
+          "status": "not_downloaded"
+        }
+      ],
+      "supports": [
+        "public commercial sodium aging dataset entry exists"
+      ],
+      "limitations": [
+        "raw fields and measurement units not accepted yet",
+        "severe gassing stress population does not establish operational failure probability"
+      ]
+    },
+    {
+      "source_id": "tum_sodium_1762675",
+      "kind": "public_measurement_candidate",
+      "url": "https://mediatum.ub.tum.de/node?id=1762675",
+      "chemistry_id": "unknown_pending_read",
+      "read_status": "partial_then_blocked",
+      "read_on": "2026-10-09",
+      "read_origin": "current_web_read",
+      "original_package_status": "page_access_failed",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "blocked",
+      "license": "unknown",
+      "supports": [],
+      "limitations": [
+        "initial resource returned page metadata; subsequent requested page read returned HTTP 429",
+        "do not replace with fabricated download"
+      ]
+    },
+    {
+      "source_id": "botorch_constrained_bo",
+      "kind": "official_documentation",
+      "url": "https://botorch.org/docs/v0.17.1/tutorials/scalable_constrained_bo",
+      "chemistry_id": null,
+      "read_status": "package_reported_read_not_currently_revalidated",
+      "read_on": null,
+      "read_origin": "docs/SOURCES.md",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "not_currently_verified",
+      "license": "pending",
+      "supports": [
+        "implementation research entry"
+      ],
+      "limitations": [
+        "no current source read or algorithm experiment recorded"
+      ]
+    },
+    {
+      "source_id": "synthetic-two-site-v1",
+      "kind": "theory_fixture",
+      "url": null,
+      "local_path": "configs/models/two_site_research.yaml",
+      "chemistry_id": "synthetic_two_site",
+      "read_status": "implementation_read",
+      "read_on": "2026-10-10",
+      "read_origin": "project_local",
+      "download_status": "local_generated",
+      "checksum": "1d9349afbfe8b0c5f15459d50374a6ca87ef090cd087c6d63111f9ea5545f932",
+      "verification_status": "synthetic_not_calibrated",
+      "license": "project_local",
+      "supports": [
+        "algorithm and software checks within declared effective mechanism"
+      ],
+      "limitations": [
+        "not manufacturer data",
+        "not real sodium cell safety thresholds",
+        "accelerated synthetic degradation cannot imply real RUL"
+      ]
+    },
+    {
+      "source_id": "zenodo17459188_cvut_sib_0001",
+      "kind": "public_measurement",
+      "url": "https://zenodo.org/records/17459188",
+      "doi": "10.5281/zenodo.17459188",
+      "chemistry_id": "public_cvut_hakadi_sodium_4s11p_17459188",
+      "provenance_type": "public_measurement",
+      "read_status": "read_and_independently_reviewed",
+      "read_on": "2026-10-10",
+      "read_origin": "stored_official_metadata_author_README_and_original_workbook_XML",
+      "integrated_on": "2026-10-12",
+      "download_status": "downloaded",
+      "local_path": "data/raw/public_new/zenodo17459188/VZ1_044_021_CVUT_D_0001_v1.xlsx",
+      "checksum": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+      "checksum_algorithm": "sha256",
+      "bytes": 17143,
+      "official_md5": "0d04ab461817bef013766db23b8089be",
+      "official_md5_size_match": true,
+      "verification_status": "source_bytes_verified",
+      "license": "CC-BY-4.0",
+      "license_id": "CC-BY-4.0",
+      "license_evidence_path": "data/raw/public_new/zenodo17459188/RMF-VZ1_044_021_CVUT_S.txt",
+      "license_evidence_sha256": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+      "author_metadata_path": "artifacts/data/public_new/zenodo-17459188.metadata.json",
+      "author_metadata_sha256": "6581cc1c36a2916611abe10263fedf81be16d7d9533fd5e19a6fb2bf49b886a4",
+      "physical_identity": {
+        "scope": "one 4s11p pack; 44 individual-cell identities unavailable",
+        "manufacturer": "Hakadi",
+        "cell_format": "18650",
+        "cell_capacity_Ah_approx": 1.3,
+        "pack_capacity_Ah_approx": 14,
+        "electrode_materials": null,
+        "physical_serial": null,
+        "grouping_key": "cvut_single_sib_pack_campaign"
+      },
+      "physical_group_id": "cvut_hakadi_sib_4s11p_pack_group",
+      "batch_id": "cvut_single_sib_pack_campaign",
+      "independent_physical_groups": 1,
+      "test_conditions": {
+        "ambient_temperature_degC": -15,
+        "precharge_voltage_V": 16,
+        "requested_discharge_current_A": 200,
+        "requested_pulse_duration_s": 3,
+        "actual_discharge_duration_s": 0.1,
+        "actual_minimum_pack_voltage_V": 8.3891,
+        "step_stop_observation": "CC DChg ended at0.1s near authored8.39V cutoff; not a completed3s pulse"
+      },
+      "measurement_semantics": {
+        "scope": "4s11p pack terminal measurements",
+        "temperature": "T1-T6 are pack thermocouples; import uses measured T1 and retains the other five raw channels",
+        "voltage": "pack terminal V; near-zero V1-V6 are not usable individual-cell voltage truth",
+        "vendor_discharge_current_A": -199.9752,
+        "internal_current_sign": "positive_discharge; current_A = -vendor_current_A",
+        "charging_sign_directly_measured": false,
+        "observed_discharge_duration_s": 0.1,
+        "planned_maximum_discharge_duration_s": 3.0
+      },
+      "active_views": [
+        {
+          "view": "complete",
+          "registry_path": "data/manifests/retrieval-zenodo17459188-0001-complete-v2.yaml",
+          "registry_sha256": "8cb9a464f69a85be05004846899b8231c5163873f5a4e68d1280090debdaf9eb",
+          "spec_path": "artifacts/data/public_new/cvut_sodium_0001_complete.v2.spec.json",
+          "spec_sha256": "ab4a0b45ad469417a8c748874c31be0b1e6bd1db8ee0945064a1fe601a0b00d5",
+          "csv_path": "artifacts/data/public_new/cvut_sodium_0001_complete.csv",
+          "csv_sha256": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+          "source_id": "zenodo17459188_cvut_sib_0001",
+          "physical_group_id": "cvut_hakadi_sib_4s11p_pack_group",
+          "batch_id": "cvut_single_sib_pack_campaign",
+          "field_compatibility": "failed_duplicate_time_at_source_row33",
+          "complete_instrument_semantics_accepted": false,
+          "actual_import_exit_code": 1,
+          "command_record": "artifacts/validation/D01-public-full-import-v2-4648ab65/command.json",
+          "command_record_sha256": "e9e78d598dbb8350b1f7f5fe64451e020e8039eb3fa6091fc241271d25d93343"
+        },
+        {
+          "view": "instrument_step",
+          "registry_path": "data/manifests/retrieval-zenodo17459188-0001-instrument_step-v2.yaml",
+          "registry_sha256": "cc46da78b589c028f57ac1b7a04ddc910552039014e63ac6f907ae9b8f3b01f0",
+          "spec_path": "artifacts/data/public_new/cvut_sodium_0001_instrument_step.v2.spec.json",
+          "spec_sha256": "095133dd158d1778b2303a15216096e15829721fefe0235c8765d07cb08336a5",
+          "csv_path": "artifacts/data/public_new/cvut_sodium_0001_instrument_step.csv",
+          "csv_sha256": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+          "source_id": "zenodo17459188_cvut_sib_0001",
+          "physical_group_id": "cvut_hakadi_sib_4s11p_pack_group",
+          "batch_id": "cvut_single_sib_pack_campaign",
+          "field_compatibility": "instrument_step_view_import_passed_64_rows",
+          "complete_instrument_semantics_accepted": false,
+          "actual_import_exit_code": 0,
+          "command_record": "artifacts/validation/D01-public-step-import-v2-60541240/command.json",
+          "command_record_sha256": "f4a8e5120a026088aee8b0840dfff771d45050e3223f67ea69a7e0b20abc78c5"
+        },
+        {
+          "view": "complete_event_order_v3",
+          "registry_path": "data/manifests/retrieval-zenodo17459188-0001-ordered-v3-fa6715bc.yaml",
+          "registry_sha256": "5d0802df603b57a82fc494be06718aab5114b166efd0300f6648dcad104d5de4",
+          "spec_path": "artifacts/data/public_new/ordered-complete-v3-fa6715bc.spec.json",
+          "spec_sha256": "ae8455eca084c87a7f8790b315489a9f7fae71bece29bc72764bcbae29fe8953",
+          "csv_path": "artifacts/data/public_new/cvut_sodium_0001_complete.csv",
+          "csv_sha256": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+          "source_id": "zenodo17459188_cvut_sib_0001",
+          "physical_group_id": "cvut_hakadi_sib_4s11p_pack_group",
+          "batch_id": "cvut_single_sib_pack_campaign",
+          "field_compatibility": "complete_original_event_order_import_passed_64_rows",
+          "complete_instrument_semantics_accepted": true,
+          "actual_import_exit_code": 0,
+          "records_persisted": 64,
+          "records_dropped": 0,
+          "timestamps_shifted": 0,
+          "command_record": "artifacts/validation/D01-public-complete-ordered-v3-46063265/command.json",
+          "command_record_sha256": "c94e2f58ed40e9d1c238a610d3da8fd44a837659564111bdff5ee6a789a180cc"
+        }
+      ],
+      "frozen_split": {
+        "path": "artifacts/data/public_new/holdout_only_snapshot_v2.json",
+        "sha256": "93f7f123d64e7714d6997bd154caba1307c144d8b6498e4335f44aa3d918ae03",
+        "revision": "9d880497dbf95b02bcf5ec197e30c3942db9c1a11924bef4950f9f3d3c663b48",
+        "independent_group_count": 1,
+        "role_record_counts": {
+          "train": 0,
+          "validation": 0,
+          "test": 64
+        },
+        "holdout_only": true
+      },
+      "independent_review": {
+        "path": "artifacts/data/public_new/independent_review.json",
+        "sha256": "71b00639e25c0f10e15dd4c9c3925aef91ed0a05b4baf373550dd0161c9c4fc3",
+        "check_count": 16,
+        "exit_code": 0,
+        "scope": "source bytes and instrument-step view; not external model validation"
+      },
+      "preserved_first_results": {
+        "full_import_first_failure": "artifacts/validation/D01-public-full-import-4e991e9c/command.json",
+        "initial_view_identity_issue": "v1 views used different source IDs; superseded and no longer admissible",
+        "first_complete_registry_snapshot": "artifacts/data/public_new/first_complete_registry_snapshot.json",
+        "first_instrument_step_registry_snapshot": "artifacts/data/public_new/first_instrument_step_registry_snapshot.json",
+        "original_v2_audit": {
+          "path": "artifacts/data/public_new/import_and_split_audit_v2.json",
+          "sha256": "18d6695b61090f522c8e288d8053a5084e517d0bd47b151f4a5c8b30c88c7625"
+        }
+      },
+      "external_model_validation": "not_performed",
+      "supports": [
+        "original public sodium pack bytes and explicit units/sign mapping",
+        "64 instrument-step records with preserved co-timed transitions",
+        "same-pack cross-step and cross-view split leakage rejection",
+        "Explicit original instrument event order v3 persists all 64 rows and documented co-timed step boundaries"
+      ],
+      "limitations": [
+        "Legacy v2 strict chronology failure remains preserved. Explicit instrument_event_order v3 accepted all 64 rows with unchanged timestamps and documented co-timed transitions; this is the same physical pack and not additional independent data.",
+        "Only one conservative physical 4s11p pack group; all 64 rows are frozen holdout, train/validation have zero rows.",
+        "Instrument steps, 44 constituent cells, six thermocouples and overlapping views are not independent test objects.",
+        "Observed discharge is 0.1 s; 3 s is only the planned maximum. Ambient -15 C is a setting, not the measured thermocouple temperature.",
+        "Individual cell serials and electrode materials are unavailable; pack data do not establish individual-cell truth.",
+        "Lead-acid D_00011 comparator is excluded from sodium measurements and independent sodium sample counts.",
+        "No charging records, capacity-aging labels, RUL labels or operating-incident population in this selected file.",
+        "No model fit, external model validation, calibrated risk probability or real revenue superiority; D01/D02 remain incomplete."
+      ],
+      "frozen_split_v3": {
+        "path": "artifacts/data/public_new/ordered-holdout-v3-fa6715bc.json",
+        "sha256": "a764a9b6711940e846fd6e29ce5d67328775fc9d95899cfe45f06550608a7716",
+        "revision": "3b77279a0668bc42a7fdd08eea865e5d79bb84b5182c293d7825dcd8cc3c63a0",
+        "independent_group_count": 1,
+        "role_record_counts": {
+          "train": 0,
+          "validation": 0,
+          "test": 64
+        },
+        "holdout_only": true,
+        "same_physical_pack_as_v2": true,
+        "does_not_add_independent_groups": true
+      },
+      "ordered_v3_frozen_handoff": {
+        "path": "artifacts/data/public_new/ordered-delivery-v3-fa6715bc.json",
+        "sha256": "4ca609616906ecf68da84e76dc3733f149acd5f4c7567808620f1f4ccc71be62"
+      },
+      "D01_complete": false,
+      "D02_complete": false
+    },
+    {
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "kind": "public_measurement",
+      "url": "https://zenodo.org/records/13836819",
+      "doi": "10.5281/zenodo.13836819",
+      "chemistry_id": "public_zenodo13836819_sodium_3p2Ah_10Ah_author_groups_unconfirmed",
+      "provenance_type": "public_measurement",
+      "read_status": "stored_official_metadata_and_full_members_locally_reaudited",
+      "read_on": "2026-10-12",
+      "read_origin": "stored_official_metadata_and_preserved_original_zip_prefixes",
+      "download_status": "partial_archives_complete_members_recovered",
+      "checksum": null,
+      "verification_status": "complete_member_crc_verified",
+      "license": "CC-BY-4.0",
+      "license_id": "CC-BY-4.0",
+      "license_evidence_path": "artifacts/data/public_independent/zenodo13836819-670b8554/metadata.json.attempt1",
+      "license_evidence_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+      "author_metadata": {
+        "path": "artifacts/data/public_independent/zenodo13836819-670b8554/metadata.json.attempt1",
+        "sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706"
+      },
+      "archives": [
+        {
+          "official_name": "Data for 10Ah sodium-ion batteries.zip",
+          "official_size_bytes": 126629603,
+          "official_md5": "3de4a412e01efdc4672837e9c01b7bd7",
+          "archive_md5_status": "UNKNOWN",
+          "whole_archive_official_md5_verified": false,
+          "retained_prefix": {
+            "path": "data/raw/public_independent/zenodo13836819-670b8554/10Ah.zip.attempt3",
+            "sha256": "c6f452460cfe35c1e27ede92d8b1fadfacaa323481657e373c4dd1054632ab88"
+          },
+          "retained_prefix_bytes": 28431524,
+          "member_manifest": {
+            "path": "artifacts/data/public_independent/zenodo13836819-complete-members-de471d9e/manifest.json",
+            "sha256": "e3dc578537bb3cc4d23605f3a8fa8259c729dd3d60c22dffe875aa60f5b3e144"
+          },
+          "unavailable_next_member": "Incomplete compressed member retained and NOT extracted: 1_Enhanced pulse test data/Pulse_data_temp35_bat3.CSV"
+        },
+        {
+          "official_name": "Data for 3.2Ah sodium-ion batteries.zip",
+          "official_size_bytes": 129024711,
+          "official_md5": "f087bc5b711df82ad8093e95476c2a58",
+          "archive_md5_status": "UNKNOWN",
+          "whole_archive_official_md5_verified": false,
+          "retained_prefix": {
+            "path": "data/raw/public_independent/zenodo13836819-670b8554/3.2Ah.zip.attempt1",
+            "sha256": "9dc1b5f75e66e0f40f74c0c78ac04f45910078413ee2f1da25160b58e5eb0f5d"
+          },
+          "retained_prefix_bytes": 13672448,
+          "member_manifest": {
+            "path": "artifacts/data/public_independent/zenodo13836819-complete-members-8d838012/manifest.json",
+            "sha256": "4d083ccd2b78459d4601961ee72fbec4e0eda1014285c5f02ea57014efe6f531"
+          },
+          "unavailable_next_member": "Incomplete compressed member retained and NOT extracted: 2_Driving cycle test data/Driving_cycle_data_temp15_bat5.CSV"
+        }
+      ],
+      "raw_members": [
+        {
+          "name": "Pulse_data_temp-5_bat3.CSV",
+          "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp-5_bat3.CSV",
+          "archive_member_name": "1_Enhanced pulse test data/Pulse_data_temp-5_bat3.CSV",
+          "sha256": "7af5df8a335aad85d38303b5ccd148229dba26900a9fef4efad2891128485ddf",
+          "bytes": 21120106,
+          "crc32": "30fd7d08",
+          "crc_status": "complete_member_crc_verified",
+          "rows": 127274,
+          "author_group": "zenodo13836819_10Ah_bat3",
+          "author_battery_number": 3,
+          "manufacturer_serial_id": null,
+          "physical_independence_status": "UNKNOWN",
+          "source_protocol": "Pulse",
+          "source_temperature_condition_degC": -5,
+          "field_audit": {
+            "exact_columns": {
+              "time": "Test Time (s)",
+              "current": "Current (A)",
+              "voltage": "Voltage (V)",
+              "temperature": "Aux_Temperature_1 (C)",
+              "sequence": "Data Point",
+              "step": "Step Index",
+              "charge_capacity": "Charge Capacity (Ah)",
+              "discharge_capacity": "Discharge Capacity (Ah)"
+            },
+            "source_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "degC"
+            },
+            "rows": 127274,
+            "bounds_in_original_units": {
+              "time": [
+                1.0004,
+                87909.3635
+              ],
+              "current": [
+                -30.00584,
+                30.00412
+              ],
+              "voltage": [
+                -0.4278526,
+                4.295886
+              ],
+              "temperature": [
+                0.1182933,
+                4.610963
+              ]
+            },
+            "missing_by_column": {
+              "Data Point": 0,
+              "Date Time": 0,
+              "Test Time (s)": 0,
+              "Step Time (s)": 0,
+              "Cycle Index": 0,
+              "Step Index": 0,
+              "TC_Counter1": 0,
+              "TC_Counter2": 0,
+              "TC_Counter3": 0,
+              "TC_Counter4": 0,
+              "Current (A)": 0,
+              "Voltage (V)": 0,
+              "Power (W)": 0,
+              "Charge Capacity (Ah)": 0,
+              "Discharge Capacity (Ah)": 0,
+              "Charge Energy (Wh)": 0,
+              "Discharge Energy (Wh)": 0,
+              "Capacity (Ah)": 0,
+              "mAh/g": 0,
+              "ACR (Ohm)": 127274,
+              "dV/dt (V/s)": 106851,
+              "Internal Resistance (Ohm)": 126549,
+              "dQ/dV (Ah/V)": 123523,
+              "dV/dQ (V/Ah)": 124750,
+              "Aux_Temperature_1 (C)": 0,
+              "Aux_dT/dt_1 (C/s)": 0
+            },
+            "anomalies": {
+              "sequence_errors": 0,
+              "duplicate_time": 0,
+              "regressed_time": 0,
+              "negative_voltage": 60,
+              "zero_voltage": 0,
+              "voltage_below_author_protocol_cutoff_1p5V": 946,
+              "voltage_above_author_protocol_cutoff_3p9V": 4496
+            },
+            "current_sign_evidence": {
+              "positive_current_charge_capacity_increases": 23765,
+              "negative_current_charge_capacity_increases": 0,
+              "negative_current_discharge_capacity_increases": 40714,
+              "positive_current_discharge_capacity_increases": 0
+            },
+            "vendor_current_sign_inferred": "positive_charge",
+            "internal_current_conversion": "current_A = -vendor_current_A",
+            "measured_temperature_channel": "Aux_Temperature_1 (C)",
+            "source_filename_temperature_is_chamber_condition": true,
+            "canonical_import_status": "not_performed",
+            "no_rows_removed_or_fitted": true,
+            "scope": "Historical original-column and unfiltered adjacent raw-capacity-pair audit; its sign inference and not_performed status describe that earlier audit only. Current filtered capacity sign and unit-view acceptance are registered separately in canonical_view."
+          },
+          "canonical_view": {
+            "member_manifest": "artifacts\\review\\zenodo-csv-public-12-20261013-h\\member-1-Pulse_data_temp-5_bat3\\manifest.json",
+            "member_manifest_sha256": "99c5a1dde1b2bbe17e59408449c58b7cac50010047eef92012bcccff90799ecc",
+            "view": "artifacts\\review\\zenodo-csv-public-12-20261013-h\\member-1-Pulse_data_temp-5_bat3",
+            "view_sha256": "6ec992d83087391934cae113d69dbb15b8acf09b11102dd313330162a6bd2ecb",
+            "rows": 127274,
+            "conservative_split_component": "zenodo13836819_component_61d8ea91e46f7efe",
+            "actual_reopened_audit": {
+              "rows_reopened_and_compared": 127274,
+              "negative_voltage_rows_preserved": 60,
+              "unknown_current_rows": 0,
+              "missing_temperature_rows": 0,
+              "original_time_resets": 0,
+              "original_co_timed_records": 0,
+              "member_output_sha256": "6ec992d83087391934cae113d69dbb15b8acf09b11102dd313330162a6bd2ecb",
+              "status": "passed"
+            },
+            "current_sign_evidence": {
+              "rows": 127274,
+              "raw_bytes": 21120106,
+              "vendor_current_sign": "positive_charge",
+              "normalization_status": "PASS",
+              "capacity_direction_counts": {
+                "positive_current_charge": 23765,
+                "negative_current_discharge": 40657,
+                "positive_current_discharge": 0,
+                "negative_current_charge": 0
+              },
+              "trusted_capacity_pairs": 64422,
+              "power_consistency": {
+                "consistent_rows": 127274,
+                "missing_or_inconsistent_rows": 0
+              },
+              "sign_policy": {
+                "current_noise_threshold_A": 0.01,
+                "capacity_increment_threshold_Ah": 1e-08,
+                "minimum_trusted_observations_each_direction": 3,
+                "power_absolute_tolerance_W": 1e-06,
+                "power_relative_tolerance": 1e-06,
+                "trusted_subset": "finite positive voltage, Power=I*V, adjacent source sequence, same step/cycle, increasing test time, same nonzero current polarity, one increasing capacity counter and no reset"
+              },
+              "metadata_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+              "reason": "Bidirectional capacity increments support convention; Power only corroborates columns"
+            },
+            "canonical_current_sign": "positive_discharge",
+            "canonical_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "K"
+            }
+          }
+        },
+        {
+          "name": "Pulse_data_temp-5_bat4.CSV",
+          "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp-5_bat4.CSV",
+          "archive_member_name": "1_Enhanced pulse test data/Pulse_data_temp-5_bat4.CSV",
+          "sha256": "7af5df8a335aad85d38303b5ccd148229dba26900a9fef4efad2891128485ddf",
+          "bytes": 21120106,
+          "crc32": "30fd7d08",
+          "crc_status": "complete_member_crc_verified",
+          "rows": 127274,
+          "author_group": "zenodo13836819_10Ah_bat4",
+          "author_battery_number": 4,
+          "manufacturer_serial_id": null,
+          "physical_independence_status": "UNKNOWN",
+          "source_protocol": "Pulse",
+          "source_temperature_condition_degC": -5,
+          "field_audit": {
+            "exact_columns": {
+              "time": "Test Time (s)",
+              "current": "Current (A)",
+              "voltage": "Voltage (V)",
+              "temperature": "Aux_Temperature_1 (C)",
+              "sequence": "Data Point",
+              "step": "Step Index",
+              "charge_capacity": "Charge Capacity (Ah)",
+              "discharge_capacity": "Discharge Capacity (Ah)"
+            },
+            "source_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "degC"
+            },
+            "rows": 127274,
+            "bounds_in_original_units": {
+              "time": [
+                1.0004,
+                87909.3635
+              ],
+              "current": [
+                -30.00584,
+                30.00412
+              ],
+              "voltage": [
+                -0.4278526,
+                4.295886
+              ],
+              "temperature": [
+                0.1182933,
+                4.610963
+              ]
+            },
+            "missing_by_column": {
+              "Data Point": 0,
+              "Date Time": 0,
+              "Test Time (s)": 0,
+              "Step Time (s)": 0,
+              "Cycle Index": 0,
+              "Step Index": 0,
+              "TC_Counter1": 0,
+              "TC_Counter2": 0,
+              "TC_Counter3": 0,
+              "TC_Counter4": 0,
+              "Current (A)": 0,
+              "Voltage (V)": 0,
+              "Power (W)": 0,
+              "Charge Capacity (Ah)": 0,
+              "Discharge Capacity (Ah)": 0,
+              "Charge Energy (Wh)": 0,
+              "Discharge Energy (Wh)": 0,
+              "Capacity (Ah)": 0,
+              "mAh/g": 0,
+              "ACR (Ohm)": 127274,
+              "dV/dt (V/s)": 106851,
+              "Internal Resistance (Ohm)": 126549,
+              "dQ/dV (Ah/V)": 123523,
+              "dV/dQ (V/Ah)": 124750,
+              "Aux_Temperature_1 (C)": 0,
+              "Aux_dT/dt_1 (C/s)": 0
+            },
+            "anomalies": {
+              "sequence_errors": 0,
+              "duplicate_time": 0,
+              "regressed_time": 0,
+              "negative_voltage": 60,
+              "zero_voltage": 0,
+              "voltage_below_author_protocol_cutoff_1p5V": 946,
+              "voltage_above_author_protocol_cutoff_3p9V": 4496
+            },
+            "current_sign_evidence": {
+              "positive_current_charge_capacity_increases": 23765,
+              "negative_current_charge_capacity_increases": 0,
+              "negative_current_discharge_capacity_increases": 40714,
+              "positive_current_discharge_capacity_increases": 0
+            },
+            "vendor_current_sign_inferred": "positive_charge",
+            "internal_current_conversion": "current_A = -vendor_current_A",
+            "measured_temperature_channel": "Aux_Temperature_1 (C)",
+            "source_filename_temperature_is_chamber_condition": true,
+            "canonical_import_status": "not_performed",
+            "no_rows_removed_or_fitted": true,
+            "scope": "Historical original-column and unfiltered adjacent raw-capacity-pair audit; its sign inference and not_performed status describe that earlier audit only. Current filtered capacity sign and unit-view acceptance are registered separately in canonical_view."
+          },
+          "canonical_view": {
+            "member_manifest": "artifacts\\review\\zenodo-csv-public-12-20261013-h\\member-2-Pulse_data_temp-5_bat4\\manifest.json",
+            "member_manifest_sha256": "4bee64fa5504ac2e51fa243010cff4d8e5d0d4058c8e34ffaefbe74d25098f90",
+            "view": "artifacts\\review\\zenodo-csv-public-12-20261013-h\\member-2-Pulse_data_temp-5_bat4",
+            "view_sha256": "2f7e171e87053e169c9ae7d73858500d0e91e9f093c31811b95f501c2afd587c",
+            "rows": 127274,
+            "conservative_split_component": "zenodo13836819_component_61d8ea91e46f7efe",
+            "actual_reopened_audit": {
+              "rows_reopened_and_compared": 127274,
+              "negative_voltage_rows_preserved": 60,
+              "unknown_current_rows": 0,
+              "missing_temperature_rows": 0,
+              "original_time_resets": 0,
+              "original_co_timed_records": 0,
+              "member_output_sha256": "2f7e171e87053e169c9ae7d73858500d0e91e9f093c31811b95f501c2afd587c",
+              "status": "passed"
+            },
+            "current_sign_evidence": {
+              "rows": 127274,
+              "raw_bytes": 21120106,
+              "vendor_current_sign": "positive_charge",
+              "normalization_status": "PASS",
+              "capacity_direction_counts": {
+                "positive_current_charge": 23765,
+                "negative_current_discharge": 40657,
+                "positive_current_discharge": 0,
+                "negative_current_charge": 0
+              },
+              "trusted_capacity_pairs": 64422,
+              "power_consistency": {
+                "consistent_rows": 127274,
+                "missing_or_inconsistent_rows": 0
+              },
+              "sign_policy": {
+                "current_noise_threshold_A": 0.01,
+                "capacity_increment_threshold_Ah": 1e-08,
+                "minimum_trusted_observations_each_direction": 3,
+                "power_absolute_tolerance_W": 1e-06,
+                "power_relative_tolerance": 1e-06,
+                "trusted_subset": "finite positive voltage, Power=I*V, adjacent source sequence, same step/cycle, increasing test time, same nonzero current polarity, one increasing capacity counter and no reset"
+              },
+              "metadata_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+              "reason": "Bidirectional capacity increments support convention; Power only corroborates columns"
+            },
+            "canonical_current_sign": "positive_discharge",
+            "canonical_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "K"
+            }
+          }
+        },
+        {
+          "name": "Pulse_data_temp15_bat3.CSV",
+          "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp15_bat3.CSV",
+          "archive_member_name": "1_Enhanced pulse test data/Pulse_data_temp15_bat3.CSV",
+          "sha256": "c5b9917ce613c48b61f94ece06e5d40dc1bc39bade348786a3268c38eca8d7f7",
+          "bytes": 21170786,
+          "crc32": "ef2362cb",
+          "crc_status": "complete_member_crc_verified",
+          "rows": 129176,
+          "author_group": "zenodo13836819_10Ah_bat3",
+          "author_battery_number": 3,
+          "manufacturer_serial_id": null,
+          "physical_independence_status": "UNKNOWN",
+          "source_protocol": "Pulse",
+          "source_temperature_condition_degC": 15,
+          "field_audit": {
+            "exact_columns": {
+              "time": "Test Time (s)",
+              "current": "Current (A)",
+              "voltage": "Voltage (V)",
+              "temperature": "Aux_Temperature_1 (C)",
+              "sequence": "Data Point",
+              "step": "Step Index",
+              "charge_capacity": "Charge Capacity (Ah)",
+              "discharge_capacity": "Discharge Capacity (Ah)"
+            },
+            "source_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "degC"
+            },
+            "rows": 129176,
+            "bounds_in_original_units": {
+              "time": [
+                1.0005,
+                89815.1611
+              ],
+              "current": [
+                -30.00467,
+                30.00623
+              ],
+              "voltage": [
+                -0.1969938,
+                4.107928
+              ],
+              "temperature": [
+                15.68829,
+                18.35434
+              ]
+            },
+            "missing_by_column": {
+              "Data Point": 0,
+              "Date Time": 0,
+              "Test Time (s)": 0,
+              "Step Time (s)": 0,
+              "Cycle Index": 0,
+              "Step Index": 0,
+              "TC_Counter1": 0,
+              "TC_Counter2": 0,
+              "TC_Counter3": 0,
+              "TC_Counter4": 0,
+              "Current (A)": 0,
+              "Voltage (V)": 0,
+              "Power (W)": 0,
+              "Charge Capacity (Ah)": 0,
+              "Discharge Capacity (Ah)": 0,
+              "Charge Energy (Wh)": 0,
+              "Discharge Energy (Wh)": 0,
+              "Capacity (Ah)": 0,
+              "mAh/g": 0,
+              "ACR (Ohm)": 129176,
+              "dV/dt (V/s)": 108745,
+              "Internal Resistance (Ohm)": 128451,
+              "dQ/dV (Ah/V)": 125564,
+              "dV/dQ (V/Ah)": 126810,
+              "Aux_Temperature_1 (C)": 0,
+              "Aux_dT/dt_1 (C/s)": 0
+            },
+            "anomalies": {
+              "sequence_errors": 0,
+              "duplicate_time": 0,
+              "regressed_time": 0,
+              "negative_voltage": 21,
+              "zero_voltage": 0,
+              "voltage_below_author_protocol_cutoff_1p5V": 677,
+              "voltage_above_author_protocol_cutoff_3p9V": 1786
+            },
+            "current_sign_evidence": {
+              "positive_current_charge_capacity_increases": 22298,
+              "negative_current_charge_capacity_increases": 0,
+              "negative_current_discharge_capacity_increases": 44077,
+              "positive_current_discharge_capacity_increases": 0
+            },
+            "vendor_current_sign_inferred": "positive_charge",
+            "internal_current_conversion": "current_A = -vendor_current_A",
+            "measured_temperature_channel": "Aux_Temperature_1 (C)",
+            "source_filename_temperature_is_chamber_condition": true,
+            "canonical_import_status": "not_performed",
+            "no_rows_removed_or_fitted": true,
+            "scope": "Historical original-column and unfiltered adjacent raw-capacity-pair audit; its sign inference and not_performed status describe that earlier audit only. Current filtered capacity sign and unit-view acceptance are registered separately in canonical_view."
+          },
+          "canonical_view": {
+            "member_manifest": "artifacts\\review\\zenodo-csv-public-3-20261013-h\\member-3-Pulse_data_temp15_bat3\\manifest.json",
+            "member_manifest_sha256": "1197276c1df1bc644eea6af493092a1fbeeba3379ef36fc3e15b111b2946bddf",
+            "view": "artifacts\\review\\zenodo-csv-public-3-20261013-h\\member-3-Pulse_data_temp15_bat3",
+            "view_sha256": "eb14ece0417ec2b45b5a0c12d1898b393df99ff2784fe8a6d2af3f19b1ab1d30",
+            "rows": 129176,
+            "conservative_split_component": "zenodo13836819_component_61d8ea91e46f7efe",
+            "actual_reopened_audit": {
+              "rows_reopened_and_compared": 129176,
+              "negative_voltage_rows_preserved": 21,
+              "unknown_current_rows": 0,
+              "missing_temperature_rows": 0,
+              "original_time_resets": 0,
+              "original_co_timed_records": 0,
+              "member_output_sha256": "eb14ece0417ec2b45b5a0c12d1898b393df99ff2784fe8a6d2af3f19b1ab1d30",
+              "status": "passed"
+            },
+            "current_sign_evidence": {
+              "rows": 129176,
+              "raw_bytes": 21170786,
+              "vendor_current_sign": "positive_charge",
+              "normalization_status": "PASS",
+              "capacity_direction_counts": {
+                "positive_current_charge": 22298,
+                "negative_current_discharge": 44057,
+                "positive_current_discharge": 0,
+                "negative_current_charge": 0
+              },
+              "trusted_capacity_pairs": 66355,
+              "power_consistency": {
+                "consistent_rows": 129176,
+                "missing_or_inconsistent_rows": 0
+              },
+              "sign_policy": {
+                "current_noise_threshold_A": 0.01,
+                "capacity_increment_threshold_Ah": 1e-08,
+                "minimum_trusted_observations_each_direction": 3,
+                "power_absolute_tolerance_W": 1e-06,
+                "power_relative_tolerance": 1e-06,
+                "trusted_subset": "finite positive voltage, Power=I*V, adjacent source sequence, same step/cycle, increasing test time, same nonzero current polarity, one increasing capacity counter and no reset"
+              },
+              "metadata_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+              "reason": "Bidirectional capacity increments support convention; Power only corroborates columns"
+            },
+            "canonical_current_sign": "positive_discharge",
+            "canonical_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "K"
+            }
+          }
+        },
+        {
+          "name": "Pulse_data_temp15_bat4.CSV",
+          "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp15_bat4.CSV",
+          "archive_member_name": "1_Enhanced pulse test data/Pulse_data_temp15_bat4.CSV",
+          "sha256": "a8db95542259c6c9ebe4b3c7a14714c911abe4bcef2a06bdb61bbad58988c5c6",
+          "bytes": 21412485,
+          "crc32": "fb5c4b6a",
+          "crc_status": "complete_member_crc_verified",
+          "rows": 129179,
+          "author_group": "zenodo13836819_10Ah_bat4",
+          "author_battery_number": 4,
+          "manufacturer_serial_id": null,
+          "physical_independence_status": "UNKNOWN",
+          "source_protocol": "Pulse",
+          "source_temperature_condition_degC": 15,
+          "field_audit": {
+            "exact_columns": {
+              "time": "Test Time (s)",
+              "current": "Current (A)",
+              "voltage": "Voltage (V)",
+              "temperature": "Aux_Temperature_1 (C)",
+              "sequence": "Data Point",
+              "step": "Step Index",
+              "charge_capacity": "Charge Capacity (Ah)",
+              "discharge_capacity": "Discharge Capacity (Ah)"
+            },
+            "source_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "degC"
+            },
+            "rows": 129179,
+            "bounds_in_original_units": {
+              "time": [
+                1.0001,
+                89815.1392
+              ],
+              "current": [
+                -30.00552,
+                30.00423
+              ],
+              "voltage": [
+                -0.2465076,
+                4.113518
+              ],
+              "temperature": [
+                15.54767,
+                18.25311
+              ]
+            },
+            "missing_by_column": {
+              "Data Point": 0,
+              "Date Time": 0,
+              "Test Time (s)": 0,
+              "Step Time (s)": 0,
+              "Cycle Index": 0,
+              "Step Index": 0,
+              "TC_Counter1": 0,
+              "TC_Counter2": 0,
+              "TC_Counter3": 0,
+              "TC_Counter4": 0,
+              "Current (A)": 0,
+              "Voltage (V)": 0,
+              "Power (W)": 0,
+              "Charge Capacity (Ah)": 0,
+              "Discharge Capacity (Ah)": 0,
+              "Charge Energy (Wh)": 0,
+              "Discharge Energy (Wh)": 0,
+              "Capacity (Ah)": 0,
+              "mAh/g": 0,
+              "ACR (Ohm)": 129179,
+              "dV/dt (V/s)": 108732,
+              "Internal Resistance (Ohm)": 128454,
+              "dQ/dV (Ah/V)": 125528,
+              "dV/dQ (V/Ah)": 126789,
+              "Aux_Temperature_1 (C)": 0,
+              "Aux_dT/dt_1 (C/s)": 0
+            },
+            "anomalies": {
+              "sequence_errors": 0,
+              "duplicate_time": 0,
+              "regressed_time": 0,
+              "negative_voltage": 27,
+              "zero_voltage": 0,
+              "voltage_below_author_protocol_cutoff_1p5V": 687,
+              "voltage_above_author_protocol_cutoff_3p9V": 1726
+            },
+            "current_sign_evidence": {
+              "positive_current_charge_capacity_increases": 22525,
+              "negative_current_charge_capacity_increases": 0,
+              "negative_current_discharge_capacity_increases": 43843,
+              "positive_current_discharge_capacity_increases": 0
+            },
+            "vendor_current_sign_inferred": "positive_charge",
+            "internal_current_conversion": "current_A = -vendor_current_A",
+            "measured_temperature_channel": "Aux_Temperature_1 (C)",
+            "source_filename_temperature_is_chamber_condition": true,
+            "canonical_import_status": "not_performed",
+            "no_rows_removed_or_fitted": true,
+            "scope": "Historical original-column and unfiltered adjacent raw-capacity-pair audit; its sign inference and not_performed status describe that earlier audit only. Current filtered capacity sign and unit-view acceptance are registered separately in canonical_view."
+          },
+          "canonical_view": {
+            "member_manifest": "artifacts\\review\\zenodo-csv-public-4-20261013-h\\member-4-Pulse_data_temp15_bat4\\manifest.json",
+            "member_manifest_sha256": "9dbc5c0b18cfea3e1a8f7613405aa497c1bed9dc4c437ff4915945b21aa57140",
+            "view": "artifacts\\review\\zenodo-csv-public-4-20261013-h\\member-4-Pulse_data_temp15_bat4",
+            "view_sha256": "86df8d395548d44e742cc571de19ab4231b3375c6157efa8012faa3d10aefd91",
+            "rows": 129179,
+            "conservative_split_component": "zenodo13836819_component_61d8ea91e46f7efe",
+            "actual_reopened_audit": {
+              "rows_reopened_and_compared": 129179,
+              "negative_voltage_rows_preserved": 27,
+              "unknown_current_rows": 0,
+              "missing_temperature_rows": 0,
+              "original_time_resets": 0,
+              "original_co_timed_records": 0,
+              "member_output_sha256": "86df8d395548d44e742cc571de19ab4231b3375c6157efa8012faa3d10aefd91",
+              "status": "passed"
+            },
+            "current_sign_evidence": {
+              "rows": 129179,
+              "raw_bytes": 21412485,
+              "vendor_current_sign": "positive_charge",
+              "normalization_status": "PASS",
+              "capacity_direction_counts": {
+                "positive_current_charge": 22525,
+                "negative_current_discharge": 43818,
+                "positive_current_discharge": 0,
+                "negative_current_charge": 0
+              },
+              "trusted_capacity_pairs": 66343,
+              "power_consistency": {
+                "consistent_rows": 129179,
+                "missing_or_inconsistent_rows": 0
+              },
+              "sign_policy": {
+                "current_noise_threshold_A": 0.01,
+                "capacity_increment_threshold_Ah": 1e-08,
+                "minimum_trusted_observations_each_direction": 3,
+                "power_absolute_tolerance_W": 1e-06,
+                "power_relative_tolerance": 1e-06,
+                "trusted_subset": "finite positive voltage, Power=I*V, adjacent source sequence, same step/cycle, increasing test time, same nonzero current polarity, one increasing capacity counter and no reset"
+              },
+              "metadata_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+              "reason": "Bidirectional capacity increments support convention; Power only corroborates columns"
+            },
+            "canonical_current_sign": "positive_discharge",
+            "canonical_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "K"
+            }
+          }
+        },
+        {
+          "name": "Pulse_data_temp25_bat3.CSV",
+          "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp25_bat3.CSV",
+          "archive_member_name": "1_Enhanced pulse test data/Pulse_data_temp25_bat3.CSV",
+          "sha256": "fe0f6fc9dd9318d612b059f053808218c43468aa83a67fd5a0ccd46205cf7b38",
+          "bytes": 21635732,
+          "crc32": "aef7ff94",
+          "crc_status": "complete_member_crc_verified",
+          "rows": 131884,
+          "author_group": "zenodo13836819_10Ah_bat3",
+          "author_battery_number": 3,
+          "manufacturer_serial_id": null,
+          "physical_independence_status": "UNKNOWN",
+          "source_protocol": "Pulse",
+          "source_temperature_condition_degC": 25,
+          "field_audit": {
+            "exact_columns": {
+              "time": "Test Time (s)",
+              "current": "Current (A)",
+              "voltage": "Voltage (V)",
+              "temperature": "Aux_Temperature_1 (C)",
+              "sequence": "Data Point",
+              "step": "Step Index",
+              "charge_capacity": "Charge Capacity (Ah)",
+              "discharge_capacity": "Discharge Capacity (Ah)"
+            },
+            "source_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "degC"
+            },
+            "rows": 131884,
+            "bounds_in_original_units": {
+              "time": [
+                1.0001,
+                92521.8696
+              ],
+              "current": [
+                -30.00449,
+                30.0035
+              ],
+              "voltage": [
+                -0.04219627,
+                4.050498
+              ],
+              "temperature": [
+                25.10242,
+                27.82061
+              ]
+            },
+            "missing_by_column": {
+              "Data Point": 0,
+              "Date Time": 0,
+              "Test Time (s)": 0,
+              "Step Time (s)": 0,
+              "Cycle Index": 0,
+              "Step Index": 0,
+              "TC_Counter1": 0,
+              "TC_Counter2": 0,
+              "TC_Counter3": 0,
+              "TC_Counter4": 0,
+              "Current (A)": 0,
+              "Voltage (V)": 0,
+              "Power (W)": 0,
+              "Charge Capacity (Ah)": 0,
+              "Discharge Capacity (Ah)": 0,
+              "Charge Energy (Wh)": 0,
+              "Discharge Energy (Wh)": 0,
+              "Capacity (Ah)": 0,
+              "mAh/g": 0,
+              "ACR (Ohm)": 131884,
+              "dV/dt (V/s)": 110918,
+              "Internal Resistance (Ohm)": 131159,
+              "dQ/dV (Ah/V)": 128187,
+              "dV/dQ (V/Ah)": 129466,
+              "Aux_Temperature_1 (C)": 0,
+              "Aux_dT/dt_1 (C/s)": 0
+            },
+            "anomalies": {
+              "sequence_errors": 0,
+              "duplicate_time": 0,
+              "regressed_time": 0,
+              "negative_voltage": 5,
+              "zero_voltage": 0,
+              "voltage_below_author_protocol_cutoff_1p5V": 714,
+              "voltage_above_author_protocol_cutoff_3p9V": 1354
+            },
+            "current_sign_evidence": {
+              "positive_current_charge_capacity_increases": 24356,
+              "negative_current_charge_capacity_increases": 0,
+              "negative_current_discharge_capacity_increases": 44744,
+              "positive_current_discharge_capacity_increases": 0
+            },
+            "vendor_current_sign_inferred": "positive_charge",
+            "internal_current_conversion": "current_A = -vendor_current_A",
+            "measured_temperature_channel": "Aux_Temperature_1 (C)",
+            "source_filename_temperature_is_chamber_condition": true,
+            "canonical_import_status": "not_performed",
+            "no_rows_removed_or_fitted": true,
+            "scope": "Historical original-column and unfiltered adjacent raw-capacity-pair audit; its sign inference and not_performed status describe that earlier audit only. Current filtered capacity sign and unit-view acceptance are registered separately in canonical_view."
+          },
+          "canonical_view": {
+            "member_manifest": "artifacts\\review\\zenodo-csv-public-5-20261013-h\\member-5-Pulse_data_temp25_bat3\\manifest.json",
+            "member_manifest_sha256": "1b802b78c44f9384f284c88cece7ce6ddcafed82a53df47199b744fd6c4a47da",
+            "view": "artifacts\\review\\zenodo-csv-public-5-20261013-h\\member-5-Pulse_data_temp25_bat3",
+            "view_sha256": "06d0580a35b1642f78e087ddbc604a4725262be616200b05c4ee3022947241c5",
+            "rows": 131884,
+            "conservative_split_component": "zenodo13836819_component_61d8ea91e46f7efe",
+            "actual_reopened_audit": {
+              "rows_reopened_and_compared": 131884,
+              "negative_voltage_rows_preserved": 5,
+              "unknown_current_rows": 0,
+              "missing_temperature_rows": 0,
+              "original_time_resets": 0,
+              "original_co_timed_records": 0,
+              "member_output_sha256": "06d0580a35b1642f78e087ddbc604a4725262be616200b05c4ee3022947241c5",
+              "status": "passed"
+            },
+            "current_sign_evidence": {
+              "rows": 131884,
+              "raw_bytes": 21635732,
+              "vendor_current_sign": "positive_charge",
+              "normalization_status": "PASS",
+              "capacity_direction_counts": {
+                "positive_current_charge": 24356,
+                "negative_current_discharge": 44740,
+                "positive_current_discharge": 0,
+                "negative_current_charge": 0
+              },
+              "trusted_capacity_pairs": 69096,
+              "power_consistency": {
+                "consistent_rows": 131884,
+                "missing_or_inconsistent_rows": 0
+              },
+              "sign_policy": {
+                "current_noise_threshold_A": 0.01,
+                "capacity_increment_threshold_Ah": 1e-08,
+                "minimum_trusted_observations_each_direction": 3,
+                "power_absolute_tolerance_W": 1e-06,
+                "power_relative_tolerance": 1e-06,
+                "trusted_subset": "finite positive voltage, Power=I*V, adjacent source sequence, same step/cycle, increasing test time, same nonzero current polarity, one increasing capacity counter and no reset"
+              },
+              "metadata_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+              "reason": "Bidirectional capacity increments support convention; Power only corroborates columns"
+            },
+            "canonical_current_sign": "positive_discharge",
+            "canonical_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "K"
+            }
+          }
+        },
+        {
+          "name": "Pulse_data_temp25_bat4.CSV",
+          "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp25_bat4.CSV",
+          "archive_member_name": "1_Enhanced pulse test data/Pulse_data_temp25_bat4.CSV",
+          "sha256": "02f998bb21cfe4c8c8e40131d443fc619d0bee1fec3e5742563cae7cc74c9493",
+          "bytes": 21749963,
+          "crc32": "22523ea4",
+          "crc_status": "complete_member_crc_verified",
+          "rows": 131224,
+          "author_group": "zenodo13836819_10Ah_bat4",
+          "author_battery_number": 4,
+          "manufacturer_serial_id": null,
+          "physical_independence_status": "UNKNOWN",
+          "source_protocol": "Pulse",
+          "source_temperature_condition_degC": 25,
+          "field_audit": {
+            "exact_columns": {
+              "time": "Test Time (s)",
+              "current": "Current (A)",
+              "voltage": "Voltage (V)",
+              "temperature": "Aux_Temperature_1 (C)",
+              "sequence": "Data Point",
+              "step": "Step Index",
+              "charge_capacity": "Charge Capacity (Ah)",
+              "discharge_capacity": "Discharge Capacity (Ah)"
+            },
+            "source_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "degC"
+            },
+            "rows": 131224,
+            "bounds_in_original_units": {
+              "time": [
+                1.0001,
+                91860.4378
+              ],
+              "current": [
+                -30.00633,
+                30.00429
+              ],
+              "voltage": [
+                -0.02475786,
+                4.054657
+              ],
+              "temperature": [
+                25.18351,
+                27.73797
+              ]
+            },
+            "missing_by_column": {
+              "Data Point": 0,
+              "Date Time": 0,
+              "Test Time (s)": 0,
+              "Step Time (s)": 0,
+              "Cycle Index": 0,
+              "Step Index": 0,
+              "TC_Counter1": 0,
+              "TC_Counter2": 0,
+              "TC_Counter3": 0,
+              "TC_Counter4": 0,
+              "Current (A)": 0,
+              "Voltage (V)": 0,
+              "Power (W)": 0,
+              "Charge Capacity (Ah)": 0,
+              "Discharge Capacity (Ah)": 0,
+              "Charge Energy (Wh)": 0,
+              "Discharge Energy (Wh)": 0,
+              "Capacity (Ah)": 0,
+              "mAh/g": 0,
+              "ACR (Ohm)": 131224,
+              "dV/dt (V/s)": 110409,
+              "Internal Resistance (Ohm)": 130499,
+              "dQ/dV (Ah/V)": 127548,
+              "dV/dQ (V/Ah)": 128812,
+              "Aux_Temperature_1 (C)": 0,
+              "Aux_dT/dt_1 (C/s)": 0
+            },
+            "anomalies": {
+              "sequence_errors": 0,
+              "duplicate_time": 0,
+              "regressed_time": 0,
+              "negative_voltage": 4,
+              "zero_voltage": 0,
+              "voltage_below_author_protocol_cutoff_1p5V": 701,
+              "voltage_above_author_protocol_cutoff_3p9V": 1307
+            },
+            "current_sign_evidence": {
+              "positive_current_charge_capacity_increases": 23970,
+              "negative_current_charge_capacity_increases": 0,
+              "negative_current_discharge_capacity_increases": 44438,
+              "positive_current_discharge_capacity_increases": 0
+            },
+            "vendor_current_sign_inferred": "positive_charge",
+            "internal_current_conversion": "current_A = -vendor_current_A",
+            "measured_temperature_channel": "Aux_Temperature_1 (C)",
+            "source_filename_temperature_is_chamber_condition": true,
+            "canonical_import_status": "not_performed",
+            "no_rows_removed_or_fitted": true,
+            "scope": "Historical original-column and unfiltered adjacent raw-capacity-pair audit; its sign inference and not_performed status describe that earlier audit only. Current filtered capacity sign and unit-view acceptance are registered separately in canonical_view."
+          },
+          "canonical_view": {
+            "member_manifest": "artifacts\\review\\zenodo-csv-public-6-20261013-h\\member-6-Pulse_data_temp25_bat4\\manifest.json",
+            "member_manifest_sha256": "9712d7d5febcbcf2d39a38d3327e6b8c4a7ed7414d20819db24c3d54e116f348",
+            "view": "artifacts\\review\\zenodo-csv-public-6-20261013-h\\member-6-Pulse_data_temp25_bat4",
+            "view_sha256": "083a6ed974c081a5afaa3f29daac34dafb5449304082e617d563007e3f5efce9",
+            "rows": 131224,
+            "conservative_split_component": "zenodo13836819_component_61d8ea91e46f7efe",
+            "actual_reopened_audit": {
+              "rows_reopened_and_compared": 131224,
+              "negative_voltage_rows_preserved": 4,
+              "unknown_current_rows": 0,
+              "missing_temperature_rows": 0,
+              "original_time_resets": 0,
+              "original_co_timed_records": 0,
+              "member_output_sha256": "083a6ed974c081a5afaa3f29daac34dafb5449304082e617d563007e3f5efce9",
+              "status": "passed"
+            },
+            "current_sign_evidence": {
+              "rows": 131224,
+              "raw_bytes": 21749963,
+              "vendor_current_sign": "positive_charge",
+              "normalization_status": "PASS",
+              "capacity_direction_counts": {
+                "positive_current_charge": 23970,
+                "negative_current_discharge": 44435,
+                "positive_current_discharge": 0,
+                "negative_current_charge": 0
+              },
+              "trusted_capacity_pairs": 68405,
+              "power_consistency": {
+                "consistent_rows": 131224,
+                "missing_or_inconsistent_rows": 0
+              },
+              "sign_policy": {
+                "current_noise_threshold_A": 0.01,
+                "capacity_increment_threshold_Ah": 1e-08,
+                "minimum_trusted_observations_each_direction": 3,
+                "power_absolute_tolerance_W": 1e-06,
+                "power_relative_tolerance": 1e-06,
+                "trusted_subset": "finite positive voltage, Power=I*V, adjacent source sequence, same step/cycle, increasing test time, same nonzero current polarity, one increasing capacity counter and no reset"
+              },
+              "metadata_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+              "reason": "Bidirectional capacity increments support convention; Power only corroborates columns"
+            },
+            "canonical_current_sign": "positive_discharge",
+            "canonical_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "K"
+            }
+          }
+        },
+        {
+          "name": "Driving_cycle_data_temp-5_bat5.CSV",
+          "path": "data/raw/public_independent/zenodo13836819-complete-members-8d838012/Driving_cycle_data_temp-5_bat5.CSV",
+          "archive_member_name": "2_Driving cycle test data/Driving_cycle_data_temp-5_bat5.CSV",
+          "sha256": "b9b24be8d04efb2a506c85fdcf9854546966d02a24db5559e76fb54db6c0f610",
+          "bytes": 58896539,
+          "crc32": "a8efe762",
+          "crc_status": "complete_member_crc_verified",
+          "rows": 332603,
+          "author_group": "zenodo13836819_3p2Ah_bat5",
+          "author_battery_number": 5,
+          "manufacturer_serial_id": null,
+          "physical_independence_status": "UNKNOWN",
+          "source_protocol": "Driving_cycle",
+          "source_temperature_condition_degC": -5,
+          "field_audit": {
+            "exact_columns": {
+              "time": "Test Time (s)",
+              "current": "Current (A)",
+              "voltage": "Voltage (V)",
+              "temperature": "Aux_Temperature_1 (C)",
+              "sequence": "Data Point",
+              "step": "Step Index",
+              "charge_capacity": "Charge Capacity (Ah)",
+              "discharge_capacity": "Discharge Capacity (Ah)"
+            },
+            "source_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "degC"
+            },
+            "rows": 332603,
+            "bounds_in_original_units": {
+              "time": [
+                1.0003,
+                83088.869
+              ],
+              "current": [
+                -6.006287,
+                3.219353
+              ],
+              "voltage": [
+                1.49999,
+                4.043261
+              ],
+              "temperature": [
+                0.2970246,
+                13.07528
+              ]
+            },
+            "missing_by_column": {
+              "Data Point": 0,
+              "Date Time": 0,
+              "Test Time (s)": 0,
+              "Step Time (s)": 0,
+              "Cycle Index": 0,
+              "Step Index": 0,
+              "TC_Counter1": 0,
+              "TC_Counter2": 0,
+              "TC_Counter3": 0,
+              "TC_Counter4": 0,
+              "Current (A)": 0,
+              "Voltage (V)": 0,
+              "Power (W)": 0,
+              "Charge Capacity (Ah)": 0,
+              "Discharge Capacity (Ah)": 0,
+              "Charge Energy (Wh)": 0,
+              "Discharge Energy (Wh)": 0,
+              "Capacity (Ah)": 0,
+              "mAh/g": 0,
+              "ACR (Ohm)": 332603,
+              "dV/dt (V/s)": 302327,
+              "Internal Resistance (Ohm)": 332565,
+              "dQ/dV (Ah/V)": 317857,
+              "dV/dQ (V/Ah)": 319775,
+              "Aux_Temperature_1 (C)": 0,
+              "Aux_dT/dt_1 (C/s)": 0
+            },
+            "anomalies": {
+              "sequence_errors": 0,
+              "duplicate_time": 0,
+              "regressed_time": 0,
+              "negative_voltage": 0,
+              "zero_voltage": 0,
+              "voltage_below_author_protocol_cutoff_1p5V": 1,
+              "voltage_above_author_protocol_cutoff_3p9V": 2798
+            },
+            "current_sign_evidence": {
+              "positive_current_charge_capacity_increases": 67871,
+              "negative_current_charge_capacity_increases": 338,
+              "negative_current_discharge_capacity_increases": 177018,
+              "positive_current_discharge_capacity_increases": 432
+            },
+            "vendor_current_sign_inferred": "UNKNOWN",
+            "internal_current_conversion": null,
+            "measured_temperature_channel": "Aux_Temperature_1 (C)",
+            "source_filename_temperature_is_chamber_condition": true,
+            "canonical_import_status": "not_performed",
+            "no_rows_removed_or_fitted": true,
+            "scope": "Historical original-column and unfiltered adjacent raw-capacity-pair audit; its sign inference and not_performed status describe that earlier audit only. Current filtered capacity sign and unit-view acceptance are registered separately in canonical_view."
+          },
+          "canonical_view": {
+            "member_manifest": "artifacts\\review\\zenodo-csv-public-7-20261013-i\\member-7-Driving_cycle_data_temp-5_bat5\\manifest.json",
+            "member_manifest_sha256": "228ec65d4fda40d7de9f3de46bc4b3d7d83bc77c56970bc42bb34bed6c511abe",
+            "view": "artifacts\\review\\zenodo-csv-public-7-20261013-i\\member-7-Driving_cycle_data_temp-5_bat5",
+            "view_sha256": "b9355fe207f671fc2311895198de1778fe6312bd3a6c9e27002b94c77ed51280",
+            "rows": 332603,
+            "conservative_split_component": "zenodo13836819_component_09e138487541d93a",
+            "actual_reopened_audit": {
+              "rows_reopened_and_compared": 332603,
+              "negative_voltage_rows_preserved": 0,
+              "unknown_current_rows": 0,
+              "missing_temperature_rows": 0,
+              "original_time_resets": 0,
+              "original_co_timed_records": 0,
+              "member_output_sha256": "b9355fe207f671fc2311895198de1778fe6312bd3a6c9e27002b94c77ed51280",
+              "status": "passed"
+            },
+            "current_sign_evidence": {
+              "rows": 332603,
+              "raw_bytes": 58896539,
+              "vendor_current_sign": "positive_charge",
+              "normalization_status": "PASS",
+              "capacity_direction_counts": {
+                "positive_current_charge": 67076,
+                "negative_current_discharge": 176083,
+                "positive_current_discharge": 0,
+                "negative_current_charge": 0
+              },
+              "trusted_capacity_pairs": 243159,
+              "power_consistency": {
+                "consistent_rows": 332603,
+                "missing_or_inconsistent_rows": 0
+              },
+              "sign_policy": {
+                "current_noise_threshold_A": 0.01,
+                "capacity_increment_threshold_Ah": 1e-08,
+                "minimum_trusted_observations_each_direction": 3,
+                "power_absolute_tolerance_W": 1e-06,
+                "power_relative_tolerance": 1e-06,
+                "trusted_subset": "finite positive voltage, Power=I*V, adjacent source sequence, same step/cycle, increasing test time, same nonzero current polarity, one increasing capacity counter and no reset"
+              },
+              "metadata_sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706",
+              "reason": "Bidirectional capacity increments support convention; Power only corroborates columns"
+            },
+            "canonical_current_sign": "positive_discharge",
+            "canonical_units": {
+              "time": "s",
+              "current": "A",
+              "voltage": "V",
+              "temperature": "K"
+            }
+          }
+        }
+      ],
+      "raw_member_count": 7,
+      "unique_content_count": 6,
+      "raw_rows_including_duplicate": 1108614,
+      "author_declared_group_count": 3,
+      "content_duplicates": [
+        {
+          "sha256": "7af5df8a335aad85d38303b5ccd148229dba26900a9fef4efad2891128485ddf",
+          "members": [
+            {
+              "name": "Pulse_data_temp-5_bat3.CSV",
+              "group": "zenodo13836819_10Ah_bat3"
+            },
+            {
+              "name": "Pulse_data_temp-5_bat4.CSV",
+              "group": "zenodo13836819_10Ah_bat4"
+            }
+          ],
+          "cross_author_group": true
+        }
+      ],
+      "conservative_split_components": [
+        [
+          "zenodo13836819_10Ah_bat3",
+          "zenodo13836819_10Ah_bat4"
+        ],
+        [
+          "zenodo13836819_3p2Ah_bat5"
+        ]
+      ],
+      "conservative_split_component_count": 2,
+      "independent_physical_groups": null,
+      "physical_independence_status": "UNKNOWN",
+      "canonical_import_status": "seven_complete_member_unit_views_reopened",
+      "split_assignment_status": "not_assigned",
+      "frozen_split": null,
+      "model_fit_status": "not_performed",
+      "external_model_validation": "not_performed",
+      "D01_complete": false,
+      "D02_complete": false,
+      "frozen_handoffs": {
+        "original_six_members": {
+          "path": "artifacts/data/public_independent/D01_independent_data_delivery.json",
+          "sha256": "05b156bde6fd024b868be33504f439a172d5a8199374b4b3a6741b4490848acf"
+        },
+        "latest_seven_member_cohort": {
+          "path": "artifacts/data/public_independent/cohort-revision2-addd1ce2/delivery.json",
+          "sha256": "50a94f844b58b63d8d265d249bfcceb6cd669ba79b9e0bec3127e8298b8e9f1d"
+        },
+        "latest_all_row_field_and_identity_audit": {
+          "path": "artifacts/data/public_independent/zenodo13836819-identity-7d54d4c1/manifest.json",
+          "sha256": "4db1f85956e4c611baeff181fb55a2e91521a8d0611fd2983295ccdaada0017b"
+        }
+      },
+      "local_reaudit": {
+        "path": "artifacts/review/data-integration-local-20261013-a/audit.json",
+        "status": "full_original_member_crc_sha_and_all_rows_reproduced"
+      },
+      "supports": [
+        "Seven complete original licensed raw CSV members with local byte SHA and full member CRC",
+        "Exact field units, measured temperature, and capacity-increment current-sign evidence",
+        "Cross-author-ID byte duplicates joined into conservative split components"
+      ],
+      "limitations": [
+        "Complete local members do not verify the official whole ZIP archive MD5; both archives remain UNKNOWN.",
+        "Three author battery IDs are labels; physical serials and batch independence remain unknown. Two split components are leakage constraints, not confirmed independent cells.",
+        "Raw negative/outlying voltages and missing optional fields are preserved. Protocol cutoffs identify anomalies, not universal sodium safety limits.",
+        "Complete-member unit-view importer acceptance passed; fixed train/validation/test roles, model fitting and external scoring have not been performed.",
+        "No long-term aging, RUL, validated incident population, revenue superiority, or calibrated operating risk claim.",
+        "Frozen CVUT 64-row holdout and prior six-member delivery remain unchanged; no new network request.",
+        "Prior seven-member identity audit retained a stale six-member limitation; actual member count is seven and this separate audit corrects only the central index."
+      ],
+      "canonical_view_acceptance": {
+        "normal_entry_handoff": {
+          "path": "artifacts/review/data-integration-zenodo-public-handoff-20261013-g/handoff.json",
+          "sha256": "9ce56f1fd42bb7b8408fdf43c2d98f91d7ee3693c221c1206a7d6cd05ded481b"
+        },
+        "independent_review": {
+          "path": "artifacts/review/data-integration-zenodo-independent-20261013-b/report.json",
+          "sha256": "6ceab8185737cc5b14a3bdaece96cd1687ee96ac9fb7d0b0e48c42f7aa8dbe43"
+        },
+        "scope": "Author full-row field reopening; independent full original capacity/sign and anomaly recomputation, all gzip line counts and hashes; independent normalized field comparison sampled 231 rows",
+        "not_granted": [
+          "official whole ZIP MD5",
+          "confirmed independent physical cells",
+          "train/validation/test assignment",
+          "calibration",
+          "external model validation",
+          "D01 or D02 completion"
+        ]
+      }
+    }
+  ],
+  "model_identities": [
+    {
+      "model_kind": "theory_fixture",
+      "chemistry_id": "synthetic_two_site",
+      "parameter_source_id": "synthetic-two-site-v1",
+      "status": "synthetic_not_calibrated"
+    },
+    {
+      "model_kind": "fast_operational",
+      "chemistry_id": "synthetic_two_site",
+      "parameter_source_id": "synthetic-two-site-v1",
+      "status": "synthetic_not_calibrated"
+    },
+    {
+      "model_kind": "reference_sodium",
+      "chemistry_id": "reference_sodium_chayambuka2022_comsol",
+      "parameter_source_id": "pybamm_sodium_25_10_2",
+      "status": "backend_probe_pending"
+    },
+    {
+      "model_kind": "public_data_case",
+      "chemistry_id": "unknown_pending_field_audit",
+      "parameter_source_id": "rwth_sodium_gassing_987579",
+      "status": "not_downloaded"
+    },
+    {
+      "model_kind": "public_data_case",
+      "chemistry_id": "public_cvut_hakadi_sodium_4s11p_17459188",
+      "parameter_source_id": "zenodo17459188_cvut_sib_0001",
+      "status": "pack_measurement_not_calibrated",
+      "measurement_scope": "one 4s11p pack",
+      "external_model_validation": "not_performed"
+    },
+    {
+      "model_kind": "public_data_case",
+      "chemistry_id": "public_zenodo13836819_sodium_3p2Ah_10Ah_author_groups_unconfirmed",
+      "parameter_source_id": "zenodo13836819_sodium_soc_original_members",
+      "status": "complete_raw_members_not_imported_or_calibrated",
+      "external_model_validation": "not_performed"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "First source/test bytes preserved before canonical path correction; actual CLI0 but path assertion1 retained",
+  "files": {
+    "src/naheng/runtime/baseline_frontier.py": "dad5002c0bcf7f95dbf265f2ea117c50129251bde319783543f47ee5407658af",
+    "tests/integration/test_baseline_frontier.py": "bf32c9a92425bdcd230c095c9bb4e70d39469ea4080999c4d259f24c4383fe8f"
+  },
+  "receipt": "artifacts/validation/C01-public-frontier-training-freeze-paired-entry-regressions-first-07be3a33/command.json"
+}

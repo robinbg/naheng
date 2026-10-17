@@ -1,0 +1,133 @@
+{
+  "utc": "2026-10-16T06:17:33.830728+00:00",
+  "status": "CURRENT_UI_EVIDENCE_AND_ORIGINAL_GATE_PASSED_PRIVATE_CANDIDATE",
+  "source_code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "build_hash": "497f103d7cafb8043e255124ac4b56009c27583abdfd50ee773b19e13fb81f4f",
+  "checks": 501,
+  "hashed_evidence_inputs": 504,
+  "native_exit_code": 0,
+  "native_wall_s": 0.6336221000019577,
+  "original_gate_exit_code": 0,
+  "candidate": "current-3a99e78b/acceptance.candidate.json",
+  "candidate_sha256": "5647096f426e8c5eb5e9104938e46d761abfbc95d38b65af6faeb8c2e0de4a17",
+  "independent_review": "current-3a99e78b/independent-review.json",
+  "independent_review_sha256": "d29abd5c93e5849d137eb41cf5931f1c84272ef40f09f9683c6143ccb98c079b",
+  "global_acceptance_modified": false,
+  "original_task_modified": false,
+  "scope": "Actual root-operated current workbench UI and saved artifacts only. Not new real-cell science, independent operating N, scientific comparative results or complete release.",
+  "preserved_viewer_failures": "Two Emulation focus/AX timeout failures; normal same-tab screenshot recovered and inspected.",
+  "files": {
+    "assemble_record.py": {
+      "sha256": "f0ea62a01cd2e55e8f5f8d84eb4262e363918017cd6b25ab46af1949ffd6275d",
+      "bytes": 5026
+    },
+    "audit_current.py": {
+      "sha256": "65bea2e8d248b856d38ef129ec1fdf54802f1b8c7cb8e3d2541e3f8e84b68c02",
+      "bytes": 11472
+    },
+    "check_preparation.py": {
+      "sha256": "01efb3736830e12db88234b64ede11fb9876237201a3c1abd10ce5ff940ccf1c",
+      "bytes": 1243
+    },
+    "current-3a99e78b/acceptance.candidate.gate-result.json": {
+      "sha256": "63f8b052f0df2ef51e0b26b2b35bae65337c5e2103a59bc4d2c25ffba48f27f2",
+      "bytes": 356
+    },
+    "current-3a99e78b/acceptance.candidate.json": {
+      "sha256": "5647096f426e8c5eb5e9104938e46d761abfbc95d38b65af6faeb8c2e0de4a17",
+      "bytes": 99270
+    },
+    "current-3a99e78b/acceptance.candidate.unverified-gate-input.json": {
+      "sha256": "5647096f426e8c5eb5e9104938e46d761abfbc95d38b65af6faeb8c2e0de4a17",
+      "bytes": 99270
+    },
+    "current-3a99e78b/audit-result.json": {
+      "sha256": "6b859b099827cfe2f5a32c71a719bf062c9a7b82c38aa644473fb2aa4df1cf62",
+      "bytes": 167049
+    },
+    "current-3a99e78b/command-adapter.json": {
+      "sha256": "5c500e655f92c2ce6cffb182cad7136994f7a4859acdad509d357e1dbe553609",
+      "bytes": 1013
+    },
+    "current-3a99e78b/download-receipt.json": {
+      "sha256": "7e04a53bb01d738c14284254adb9379079bca85f4cfb8ddf483f05388b48991d",
+      "bytes": 282
+    },
+    "current-3a99e78b/independent-review.json": {
+      "sha256": "d29abd5c93e5849d137eb41cf5931f1c84272ef40f09f9683c6143ccb98c079b",
+      "bytes": 157146
+    },
+    "current-3a99e78b/native-command.json": {
+      "sha256": "acb826dfaf9f1f02c1849e11ac06c7300d0cfe6e40cd8daf7dafad61eca8b77b",
+      "bytes": 1159
+    },
+    "current-3a99e78b/nh-0a9a7c22af7341c5917ecccd0d142c8f-job.json": {
+      "sha256": "36476140dabaa5e9b958677be31d3d09aa098b2abb8b65a9e47b1108e44eb580",
+      "bytes": 1334
+    },
+    "current-3a99e78b/nh-5cdc3953f686499f838bef4f790b3936-job.json": {
+      "sha256": "2635a7547c1ed6dd0bad38b7014c33cf8cd74fc00fc7b99a5bc337e6b79a0a69",
+      "bytes": 1390
+    },
+    "current-3a99e78b/nh-cc0fbcdff9f44209b8e26087cb9657f6-job.json": {
+      "sha256": "b8a083701999016d30d0256f4cd7bf1bc94671fe5a82f921b5c6860745741a87",
+      "bytes": 1334
+    },
+    "current-3a99e78b/observed-facts.json": {
+      "sha256": "cfb790848f5e883d6e1d942ad2fcf64002a14f124bd91e3acd18bc9d98a54955",
+      "bytes": 11990
+    },
+    "current-3a99e78b/stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "current-3a99e78b/stdout.log": {
+      "sha256": "9e1c575d7d913856e806c443cb5b9e33e440e98b0926464e24086bd74e9ca552",
+      "bytes": 53
+    },
+    "preparation-328e8aaf/command.json": {
+      "sha256": "c52968979cff3a3731f361c5e848679843670649c9868be0dfb4a7677ac1bf6a",
+      "bytes": 1167
+    },
+    "preparation-328e8aaf/control-result.json": {
+      "sha256": "6f9cbd0ac6298157dad98a7e144f835047a5938a11a5095ed03d980163f6693d",
+      "bytes": 416
+    },
+    "preparation-328e8aaf/incomplete-control.json": {
+      "sha256": "b754d2b3bc858a4426a5c25072c0873b5fc16b56a00ceea614c7b9d409cea932",
+      "bytes": 310
+    },
+    "preparation-328e8aaf/stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "preparation-328e8aaf/stdout.log": {
+      "sha256": "5ba6397948dae0eb67e2b10044007659b8e822b9c905cb3ffe43eef73df46cd9",
+      "bytes": 406
+    },
+    "prepare_contract.py": {
+      "sha256": "6cfd21a71bb9ec302392a778d5c055f130a867e8c0b3cd47020e413cf5277b9e",
+      "bytes": 2869
+    },
+    "prepared-contract.json": {
+      "sha256": "c1c6c06c85c8c1fad655934586a441078d8cb2e81c69d06d248f2cdd0d9a918b",
+      "bytes": 2503
+    },
+    "README.md": {
+      "sha256": "1b89e6c354da15a710d269931c26de2e7a43cdaaf95159b7e682914f8389bfa9",
+      "bytes": 1838
+    },
+    "run_current_audit.py": {
+      "sha256": "95c4fbaaa43c483ef4ffcaee3b13d86d66c70c9ec5f0ad582404da7ca4e84117",
+      "bytes": 3350
+    },
+    "run_preparation_check.py": {
+      "sha256": "59a6d032e47ac95a783b1beb34f7ce64c418f2c8ecdb28aae041720d053836fd",
+      "bytes": 647
+    },
+    "seal.py": {
+      "sha256": "689348b491ff67a1b8146ba63a7fe760a41a0b04a1d823c336ed73f8db619214",
+      "bytes": 2096
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "exit_code": 0,
+  "status": "completed",
+  "source_check_error": null,
+  "strategy": "random",
+  "requested_queries": 36,
+  "actual_reserved_queries": 36,
+  "completed_results": 2,
+  "unknown_results": 34,
+  "high_calls": 14,
+  "best_training_candidate": {
+    "candidate_id": "b7546290ba206c623eff2846ab977437dd16d482f86c22580c9f57f1f7102a75",
+    "parameters": {
+      "charge_high_A": 0.013336059043180398,
+      "charge_low_A": 0.0062319628673307105,
+      "cooling_permission_W": 0.0014936416575254397,
+      "cutoff_voltage_V": 3.3899799410807447,
+      "discharge_high_A": 0.012173694331302762,
+      "discharge_low_A": 0.013750597431849691,
+      "heating_permission_W": 0.002204849082991445,
+      "max_dod": 0.00020486727539463365,
+      "rest_duration_s": 1.050290183319345
+    },
+    "x": [
+      0.8613382535983666,
+      0.016568776237907867,
+      0.07468208287627198,
+      0.9599197643229797,
+      0.4409781665216259,
+      0.8958831193208076,
+      0.11024245414957223,
+      0.09336731080537053,
+      0.21005803666386902
+    ],
+    "selection": "paired_high_fidelity_discrepancy_identification",
+    "paired_low_reservation": "ed1f267627204c3ba665239f338776a3",
+    "completed_pairs_before": 0,
+    "model_feasibility_is_risk_certificate": false,
+    "fidelity": "high",
+    "reservation_id": "3d10ff241dd5454eab9cf7050df8f467",
+    "ordinal": 20,
+    "protocol_sha256": "472dc9a7b44eb3895713f48a81f6f49f892c3a54ec8c6d9bd41c97623e797e8a",
+    "timeout_s": 120.0,
+    "strategy": "random",
+    "shared_pairing_probe": true,
+    "result": {
+      "status": "completed",
+      "utility": 8.275918235890812e-09,
+      "constraint_margin": -1e-12,
+      "cost_s": 26.313079300001846,
+      "source_id": "fixed-training-full-policy-world-2026101401",
+      "run_id": "full-policy-3d10ff241dd5454eab9cf7050df8f467",
+      "evidence_sha256": "4a26aec2b8ebbcb8b11752af406d335aba3f413d05a70af0c90392af0ed763df",
+      "reason": null
+    }
+  },
+  "diagnostic_best_training_candidate": {
+    "candidate_id": "b7546290ba206c623eff2846ab977437dd16d482f86c22580c9f57f1f7102a75",
+    "parameters": {
+      "charge_high_A": 0.013336059043180398,
+      "charge_low_A": 0.0062319628673307105,
+      "cooling_permission_W": 0.0014936416575254397,
+      "cutoff_voltage_V": 3.3899799410807447,
+      "discharge_high_A": 0.012173694331302762,
+      "discharge_low_A": 0.013750597431849691,
+      "heating_permission_W": 0.002204849082991445,
+      "max_dod": 0.00020486727539463365,
+      "rest_duration_s": 1.050290183319345
+    },
+    "x": [
+      0.8613382535983666,
+      0.016568776237907867,
+      0.07468208287627198,
+      0.9599197643229797,
+      0.4409781665216259,
+      0.8958831193208076,
+      0.11024245414957223,
+      0.09336731080537053,
+      0.21005803666386902
+    ],
+    "selection": "paired_high_fidelity_discrepancy_identification",
+    "paired_low_reservation": "ed1f267627204c3ba665239f338776a3",
+    "completed_pairs_before": 0,
+    "model_feasibility_is_risk_certificate": false,
+    "fidelity": "high",
+    "reservation_id": "3d10ff241dd5454eab9cf7050df8f467",
+    "ordinal": 20,
+    "protocol_sha256": "472dc9a7b44eb3895713f48a81f6f49f892c3a54ec8c6d9bd41c97623e797e8a",
+    "timeout_s": 120.0,
+    "strategy": "random",
+    "shared_pairing_probe": true,
+    "result": {
+      "status": "completed",
+      "utility": 8.275918235890812e-09,
+      "constraint_margin": -1e-12,
+      "cost_s": 26.313079300001846,
+      "source_id": "fixed-training-full-policy-world-2026101401",
+      "run_id": "full-policy-3d10ff241dd5454eab9cf7050df8f467",
+      "evidence_sha256": "4a26aec2b8ebbcb8b11752af406d335aba3f413d05a70af0c90392af0ed763df",
+      "reason": null
+    }
+  },
+  "within_original_wall_budget": true,
+  "utility_model": {
+    "model": "rho_times_low_plus_fitted_discrepancy",
+    "rho": 1.0,
+    "paired_count": 1,
+    "rho_fitted_from_pairs": false,
+    "paired_low_centered_sum_squares": 0.0,
+    "rho_estimation": "default_unit_not_identified",
+    "low": {
+      "kind": "RBF_GP",
+      "x": [
+        [
+          0.8613382535983666,
+          0.016568776237907867,
+          0.07468208287627198,
+          0.9599197643229797,
+          0.4409781665216259,
+          0.8958831193208076,
+          0.11024245414957223,
+          0.09336731080537053,
+          0.21005803666386902
+        ]
+      ],
+      "y": [
+        8.284809766322883e-09
+      ],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 8.284809766322883e-09,
+      "scale": 1e-06,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "fitted_fixed_initial_kernel",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "discrepancy": {
+      "kind": "RBF_GP",
+      "x": [
+        [
+          0.8613382535983666,
+          0.016568776237907867,
+          0.07468208287627198,
+          0.9599197643229797,
+          0.4409781665216259,
+          0.8958831193208076,
+          0.11024245414957223,
+          0.09336731080537053,
+          0.21005803666386902
+        ]
+      ],
+      "y": [
+        -8.891530432071123e-12
+      ],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": -8.891530432071123e-12,
+      "scale": 1e-09,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "fitted_fixed_initial_kernel",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "limitations": [
+      "fixed fitted hyperparameters",
+      "independence approximation between low GP and discrepancy",
+      "no calibration or independent operational risk guarantee"
+    ]
+  },
+  "constraint_model": {
+    "model": "rho_times_low_plus_fitted_discrepancy",
+    "rho": 1.0,
+    "paired_count": 1,
+    "rho_fitted_from_pairs": false,
+    "paired_low_centered_sum_squares": 0.0,
+    "rho_estimation": "default_unit_not_identified",
+    "low": {
+      "kind": "RBF_GP",
+      "x": [
+        [
+          0.8613382535983666,
+          0.016568776237907867,
+          0.07468208287627198,
+          0.9599197643229797,
+          0.4409781665216259,
+          0.8958831193208076,
+          0.11024245414957223,
+          0.09336731080537053,
+          0.21005803666386902
+        ]
+      ],
+      "y": [
+        -1e-12
+      ],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": -1e-12,
+      "scale": 1e-06,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "fitted_fixed_initial_kernel",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "discrepancy": {
+      "kind": "RBF_GP",
+      "x": [
+        [
+          0.8613382535983666,
+          0.016568776237907867,
+          0.07468208287627198,
+          0.9599197643229797,
+          0.4409781665216259,
+          0.8958831193208076,
+          0.11024245414957223,
+          0.09336731080537053,
+          0.21005803666386902
+        ]
+      ],
+      "y": [
+        0.0
+      ],
+      "length_scales": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean": 0.0,
+      "scale": 1e-09,
+      "noise_variance_normalized": 1e-06,
+      "fit_status": "fitted_fixed_initial_kernel",
+      "variance_scope": "surrogate_latent_variance_not_a_risk_or_coverage_certificate"
+    },
+    "limitations": [
+      "fixed fitted hyperparameters",
+      "independence approximation between low GP and discrepancy",
+      "no calibration or independent operational risk guarantee"
+    ]
+  },
+  "protocol_sha256": "945d7fa0e2fb508fffc6738d6545eb188653040e27c23fe55de646465f701614",
+  "checkpoint_sha256": "40dc0b9b4a7f249e90b1fdf52154954a8a7f871253305100d5c1cf5d886d84db",
+  "elapsed_s": 449.2633821000054,
+  "source_unchanged": true,
+  "scientific_N_added": 0,
+  "risk_certificate": false
+}

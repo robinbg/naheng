@@ -1,0 +1,152 @@
+{
+  "utc": "2026-10-14T00:24:49.624037+00:00",
+  "exit_code": 0,
+  "code_hash": "b6dea261b8e244de48ddc1d5ad64cfc6d26a8cee21e28dfdb823a95be959cb33",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 22,
+    "in_progress": 7,
+    "todo": 16
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/progress/lifecycle-finance-install-2395769c/manifest.json": {
+      "sha256": "953e386648b7bbd3e522600c00b8d789e1e3aeff760738ee1a75d73d0de36258"
+    },
+    "artifacts/progress/lifecycle-audits-install-776d952a/manifest.json": {
+      "sha256": "6a22edebd25e24f323154b653106b00607fe9130c72cb48e41585332a31b0c6e"
+    },
+    "artifacts/validation/C02-reviewed-current-native-receipts-and-precise-source-install-f781127f/command.json": {
+      "sha256": "b049dc7073ef101d57f52e0cd4f344e4e3e81a1080f28678ff9c7f18cda00778",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/install_lifecycle_finance_candidate.py",
+        "artifacts/review/lifecycle-finance-independent-20261014-c/handoff.json",
+        "artifacts/review/lifecycle-endpoint-integration-20261014-a/handoff.json"
+      ],
+      "wall_s": 0.5352446000033524,
+      "timed_out": false
+    },
+    "artifacts/validation/C02-current-original-named-acceptance-after-audits-f9e71d51/command.json": {
+      "sha256": "1c26f235cb07862048a47bb9d32386f1cc4add6db904bd5ab6fa93d54a4e8e1b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_no_double_count.py",
+        "tests/unit/test_terminal_value.py",
+        "-q"
+      ],
+      "wall_s": 2.7247747000001254,
+      "timed_out": false
+    },
+    "artifacts/validation/C02-installed-full-new-tests-fresh-short-temp-60bd6d35/command.json": {
+      "sha256": "a1f7601399af0691249379abc2576898e3aef84860626d3816058d31a3fa66c0",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_periodic_exposure.py",
+        "tests/unit/test_execution_mode_rejection.py",
+        "tests/integration/test_lifecycle_finance_entry.py",
+        "-q",
+        "--basetemp",
+        "<HOST_HOME>\\Documents\\Codex\\.nh-c2-5e32c829"
+      ],
+      "wall_s": 2.77985279999848,
+      "timed_out": false
+    },
+    "artifacts/validation/C02-current-installed-periodic-rejection-and-public-adoption-controls-ec3a6414/command.json": {
+      "sha256": "1b6f1dad29b43d01eb1f8197394bd95b5022dcb6ab787b90c30fc52ca64276be",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_periodic_exposure.py",
+        "tests/unit/test_execution_mode_rejection.py",
+        "tests/integration/test_lifecycle_finance_entry.py",
+        "-q"
+      ],
+      "wall_s": 3.949110000001383,
+      "timed_out": false
+    },
+    "artifacts/validation/C02-current-public-lifecycle-executions-common-terminal-and-frontier-69ea48c5/command.json": {
+      "sha256": "010a1e9d333065ef5967be5decfc9442ddcaa58024ba6c9fbe5b50676b40a978",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "experiment",
+        "run",
+        "--suite",
+        "lifecycle-finance",
+        "--profile",
+        "pilot",
+        "--out",
+        "artifacts/lifecycle_finance/public-current-20261014-a"
+      ],
+      "wall_s": 16.021952000002784,
+      "timed_out": false
+    },
+    "artifacts/validation/C02-current-predeclared-real-macro-early-exit-thermal-and-primary-frontier-0abf6b33/command.json": {
+      "sha256": "69a2778838f1924cdffee34452d06433a61d05fd2e6ace6dc416f9519967cf71",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "experiment",
+        "run",
+        "--suite",
+        "lifecycle-finance",
+        "--profile",
+        "pilot",
+        "--out",
+        "artifacts/lifecycle_finance/public-current-20261014-b"
+      ],
+      "wall_s": 19.43926439999632,
+      "timed_out": false
+    },
+    "artifacts/review/lifecycle-finance-independent-20261014-c/handoff.json": {
+      "sha256": "a7a2510c46c9b1aaeadeca1aac605dd8055dba0bbe0da8a75c136635c524d012"
+    },
+    "artifacts/review/lifecycle-endpoint-integration-20261014-a/handoff.json": {
+      "sha256": "33354407b81185040399fcac1bba216dc99854311eab7e4d57303dc53a70a5f6"
+    },
+    "artifacts/review/lifecycle-public-finance-independent-20261014-a/handoff.json": {
+      "sha256": "665bce61f8733133529fb60f14a043cf2efab46c62548f65d952f8002ed570d0"
+    },
+    "artifacts/review/lifecycle-finance-first-public-independent-20261014-a/handoff.json": {
+      "sha256": "ccd054b9e501a2a1d75dc874e5d04c73367f8a66182bbe918b32dbecd2d6ddc4"
+    },
+    "artifacts/review/lifecycle-public-current-b/handoff.json": {
+      "sha256": "2c6ed58f814851a307f87d821e6de7ef457ce4276803bf208a8a1bdacae49985"
+    },
+    "artifacts/review/public-sodium-material-mapping-20261014-a/handoff.json": {
+      "sha256": "a2ea64247fa89de266e175fd01b6d2f68d0e4659f47f3f878f28b99dc4ab0ce2"
+    },
+    "artifacts/validation/D02-independent-primary-material-protocol-mapping-676cd389/command.json": {
+      "sha256": "4f20d1a39e28bdecc84596d5b9aaebe05bcf799741f566a2c22deead8d885717",
+      "exit_code": 0,
+      "argv": [
+        ".\\.venv\\Scripts\\python.exe",
+        "-B",
+        "artifacts/review/public-sodium-material-mapping-20261014-a/review.py",
+        "--root",
+        ".",
+        "--out",
+        "artifacts/review/public-sodium-material-mapping-20261014-a"
+      ],
+      "wall_s": 0.31154160000005504,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

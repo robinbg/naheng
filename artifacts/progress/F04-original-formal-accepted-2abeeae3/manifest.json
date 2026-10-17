@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T15:19:02.173806+00:00",
+  "task": "F04",
+  "counts": {
+    "done": 30,
+    "in_progress": 3,
+    "todo": 12
+  },
+  "code_hash": "59638af496306e2afbc502986a3e8ef17f83b4730a67064cba8ef7de8f98a5b9",
+  "target_count": 59,
+  "evidence": {
+    "artifacts/formal/f04-required-public-20261014-d/manifest.json": "e04df89809ff320340d342780026d73fa4a55cebd79812c916850f16245f7562",
+    "artifacts/validation/F04-original-all-59-targets-bounded-native-audits-44dadd63/command.json": "baccf67e088d0c7129b3863ce64f344d31c3a85254b0edb64ac4523f77fe6ddc",
+    "artifacts/review/formal-public-gate-review-b/contracts-review-results.json": "b45b61e9fd4f4cd3447a94fb5a5c928a666c2e0a66da5d967839ad7848083231"
+  },
+  "original45_tasks18_requirements_and_gates_retained": true,
+  "full_project_complete": false
+}

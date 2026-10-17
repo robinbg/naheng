@@ -1,0 +1,125 @@
+{
+  "utc": "2026-10-15T14:23:24.086558+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/X00-original-frontier-isolated-120-second-reproduction-26d0be84/command.json": {
+      "sha256": "0c58840b4fa7610312fbf161a72cdd0b7ba3342f17bab56d36ea9af8659632ea",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_baseline_frontier.py::test_public_cli_scans_actual_training_freezes_then_executes_paired_eval",
+        "-vv",
+        "--tb=short",
+        "--basetemp",
+        "<HOST_TEMP_ROOT>",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "wall_s": 145.1542387999998,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/x00-current142e-frontier-smoke-failure-diagnosis-20261015-c/final-diagnosis.json": {
+      "sha256": "5e54fb6d3d28977f51c1a5afd29e4640c4cf49749220c79b1d7570a348fabba7"
+    },
+    "artifacts/review/x00-frontier-performance-20261015-c/timing-review.json": {
+      "sha256": "fec436c24b8b510732b6461ebcd08455246e5ba924a7006f91e4c8fc559ebc94"
+    },
+    "artifacts/validation/X00-real-unchanged-frontier-case-cProfile-b323de03/command.json": {
+      "sha256": "9e6e0621090bb5f311f068addd8ec0ab8ae5aa0d3084dcae0995a394fc7fc1f0",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/profile_frontier_duplicate_verification.py"
+      ],
+      "wall_s": 47.431863599998906,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/performance/frontier-real-profile-58ae6804/manifest.json": {
+      "sha256": "1c648098150848a8450cd701ac407fef4cb8dc68d99a239ca74a9b0935ffc614"
+    },
+    "artifacts/validation/X00-owned-D-checked-hash-import-cache-no-source-change-d8e69138/command.json": {
+      "sha256": "da0d5d1acbb82860aae9104c9eb9830425f8489943fb1e3bfc4729ef79318a7c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/prepare_owned_import_cache.py"
+      ],
+      "wall_s": 19.858859800000573,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/maintenance/owned-python-import-cache-8431e9e0/cache-index.json": {
+      "sha256": "b61afd243c797f36cebf05be9ce962d879bc9a253ea008bea85c1b8f65d98431"
+    },
+    "artifacts/review/python-checked-hash-cache-independent-20261015-a/handoff.json": {
+      "sha256": "d3cf5fb455acc97a3255b4b20bf8e6648b2886ceae564e3af01fb49980972d2e"
+    },
+    "artifacts/review/python-checked-hash-cache-independent-20261015-a/seal.json": {
+      "sha256": "5268008d482b2e444ad39c3fbb715c6290575dde00fed0216b66659df31d6987"
+    },
+    "artifacts/validation/X00-original-frontier-with-owned-checked-import-cache-355c7d93/command.json": {
+      "sha256": "3a3956b79cd8f4cd5e065035e13d5e7d79eefbb0d83c448bcf2d4e60ef2d0ecc",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_baseline_frontier.py::test_public_cli_scans_actual_training_freezes_then_executes_paired_eval",
+        "-vv",
+        "--tb=short",
+        "--basetemp",
+        "<HOST_TEMP_ROOT>",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "wall_s": 68.18007340000077,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "docs/adr/0024-owned-checked-hash-import-cache.md": {
+      "sha256": "884653f837b7a6b84a2b35319aad280d41c8f992f72ffdce035c3fa1b3611e37"
+    },
+    "artifacts/authorization/a02-new-WSL-human-approved-20261015-a/approval.json": {
+      "sha256": "b71cb41535add3f87a895dc652113c9a3c20eef65fa51b0a646f252980a622f5"
+    },
+    "artifacts/review/a02-linux-import-supervisor-independent-20261015-a/handoff.json": {
+      "sha256": "eac5ee38932542592a9d792b29fb61c92438c9238e49085a0b081dab22cd21e7"
+    },
+    "artifacts/review/a02-wsl-actual-independent-20261015-a/actual-review.json": {
+      "sha256": "91832faa75af09acf3515514749fed42c04e9630e51a3fe0292b6e9c0250ab1d"
+    },
+    "artifacts/review/a02-wsl-actual-independent-20261015-a/seal.json": {
+      "sha256": "64327fb47763cfe56f14fbfb02c4266a4881dc2d1f37cec166c9e20ab066384a"
+    },
+    "artifacts/review/a02-wsl-actual-independent-20261015-a/execution/76a87889/command.json": {
+      "sha256": "9e268e718ca9665bb044cb4f55217c48132ae49b9f1a79192d59f1aba9d6429e",
+      "exit_code": 0,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-B",
+        "<PROJECT_ROOT>\\artifacts\\review\\a02-wsl-actual-independent-20261015-a\\review.py"
+      ],
+      "wall_s": 1.4017119000000093,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "docs/ENVIRONMENT.md": {
+      "sha256": "55d8ca31761b02b82df036df745f047b1ece206e6737a9de51ba75ef162bc614"
+    }
+  },
+  "full_acceptance_complete": false
+}

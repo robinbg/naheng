@@ -1,0 +1,92 @@
+{
+  "utc": "2026-10-13T22:02:48.462195+00:00",
+  "exit_code": 0,
+  "code_hash": "b4b91f52797c5ce0341d2b4c532eed7b006e6ee35e8bb3c73a0d25db6ebb0349",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 20,
+    "in_progress": 7,
+    "todo": 18
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "formal/Naheng/Reduction/HeterogeneousCounterexample.lean": {
+      "sha256": "77d9c21eae63a6a3b7634280ec6a69004a8aef707cd31423e9d6cb2a4ecbfa97"
+    },
+    "docs/HETEROGENEOUS_COUNTEREXAMPLE.md": {
+      "sha256": "132a73877a9fc6d3e440056614e75f389418972131828932d58d9b3600022ad9"
+    },
+    "artifacts/formal/candidates/heterogeneous-next-20261014-a/verification.json": {
+      "sha256": "7e81f88564a9ffcdd85213f1bee051ea76a6e4a848d1b699b999c2612b8ec8a6"
+    },
+    "artifacts/formal/candidates/heterogeneous-next-20261014-a/publication-delta.json": {
+      "sha256": "40902f5a5e7bcb4d1fce1f68427ad5a2b9fd733c92a49f6b5ae334bcca8a941a"
+    },
+    "artifacts/review/heterogeneous-publication-independent-20261014-a/candidate-accepted-report-r2.json": {
+      "sha256": "7e5bbbc581b4f2bd0a3768115a3486057494c850f55ec591d57c93e4138217d3"
+    },
+    "artifacts/validation/F02-independent-heterogeneous-publication-byte-delta-and-current-audit-review-e6033c57/command.json": {
+      "sha256": "af340813159cff906fbc39e96337e350483c9c5a8b9d833ef0a153aa8cfb53e9",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/heterogeneous-publication-independent-20261014-a/review_candidate.py"
+      ],
+      "wall_s": 0.1256809999977122,
+      "timed_out": false
+    },
+    "artifacts/formal/publication/heterogeneous-d81fa5f9/manifest.json": {
+      "sha256": "837c677d807b195c4c791102777cb9dea70f699fc581c85f8218e5ee56fea095"
+    },
+    "artifacts/validation/F02-install-reviewed-unchanged-heterogeneous-eight-eee40029/command.json": {
+      "sha256": "2f456dd89abea99bc022107a47d7bd750016a33c718d19154d673ac4d270d00e",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/install_heterogeneous_slice.py",
+        "artifacts/review/heterogeneous-publication-independent-20261014-a/candidate-accepted-report-r2.json",
+        "artifacts/validation/F02-independent-heterogeneous-publication-byte-delta-and-current-audit-review-e6033c57/command.json"
+      ],
+      "wall_s": 0.12061589999939315,
+      "timed_out": false
+    },
+    "artifacts/formal/current-heterogeneous-partials-7f00a1d9/manifest.json": {
+      "sha256": "32d9401c8ec372c7b176f6165c7b4f1693f38889765267e8979feb2b50d265a5"
+    },
+    "artifacts/validation/F02-all-nine-current-defining-module-builds-and-strict-axiom-audits-f6544d43/command.json": {
+      "sha256": "4227a4f2e3c00612b1f2192c75a091ca7c58608f041cebb7e27d38cd557aec81",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_all_partial_publications.py"
+      ],
+      "wall_s": 328.2676738000009,
+      "timed_out": false
+    },
+    "artifacts/validation/F02-activate-fresh-foundation-nine-suite-publication-85fa4d46/command.json": {
+      "sha256": "8d39d5fd7223abd3fd1761d171768631fb00eb769ccc0268a4a0c3fc91732481",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/activate_foundation.py",
+        "artifacts/formal/current-heterogeneous-partials-7f00a1d9/foundation/manifest.json"
+      ],
+      "wall_s": 0.12075419999746373,
+      "timed_out": false
+    },
+    "artifacts/validation/F02-activate-fresh-residual-nine-suite-publication-b48ff0cf/command.json": {
+      "sha256": "ef6ad5dcb53d4af3e5202824e401d27c3846b0970f266116f160d14fbff9ce5f",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/activate_residual_manifest.py",
+        "artifacts/formal/current-heterogeneous-partials-7f00a1d9/reduction_residual/manifest.json"
+      ],
+      "wall_s": 1.1835585000007995,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

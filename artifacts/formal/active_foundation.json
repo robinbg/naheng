@@ -1,0 +1,24 @@
+{
+  "manifest": "artifacts/formal/foundation-current-core-20261014-a/manifest.json",
+  "sha256": "2a22333527c065c97ac982f6db95f6ed67881bd8cd32d8d3ee7590bc7cc326c0",
+  "evidence_ids": [
+    "lean.foundation.Naheng.Chemistry.element_stoichiometry_balanced.c1268fa2a763a7c1",
+    "lean.foundation.Naheng.Chemistry.charge_stoichiometry_balanced.f4effe02919c9c22",
+    "lean.foundation.Naheng.Chemistry.weighted_rate_from_ports.026378e33ef27412",
+    "lean.foundation.Naheng.Chemistry.element_rate_from_ports.b4bc9d9b51d1bf82",
+    "lean.foundation.Naheng.Chemistry.charge_rate_from_ports.fab8708c66bf61fe",
+    "lean.foundation.Naheng.Chemistry.site_lower_boundary.28fa61923dab9f09",
+    "lean.foundation.Naheng.Chemistry.site_upper_boundary.446699cc98286dd8",
+    "lean.foundation.Naheng.Chemistry.constant_rate_trajectory_invariant.343f04f219694599",
+    "lean.foundation.Naheng.Chemistry.weighted_inventory_hasDerivAt.5611af986de3161f",
+    "lean.foundation.Naheng.Chemistry.element_inventory_hasDerivAt.a17e1fadb7d1358b",
+    "lean.foundation.Naheng.Chemistry.charge_inventory_hasDerivAt.542e8713b5962651",
+    "lean.foundation.Naheng.Chemistry.weighted_inventory_time_invariant.2946e6151574df42",
+    "lean.foundation.Naheng.Chemistry.element_inventory_time_invariant.fb163072b2aecca7",
+    "lean.foundation.Naheng.Chemistry.charge_inventory_time_invariant.99111a2b69b41aa6",
+    "lean.foundation.Naheng.Chemistry.time_varying_site_invariant_right.c396b585b6c65aa9",
+    "lean.foundation.Naheng.Chemistry.time_varying_site_ode_invariant.625b088fcae46576",
+    "lean.foundation.Naheng.Chemistry.time_varying_site_ode_invariant_at.a25fb448702a7774"
+  ],
+  "scope": "passed: only the individually printed declarations"
+}

@@ -1,0 +1,145 @@
+{
+  "utc": "2026-10-15T13:33:03.506402+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/X00-original-complete-current139f-smoke-after-real-fixture-recovery-f77feb60/command.json": {
+      "sha256": "24e4e150ff41ff51a1cf3dac9da28ff7589017e168030f603ec09d7b77d790b2",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "smoke",
+        "--out",
+        "artifacts/smoke-current139f-core-20261015-b.json"
+      ],
+      "wall_s": 1317.9484116999993,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/smoke-current139f-core-20261015-b.json": {
+      "sha256": "9082cde23143fe76a91f824c71415f64847852a8869011d113db29d9a7a637e2"
+    },
+    "artifacts/verification/release-4eb2a84a4e/audit.json": {
+      "sha256": "ff268eb893e5d07c6ffa04ec61f235da84216eb11c578b50a9560ed63ce1e7a6"
+    },
+    "artifacts/ui/current-reviewed-42178d38/observations.json": {
+      "sha256": "a2d93f952bb95f88a6f546a6a5c68bde494b6d8d98b5f05d2110098a87a129e8"
+    },
+    "artifacts/validation/X00-publish-current139f-real-GUI-independent-complete-4ca7d44b/command.json": {
+      "sha256": "b6dbb8799cbc4482384322dacfd22dd3dea834e954c07ca98e40e6fa3484cbe7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/publish_current_complete_ui.py",
+        "artifacts/ui/proof-current-139f-20261015-b/metadata/get-only-6e8bd918/partial-record.json",
+        "artifacts/review/x00-current139f-GUI-independent-20261015-b/final-review.json",
+        "--record-sha",
+        "157f08c4cc0e6bb2f28c495d89eece3989e731b8de34dc3d3646c1fdf6b4f8fd",
+        "--review-sha",
+        "4e735508f71040cb0c1061e2c517831bc9cb7f147a598aaf731979463f9db0dc"
+      ],
+      "wall_s": 7.118930100000398,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/X00-current139f-original-UI-gate-dd92596f/command.json": {
+      "sha256": "78d48581b1ccbb91126cca81efe338c7e4018b6643c5c9d79199de23868652bb",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_ui_acceptance.py"
+      ],
+      "wall_s": 3.2699885000001814,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/X00-current139f-complete-scoped-UI-gate-8de79b30/command.json": {
+      "sha256": "1a73004556bf57be7819e0bec7e0265cf234686cc6a77a9c906ce13a73324714",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_ui_acceptance_scoped.py",
+        "artifacts/ui/acceptance.json",
+        "artifacts/ui/proof-current-139f-20261015-b/task.json"
+      ],
+      "wall_s": 5.769137999999657,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/x00-current139f-GUI-independent-20261015-b/final-review.json": {
+      "sha256": "4e735508f71040cb0c1061e2c517831bc9cb7f147a598aaf731979463f9db0dc"
+    },
+    "artifacts/validation/X00-current139f-original-lifecycle-failure-trace-355b9893/command.json": {
+      "sha256": "ca0f58e8130212798267d9cecea6c0bef5d5dc457bba64c2b943433d28cc9a8d",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_lifecycle_workbench.py",
+        "-vv",
+        "--tb=short",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/x00-lifecycle-trace-20261015-c",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "wall_s": 89.35768699999971,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/X00-lifecycle-original-short-D-owner-control-21d48f16/command.json": {
+      "sha256": "de75e9c8b6aecc93cfbefe1dff2c2970b356ea63e858749d5dbe9b0695dd6733",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_lifecycle_workbench.py",
+        "-vv",
+        "--tb=short",
+        "--basetemp",
+        "<HOST_TEMP_ROOT>",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "wall_s": 90.35979459999908,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/X00-explicit-1440-complete-suite-preserve-native-bounds-d01bf1db/command.json": {
+      "sha256": "71731cf2df0347f3a5efe6385b459cc0cff7b10e29b5e3a524583f5a121c052c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/prepare_complete_smoke_budget_1440.py"
+      ],
+      "wall_s": 0.5930150000003778,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/progress/complete-smoke-budget-1440-32182324/manifest.json": {
+      "sha256": "5d0be0233eec38ae2e6ebc91624ad9afb3702f315c5eaf49764457ea63187935"
+    },
+    "docs/adr/0023-full-smoke-aggregate-and-short-windows-test-owner.md": {
+      "sha256": "3c1ccedb70776876e94ffe6abbc5e26b0ccdf1de327a2c7df4bea69d9d00991d"
+    },
+    "artifacts/ui/proof-current-142e-20261015-c/task.json": {
+      "sha256": "79283dd8ffd898b624acb4eb9d3174c24f08536d8797d152ea99a1d30680f41c"
+    }
+  },
+  "full_acceptance_complete": false
+}

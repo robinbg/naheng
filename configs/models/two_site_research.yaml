@@ -1,0 +1,38 @@
+schema_version: '1.0'
+chemistry_id: synthetic_two_site
+model_kind: theory_fixture
+source_id: synthetic-two-site-v1
+description: Uncalibrated effective sodium insertion sites; P_i stores neutral Na and is not a claimed SEI compound.
+drive_mode: bounded_effective_potential_with_current_balance
+state_names: [x1, x2, trapped_mol, reservoir_mol, T]
+species:
+  - {name: Na_plus, elements: {Na: 1}, charge: 1}
+  - {name: electron, elements: {}, charge: -1}
+  - {name: S1, elements: {site1: 1}, charge: 0}
+  - {name: S2, elements: {site2: 1}, charge: 0}
+  - {name: NaS1, elements: {Na: 1, site1: 1}, charge: 0}
+  - {name: NaS2, elements: {Na: 1, site2: 1}, charge: 0}
+  - {name: P1, elements: {Na: 1}, charge: 0}
+  - {name: P2, elements: {Na: 1}, charge: 0}
+reactions:
+  - {name: insertion1, stoichiometry: {Na_plus: -1, electron: -1, S1: -1, NaS1: 1}}
+  - {name: insertion2, stoichiometry: {Na_plus: -1, electron: -1, S2: -1, NaS2: 1}}
+  - {name: trapping1, stoichiometry: {NaS1: -1, S1: 1, P1: 1}}
+  - {name: trapping2, stoichiometry: {NaS2: -1, S2: 1, P2: 1}}
+parameters:
+  N1: {value: 0.012, unit: mol, source_id: synthetic-two-site-v1}
+  N2: {value: 0.008, unit: mol, source_id: synthetic-two-site-v1}
+  k1: {value: 0.001, unit: s^-1, source_id: synthetic-two-site-v1}
+  k2: {value: 0.0006, unit: s^-1, source_id: synthetic-two-site-v1}
+  E1: {value: -0.08, unit: V, source_id: synthetic-two-site-v1}
+  E2: {value: 0.12, unit: V, source_id: synthetic-two-site-v1}
+  scale: {value: 0.12, unit: V, source_id: synthetic-two-site-v1}
+  c1: {value: 0.0000002, unit: s^-1, source_id: synthetic-two-site-v1}
+  c2: {value: 0.0000004, unit: s^-1, source_id: synthetic-two-site-v1}
+  Tref: {value: 298.15, unit: K, source_id: synthetic-two-site-v1}
+  Tscale: {value: 40.0, unit: K, source_id: synthetic-two-site-v1}
+dynamics:
+  x1: 'exp((T-Tref)/Tscale)*(k1*exp((u-E1)/scale)*(1-x1)-k1*exp(-(u-E1)/scale)*x1-c1*x1)'
+  x2: 'exp((T-Tref)/Tscale)*(k2*exp((u-E2)/scale)*(1-x2)-k2*exp(-(u-E2)/scale)*x2-c2*x2)'
+  trapped_mol: 'exp((T-Tref)/Tscale)*(N1*c1*x1+N2*c2*x2)'
+  reservoir_mol: '-exp((T-Tref)/Tscale)*(N1*(k1*exp((u-E1)/scale)*(1-x1)-k1*exp(-(u-E1)/scale)*x1)+N2*(k2*exp((u-E2)/scale)*(1-x2)-k2*exp(-(u-E2)/scale)*x2))'

@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "source_sha256": "d6f681754c1af008fc4fb4daabf0157c091f0698773d8c9729c496174b83de96",
+  "original_tests_sha256": "db62743472f290c51a670d8fb169cff6244c9269a505a6425576a375af45a35b",
+  "installed_tests_sha256": "0afe12f2e748f095138a8805829e85cb6c40321fa1761ce384b964dc5c0408d7",
+  "all_original_test_bodies_unchanged": true,
+  "test_count": 10,
+  "scope": "Imports/root/output and fresh calibration fixture adapted only; full C01 not accepted"
+}

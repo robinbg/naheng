@@ -1,0 +1,31 @@
+{
+  "argv": [
+    ".bootstrap/bin/uv.exe",
+    "run",
+    "--frozen",
+    "--offline",
+    "--no-sync",
+    "--extra",
+    "dev",
+    "--extra",
+    "reference",
+    "naheng",
+    "optimize",
+    "--profile",
+    "pilot",
+    "--out",
+    "artifacts/optimization/public-0a2-20261016-c"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T05:49:12.757794+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-public-nine-coordinate-original36-pilot-88a497f0\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-public-nine-coordinate-original36-pilot-88a497f0\\stderr.log",
+  "timeout_s": 1800,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 33908,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 439.19681839999976
+}

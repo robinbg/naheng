@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source_ref": "explicit-synthetic-accounting-assumptions-v1",
+  "currency": "CNY",
+  "provenance_type": "synthetic",
+  "units": {"energy": "J", "capacity": "C", "time": "s", "stored_energy_value": "CNY/kWh", "cost": "CNY"},
+  "terminal_rule_id": "same-owned-assets-health-energy-RUL-optional-actual-endpoint-v1",
+  "scheduled_horizon_s": 3600.0,
+  "stored_energy_value_CNY_per_kWh": 0.15,
+  "replacement_cost_CNY_per_asset": 100.0,
+  "health_residual_fraction": 0.10,
+  "rul_value_CNY_per_s": 0.0,
+  "unserved_value_CNY_per_s": 0.0,
+  "service_enabled": false,
+  "early_exit_rule": "value_actual_endpoint_and_mark_unserved",
+  "assumption_scope": "Scenario values, not market prices. RUL term disabled; unknown/censored RUL remains None. No demand response or auxiliary revenue without explicit rule, eligibility and source."
+}

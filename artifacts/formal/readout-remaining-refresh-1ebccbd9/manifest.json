@@ -1,0 +1,31 @@
+{
+  "exit_code": 0,
+  "checks": [
+    {
+      "suite": "reduction_exact",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/readout-remaining-refresh-1ebccbd9/reduction_exact/manifest.json"
+    },
+    {
+      "suite": "reduction_trajectory",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/readout-remaining-refresh-1ebccbd9/reduction_trajectory/manifest.json"
+    },
+    {
+      "suite": "reduction_variable_trajectory",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/readout-remaining-refresh-1ebccbd9/reduction_variable_trajectory/manifest.json"
+    },
+    {
+      "suite": "aging_film",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/readout-remaining-refresh-1ebccbd9/aging_film/manifest.json"
+    },
+    {
+      "suite": "aging_capacity_endpoint",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/readout-remaining-refresh-1ebccbd9/aging_capacity_endpoint/manifest.json"
+    }
+  ],
+  "scope": "Fresh unchanged partial-suite build and full axiom audit; no full F02/core/T3 promotion"
+}

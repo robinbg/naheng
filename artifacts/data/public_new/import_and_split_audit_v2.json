@@ -1,0 +1,84 @@
+{
+  "source_id": "zenodo17459188_cvut_sib_0001",
+  "status": "instrument_step_view_compatibility_checked",
+  "complete_instrument_semantics_accepted": false,
+  "complete_chronological_import": "failed_duplicate_time_at_source_row33",
+  "rows_original": 64,
+  "rows_exported": 64,
+  "rows_normalized": 64,
+  "dropped_rows": 0,
+  "shifted_timestamps": 0,
+  "co_timed_boundaries": {
+    "30.000": [
+      32,
+      33
+    ],
+    "30.100": [
+      34,
+      35
+    ]
+  },
+  "actual_observed_ranges": {
+    "time_s": [
+      0.0,
+      60.1
+    ],
+    "current_A": [
+      -0.0,
+      199.9752
+    ],
+    "voltage_V": [
+      8.3891,
+      15.904
+    ],
+    "T1_temperature_K": [
+      260.84999999999997,
+      261.15
+    ]
+  },
+  "same_pack_split_guard": {
+    "adversarial_split_rejected": true,
+    "reason": "Physical cell or complete trajectory leaked across splits",
+    "independent_physical_groups": 1,
+    "cross_view_split_rejected": true,
+    "cross_view_guard_reason": "Physical cell or complete trajectory leaked across splits",
+    "superseded_view_identities_rejected": true,
+    "holdout_only_snapshot": "artifacts/data/public_new/holdout_only_snapshot_v2.json",
+    "three_role_coverage": false,
+    "step_views_are_independent_test_samples": false
+  },
+  "downloaded_files": [
+    {
+      "filename": "RMF-VZ1_044_021_CVUT_S.txt",
+      "bytes": 6045,
+      "sha256": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+      "official_md5_size_match": true,
+      "role": "license_and_protocol"
+    },
+    {
+      "filename": "VZ1_044_021_CVUT_D_0001_v1.xlsx",
+      "bytes": 17143,
+      "sha256": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+      "official_md5_size_match": true,
+      "role": "sodium_measurement"
+    },
+    {
+      "filename": "VZ1_044_021_CVUT_D_00011_v1.xlsx",
+      "bytes": 225638,
+      "sha256": "9f6f4d79ffab3cac7f72c78fa5ab4c0e9f45ae573fa0f82b814f25cafaf3b7b9",
+      "official_md5_size_match": true,
+      "role": "lead_acid_comparator_excluded"
+    }
+  ],
+  "downloaded_raw_and_readme_bytes": 248826,
+  "downloaded_sodium_measurement_bytes": 17143,
+  "budget_bytes": 52428800,
+  "license": "CC-BY-4.0",
+  "provenance_type": "public_measurement",
+  "model_fit_or_external_validation": "not_performed",
+  "core_file_sha256": {
+    "src/naheng/data/importers.py": "dba7bb68a05e6771a22858a9c5d952804aa99bf23a7b26d32fda48bca54ab238",
+    "src/naheng/data/splits.py": "ab83529c5a6fd93edffe45d9e8f63a5b8198207bd14f68d55d3d9ea37297ba82",
+    "data/manifests/sources.yaml": "e473e4069674cc7815093a19a610e356d09c9ae2458b19d00787147c30ee921b"
+  }
+}

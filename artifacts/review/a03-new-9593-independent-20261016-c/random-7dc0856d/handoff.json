@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "status": "RANDOM_ENGINEERING_EVIDENCE_PASS",
+  "full_A03_adjudicated": false,
+  "comparative_advantage": null,
+  "uncertainty_comparison_pending": true,
+  "source_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "prepared_auditor_manifest_sha256": "c3c7c6ce11ae5cf1a7c80a788ad26da1ef3c5e6d2a33874d81dd2ac9c47aae65",
+  "matched_comparison_script_sha256": "0c62a8dd0f33e13b3c902a1810691e51c3f64a0e78b059f83421a3b1f50f6244",
+  "normal_random_count": 20,
+  "paired_completed_points": 1,
+  "rho_data_fitted": false,
+  "native_cleanup_confirmed": true,
+  "files": {
+    "command.json": {
+      "sha256": "939d9dd28fe80e41961482468686e6bf111e708066dee8a316d84f5f642b9214",
+      "bytes": 1377
+    },
+    "matched-main-inputs/command.json": {
+      "sha256": "0949e008ef8c9d2f82f6973e9e288abbf6be530d8fa409e052a669e2932e2aed",
+      "bytes": 1560
+    },
+    "matched-main-inputs/report.json": {
+      "sha256": "1f7c5000a4d42f49aca667fb960544f4d97afa0667ad007f44e34242a015ff56",
+      "bytes": 2070
+    },
+    "matched-main-inputs/stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "matched-main-inputs/stdout.log": {
+      "sha256": "d53f2998c1a6f7abd0c46b838104d9ecedbbd254897453da08a59105157f2b55",
+      "bytes": 1854
+    },
+    "report.json": {
+      "sha256": "e01fbd01c4125eb24181412ef48a491d702341bed7f44c73f6c43cb62bfad261",
+      "bytes": 86359
+    },
+    "REVIEW.md": {
+      "sha256": "7d757aaed8f9fff2d50f8cf641ad9827871197ce17fb1e88d059cc1b703c4139",
+      "bytes": 2093
+    },
+    "run-file-hashes.json": {
+      "sha256": "b2ebeacefe4536dfa11f297f686f7dec7276d3a5ba28fcd8d8e58a44d544e76a",
+      "bytes": 45756
+    },
+    "run_comparison.py": {
+      "sha256": "0aaf5506ddefce9c927fc5e28e0c71b4b47c1b95cc4ed4cba5c43cb83f462804",
+      "bytes": 811
+    },
+    "seal.py": {
+      "sha256": "fbfa61705fd4282d5fd2b1bc8f65236689af3e83437e1a4e88482bb08da254f8",
+      "bytes": 1477
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stdout.log": {
+      "sha256": "3f977f2b00f7fcd5f648b6a35052e1d2e83d4293007ae78f540457366e11dfe4",
+      "bytes": 2243
+    }
+  }
+}

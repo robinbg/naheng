@@ -1,0 +1,27 @@
+{
+  "exit_code": 0,
+  "new_target_count": 26,
+  "full_reduction_target_count": 72,
+  "installed": [
+    {
+      "path": "formal/Naheng/Reduction/ClassSufficiency.lean",
+      "sha256": "6c42cda216c7cd78cdca9dcc7737b16fdd1b71943960caf270c8b39338a163a0",
+      "status": "installed_fresh_public_build_required"
+    },
+    {
+      "path": "formal/Naheng/Reduction/GivenAmountResidual.lean",
+      "sha256": "55914666dc47fe4fe7f290c4bec60a45070d0fbf64dfdc0cf4784a1a55fdf480",
+      "status": "installed_fresh_public_build_required"
+    },
+    {
+      "path": "formal/Naheng/Reduction/CurrentClassBridge.lean",
+      "sha256": "14148b718e56918e8c250f9c3734ede5a45085efd8526dd87692668c8b290151",
+      "status": "installed_fresh_public_build_required"
+    }
+  ],
+  "exports_sha256": "12fa4868d846346ebf0a04229606f25c6a86311449f698c6cf5724442961bbdc",
+  "original_gate_passed": false,
+  "other_suite_exports_unchanged": true,
+  "task_status_changed": false,
+  "full_project_completed": false
+}

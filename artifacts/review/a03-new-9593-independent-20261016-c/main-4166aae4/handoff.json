@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "MAIN_ENGINEERING_EVIDENCE_PASS",
+  "full_A03_adjudicated": false,
+  "science_claim_adjudicated": false,
+  "comparison_results_pending": true,
+  "source_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "prepared_auditor_manifest_sha256": "c3c7c6ce11ae5cf1a7c80a788ad26da1ef3c5e6d2a33874d81dd2ac9c47aae65",
+  "normal_acquisition_count": 21,
+  "paired_completed_points": 1,
+  "rho_data_fitted": false,
+  "native_cleanup_confirmed": true,
+  "files": {
+    "command.json": {
+      "sha256": "a2a70b0fc9ddd5481ad220f3e1a2a33a71e3e11fff0f59d4cecba211122f716a",
+      "bytes": 1377
+    },
+    "report.json": {
+      "sha256": "e79427be97eaf38fef7bc7f768eca2ac2759491a8105dc08f32388338fb9ccb8",
+      "bytes": 103110
+    },
+    "REVIEW.md": {
+      "sha256": "7991871bd56f19780614cdb35a175dbf9da0ab4802e52f747f68db762db6c5de",
+      "bytes": 2432
+    },
+    "run-file-hashes.json": {
+      "sha256": "f5de954627d188cc2b75120ed6d853be8baae0ea0dfdc9f5f0ef082f49853b3a",
+      "bytes": 43588
+    },
+    "seal.py": {
+      "sha256": "9078cb2b7488e8fecc88ba685f5124d49e3485fb160a1160dd78e6231794466c",
+      "bytes": 1411
+    },
+    "stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stdout.log": {
+      "sha256": "615fcc8709c84f4c960f5d55a3034d8cb1b0483ac9c6b69378c7abff513fda4f",
+      "bytes": 2280
+    }
+  }
+}

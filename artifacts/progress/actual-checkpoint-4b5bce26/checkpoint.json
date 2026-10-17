@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-15T16:04:17.718125+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/progress/session-close-20261016-a/observed-session-state.json": {
+      "sha256": "699e111476ebc233609824e5bbd7c54225428b61b24ea3410cb7aa515aa18d81"
+    },
+    "artifacts/verification/smoke-5b18fe5230/progress.json": {
+      "sha256": "72744fd1262ce3ba851cb690cd3f93cc3099e26bbc551572f32057f17cd8e6c1"
+    },
+    "artifacts/verification/smoke-5b18fe5230/numerical_tests.stdout.log": {
+      "sha256": "0c4bd1b21c8bbe674dd7af07d2f17ec0ae1e496f3c962fe8697a2d61d544f366"
+    },
+    "artifacts/verification/smoke-5b18fe5230/real_demo.stdout.log": {
+      "sha256": "9b3748b0e49e0e8db43c98a02b3a2bb14b13f43d3e1153dbc4245bc621406a5b"
+    },
+    "artifacts/verification/release-699968c3dc/audit.json": {
+      "sha256": "184d66cd6629956dbdbbbed8a668b9ceb69ca99457749923f60659e514b17dc2"
+    },
+    "artifacts/validation/Record-interrupted-session-actual-receipts-no-native-backfill-8935d62f/command.json": {
+      "sha256": "4357a8f888db6ed523d10e964890a716f70ffd386412df3b6a159a4924532d44",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/progress/session-close-20261016-a/record_interrupted_session.py"
+      ],
+      "wall_s": 0.85034440000004,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/d02-primary-gap-independent-20261015-a/research-report.json": {
+      "sha256": "7d692ee690beabcd3816c78fd72f068796ff8a94766f95b8fb50aa99d40c2137"
+    },
+    "artifacts/review/d02-primary-gap-independent-20261015-a/seal.json": {
+      "sha256": "ce0520d5f1fa2d5c5acab7282f2e3e6303116210f18546cd11a4373e171d5620"
+    },
+    "artifacts/review/d02-primary-gap-independent-20261015-a/SOURCE_NOTES.md": {
+      "sha256": "e7570832184afda887a7f93a796c4e45e90387e72aa0ca74d724bcf6f78a9cb2"
+    },
+    "artifacts/review/p02-physical-source-equivalence-20261015-a/handoff.json": {
+      "sha256": "04b88b7d6b537d26365ab2e1133dff5ec0c1ea3641fff63f37de39d2b13166a1"
+    },
+    "artifacts/review/p02-physical-source-equivalence-20261015-a/seal.json": {
+      "sha256": "732bcee29d5afd94eccbc98964145b0babe256cb38afd557c61e2b3b82246ec5"
+    }
+  },
+  "full_acceptance_complete": false
+}

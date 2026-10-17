@@ -1,0 +1,351 @@
+{
+  "exit_code": 0,
+  "gates": {
+    "all36_requests_accounted": true,
+    "high_fidelity_budget": true,
+    "checkpoint_bound": true,
+    "protocol_bound": true,
+    "all_training_roles": true,
+    "best_from_completed_feasible_high_only": true,
+    "real_fitted_feedback_used": true,
+    "first12_initial_design": true,
+    "no_operational_or_physical_claim": true
+  },
+  "rows": [
+    {
+      "ordinal": 0,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 3.530145461133867e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 1,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 4.773538002351474e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 2,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 1.4105580428427758e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 3,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 0,
+      "margin": 1.0
+    },
+    {
+      "ordinal": 4,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 1.0778133158289312e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 5,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 1.0596947144756124e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 6,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 7.964675936347818e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 7,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 0,
+      "margin": 1.0
+    },
+    {
+      "ordinal": 8,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 1.1922054608054837e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 9,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 0,
+      "margin": 1.0
+    },
+    {
+      "ordinal": 10,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 0,
+      "margin": 1.0
+    },
+    {
+      "ordinal": 11,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "initial_latin_hypercube",
+      "utility": 1.0899644837130441e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 12,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "paired_high_fidelity_discrepancy_identification",
+      "utility": 7.964675936347818e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 13,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "paired_high_fidelity_discrepancy_identification",
+      "utility": -2.3338638762685444e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 14,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "paired_high_fidelity_discrepancy_identification",
+      "utility": 1.7486976457354032e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 15,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 1.4503911795732208e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 16,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 2.123206272719614e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 17,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 2.0419231052470836e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 18,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 2.166833477471754e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 19,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 2.2258321470060765e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 20,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": -3.809710066604449e-09,
+      "margin": 1.0
+    },
+    {
+      "ordinal": 21,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 8.145907976421712e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 22,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 1.4221805327682528e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 23,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 2.6750450027681796e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 24,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 0,
+      "margin": 1.0
+    },
+    {
+      "ordinal": 25,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 3.573189517199449e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 26,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 1.842663603713102e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 27,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 4.336471286927646e-10,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 28,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 1.3864644458219448e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 29,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 2.8989566885985935e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 30,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 2.0843529778593896e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 31,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 0,
+      "margin": 1.0
+    },
+    {
+      "ordinal": 32,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 6.610950603938863e-09,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 33,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 1.8240743165256242e-08,
+      "margin": -1e-12
+    },
+    {
+      "ordinal": 34,
+      "fidelity": "low",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": 0,
+      "margin": 1.0
+    },
+    {
+      "ordinal": 35,
+      "fidelity": "high",
+      "status": "completed",
+      "selection": "optimized_constrained_expected_improvement_per_cost",
+      "utility": -7.897149473842885e-10,
+      "margin": -1e-12
+    }
+  ],
+  "completed": 36,
+  "source_protocol": {
+    "bounds": {
+      "current_limit_A": [
+        0.006,
+        0.018
+      ],
+      "voltage_margin_V": [
+        0.0,
+        0.04
+      ],
+      "terminal_buffer": [
+        5e-06,
+        2e-05
+      ]
+    },
+    "sources": {
+      "fixed-training-conditional-world-2026101401": "train",
+      "heldout-2026101411": "test"
+    },
+    "limits": {
+      "initial_points": 12,
+      "iterations": 24,
+      "high_fidelity_calls": 24,
+      "single_execution_s": 120.0,
+      "wall_s": 1800.0,
+      "retry_limit": 2,
+      "seed": 20261016
+    },
+    "implementations": {
+      "constrained_bo.py": "ab2e43854a7804e576918033ab8a51a6332a4da69df017639d534331a24f8d32",
+      "multifidelity.py": "36f016a48581cf0f4f3a7a29410898c67288ad24f1489bc3dac1aae7cc3d7eda",
+      "query_policy.py": "6c3601bf247e11425f7ab0d4cfdc92b3f8e31713ec6e28314448f3a3cb3ae65a",
+      "operational_oracle.py": "77dc5349476e830ac85ac113285bacbe8791da86b2d681105120b5c82ae64e96",
+      "run_pilot.py": "c9050fa827432a58c3d91e08de355a63c8f77d657c4fa3dacad8be83fefebb2a"
+    },
+    "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+    "fidelity": "same nominal controller and synthetic model, 3/24 vs25/120 optimizer iteration/evaluation effort",
+    "objective": "actual executed energy cash CNY; terminal SOC, events, refusal and incomplete traces are constraints",
+    "sample_scope": "one fixed conditional training world; 36 queries are not independent trajectories",
+    "heldout_policy": "declared heldout seed not executed or used during this training-only pilot",
+    "physical_reference_calls": 0,
+    "scientific_N_added": 0
+  },
+  "training_only": true,
+  "A03_complete": false,
+  "fresh_independent_review": false
+}

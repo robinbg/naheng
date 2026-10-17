@@ -1,0 +1,183 @@
+{
+  "utc": "2026-10-14T15:35:37.193172+00:00",
+  "exit_code": 0,
+  "code_hash": "9383619fc8240907258d270072ba5dc1a9392df0cdbbfcea8626c09c160e721b",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 30,
+    "in_progress": 4,
+    "todo": 11
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/progress/task-start-F05-46b297e6/manifest.json": {
+      "sha256": "f927272132c871df05da7f83ee3a23db6116a0c015e9dd847744ba027d6dca9d"
+    },
+    "artifacts/progress/core-publication-20261014-a/manifest.json": {
+      "sha256": "412853eb4e5b69ab7e84d5127f661cbc602c0289e442c2c430b6537c8dcdf4c0"
+    },
+    "artifacts/review/core-publication-review-a/review-results.json": {
+      "sha256": "f17c301704d9257ad88cb1642ed86e07cefc5c0fefff42869697bce45f718d4a"
+    },
+    "artifacts/validation/F05-original-complete-core178-bounded-native-audits-946a571b/command.json": {
+      "sha256": "576f0dd6b0a34c3134e180476711a13a3c9fd624a60058449d8c1613f47e602e",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "core",
+        "--out",
+        "artifacts/formal/core-required-public-20261014-a"
+      ],
+      "wall_s": 223.14155850000134,
+      "timed_out": false
+    },
+    "artifacts/formal/core-required-public-20261014-a/manifest.json": {
+      "sha256": "673352f7443466719fcc0273af3daf43ffede3e4c7b58020b9318d71366c835d"
+    },
+    "artifacts/validation/F05-original-negative-and-exact-core-partition-controls-5ad2154a/command.json": {
+      "sha256": "32b664cb6f09c401545fc56841af9faf575b2a675430cdd22db69a241e5f7ff7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_formal_audit.py",
+        "tests/unit/test_bounded_formal_batches.py",
+        "tests/unit/test_core_audit_partition.py",
+        "-q",
+        "--basetemp",
+        "artifacts/test_tmp/core-negative-20261014-b"
+      ],
+      "wall_s": 1.8059513999996852,
+      "timed_out": false
+    },
+    "artifacts/validation/W02-current-core-view-production-build-85ae6cd1/command.json": {
+      "sha256": "2488c0a2cedf9e67bccc0754ed4dfef51de713ddea9b6b65319efdecb6f12976",
+      "exit_code": 0,
+      "argv": [
+        "C:/Program Files/nodejs/node.exe",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 18.120921099998668,
+      "timed_out": false
+    },
+    "artifacts/validation/W02-current-CSV-calibrated-zero-crossing-and-original-API-28445b07/command.json": {
+      "sha256": "a8982dd4b67f203b0588feeed9344c9cb1b12fa936e221dfc4a09a758290907d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_dataset_import.py",
+        "tests/integration/test_api_flow.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/w02-data-import-20261014-b"
+      ],
+      "wall_s": 8.59632319999946,
+      "timed_out": false
+    },
+    "artifacts/review/w02-api-review-b/handoff.json": {
+      "sha256": "3d58c6848da6ba6c2a2f6fd419fbf8fbf5bc5d14de40262f9a3eebf74682779d"
+    },
+    "artifacts/validation/W02-core-publication-withdrawal-and-CSV-API-regression-9f019a4e/command.json": {
+      "sha256": "37f7e5e279159cffe5474c24b731f183cde4a17d8f668220d5ae25c4fda4f6d7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_core_publication_selection.py",
+        "tests/integration/test_dataset_import.py",
+        "tests/integration/test_api_flow.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/w02-core-and-import-20261014-a"
+      ],
+      "wall_s": 8.213486799999373,
+      "timed_out": false
+    },
+    "artifacts/handoff/d02-capacity-protocol-20261014-a/clock-repair-handoff.json": {
+      "sha256": "696686922a85f0d4a1b1505846bfb0dd9c9de5a6ca1f6116de4edb672a88f188"
+    },
+    "artifacts/review/next-formal-proof-integration-20261014-a/d02-clock-recheck-20261014-a/handoff.json": {
+      "sha256": "9305b7089e99a01b33df3d2a92a3cace3bc72d8420b85939b1104aa0e0ef3088"
+    },
+    "artifacts/review/d02-public-entry-review-a/handoff.json": {
+      "sha256": "4b9bb08ce8fa78f0f474a54ec180fd4c76a159d2431d76164a0f1c74cc111efb"
+    },
+    "artifacts/review/d02-public-entry-review-b/handoff.json": {
+      "sha256": "2ace50db64489cba700e648e03a851de836c69aab6ae502798b9dfc91231f806"
+    },
+    "artifacts/validation/D02-original-public-data-plus-independent-capacity-phase-41404ae3/command.json": {
+      "sha256": "0c5480b6ae3de3950c6fd606a45f4eaf146859b23105385908bd1d00d16369cc",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "experiment",
+        "run",
+        "--suite",
+        "public-data",
+        "--profile",
+        "pilot",
+        "--out",
+        "artifacts/public_validation/current-capacity-combined-20261014-a"
+      ],
+      "wall_s": 211.18642240000008,
+      "timed_out": false
+    },
+    "artifacts/public_validation/current-capacity-combined-20261014-a/manifest.json": {
+      "sha256": "caa6fe822fd404f34bc19f6c9bee23e169df9c7dd022e75b307bf7d609c430b4"
+    },
+    "artifacts/public_validation/current-capacity-combined-20261014-a/capacity/execution/command.json": {
+      "sha256": "4d9d16db165acede3126c4e29cd56edf53eecae63581a143bf8622c6111649d7",
+      "exit_code": 0,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\experiments\\public_capacity.py",
+        "--root",
+        "<PROJECT_ROOT>",
+        "--manifest",
+        "<PROJECT_ROOT>\\data\\splits\\zenodo13836819-eight-provenance-20261013-c.json",
+        "--output",
+        "<PROJECT_ROOT>\\artifacts\\public_validation\\current-capacity-combined-20261014-a\\capacity\\result"
+      ],
+      "wall_s": 89.87224360000073,
+      "timed_out": false
+    },
+    "artifacts/public_validation/current-capacity-combined-20261014-a/voltage/execution/command.json": {
+      "sha256": "ac4fe1712c8aaff93f785f065b73c06b132cc763ffd3198183f57a5c5140296f",
+      "exit_code": 2,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\experiments\\public_sodium.py",
+        "--root",
+        "<PROJECT_ROOT>",
+        "--manifest",
+        "<PROJECT_ROOT>\\data\\splits\\zenodo13836819-eight-provenance-20261013-c.json",
+        "--output",
+        "<PROJECT_ROOT>\\artifacts\\public_validation\\current-capacity-combined-20261014-a\\voltage\\result"
+      ],
+      "wall_s": 120.42053459999988,
+      "timed_out": true
+    }
+  },
+  "full_acceptance_complete": false
+}

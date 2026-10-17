@@ -1,0 +1,188 @@
+{
+  "utc": "2026-10-15T13:00:53.768540+00:00",
+  "exit_code": 0,
+  "code_hash": "139f425e07fc30984a8d14932c7e63a1cfa351f7c047a4da4619fbf527b52929",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/C-preserve-two-stale-owned-uv-temporaries-on-D-97066b33/command.json": {
+      "sha256": "05d2c19c5dbb226560e8c46ab5fa79470ae0eaafb6763b915a7380b8ca04fb4d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/archive_owned_uv_temp.py"
+      ],
+      "wall_s": 18.511455699999715,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/maintenance/owned-uv-temp-archive-20d213ae/result.json": {
+      "sha256": "ddfad0fa405131bdc9d3ba49e3a2743190e51b8b8082e00d54379069e8c5ef7c"
+    },
+    "artifacts/validation/C-owned-Lean-relocation-readonly-preflight-9efa5e96/command.json": {
+      "sha256": "6fb01852072cb4fb956bfd955969efdf31682c39c2aa10ddec26a7990d6fffaa",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/relocate_owned_lean_toolchain.py"
+      ],
+      "wall_s": 9.79446629999984,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/maintenance/owned-lean-relocation-20261015-a/probe.json": {
+      "sha256": "3e7aaed9de16a5a40f2fc42bba60310a6a4faa8fe3d03ebb506a56a51879ceee"
+    },
+    "artifacts/validation/C-relocated-Lean-Lake-original-entry-native-probes-c064236d/command.json": {
+      "sha256": "ae9ca3d6df58c8f51b15f92801ee56e3cd160b7da3d1e6b2aab11c164f1bbbd8",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/probe_relocated_toolchain.py"
+      ],
+      "wall_s": 1.5374594000004436,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/owned-lean-relocation-preflight-20261015-a/handoff.json": {
+      "sha256": "cec03dac465f9135a2d7c03dc0bd7d7dc8c8b8db172dcf5c5a938817097aeffc"
+    },
+    "docs/ENVIRONMENT.md": {
+      "sha256": "8550d3ba7d661d1fcf62a014d26add0dca3cd610a333e3e823c31705d3afbb08"
+    },
+    "artifacts/validation/X00-original-current-smoke-8a5dc021/command.json": {
+      "sha256": "b36ce9d76fc6a8c49b1c310c7f2800a15d71355e6475087ea3d6e9251a32c5b1",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "smoke",
+        "--out",
+        "artifacts/smoke-current-core-20261015-a.json"
+      ],
+      "wall_s": 712.0908418999998,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/smoke-current-core-20261015-a.json": {
+      "sha256": "fc714403b55123de5496940787bb7ea461e3ae8bdfc0b70d0d2acf1e009c1076"
+    },
+    "artifacts/verification/release-f3de84adea/audit.json": {
+      "sha256": "51f3fd8410f3933a2ed26cd8ee0178f6a22c188347ad0f6d57d5e9b8345440f3"
+    },
+    "artifacts/validation/X00-current-original-calibration-first-failure-trace-fdc03671/command.json": {
+      "sha256": "83fdd689760488cb88ae52f04d61c39c6fa214ef47ea95049dced2d781546dfc",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_calibration_runtime.py::test_actual_builtin_forward_updates_one_joint_candidate_without_mutating_prior",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/x00-first-failure-trace-a",
+        "-p",
+        "no:cacheprovider",
+        "-vv",
+        "--tb=short"
+      ],
+      "wall_s": 8.874695700000302,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/x00-current-smoke-failure-diagnosis-20261015-a/diagnosis.json": {
+      "sha256": "e78e3bf01e3d6807a4d4c44bb2e1325371762ab9b29ed102277b373d710defd8"
+    },
+    "artifacts/validation/X00-explicit-complete-suite-budget-preserve-all-original-gates-21f1c546/command.json": {
+      "sha256": "840b1d07d1efdb1b33dd85a327fbf7f975025fabf7ec5653172b11bcf629ba72",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/prepare_complete_smoke_budget.py"
+      ],
+      "wall_s": 0.6188994000003731,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/progress/complete-smoke-budget-726a41c5/manifest.json": {
+      "sha256": "dc3ee182f8ea6bfb6000d0148da8d133fbaf6f8bec7fe116e879134d927091c8"
+    },
+    "docs/adr/0022-current-complete-smoke-suite-budget.md": {
+      "sha256": "391f847a2ff8ec785943f63e39485880ea0d6db111dd7696669bc3cb8b4937f2"
+    },
+    "artifacts/review/x00-current139f-GUI-independent-20261015-b/budget-review.json": {
+      "sha256": "1f51f7076ca817e5a917c07c725df761613f5d5dbcce96bdd9382c1d7203ee04"
+    },
+    "artifacts/handoff/x00-calibration-fixture-refresh-20261015-a/handoff.json": {
+      "sha256": "6c1d0519c9bf598bcdeeb98e0e269d9b2d7276d5f0cc90059084357514b34e8c"
+    },
+    "artifacts/review/x00-calibration-fixture-independent-20261015-a/handoff.json": {
+      "sha256": "c964a719082af4aab9631a83333e20d56bb5c7b4d162ed2491aac0d5ffd689f1"
+    },
+    "artifacts/progress/calibration-fixture-adoption-06d63bb6/manifest.json": {
+      "sha256": "00416c6c86216b8a2e78c88f41d1a6312157e7b23b670a3f0de5591b0e007e60"
+    },
+    "artifacts/validation/X00-adopt-independent-real-current-technical-fixture-f794e618/command.json": {
+      "sha256": "72e06286bfe22f36e18babb83e5c45009aafe78732c7e6fdef332f3ae4a1717b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/adopt_current_calibration_fixture.py"
+      ],
+      "wall_s": 0.40374729999984993,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/X00-original-calibration-runtime-consumer-observer-after-real-fixture-refresh-d6d69397/command.json": {
+      "sha256": "61af48eb237d99e20daee3b713d1358b154966befe5d7c811392946d94d03df6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_calibration_runtime.py",
+        "tests/integration/test_calibration_consumer.py",
+        "tests/integration/test_calibration_observer.py",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/x00-cal-fixture-retest-b",
+        "-p",
+        "no:cacheprovider",
+        "-q"
+      ],
+      "wall_s": 35.78139600000031,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/proof-current-139f-20261015-b/task.json": {
+      "sha256": "062c03062e1df3564cdb29fed4a3539270675a7c6ca5f62fac967099370b0f5d"
+    },
+    "artifacts/ui/proof-current-139f-20261015-b/normal-run-identities.json": {
+      "sha256": "956f9a25957bfdcc8e2f617512cf4a30508fb0ba682cd1a359b9a1baf39a1fcb"
+    },
+    "artifacts/ui/proof-current-139f-20261015-b/metadata/get-only-6e8bd918/partial-record.json": {
+      "sha256": "157f08c4cc0e6bb2f28c495d89eece3989e731b8de34dc3d3646c1fdf6b4f8fd"
+    },
+    "artifacts/validation/X00-current139f-actual-GUI-GET-only-assembly-44a498f4/command.json": {
+      "sha256": "ed15045d13fecd08d5c47f407c36455d7860d09147d00570eaf7f5711a7bacb6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/build_x00_current139f_ui_record.py",
+        "--collect"
+      ],
+      "wall_s": 3.729517799999485,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

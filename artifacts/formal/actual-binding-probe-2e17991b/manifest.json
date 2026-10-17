@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "project": "<PROJECT_ROOT>",
+  "source_root": "<PROJECT_ROOT>",
+  "snapshot": {
+    "mode": "working_project_direct",
+    "code_hash": "8b85cad839fc33bdecea0736107d9132aeba77f3024d2070457fd33cf263dc3b",
+    "source_index_sha256": null,
+    "scope": "Current controlled source bytes; no immutable snapshot claim"
+  },
+  "checked_manifest": "artifacts/formal/foundation-20261012-sigma/manifest.json",
+  "checked_manifest_sha256": "4fec1dab8cad88f06b64a59ee065410aa753d80fa2dd03efdb10491b40e8975f",
+  "checks": [
+    {
+      "name": "chemical_template",
+      "status": "PASS",
+      "reason": "Exact E, z and S match both explicit channel projections"
+    },
+    {
+      "name": "foundation_declarations",
+      "status": "UNKNOWN",
+      "reason": "No checked declaration manifest is available"
+    },
+    {
+      "name": "runtime_proof_import",
+      "status": "UNKNOWN",
+      "reason": "Elaborated declaration is outside the approved T0 statement scope"
+    }
+  ],
+  "proof_artifact_hashes": {},
+  "scope": "T0 declared synthetic stoichiometry and instantaneous open-port bookkeeping only",
+  "identity": {
+    "package_id": "research_base-v1",
+    "package_hash": "922ba755ab7477cf298cc5907d788c0329f8c2c3648307a2ec729975ff47c57f",
+    "chemistry_id": "synthetic_two_site",
+    "model_kind": "theory_fixture",
+    "source_id": "synthetic-two-site-v1",
+    "backend": "two_site_current_adapter_v1",
+    "parameter_revision": "synthetic-v1",
+    "parameter_hash": "6b3448141704911af549dbeaecb7f15ad802b323648c2d8719d7617192d3d31f",
+    "source_hashes": [
+      [
+        "configs/models/two_site_research.yaml",
+        "1d9349afbfe8b0c5f15459d50374a6ca87ef090cd087c6d63111f9ea5545f932"
+      ],
+      [
+        "src/naheng/models/degradation.py",
+        "ab69e7a7d9cfabc2ee329ed63f20e30e09b2ef27f1df3378f25ff672a4ae5413"
+      ],
+      [
+        "src/naheng/models/site_model.py",
+        "a3ba2d3c061fee7f77acc15eae69cc638edff2cf9f68ccdd500803186ca728e4"
+      ],
+      [
+        "src/naheng/models/thermal.py",
+        "26aa374a71e5542c178989dcfc03d6a35054d3dab46ba7c102d7441510e2f815"
+      ]
+    ]
+  },
+  "status": "UNKNOWN",
+  "reason": "Elaborated declaration is outside the approved T0 statement scope; proof authority withdrawn",
+  "withdrawn": true,
+  "empirical_detailed_fallback_allowed": true,
+  "evidence_refs": [],
+  "grants_reduction": false,
+  "grants_strict_safety": false,
+  "freshness_results": [
+    {
+      "phase": "load",
+      "status": "UNKNOWN",
+      "reason": "Elaborated declaration is outside the approved T0 statement scope; proof authority withdrawn",
+      "checked_at_utc": "2026-10-12T02:15:24.448830+00:00"
+    }
+  ]
+}

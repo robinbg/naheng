@@ -1,0 +1,102 @@
+{
+  "tool": "probe_a03_label_determinism_20261016.py",
+  "sealed_input": {
+    "arm": "artifacts/full-policy-uncertainty-6ecf182273",
+    "ordinal": 6,
+    "fidelity": "low",
+    "candidate_id": "fba7c09c6506d37dd7463973757a8b276fc2ee38e712376ff22b4a3f92666a26",
+    "reservation_id": "2712a7384b1d41799ba6cd04656d3c7c",
+    "timeout_s": 120.0,
+    "parameters": {
+      "charge_high_A": 0.01098846907731266,
+      "charge_low_A": 0.010497756578732163,
+      "cooling_permission_W": 0.012440302990900449,
+      "cutoff_voltage_V": 3.376529148572846,
+      "discharge_high_A": 0.012107811767047564,
+      "discharge_low_A": 0.00906165071588393,
+      "heating_permission_W": 0.013572133538912639,
+      "max_dod": 0.00028971112098613995,
+      "rest_duration_s": 3.1920249010625046
+    }
+  },
+  "calibration_packet": "artifacts/calibration/frontier-test-ac037289",
+  "repetitions": 5,
+  "distinct_statuses": [
+    "unknown"
+  ],
+  "distinct_work_counters": [],
+  "distinct_completed_utilities": [],
+  "distinct_completed_margins": [],
+  "label_determined_by_candidate": true,
+  "worker_wall_s_observed": {
+    "min": null,
+    "max": null,
+    "declared_wall_backstop_s": 25.0
+  },
+  "rows": [
+    {
+      "repetition": 0,
+      "status": "unknown",
+      "reason": "ConsumerUnknown: Calibration packet implementation differs from current ROOT code_hash",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 7.5184987999964505,
+      "reported_cost_s": 7.318083599995589,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    },
+    {
+      "repetition": 1,
+      "status": "unknown",
+      "reason": "ConsumerUnknown: Calibration packet implementation differs from current ROOT code_hash",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 5.399238699988928,
+      "reported_cost_s": 5.226165600004606,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    },
+    {
+      "repetition": 2,
+      "status": "unknown",
+      "reason": "ConsumerUnknown: Calibration packet implementation differs from current ROOT code_hash",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 7.6452392999926815,
+      "reported_cost_s": 7.474436999997124,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    },
+    {
+      "repetition": 3,
+      "status": "unknown",
+      "reason": "ConsumerUnknown: Calibration packet implementation differs from current ROOT code_hash",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 7.579772900004173,
+      "reported_cost_s": 7.447507499993662,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    },
+    {
+      "repetition": 4,
+      "status": "unknown",
+      "reason": "ConsumerUnknown: Calibration packet implementation differs from current ROOT code_hash",
+      "utility": null,
+      "constraint_margin": null,
+      "measured_cost_s": 13.392941500002053,
+      "reported_cost_s": 13.069275799993193,
+      "case_status": "unknown",
+      "completed_sensor_replans": 0,
+      "plans": []
+    }
+  ],
+  "scope": "repeated execution of one sealed synthetic training candidate",
+  "scientific_N_added": 0,
+  "risk_certificate": false,
+  "invented_labels": 0
+}

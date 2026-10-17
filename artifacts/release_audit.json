@@ -1,0 +1,38 @@
+{
+  "profile": "release",
+  "exit_code": 2,
+  "status": "blocked",
+  "checks": [
+    {
+      "id": "all_required_tasks",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "tools/check_release.py",
+        "--scope",
+        "release"
+      ],
+      "exit_code": 2,
+      "status": "blocked",
+      "wall_s": 0.96582959999796,
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\release-2caafe6b56"
+    },
+    {
+      "id": "formal_core",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "core"
+      ],
+      "exit_code": 2,
+      "status": "blocked",
+      "wall_s": 0.5136109999730252,
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\release-2caafe6b56"
+    }
+  ],
+  "scope": "Only listed gates; smoke is not release",
+  "utc": "2026-10-09T17:44:18.032636+00:00"
+}

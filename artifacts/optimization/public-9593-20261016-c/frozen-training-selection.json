@@ -1,0 +1,94 @@
+{
+  "best": {
+    "candidate_id": "fba7c09c6506d37dd7463973757a8b276fc2ee38e712376ff22b4a3f92666a26",
+    "parameters": {
+      "charge_high_A": 0.01098846907731266,
+      "charge_low_A": 0.010497756578732163,
+      "cooling_permission_W": 0.012440302990900449,
+      "cutoff_voltage_V": 3.376529148572846,
+      "discharge_high_A": 0.012107811767047564,
+      "discharge_low_A": 0.00906165071588393,
+      "heating_permission_W": 0.013572133538912639,
+      "max_dod": 0.00028971112098613995,
+      "rest_duration_s": 3.1920249010625046
+    },
+    "x": [
+      0.6657057564427216,
+      0.3212683270522973,
+      0.6220151495450225,
+      0.9061165942913849,
+      0.4362722690748259,
+      0.5051375596569941,
+      0.6786066769456319,
+      0.13621773787178784,
+      0.6384049802125009
+    ],
+    "selection": "paired_high_fidelity_discrepancy_identification",
+    "paired_low_reservation": "e1b3ef3e962d488088fffb0449616943",
+    "completed_pairs_before": 0,
+    "model_feasibility_is_risk_certificate": false,
+    "fidelity": "high",
+    "reservation_id": "dbc6771a56ba4ce089b957ed293aadde",
+    "ordinal": 12,
+    "protocol_sha256": "472dc9a7b44eb3895713f48a81f6f49f892c3a54ec8c6d9bd41c97623e797e8a",
+    "timeout_s": 120.0,
+    "result": {
+      "status": "completed",
+      "utility": 1.2052483836389859e-08,
+      "constraint_margin": -1e-12,
+      "cost_s": 37.54203779999807,
+      "source_id": "fixed-training-full-policy-world-2026101401",
+      "run_id": "full-policy-dbc6771a56ba4ce089b957ed293aadde",
+      "evidence_sha256": "7c58f12f08ab761959615f5c67a7331bb222a6ce5566628b3f0770867791db65",
+      "reason": null
+    }
+  },
+  "diagnostic_best": {
+    "candidate_id": "fba7c09c6506d37dd7463973757a8b276fc2ee38e712376ff22b4a3f92666a26",
+    "parameters": {
+      "charge_high_A": 0.01098846907731266,
+      "charge_low_A": 0.010497756578732163,
+      "cooling_permission_W": 0.012440302990900449,
+      "cutoff_voltage_V": 3.376529148572846,
+      "discharge_high_A": 0.012107811767047564,
+      "discharge_low_A": 0.00906165071588393,
+      "heating_permission_W": 0.013572133538912639,
+      "max_dod": 0.00028971112098613995,
+      "rest_duration_s": 3.1920249010625046
+    },
+    "x": [
+      0.6657057564427216,
+      0.3212683270522973,
+      0.6220151495450225,
+      0.9061165942913849,
+      0.4362722690748259,
+      0.5051375596569941,
+      0.6786066769456319,
+      0.13621773787178784,
+      0.6384049802125009
+    ],
+    "selection": "paired_high_fidelity_discrepancy_identification",
+    "paired_low_reservation": "e1b3ef3e962d488088fffb0449616943",
+    "completed_pairs_before": 0,
+    "model_feasibility_is_risk_certificate": false,
+    "fidelity": "high",
+    "reservation_id": "dbc6771a56ba4ce089b957ed293aadde",
+    "ordinal": 12,
+    "protocol_sha256": "472dc9a7b44eb3895713f48a81f6f49f892c3a54ec8c6d9bd41c97623e797e8a",
+    "timeout_s": 120.0,
+    "result": {
+      "status": "completed",
+      "utility": 1.2052483836389859e-08,
+      "constraint_margin": -1e-12,
+      "cost_s": 37.54203779999807,
+      "source_id": "fixed-training-full-policy-world-2026101401",
+      "run_id": "full-policy-dbc6771a56ba4ce089b957ed293aadde",
+      "evidence_sha256": "7c58f12f08ab761959615f5c67a7331bb222a6ce5566628b3f0770867791db65",
+      "reason": null
+    }
+  },
+  "selection_admissible": true,
+  "checkpoint_sha256": "a52a9d3ee2ef9007101d9a9c8cb9d25a292974941ade587c17cee7be8e16b1c1",
+  "heldout_results_seen": false,
+  "risk_certificate": false
+}

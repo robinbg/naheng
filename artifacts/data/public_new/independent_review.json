@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "reviewer": "independent_public_data_review",
+  "utc": "2026-10-10T02:34:06.463807+00:00",
+  "scope": "Read-only original XML/bytes, official metadata snapshot/README, exported CSV, v2 specs/registry hashes, persisted observations, importer command records and split audit. No network, downloads, dependency installation, Lean/Lake/cache, model fitting or shared-source edits.",
+  "status": "source_and_view_evidence_reviewed",
+  "checks": [
+    {
+      "check": "original_bytes_RMF-VZ1_044_021_CVUT_S.txt",
+      "status": "passed",
+      "details": {
+        "file": "data\\raw\\public_new\\zenodo17459188\\RMF-VZ1_044_021_CVUT_S.txt",
+        "bytes": 6045,
+        "md5": "cd2f06add85ed18281ee3c0a9e1bb4e3",
+        "sha256": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+        "official_size": 6045,
+        "official_checksum": "md5:cd2f06add85ed18281ee3c0a9e1bb4e3"
+      }
+    },
+    {
+      "check": "original_bytes_VZ1_044_021_CVUT_D_0001_v1.xlsx",
+      "status": "passed",
+      "details": {
+        "file": "data\\raw\\public_new\\zenodo17459188\\VZ1_044_021_CVUT_D_0001_v1.xlsx",
+        "bytes": 17143,
+        "md5": "0d04ab461817bef013766db23b8089be",
+        "sha256": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+        "official_size": 17143,
+        "official_checksum": "md5:0d04ab461817bef013766db23b8089be"
+      }
+    },
+    {
+      "check": "original_bytes_VZ1_044_021_CVUT_D_00011_v1.xlsx",
+      "status": "passed",
+      "details": {
+        "file": "data\\raw\\public_new\\zenodo17459188\\VZ1_044_021_CVUT_D_00011_v1.xlsx",
+        "bytes": 225638,
+        "md5": "6fd8c78fe0f4787da88817ac8378f6d7",
+        "sha256": "9f6f4d79ffab3cac7f72c78fa5ab4c0e9f45ae573fa0f82b814f25cafaf3b7b9",
+        "official_size": 225638,
+        "official_checksum": "md5:6fd8c78fe0f4787da88817ac8378f6d7"
+      }
+    },
+    {
+      "check": "license",
+      "status": "passed",
+      "details": {
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "readme_license": "CC BY 4.0",
+        "metadata_sha256": "6581cc1c36a2916611abe10263fedf81be16d7d9533fd5e19a6fb2bf49b886a4",
+        "scope": "Stored official snapshot and author README; no new network verification"
+      }
+    },
+    {
+      "check": "independent_xlsx_xml_matches_field_audit_VZ1_044_021_CVUT_D_00011_v1.xlsx",
+      "status": "passed",
+      "details": {
+        "sheets": {
+          "unit": 7,
+          "test": 15,
+          "cycle": 13,
+          "step": 26,
+          "record": 3734
+        },
+        "audit_sha256": "79650fe6adb4b3d2001b3257f9dee885852253264f36c55bbca5be36376ef2ed"
+      }
+    },
+    {
+      "check": "independent_xlsx_xml_matches_field_audit_VZ1_044_021_CVUT_D_0001_v1.xlsx",
+      "status": "passed",
+      "details": {
+        "sheets": {
+          "unit": 7,
+          "test": 15,
+          "cycle": 2,
+          "step": 4,
+          "record": 65
+        },
+        "audit_sha256": "79650fe6adb4b3d2001b3257f9dee885852253264f36c55bbca5be36376ef2ed"
+      }
+    },
+    {
+      "check": "units",
+      "status": "passed",
+      "details": {
+        "time": "Total Time, hh:mm:ss.ms converted to s",
+        "current": "Current(A)(A)",
+        "voltage": "Voltage(V)(V) pack terminal voltage",
+        "temperature_channels": [
+          "T1(℃)",
+          "T2(℃)",
+          "T3(℃)",
+          "T4(℃)",
+          "T5(℃)",
+          "T6(℃)"
+        ],
+        "temperature_unit": "Celsius; K = Celsius + 273.15"
+      }
+    },
+    {
+      "check": "pack_identity_and_comparator",
+      "status": "passed",
+      "details": {
+        "sodium": "D_0001: Hakadi18650 4s11p sodium pack, 16V precharge, nominal ambient -15C",
+        "excluded": "D_00011: lead-acid comparator, not sodium",
+        "independent_physical_groups": 1,
+        "individual_cell_serials": "not supplied",
+        "44_cells_are_44_independent_tests": false,
+        "V1_V6": "Near-zero channels do not establish usable individual-cell voltages"
+      }
+    },
+    {
+      "check": "all_64_original_rows_and_co_timed_transitions",
+      "status": "passed",
+      "details": {
+        "row_count": 64,
+        "start_s": "0.000",
+        "end_s": "60.100",
+        "same_time_boundaries": [
+          {
+            "timestamp_s": "30.000",
+            "before": {
+              "serial": "31",
+              "step": "1",
+              "voltage_V": "15.9002",
+              "vendor_current_A": "0"
+            },
+            "after": {
+              "serial": "32",
+              "step": "2",
+              "voltage_V": "11.7819",
+              "vendor_current_A": "-199.9752"
+            }
+          },
+          {
+            "timestamp_s": "30.100",
+            "before": {
+              "serial": "33",
+              "step": "2",
+              "voltage_V": "8.3891",
+              "vendor_current_A": "-199.9752"
+            },
+            "after": {
+              "serial": "34",
+              "step": "5",
+              "voltage_V": "14.9107",
+              "vendor_current_A": "0"
+            }
+          }
+        ],
+        "timestamps_shifted": false
+      }
+    },
+    {
+      "check": "actual_discharge_current_and_duration",
+      "status": "passed",
+      "details": {
+        "workbook_rows": [
+          33,
+          34
+        ],
+        "source_serials": [
+          "32",
+          "33"
+        ],
+        "vendor_current_A": [
+          "-199.9752",
+          "-199.9752"
+        ],
+        "voltage_V": [
+          "11.7819",
+          "8.3891"
+        ],
+        "observed_duration_s": "0.100",
+        "planned_max_duration_s": "3.000",
+        "observed_discharge_positive_transform": "internal_current_A = -vendor_current_A",
+        "charging_sign_directly_measured": false,
+        "cutoff_scope": "8.3891 V is observed pack voltage; protocol cutoff is 8.39 V, not a universal sodium safety threshold"
+      }
+    },
+    {
+      "check": "export_keeps_each_measurement",
+      "status": "passed",
+      "details": {
+        "exported_rows": 64,
+        "csv_sha256": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+        "dropped_rows": 0,
+        "same_csv_bytes_for_both_views": true
+      }
+    },
+    {
+      "check": "v2_shared_real_source_identity",
+      "status": "passed",
+      "details": {
+        "source_id": "zenodo17459188_cvut_sib_0001",
+        "cell_id": "cvut_hakadi_sib_4s11p_pack_group",
+        "spec_hashes": {
+          "complete": "ab4a0b45ad469417a8c748874c31be0b1e6bd1db8ee0945064a1fe601a0b00d5",
+          "instrument_step": "095133dd158d1778b2303a15216096e15829721fefe0235c8765d07cb08336a5"
+        },
+        "historical_issue": "v1 alternative source IDs could bypass source_id+cell_id split identity; retained v1 artifacts are superseded, not final evidence"
+      }
+    },
+    {
+      "check": "independent_cross_view_split_negative",
+      "status": "passed",
+      "details": {
+        "reason": "Physical cell or complete trajectory leaked across splits",
+        "source_sha256": "ab83529c5a6fd93edffe45d9e8f63a5b8198207bd14f68d55d3d9ea37297ba82"
+      }
+    },
+    {
+      "check": "canonical_measurements_persisted",
+      "status": "passed",
+      "details": {
+        "rows": 64,
+        "temperature_channel": "T1 only selected explicitly; other source channels retained in original and CSV",
+        "source_id_count": 1,
+        "cell_id_count": 1,
+        "segment_count": 3
+      }
+    },
+    {
+      "check": "actual_import_outcomes",
+      "status": "passed",
+      "details": {
+        "full_track": "exit 1: duplicate/nonmonotonic time at CSV line 33",
+        "step_view": "exit 0: explicit instrument segments retain all 64 rows",
+        "complete_instrument_semantics_accepted": false
+      }
+    },
+    {
+      "check": "v2_holdout_scope",
+      "status": "passed",
+      "details": {
+        "parent_audit_sha256": "18d6695b61090f522c8e288d8053a5084e517d0bd47b151f4a5c8b30c88c7625",
+        "same_pack_split_guard": {
+          "adversarial_split_rejected": true,
+          "reason": "Physical cell or complete trajectory leaked across splits",
+          "independent_physical_groups": 1,
+          "cross_view_split_rejected": true,
+          "cross_view_guard_reason": "Physical cell or complete trajectory leaked across splits",
+          "superseded_view_identities_rejected": true,
+          "holdout_only_snapshot": "artifacts/data/public_new/holdout_only_snapshot_v2.json",
+          "three_role_coverage": false,
+          "step_views_are_independent_test_samples": false
+        },
+        "review_scope": "read-only corroboration; this review additionally executed its own pure cross-view negative guard"
+      }
+    }
+  ],
+  "verified_original_files": [
+    {
+      "file": "data\\raw\\public_new\\zenodo17459188\\RMF-VZ1_044_021_CVUT_S.txt",
+      "bytes": 6045,
+      "md5": "cd2f06add85ed18281ee3c0a9e1bb4e3",
+      "sha256": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+      "official_size": 6045,
+      "official_checksum": "md5:cd2f06add85ed18281ee3c0a9e1bb4e3"
+    },
+    {
+      "file": "data\\raw\\public_new\\zenodo17459188\\VZ1_044_021_CVUT_D_0001_v1.xlsx",
+      "bytes": 17143,
+      "md5": "0d04ab461817bef013766db23b8089be",
+      "sha256": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+      "official_size": 17143,
+      "official_checksum": "md5:0d04ab461817bef013766db23b8089be"
+    },
+    {
+      "file": "data\\raw\\public_new\\zenodo17459188\\VZ1_044_021_CVUT_D_00011_v1.xlsx",
+      "bytes": 225638,
+      "md5": "6fd8c78fe0f4787da88817ac8378f6d7",
+      "sha256": "9f6f4d79ffab3cac7f72c78fa5ab4c0e9f45ae573fa0f82b814f25cafaf3b7b9",
+      "official_size": 225638,
+      "official_checksum": "md5:6fd8c78fe0f4787da88817ac8378f6d7"
+    }
+  ],
+  "actual_import_commands": [
+    {
+      "label": "D01-public-full-import-v2-4648ab65",
+      "command": {
+        "argv": [
+          ".venv/Scripts/python.exe",
+          "-m",
+          "naheng.data.importers",
+          "--csv",
+          "artifacts/data/public_new/cvut_sodium_0001_complete.csv",
+          "--spec",
+          "artifacts/data/public_new/cvut_sodium_0001_complete.v2.spec.json",
+          "--out",
+          "artifacts/data/public_new/imported_complete_v2"
+        ],
+        "cwd": "<PROJECT_ROOT>",
+        "exit_code": 1,
+        "wall_s": 2.7695351999718696,
+        "utc": "2026-10-10T01:22:59.057189+00:00",
+        "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-full-import-v2-4648ab65\\stdout.log",
+        "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-full-import-v2-4648ab65\\stderr.log"
+      },
+      "stdout": "{\"status\": \"failed\", \"reason\": \"Nonmonotonic or duplicate time in complete trajectory at CSV line 33\"}\n"
+    },
+    {
+      "label": "D01-public-step-import-v2-60541240",
+      "command": {
+        "argv": [
+          ".venv/Scripts/python.exe",
+          "-m",
+          "naheng.data.importers",
+          "--csv",
+          "artifacts/data/public_new/cvut_sodium_0001_instrument_step.csv",
+          "--spec",
+          "artifacts/data/public_new/cvut_sodium_0001_instrument_step.v2.spec.json",
+          "--out",
+          "artifacts/data/public_new/imported_instrument_step_v2"
+        ],
+        "cwd": "<PROJECT_ROOT>",
+        "exit_code": 0,
+        "wall_s": 3.093624999979511,
+        "utc": "2026-10-10T01:23:06.354310+00:00",
+        "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-step-import-v2-60541240\\stdout.log",
+        "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-step-import-v2-60541240\\stderr.log"
+      },
+      "stdout": "{\n  \"schema_version\": 1,\n  \"source\": {\n    \"source_id\": \"zenodo17459188_cvut_sib_0001\",\n    \"source_url\": \"https://zenodo.org/records/17459188\",\n    \"chemistry_id\": \"public_cvut_hakadi_sodium_4s11p_17459188\",\n    \"current_sign\": \"positive_charge\",\n    \"units\": {\n      \"time\": \"s\",\n      \"current\": \"A\",\n      \"voltage\": \"V\",\n      \"temperature\": \"degC\"\n    },\n    \"columns\": {\n      \"time\": \"time_s\",\n      \"current\": \"vendor_current_A\",\n      \"voltage\": \"voltage_V\",\n      \"temperature\": \"T1_degC\",\n      \"trajectory_id\": \"trajectory_id\"\n    },\n    \"license_id\": \"CC-BY-4.0\",\n    \"license_evidence_sha256\": \"4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf\",\n    \"raw_sha256\": \"b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9\",\n    \"provenance_type\": \"public_measurement\",\n    \"delimiter\": \",\",\n    \"encoding\": \"utf-8\",\n    \"decimal_separator\": \".\",\n    \"fixed_cell_id\": \"cvut_hakadi_sib_4s11p_pack_group\",\n    \"fixed_batch_id\": \"cvut_single_sib_pack_campaign\",\n    \"fixed_trajectory_id\": null,\n    \"identity_evidence\": \"Author README maps D_0001 to one Hakadi18650 sodium-ion 4s11p pack precharged16V at ambient -15degC; no physical individual-cell serials supplied. Pack-group identity is conservative; Step IDs are instrument segments, not independent experimental units.\",\n    \"current_sign_evidence\": \"Original workbook record rows33-34 label CC DChg and Current(A)(A)=-199.9752, so discharge is negative; internal discharge-positive current=-vendor current. Charging records are not present in this selected file.\",\n    \"source_registry_path\": \"data\\\\manifests\\\\retrieval-zenodo17459188-0001-instrument_step-v2.yaml\",\n    \"source_registry_sha256\": \"cc46da78b589c028f57ac1b7a04ddc910552039014e63ac6f907ae9b8f3b01f0\"\n  },\n  \"raw_sha256\": \"b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9\",\n  \"raw_bytes\": 7877,\n  \"row_count\": 64,\n  \"cells\": [\n    \"cvut_hakadi_sib_4s11p_pack_group\"\n  ],\n  \"trajectories\": [\n    \"cvut_sib_0001_step_1\",\n    \"cvut_sib_0001_step_2\",\n    \"cvut_sib_0001_step_5\"\n  ],\n  \"canonical_units\": {\n    \"time\": \"s\",\n    \"current\": \"A\",\n    \"voltage\": \"V\",\n    \"temperature\": \"K\"\n  },\n  \"current_sign\": \"positive_discharge\",\n  \"field_validation\": \"passed\",\n  \"external_model_validation\": \"not_performed\",\n  \"temperature_available\": true\n}\n"
+    }
+  ],
+  "handoff_sha256": "3355a0ced35edff762d70dde2eccbdb4cf73a7bc476b8f32d5bf92ab9b730cb4",
+  "handoff_read": true,
+  "limitations": [
+    "Full chronological import remains failed; step-view compatibility does not validate complete instrument transition semantics.",
+    "One conservative physical pack group supplies no independent train/validation/test three-role coverage. Instrument steps, parallel cells, temperature sensors and overlapping views are not independent specimens.",
+    "The observed pulse lasts 0.1 s, not the planned 3 s maximum. Nominal ambient -15C differs from actual six temperature channels.",
+    "No charging records, full capacity/aging labels, RUL labels, accident labels or independent operating-risk population are supplied by this selected file.",
+    "No external model validation, calibration, risk probability validation or revenue superiority follows from data provenance/field checks."
+  ],
+  "execution_record": {
+    "command": "PowerShell here-string piped to .venv\\Scripts\\python.exe -X utf8 -",
+    "procedure": "Independent built-in zipfile/XML and hashlib review; exact original checks rerun here, pure existing split guard invoked with train/test same-pack views. No imported download code executed.",
+    "exit_code": 0,
+    "actual_tool_chunk_id": "fb5986",
+    "process_result": "16 checks passed; no failed source/view review checks. Full chronological import remains failed in its separate preserved command record."
+  },
+  "prior_actual_read_checks": {
+    "xlsx_scan": {
+      "tool_chunk_id": "6e990d",
+      "exit_code": 0,
+      "command": "PowerShell here-string | .venv\\Scripts\\python.exe -X utf8 -",
+      "details": "Independent zipfile/XML scan of both complete workbooks and original hashes, including all 64 sodium rows"
+    },
+    "metadata_read_initial": {
+      "exit_code": 1,
+      "reason": "UnicodeEncodeError from GBK terminal output; corrected -X utf8 read subsequently exited 0. No source bytes changed."
+    }
+  }
+}

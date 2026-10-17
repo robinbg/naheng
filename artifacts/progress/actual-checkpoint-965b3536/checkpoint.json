@@ -1,0 +1,221 @@
+{
+  "utc": "2026-10-13T16:18:47.188894+00:00",
+  "exit_code": 0,
+  "code_hash": "cf7dcdf17c62b95e935052022d2143b397bef564f930d08e1442cbd143b38106",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 18,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 20
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/plan-reviewed.json": {
+      "sha256": "1a3695476b0c1cd418177c713cdb76c04a865327585b6f71598dbfa36e42e083"
+    },
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/result-corrected.json": {
+      "sha256": "b2caedab99e3b35f263fedcdfe3212323a1c82eebbdc5f3d1be794f253a93c2d"
+    },
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/native-execution-receipt.json": {
+      "sha256": "f758e259da939c366d110f6356eb66b701605e3e49c997b4038c2192403a2dfe"
+    },
+    "artifacts/progress/pre-current-member-regression-20261013-b.json": {
+      "sha256": "da789de082c995c196d9fd3f67325aee01e648806d1ac2fa1425ecad143836d1"
+    },
+    "artifacts/validation/G00-current-first-policy-locked-full-regression-af5c1f43/command.json": {
+      "sha256": "bde16994c361b6f4b25c5f468f287d4d53e45517be90d6c72a54ebc528813850",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp",
+        "artifacts/test-temp/current-member-full-20261013-f",
+        "-o",
+        "cache_dir=artifacts/test-cache/current-member-full-20261013-f"
+      ],
+      "wall_s": 118.22504929999923,
+      "timed_out": false
+    },
+    "artifacts/validation/G04-current-owned-worker-tree-approved-environment-a6d4c1ca/command.json": {
+      "sha256": "79e588091b62d56f8af901330c0da008a442124307a730cd9ef1abf53b546051",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_worker_monitor.py",
+        "-q",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/.nh-tests-20261014-a",
+        "-o",
+        "cache_dir=artifacts/test-cache/worker-approved-20261014-a"
+      ],
+      "wall_s": 4.309224700002233,
+      "timed_out": false
+    },
+    "data/splits/zenodo13836819-eight-provenance-20261013-c.json": {
+      "sha256": "c86f34c674f77fe7972f614ad1b88d0cf37531dc51d457479b17b4f837a4b539"
+    },
+    "src/naheng/data/member_partitions.py": {
+      "sha256": "c8ab9280efcdb7e2197aa3fb6db0975a09fe80cd9934cbb3d279c622f5f41169"
+    },
+    "tests/unit/test_member_partitions.py": {
+      "sha256": "d640b6e471284292e994358d93396fbf4331c8e0017fd53148a99427ce3c0d7c"
+    },
+    "artifacts/validation/D01-first-frozen-policy-role-lock-tests-6a030d3c/command.json": {
+      "sha256": "ed23273a3a6a08b8d8fe34915b89977421438914c316381a6dd943ac63ed264c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_member_partitions.py",
+        "tests/unit/test_data_import.py",
+        "tests/unit/test_zenodo_csv.py",
+        "tests/integration/test_split_leakage.py",
+        "-q",
+        "--basetemp",
+        "artifacts/test-temp/member-partition-e",
+        "-o",
+        "cache_dir=artifacts/test-cache/member-partition-e"
+      ],
+      "wall_s": 4.641150399998878,
+      "timed_out": false
+    },
+    "artifacts/validation/D01-current-first-policy-locked-full-member-freeze-42256f2c/command.json": {
+      "sha256": "346bf2c219dd691f6b2546a7215ada93be47fa55ccf6e3b655efa538c88e29af",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "data",
+        "freeze-members",
+        "--catalog",
+        "artifacts/review/data-integration-D01-next-slice-20261013-a/catalog-proposal.json",
+        "--catalog-sha256",
+        "974c6879675465e97085635fdb77f2acedb0dbe714632a4433af4f4a5c86628a",
+        "--policy",
+        "artifacts/review/data-integration-D01-next-slice-20261013-a/policy-proposal.json",
+        "--policy-sha256",
+        "de3c1fcc4633097f4013378e5ed6f8566201b4581993f1b00f625d87d5f1a566",
+        "--out",
+        "data/splits/zenodo13836819-eight-provenance-20261013-c.json"
+      ],
+      "wall_s": 44.40140640000027,
+      "timed_out": false
+    },
+    "artifacts/validation/D01-final-reopen-after-space-851d2015/command.json": {
+      "sha256": "050a72c82327f22c0a080cc3c2522cd5a1d39f414d86d14ffeddd20a0439629f",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "data",
+        "verify-members",
+        "--frozen",
+        "data/splits/zenodo13836819-eight-provenance-20261013-c.json",
+        "--frozen-sha256",
+        "c86f34c674f77fe7972f614ad1b88d0cf37531dc51d457479b17b4f837a4b539"
+      ],
+      "wall_s": 67.23376429999917,
+      "timed_out": false
+    },
+    "artifacts/review/partition-current-independent-20261013-a/policy_locked/report.json": {
+      "sha256": "fd7424a6e1bb7ed527a03bb7cbb20edf6ade288c549bde0906bd6c1f4bb34c41"
+    },
+    "artifacts/validation/D01-current-first-policy-locked-independent-method-and-C-metadata-7e69ef63/command.json": {
+      "sha256": "4a1e7e68b023fbb6fa3d57350dfc3e3327b0e0120a3e0d56fab0149cd68531ff",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/partition-current-independent-20261013-a/review-policy-locked.py"
+      ],
+      "wall_s": 0.6777271000028122,
+      "timed_out": false
+    },
+    "artifacts/review/data-integration-exact-window-full-20261013-root-b/report.json": {
+      "sha256": "3bdf1db2040d3bfb984dc4a1f8cca2d2f5f774930a8a7d4cb58bc58663b06ac7"
+    },
+    "artifacts/validation/D01-exact-window-reviewed-method-bounded-recovery-ebca7a23/command.json": {
+      "sha256": "0f87322e5990d5770d7d0b0380274e55fe490db6e08e58313c671e13dc36b289",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/data-integration-exact-window-candidate-20261013-8061bea9/audit_exact.py",
+        "--full",
+        "--out",
+        "artifacts/review/data-integration-exact-window-full-20261013-root-b"
+      ],
+      "wall_s": 62.90753290000066,
+      "timed_out": false
+    },
+    "artifacts/review/exact-window-independent-method-20261013-4f8a927c/report.json": {
+      "sha256": "06b41c91a2a28ae226980a0f116451af6a694b3967be6315bad41a82b3439d04"
+    },
+    "artifacts/validation/D01-independent-exact-window-method-0a5a242f/command.json": {
+      "sha256": "aa89c0fc3bedb4a32e70e88b36cfe7070014b0247a434c440595043ac378a69a",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/exact-window-independent-method-20261013-4f8a927c/review.py"
+      ],
+      "wall_s": 0.5798901000016485,
+      "timed_out": false
+    },
+    "artifacts/review/data-integration-exact-window-interruption-20261013-root-a/manifest.json": {
+      "sha256": "3a435ef3ca293fdbc6ec35d4781e0d27fe2ee8eebd2e6cdc93aafba03fdb722d"
+    },
+    "artifacts/validation/D01-exact-window-interruption-state-correct-root-1712cb7f/command.json": {
+      "sha256": "a2b3752ceefff0c24e1954e4f9f9040c932a35bb90e93f0a1a3161e48886bb5a",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/data-integration-exact-window-interruption-20261013-root-a/record_recovered.py"
+      ],
+      "wall_s": 0.22607489999791142,
+      "timed_out": false
+    },
+    "artifacts/validation/F02-next-full-reduction-acceptance-fe820933/command.json": {
+      "sha256": "2d6355b93a9869048d911055903866d67bd7e69580ae1284c8abaa3998b1e3be",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "reduction",
+        "--out",
+        "artifacts/formal/reduction-next-required-20261013"
+      ],
+      "wall_s": 1.3390270999952918,
+      "timed_out": false
+    },
+    "artifacts/review/fixed-current-readout-local-diagnostic-20261013-b/report.json": {
+      "sha256": "86eb6f96de48e51a9e490767c84cd265f875d883571758707c5aadfaaf6ad454"
+    },
+    "artifacts/validation/F02-fixed-current-readout-bounded-local-diagnostic-final-unknown-78669ca2/command.json": {
+      "sha256": "78bf04d0f622e165b020e821ce147d17bbe4e9738222ef334f826c100b6ce8dc",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "artifacts/review/fixed-current-readout-local-diagnostic-20261013-b/finalize_diagnostic.py"
+      ],
+      "wall_s": 0.651993700004823,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

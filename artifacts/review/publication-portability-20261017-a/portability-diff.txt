@@ -1,0 +1,161 @@
+--- a/src/naheng/discovery/proof_worker.py
++++ b/src/naheng/discovery/proof_worker.py
+@@ -13,6 +13,7 @@
+ from naheng.formal.audit import audit_axioms
+ from naheng.runtime.artifacts import code_hash
+ from naheng.runtime.validation_process import run_validation_command
++from .backend_host import BackendUnavailable, backend_root, install_hint
+ from .grammar import CandidateError, canonical_sha, parse_candidate
+ from .providers import emit_theorem
+ 
+@@ -73,13 +74,23 @@
+ 
+ 
+ def verify_backend_inputs():
+-    manifest = json.loads((ROOT / 'configs/discovery/proof-backend.json').read_text(encoding='utf-8'))
++    manifest_path = ROOT / 'configs/discovery/proof-backend.json'
++    if not manifest_path.is_file():
++        raise BackendUnavailable('No pinned backend manifest at ' + manifest_path.name + '. ' + install_hint())
++    manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
++    # A fresh checkout does not contain the pinned isolated backend. Report that
++    # as an explicit, actionable condition instead of crashing on a missing file,
++    # and never treat it as a checked proof.
++    absent = next((name for name in manifest['files'] if not (ROOT / name).is_file()), None)
++    if absent is not None:
++        raise BackendUnavailable('Pinned isolated proof backend is not installed in this '
++                                 'checkout; first absent pinned file: ' + absent + '. ' + install_hint())
+     for name, expected in manifest['files'].items():
+         if sha(ROOT / name) != expected:
+             raise CandidateError('Pinned private backend source changed: ' + name)
+     # Pin exact imported formal sources; Python additions do not alter those objects.
+     # Bind the current complete source identity before and after execution too.
+-    return hashlib.sha256((sha(ROOT / 'configs/discovery/proof-backend.json') + code_hash(ROOT)).encode()).hexdigest()
++    return hashlib.sha256((sha(manifest_path) + code_hash(ROOT)).encode()).hexdigest()
+ 
+ 
+ def run_owned(root, command, cwd, out, timeout_s=120, **kwargs):
+@@ -139,7 +150,9 @@
+         pin = verify_backend_inputs()
+         from .offline_seed import prepare
+         plan, seed_sha = prepare(leaf, targets, timeout_s)
+-    except (OSError, ImportError) as error:
++    except (BackendUnavailable, OSError, ImportError) as error:
++        # An absent isolated backend means the proof was never executed. It is
++        # reported as setup-unknown, never as checked and never as a pass.
+         return setup_unknown(out, leaf, targets, before, timeout_s, error, 'verified_dependency_or_seed_setup', started_at=started_at)
+     native = out / 'native'
+     try:
+@@ -147,7 +160,8 @@
+     except OSError as error:
+         return setup_unknown(out, leaf, targets, before, timeout_s, error, 'native_receipt_directory', started_at=started_at)
+     environment = {k: os.environ[k] for k in ('SystemRoot', 'WINDIR') if k in os.environ}
+-    environment.update(PATH=str(ROOT / '.venv/Scripts') + ';C:/Windows/System32', PYTHONPATH=str(ROOT / 'src'),
++    system_root = Path(os.environ.get('SystemRoot') or os.environ.get('WINDIR') or 'C:/Windows')
++    environment.update(PATH=str(ROOT / '.venv/Scripts') + os.pathsep + str(system_root / 'System32'), PYTHONPATH=str(ROOT / 'src'),
+         PYTHONDONTWRITEBYTECODE='1', PYTHONUTF8='1', PYTHONIOENCODING='utf-8',
+         TEMP=str(out), TMP=str(out))
+     argv = [str(ROOT / '.venv/Scripts/python.exe'), str(H / 'boot_requested_batch_serial_r2.py'), str(plan), seed_sha]
+@@ -158,7 +172,7 @@
+         # before or after child creation. Never fabricate a clean nonexecution.
+         return setup_unknown(out, leaf, targets, before, timeout_s, error, 'host_driver_invocation', executed=None, started_at=started_at)
+     try:
+-        (native / 'host.command.json').write_text(json.dumps(outer, indent=2))
++        (native / 'host.command.json').write_text(json.dumps(outer, indent=2), encoding='utf-8')
+         stdout_lines = (native / 'host.stdout.log').read_text(encoding='utf-8').splitlines() if (native / 'host.stdout.log').is_file() else []
+     except OSError as error:
+         return setup_unknown(out, leaf, targets, before, timeout_s, error, 'host_receipt_readback',
+@@ -177,13 +191,13 @@
+     try:
+         assert outer['resource_cleanup_confirmed'] and not outer['timed_out']
+         summary = json.loads((native / 'host.stdout.log').read_text(encoding='utf-8').splitlines()[-1])
+-        boot_path = Path(summary['result']); boot = json.loads(boot_path.read_text())
++        boot_path = Path(summary['result']); boot = json.loads(boot_path.read_text(encoding='utf-8'))
+         # Preserve a failed transport's exact evidence without claiming Lean execution.
+         record.update(boot_result=str(boot_path),boot_result_sha256=sha(boot_path),
+             serial_transport=boot.get('serial_transport'),host_boot_exit_code=boot.get('exit_code'))
+-        assert boot_path.parent.parent == Path('<HOST_BACKEND_ROOT>')
++        assert boot_path.parent.parent == backend_root()
+         assert boot['seed_sha256'] == seed_sha and boot['base_unchanged'] and boot['readonly_payloads_unchanged']
+-        host = json.loads(Path(boot['QEMU_command']).read_text())
++        host = json.loads(Path(boot['QEMU_command']).read_text(encoding='utf-8'))
+         assert host['native_exit_code'] == 0 and host['resource_cleanup_confirmed'] and not host['timed_out']
+         collected = boot['guest_collected']; assert len(collected['ISOLATION_JSON']) == len(collected['PROOF_RESULT']) == 1
+         canary = collected['ISOLATION_JSON'][0]; assert canary['exit_code'] == 0 and all(v is True for v in canary['gates'].values())
+@@ -251,7 +265,7 @@
+     if (leaf.read_bytes() != source.encode() or sha(leaf) != proof['source_sha256']
+             or sha(receipt) != proof['native_receipt_sha256'] or sha(compiled) != proof['olean_sha256']):
+         raise CandidateError('Compiled source/native/olean mismatch')
+-    record = json.loads(receipt.read_text())
++    record = json.loads(receipt.read_text(encoding='utf-8'))
+     if (not record['executed'] or record['exit_code'] != 0 or record['timed_out'] or not record['memory_limit_enforced']
+             or verify_backend_inputs() != record['backend_input_pin']
+             or sha(record['boot_result']) != record['boot_result_sha256']
+
+--- a/tests/integration/test_proof_worker_isolation.py
++++ b/tests/integration/test_proof_worker_isolation.py
+@@ -1,11 +1,34 @@
+ from pathlib import Path
+ import json
++import shutil
++import uuid
+ import pytest
+ from naheng.discovery.dataset import build_dataset,candidate_templates,instantiate
+ from naheng.discovery.grammar import CandidateError
++from naheng.discovery.backend_host import backend_available,install_hint
+ from naheng.discovery.proof_worker import prove_batch,register_checked,run_owned
+ ROOT=Path(__file__).resolve().parents[2]
+ STAGE=ROOT/'artifacts/discovery'
++# Only this test drives a real proof through the isolated backend. The other
++# three exercise guards that run before any backend is touched, so they stay
++# active everywhere. Skipping is explicit and reasoned: an absent backend means
++# "not run here", never "passed".
++requires_backend=pytest.mark.skipif(not backend_available(),
++    reason='optional isolated proof backend is not declared; '+install_hint())
++# Proof output must live under an authorized project-owned root. The worker
++# guard rejects every other location and also rejects reparse points, so
++# pytest's own temporary directory is not a legal proof output path: it sits
++# wherever --basetemp points, which the smoke gate places outside the project.
++TEST_STAGE=ROOT/'artifacts/test-temp'/'proof-worker-isolation'
++
++@pytest.fixture
++def proof_out():
++    """One unique authorized proof-output root per test, removed afterwards."""
++    TEST_STAGE.mkdir(parents=True,exist_ok=True)
++    out=TEST_STAGE/uuid.uuid4().hex[:12]
++    out.mkdir(parents=True,exist_ok=False)
++    yield out
++    shutil.rmtree(out,ignore_errors=True)
+ 
+ def candidate():return instantiate(candidate_templates()[3],build_dataset()['roles']['train'][0])
+ 
+@@ -13,21 +36,23 @@
+     with pytest.raises(CandidateError):run_owned(ROOT,['ignored'],ROOT,ROOT/'artifacts/escaped',1)
+     with pytest.raises(CandidateError):run_owned(ROOT,['ignored'],ROOT,STAGE/'evidence/escape',121)
+ 
+-def test_native_Lean_timeout_and_actual_retry(tmp_path):
++@requires_backend
++def test_native_Lean_timeout_and_actual_retry(proof_out):
+     attempts=[{'target':'Attempt_099','candidate':candidate(),'model_condition_satisfied':True}]
+-    timeout=prove_batch(ROOT,attempts,tmp_path/'timeout',.001)
++    timeout=prove_batch(ROOT,attempts,proof_out/'timeout',.001)
+     assert timeout['status']=='timeout_unknown' and not timeout['kernel_checked']
+     assert timeout['command']['executed'] and timeout['command']['memory_limit_enforced']
+     with pytest.raises(CandidateError):register_checked(attempts,timeout)
+-    recovered=prove_batch(ROOT,attempts,tmp_path/'retry',120)
++    recovered=prove_batch(ROOT,attempts,proof_out/'retry',120)
+     assert recovered['kernel_checked'] and recovered['audit']['status']=='passed'
+     evidence=register_checked(attempts,recovered);assert len(evidence)==1
+     assert set(evidence[0]['axioms'])<=set(['propext','Classical.choice','Quot.sound'])
+-    source=Path(recovered['source']);source.write_text(source.read_text()+'\n--changed\n')
++    source=Path(recovered['source'])
++    source.write_text(source.read_text(encoding='utf-8')+'\n--changed\n',encoding='utf-8')
+     with pytest.raises(CandidateError):register_checked(attempts,recovered)
+ 
+-def test_native_missing_executable_is_unknown_and_retryable(tmp_path):
+-    missing=run_owned(ROOT,[str(STAGE/'missing-Lean.exe')],ROOT/'formal',tmp_path/'missing',1)
++def test_native_missing_executable_is_unknown_and_retryable(proof_out):
++    missing=run_owned(ROOT,[str(STAGE/'missing-Lean.exe')],ROOT/'formal',proof_out/'missing',1)
+     assert missing['exit_code']==2 and missing['status']=='permission_or_setup_unknown' and not missing['executed']
+ 
+ def test_duplicate_target_rejected_before_execution(tmp_path):
+

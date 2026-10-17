@@ -1,0 +1,9 @@
+{
+  "candidate": "artifacts\\formal\\candidates\\SitesODE-a38b048f\\SitesODE.lean",
+  "module": "formal\\Naheng\\Chemistry\\SitesODE.lean",
+  "candidate_sha256": "1748d9f5b08c23e1ebe51409ab5b13933dae28304707b286a0ee73de6eca51bd",
+  "module_sha256": "62eb96c4c3e1d2f479372972552eae83a00526db5040ee0364ba3481575e976a",
+  "status": "source_published_pending_formal_build",
+  "checked": false,
+  "proof_text_unchanged": true
+}

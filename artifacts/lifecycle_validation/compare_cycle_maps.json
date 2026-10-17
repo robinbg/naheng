@@ -1,0 +1,2164 @@
+{
+  "input": {
+    "cycles": 12,
+    "phase_duration_s": 2,
+    "current_A": [
+      0.2,
+      -0.2
+    ],
+    "hold_cycles": 6,
+    "budget": {
+      "occupancy_abs": 0.0001,
+      "sodium_abs_mol": 2e-08,
+      "temperature_abs_K": 0.001,
+      "electrical_energy_abs_J": 0.02,
+      "safety_factor": 4,
+      "audit_every_jumps": 2,
+      "retirement_margin": 0.01
+    }
+  },
+  "fine": {
+    "status": "right_censored",
+    "completed_cycles": 12,
+    "elapsed_s": 48.0,
+    "final_state": [
+      0.6250826070818941,
+      0.5623561159665852,
+      1.5978728473189406e-07,
+      0.024999999999999852,
+      298.1523074414942
+    ],
+    "electrical_energy_J": -0.20934513976373936,
+    "thermal_management_energy_J": 0.0,
+    "phases": [
+      {
+        "cycle": 0,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 0.0,
+        "state_after": [
+          0.6008792708198741,
+          0.5981620407579279,
+          6.716235440175824e-09,
+          0.02500414570786265,
+          298.1501006381187
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2746576367170994,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 0,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 2.0,
+        "state_after": [
+          0.6021862377785868,
+          0.5967189649277017,
+          1.3427235363363465e-08,
+          0.024999999999999984,
+          298.150200873836
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.291925177557326,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 4.0,
+        "state_after": [
+          0.603056322959607,
+          0.5948947854500387,
+          2.013302178058725e-08,
+          0.025004145707862628,
+          298.15030070876065
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2746885342435925,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 6.0,
+        "state_after": [
+          0.604354519331027,
+          0.5934648668015153,
+          2.6833615596785365e-08,
+          0.024999999999999956,
+          298.1504001444957
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2919885321615332,
+        "events": [],
+        "inventory_residual_mol": -6.938893903907228e-18
+      },
+      {
+        "cycle": 2,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 8.0,
+        "state_after": [
+          0.6052154964382691,
+          0.591654350729941,
+          3.352903863955232e-08,
+          0.025004145707862604,
+          298.15049918263696
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2747193902179768,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 2,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 10.0,
+        "state_after": [
+          0.6065049970393249,
+          0.5902374770270677,
+          4.021931163380418e-08,
+          0.02499999999999993,
+          298.1505978247746
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2920518130352767,
+        "events": [],
+        "inventory_residual_mol": 6.938893903907228e-18
+      },
+      {
+        "cycle": 3,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 12.0,
+        "state_after": [
+          0.607356942961363,
+          0.5884405090181061,
+          4.690445622531253e-08,
+          0.025004145707862576,
+          298.1506960724919
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2747502037908314,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 3,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 14.0,
+        "state_after": [
+          0.6086378219339175,
+          0.587036569037518,
+          5.3584492960576294e-08,
+          0.024999999999999894,
+          298.1507939273661
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2921150184376375,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 4,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 16.0,
+        "state_after": [
+          0.6094808128888702,
+          0.585253034753465,
+          6.025944330513666e-08,
+          0.025004145707862538,
+          298.150891390968
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2747809741177885,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 4,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 18.0,
+        "state_after": [
+          0.6107531437059828,
+          0.5838619182750926,
+          6.692932762866575e-08,
+          0.024999999999999842,
+          298.15098846486234
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2921781466365445,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 5,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 20.0,
+        "state_after": [
+          0.6115872552475076,
+          0.5820917043750259,
+          7.35941672180526e-08,
+          0.02500414570786249,
+          298.1510851506071
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2748117003596058,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 5,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 22.0,
+        "state_after": [
+          0.612851110719641,
+          0.5807133021727829,
+          8.025398226771829e-08,
+          0.02499999999999978,
+          298.1511814497548
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2922411959089326,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 6,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 24.0,
+        "state_after": [
+          0.6136764177428753,
+          0.5789562963036482,
+          8.690879388746389e-08,
+          0.025004145707862423,
+          298.1512773638509
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2748423816822452,
+        "events": [],
+        "inventory_residual_mol": -6.938893903907228e-18
+      },
+      {
+        "cycle": 6,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 26.0,
+        "state_after": [
+          0.6149318700240485,
+          0.5775905001362022,
+          9.355862209802071e-08,
+          0.024999999999999703,
+          298.1513728944354
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2923041645409041,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 7,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 28.0,
+        "state_after": [
+          0.6157484467714979,
+          0.5758465909239803,
+          1.00203487833652e-07,
+          0.025004145707862347,
+          298.15146804304146
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2748730172569447,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 7,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 30.0,
+        "state_after": [
+          0.6169955673653779,
+          0.5744932935255972,
+          1.0684341094294628e-07,
+          0.024999999999999745,
+          298.15156281119687
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.292367050827724,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 8,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 32.0,
+        "state_after": [
+          0.6178034874327529,
+          0.5727623705665483,
+          1.1347841218616531e-07,
+          0.02500414570786239,
+          298.1516572004227
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2749036062602936,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 8,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 34.0,
+        "state_after": [
+          0.61904234719872,
+          0.5714214656380386,
+          1.201085112412877e-07,
+          0.024999999999999807,
+          298.15175121223433
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2924298530745453,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 9,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 36.0,
+        "state_after": [
+          0.6198416835407211,
+          0.569703419490024,
+          1.2673372869609617e-07,
+          0.02500414570786245,
+          298.15184484814057
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2749341478743046,
+        "events": [],
+        "inventory_residual_mol": -6.938893903907228e-18
+      },
+      {
+        "cycle": 9,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 38.0,
+        "state_after": [
+          0.621072352699847,
+          0.5683748016897407,
+          1.3335408405947816e-07,
+          0.024999999999999842,
+          298.15193810964496
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2924925695958331,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 10,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 40.0,
+        "state_after": [
+          0.6218631776358987,
+          0.5666695238636213,
+          1.3996959774824638e-07,
+          0.025004145707862486,
+          298.15203099824424
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2749646412864826,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 10,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 42.0,
+        "state_after": [
+          0.6230857257768868,
+          0.5653530887985496,
+          1.4658028910370184e-07,
+          0.024999999999999852,
+          298.1521235154299
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2925551987158286,
+        "events": [],
+        "inventory_residual_mol": 0.0
+      },
+      {
+        "cycle": 11,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 44.0,
+        "state_after": [
+          0.62386811099682,
+          0.5636604717496604,
+          1.5318617837318254e-07,
+          0.0250041457078625,
+          298.1522156626867
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": 1.2749950856898966,
+        "events": [],
+        "inventory_residual_mol": 6.938893903907228e-18
+      },
+      {
+        "cycle": 11,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 46.0,
+        "state_after": [
+          0.6250826070818941,
+          0.5623561159665852,
+          1.5978728473189406e-07,
+          0.024999999999999852,
+          298.1523074414942
+        ],
+        "thermal_electric_energy_J": 0.0,
+        "cycle_count": 1,
+        "execution_mode": "exact_integration",
+        "elapsed_s": 2.0,
+        "energy_J": -1.2926177387687152,
+        "events": [],
+        "inventory_residual_mol": -6.938893903907228e-18
+      }
+    ],
+    "trace": [
+      {
+        "cycle": 0,
+        "time_s": 0.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8631826483095,
+              "capacity_lower_bound_C": 1717.8631826483095,
+              "capacity_Ah": 0.4771842174023082,
+              "elapsed_s": 1717.8631826483095,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8631826483095,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 6.938893903907228e-18,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 1.0
+          }
+        ],
+        "state": [
+          0.6,
+          0.6,
+          0.0,
+          0.025,
+          298.15
+        ]
+      },
+      {
+        "cycle": 1,
+        "time_s": 4.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8619524411372,
+              "capacity_lower_bound_C": 1717.8619524411372,
+              "capacity_Ah": 0.47718387567809367,
+              "elapsed_s": 1717.8619524411372,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8619524411372,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": -2.0816681711721685e-17,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999992838736026
+          }
+        ],
+        "state": [
+          0.6021862377785868,
+          0.5967189649277017,
+          1.3427235363363465e-08,
+          0.024999999999999984,
+          298.150200873836
+        ]
+      },
+      {
+        "cycle": 2,
+        "time_s": 8.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8607241447176,
+              "capacity_lower_bound_C": 1717.8607241447176,
+              "capacity_Ah": 0.4771835344846438,
+              "elapsed_s": 1717.8607241447176,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8607241447176,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": -6.938893903907228e-18,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999985688594897
+          }
+        ],
+        "state": [
+          0.604354519331027,
+          0.5934648668015153,
+          2.6833615596785365e-08,
+          0.024999999999999956,
+          298.1504001444957
+        ]
+      },
+      {
+        "cycle": 3,
+        "time_s": 12.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8594977433886,
+              "capacity_lower_bound_C": 1717.8594977433886,
+              "capacity_Ah": 0.47718319381760793,
+              "elapsed_s": 1717.8594977433886,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8594977433886,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": -6.938893903907228e-18,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999978549485442
+          }
+        ],
+        "state": [
+          0.6065049970393249,
+          0.5902374770270677,
+          4.021931163380418e-08,
+          0.02499999999999993,
+          298.1505978247746
+        ]
+      },
+      {
+        "cycle": 4,
+        "time_s": 16.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.858273221624,
+              "capacity_lower_bound_C": 1717.858273221624,
+              "capacity_Ah": 0.4771828536726733,
+              "elapsed_s": 1717.858273221624,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.858273221624,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 1.3877787807814457e-17,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999971421317279
+          }
+        ],
+        "state": [
+          0.6086378219339175,
+          0.587036569037518,
+          5.3584492960576294e-08,
+          0.024999999999999894,
+          298.1507939273661
+        ]
+      },
+      {
+        "cycle": 5,
+        "time_s": 20.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8570505640255,
+              "capacity_lower_bound_C": 1717.8570505640255,
+              "capacity_Ah": 0.4771825140455626,
+              "elapsed_s": 1717.8570505640255,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8570505640255,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 1.3877787807814457e-17,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999964304000774
+          }
+        ],
+        "state": [
+          0.6107531437059828,
+          0.5838619182750926,
+          6.692932762866575e-08,
+          0.024999999999999842,
+          298.15098846486234
+        ]
+      },
+      {
+        "cycle": 6,
+        "time_s": 24.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8558297553268,
+              "capacity_lower_bound_C": 1717.8558297553268,
+              "capacity_Ah": 0.47718217493203524,
+              "elapsed_s": 1717.8558297553268,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8558297553268,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": -6.938893903907228e-18,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999957197447056
+          }
+        ],
+        "state": [
+          0.612851110719641,
+          0.5807133021727829,
+          8.025398226771829e-08,
+          0.02499999999999978,
+          298.1511814497548
+        ]
+      },
+      {
+        "cycle": 7,
+        "time_s": 28.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8546107803895,
+              "capacity_lower_bound_C": 1717.8546107803895,
+              "capacity_Ah": 0.47718183632788597,
+              "elapsed_s": 1717.8546107803895,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8546107803895,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 0.0,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999950101568003
+          }
+        ],
+        "state": [
+          0.6149318700240485,
+          0.5775905001362022,
+          9.355862209802071e-08,
+          0.024999999999999703,
+          298.1513728944354
+        ]
+      },
+      {
+        "cycle": 8,
+        "time_s": 32.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8533936242059,
+              "capacity_lower_bound_C": 1717.8533936242059,
+              "capacity_Ah": 0.47718149822894607,
+              "elapsed_s": 1717.8533936242059,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8533936242059,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 0.0,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999943016276253
+          }
+        ],
+        "state": [
+          0.6169955673653779,
+          0.5744932935255972,
+          1.0684341094294628e-07,
+          0.024999999999999745,
+          298.15156281119687
+        ]
+      },
+      {
+        "cycle": 9,
+        "time_s": 36.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8521782718913,
+              "capacity_lower_bound_C": 1717.8521782718913,
+              "capacity_Ah": 0.4771811606310809,
+              "elapsed_s": 1717.8521782718913,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8521782718913,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": -1.3877787807814457e-17,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999935941485159
+          }
+        ],
+        "state": [
+          0.61904234719872,
+          0.5714214656380386,
+          1.201085112412877e-07,
+          0.024999999999999807,
+          298.15175121223433
+        ]
+      },
+      {
+        "cycle": 10,
+        "time_s": 40.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8509647086896,
+              "capacity_lower_bound_C": 1717.8509647086896,
+              "capacity_Ah": 0.47718082353019153,
+              "elapsed_s": 1717.8509647086896,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8509647086896,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 0.0,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999928877108821
+          }
+        ],
+        "state": [
+          0.621072352699847,
+          0.5683748016897407,
+          1.3335408405947816e-07,
+          0.024999999999999842,
+          298.15193810964496
+        ]
+      },
+      {
+        "cycle": 11,
+        "time_s": 44.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8497529199697,
+              "capacity_lower_bound_C": 1717.8497529199697,
+              "capacity_Ah": 0.4771804869222138,
+              "elapsed_s": 1717.8497529199697,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8497529199697,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 1.3877787807814457e-17,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999921823062072
+          }
+        ],
+        "state": [
+          0.6230857257768868,
+          0.5653530887985496,
+          1.4658028910370184e-07,
+          0.024999999999999852,
+          298.1521235154299
+        ]
+      },
+      {
+        "cycle": 12,
+        "time_s": 48.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8485428912209,
+              "capacity_lower_bound_C": 1717.8485428912209,
+              "capacity_Ah": 0.47718015080311693,
+              "elapsed_s": 1717.8485428912209,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8485428912209,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 1.3877787807814457e-17,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999914779260441
+          }
+        ],
+        "state": [
+          0.6250826070818941,
+          0.5623561159665852,
+          1.5978728473189406e-07,
+          0.024999999999999852,
+          298.1523074414942
+        ]
+      }
+    ],
+    "maintenance": [],
+    "replacement_count": 0,
+    "retirement_interval_s": null,
+    "retirement_records": [],
+    "cell_age_s": [
+      48.0
+    ],
+    "retirement_detection": "protocol_checkpoints",
+    "jump_checks": [],
+    "retirement_interval_kind": "detection_interval_in_numerical_trajectory; macro_error_not_a_certified_RUL_time_bound",
+    "exact_phase_ledger": [
+      {
+        "cycle_start": 0,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2746576367170994,
+        "exported_energy_J": 1.2746576367170994,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0622146972642495e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0622146972642495e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 0,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.291925177557326,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.291925177557326,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.383021573155525e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.383021573155525e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 1,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2746885342435925,
+        "exported_energy_J": 1.2746885342435925,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0622404452029937e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0622404452029937e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 1,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2919885321615332,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2919885321615332,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.383285550673055e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.383285550673055e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 2,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2747193902179768,
+        "exported_energy_J": 1.2747193902179768,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0622661585149806e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0622661585149806e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 2,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2920518130352767,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2920518130352767,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.3835492209803195e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.3835492209803195e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 3,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2747502037908314,
+        "exported_energy_J": 1.2747502037908314,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0622918364923594e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0622918364923594e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 3,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2921150184376375,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2921150184376375,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.3838125768234894e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.3838125768234894e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 4,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2747809741177885,
+        "exported_energy_J": 1.2747809741177885,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0623174784314904e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0623174784314904e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 4,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2921781466365445,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2921781466365445,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.384075610985602e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.384075610985602e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 5,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2748117003596058,
+        "exported_energy_J": 1.2748117003596058,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0623430836330048e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0623430836330048e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 5,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2922411959089326,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2922411959089326,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.3843383162872194e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.3843383162872194e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 6,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2748423816822452,
+        "exported_energy_J": 1.2748423816822452,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.062368651401871e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.062368651401871e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 6,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2923041645409041,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2923041645409041,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.3846006855871e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.3846006855871e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 7,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2748730172569447,
+        "exported_energy_J": 1.2748730172569447,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0623941810474539e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0623941810474539e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 7,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.292367050827724,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.292367050827724,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.384862711782183e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.384862711782183e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 8,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2749036062602936,
+        "exported_energy_J": 1.2749036062602936,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.062419671883578e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.062419671883578e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 8,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2924298530745453,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2924298530745453,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.385124387810605e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.385124387810605e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 9,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2749341478743046,
+        "exported_energy_J": 1.2749341478743046,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0624451232285872e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0624451232285872e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 9,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2924925695958331,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2924925695958331,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.385385706649305e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.385385706649305e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 10,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2749646412864826,
+        "exported_energy_J": 1.2749646412864826,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0624705344054021e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0624705344054021e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 10,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2925551987158286,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2925551987158286,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.3856466613159526e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.3856466613159526e-08,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 11,
+        "cycle_count": 1,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 1.2749950856898966,
+        "exported_energy_J": 1.2749950856898966,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 1.0624959047415806e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 1.0624959047415806e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 11,
+        "cycle_count": 1,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -1.2926177387687152,
+        "exported_energy_J": 0,
+        "imported_energy_J": 1.2926177387687152,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 5.385907244869647e-08,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -5.385907244869647e-08,
+        "cash_error_estimate": 0.0
+      }
+    ],
+    "macro_projected_ledger": [],
+    "numerical": {
+      "state_error_estimate": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "energy_error_estimate_J": 0.0,
+      "budget": {
+        "occupancy_abs": 0.0001,
+        "sodium_abs_mol": 2e-08,
+        "temperature_abs_K": 0.001,
+        "electrical_energy_abs_J": 0.02,
+        "safety_factor": 4,
+        "audit_every_jumps": 2,
+        "retirement_margin": 0.01
+      },
+      "strict_error_certificate": false,
+      "accepted_jumps": 0,
+      "fine_cycles_avoided": 0,
+      "error_scope": "local_calibration_and_periodic_audits; estimates are not mathematical global bounds"
+    },
+    "economics": {
+      "source_id": "synthetic-lifecycle-accounting-v1",
+      "assumptions": {
+        "buy_price_per_kWh": 0.15,
+        "sell_price_per_kWh": 0.3,
+        "replacement_cost_per_cell": 100,
+        "salvage_fraction_of_cost_per_soh": 0.1,
+        "stored_energy_value_per_kWh": 0.15,
+        "source_id": "synthetic-lifecycle-accounting-v1"
+      },
+      "exact_phase_totals": {
+        "energy_J": -0.20934513976373936,
+        "sales": 1.2748267766247552e-06,
+        "purchases": 6.461361024692001e-07,
+        "thermal_cost": 0.0,
+        "net_cashflow": 6.286906741555551e-07,
+        "cash_error_estimate": 0.0
+      },
+      "macro_projected_totals": {
+        "energy_J": 0,
+        "sales": 0,
+        "purchases": 0,
+        "thermal_cost": 0,
+        "net_cashflow": 0,
+        "cash_error_estimate": 0
+      },
+      "maintenance_net_cashflow": 0,
+      "initial_asset_residual": 10.0,
+      "final_asset_residual": 9.999914779260443,
+      "asset_residual_adjustment": -8.522073955674614e-05,
+      "initial_stored_energy_probe": {
+        "status": "computed",
+        "energy_J": 3119.916591804789,
+        "lower_bound_J": 3119.916591804789,
+        "elapsed_s": 1042.770550534777,
+        "events": [
+          {
+            "name": "voltage_low",
+            "time_s": 1042.770550534777,
+            "value": 2.8,
+            "limit": 2.8,
+            "direction": "exit"
+          }
+        ],
+        "effective_cutoffs_V": [
+          2.8
+        ],
+        "counterfactual_valuation_only": true
+      },
+      "final_stored_energy_probe": {
+        "status": "computed",
+        "energy_J": 3118.8459912332423,
+        "lower_bound_J": 3118.8459912332423,
+        "elapsed_s": 1042.7257400732387,
+        "events": [
+          {
+            "name": "voltage_low",
+            "time_s": 1042.7257400732387,
+            "value": 2.8,
+            "limit": 2.8,
+            "direction": "exit"
+          }
+        ],
+        "effective_cutoffs_V": [
+          2.8
+        ],
+        "counterfactual_valuation_only": true
+      },
+      "stored_energy_value_adjustment": -4.460835714777052e-08,
+      "conditional_comparison_value": -8.463665724001146e-05,
+      "terminal_probe_energy_in_operating_sales": false,
+      "valuation_is_realized_revenue": false,
+      "scope": "synthetic accounting fixture; macro values are projected; no real tariff or revenue advantage validation"
+    },
+    "walltime_s": 15.799053299997468,
+    "wall_budget_s": 120,
+    "final_protocol_diagnostics": [
+      {
+        "protocol": {
+          "status": "computed",
+          "capacity_C": 1717.8485428912209,
+          "capacity_lower_bound_C": 1717.8485428912209,
+          "capacity_Ah": 0.47718015080311693,
+          "elapsed_s": 1717.8485428912209,
+          "events": [
+            {
+              "name": "voltage_low",
+              "time_s": 1717.8485428912209,
+              "value": 2.8,
+              "limit": 2.8,
+              "direction": "exit"
+            }
+          ],
+          "inventory_residual_mol": 1.3877787807814457e-17,
+          "protocol_id": "synthetic_capacity_v1",
+          "provenance_type": "synthetic",
+          "initialization_assumption": "trapped_accessibility_v1",
+          "uncalibrated": true
+        },
+        "pristine_capacity_C": 1717.8631826483095,
+        "soh": 0.9999914779260441
+      }
+    ],
+    "provenance_type": "synthetic",
+    "accelerated_synthetic": false,
+    "uncalibrated": true,
+    "topology": "single_cell"
+  },
+  "macro": {
+    "status": "right_censored",
+    "completed_cycles": 12,
+    "elapsed_s": 48.0,
+    "final_state": [
+      0.6250768554464582,
+      0.5623647442265428,
+      1.597808290755733e-07,
+      0.025000000000001053,
+      298.15230695661074
+    ],
+    "electrical_energy_J": -0.20934562240298327,
+    "thermal_management_energy_J": 0.0,
+    "phases": [
+      {
+        "cycle": 0,
+        "cycle_count": 6,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 0.0,
+        "cycle_period_s": 4,
+        "phase_offset_s": 0,
+        "elapsed_s": 12,
+        "energy_J": 7.648408439446895,
+        "events": [],
+        "inventory_residual_mol": null,
+        "thermal_electric_energy_J": 0.0,
+        "execution_mode": "cycle_map_jump",
+        "aggregation": "same_phase_across_cycles",
+        "energy_error_estimate_J": 0
+      },
+      {
+        "cycle": 0,
+        "cycle_count": 6,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 2.0,
+        "cycle_period_s": 4,
+        "phase_offset_s": 2,
+        "elapsed_s": 12,
+        "energy_J": -7.752499883737251,
+        "events": [],
+        "inventory_residual_mol": null,
+        "thermal_electric_energy_J": 0.0,
+        "execution_mode": "cycle_map_jump",
+        "aggregation": "same_phase_across_cycles",
+        "energy_error_estimate_J": 0
+      },
+      {
+        "cycle": 6,
+        "cycle_count": 6,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": 0.2,
+        "start_s": 24.0,
+        "cycle_period_s": 4,
+        "phase_offset_s": 0,
+        "elapsed_s": 12,
+        "energy_J": 7.6495135577785796,
+        "events": [],
+        "inventory_residual_mol": null,
+        "thermal_electric_energy_J": 0.0,
+        "execution_mode": "cycle_map_jump",
+        "aggregation": "same_phase_across_cycles",
+        "energy_error_estimate_J": 3.7256129026275175e-06
+      },
+      {
+        "cycle": 6,
+        "cycle_count": 6,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "current_A": -0.2,
+        "start_s": 26.0,
+        "cycle_period_s": 4,
+        "phase_offset_s": 2,
+        "elapsed_s": 12,
+        "energy_J": -7.754767735891207,
+        "events": [],
+        "inventory_residual_mol": null,
+        "thermal_electric_energy_J": 0.0,
+        "execution_mode": "cycle_map_jump",
+        "aggregation": "same_phase_across_cycles",
+        "energy_error_estimate_J": 6.723004073450056e-06
+      }
+    ],
+    "trace": [
+      {
+        "cycle": 0,
+        "time_s": 0.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8631826483095,
+              "capacity_lower_bound_C": 1717.8631826483095,
+              "capacity_Ah": 0.4771842174023082,
+              "elapsed_s": 1717.8631826483095,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8631826483095,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": 6.938893903907228e-18,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 1.0
+          }
+        ],
+        "state": [
+          0.6,
+          0.6,
+          0.0,
+          0.025,
+          298.15
+        ]
+      },
+      {
+        "cycle": 6,
+        "time_s": 24.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.8558300665643,
+              "capacity_lower_bound_C": 1717.8558300665643,
+              "capacity_Ah": 0.4771821750184901,
+              "elapsed_s": 1717.8558300665643,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.8558300665643,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": -6.938893903907228e-18,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999957199258827
+          }
+        ],
+        "state": [
+          0.6128480832793214,
+          0.5807178437578887,
+          8.025058523105731e-08,
+          0.02499999999999974,
+          298.1511811953706
+        ]
+      },
+      {
+        "cycle": 12,
+        "time_s": 48.0,
+        "cells": [
+          {
+            "protocol": {
+              "status": "computed",
+              "capacity_C": 1717.84854348269,
+              "capacity_lower_bound_C": 1717.84854348269,
+              "capacity_Ah": 0.4771801509674139,
+              "elapsed_s": 1717.84854348269,
+              "events": [
+                {
+                  "name": "voltage_low",
+                  "time_s": 1717.84854348269,
+                  "value": 2.8,
+                  "limit": 2.8,
+                  "direction": "exit"
+                }
+              ],
+              "inventory_residual_mol": -2.7755575615628914e-17,
+              "protocol_id": "synthetic_capacity_v1",
+              "provenance_type": "synthetic",
+              "initialization_assumption": "trapped_accessibility_v1",
+              "uncalibrated": true
+            },
+            "pristine_capacity_C": 1717.8631826483095,
+            "soh": 0.9999914782703493
+          }
+        ],
+        "state": [
+          0.6250768554464582,
+          0.5623647442265428,
+          1.597808290755733e-07,
+          0.025000000000001053,
+          298.15230695661074
+        ]
+      }
+    ],
+    "maintenance": [],
+    "replacement_count": 0,
+    "retirement_interval_s": null,
+    "retirement_records": [],
+    "cell_age_s": [
+      48.0
+    ],
+    "retirement_detection": "protocol_checkpoints",
+    "jump_checks": [
+      {
+        "requested_cycles": 6,
+        "calibration_cycles": 3,
+        "audit_performed": true,
+        "evidence_category": "validated_numerics",
+        "strict_error_certificate": false,
+        "execution_mode": "cycle_map_jump",
+        "accepted": true,
+        "state_error_estimate": [
+          1.2190560363833924e-05,
+          1.8287549854889562e-05,
+          1.3681788506117408e-11,
+          7.66053886991358e-15,
+          1.0236656901780435e-06
+        ],
+        "energy_error_estimate_J": 9.22260580793477e-06,
+        "phase_energy_error_estimate_J": [
+          3.324168709184505e-06,
+          5.898437098750264e-06
+        ],
+        "inventory_residual_mol": [
+          -6.938893903907228e-17
+        ],
+        "reference_cycles": 6,
+        "audited_state_error": [
+          3.027440319658403e-06,
+          4.541585105766188e-06,
+          3.3970366609765344e-12,
+          3.8163916471489756e-17,
+          2.5438419015699765e-07
+        ],
+        "audited_energy_error_J": 6.569167145809018e-07,
+        "reason": null,
+        "actual_advanced_cycles": 6,
+        "fine_cycles_evaluated": 6,
+        "unintegrated_cycles": 0,
+        "predicted_state": [
+          0.6128480832793214,
+          0.5807178437578887,
+          8.025058523105731e-08,
+          0.02499999999999974,
+          298.1511811953706
+        ],
+        "reference_state": [
+          0.612851110719641,
+          0.5807133021727829,
+          8.025398226771829e-08,
+          0.02499999999999978,
+          298.1511814497548
+        ],
+        "cycle_start": 0,
+        "time_start_s": 0.0
+      },
+      {
+        "requested_cycles": 6,
+        "calibration_cycles": 3,
+        "audit_performed": false,
+        "evidence_category": "validated_numerics",
+        "strict_error_certificate": false,
+        "execution_mode": "cycle_map_jump",
+        "accepted": true,
+        "state_error_estimate": [
+          1.1556556261282935e-05,
+          1.7336457920791304e-05,
+          1.3002368678867934e-11,
+          1.459943277382081e-14,
+          9.755761578297988e-07
+        ],
+        "energy_error_estimate_J": 1.0448616976077574e-05,
+        "phase_energy_error_estimate_J": [
+          3.7256129026275175e-06,
+          6.723004073450056e-06
+        ],
+        "inventory_residual_mol": [
+          3.469446951953614e-17
+        ],
+        "reason": null,
+        "actual_advanced_cycles": 6,
+        "fine_cycles_evaluated": 3,
+        "unintegrated_cycles": 3,
+        "predicted_state": [
+          0.6250768554464582,
+          0.5623647442265428,
+          1.597808290755733e-07,
+          0.025000000000001053,
+          298.15230695661074
+        ],
+        "reference_state": null,
+        "cycle_start": 6,
+        "time_start_s": 24.0
+      }
+    ],
+    "retirement_interval_kind": "detection_interval_in_numerical_trajectory; macro_error_not_a_certified_RUL_time_bound",
+    "exact_phase_ledger": [],
+    "macro_projected_ledger": [
+      {
+        "cycle_start": 0,
+        "cycle_count": 6,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 7.648408439446895,
+        "exported_energy_J": 7.648408439446895,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 6.373673699539079e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": 6.373673699539079e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 0,
+        "cycle_count": 6,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -7.752499883737251,
+        "exported_energy_J": 0,
+        "imported_energy_J": 7.752499883737251,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 3.230208284890521e-07,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 0,
+        "currency": "CNY",
+        "net_cashflow": -3.230208284890521e-07,
+        "cash_error_estimate": 0.0
+      },
+      {
+        "cycle_start": 6,
+        "cycle_count": 6,
+        "phase": "discharge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": 7.6495135577785796,
+        "exported_energy_J": 7.6495135577785796,
+        "imported_energy_J": 0,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 6.374594631482149e-07,
+        "purchases": 0.0,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 3.7256129026275175e-06,
+        "currency": "CNY",
+        "net_cashflow": 6.374594631482149e-07,
+        "cash_error_estimate": 3.104677418856265e-13
+      },
+      {
+        "cycle_start": 6,
+        "cycle_count": 6,
+        "phase": "charge",
+        "policy_id": "synthetic-cycle-v1",
+        "energy_J": -7.754767735891207,
+        "exported_energy_J": 0,
+        "imported_energy_J": 7.754767735891207,
+        "thermal_electric_energy_J": 0.0,
+        "sales": 0.0,
+        "purchases": 3.2311532232880027e-07,
+        "thermal_cost": 0.0,
+        "source_id": "synthetic-lifecycle-accounting-v1",
+        "provenance_type": "synthetic",
+        "energy_error_estimate_J": 6.723004073450056e-06,
+        "currency": "CNY",
+        "net_cashflow": -3.2311532232880027e-07,
+        "cash_error_estimate": 5.602503394541713e-13
+      }
+    ],
+    "numerical": {
+      "state_error_estimate": [
+        2.374711662511686e-05,
+        3.5624007775680866e-05,
+        2.668415718498534e-11,
+        2.225997164373439e-14,
+        1.9992418480078423e-06
+      ],
+      "energy_error_estimate_J": 1.9671222784012343e-05,
+      "budget": {
+        "occupancy_abs": 0.0001,
+        "sodium_abs_mol": 2e-08,
+        "temperature_abs_K": 0.001,
+        "electrical_energy_abs_J": 0.02,
+        "safety_factor": 4,
+        "audit_every_jumps": 2,
+        "retirement_margin": 0.01
+      },
+      "strict_error_certificate": false,
+      "accepted_jumps": 2,
+      "fine_cycles_avoided": 3,
+      "error_scope": "local_calibration_and_periodic_audits; estimates are not mathematical global bounds"
+    },
+    "economics": {
+      "source_id": "synthetic-lifecycle-accounting-v1",
+      "assumptions": {
+        "buy_price_per_kWh": 0.15,
+        "sell_price_per_kWh": 0.3,
+        "replacement_cost_per_cell": 100,
+        "salvage_fraction_of_cost_per_soh": 0.1,
+        "stored_energy_value_per_kWh": 0.15,
+        "source_id": "synthetic-lifecycle-accounting-v1"
+      },
+      "exact_phase_totals": {
+        "energy_J": 0,
+        "sales": 0,
+        "purchases": 0,
+        "thermal_cost": 0,
+        "net_cashflow": 0,
+        "cash_error_estimate": 0
+      },
+      "macro_projected_totals": {
+        "energy_J": -0.20934562240298327,
+        "sales": 1.2748268331021228e-06,
+        "purchases": 6.461361508178523e-07,
+        "thermal_cost": 0.0,
+        "net_cashflow": 6.286906822842705e-07,
+        "cash_error_estimate": 8.707180813397978e-13
+      },
+      "maintenance_net_cashflow": 0,
+      "initial_asset_residual": 10.0,
+      "final_asset_residual": 9.999914782703494,
+      "asset_residual_adjustment": -8.521729650645682e-05,
+      "initial_stored_energy_probe": {
+        "status": "computed",
+        "energy_J": 3119.916591804789,
+        "lower_bound_J": 3119.916591804789,
+        "elapsed_s": 1042.770550534777,
+        "events": [
+          {
+            "name": "voltage_low",
+            "time_s": 1042.770550534777,
+            "value": 2.8,
+            "limit": 2.8,
+            "direction": "exit"
+          }
+        ],
+        "effective_cutoffs_V": [
+          2.8
+        ],
+        "counterfactual_valuation_only": true
+      },
+      "final_stored_energy_probe": {
+        "status": "computed",
+        "energy_J": 3118.8462287620355,
+        "lower_bound_J": 3118.8462287620355,
+        "elapsed_s": 1042.7257472428485,
+        "events": [
+          {
+            "name": "voltage_low",
+            "time_s": 1042.7257472428485,
+            "value": 2.8,
+            "limit": 2.8,
+            "direction": "exit"
+          }
+        ],
+        "effective_cutoffs_V": [
+          2.8
+        ],
+        "counterfactual_valuation_only": true
+      },
+      "stored_energy_value_adjustment": -4.459846011472261e-08,
+      "conditional_comparison_value": -8.46332042847564e-05,
+      "terminal_probe_energy_in_operating_sales": false,
+      "valuation_is_realized_revenue": false,
+      "scope": "synthetic accounting fixture; macro values are projected; no real tariff or revenue advantage validation"
+    },
+    "walltime_s": 5.600348400010262,
+    "wall_budget_s": 120,
+    "final_protocol_diagnostics": [
+      {
+        "protocol": {
+          "status": "computed",
+          "capacity_C": 1717.84854348269,
+          "capacity_lower_bound_C": 1717.84854348269,
+          "capacity_Ah": 0.4771801509674139,
+          "elapsed_s": 1717.84854348269,
+          "events": [
+            {
+              "name": "voltage_low",
+              "time_s": 1717.84854348269,
+              "value": 2.8,
+              "limit": 2.8,
+              "direction": "exit"
+            }
+          ],
+          "inventory_residual_mol": -2.7755575615628914e-17,
+          "protocol_id": "synthetic_capacity_v1",
+          "provenance_type": "synthetic",
+          "initialization_assumption": "trapped_accessibility_v1",
+          "uncalibrated": true
+        },
+        "pristine_capacity_C": 1717.8631826483095,
+        "soh": 0.9999914782703493
+      }
+    ],
+    "provenance_type": "synthetic",
+    "accelerated_synthetic": false,
+    "uncalibrated": true,
+    "topology": "single_cell"
+  },
+  "difference": {
+    "state_absolute": [
+      5.751635435924385e-06,
+      8.628259957621509e-06,
+      6.4556563207689795e-12,
+      1.2004286453759505e-15,
+      4.848834578297101e-07
+    ],
+    "electrical_energy_absolute_J": 4.82639243903904e-07
+  },
+  "source_sha256": {
+    "src/naheng/lifecycle/runner.py": "71936d86a544e933c292ecf127c8008a110c78e91c2e3f2b5943ed6cbe3c4098",
+    "src/naheng/simulation/module.py": "2eb5334f3c1b3222f0265f8ddbc2a0dca8e7ea8e168b387885edaf0d4cd5758c"
+  }
+}

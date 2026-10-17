@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T15:51:06.816383+00:00",
+  "task_id": "A02",
+  "status": "in_progress",
+  "required_acceptance_and_contracts_unchanged": true,
+  "actual_start_receipt": "artifacts/validation/F05-original178-native-and-independent-core-task-close-0a6e1f16/command.json",
+  "actual_exit_code": 0,
+  "scientific_acceptance_complete": false
+}

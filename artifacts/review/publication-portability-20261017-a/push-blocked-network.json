@@ -1,0 +1,17 @@
+{
+  "event": "github_push_blocked_by_network",
+  "utc": "2026-10-17T04:31:14.809535+00:00",
+  "remote": "https://github.com/robinbg/naheng.git",
+  "repo_created_on_github": true,
+  "repo_visibility": "public",
+  "local_commit": "26347b2",
+  "local_branch": "main",
+  "local_files": 822,
+  "attempts": 5,
+  "error": "Failed to connect to github.com port 443 after ~21100 ms",
+  "connectivity_probe": "curl https://github.com -> 000 / timed out after 15s",
+  "prior_art": "2026-10-10 mathlib \u4f9d\u8d56\u521d\u59cb\u5316\u540c\u6837\u8bb0\u5f55 Git 443 \u8fde\u63a5\u5931\u8d25",
+  "not_done": "no infinite retry, no proxy/VPN bypass, per AGENTS.md",
+  "next_command": "cd D:/naheng-opensource && git push -u origin main",
+  "scope": "push only; repo contents complete and verified locally"
+}

@@ -1,0 +1,158 @@
+{
+  "utc": "2026-10-16T05:05:07.939348+00:00",
+  "exit_code": 0,
+  "code_hash": "13063d277fdfdebad27928ce85404bb63e57bd31b23fbe354912c440dbf183f0",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-public-original-eight-real-isolated-Lean-f83d2adf/command.json": {
+      "sha256": "35aaa4f4f961d2326c6386ba2ed4b55052490189d640c374d56097a8d2aec9e7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_discovery_loop.py",
+        "tests/integration/test_proof_worker_isolation.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "artifacts/test-temp/a02-public-20261016-c"
+      ],
+      "wall_s": 645.9854841999986,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a02-public-independent-20261016-c/run-c17232dac1b2/command.json": {
+      "sha256": "b4e3a9ca967e9f9c8eaf06f22702f6b750c613624358f971f88cbd696144af0f",
+      "exit_code": 0,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\artifacts\\review\\a02-public-independent-20261016-c\\review_original_eight.py"
+      ],
+      "wall_s": 1.5503900999974576,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-public-actual-40-declaration-loop-247757a9/command.json": {
+      "sha256": "beba622b6d56d1e1ee64e0f90c4d38f5e6458d80c9004eb7d34ff89301a8a7f1",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_public_discovery_loop_20261016.py"
+      ],
+      "wall_s": 639.2336693999969,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/discovery/public-loop-0180982d14/loop/revised-attempts/proof-report.json": {
+      "sha256": "db8a4982faefe67175a1d1d5007b5fe9252269b59e853dd2743ff6284759aafb"
+    },
+    "artifacts/validation/P02-public-original-eight-real-lifecycle-8a6a1498/command.json": {
+      "sha256": "75bef9e5684b8dcf0341b696a9d7eadc547c7b8eb9025c613505da2d353ed541",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_reduction_runtime_link.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "artifacts/test-temp/p02-public-20261016-c"
+      ],
+      "wall_s": 21.05976290000399,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/P02-public-affected-forecast-runtime-regression-10a7ee66/command.json": {
+      "sha256": "bcbde3d7e4462084b68cb3a20dfaa163ce943b618e1216d650ac1eb849a146ad",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_forecast_jobs.py",
+        "tests/integration/test_lifecycle_feedback.py",
+        "tests/integration/test_api_flow.py",
+        "tests/integration/test_evidence_in_runtime.py",
+        "tests/integration/test_runtime_binding.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "<HOST_TEMP_ROOT>"
+      ],
+      "wall_s": 71.6402511999986,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/p02-unverified-fallback-20261016-c/handoff.json": {
+      "sha256": "1e898c292aaad0ec6ef4867c53be70bfbcd96e65d73b9a4b88a244f97c03d97f"
+    },
+    "artifacts/review/p02-unverified-fallback-root-1c5b3bd2/report.json": {
+      "sha256": "f19b652ec11d379a4c8ae6a7f191b0366f32c0194d96bba1b6cf1acb56c5d9b1"
+    },
+    "artifacts/validation/P02-independent-authority-history-correct-receipt-reader-c24d0947/command.json": {
+      "sha256": "d020c87a84fc5c62c32fb1025435866ec83a1371447897921479ae31ac338b94",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/review_p02_unverified_fallback_20261016.py"
+      ],
+      "wall_s": 6.119826999994984,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/W01-current1306-browser-record-corroboration-3abcc57c/command.json": {
+      "sha256": "b6c1093b9c9fb19508836a7bb3a9ebae2b035763f8f47a293b89a95f6398215b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/capture_current_ui_records_20261016.py"
+      ],
+      "wall_s": 0.5205092999967746,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/proof-current-1306-20261016-c/final-root-browser-observations.json": {
+      "sha256": "879cad653ddd006a91e0a1c7ebe24153ecefa796ebfdcb666fc72e248ae62b8e"
+    },
+    "artifacts/handoff/a03-public-policy-20261016-c/manifest.json": {
+      "sha256": "5bbb30ff6cf783ba3acab80220d3b8cfa9ffb2600f572a46a057fcaf2615d94e"
+    },
+    "artifacts/handoff/a03-public-policy-20261016-c/seal.json": {
+      "sha256": "1d76774211aa3fd06ac574e5ffc04c3ebfa146ce543f13d8acb89a02bbcd5794"
+    },
+    "artifacts/review/a03-full-policy-root-20261016-c/report.json": {
+      "sha256": "8341f1b6af81ec6252f6836ad9fb4dcb1f30af2d0279dc3996040ce9c3384ce1"
+    },
+    "artifacts/validation/A03-nine-policy-independent-root-tests-and-actual-loop-3c1ee977/command.json": {
+      "sha256": "caf1990fa73ad403042306660dc276ea15fbd0292de95e879bae7abc23e2ea20",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/review_a03_full_policy_20261016.py"
+      ],
+      "wall_s": 45.29345319999993,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/p03-runtime-integration-20261016-d/handoff.json": {
+      "sha256": "4fafc65ac44b60eba730e7d2db4607fe9b675bff09b3be4dba85395942e35b5b"
+    },
+    "artifacts/review/p03-runtime-d-independent-20261016-c/handoff.json": {
+      "sha256": "ef6aa17d9519c80e12de49d47319a9dcc076d9d95ca4961ba152ce0294bce83f"
+    }
+  },
+  "full_acceptance_complete": false
+}

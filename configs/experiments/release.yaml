@@ -1,0 +1,200 @@
+schema_version: 1
+protocol_id: naheng-joint-experiments-release
+revision: 3
+supersedes:
+  path: artifacts/handoff/x01-preregistration-20261016-c/evidence/release-final/registration.json
+  sha256: 6c00151fe08f303e1809c6a59092c10de0f73e41e4aa595684638faabea7055a
+profile: release
+purpose: Freeze E-T/E-A/E-L design before results; absent scientific prerequisites
+  forbid execution
+common:
+  observations:
+  - voltage_V
+  - current_A
+  - temperature_K
+  - timestamp_s
+  evaluator_only:
+  - reference_internal_state
+  - reference_future
+  - event_labels
+  tuning_roles:
+  - train
+  - validation
+  seed_blocks:
+    train:
+      start: 2026101000
+      count: 12
+    validation:
+      start: 2026101100
+      count: 12
+    test:
+      start: 2026102000
+      count: 561
+  budget:
+    offline_data_rows: 1000000
+    fit_calls: 36
+    initial_queries: 12
+    adaptive_queries: 24
+    high_fidelity_queries: 24
+    proof_attempts: 40
+    single_call_timeout_s: 120
+    memory_limit_bytes: 8589934592
+    batch_wall_s: 1800
+    online_deadline_s: 20.0
+  common_initial_terminal_task: true
+  paired_scenarios: true
+  world_inputs_immutable: true
+  optimization_event_probability_budget: 0.05
+baselines:
+- id: B0
+  definition: Tuned rule/fixed-margin frontier using train/validation, same full outputs
+    and task; enumerate every kind=rules entry from tuning_ref and retain validation
+    frontier
+  tuned_frontier: true
+  runner: null
+  tuning_ref:
+    path: configs/experiments/fixed-baseline-frontier-v2.json
+    sha256: ed3100e13dff68a973a83c52a06277353cf310f46388c477816efcd8e0ca0f57
+- id: B1
+  definition: Learned predictor without mechanism, same policy interface and observation
+    budget
+  tuned_frontier: true
+  runner: null
+- id: B2
+  definition: Mechanistic point estimate and nominal MPC
+  tuned_frontier: true
+  runner: null
+- id: B3
+  definition: Robust/scenario MPC with common information and physical limits
+  tuned_frontier: true
+  runner: null
+- id: B4
+  definition: Full posterior plus constrained BO/MPC; posterior numerical performance
+    evaluated, not assumed calibrated
+  tuned_frontier: true
+  runner: null
+- id: B5
+  definition: B4 plus empirical boundary active learning and mismatch management
+  tuned_frontier: true
+  runner: null
+- id: B6
+  definition: Full chemical packages, AI reduction and evidence propagation
+  tuned_frontier: true
+  runner: null
+theory_methods:
+- manual_conditions
+- classical_aggregation
+- random_enumeration
+- learned_without_counterexamples
+- counterexample_without_learning
+- full_feedback
+linkage_ablations:
+- L0
+- L1
+- L2
+- L3
+- L4
+- L5
+- L6
+- badge_only_negative_control
+suites:
+- id: E-T
+  hypothesis: Measure valid nontrivial general-family definitions, conditions, replayable
+    counterexamples and checked evidence cost; novelty is classified separately
+  primary_metrics:
+  - applicable_domain_coverage
+  - checked_theorem_rate
+  - heldout_model_family_generalization
+  secondary_metrics:
+  - unknown_rate
+  - counterexample_replay_rate
+  - solver_total_time_s
+  - candidate_count
+  - complexity
+  - downstream_value
+  - known_vs_new_result_identity
+  runner: null
+- id: E-A
+  hypothesis: Compare complete operational tasks under matched observation, task and
+    budgets without presuming benefit
+  primary_metrics:
+  - trajectory_event_risk_upper_bound
+  - actual_net_cashflow_distribution
+  - conditional_RUL_error_and_censoring
+  secondary_metrics:
+  - protocol_SOC_SOH_error
+  - interval_coverage_width
+  - alarm_lead_time
+  - false_alarm_and_miss_rate
+  - unserved_energy_J
+  - refusal_and_numerical_failure_rate
+  - module_heterogeneity
+  - lifecycle_cost
+  - online_latency_s
+  - high_fidelity_query_count
+  runner: null
+- id: E-L
+  hypothesis: Separate actual domain/error/state/withdrawal changes from evidence-badge
+    presentation
+  primary_metrics:
+  - action_and_model_change_trace
+  - invalid_admission_rate
+  - badge_only_exact_trajectory_equality
+  secondary_metrics:
+  - prediction_interval_width
+  - net_cashflow
+  - latency_s
+  - query_cost
+  - evidence_ids
+  - conservatism
+  - failure_or_no_advantage_case
+  runner: null
+data:
+  public_manifest:
+    path: data/splits/zenodo13836819-eight-provenance-20261013-c.json
+    sha256: c86f34c674f77fe7972f614ad1b88d0cf37531dc51d457479b17b4f837a4b539
+  theory_family_manifest: null
+  physical_mapping: null
+  independent_risk_queue: null
+statistics:
+  family_alpha: 0.05
+  allocation: bonferroni
+  risk_target: 0.01
+  events:
+  - voltage_limit
+  - temperature_limit
+  claim_small_risk: true
+  sampling_unit: independent_complete_trajectory
+  stopping_rule: fixed_before_test_no_optional_stopping
+failures:
+  include_all_requested: true
+  statuses:
+  - numerical_failure
+  - timeout
+  - cancelled
+  - out_of_domain
+  - refused
+  - interrupted
+  - incomplete
+  policy: retain_denominator_report_separately_and_count_unknown_as_event_in_sensitivity
+  retry_policy: same_identity_no_new_independent_sample
+censoring:
+  policy: retain_last_observed_time_and_right_censor_without_imputed_event
+  capacity_protocol_required: true
+  conditional_future_policy_required: true
+economics:
+  currency: CNY
+  energy_unit: J
+  terms:
+  - purchase
+  - sale
+  - thermal_management
+  - maintenance
+  - replacement
+  - residual_value
+  - unserved_energy
+  - early_exit
+  scope: actual_executed_flows_only
+  shadow_price_booked_as_cash: false
+  unsupported_services_enabled: false
+  common_terminal_rule: same_initial_inventory_terminal_inventory_capacity_remaining_life_and_early_exit_accounting

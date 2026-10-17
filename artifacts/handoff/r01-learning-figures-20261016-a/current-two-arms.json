@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "frozen_A03_learning_ledgers",
+  "arms": [
+    {
+      "id": "learned-9593",
+      "label": "Learned / fixed synthetic world / observed ledger only",
+      "strategy": "learned",
+      "files": {
+        "protocol": {
+          "path": "artifacts/optimization/public-9593-20261016-c/protocol.json",
+          "sha256": "85e6c1ccc8ee2f7262cd98ca89184d2b9e3ce9bc5e508e2ad333af3fccfab276"
+        },
+        "checkpoint": {
+          "path": "artifacts/optimization/public-9593-20261016-c/checkpoint.json",
+          "sha256": "a52a9d3ee2ef9007101d9a9c8cb9d25a292974941ade587c17cee7be8e16b1c1"
+        },
+        "result": {
+          "path": "artifacts/optimization/public-9593-20261016-c/result.json",
+          "sha256": "8d546fb447f3bb4b085beac99784becbce70c40771a8d98fbdc695aa60a3e821"
+        },
+        "receipt": {
+          "path": "artifacts/validation/A03-public-9593-original36-25caf3b6/command.json",
+          "sha256": "8023bc377ec2d250e57d7cc7e574886604dfcc165018e286218047c530058d19"
+        }
+      }
+    },
+    {
+      "id": "random-9593",
+      "label": "Random / fixed synthetic world / observed ledger only",
+      "strategy": "random",
+      "files": {
+        "protocol": {
+          "path": "artifacts/full-policy-random-6fc49921be/protocol.json",
+          "sha256": "945d7fa0e2fb508fffc6738d6545eb188653040e27c23fe55de646465f701614"
+        },
+        "checkpoint": {
+          "path": "artifacts/full-policy-random-6fc49921be/checkpoint.json",
+          "sha256": "40dc0b9b4a7f249e90b1fdf52154954a8a7f871253305100d5c1cf5d886d84db"
+        },
+        "result": {
+          "path": "artifacts/full-policy-random-6fc49921be/result.json",
+          "sha256": "39842f31081984557f63db38b06c890a480bb646a466524303043142f9f3389a"
+        },
+        "receipt": {
+          "path": "artifacts/validation/A03-9593-random-original36-5e5cb7d9/command.json",
+          "sha256": "d352219c52de026fe2936eac44642c26d52ea53d900da07469079c683a966fb0"
+        },
+        "stdout": {
+          "path": "artifacts/validation/A03-9593-random-original36-5e5cb7d9/stdout.log",
+          "sha256": "409e34d764de4102b126276ee28f8f4efd344856ebe50cf726d46bf4c2d406b9"
+        }
+      }
+    }
+  ]
+}

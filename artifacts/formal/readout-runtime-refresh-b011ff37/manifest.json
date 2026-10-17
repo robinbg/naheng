@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "checks": [
+    {
+      "suite": "foundation",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/readout-runtime-refresh-b011ff37/foundation/manifest.json"
+    },
+    {
+      "suite": "reduction_residual",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/readout-runtime-refresh-b011ff37/reduction_residual/manifest.json"
+    }
+  ],
+  "scope": "Actual unchanged existing proof suites freshly rebuilt/audited; no new targets or full core/T3 grant"
+}

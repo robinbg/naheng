@@ -1,0 +1,282 @@
+{
+  "tool": "probe_a03_label_determinism_20261016.py",
+  "sealed_input": {
+    "arm": "artifacts/full-policy-uncertainty-6ecf182273",
+    "ordinal": 6,
+    "fidelity": "low",
+    "candidate_id": "fba7c09c6506d37dd7463973757a8b276fc2ee38e712376ff22b4a3f92666a26",
+    "reservation_id": "2712a7384b1d41799ba6cd04656d3c7c",
+    "timeout_s": 120.0,
+    "parameters": {
+      "charge_high_A": 0.01098846907731266,
+      "charge_low_A": 0.010497756578732163,
+      "cooling_permission_W": 0.012440302990900449,
+      "cutoff_voltage_V": 3.376529148572846,
+      "discharge_high_A": 0.012107811767047564,
+      "discharge_low_A": 0.00906165071588393,
+      "heating_permission_W": 0.013572133538912639,
+      "max_dod": 0.00028971112098613995,
+      "rest_duration_s": 3.1920249010625046
+    }
+  },
+  "calibration_packet": "artifacts/calibration/a03-determinism-ed6606f3ad",
+  "calibration_packet_built_for_current_source": null,
+  "repetitions": 5,
+  "distinct_statuses": [
+    "completed"
+  ],
+  "distinct_plan_step_sequences": [
+    "[[\"feasible\", 24, 128], [\"feasible\", 24, 128], [\"feasible\", 24, 128], [\"feasible\", 24, 128]]"
+  ],
+  "distinct_completed_utilities": [
+    "3.0302705698157835e-09"
+  ],
+  "distinct_completed_margins": [
+    "-1e-12"
+  ],
+  "plan_steps_per_repetition": [
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "every_repetition_reached_the_planner": true,
+  "label_determined_by_candidate": true,
+  "worker_wall_s_observed": {
+    "min": 1.3028338000003714,
+    "max": 2.280528300005244,
+    "declared_wall_backstop_s": 25.0
+  },
+  "rows": [
+    {
+      "repetition": 0,
+      "status": "completed",
+      "reason": null,
+      "utility": 3.0302705698157835e-09,
+      "constraint_margin": -1e-12,
+      "measured_cost_s": 46.15208640000492,
+      "reported_cost_s": 45.93742869999551,
+      "case_status": "completed",
+      "completed_sensor_replans": 4,
+      "plans": [
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.4174740000016754,
+          "plan_wall_s": 7.417438900010893,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.330504600002314,
+          "plan_wall_s": 6.802153099997668,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.4790784000069834,
+          "plan_wall_s": 7.472381299987319,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.3564592000038829,
+          "plan_wall_s": 7.479411000007531,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "repetition": 1,
+      "status": "completed",
+      "reason": null,
+      "utility": 3.0302705698157835e-09,
+      "constraint_margin": -1e-12,
+      "measured_cost_s": 39.34637539999676,
+      "reported_cost_s": 39.16134959999181,
+      "case_status": "completed",
+      "completed_sensor_replans": 4,
+      "plans": [
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.4297761999914655,
+          "plan_wall_s": 7.44360549999692,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.4379806999932043,
+          "plan_wall_s": 6.955885500006843,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.7658443999971496,
+          "plan_wall_s": 7.88491160000558,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.5281171999959042,
+          "plan_wall_s": 8.559459700001753,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "repetition": 2,
+      "status": "completed",
+      "reason": null,
+      "utility": 3.0302705698157835e-09,
+      "constraint_margin": -1e-12,
+      "measured_cost_s": 40.74271079999744,
+      "reported_cost_s": 40.50143960000423,
+      "case_status": "completed",
+      "completed_sensor_replans": 4,
+      "plans": [
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.5431972999940626,
+          "plan_wall_s": 7.46125929999107,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.801150699990103,
+          "plan_wall_s": 7.698379300010856,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.7937177999992855,
+          "plan_wall_s": 8.34355289999803,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.3028338000003714,
+          "plan_wall_s": 7.990205599999172,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "repetition": 3,
+      "status": "completed",
+      "reason": null,
+      "utility": 3.0302705698157835e-09,
+      "constraint_margin": -1e-12,
+      "measured_cost_s": 35.950274599992554,
+      "reported_cost_s": 35.65757310000481,
+      "case_status": "completed",
+      "completed_sensor_replans": 4,
+      "plans": [
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.32860319998872,
+          "plan_wall_s": 6.830683499996667,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.6254880000051344,
+          "plan_wall_s": 6.866053799996735,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.4985912999982247,
+          "plan_wall_s": 7.502877700011595,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.4705929000047036,
+          "plan_wall_s": 7.098458899999969,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "repetition": 4,
+      "status": "completed",
+      "reason": null,
+      "utility": 3.0302705698157835e-09,
+      "constraint_margin": -1e-12,
+      "measured_cost_s": 45.657260699998005,
+      "reported_cost_s": 45.43232500000158,
+      "case_status": "completed",
+      "completed_sensor_replans": 4,
+      "plans": [
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 2.1246996999980183,
+          "plan_wall_s": 9.35942160000559,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.432291199991596,
+          "plan_wall_s": 7.972195199996349,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 2.280528300005244,
+          "plan_wall_s": 9.909499699992011,
+          "timed_out": false
+        },
+        {
+          "plan_status": "feasible",
+          "candidate_evaluations": 24,
+          "completed_integrations": 128,
+          "worker_wall_s": 1.7162034999928437,
+          "plan_wall_s": 9.547191899997415,
+          "timed_out": false
+        }
+      ]
+    }
+  ],
+  "scope": "repeated execution of one sealed synthetic training candidate",
+  "scientific_N_added": 0,
+  "risk_certificate": false,
+  "invented_labels": 0
+}

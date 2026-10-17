@@ -1,0 +1,20 @@
+{
+  "scanned_after_all_generated_files": true,
+  "residual_host_paths": 0,
+  "residuals": [],
+  "byte_exact_registry_pinned_files": [],
+  "byte_exact_rationale": "These receipts are pinned by SHA256 in data/manifests/sources.yaml and validate_new_source refuses to run when a byte differs. They are published unmodified so a reader can verify the frozen data-integration chain; the host paths inside them are historical provenance records, not configuration.",
+  "exempt_files": {
+    "tools/build_publication_bundle.py": "defines the prefix-rewriting rules it applies",
+    "tools/check_portability.py": "defines the host-path pattern it searches for",
+    "tools/normalize_fixture_host_paths_20261017.py": "counts occurrences of the username pattern it removes",
+    "tools/repin_proof_backend_portability_20261017.py": "defines the host-path pattern it verifies against"
+  },
+  "exempt_path_prefixes": [
+    "docs/STATUS.md",
+    "docs/PROGRESS_REPORT_",
+    "PLANS.md"
+  ],
+  "exemption_rationale": "only the tools that define or apply these patterns, and the gitignored host-location config, may name them; the derived manifest and index redact the identifier",
+  "note": "this file is written after the scan and contains only counts and repository-relative paths"
+}

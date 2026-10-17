@@ -1,0 +1,13 @@
+{
+  "code_hash": "95932c3d3d0ea0edec56106bf3150f39929cdc1795b824c195e8f023324c2455",
+  "review_sha256": "3d608cb0fa81e441cf408f405f72f76c1825a64ea3da4ce19ecff20dca4eb15b",
+  "candidate_sha256": "5647096f426e8c5eb5e9104938e46d761abfbc95d38b65af6faeb8c2e0de4a17",
+  "active_record": "artifacts\\ui\\acceptance.json",
+  "original_gate": {
+    "status": "passed",
+    "exit_code": 0,
+    "scope": "UI evidence record only; not scientific or release validation",
+    "record": "<PROJECT_ROOT>\\artifacts\\ui\\acceptance.json"
+  },
+  "scope": "Real root workbench GUI only; no old delivery promotion, no scientific or release completion"
+}

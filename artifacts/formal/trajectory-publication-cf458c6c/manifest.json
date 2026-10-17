@@ -1,0 +1,21 @@
+{
+  "exit_code": 1,
+  "checks": [
+    {
+      "suite": "reduction_trajectory",
+      "exit_code": 1,
+      "manifest": "artifacts/formal/trajectory-publication-cf458c6c/reduction_trajectory/manifest.json"
+    },
+    {
+      "suite": "reduction_residual",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/trajectory-publication-cf458c6c/reduction_residual/manifest.json"
+    },
+    {
+      "suite": "foundation",
+      "exit_code": 1,
+      "manifest": "artifacts/formal/trajectory-publication-cf458c6c/foundation/manifest.json"
+    }
+  ],
+  "full_core_complete": false
+}

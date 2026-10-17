@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "task_id": "D01",
+  "source_id": "rwth_sodium_gassing_987579",
+  "source_url": "https://publications.rwth-aachen.de/record/987579",
+  "doi": "10.18154/RWTH-2024-05745",
+  "registered_on": "2026-10-10",
+  "verification_status": "blocked",
+  "status_note": "CSV importer and identity-level split tests passed; no raw public measurement member was obtained.",
+  "chemistry_id": "public_rwth_sodium_1p2Ah_18650_987579",
+  "chemistry_identity": {
+    "family": "sodium_ion",
+    "format": "18650",
+    "nominal_capacity_Ah": 1.2,
+    "electrode_materials": null,
+    "manufacturer": null,
+    "scope": "Institution ReadMe describes the commercial-cell dataset; selected-member identity remains unverified."
+  },
+  "license_id": "CC-BY-4.0",
+  "license_evidence_url": "https://publications.rwth-aachen.de/record/987579",
+  "license_terms_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_evidence_sha256": null,
+  "license_verification": "Institution metadata currently read through web tool; authenticated raw export unavailable to CLI.",
+  "archive_url": "https://publications.rwth-aachen.de/record/987579/files/Data_Failure_Mode_and_Degradation_Analysis_of_a_Commercial_Sodium-Ion_Battery_With_Severe_Gassing_Issue.zip",
+  "archive_size_reported": "3.44 GB",
+  "archive_size_source_url": "https://publications.rwth-aachen.de/record/987579/files/",
+  "archive_size_bytes": null,
+  "archive_sha256": null,
+  "raw_sha256": null,
+  "raw_artifact": null,
+  "selected_member": null,
+  "downloaded_measurement_bytes": 0,
+  "observed_fields": null,
+  "current_sign": null,
+  "current_sign_evidence": null,
+  "units": null,
+  "cell_identity": null,
+  "trajectory_identity": null,
+  "batch_identity": null,
+  "data_role": "stress_dataset_candidate_not_operational_incident_population",
+  "frozen_split": null,
+  "download_budget_bytes": 104857600,
+  "attempts": [
+    {
+      "command_record": "artifacts/data/rwth_download_attempt1_command.json",
+      "audit": "artifacts/data/rwth_987579_attempt1/download_audit.json",
+      "exit_code": 2,
+      "received_bytes": 0,
+      "reason": "Python certificate issuer verification failed; TLS verification was not disabled."
+    },
+    {
+      "command_record": "artifacts/data/rwth_download_attempt2_command.json",
+      "audit": "artifacts/data/rwth_987579_attempt2/download_audit.json",
+      "exit_code": 2,
+      "received_bytes": 992,
+      "reason": "Windows default verified TLS succeeded, but HTTP 200 responses were identical 248-byte JavaScript challenge HTML, including PDF/XML endpoints. These are rejected responses, not dataset files."
+    }
+  ],
+  "implementation_evidence": "artifacts/data/D01_import_split_bound_command.json",
+  "implementation_scope": [
+    "Explicit source/license registry binding",
+    "Raw-byte SHA-256 validation",
+    "Explicit supplier-current sign and unit conversion",
+    "Strict per-trajectory increasing time",
+    "Missing temperature remains unknown",
+    "Immutable whole-cell/batch splits",
+    "Bounded 206/Content-Range/byte-count ZIP reader"
+  ],
+  "blocked_acceptance": [
+    "Authenticated licensed source-byte artifacts",
+    "A real complete measurement member and CRC/SHA-256",
+    "Actual observed units and vendor current-sign evidence",
+    "Physical cell/trajectory/batch identity audit",
+    "Frozen real-data held-out split"
+  ],
+  "external_validation": "not_performed; D02 additionally depends on reference model and calibrated estimation",
+  "historical_record_scope": "Existing top-level RWTH fields preserve their original blocked attempt; current verified member intake is referenced by current_cohort",
+  "current_cohort": {
+    "source_id": "zenodo13836819_sodium_soc_original_members",
+    "cohort_id": "zenodo13836819_eight_complete_member_provenance_candidate",
+    "kind": "public_measurement",
+    "engineering_status": "accepted_original_D01_engineering_scope",
+    "frozen_split_ref": {
+      "path": "data/splits/zenodo13836819-eight-provenance-20261013-c.json",
+      "sha256": "c86f34c674f77fe7972f614ad1b88d0cf37531dc51d457479b17b4f837a4b539"
+    },
+    "catalog_ref": {
+      "path": "artifacts/review/data-integration-D01-next-slice-20261013-a/catalog-proposal.json",
+      "sha256": "974c6879675465e97085635fdb77f2acedb0dbe714632a4433af4f4a5c86628a"
+    },
+    "policy_ref": {
+      "path": "artifacts/review/data-integration-D01-next-slice-20261013-a/policy-proposal.json",
+      "sha256": "de3c1fcc4633097f4013378e5ed6f8566201b4581993f1b00f625d87d5f1a566"
+    },
+    "source_registry_refs": [
+      {
+        "path": "data/manifests/sources.yaml",
+        "sha256": "b41c746c7514aabb28e443cf78a63c7137fc5a5025856fc7b949aab62a37740f"
+      },
+      {
+        "path": "data/manifests/additional-unit-view-bat1-20261013-a.json",
+        "sha256": "904d14e82e2e71f80a661ac82616e7f2db164a71243613709eb69979f624ac21"
+      },
+      {
+        "path": "data/manifests/pending-zenodo13836819-bat1-20261013-a.json",
+        "sha256": "152bd5748eef8838e5198ba3446bf050d813a13f37b7b104ab2dfaecfbc11b44"
+      }
+    ],
+    "license_id": "CC-BY-4.0",
+    "license_metadata_ref": {
+      "path": "artifacts/data/public_independent/zenodo13836819-670b8554/metadata.json.attempt1",
+      "sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706"
+    },
+    "public_full_freeze_command": {
+      "path": "artifacts/validation/D01-current-first-policy-locked-full-member-freeze-42256f2c/command.json",
+      "sha256": "346bf2c219dd691f6b2546a7215ada93be47fa55ccf6e3b655efa538c88e29af"
+    },
+    "public_full_reopen_command": {
+      "path": "artifacts/validation/D01-final-reopen-after-space-851d2015/command.json",
+      "sha256": "050a72c82327f22c0a080cc3c2522cd5a1d39f414d86d14ffeddd20a0439629f"
+    },
+    "tests_command": {
+      "path": "artifacts/validation/D01-first-frozen-policy-role-lock-tests-6a030d3c/command.json",
+      "sha256": "ed23273a3a6a08b8d8fe34915b89977421438914c316381a6dd943ac63ed264c"
+    },
+    "independent_method_metadata_review": {
+      "path": "artifacts/review/partition-current-independent-20261013-a/policy_locked/report.json",
+      "sha256": "fd7424a6e1bb7ed527a03bb7cbb20edf6ade288c549bde0906bd6c1f4bb34c41"
+    },
+    "independent_method_review_scope": "88 tiny-method and real metadata checks; zero independent real numeric rows, explicitly stubbed payload hashes",
+    "prior_full_member_acceptance_refs": [
+      {
+        "kind": "old7_author_public_entry_handoff",
+        "path": "artifacts/review/data-integration-zenodo-public-handoff-20261013-g/handoff.json",
+        "sha256": "9ce56f1fd42bb7b8408fdf43c2d98f91d7ee3693c221c1206a7d6cd05ded481b"
+      },
+      {
+        "kind": "old7_independent_member_acceptance",
+        "path": "artifacts/review/data-integration-zenodo-independent-20261013-b/report.json",
+        "sha256": "6ceab8185737cc5b14a3bdaece96cd1687ee96ac9fb7d0b0e48c42f7aa8dbe43"
+      },
+      {
+        "kind": "old7_actual_public_CLI",
+        "path": "artifacts\\review\\data-integration-zenodo-public-12-command-20261013-h\\command.json",
+        "sha256": "5d792f3bb63eaf039a647a139a7f38592f06ca728f9a130b31c30b22db004dfd"
+      },
+      {
+        "kind": "old7_actual_public_CLI",
+        "path": "artifacts\\review\\data-integration-zenodo-public-3-command-20261013-h\\command.json",
+        "sha256": "3414b82ff0c3f8c1df535f32e99a6dfc0cdae7ef2a1a52e057fc3ec34f5f3705"
+      },
+      {
+        "kind": "old7_actual_public_CLI",
+        "path": "artifacts\\review\\data-integration-zenodo-public-4-command-20261013-h\\command.json",
+        "sha256": "a2f4e09f07c277166175b85b4db342830668db7bfe7eb754a10a2e4ad24f7f63"
+      },
+      {
+        "kind": "old7_actual_public_CLI",
+        "path": "artifacts\\review\\data-integration-zenodo-public-5-command-20261013-h\\command.json",
+        "sha256": "4b79e479cb745d8bdb5e812c2893d550bf85e90f58f40cf76e093570bfbe966b"
+      },
+      {
+        "kind": "old7_actual_public_CLI",
+        "path": "artifacts\\review\\data-integration-zenodo-public-6-command-20261013-h\\command.json",
+        "sha256": "1dabbca14543899f47f54a4bb24cb94d89886ba3c5919b6fc24cd16b3749df06"
+      },
+      {
+        "kind": "old7_actual_public_CLI",
+        "path": "artifacts\\review\\data-integration-zenodo-public-7-command-20261013-i\\command.json",
+        "sha256": "b32b3dc9162c90094a706829c6dfacbb21b2810517e401bc0efa3a3d918f9a17"
+      },
+      {
+        "kind": "supplement_public_entry_acceptance",
+        "path": "artifacts/data/public_independent/unitview-audit-zenodo13836819-bat1-public-20261013-a/manifest.json",
+        "sha256": "fd937683393777a3d44b63949de0540608d553eb84a8325f769fe6ff3b8cba63"
+      },
+      {
+        "kind": "supplement_public_entry_command",
+        "path": "artifacts/validation/D01-public-additional-member-full-row-entry-635b5f34/command.json",
+        "sha256": "8ca3f375b71b0def5ee93bfd9e4e5125715eff4e041fdae53acb9e9da7a9b790"
+      },
+      {
+        "kind": "supplement_independent_unitview_review",
+        "path": "artifacts/review/zenodo-additional-unitview-independent-20261013/report.json",
+        "sha256": "3e17237ff1841dc107bf8a3fd2b4c5b4a766b4025db1465d2ba6125e18f0e41d"
+      },
+      {
+        "kind": "supplement_independent_public_identity_review",
+        "path": "artifacts/review/additional-public-byteidentity-20261013-7ebf36d0/report-recovered.json",
+        "sha256": "aef2017ef7a3a8598c61c7e2f1fc2b33c0ec3435fdc4d430d8fbc8683100f7cc"
+      },
+      {
+        "kind": "supplement_independent_public_review_command",
+        "path": "artifacts/validation/D01-independent-public-additional-byteidentity-recovered-c1874697/command.json",
+        "sha256": "6b81b3225153c9707f7931fceb374c28e0b685361a1f848e918e6a8462bd1605"
+      }
+    ],
+    "raw_member_count": 8,
+    "unique_raw_content_count": 7,
+    "original_row_count": 1240278,
+    "role_row_counts": {
+      "test": 131664,
+      "train": 776011,
+      "validation": 332603
+    },
+    "leakage_component_count": 3,
+    "identity_status": "author_provenance_only",
+    "physical_independence_status": "UNKNOWN",
+    "confirmed_independent_physical_cells": null,
+    "production_batch_identity": "UNKNOWN",
+    "IID": "UNKNOWN",
+    "archive_md5_status": "UNKNOWN",
+    "same_chemistry_parameter_validation": false,
+    "strict_protocol_heldout": false,
+    "strict_temperature_heldout": false,
+    "model_fits": 0,
+    "D02_complete": false,
+    "scope": "Licensed complete members, units/source identity and immutable complete provenance-component transfer partition; no external model or operating population acceptance",
+    "original_scope_acceptance_ref": {
+      "path": "artifacts/review/d01-final-original-scope-20261014-a/runs/5c0f636e/result/report.json",
+      "sha256": "682801e654ddb8bd3711a88fca68ef1428eaeaed27800e0ac2ea3e6410d4987b"
+    },
+    "D01_engineering_complete": true
+  }
+}

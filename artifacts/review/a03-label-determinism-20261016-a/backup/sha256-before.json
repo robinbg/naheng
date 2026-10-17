@@ -1,0 +1,12 @@
+{
+  "src/naheng/learning/policy_space.py": {
+    "sha256_before": "c4cec28bfee935ca9434ddead67e2b7aeb8d289aac1e4cb7abff736771208abd",
+    "bytes": 5511,
+    "backup": "artifacts/review/a03-label-determinism-20261016-a/backup/policy_space.py"
+  },
+  "src/naheng/learning/strategy_mpc.py": {
+    "sha256_before": "66c5b1049272e2c0ea1d9cd90bb83286eabd3c75689a166468174d0efd89efd5",
+    "bytes": 30843,
+    "backup": "artifacts/review/a03-label-determinism-20261016-a/backup/strategy_mpc.py"
+  }
+}

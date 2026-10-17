@@ -1,0 +1,35 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "tools/start_ready_a03_20261016.py"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "executed": true,
+  "timeout_s": 60,
+  "memory_limit_bytes": 8589934592,
+  "memory_limit_enforced": true,
+  "is_code_execution_sandbox": false,
+  "cleanup_errors": [],
+  "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+  "owned_pid": 1772,
+  "owned_final_tree_stop": {
+    "method": "windows_job_object",
+    "exit_code": 0
+  },
+  "owned_active_processes_after_cleanup": 0,
+  "owned_job_handle_closed": true,
+  "native_exit_code": 0,
+  "wall_s": 0.7992535999946995,
+  "resource_cleanup_confirmed": true,
+  "status": "completed",
+  "utc": "2026-10-16T06:15:09.551551+00:00",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "tools/start_ready_a03_20261016.py"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-original-dependencies-start-record-19b480aa\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-original-dependencies-start-record-19b480aa\\stderr.log",
+  "native_status": "passed"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "seed": 20261014,
+  "profile": "finite_affine_sites_v1",
+  "max_sites": 16,
+  "max_expression_nodes": 32,
+  "max_expression_depth": 5,
+  "single_evaluation_wall_s": 1,
+  "worker_hard_timeout_s": 120,
+  "memory_limit_gib": 8,
+  "candidate_selector": "fixed_enumeration_baseline_not_A01_learning",
+  "train_n_sites": [2,3,4],
+  "validation_n_sites": [5,6],
+  "test_n_sites": [7,8],
+  "variants_per_structural_family": 2,
+  "test_allowed_for_search_or_training": false,
+  "kernel_checked": false
+}

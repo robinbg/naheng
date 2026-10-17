@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T11:36:37.366715+00:00",
+  "counts": {
+    "done": 28,
+    "in_progress": 4,
+    "todo": 13
+  },
+  "code_hash": "2e8b7cb195d918d99c19e4cb5e95edf22224556ebec35dce1f2109eb292dfbb0",
+  "original_requirements_and_gates_unchanged": true,
+  "full_project_completed": false
+}

@@ -1,0 +1,61 @@
+{
+  "suite": "foundation",
+  "status": "failed",
+  "exit_code": 1,
+  "checked": false,
+  "commands": [
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T02:07:32.907910+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 3.337,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\foundation-20261012-membership\\version.log"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "build",
+        "Naheng.Foundation"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T02:07:36.246651+00:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_s": 44.461,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\foundation-20261012-membership\\build.log"
+    }
+  ],
+  "evidence": [],
+  "reason": "Lean build failed or dependency cannot be fetched",
+  "generated_at_utc": "2026-10-12T02:07:32.903674+00:00",
+  "source_hashes": {
+    "Naheng\\Chemistry\\Balance.lean": "f32cda0a269dce17cf9024766e625a1076dff6e4ae2c3c740be84807aba533cb",
+    "Naheng\\Chemistry\\Reaction.lean": "8ba0704d3c64cb20a4256f5a71ef33a5f3c269cbc5c11bd34ecb8b940cf98f9e",
+    "Naheng\\Chemistry\\Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+    "Naheng\\Chemistry\\Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+    "Naheng\\Chemistry\\TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+    "Naheng\\Chemistry\\Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+    "Naheng\\Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+    "Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8"
+  },
+  "targets": [
+    "Naheng.Chemistry.element_stoichiometry_balanced",
+    "Naheng.Chemistry.charge_stoichiometry_balanced",
+    "Naheng.Chemistry.weighted_rate_from_ports",
+    "Naheng.Chemistry.element_rate_from_ports",
+    "Naheng.Chemistry.charge_rate_from_ports",
+    "Naheng.Chemistry.site_lower_boundary",
+    "Naheng.Chemistry.site_upper_boundary",
+    "Naheng.Chemistry.constant_rate_trajectory_invariant"
+  ],
+  "audit": null,
+  "toolchain_lock": "leanprover/lean4:v4.19.0",
+  "lean_version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)"
+}

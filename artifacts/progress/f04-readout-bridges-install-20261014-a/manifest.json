@@ -1,0 +1,42 @@
+{
+  "exit_code": 0,
+  "before_code_hash": "49fb58d301150676a2451e1e7adaa524e9dfe818c95d0def37d38021f5f751c3",
+  "after_code_hash": "56afa766f9b2f490ed610ee4aaacef6dc6caf152b90bc382cd1a3567985eb549",
+  "files": {
+    "formal/Naheng/Contracts/DerivedReadouts.lean": "1b46c2b66c27965145357c92e8c404afe80a384e18b6346bf6c9d95f25215fe3",
+    "formal/Naheng/Contracts/GroupTrapping.lean": "00be2652f83347d890572a385d0e0e0819649c009f24ae1b6dde372e3b829e7c",
+    "formal/Naheng/Contracts/TrappingCounterexample.lean": "530fc68c76d07037a4e7016ef0578efd75f3c252e5fb348154bc229ef27e8725",
+    "formal/Naheng/Contracts/SiteTrajectoryReadouts.lean": "6cae40ddaa83a488987141d07557abd4aedfccf23921289172335c4218e9a02d",
+    "formal/Naheng/Chemistry/ElectricalPorts.lean": "5c80804ea5514779b8c6404f13c3bca2ee960b5e1026873477d089fc75ed01d7"
+  },
+  "prior36_targets_retained": true,
+  "new_targets": [
+    "Naheng.Contracts.class_trapping_flux_error_from_class_amounts",
+    "Naheng.Contracts.cumulative_scalar_error_from_derivative_bound",
+    "Naheng.Contracts.cumulative_trapping_error_from_class_amounts",
+    "Naheng.Contracts.class_mask_amount",
+    "Naheng.Contracts.class_mask_source",
+    "Naheng.Contracts.damped_envelope_uniform_readout_budget",
+    "Naheng.Contracts.class_trajectory_error_from_site_reduction",
+    "Naheng.Contracts.finite_site_group_trajectory_to_cumulative_trapping",
+    "Naheng.Contracts.positive_shared_rate_different_trapping_coefficients",
+    "Naheng.Contracts.equal_total_trapping_example_actual_site_solutions",
+    "Naheng.Contracts.equal_total_trapping_example_actual_inventory_solutions",
+    "Naheng.Contracts.equal_total_trapping_example_strict_domain",
+    "Naheng.Contracts.equal_total_all_time_does_not_determine_cumulative_trapping",
+    "Naheng.Contracts.singleton_class_amount",
+    "Naheng.Contracts.singleton_group_trajectory_site_error",
+    "Naheng.Contracts.singleton_trajectory_to_primitive_voltage_error",
+    "Naheng.Chemistry.ElectricalPorts.positive_driven_reversible_fluxes",
+    "Naheng.Chemistry.ElectricalPorts.driven_local_detailed_balance",
+    "Naheng.Chemistry.ElectricalPorts.faraday_current_same_reversible_material_flux",
+    "Naheng.Chemistry.ElectricalPorts.electrical_power_matches_positive_discharge_sign",
+    "Naheng.Chemistry.ElectricalPorts.driven_electrical_and_material_supply_dissipation",
+    "Naheng.Chemistry.ElectricalPorts.free_energy_along_driven_solution_supply_dissipation",
+    "Naheng.Chemistry.ElectricalPorts.nonempty_nonequilibrium_electrical_port_witness"
+  ],
+  "new_contracts_target_count": 59,
+  "isolated_objects_or_traces_copied": false,
+  "public_native_gate_passed": false,
+  "candidate_manifest_sha256": "defd78b5580067d1bd4f5b4f3bdacfe279767ab5fa0ffde95425bade2c991457"
+}

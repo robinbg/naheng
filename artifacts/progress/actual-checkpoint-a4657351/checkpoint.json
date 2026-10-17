@@ -1,0 +1,166 @@
+{
+  "utc": "2026-10-15T12:00:06.159268+00:00",
+  "exit_code": 0,
+  "code_hash": "032a1197110f257f23cd664d6778430e8452fe1f1eddadb16252ce285471c388",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/X00-original-default-after-equivalent-performance-repair-896cbf0d/command.json": {
+      "sha256": "47caea1493c8b09afa91fff13dc180e624f18c38098b1071d5766ca5c29dc6b7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "-m",
+        "naheng.cli",
+        "demo",
+        "--scenario",
+        "acceptance_loop",
+        "--out",
+        "artifacts/demo"
+      ],
+      "wall_s": 40.848677099999804,
+      "timed_out": false
+    },
+    "artifacts/validation/X00-public-equivalent-performance-and-original-integration-b8bc22e7/command.json": {
+      "sha256": "0069fdd9835606f13c8c9cbef1acbb67dc16e5820454dd699d47e105dc4c9ab4",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/unit/test_site_model.py",
+        "tests/unit/test_thermal_balance.py",
+        "tests/integration/test_runtime_binding.py",
+        "tests/integration/test_reduction_rate_binding.py",
+        "tests/integration/test_acceptance_loop.py",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/x00-public-performance-20261015-a"
+      ],
+      "wall_s": 50.78500780000013,
+      "timed_out": false
+    },
+    "artifacts/review/x00-performance-independent-20261015-a/handoff.json": {
+      "sha256": "134c42b0e2cd7ccea33bf22cd6bf4762100ed584a67d02a764247cd2c8cd7410"
+    },
+    "artifacts/validation/X00-final-native-descendant-and-negative-cleanup-calibration-877b2ca4/command.json": {
+      "sha256": "3529e3ae9fbda162502d91c20886b198bcd7851447f1f76d9a41599b2b3108b1",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/integration/test_validation_process_tree.py",
+        "tests/unit/test_validation_setup_failures.py",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/x00-final-native-and-errors-20261015-a"
+      ],
+      "wall_s": 6.621075699999892,
+      "timed_out": false
+    },
+    "artifacts/validation/X00-actual-final-Job-child-exit-and-profile-code-controls-b3b5ff07/command.json": {
+      "sha256": "3d232f63b662e1ed11a9589c5f626ce3970fb83326c9e45d7768db6b63531e67",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/integration/test_validation_process_tree.py",
+        "tests/integration/test_acceptance_loop.py",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/x00-final-resource-controls-20261015-a"
+      ],
+      "wall_s": 26.04733929999975,
+      "timed_out": false
+    },
+    "artifacts/review/x00-resource-repair-20261015-a/handoff.json": {
+      "sha256": "62f0259a10ce5eb28405da0a72c06754034000ad4672eebb8f80fd6d056d0f43"
+    },
+    "artifacts/validation/X00-current-production-build-with-required-ancestor-read-98023a36/command.json": {
+      "sha256": "df58c983727d604450337175317633647e76851df7303104d67e8e53341f5981",
+      "exit_code": 0,
+      "argv": [
+        "npm.cmd",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "wall_s": 7.96974420000015,
+      "timed_out": false
+    },
+    "artifacts/ui/proof-current-c40a72af/task.json": {
+      "sha256": "0830b5c3ffcc661afbfa1a4a79252696e327302103836569bc1c03b7fa9149e9"
+    },
+    "artifacts/ui/proof-current-c40a72af/normal-run-identities.json": {
+      "sha256": "cfbb2ed9a925de32321eda4729d921266ba5f44f62c77118c5e4c5d454e1ae30"
+    },
+    "artifacts/ui/proof-current-c40a72af/routes.json": {
+      "sha256": "497a163462163fa8be153c130ec8d760bdad81c804a515aef765810510b069a1"
+    },
+    "artifacts/ui/proof-current-c40a72af/11-report-download.json": {
+      "sha256": "742cd751704aadd96cb05660ec5bd996739c48dc33125088fc2c2394fd512a8d"
+    },
+    "artifacts/ui/proof-current-c40a72af/12-report-opened.json": {
+      "sha256": "c1fd2b04163cc75d4e2fac8319f48c26acf20c477de90f31924ed061551526dc"
+    },
+    "artifacts/ui/proof-current-c40a72af/18-distinct-trajectories.json": {
+      "sha256": "8db937e8d213c04a37b976b09dcdd87192733446b0f720120c595244ab9f7481"
+    },
+    "artifacts/validation/A02-human-approved-same-p3-reviewed-r3-native-canary-db843d34/command.json": {
+      "sha256": "e185fbe76b573daa8cc8dec3e1e8c0ac4cc905c40652d743df4c7a3028e8a00a",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-isolation-feasibility-20261014-a/compatibility-20261015-a/native_probe.r3.py",
+        "--run",
+        "p3",
+        "--plan-sha256",
+        "7ce7ddc4b5aff81646c4b02b44902ca2c837fa755ff47c503acc305e31f0fe4e"
+      ],
+      "wall_s": 5.756192199999987,
+      "timed_out": false
+    },
+    "artifacts/handoff/a02-isolation-feasibility-20261014-a/compatibility-20261015-a/run.r3.json": {
+      "sha256": "96625e16e39cf8bf58e7c562a8d983ac77b5a61cc45f81a3700ef19770409f9d"
+    },
+    "artifacts/review/a02-canary-r3-pre-run-review-a/handoff.json": {
+      "sha256": "e896aaebd7d8fd838cf7bf3ff271396a9ad9d023798c8b4321de2c5e47125aaf"
+    },
+    "artifacts/review/a02-r3-actual-failure-20261015-a/handoff.json": {
+      "sha256": "51d42941d2c2e2b0776d899ecaa965c068dd435f3d659a47616b74aad2c2cb61"
+    },
+    "artifacts/handoff/a02-existing-linux-environment-20261015-a/manifest.json": {
+      "sha256": "f138a287547b7635e8d73ba9d1d122738816b69c77f75f8e471248dc105c2015"
+    },
+    "artifacts/handoff/d02-primary-mapping-research-20261015-a/manifest.json": {
+      "sha256": "de68cc448698fcde1cb5d0afa556f498358f30a664b19ad58fcaef212fdadbe6"
+    },
+    "artifacts/handoff/p02-public-integration-20261015-a/manifest.json": {
+      "sha256": "ad19d44563b7656a8ba9c48f7ce5e452602f068eef22f75fae846fe85e7e4cac"
+    },
+    "artifacts/review/p02-integration-independent-20261015-a/handoff.json": {
+      "sha256": "eb2dd531265a0a9335871aa7e09b1229fca9eb8d6c40734d8df85976c99d1c57"
+    },
+    "artifacts/handoff/p02-projection-integrity-repair-20261015-a/handoff.json": {
+      "sha256": "d7a77c748c53722821fb89a72b7acf62f294cd8961215d157828019404bd3a7b"
+    }
+  },
+  "full_acceptance_complete": false
+}

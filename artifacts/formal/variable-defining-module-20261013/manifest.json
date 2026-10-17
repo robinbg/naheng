@@ -1,0 +1,88 @@
+{
+  "suite": "reduction_variable_trajectory",
+  "status": "blocked",
+  "exit_code": 2,
+  "checked": false,
+  "commands": [
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T19:20:55.007877+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 9.001,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\variable-defining-module-20261013\\version.log"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "build",
+        "Naheng.Reduction.VariableTrajectory"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T19:21:04.014516+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 18.867,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\variable-defining-module-20261013\\build.log"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "env",
+        "lean",
+        "<PROJECT_ROOT>\\artifacts\\formal\\variable-defining-module-20261013\\Audit.lean"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T19:21:22.899693+00:00",
+      "exit_code": 2,
+      "timed_out": true,
+      "elapsed_s": 120.726,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\variable-defining-module-20261013\\axioms.log"
+    }
+  ],
+  "evidence": [],
+  "reason": "Lean declaration/axiom audit is incomplete: UNKNOWN",
+  "generated_at_utc": "2026-10-12T19:20:54.977968+00:00",
+  "source_hashes": {
+    "Naheng\\Aging\\CapacityEndpoint.lean": "37c8f7e93dfed9220e398268f0416ef981cefb3b77b351fc6e155840053b930a",
+    "Naheng\\Aging\\Film.lean": "d0fb83e747e5d62539d46e765c93baddc2f9b1f289b8d2381cc822415fe309b7",
+    "Naheng\\AgingCapacityEndpoint.lean": "38d7b2e0690ed144f4a098ec551f67468d249efafe0de67fd31d16ef20d57bdd",
+    "Naheng\\AgingFilm.lean": "e653674696a21ea0dd82e8e458c8bedd1a38d932d527d15bde59a5b8a876c195",
+    "Naheng\\Chemistry\\Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+    "Naheng\\Chemistry\\Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+    "Naheng\\Chemistry\\Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+    "Naheng\\Chemistry\\SitesODE.lean": "6430168933654881d19161a80718feeb45bd361fd59bc9953d36063b0edf306e",
+    "Naheng\\Chemistry\\Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+    "Naheng\\Chemistry\\TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+    "Naheng\\Chemistry\\Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+    "Naheng\\Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+    "Naheng\\Reduction\\Exact.lean": "193ef31deebf6eadd6e6820a48c12fa6a9cb2e2ed8a7a13aeaf549102db0bf19",
+    "Naheng\\Reduction\\Residual.lean": "0e22d7b8518b8fd231437f29290d6f2effb3ced7189989f1d900061291c385ee",
+    "Naheng\\Reduction\\TrajectoryError.lean": "3101ca2861f8bbec054023e5dc9c64417cb2d25b04fc1171b923ea24723bbc1a",
+    "Naheng\\Reduction\\VariableTrajectory.lean": "1c715f7e323121696913df35b0487373535fa53866f2627b18e4a68444c94c87",
+    "Naheng\\ReductionExact.lean": "34acc166f434a08c919f3073014df368ee330c84d7101d6fe5a2e2f80f715580",
+    "Naheng\\ReductionResidual.lean": "f96377999c19cc47b37349682ec11525511b15c6f1b498744752fb64c69d537d",
+    "Naheng\\ReductionTrajectory.lean": "82e073b59e080c1b9f3ffa174d866547af6ec6d253316b4f7444056927734bba",
+    "Naheng\\ReductionVariableTrajectory.lean": "92e6ed65a5cdc77f4afb8d8d184033d0d052720e19b9bc102ae58382d3e86775",
+    "Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8"
+  },
+  "targets": [
+    "Naheng.Reduction.dampedEnvelope_nonnegative",
+    "Naheng.Reduction.scalar_variable_damped_upper_bound",
+    "Naheng.Reduction.scalar_variable_damped_error_abs_bound",
+    "Naheng.Reduction.finite_site_variable_rate_trajectory_error",
+    "Naheng.Reduction.finite_site_variable_rate_trajectory_error_at",
+    "Naheng.Reduction.finite_site_variable_rate_constant_regression",
+    "Naheng.Reduction.variable_coefficient_nonempty_trajectory_example",
+    "Naheng.Reduction.positive_nonconstant_comparison_rate_example"
+  ],
+  "audit": null,
+  "toolchain_lock": "leanprover/lean4:v4.19.0",
+  "lean_version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)"
+}

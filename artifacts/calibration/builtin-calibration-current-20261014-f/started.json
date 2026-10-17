@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "-m",
+    "naheng.estimation.calibration_session",
+    "--worker",
+    "<PROJECT_ROOT>",
+    "<PROJECT_ROOT>\\artifacts\\calibration\\builtin-calibration-current-20261014-f\\input.json",
+    "<PROJECT_ROOT>\\artifacts\\calibration\\builtin-calibration-current-20261014-f"
+  ],
+  "code_hash": "fcee85ee0c6acecfbd00614ea00cf50e47c35092efe0adf30a31fa7a25f09801",
+  "input_sha256": "8c3d794a6b30e701fa3270bee8af813ff488e555109f5a31a4c501660cf88eea",
+  "status": "started",
+  "timeout_s": 120,
+  "utc": "2026-10-13T19:14:19.682631+00:00"
+}

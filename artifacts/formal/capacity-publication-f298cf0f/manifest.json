@@ -1,0 +1,37 @@
+{
+  "exit_code": 2,
+  "checks": [
+    {
+      "suite": "aging_capacity_endpoint",
+      "exit_code": 2,
+      "manifest": "artifacts/formal/capacity-publication-f298cf0f/aging_capacity_endpoint/manifest.json"
+    },
+    {
+      "suite": "foundation",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/capacity-publication-f298cf0f/foundation/manifest.json"
+    },
+    {
+      "suite": "reduction_residual",
+      "exit_code": 2,
+      "manifest": "artifacts/formal/capacity-publication-f298cf0f/reduction_residual/manifest.json"
+    },
+    {
+      "suite": "reduction_trajectory",
+      "exit_code": 2,
+      "manifest": "artifacts/formal/capacity-publication-f298cf0f/reduction_trajectory/manifest.json"
+    },
+    {
+      "suite": "reduction_exact",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/capacity-publication-f298cf0f/reduction_exact/manifest.json"
+    },
+    {
+      "suite": "aging_film",
+      "exit_code": 2,
+      "manifest": "artifacts/formal/capacity-publication-f298cf0f/aging_film/manifest.json"
+    }
+  ],
+  "scope": "Current individually audited partial suites; full core and runtime contracts remain incomplete",
+  "full_core_complete": false
+}

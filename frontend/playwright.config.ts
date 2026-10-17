@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({testDir:'./tests',timeout:360000,expect:{timeout:150000},use:{baseURL:process.env.NAHENG_WEB_URL??'http://127.0.0.1:5173',channel:process.env.NAHENG_BROWSER_CHANNEL,trace:'retain-on-failure',screenshot:'only-on-failure'},reporter:[['list'],['json',{outputFile:'../artifacts/web/playwright-results.json'}]],outputDir:'../artifacts/web/playwright',workers:1});

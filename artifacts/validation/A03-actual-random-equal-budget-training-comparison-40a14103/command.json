@@ -1,0 +1,20 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "artifacts/handoff/a03-constrained-search-20261016-b/compare_queries.py",
+    "--strategy",
+    "random"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:23:44.257408+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-actual-random-equal-budget-training-comparison-40a14103\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-actual-random-equal-budget-training-comparison-40a14103\\stderr.log",
+  "timeout_s": 1800,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 14820,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 685.8279754000032
+}

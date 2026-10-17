@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "artifact_dir": "<PROJECT_ROOT>\\artifacts\\calibration\\learning-current-ff1f6f1e5f79",
+  "complete": true,
+  "scope": "Conditional calibration candidate; existing runs and filters preserved"
+}

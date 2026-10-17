@@ -1,0 +1,24 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T08:51:35.693031+00:00",
+  "accepted_tasks": [
+    "W01",
+    "F02"
+  ],
+  "code_hash": "87ce0fccd584119bd9a437f52c4a3637b239cfa940015ab83f46ec18412e048d",
+  "counts": {
+    "done": 25,
+    "in_progress": 4,
+    "todo": 16
+  },
+  "original_fields_and_other_statuses_unchanged": true,
+  "full_project_or_scientific_acceptance": false,
+  "evidence": {
+    "artifacts/review/public-w01-f02-20261014-a/handoff.json": "836a0d3161f1041aab1748592f8e93d129aca18f1a6172c78d75dfa0b3129933",
+    "artifacts/progress/E02-current-regression-458c0e74/manifest.json": "727c3b82df4e99c086e8b0c347dc48450b94a216e11d22854046ce9b40e8ff58",
+    "artifacts/web/native-browser-2e335700/manifest.json": "8ae1998bdb72046df9630b89863710e7306f6168448e325b0af77921fd86c42a",
+    "artifacts/ui/repaired-workbench-20261014-a/manifest.json": "ac1f92a1aef361e8bdc255557a8afe282c8d9dc2b759e95607415b95511e7f09",
+    "artifacts/formal/f02-required-public-20261014-b/manifest.json": "38821a24319a0e335d59b6e4abd9e59be91c0c3533c75300ff90a11531aa3998",
+    "artifacts/review/f02-completion-independent-20261014-a/handoff.json": "bfa54136a4e0c6653c7fa4deb3737bc15c1f5ba03397bb0eec7cf8c5d56c0b7d"
+  }
+}

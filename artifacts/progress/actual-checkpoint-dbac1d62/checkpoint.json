@@ -1,0 +1,97 @@
+{
+  "utc": "2026-10-16T04:01:38.355334+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-original-eight-tests-confirmed-native-start-174be86e/command.json": {
+      "sha256": "420e7b926705af4677f3e32ce0fe2f8417c3bd6777b11f62f85da0b6e95304d6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-b/invoke.py",
+        "tests",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-b/evidence/original-eight-20261016-b"
+      ],
+      "wall_s": 532.8734152000034,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-original-eight-actual-start-cleanup-and-proofs-audit-7f2ae7c0/command.json": {
+      "sha256": "fb654357a338f2398c6fa93174c3bff73d2b475c1403c088512dccb0c1c07862",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_original_a02_native_tests_r2_20261016.py",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-b",
+        "artifacts/validation/A02-original-eight-tests-confirmed-native-start-174be86e/command.json"
+      ],
+      "wall_s": 0.5064781000037328,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a02-native-test-root-audit-5c28a79c31c1/report.json": {
+      "sha256": "632d92f99457c3dba6650d14dc9553029658564fbe93cc105744573c2f3f0359"
+    },
+    "artifacts/review/p02-physical-mapping-root-20261016-c/review.json": {
+      "sha256": "286f387fedd542e3bc591121e3b45dd510c77436cc57ee42a97fe8e7d1f1286c"
+    },
+    "artifacts/validation/P02-current-reviewed-mapping-real-short-lifecycle-repaired-contract-68f8a4c3/command.json": {
+      "sha256": "a3ebefb48eb99975c2b643ddbe58b42db28561e3eece89c4e80a77c3acdef00e",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/p02-reviewed-mapping-20261016-c/short_calibration_repaired_contract.py",
+        "artifacts/handoff/p02-reviewed-mapping-20261016-c/evidence/short-lifecycle-b"
+      ],
+      "wall_s": 11.382044500001939,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/P02-private-original-lifecycle-linkage-gate-293d9c20/command.json": {
+      "sha256": "a733cd90ad39be988395699c7b0d9c30cfb1205d15e6814804a419ae61f0ff04",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/p02-reviewed-mapping-20261016-c/invoke_original_gate.py"
+      ],
+      "wall_s": 16.291403499999433,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/P02-new-mapping-old-unknown-and-forged-review-boundaries-shortpath-40817f8d/command.json": {
+      "sha256": "7771adcb63c079022c925808d481702ec93087ce9be875bb6750685c8db470c6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/p02-reviewed-mapping-20261016-c/check_mapping_boundaries_r2.py"
+      ],
+      "wall_s": 5.007149899996875,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/P02-seal-real-candidate-and-public-rebase-preconditions-ce40d70b/command.json": {
+      "sha256": "e27fd937d0be36ffd773dbb5e6bb6367f5aec71c2dc780f28fbfba68f128e4be",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/seal_p02_candidate_20261016.py"
+      ],
+      "wall_s": 0.23015180000220425,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/p02-reviewed-mapping-20261016-c/sealed-candidate.json": {
+      "sha256": "e169699cb5c63846049cf45d8442506e64067ca85a185faa6b7b03ce7baf9b40"
+    }
+  },
+  "full_acceptance_complete": false
+}

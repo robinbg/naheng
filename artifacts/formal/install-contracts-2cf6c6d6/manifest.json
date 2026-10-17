@@ -1,0 +1,34 @@
+{
+  "exit_code": 0,
+  "installed": [
+    {
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\f04-contracts-20261014-a\\formal\\Naheng\\Contracts\\Output.lean",
+      "public": "<PROJECT_ROOT>\\formal\\Naheng\\Contracts\\Output.lean",
+      "sha256": "e18d030e9e6f3f9cfa2751cb4618f239ecba4d30f16daeae16dd5a91c09c659a"
+    },
+    {
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\f04-contracts-20261014-a\\formal\\Naheng\\Contracts\\PhysicalPorts.lean",
+      "public": "<PROJECT_ROOT>\\formal\\Naheng\\Contracts\\PhysicalPorts.lean",
+      "sha256": "c5d7de76432d92301f911c04889f0a92b67c2b4914e596cf49b43467e8c77688"
+    },
+    {
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\f04-contracts-20261014-a\\formal\\Naheng\\Contracts\\Protocol.lean",
+      "public": "<PROJECT_ROOT>\\formal\\Naheng\\Contracts\\Protocol.lean",
+      "sha256": "68d157e5045853f0b5a29992b19ccf02b124caa05a6704d58f03205da6d1b714"
+    },
+    {
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\f04-contracts-20261014-a\\formal\\Naheng\\Contracts\\Admission.lean",
+      "public": "<PROJECT_ROOT>\\formal\\Naheng\\Contracts\\Admission.lean",
+      "sha256": "c7a7f042f4e02df230851e9924e61e605273cbdbfedd2c8fc7bd8f0c8fa4f1ca"
+    },
+    {
+      "source": "<PROJECT_ROOT>\\artifacts\\handoff\\f04-thermodynamics-repair-20261014-a\\formal\\Naheng\\Chemistry\\Thermodynamics.lean",
+      "public": "<PROJECT_ROOT>\\formal\\Naheng\\Chemistry\\Thermodynamics.lean",
+      "sha256": "02e56a1ae13de1d39f51542d954b04d5ce23fd044394287e6ca00dcc0806245b"
+    }
+  ],
+  "target_count": 36,
+  "original_contracts_gate_passed": false,
+  "task_status_changed": false,
+  "full_project_completed": false
+}

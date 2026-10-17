@@ -1,0 +1,170 @@
+{
+  "exit_code": 0,
+  "scope": "Implementation checkpoint, not full acceptance",
+  "before": {
+    "TASKS.yaml": "7dffd3f7202c9ebddced8ba75196da999a9b2712751b2dba108ee300b94a1587",
+    "PLANS.md": "cd6818d4b1876fc6fe720c3e33a15966a87a1cb36eb0dea229e1d1c3cac0d7a4",
+    "docs/STATUS.md": "5b0b33ad71040927e689e17b6693fe72724cc11cca878e57680d20a4028ce6cb"
+  },
+  "task_count": 45,
+  "requirement_count": 18,
+  "counts": {
+    "done": 18,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 20
+  },
+  "current_source_hash": "f9b871a0712ee50004b901de40179f6c99cbef3426422749eb33a17e61f2c361",
+  "evidence": {
+    "artifacts/validation/G00-rate-first-passage-current-full-pytest-85688794/command.json": {
+      "sha256": "f663ad90cbdc5e3c6b26e896523812b27f4416ee74fee2a22f574b69d729162f",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/nh-full-current-2ac3dce4",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-2ac3dce4"
+      ],
+      "exit_code": 0,
+      "wall_s": 370.9618388000001,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G00-rate-first-passage-current-full-pytest-85688794\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G00-rate-first-passage-current-full-pytest-85688794\\stderr.log"
+    },
+    "artifacts/validation/G04-live-owner-recovery-regressions-1456b0af/command.json": {
+      "sha256": "c6e1c09deb674c4dc42b7f07bca236d9e8c33792737323618ca17cca200a34a5",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_job_process_ownership.py",
+        "tests/integration/test_job_recovery.py",
+        "tests/integration/test_forecast_jobs.py",
+        "tests/integration/test_runtime_inventory_path.py",
+        "tests/integration/test_api_flow.py",
+        "-x",
+        "-q",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/nh-owner-4b27dfe1",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-4b27dfe1"
+      ],
+      "exit_code": 0,
+      "wall_s": 58.996400600000015,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\G04-live-owner-recovery-regressions-1456b0af\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\G04-live-owner-recovery-regressions-1456b0af\\stderr.log"
+    },
+    "artifacts/review/data-integration-local-20261013-a/handoff.json": {
+      "sha256": "483ba743bb2614c58377d1feb8fa1d25386d339de7de6658d77047ec454cea02"
+    },
+    "artifacts/validation/F02-rate-input-seal-regressions-f1743302/command.json": {
+      "sha256": "7bd60044099101d2103e799de26e13c8f73278ad4f8376bbd3c198198e3f2854",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_reduction_rate_binding.py",
+        "tests/integration/test_evidence_import.py",
+        "tests/unit/test_first_passage_scope.py",
+        "-x",
+        "-vv",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/nh-rate-seal-849cca13"
+      ],
+      "exit_code": 0,
+      "wall_s": 14.137045100000023,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F02-rate-input-seal-regressions-f1743302\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F02-rate-input-seal-regressions-f1743302\\stderr.log"
+    },
+    "artifacts/validation/F03-runner-recovery-first-failure-diagnostic-b9fdae00/command.json": {
+      "sha256": "a79a3cbae867368671d4bf7cdcaf38466956a51c6b50e729c4d74c13dca1011a",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_conditional_rul.py",
+        "tests/integration/test_runtime_inventory_path.py",
+        "tests/integration/test_checkpoint_recovery.py",
+        "tests/integration/test_evidence_in_runtime.py",
+        "-x",
+        "-vv",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/nh-path-diagnostic-b721dd7c",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-b721dd7c"
+      ],
+      "exit_code": 0,
+      "wall_s": 115.96733319999998,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F03-runner-recovery-first-failure-diagnostic-b9fdae00\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F03-runner-recovery-first-failure-diagnostic-b9fdae00\\stderr.log"
+    },
+    "artifacts/validation/P01-W00-rate-rejection-artifact-API-45962590/command.json": {
+      "sha256": "2e4f17af05ee7ebc0aff6adbe3011ad4a40ca0286f2c6d4f1ba33fe63e97983a",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_runtime_inventory_path.py",
+        "tests/integration/test_api_flow.py",
+        "-x",
+        "-q",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/nh-api-rate-980d07f4",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-980d07f4"
+      ],
+      "exit_code": 0,
+      "wall_s": 11.613533099999813,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-W00-rate-rejection-artifact-API-45962590\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-W00-rate-rejection-artifact-API-45962590\\stderr.log"
+    },
+    "artifacts/formal/reduction-residual-recovery-20261012/manifest.json": {
+      "sha256": "fc6afe00f6664937d451f2300214799e6abe4764d80290cf8b20c2bc01b5aa4d"
+    },
+    "artifacts/formal/candidates/ReductionTrajectoryTime-c8d5d6cb/manifest.json": {
+      "sha256": "5b1352d7b25eedcfde6eb630728522ba77947e00d3d54a94ebe56d18439e67f3"
+    },
+    "artifacts/review/residual-independent-scope-20261013/report.json": {
+      "sha256": "2145477c81fc2e9da1ba44bda07dec7400d2fd7baabe7defa9b6e4316e8be771"
+    },
+    "artifacts/review/trajectory-independent-20261013/report.json": {
+      "sha256": "4a45439a455613e0ce894e9580397c3084cffd9146df3b1afa313a2469ff68fa"
+    },
+    "artifacts/review/aging-capacity-endpoint-delivery-ace49443/manifest.json": {
+      "sha256": "28b22d6a169ebbb26e324dc441a0af95ec16e6dfec9a5290a1022c8b6724da75"
+    },
+    "artifacts/validation/P01-F02-rate-worker-after-live-owner-fix-250eea58/command.json": {
+      "sha256": "4e134c68522d35f5c58122a83508ffddc24e119b72f9030053727f84199da221",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/validate_rate_worker_http.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 63.96860599999991,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-F02-rate-worker-after-live-owner-fix-250eea58\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-F02-rate-worker-after-live-owner-fix-250eea58\\stderr.log"
+    },
+    "artifacts/rate_http/actual-87aa5de0/manifest.json": {
+      "sha256": "92c4fb896e62f52d65af9c511fced3b32b04e734d74023805e9db5f4f75b74e9"
+    },
+    "artifacts/validation/W01-rate-and-first-passage-frontend-build-4a5f03e8/command.json": {
+      "sha256": "6100771d1c3ec6a70bbb2608bc929c33b90828f7201b97f567c7106fdc80ed4a",
+      "argv": [
+        "npm.cmd",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "wall_s": 10.455757500000118,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\W01-rate-and-first-passage-frontend-build-4a5f03e8\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\W01-rate-and-first-passage-frontend-build-4a5f03e8\\stderr.log"
+    }
+  },
+  "next_command": ".venv/Scripts/python.exe tools/run_evidence.py --label F02-trajectory-entry-repaired-and-dependents --timeout 600 -- .venv/Scripts/python.exe tools/check_current_trajectory_publication.py",
+  "utc": "2026-10-12T17:33:17.565226+00:00",
+  "client_date": "2026-10-13"
+}

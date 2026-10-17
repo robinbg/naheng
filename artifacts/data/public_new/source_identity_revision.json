@@ -1,0 +1,23 @@
+{
+  "views": [
+    {
+      "view": "complete",
+      "source_id": "zenodo17459188_cvut_sib_0001",
+      "spec": "artifacts\\data\\public_new\\cvut_sodium_0001_complete.v2.spec.json",
+      "registry": "data\\manifests\\retrieval-zenodo17459188-0001-complete-v2.yaml",
+      "first_registry_snapshot": "artifacts\\data\\public_new\\first_complete_registry_snapshot.json",
+      "first_registry_sha256": "5e3f5c9f31f7a89fde24b6688f67bebb3080321f206b3b85305b661c8b1b793a",
+      "old_view_registry_admissible": false
+    },
+    {
+      "view": "instrument_step",
+      "source_id": "zenodo17459188_cvut_sib_0001",
+      "spec": "artifacts\\data\\public_new\\cvut_sodium_0001_instrument_step.v2.spec.json",
+      "registry": "data\\manifests\\retrieval-zenodo17459188-0001-instrument_step-v2.yaml",
+      "first_registry_snapshot": "artifacts\\data\\public_new\\first_instrument_step_registry_snapshot.json",
+      "first_registry_sha256": "d325d0a620c963ca3a40098c553c465017c0f359e3f8f5c1bfd73a31bc4e4fec",
+      "old_view_registry_admissible": false
+    }
+  ],
+  "measurement_values_changed": false
+}

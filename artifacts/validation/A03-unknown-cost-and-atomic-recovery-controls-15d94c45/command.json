@@ -1,0 +1,25 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "artifacts/handoff/a03-constrained-search-20261016-a/tests",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "artifacts/a03-tests-b2713ae4"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:09:02.969873+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-unknown-cost-and-atomic-recovery-controls-15d94c45\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-unknown-cost-and-atomic-recovery-controls-15d94c45\\stderr.log",
+  "timeout_s": 90,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 34116,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 5.312018099997658
+}

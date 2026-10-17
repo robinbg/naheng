@@ -1,0 +1,395 @@
+{
+  "suite": "foundation",
+  "status": "checked",
+  "exit_code": 0,
+  "checked": true,
+  "commands": [
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T02:09:51.877195+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 4.945,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\foundation-20261012-sigma\\version.log"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "build",
+        "Naheng.Foundation"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T02:09:56.827980+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 106.428,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\foundation-20261012-sigma\\build.log"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "env",
+        "lean",
+        "<PROJECT_ROOT>\\artifacts\\formal\\foundation-20261012-sigma\\Audit.lean"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T02:11:43.261666+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 54.218,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\foundation-20261012-sigma\\axioms.log"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "lean.foundation.Naheng.Chemistry.element_stoichiometry_balanced.c1268fa2a763a7c1",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Chemistry.element_stoichiometry_balanced",
+      "statement_hash": "c1268fa2a763a7c19fb639f1b76be90b27d330494b76f8bc59d128b069b5450f",
+      "statement": "theorem Naheng.Chemistry.element_stoichiometry_balanced : ∀ (element : Naheng.Chemistry.Element)\n  (reaction : Naheng.Chemistry.Reaction),\n  ∑ species, Naheng.Chemistry.composition element species * Naheng.Chemistry.stoichiometry species reaction = 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "61f1271a825d79b6c56d3342b6273654d9e2c463fab8d42e96d97e961a1a3d19",
+        "artifacts/formal/foundation-20261012-sigma/build.log": "d4f98429f28b8d89124d89b7b124217917f7c2118c414e1dddf16080b274cf78",
+        "artifacts/formal/foundation-20261012-sigma/axioms.log": "f71144a559577dcb0dd13c6d967a4b74cbad8b3d4cfd2537a10a26e75e609073",
+        "artifacts/formal/foundation-20261012-sigma/version.log": "03423130ffde36329229db77053c345a979a876719bad0209b2ec779243bf945",
+        "artifacts/formal/foundation-20261012-sigma/Audit.lean": "662460d731fb410ccff47c56a370d2a5d6217e85b5419bcda39e9d5b83a1afb2",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "effective synthetic reactions; instantaneous element/charge balance; site boundary lemmas; domain of explicitly represented constant-rate curve",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.foundation.Naheng.Chemistry.charge_stoichiometry_balanced.f4effe02919c9c22",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Chemistry.charge_stoichiometry_balanced",
+      "statement_hash": "f4effe02919c9c22daee99f59fcb05341fd37173cd2a629744eb277aba886891",
+      "statement": "theorem Naheng.Chemistry.charge_stoichiometry_balanced : ∀ (reaction : Naheng.Chemistry.Reaction),\n  ∑ species, Naheng.Chemistry.charge species * Naheng.Chemistry.stoichiometry species reaction = 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "61f1271a825d79b6c56d3342b6273654d9e2c463fab8d42e96d97e961a1a3d19",
+        "artifacts/formal/foundation-20261012-sigma/build.log": "d4f98429f28b8d89124d89b7b124217917f7c2118c414e1dddf16080b274cf78",
+        "artifacts/formal/foundation-20261012-sigma/axioms.log": "f71144a559577dcb0dd13c6d967a4b74cbad8b3d4cfd2537a10a26e75e609073",
+        "artifacts/formal/foundation-20261012-sigma/version.log": "03423130ffde36329229db77053c345a979a876719bad0209b2ec779243bf945",
+        "artifacts/formal/foundation-20261012-sigma/Audit.lean": "662460d731fb410ccff47c56a370d2a5d6217e85b5419bcda39e9d5b83a1afb2",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "effective synthetic reactions; instantaneous element/charge balance; site boundary lemmas; domain of explicitly represented constant-rate curve",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.foundation.Naheng.Chemistry.weighted_rate_from_ports.026378e33ef27412",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Chemistry.weighted_rate_from_ports",
+      "statement_hash": "026378e33ef27412368b17d18c461421801b7e320210cf33140e516b49c14a1f",
+      "statement": "theorem Naheng.Chemistry.weighted_rate_from_ports : ∀ (w : Naheng.Chemistry.Species → ℝ),\n  (∀ (reaction : Naheng.Chemistry.Reaction),\n      ∑ species, w species * Naheng.Chemistry.stoichiometry species reaction = 0) →\n    ∀ (v : Naheng.Chemistry.Reaction → ℝ) (b : Naheng.Chemistry.PortFlux),\n      ∑ species, w species * Naheng.Chemistry.amountRate v b species = ∑ species, w species * b species",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "61f1271a825d79b6c56d3342b6273654d9e2c463fab8d42e96d97e961a1a3d19",
+        "artifacts/formal/foundation-20261012-sigma/build.log": "d4f98429f28b8d89124d89b7b124217917f7c2118c414e1dddf16080b274cf78",
+        "artifacts/formal/foundation-20261012-sigma/axioms.log": "f71144a559577dcb0dd13c6d967a4b74cbad8b3d4cfd2537a10a26e75e609073",
+        "artifacts/formal/foundation-20261012-sigma/version.log": "03423130ffde36329229db77053c345a979a876719bad0209b2ec779243bf945",
+        "artifacts/formal/foundation-20261012-sigma/Audit.lean": "662460d731fb410ccff47c56a370d2a5d6217e85b5419bcda39e9d5b83a1afb2",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "effective synthetic reactions; instantaneous element/charge balance; site boundary lemmas; domain of explicitly represented constant-rate curve",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.foundation.Naheng.Chemistry.element_rate_from_ports.b4bc9d9b51d1bf82",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Chemistry.element_rate_from_ports",
+      "statement_hash": "b4bc9d9b51d1bf82cb8bb76fe060a4c71ea9969dfd8a34821ca6aee6a2f0174d",
+      "statement": "theorem Naheng.Chemistry.element_rate_from_ports : ∀ (element : Naheng.Chemistry.Element)\n  (v : Naheng.Chemistry.Reaction → ℝ) (b : Naheng.Chemistry.PortFlux),\n  ∑ species, Naheng.Chemistry.composition element species * Naheng.Chemistry.amountRate v b species =\n    ∑ species, Naheng.Chemistry.composition element species * b species",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "61f1271a825d79b6c56d3342b6273654d9e2c463fab8d42e96d97e961a1a3d19",
+        "artifacts/formal/foundation-20261012-sigma/build.log": "d4f98429f28b8d89124d89b7b124217917f7c2118c414e1dddf16080b274cf78",
+        "artifacts/formal/foundation-20261012-sigma/axioms.log": "f71144a559577dcb0dd13c6d967a4b74cbad8b3d4cfd2537a10a26e75e609073",
+        "artifacts/formal/foundation-20261012-sigma/version.log": "03423130ffde36329229db77053c345a979a876719bad0209b2ec779243bf945",
+        "artifacts/formal/foundation-20261012-sigma/Audit.lean": "662460d731fb410ccff47c56a370d2a5d6217e85b5419bcda39e9d5b83a1afb2",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "effective synthetic reactions; instantaneous element/charge balance; site boundary lemmas; domain of explicitly represented constant-rate curve",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.foundation.Naheng.Chemistry.charge_rate_from_ports.fab8708c66bf61fe",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Chemistry.charge_rate_from_ports",
+      "statement_hash": "fab8708c66bf61feb34fbfbf594ac10580fb95bf9a9f4d80df720a076863ffc6",
+      "statement": "theorem Naheng.Chemistry.charge_rate_from_ports : ∀ (v : Naheng.Chemistry.Reaction → ℝ) (b : Naheng.Chemistry.PortFlux),\n  ∑ species, Naheng.Chemistry.charge species * Naheng.Chemistry.amountRate v b species =\n    ∑ species, Naheng.Chemistry.charge species * b species",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "61f1271a825d79b6c56d3342b6273654d9e2c463fab8d42e96d97e961a1a3d19",
+        "artifacts/formal/foundation-20261012-sigma/build.log": "d4f98429f28b8d89124d89b7b124217917f7c2118c414e1dddf16080b274cf78",
+        "artifacts/formal/foundation-20261012-sigma/axioms.log": "f71144a559577dcb0dd13c6d967a4b74cbad8b3d4cfd2537a10a26e75e609073",
+        "artifacts/formal/foundation-20261012-sigma/version.log": "03423130ffde36329229db77053c345a979a876719bad0209b2ec779243bf945",
+        "artifacts/formal/foundation-20261012-sigma/Audit.lean": "662460d731fb410ccff47c56a370d2a5d6217e85b5419bcda39e9d5b83a1afb2",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "effective synthetic reactions; instantaneous element/charge balance; site boundary lemmas; domain of explicitly represented constant-rate curve",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.foundation.Naheng.Chemistry.site_lower_boundary.28fa61923dab9f09",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Chemistry.site_lower_boundary",
+      "statement_hash": "28fa61923dab9f09e19bd6563ac97b8678a9f517127866e6a14918edececb1f9",
+      "statement": "theorem Naheng.Chemistry.site_lower_boundary : ∀ (a b c : ℝ), 0 ≤ a → 0 ≤ Naheng.Chemistry.siteRate a b c 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "61f1271a825d79b6c56d3342b6273654d9e2c463fab8d42e96d97e961a1a3d19",
+        "artifacts/formal/foundation-20261012-sigma/build.log": "d4f98429f28b8d89124d89b7b124217917f7c2118c414e1dddf16080b274cf78",
+        "artifacts/formal/foundation-20261012-sigma/axioms.log": "f71144a559577dcb0dd13c6d967a4b74cbad8b3d4cfd2537a10a26e75e609073",
+        "artifacts/formal/foundation-20261012-sigma/version.log": "03423130ffde36329229db77053c345a979a876719bad0209b2ec779243bf945",
+        "artifacts/formal/foundation-20261012-sigma/Audit.lean": "662460d731fb410ccff47c56a370d2a5d6217e85b5419bcda39e9d5b83a1afb2",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "effective synthetic reactions; instantaneous element/charge balance; site boundary lemmas; domain of explicitly represented constant-rate curve",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.foundation.Naheng.Chemistry.site_upper_boundary.446699cc98286dd8",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Chemistry.site_upper_boundary",
+      "statement_hash": "446699cc98286dd85495f76b1fc51d9485bcb2922a13b8ab1444d2e9cbb9f15a",
+      "statement": "theorem Naheng.Chemistry.site_upper_boundary : ∀ (a b c : ℝ), 0 ≤ b → 0 ≤ c → Naheng.Chemistry.siteRate a b c 1 ≤ 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "61f1271a825d79b6c56d3342b6273654d9e2c463fab8d42e96d97e961a1a3d19",
+        "artifacts/formal/foundation-20261012-sigma/build.log": "d4f98429f28b8d89124d89b7b124217917f7c2118c414e1dddf16080b274cf78",
+        "artifacts/formal/foundation-20261012-sigma/axioms.log": "f71144a559577dcb0dd13c6d967a4b74cbad8b3d4cfd2537a10a26e75e609073",
+        "artifacts/formal/foundation-20261012-sigma/version.log": "03423130ffde36329229db77053c345a979a876719bad0209b2ec779243bf945",
+        "artifacts/formal/foundation-20261012-sigma/Audit.lean": "662460d731fb410ccff47c56a370d2a5d6217e85b5419bcda39e9d5b83a1afb2",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "effective synthetic reactions; instantaneous element/charge balance; site boundary lemmas; domain of explicitly represented constant-rate curve",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.foundation.Naheng.Chemistry.constant_rate_trajectory_invariant.343f04f219694599",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Chemistry.constant_rate_trajectory_invariant",
+      "statement_hash": "343f04f219694599c9a7f6cab5f73942183e80d79768ae285a9be258ffe7ea14",
+      "statement": "theorem Naheng.Chemistry.constant_rate_trajectory_invariant : ∀ (a b c x0 t : ℝ),\n  0 ≤ a →\n    0 ≤ b →\n      0 ≤ c →\n        0 < a + b + c →\n          0 ≤ x0 →\n            x0 ≤ 1 →\n              0 ≤ t →\n                0 ≤ Naheng.Chemistry.constantRateTrajectory a b c x0 t ∧\n                  Naheng.Chemistry.constantRateTrajectory a b c x0 t ≤ 1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "61f1271a825d79b6c56d3342b6273654d9e2c463fab8d42e96d97e961a1a3d19",
+        "artifacts/formal/foundation-20261012-sigma/build.log": "d4f98429f28b8d89124d89b7b124217917f7c2118c414e1dddf16080b274cf78",
+        "artifacts/formal/foundation-20261012-sigma/axioms.log": "f71144a559577dcb0dd13c6d967a4b74cbad8b3d4cfd2537a10a26e75e609073",
+        "artifacts/formal/foundation-20261012-sigma/version.log": "03423130ffde36329229db77053c345a979a876719bad0209b2ec779243bf945",
+        "artifacts/formal/foundation-20261012-sigma/Audit.lean": "662460d731fb410ccff47c56a370d2a5d6217e85b5419bcda39e9d5b83a1afb2",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "effective synthetic reactions; instantaneous element/charge balance; site boundary lemmas; domain of explicitly represented constant-rate curve",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    }
+  ],
+  "reason": "Build and all exported declaration axiom audits passed",
+  "generated_at_utc": "2026-10-12T02:09:51.866731+00:00",
+  "source_hashes": {
+    "Naheng\\Chemistry\\Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+    "Naheng\\Chemistry\\Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+    "Naheng\\Chemistry\\Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+    "Naheng\\Chemistry\\Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+    "Naheng\\Chemistry\\TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+    "Naheng\\Chemistry\\Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+    "Naheng\\Foundation.lean": "b4b24a1dcb8e9e1724b6aa4d320142860070bf29b76a3b9013cbe8bdbb96309b",
+    "Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8"
+  },
+  "targets": [
+    "Naheng.Chemistry.element_stoichiometry_balanced",
+    "Naheng.Chemistry.charge_stoichiometry_balanced",
+    "Naheng.Chemistry.weighted_rate_from_ports",
+    "Naheng.Chemistry.element_rate_from_ports",
+    "Naheng.Chemistry.charge_rate_from_ports",
+    "Naheng.Chemistry.site_lower_boundary",
+    "Naheng.Chemistry.site_upper_boundary",
+    "Naheng.Chemistry.constant_rate_trajectory_invariant"
+  ],
+  "audit": {
+    "status": "passed",
+    "targets": {
+      "Naheng.Chemistry.element_stoichiometry_balanced": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Chemistry.charge_stoichiometry_balanced": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Chemistry.weighted_rate_from_ports": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Chemistry.element_rate_from_ports": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Chemistry.charge_rate_from_ports": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Chemistry.site_lower_boundary": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Chemistry.site_upper_boundary": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Chemistry.constant_rate_trajectory_invariant": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "missing": [],
+    "rejected": {},
+    "duplicates": [],
+    "trust_level": "lean_kernel_core"
+  },
+  "toolchain_lock": "leanprover/lean4:v4.19.0",
+  "lean_version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "declarations_output_sha256": "5278e129975eeb78e5df04fde5f4cfd97e4abd8ef6d8f5f8f20159bf34cefef9",
+  "dependencies_sha256": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+}

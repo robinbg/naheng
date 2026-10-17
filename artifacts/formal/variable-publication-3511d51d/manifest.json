@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-12T19:12:16.336264+00:00",
+  "exit_code": 2,
+  "checks": [
+    {
+      "suite": "reduction_variable_trajectory",
+      "exit_code": 2,
+      "manifest": "artifacts/formal/variable-publication-3511d51d/reduction_variable_trajectory/manifest.json"
+    },
+    {
+      "suite": "aging_capacity_endpoint",
+      "exit_code": 2,
+      "manifest": "artifacts/formal/variable-publication-3511d51d/aging_capacity_endpoint/manifest.json"
+    },
+    {
+      "suite": "reduction_trajectory",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/variable-publication-3511d51d/reduction_trajectory/manifest.json"
+    },
+    {
+      "suite": "aging_film",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/variable-publication-3511d51d/aging_film/manifest.json"
+    },
+    {
+      "suite": "foundation",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/variable-publication-3511d51d/foundation/manifest.json"
+    },
+    {
+      "suite": "reduction_residual",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/variable-publication-3511d51d/reduction_residual/manifest.json"
+    },
+    {
+      "suite": "reduction_exact",
+      "exit_code": 0,
+      "manifest": "artifacts/formal/variable-publication-3511d51d/reduction_exact/manifest.json"
+    }
+  ],
+  "full_core_complete": false,
+  "scope": "Individual preserved partial declarations; runtime all-time conditions, readout, full core and real safety remain ungranted"
+}

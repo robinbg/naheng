@@ -1,0 +1,164 @@
+{
+  "utc": "2026-10-12T02:39:14.149284+00:00",
+  "counts": {
+    "done": 17,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 21
+  },
+  "required_tasks": 45,
+  "required_requirements": 18,
+  "evidence": {
+    "artifacts/validation/F00-default-project-lake-build-30a804e3/command.json": {
+      "sha256": "32e18f66b4ae42ec108c376be32d4f50e5427e95cade83c68fa2d7ff4fead5b1",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-c",
+        "from pathlib import Path; from naheng.formal.checker import run_command,_lake; import sys; r=run_command([_lake(),'build'],Path('formal').resolve(),Path('artifacts/formal/default-project-build-20261012.log')); print({k:v for k,v in r.items() if k not in ('stdout','stderr')}); sys.exit(r['exit_code'])"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F00-default-project-lake-build-30a804e3\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F00-default-project-lake-build-30a804e3\\stderr.log"
+    },
+    "artifacts/formal/default-project-build-20261012.log": {
+      "sha256": "f874a73572118eb0ff5405d9ef42aad165cb1683f742f2ffc4362771920be276"
+    },
+    "artifacts/validation/F01-complete-foundation-seventeen-df0b98e5/command.json": {
+      "sha256": "1c1815ab0271cf79fcb83c596f7ef7993394ca5412804b5e44be0d2c4a57372e",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "foundation",
+        "--out",
+        "artifacts/formal/foundation-20261012-seventeen"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F01-complete-foundation-seventeen-df0b98e5\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F01-complete-foundation-seventeen-df0b98e5\\stderr.log"
+    },
+    "artifacts/formal/foundation-20261012-seventeen/manifest.json": {
+      "sha256": "6fc4fd70d4373f570321fcc358ab51b9d4936872a550e1212496f9ed4258b00e"
+    },
+    "artifacts/formal/candidates/SitesODE-a38b048f/manifest.json": {
+      "sha256": "d0af02c82ef213eac3d6c57bf0cfd5dd531b3dd977028d74886659e120e215a8"
+    },
+    "artifacts/formal/trajectory-candidate-9c9c042e/manifest.json": {
+      "sha256": "888b8d3f92d36dc463d4a2b3aa9e4e8e7e7afaef8e49980f4849832c1a2b7f96"
+    },
+    "artifacts/validation/P01-actual-proof-backed-worker-loop-21295a47/command.json": {
+      "sha256": "f8d8a2364d2513c4d577a391baa99961bb4d99768ab415d2a31bd6715fd1fa25",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "demo",
+        "--scenario",
+        "acceptance_loop",
+        "--out",
+        "artifacts/demo-proof-20261012"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-actual-proof-backed-worker-loop-21295a47\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-actual-proof-backed-worker-loop-21295a47\\stderr.log"
+    },
+    "artifacts/validation/P01-real-printer-calibration-regression-f4fbb327/command.json": {
+      "sha256": "11ae43fa4cc56940c4e4d666415cdfd97d70b0c99fd1553c9652cd91aab105ef",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_chemistry_binding.py",
+        "tests/integration/test_runtime_binding.py",
+        "tests/integration/test_runtime_inventory_path.py",
+        "tests/integration/test_inventory_validity.py",
+        "tests/integration/test_evidence_in_runtime.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-20261012-b4",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/nh-t-20261012-b4"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-real-printer-calibration-regression-f4fbb327\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-real-printer-calibration-regression-f4fbb327\\stderr.log"
+    },
+    "artifacts/validation/P01-activate-formal-seventeen-61c191d6/command.json": {
+      "sha256": "688a51b7b2957107c71860a118e204dab9e331ed1d322fc8c6c1b6c207dcfbdf",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/activate_foundation.py",
+        "artifacts/formal/foundation-20261012-seventeen/manifest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-activate-formal-seventeen-61c191d6\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-activate-formal-seventeen-61c191d6\\stderr.log"
+    },
+    "artifacts/runs/nh-6ec6eee11f2c46308445237771c5feea/chemical_binding.json": {
+      "sha256": "7a2259b6df4bebbb032cd9d66eeb25e1b53320aac46b4f7ca5d3cff56527429c"
+    },
+    "artifacts/data/public_new/ordered-delivery-v3-fa6715bc.json": {
+      "sha256": "4ca609616906ecf68da84e76dc3733f149acd5f4c7567808620f1f4ccc71be62"
+    },
+    "artifacts/validation/D01-public-complete-ordered-v3-46063265/command.json": {
+      "sha256": "c94e2f58ed40e9d1c238a610d3da8fd44a837659564111bdff5ee6a789a180cc",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.data.importers",
+        "--csv",
+        "artifacts/data/public_new/cvut_sodium_0001_complete.csv",
+        "--spec",
+        "artifacts/data/public_new/ordered-complete-v3-fa6715bc.spec.json",
+        "--out",
+        "artifacts/data/public_new/ordered-import-v3-fa6715bc"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-complete-ordered-v3-46063265\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-complete-ordered-v3-46063265\\stderr.log"
+    },
+    "artifacts/validation/D01-ordered-data-tests-recheck-cba00dfa/command.json": {
+      "sha256": "0f69a2f22505584cfa32baa97960cfbad0567c6efbce727828f029e75021b98e",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_data_import.py",
+        "tests/integration/test_split_leakage.py",
+        "tests/unit/test_data_event_ordering.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/data/public_new/ordered-recheck-test-cache",
+        "--basetemp",
+        "artifacts/data/public_new/ordered-recheck-test-temp"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-ordered-data-tests-recheck-cba00dfa\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-ordered-data-tests-recheck-cba00dfa\\stderr.log"
+    },
+    "artifacts/validation/W00-P01-capability-formal-existing-tests-b98377fe/command.json": {
+      "sha256": "dc9ee631d11f9e07ba7ab96a3896560b05c980a20f63f4aa66c28a803d896ddc",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_capability_proof_pointer.py",
+        "tests/integration/test_api_flow.py",
+        "tests/unit/test_formal_audit.py",
+        "tests/integration/test_evidence_import.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/pytest-cache-20261012-b6",
+        "--basetemp",
+        "<HOST_HOME>/Documents/Codex/nh-t-20261012-b6"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\W00-P01-capability-formal-existing-tests-b98377fe\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\W00-P01-capability-formal-existing-tests-b98377fe\\stderr.log"
+    }
+  },
+  "M1_complete": false
+}

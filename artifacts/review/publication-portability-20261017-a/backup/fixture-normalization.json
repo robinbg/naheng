@@ -1,0 +1,24 @@
+{
+  "tool": "normalize_fixture_host_paths_20261017.py",
+  "applied": true,
+  "files": {
+    "tests/fixtures/calibration_builtin/manifest.json": {
+      "sha256_before": "e9eabbae140e81a193969ecd98020881eb0ff47a2abec611dea313dad44b2a8e",
+      "backup": "artifacts/review/publication-portability-20261017-a/backup/manifest.json",
+      "changed": true,
+      "host_prefix_occurrences_before": 3,
+      "host_prefix_occurrences_after": 0,
+      "sha256_after": "b1a6841029656ea5614c85db9f23dacecbdb984c374b8a0f095d3b878e04c70f"
+    },
+    "tests/fixtures/evidence_report/legacy-command.json": {
+      "sha256_before": "35aaa4f4f961d2326c6386ba2ed4b55052490189d640c374d56097a8d2aec9e7",
+      "backup": "artifacts/review/publication-portability-20261017-a/backup/legacy-command.json",
+      "changed": true,
+      "host_prefix_occurrences_before": 3,
+      "host_prefix_occurrences_after": 0,
+      "sha256_after": "7d0c93a2e39e8fe7cc245724e5361da20cc000c02580b390fe9dbdcc1af06ae0"
+    }
+  },
+  "rules_reused_from": "tools/build_publication_bundle.py",
+  "rule_count": 7
+}

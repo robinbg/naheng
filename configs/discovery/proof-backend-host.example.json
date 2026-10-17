@@ -1,0 +1,5 @@
+{
+  "_comment": "Copy to proof-backend-host.json (or set NAHENG_PROOF_BACKEND_ROOT / NAHENG_PROOF_MAINTENANCE_ROOT) to enable the optional isolated proof backend. Both values must be absolute paths that exist. Without them, candidate proofs are reported as unavailable and are never claimed as checked, and the two native backend tests skip.",
+  "backend_root": "/absolute/path/to/isolated-proof-backend",
+  "maintenance_root": "/absolute/path/to/prepared-backend-dependencies"
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "artifacts/handoff/a03-constrained-search-20261016-a/probe_oracle.py"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:08:00.966235+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-real-paired-low-high-operational-oracle-probe-d4984d2f\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-real-paired-low-high-operational-oracle-probe-d4984d2f\\stderr.log",
+  "timeout_s": 270,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 33100,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 23.468074900003558
+}

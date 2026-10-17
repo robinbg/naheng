@@ -1,0 +1,26 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-13T23:44:38.462438+00:00",
+  "task_id": "C01",
+  "status": "done",
+  "code_hash": "08705aadc91cfc2afc7a9f3212e8dca1fa538c41ef3aeb9808d916d9294344d2",
+  "original_gates_unchanged": true,
+  "other_task_statuses_unchanged": true,
+  "counts": {
+    "done": 22,
+    "in_progress": 6,
+    "todo": 17
+  },
+  "full_project_or_scientific_acceptance": false,
+  "evidence": {
+    "artifacts/review/c01-four-callsites-pending-original-scope-independent-20261014-a/handoff.json": "10419dc2ae2fc4de8c3e6cec37ff028454fcb89de52f73bb9e8055f3ab150537",
+    "artifacts/review/baseline-frontier-guarded-current-independent-20261014-a/handoff.json": "367ec6330d7c256c991ea286d29fe5f751bd41fe672d5fb0e21d099528be57ba",
+    "artifacts/progress/E02-current-regression-f9faa3a6/manifest.json": "50b2fa06c0e9ffebe6acda47df8e523dce1ffd085cd943ca865ff9be1bc9f380",
+    "docs/GUARDED_EXECUTION.md": "7c39640d8ce300de11879fb633faaf5183219acf9b2b49b89c0223e73d2eed5b",
+    "artifacts/runs/nh-727c0a6b1d814395aef75613e8bc9609/manifest.json": "081d9863376721b89bc78cfdb9542a9d453f8dfe0b66376643448efad214e764",
+    "artifacts/validation/C01-D02-current-hard-exit-fixed-complete-regression-owned-worker-9dc542c6/command.json": "e50cbb109112150031643f2937536a4b264a6f850a0c57e4857d556f6da00e41",
+    "artifacts/validation/C01-latest-current-v2-common-native-guard-paired-frontier-6c4faca1/command.json": "c431dd9b3b36c8e8e67f0626c71c17f09a48ccd495d36bb1f0f8b4feb1dbebf4",
+    "artifacts/validation/C01-latest-current-native-guarded-MPC-frozen-run-demo-e023f93f/command.json": "b6e4302a208a496e2f418fea0a05d03b00afec835ed30dfd9d2fd41b9642c3f5",
+    "artifacts/validation/C01-actual-hard-exit-intent-and-old-normal-checkpoint-recovery-84025691/command.json": "acfbe7dc93c884500e76b055f3250232f71bdea7061fce0f13e891f62574ce34"
+  }
+}

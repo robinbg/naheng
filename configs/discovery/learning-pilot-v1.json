@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "profile": "bayesian_finite_sites_pilot_v1",
+  "seed": 20261014,
+  "initial_points": 12,
+  "iterations": 24,
+  "prior_precision": 1.0,
+  "observation_noise": 1.0,
+  "beta": 1.2,
+  "utility_weights": {"accuracy": 1.0, "nontrivial": 1.0, "domain_coverage": 1.0, "complexity": 0.08, "cost": 0.04},
+  "single_evaluation_wall_s": 1.0,
+  "kernel_checked": false,
+  "worker_hard_timeout_s": 120,
+  "memory_limit_gib": 8
+}

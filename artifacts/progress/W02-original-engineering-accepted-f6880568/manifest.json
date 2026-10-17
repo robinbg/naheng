@@ -1,0 +1,25 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T16:20:16.665163+00:00",
+  "task": "W02",
+  "counts": {
+    "done": 32,
+    "in_progress": 3,
+    "todo": 10
+  },
+  "code_hash": "9383619fc8240907258d270072ba5dc1a9392df0cdbbfcea8626c09c160e721b",
+  "original45_tasks18_requirements_and_all_gates_unchanged": true,
+  "full_project_complete": false,
+  "evidence": {
+    "artifacts/validation/W02-current-core-view-production-build-85ae6cd1/command.json": "2488c0a2cedf9e67bccc0754ed4dfef51de713ddea9b6b65319efdecb6f12976",
+    "artifacts/validation/W02-original-full-flow-current-production-browser-4015c4cd/command.json": "9abe459a79bdfa43f6a462c8a0e887ab9f40aa8c0178c9a269a34f7f38fb40cb",
+    "artifacts/validation/Current-all-original-regressions-after-real-proof-refresh-3fcb5097/command.json": "61dd072827ab81fcc3476a075c1650074d4f8c3a2aa140ef3c4f73ce50dfaf35",
+    "artifacts/progress/bound-regression-20261014-d/manifest.json": "1f037c34601a33f892e151d2b7f18280cbd6f29eb530d170a6d38657edd71246",
+    "artifacts/web/native-browser-722254be/manifest.json": "7d09d7b27a8f1fd0f3b290dd8c3af69573825c4c3c04fa074071cb2a84e3d33c",
+    "artifacts/review/current-capacity-and-import-independent-20261014-a/handoff.json": "c9d31ec6c3b527a32abe81c356f6ec03ee18d92fd0e590cb53c696eb52ac29c3",
+    "artifacts/review/current-iab-sevenpages-independent-20261014-a/handoff.json": "faeb33f04912d69f877fadbd94cc21ded3faad88ea2ba268056d34eab9096620",
+    "artifacts/ui/current-workbench-20261014-b/TASK.json": "51b9f1b5770cd84e1781c37ed8f3d8b0add32056ae22846cd14897689c751323",
+    "artifacts/ui/current-workbench-20261014-b/current-run-pages.json": "c26883be27f3d6953f9cd5895bd998a16bc39675da564ebb585444d6cc508017",
+    "artifacts/ui/current-workbench-20261014-b/core-from-ui-summary.json": "37d80d1f525c4d99f62bced1e61ed394f564f6fb4b4dcb2210ddb2741cbe97f3"
+  }
+}

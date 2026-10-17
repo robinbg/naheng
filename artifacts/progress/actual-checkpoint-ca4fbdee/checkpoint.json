@@ -1,0 +1,98 @@
+{
+  "utc": "2026-10-13T23:50:45.808339+00:00",
+  "exit_code": 0,
+  "code_hash": "08705aadc91cfc2afc7a9f3212e8dca1fa538c41ef3aeb9808d916d9294344d2",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 22,
+    "in_progress": 7,
+    "todo": 16
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/progress/C01-engineering-accepted-bd951a89/manifest.json": {
+      "sha256": "738304ac4ce278c248b0dc3528474ef0ca15076de5f8dc136630b3a1eb9712aa"
+    },
+    "artifacts/progress/E02-current-regression-f9faa3a6/manifest.json": {
+      "sha256": "50b2fa06c0e9ffebe6acda47df8e523dce1ffd085cd943ca865ff9be1bc9f380"
+    },
+    "artifacts/validation/C01-D02-current-hard-exit-fixed-complete-regression-owned-worker-9dc542c6/command.json": {
+      "sha256": "e50cbb109112150031643f2937536a4b264a6f850a0c57e4857d556f6da00e41",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_current_source_regression.py"
+      ],
+      "wall_s": 310.514674500002,
+      "timed_out": false
+    },
+    "artifacts/review/c01-four-callsites-pending-original-scope-independent-20261014-a/handoff.json": {
+      "sha256": "10419dc2ae2fc4de8c3e6cec37ff028454fcb89de52f73bb9e8055f3ab150537"
+    },
+    "artifacts/review/baseline-frontier-guarded-current-independent-20261014-a/handoff.json": {
+      "sha256": "367ec6330d7c256c991ea286d29fe5f751bd41fe672d5fb0e21d099528be57ba"
+    },
+    "artifacts/validation/D02-latest-hard-exit-fixed-current-public-voltage-pilot-8dbff83e/command.json": {
+      "sha256": "1630db47a54dc84280d7a69b160bf36fdc587394da2dc0c6b43317a9cec716d3",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "experiment",
+        "run",
+        "--suite",
+        "public-data",
+        "--profile",
+        "pilot",
+        "--out",
+        "artifacts/public_validation/pilot-current-20261014-b"
+      ],
+      "wall_s": 82.3347253000029,
+      "timed_out": false
+    },
+    "artifacts/review/public-sodium-current-after-hard-exit-independent-20261014-a/handoff.json": {
+      "sha256": "afa7fb835920894a9e548a4c3e271c91b94e44732fb61570a61ed2b5bba19d75"
+    },
+    "artifacts/progress/task-start-C02-2a1f4ba3/manifest.json": {
+      "sha256": "b00c1a54d22873326ab656d83ef5d02230a09c6ea4b76e2ab6efe3f72fd34a06"
+    },
+    "artifacts/validation/C02-dependency-satisfied-actual-staged-finance-start-bd3dba6a/command.json": {
+      "sha256": "f5a3b4fa9a26e308b3b627527871ed95ee42441798c7383b25a1cbb88216bc53",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/start_dependency_satisfied_task.py",
+        "C02",
+        "artifacts/validation/C02-staged-final-original-named-finance-config-asset-identity-tests-b726941e/command.json"
+      ],
+      "wall_s": 0.3199921999985236,
+      "timed_out": false
+    },
+    "artifacts/validation/C02-staged-final-original-named-finance-config-asset-identity-tests-b726941e/command.json": {
+      "sha256": "9b5b4e185085220d4234c0d997f81c06f96537c6a967ab5000bb7b12f19d960c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/handoff/lifecycle-finance-20261014-a/run_tests.py"
+      ],
+      "wall_s": 3.6299534999998286,
+      "timed_out": false
+    },
+    "artifacts/validation/C02-independent-saved-fine-and-macro-phase-adapter-first-84225b30/command.json": {
+      "sha256": "55c1b2bcc47a0969894862765f6fb7bb85afe39bee2405ba767b5b030bf4bd0d",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/lifecycle-finance-independent-20261014-a/reproduce_saved_macro.py"
+      ],
+      "wall_s": 0.1733148000057554,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

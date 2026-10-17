@@ -1,0 +1,18 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "artifacts/handoff/a03-constrained-search-20261016-b/run_pilot.py"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:17:23.244634+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-repaired-real-12-plus24-training-096d2be8\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-repaired-real-12-plus24-training-096d2be8\\stderr.log",
+  "timeout_s": 1800,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 17000,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 708.7520090999969
+}

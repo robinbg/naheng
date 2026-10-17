@@ -1,0 +1,97 @@
+{
+  "python": {
+    "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "version": "3.13.5"
+  },
+  "system": "Windows-11-10.0.26200-SP0",
+  "logical_cores": 8,
+  "workers": 4,
+  "packages": {
+    "numpy": {
+      "status": "available",
+      "version": "2.5.3"
+    },
+    "scipy": {
+      "status": "available",
+      "version": "1.18.1"
+    },
+    "pydantic": {
+      "status": "available",
+      "version": "2.14.0"
+    },
+    "fastapi": {
+      "status": "available",
+      "version": "0.143.0"
+    },
+    "uvicorn": {
+      "status": "available",
+      "version": "0.54.0"
+    },
+    "pytest": {
+      "status": "available",
+      "version": "9.1.1"
+    },
+    "PyYAML": {
+      "status": "available",
+      "version": "6.0.3"
+    },
+    "pyarrow": {
+      "status": "available",
+      "version": "22.0.0"
+    },
+    "pybamm": {
+      "status": "available",
+      "version": "25.10.2"
+    }
+  },
+  "tools": {
+    "git": {
+      "status": "available",
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "version": "git version 2.51.2.windows.1",
+      "exit_code": 0
+    },
+    "node": {
+      "status": "available",
+      "path": "C:\\Program Files\\nodejs\\node.EXE",
+      "version": "v24.11.0",
+      "exit_code": 0
+    },
+    "npm": {
+      "status": "available",
+      "path": "C:\\Program Files\\nodejs\\npm.CMD",
+      "version": "11.6.1",
+      "exit_code": 0
+    },
+    "lean": {
+      "status": "available",
+      "path": "<PROJECT_ROOT>\\.tools\\lean\\bin\\lean.exe",
+      "version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+      "exit_code": 0
+    },
+    "lake": {
+      "status": "available",
+      "path": "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+      "version": "Lake version 5.0.0-6caaee8 (Lean version 4.19.0)",
+      "exit_code": 0
+    },
+    "docker": {
+      "status": "missing",
+      "path": null
+    },
+    "uv": {
+      "status": "available",
+      "path": "<PROJECT_ROOT>\\.bootstrap\\bin\\uv.exe",
+      "version": "uv 0.9.9 (4fac4cb7e 2025-11-12)",
+      "exit_code": 0
+    }
+  },
+  "permissions": {
+    "external_llm": false,
+    "paid_compute": false,
+    "publish": false,
+    "hardware_control": false
+  },
+  "scope": "environment_only",
+  "exit_code": 0
+}

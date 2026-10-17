@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-14T11:52:56.146554+00:00",
+  "exit_code": 0,
+  "code_hash": "2e8b7cb195d918d99c19e4cb5e95edf22224556ebec35dce1f2109eb292dfbb0",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 29,
+    "in_progress": 4,
+    "todo": 12
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/review/conditional-forecast-independent-20261014-a/verified-evidence.json": {
+      "sha256": "46181e7c712008854709449e6b2aeaee3ee7bc13ad0573f9c1cc540fa2073f54"
+    },
+    "artifacts/review/conditional-forecast-independent-20261014-a/root-readonly-20261014-c/report.json": {
+      "sha256": "1f7d7c68041263489d896a2dadccca5dadcddbc3dac90d789bb5a730121e0fb2"
+    },
+    "artifacts/review/conditional-forecast-independent-20261014-a/root-readonly-20261014-d/report.json": {
+      "sha256": "1719ff918cdb36a89cde478ef63ca93894e3bfe3f20a301be966723cf8c2b041"
+    },
+    "artifacts/validation/W02-independent-saved-forecast-JSON-lineage-no-new-ODE-5a569eb5/command.json": {
+      "sha256": "920cdaceffb102ae7d80c001b26c4d61e1aeca64b485d8e7947a5aeeaf2c35f2",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/conditional-forecast-independent-20261014-a/review_packet.py",
+        "artifacts/review/conditional-forecast-independent-20261014-a/root-readonly-20261014-a"
+      ],
+      "wall_s": 0.3081757000036305,
+      "timed_out": false
+    },
+    "artifacts/validation/W02-independent-saved-forecast-annotation-repair-no-new-ODE-b34d735c/command.json": {
+      "sha256": "f5c260c3eeb1dfeeffb3cd52f7d134ae60b263cc5e5479f6b8fd4d464c6cf82b",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/conditional-forecast-independent-20261014-a/review_packet_repaired.py",
+        "artifacts/review/conditional-forecast-independent-20261014-a/root-readonly-20261014-b"
+      ],
+      "wall_s": 0.43286249999073334,
+      "timed_out": false
+    },
+    "artifacts/validation/W02-independent-saved-forecast-absolute-output-recovery-0b54a8aa/command.json": {
+      "sha256": "4240d83142e871e0087f158946331270131af5142b7122ce4eb6b47650a6c9b6",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/conditional-forecast-independent-20261014-a/review_packet_repaired.py",
+        "<PROJECT_ROOT>\\artifacts\\review\\conditional-forecast-independent-20261014-a\\root-readonly-20261014-c"
+      ],
+      "wall_s": 0.5733238000102574,
+      "timed_out": false
+    },
+    "artifacts/validation/W02-independent-saved-forecast-calibrated-scalar-readonly-e7692664/command.json": {
+      "sha256": "db7c97f7f4e2e54b5a535c4570796de7ef9e2b9f118d9388dbc148ba639dd4a3",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/conditional-forecast-independent-20261014-a/review_packet_calibrated.py",
+        "<PROJECT_ROOT>\\artifacts\\review\\conditional-forecast-independent-20261014-a\\root-readonly-20261014-d"
+      ],
+      "wall_s": 0.33062940000672825,
+      "timed_out": false
+    },
+    "artifacts/validation/W02-seal-exact-native-review-receipt-and-first-failures-d10cc959/command.json": {
+      "sha256": "a293f536531c27bc077307c3d94422ee82259b13b489b65cb7b7da9ea9de3cf9",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/seal_conditional_forecast_review.py"
+      ],
+      "wall_s": 0.11386140000831801,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

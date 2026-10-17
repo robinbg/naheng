@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "code_hash": "dab86512b6e9df246d590c37f9daf31d58c17347a630cab38ef7e4f004840486",
+  "files": {
+    "frontend/src/pages/WorkbenchPages.tsx": "8e9fe2fe9323590632cd77ad6fba30800edb0828cc79e11a1922c93e27ab7b6c",
+    "frontend/src/App.tsx": "a588ad6466a3c5b4fea989b3d84543ad5bcb24d7e2cacc99b0850d3bba651c33"
+  },
+  "core_permission_inferred_from_badge": false,
+  "user_path_acceptance_complete": false
+}

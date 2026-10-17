@@ -1,0 +1,2220 @@
+project: naheng
+schema_version: 1
+created_at: '2026-10-09'
+status_note: 'All45 tasks18 requirements retained;35done2in_progress8todo, no task upgraded
+  this round. The06:37 smoke command actually completed and FAILED (exit1, numerical
+  4failed/1153passed/23subtests in928.18s, other three gates 0); that result was recorded
+  as pending and is now corrected in docs/STATUS.md. A03 root cause found - the three-arm
+  comparison is not reproducible because an inner wall-clock guard made labels depend on
+  host load, so the prior2/2/0 result is invalid and kept on record. Repaired per ADR0025
+  (fidelity by work units only) and verified by repeated execution of sealed candidates;
+  arms not yet re-run, so A03 stays in_progress. smoke gate4 failures diagnosed per ADR0026
+  (unauthorized pytest tmp_path as proof output; Windows260-char temp path; undeclared
+  text encoding decoding UTF-8 JSON evidence as GBK) and repaired with every assertion
+  preserved; targeted suites pass (8passed/523.80s and 5passed/89.74s and 12passed), full
+  smoke re-run in flight and NOT claimed green. release remains exit2.'
+status_values:
+- todo
+- in_progress
+- blocked
+- failed
+- done
+completion_rule: done必须有实际命令、退出码、工件与日志；blocked不算done。
+tasks:
+- id: G00
+  milestone: M0
+  workstream: integration
+  title: 审查目标仓库并接入计划
+  depends_on: []
+  status: done
+  required: true
+  implementation: 检查工作树、已有服务、依赖、说明与用户未提交改动；空目录才初始化工程。将提案需求映射到现有实现，保存本开工包，不覆盖同名AGENTS。
+  deliverables:
+  - docs/ENVIRONMENT.md
+  - docs/STATUS.md
+  - docs/adr/0001-project-layout.md
+  acceptance:
+  - 有已有代码时保留其测试和改动；没有真实仓库信息不编造commit或部署
+  - 准确列出缺少的截止时间/官方电芯/凭据，并采用本计划的非破坏默认
+  validation_commands:
+  - git status --short
+  - python tools/check_handoff.py
+  evidence:
+  - artifacts\validation\G00-handoff-480ae95b\command.json
+  - artifacts/handoff_final.json
+  - artifacts/validation/G00-final-handoff-45150827/command.json
+  - artifacts/handoff_after_lean.json
+  - artifacts/validation/G00-handoff-after-Lean-f16af6f1/command.json
+  - artifacts/validation/G00-current-integrated-full-pytest-e86614eb/command.json
+  - artifacts/review/independent-finish-20261012-23b6e119/manifest.json
+  - artifacts/validation/G00-current-handoff-structure-aa7df87e/command.json
+  - artifacts/validation/G00-rate-first-passage-current-full-pytest-85688794/command.json
+  - artifacts/validation/G00-owner-trajectory-current-full-pytest-5bc6eaa0/command.json
+  - artifacts/maintenance/c-drive-cleanup-20261013-a/plan-reviewed.json
+  - artifacts/maintenance/c-drive-cleanup-20261013-a/result-corrected.json
+  - artifacts/maintenance/c-drive-cleanup-20261013-a/native-execution-receipt.json
+  - artifacts/progress/pre-current-member-regression-20261013-b.json
+  - artifacts/validation/G00-current-first-policy-locked-full-regression-af5c1f43/command.json
+  - artifacts/maintenance/c-drive-cleanup-20261013-a/README.md
+  - artifacts/review/c-drive-cleanup-independent-20261014-a/report-recovered.json
+  - artifacts/validation/C-drive-cleanup-independent-recorded-scope-review-recovered-256ba103/command.json
+  - artifacts/maintenance/c-drive-cleanup-20261013-a/post-development-space-20261014-a.json
+  - artifacts/validation/C-preserve-two-stale-owned-uv-temporaries-on-D-97066b33/command.json
+  - artifacts/maintenance/owned-uv-temp-archive-20d213ae/result.json
+  - artifacts/validation/C-owned-Lean-relocation-readonly-preflight-9efa5e96/command.json
+  - artifacts/maintenance/owned-lean-relocation-20261015-a/probe.json
+  - artifacts/validation/C-relocated-Lean-Lake-original-entry-native-probes-c064236d/command.json
+  - artifacts/review/owned-lean-relocation-preflight-20261015-a/handoff.json
+  - docs/ENVIRONMENT.md
+  - artifacts/validation/C-preserve-owned-Mathlib-pack-paths-migrate-D-2479b5c7/command.json
+  - artifacts/maintenance/mathlib-pack-to-d-dd6df0258c92/result.json
+  - artifacts/progress/session-20261016-c.json
+  blocker: 此维护不增加功能验收；独立代理仍额度不足。
+  local_acceptance_scope: 项目自有依赖维护完成：三个共享Git pack文件全部复制校验，两个原路径以junction保留；C盘实测76730368到611061760字节。保留所有代码、Git历史和验收产物。
+- id: G01
+  milestone: M0
+  workstream: integration
+  title: 工具链、类型检查与CLI骨架
+  depends_on:
+  - G00
+  status: done
+  required: true
+  implementation: 创建pyproject、前端package、兼容Lean环境规划；锁实际可安装版本；实现naheng CLI错误码、日志、doctor和verify命令入口。
+  deliverables:
+  - pyproject.toml
+  - uv.lock
+  - frontend/package.json
+  - src/naheng/cli.py
+  acceptance:
+  - 在隔离环境可安装并导入；已有锁文件不无故升级
+  - doctor逐项显示可用/受阻，verify不能未实现就返回成功
+  validation_commands:
+  - uv run naheng doctor --out artifacts/environment.json
+  - uv run pytest tests/unit/test_cli.py -q
+  evidence:
+  - artifacts\validation\G01-doctor-corrected-e73b7423\command.json
+  - artifacts\validation\G01-doctor-direct-9dc3382a\command.json
+  - artifacts\validation\G01-doctor-locked-02f31281\command.json
+  - artifacts\validation\G01-lock-df5d6e7c\command.json
+  - artifacts\validation\G01-sync-core-recovery-915d698e\command.json
+  - artifacts\validation\G01-sync-dfb7339d\command.json
+  - artifacts/validation/G01-final-doctor-1090e37f/command.json
+  - artifacts/web/frontend_build_recovery_manifest.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  - artifacts/validation/G01-integrated-doctor-e6dc67e8/command.json
+  - artifacts/validation/G01-doctor-local-Lean-tests-dce0900b/command.json
+  - artifacts/validation/G01-doctor-Lean-restored-d475c941/command.json
+  blocker: null
+- id: G02
+  milestone: M0
+  workstream: integration
+  title: 统一单位、核心契约与事件定义
+  depends_on:
+  - G01
+  status: done
+  required: true
+  implementation: 实现Observation、PosteriorSnapshot、Action、ForecastQuery、ModelPackage、Evidence与RunManifest，冻结I>0放电与模型身份；定义风险事件和未知返回。
+  deliverables:
+  - src/naheng/domain/contracts.py
+  - src/naheng/domain/units.py
+  - configs/event_definitions.yaml
+  acceptance:
+  - 拒绝单位与化学体系错配；空误差界不等于0
+  - 快照和未来策略ID缺失时不生成无条件RUL
+  validation_commands:
+  - uv run pytest tests/unit/test_units.py tests/unit/test_contracts.py -q
+  evidence:
+  - artifacts\validation\G02-G04-P00-9077dd0f\command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  blocker: null
+- id: G03
+  milestone: M0
+  workstream: simulation
+  title: 独立探测PyBaMM与Lean能力
+  depends_on:
+  - G01
+  status: done
+  required: true
+  implementation: 运行库导入/短解和小Lean证明；记录版本、温度/副反应/老化/输出能力，审阅实际模型实现；网络失败有有界重试。
+  deliverables:
+  - docs/CAPABILITY_AUDIT.md
+  - tools/probe_backends.py
+  - artifacts/probes/
+  acceptance:
+  - 每项能力有实际命令日志；仅导入成功不算支持完整生命周期
+  - 失败明确blocked而非吞异常；不把锂电默认参数当钠电
+  validation_commands:
+  - uv run python tools/probe_backends.py --out artifacts/probes
+  evidence:
+  - artifacts/probes/manifest.json
+  - artifacts/probes/lean_download.json
+  - artifacts/validation/G03-reference-restored-probe-5e3fbce3/command.json
+  - artifacts/reference_smoke/verified/manifest.json
+  - artifacts/probes/lean-recovery.json
+  - artifacts/probes/lean-restored/manifest.json
+  - artifacts/validation/G03-Lean-official-resume-93350221/command.json
+  - artifacts/validation/G03-Lean-local-integrity-install-49df1758/command.json
+  - artifacts/validation/G03-Lean-version-execution-fea9794d/command.json
+  - artifacts/validation/G03-Lake-version-execution-d6adeca0/command.json
+  - artifacts/validation/G03-restored-backend-probes-c43abba2/command.json
+  blocker: null
+- id: D00
+  milestone: M0
+  workstream: data
+  title: 数据与文献来源清单
+  depends_on:
+  - G00
+  - G01
+  status: done
+  required: true
+  implementation: 登记参考参数、公共钠电入口和许可证待核项；区分来源已读/数据已下载/字段已验收；为每个模型登记化学身份。
+  deliverables:
+  - data/manifests/sources.yaml
+  - docs/NOVELTY.md
+  - docs/DATA_POLICY.md
+  acceptance:
+  - 未下载数据的checksum为空且状态不是verified
+  - TUM访问失败如实保留，可找其他一手钠电来源但不伪造替代
+  validation_commands:
+  - uv run pytest tests/unit/test_source_manifest.py -q
+  evidence:
+  - artifacts/formal/unit_tests.log
+  - data/manifests/sources.yaml
+  - artifacts/validation/D00-parameter-provenance-final-e8c18b09/command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  - artifacts/review/data-integration-local-20261013-a/handoff.json
+  blocker: null
+- id: G04
+  milestone: M1
+  workstream: integration
+  title: 作业、快照与工件血缘
+  depends_on:
+  - G02
+  status: done
+  required: true
+  implementation: 实现SQLite元数据、单独worker、作业事件、原子checkpoint与RunID内容哈希；分离观测与参考真值存储。
+  deliverables:
+  - src/naheng/runtime/jobs.py
+  - src/naheng/runtime/artifacts.py
+  - src/naheng/runtime/snapshots.py
+  acceptance:
+  - 断电/取消后状态可恢复且不能充完整样本
+  - 同内容缓存有reused_from，不增加独立统计计数
+  validation_commands:
+  - uv run pytest tests/integration/test_job_recovery.py tests/integration/test_provenance.py
+    -q
+  evidence:
+  - artifacts\validation\G02-G04-P00-9077dd0f\command.json
+  - artifacts/validation/G04-checkpoint-runner-boundaries-b3743afd/command.json
+  - artifacts/review/checkpoint_recovery_delivery.json
+  - artifacts/validation/G04-owned-process-tree-7d39138e/command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  - artifacts/validation/G04-live-owner-recovery-regressions-1456b0af/command.json
+  - artifacts/validation/G04-current-owned-worker-tree-approved-environment-a6d4c1ca/command.json
+  blocker: 当前默认沙箱进程树终止能力受环境限制；最终运行环境验收仍需相应权限。
+  local_acceptance_scope: 原4作业监控验收同断言批准环境0，默认沙箱taskkill进程树失败首证据保留；不宣称默认沙箱子孙进程预算保证。
+- id: S00
+  milestone: M1
+  workstream: simulation
+  title: 化学DSL与白名单数值解释器
+  depends_on:
+  - G02
+  status: done
+  required: true
+  implementation: 实现有限物种、元素/电荷、位点、反应计量和受限表达式AST；从统一定义生成数值动力学与形式化输入。
+  deliverables:
+  - src/naheng/domain/chemistry.py
+  - src/naheng/domain/expressions.py
+  - configs/models/two_site_research.yaml
+  acceptance:
+  - 库存/电荷不守恒模型拒绝注册；化学参数有单位/来源标记
+  - 拒绝任意代码、非法函数与带路径的表达式
+  validation_commands:
+  - uv run pytest tests/unit/test_chemistry.py tests/unit/test_expression_security.py
+    -q
+  evidence:
+  - artifacts\validation\S00-S01-654f31d0\command.json
+  - artifacts\validation\S00-S01-thermal-module-ecf088e5\command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  blocker: null
+- id: S01
+  milestone: M1
+  workstream: simulation
+  title: 真实研究模型积分和观测接口
+  depends_on:
+  - S00
+  status: done
+  required: true
+  implementation: 实现两类可逆位点与副反应的初版求解、观测噪声、动作驱动适配和事件检测；清晰区分电位驱动与电流控制。
+  deliverables:
+  - src/naheng/models/site_model.py
+  - src/naheng/simulation/environment.py
+  - src/naheng/simulation/sensors.py
+  acceptance:
+  - 参数/动作变化真实改变积分结果，不读预设曲线
+  - 根求解无解报infeasible；库存残差和事件记录可复算
+  validation_commands:
+  - uv run pytest tests/unit/test_site_model.py tests/integration/test_simulator_events.py
+    -q
+  evidence:
+  - artifacts\validation\S00-S01-654f31d0\command.json
+  - artifacts\validation\S00-S01-thermal-module-ecf088e5\command.json
+  - artifacts\validation\S01-efficiency-d19a4913\command.json
+  - artifacts/validation/S01-efficiency-d19a4913/command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  blocker: null
+- id: F00
+  milestone: M1
+  workstream: formal
+  title: Lean项目与化学形式对象
+  depends_on:
+  - G01
+  - S00
+  status: done
+  required: true
+  implementation: 固定Lean/mathlib工具链，建立物种/反应/位点/端口语义和核心导出目录；建立候选隔离目录。
+  deliverables:
+  - formal/lean-toolchain
+  - formal/lakefile.toml
+  - formal/Naheng/Chemistry/Species.lean
+  - formal/Naheng/Chemistry/Reaction.lean
+  acceptance:
+  - 实际lake build日志；没有用axiom描述目标结论
+  - 化学定义与DSL字段有映射和单位说明
+  validation_commands:
+  - cd formal && lake build
+  evidence:
+  - artifacts/formal/foundation/manifest.json
+  - artifacts/validation/F00-integrated-core-gate-bc4cd00a/command.json
+  - artifacts/formal/setup/import_preparation.json
+  - artifacts/validation/F00-narrow-import-preparation-614be6ea/command.json
+  - artifacts/formal/setup/checkpoint-after-lean.json
+  - artifacts/formal/foundation-after-lean/manifest.json
+  - artifacts/validation/F00-mathlib-dependency-update-c5634abb/command.json
+  - artifacts/validation/F00-mathlib-dependency-update-retry-5ef666d7/command.json
+  - artifacts/validation/F00-mathlib-local-checkout-diagnostic-70af9543/command.json
+  - artifacts/validation/F00-mathlib-cached-checkout-recovery-27951179/command.json
+  - artifacts/validation/F00-mathlib-local-object-reuse-b92f5a05/command.json
+  - artifacts/validation/F00-mathlib-locked-checkout-e639843f/command.json
+  - artifacts/validation/F00-mathlib-initialize-restored-8033290b/command.json
+  - artifacts/validation/F00-mathlib-git-diagnostic-84a444fb/command.json
+  - artifacts/validation/F00-foundation-after-Lean-174fdca1/command.json
+  - artifacts/validation/F00-dependencies-network-restored-a6fb4618/command.json
+  - artifacts/validation/F00-recorded-plan-audit-d2ce5281/command.json
+  - artifacts/validation/F00-pruned-checker-regression-a8e7b80b/command.json
+  - artifacts/validation/F00-owned-job-observed-child-b0ee3715/command.json
+  - artifacts/validation/F00-default-project-lake-build-30a804e3/command.json
+  - artifacts/formal/default-project-build-20261012.log
+  blocker: null
+- id: F01
+  milestone: M1
+  workstream: formal
+  title: 基础收支和位点约束证明
+  depends_on:
+  - F00
+  status: done
+  required: true
+  implementation: 证明内部计量满足条件时库存/电荷变化由端口决定，建立位点边界与不变性适用条件；区分边界引理和轨迹结论。
+  deliverables:
+  - formal/Naheng/Chemistry/Balance.lean
+  - formal/Naheng/Chemistry/Sites.lean
+  - formal/Naheng/Foundation.lean
+  acceptance:
+  - 导出定理实际被Lean检查；条件不是目标同义改写
+  - 每个发布声明有传递依赖审计；未完成目标留候选区
+  validation_commands:
+  - uv run naheng formal check --suite foundation
+  evidence:
+  - artifacts/formal/foundation/manifest.json
+  - artifacts/validation/F01-mean-value-incremental-plan-121dc771/command.json
+  - formal/Naheng/Chemistry/Trajectory.lean
+  - formal/Naheng/Chemistry/TimeInvariant.lean
+  - artifacts/validation/F01-complete-foundation-seventeen-df0b98e5/command.json
+  - artifacts/formal/foundation-20261012-seventeen/manifest.json
+  - artifacts/formal/candidates/SitesODE-a38b048f/manifest.json
+  - artifacts/formal/trajectory-candidate-9c9c042e/manifest.json
+  - artifacts/formal/foundation-refreshed-20261012/manifest.json
+  - artifacts/formal/active_foundation.json
+  blocker: null
+  local_acceptance_scope: 17个发布声明真实build/逐个传递公理审计通过；含实际ODE库存导数、闭端口时不变和时变正速率位点不变。显式假定可微解，未证明存在唯一性、浮点误差或现实电芯安全；T1/T2/T3属于后续任务。
+- id: P00
+  milestone: M1
+  workstream: packages
+  title: 模型包注册和有效域判定
+  depends_on:
+  - G02
+  - S00
+  status: done
+  required: true
+  implementation: 实现动态公式、读出、映射、域、误差和证据的注册校验；分开核验状态、证据类别和当前适用性。
+  deliverables:
+  - src/naheng/packages/registry.py
+  - src/naheng/packages/domain_check.py
+  - model_packages/research_base/
+  acceptance:
+  - 篡改表达式或参数哈希使依赖证据stale
+  - 依赖隐藏状态的未知条件不默认为pass
+  validation_commands:
+  - uv run pytest tests/integration/test_package_registry.py -q
+  evidence:
+  - artifacts\validation\G02-G04-P00-9077dd0f\command.json
+  - artifacts/validation/P00-registry-dsl-final-2134fee8/command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  blocker: null
+- id: E00
+  milestone: M1
+  workstream: estimation
+  title: 共享概率状态估计基础版本
+  depends_on:
+  - S01
+  status: done
+  required: true
+  implementation: 用观测和动作历史实现粒子滤波、参数不确定性和ESS/重采样；保存不可修改快照供全部服务使用。
+  deliverables:
+  - src/naheng/estimation/particle_filter.py
+  - src/naheng/estimation/diagnostics.py
+  acceptance:
+  - 只接收Observation，无读取真值路径；禁止读取未来观测
+  - 噪声/不可识别场景保留区间，权重归一与退化标记正确
+  validation_commands:
+  - uv run pytest tests/unit/test_particle_filter.py tests/integration/test_no_oracle_leakage.py
+    -q
+  evidence:
+  - artifacts/validation/inference_control_final.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  blocker: null
+- id: E01
+  milestone: M1
+  workstream: estimation
+  title: 同快照条件寿命与事件风险
+  depends_on:
+  - E00
+  - S01
+  status: done
+  required: true
+  implementation: 从后验样本和固定未来策略前向积分，输出风险、RUL分布、删失信息和预算；短期演示标加速研究。
+  deliverables:
+  - src/naheng/lifecycle/forecast.py
+  - src/naheng/risk/forecast.py
+  acceptance:
+  - 策略/环境变化生成不同query哈希；同查询可重现
+  - 未到退役阈值的路径删失而不伪造终点；代理和火灾不混淆
+  validation_commands:
+  - uv run pytest tests/unit/test_conditional_rul.py tests/unit/test_risk_events.py
+    -q
+  evidence:
+  - artifacts/validation/inference_control_final.json
+  - artifacts\validation\M1-default-demo-3916cb82\command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  - artifacts/validation/F02-rate-input-seal-regressions-f1743302/command.json
+  - artifacts/validation/F03-runner-recovery-first-failure-diagnostic-b9fdae00/command.json
+  - artifacts/validation/P01-W00-rate-rejection-artifact-API-45962590/command.json
+  - artifacts/integration/data-capacity-87b8ea70/manifest.json
+  - artifacts/review/lifecycle-workbench-independent-20261014-a/e01/review.md
+  - artifacts/review/e01-f03-independent-20261014-a/public-repaired/handoff.json
+  - artifacts/validation/E01-public-all-original-assertions-and-three-protocol-fault-controls-298e9d5a/command.json
+  - artifacts/lifecycle/observation-repair-1fb1d623/manifest.json
+  - artifacts/lifecycle/observation-repair-1fb1d623/fixture-upgrade.json
+  blocker: null
+  local_acceptance_scope: 'Original E01: distinct immutable strategy/environment query,
+    seeded joint real event/capacity forecast, observed finite protocol grid with
+    actual last-observed/censor time, failures/unknowns/request denominator, no fake
+    future first hit. Public26 tests0; independent40/40 and real six-integral/two-path
+    grid comparison0. Continuous first passage remains UNKNOWN without monotonicity/slope
+    certificate; not a full real-cell/operating claim.'
+  accepted_code_hash: 28a5084647bd29779f4f0bfabeb4746d96bb4858a1f2179599e96471f641d3aa
+- id: C00
+  milestone: M1
+  workstream: control
+  title: 规则策略与真实能量现金流基础
+  depends_on:
+  - E01
+  status: done
+  required: true
+  implementation: 实现充分可参数化的规则充放电、硬界、固定未来策略、实际执行能量流与简化现金流；给全部方法统一接口。
+  deliverables:
+  - src/naheng/control/rules.py
+  - src/naheng/economics/ledger.py
+  acceptance:
+  - 正放电/负充电符号及J/kWh换算一致
+  - 实际执行而非候选动作计价，未执行任务有记录
+  validation_commands:
+  - uv run pytest tests/unit/test_rule_policy.py tests/unit/test_energy_ledger.py
+    -q
+  evidence:
+  - artifacts/validation/inference_control_final.json
+  - artifacts\validation\M1-default-demo-3916cb82\command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  blocker: null
+- id: P01
+  milestone: M1
+  workstream: packages
+  title: 首个形式性质进入动作/模型服务
+  depends_on:
+  - P00
+  - E01
+  - F01
+  status: done
+  required: true
+  implementation: 将实际build的收支/归约性质绑定包，使用适用条件与误差准入动作；unknown或越域启用显式备用/停止仿真自动动作。
+  deliverables:
+  - src/naheng/risk/admission.py
+  - src/naheng/packages/evidence_import.py
+  acceptance:
+  - 一条实际已检查性质被运行记录引用且影响有效性检查
+  - 没有有效备用时返回无法准入，不假设零电流必然可行
+  validation_commands:
+  - uv run pytest tests/integration/test_evidence_in_runtime.py -q
+  evidence:
+  - artifacts/formal/foundation/manifest.json
+  - artifacts/validation/P01-root-admission-recheck-15371195/command.json
+  - artifacts/validation/P01-chemistry-binding-hardened-972d71b8/command.json
+  - artifacts/P01-chemistry-binding/handoff-74f6743b.json
+  - artifacts/validation/P01-actual-proof-backed-worker-loop-21295a47/command.json
+  - artifacts/validation/P01-real-printer-calibration-regression-f4fbb327/command.json
+  - artifacts/validation/P01-activate-formal-seventeen-61c191d6/command.json
+  - artifacts/runs/nh-6ec6eee11f2c46308445237771c5feea/chemical_binding.json
+  - artifacts/validation/P01-activate-refreshed-foundation-2ff9cb46/command.json
+  - artifacts/validation/P01-independent-actual17-proof-worker-frozen-scope-d433847b/command.json
+  - artifacts/review/proof-run-independent-225d1f8b/manifest.json
+  - artifacts/review/two-user-Runs-replay-independent-8c4677ad/manifest.json
+  - artifacts/validation/P01-F02-rate-worker-after-live-owner-fix-250eea58/command.json
+  - artifacts/rate_http/actual-87aa5de0/manifest.json
+  - artifacts/validation/P01-current-variable-source-foundation-activation-2a0468f9/command.json
+  - artifacts/validation/P01-current-variable-source-residual-activation-ed540abc/command.json
+  - artifacts/formal/activation/residual-0444b133/activation.json
+  - artifacts/review/current-GUI-independent-9d1cbd27-f9a69d16/report.json
+  blocker: 不授全未来归约、严格风险、T3或现实安全/收益；完整后续实验与产品交付验收未完成。
+  local_acceptance_scope: 当前source9d的基础与瞬时残差指针显式激活0；两组真实页面Run每步使用4T0/3残差引用，表示64样本预算，独立83工件检查0。仅该模型包瞬时计算/准入接口局部范围。
+- id: W00
+  milestone: M1
+  workstream: web
+  title: API与异步计算闭环
+  depends_on:
+  - G04
+  - E01
+  - C00
+  - P01
+  status: done
+  required: true
+  implementation: 实现health、capabilities、scenarios、runs、snapshots、forecast、decision、economics与evidence，长任务进worker。
+  deliverables:
+  - src/naheng/api/app.py
+  - src/naheng/api/routes/
+  - frontend/src/api/generated.ts
+  acceptance:
+  - POST运行返回202/RunID，真实计算完成后关联各输出
+  - 取消/断线恢复/错误提示可检验；不存在模型返回明确错误
+  validation_commands:
+  - uv run pytest tests/integration/test_api_flow.py -q
+  evidence:
+  - artifacts\validation\locked-M0-M1-tests-cceb13fc\command.json
+  - artifacts/validation/G04-recovery-glue-fixture-repair-65ef6c0b/command.json
+  - artifacts/review/final_publication.json
+  - artifacts/validation/W00-P01-capability-formal-existing-tests-b98377fe/command.json
+  - artifacts/validation/W00-forecast-actual-HTTP-2fbdeda8/command.json
+  - artifacts/validation/W00-independent-HTTP-query-parameter-identity-review-d645921c/command.json
+  - artifacts/review/forecast-HTTP-independent-e576d66b/manifest.json
+  - artifacts/validation/W00-independent-two-user-Runs-and-replay-review-43accdf5/command.json
+  - artifacts/validation/P01-F02-rate-worker-after-live-owner-fix-250eea58/command.json
+  blocker: null
+  local_acceptance_scope: 真实异步Run与独立forecast worker、保存/重开/取消/恢复/回放、参数身份和错误路径通过；HTTP实际两查询与取消验证、独立复核通过。单当前API进程配额锁不宣称跨任意多服务的全局配额。
+- id: W01
+  milestone: M1
+  workstream: web
+  title: 首个真实工作台与证据跳转
+  depends_on:
+  - W00
+  status: done
+  required: true
+  implementation: 搭七页路由，优先实现总览实际运行、状态/寿命/风险/策略与证据入口；未完成页说明待实现但不能最终交付占位。
+  deliverables:
+  - frontend/src/pages/
+  - frontend/src/components/RunSelector.tsx
+  - frontend/tests/smoke.spec.ts
+  acceptance:
+  - 不启用mock数据兜底；修改输入创建真实新作业
+  - 点击证据显示真实来源和未覆盖内容，不仅是绿勾
+  validation_commands:
+  - npm --prefix frontend run build
+  - npm --prefix frontend run test:e2e -- --grep smoke
+  evidence:
+  - artifacts\validation\frontend-install-d8c1071c\command.json
+  - artifacts/web/frontend_build_recovery_manifest.json
+  - artifacts/ui/acceptance.json
+  - artifacts/review/final_publication.json
+  - artifacts/review/final_ui_review.json
+  - artifacts/review/UI_checkpoint_lineage.json
+  - artifacts/validation/W01-final-ui-evidence-gate-ef9f098b/command.json
+  - artifacts/validation/W01-build-current-async-and-proof-ui-993787f8/command.json
+  - artifacts/web/frontend_build_proof_manifest.json
+  - artifacts/validation/W01-current-UI-observations-and-download-903286be/command.json
+  - artifacts/ui/proof-current-f31e71d0/observations.json
+  - artifacts/review/two-user-Runs-replay-independent-8c4677ad/manifest.json
+  - artifacts/ui/proof-current-f31e71d0/reviewed-observations.json
+  - artifacts/validation/W01-current-final-UI-evidence-gate-dd7c1f76/command.json
+  - artifacts/validation/W01-rate-and-first-passage-frontend-build-4a5f03e8/command.json
+  - artifacts/profiles/actual-stages-76ec6897/manifest.json
+  - artifacts/profiles/actual-stages-47c86089/manifest.json
+  - artifacts/validation/W01-preserve-rate-bound-current-build-085ba07c/command.json
+  - artifacts/ui/proof-retry-768f497e/task.json
+  - artifacts/ui/proof-retry-768f497e/observed-53d82756/observations.json
+  - artifacts/validation/W01-current-proof-GUI-retry-observations-e7931ba2/command.json
+  - artifacts/validation/W01-current-proof-GUI-retry-observations-correct-replay-overlay-f25c051d/command.json
+  - artifacts/review/current-GUI-independent-b4ca7c91/report.json
+  - artifacts/validation/W01-current-GUI-independent-artifacts-4a860dbe/command.json
+  - artifacts/ui/proof-reviewed-57dfe55c/observations.json
+  - artifacts/validation/W01-publish-independent-reviewed-current-partial-GUI-b517aff0/command.json
+  - artifacts/review/ui-scoped-proposal-6a3e5b21/handoff.json
+  - artifacts/validation/W01-scoped-candidate-method-calibration-97f0810c/command.json
+  - artifacts/review/ui-scoped-install-f348baef/manifest.json
+  - artifacts/validation/W01-install-original-gate-preserving-scoped-audit-f85f7087/command.json
+  - artifacts/validation/W01-installed-scoped-audit-actual-partial-1b1b8e1d/command.json
+  - artifacts/ui/proof-retry-85c1fc83/task.json
+  - artifacts/ui/proof-retry-85c1fc83/observed-579a9866/observations.json
+  - artifacts/validation/W01-current9d-real-GUI-record-and-download-404b05e4/command.json
+  - artifacts/review/current-GUI-independent-9d1cbd27-f9a69d16/report.json
+  - artifacts/validation/W01-current9d-GUI-independent-artifacts-ede67a06/command.json
+  - artifacts/ui/proof-reviewed-f04a8525/observations.json
+  - artifacts/validation/W01-current9d-publish-independent-reviewed-partial-984bc305/command.json
+  - artifacts/validation/W01-current9d-original-UI-gate-d9a7c4b5/command.json
+  - artifacts/validation/W01-current9d-additional-scoped-UI-gate-cda45733/command.json
+  - artifacts/review/current-gui-attachment-independent-20261013/report.json
+  - artifacts/validation/W01-current9d-attachment-independent-readonly-f8b37d15/command.json
+  - artifacts/review/gui-publisher-conflict-guard-3b47122b/report.json
+  - artifacts/validation/W01-current9d-publisher-conflicting-hash-regressions-2d459e0c/command.json
+  - artifacts/ui/current-workbench-20261014-a/manifest.json
+  - artifacts/review/current-gui-run-independent-20261014-c/actual-run-review/report.json
+  - artifacts/validation/W01-owned-current-workbench-server-8822d372/command.json
+  - artifacts/validation/W01-owned-current-workbench-server-6ae9bd17/command.json
+  - artifacts/validation/W01-lifecycle-cancel-finalize-checksum-partial-report-real-tests-ab15fd2c/command.json
+  - artifacts/validation/W01-lifecycle-final-cancel-partial-report-workbench-build-2a6cfe30/command.json
+  - artifacts/validation/W01-original-smoke-unchanged-assertions-installed-Edge-real-service-0d19baae/command.json
+  - artifacts/validation/W01-original-smoke-D-temp-unchanged-assertions-Edge-234928be/command.json
+  - artifacts/validation/W01-original-smoke-current-form-repair-D-temp-Edge-fdb7e1ba/command.json
+  - artifacts/validation/W01-actual-lifecycle-GUI-source-build-download-seal-76a7ffa5/command.json
+  - artifacts/validation/W01-preserve-standard-research-form-while-life-selected-9e21eb83/command.json
+  - artifacts/validation/W01-build-research-form-regression-repair-3a675e89/command.json
+  - artifacts/validation/W01-build-unambiguous-lifecycle-price-labels-0d02e3ba/command.json
+  - artifacts/ui/lifecycle-workbench-20261014-a/manifest.json
+  - artifacts/review/lifecycle-workbench-independent-20261014-a/handoff.json
+  - artifacts/web/native-browser-69b96127/manifest.json
+  - artifacts/web/native-browser-83247754/manifest.json
+  - artifacts/web/native-browser-53b1dcd2/manifest.json
+  - artifacts/review/public-w01-f02-20261014-a/handoff.json
+  - artifacts/progress/E02-current-regression-458c0e74/manifest.json
+  - artifacts/web/native-browser-2e335700/manifest.json
+  - artifacts/ui/repaired-workbench-20261014-a/manifest.json
+  blocker: null
+  local_acceptance_scope: 'Original M1 workbench engineering: current-source real
+    changed-input jobs, seven pages, source/evidence limits, persisted report opened/downloaded
+    and same-source replay. Original build and unchanged smoke passed; 845+23 full
+    regression native0. Full W02/scientific release remains required.'
+  accepted_code_hash: 87ce0fccd584119bd9a437f52c4a3637b239cfa940015ab83f46ec18412e048d
+- id: X00
+  milestone: M1
+  workstream: validation
+  title: 分级验收器与首闭环集成测试
+  depends_on:
+  - G01
+  - G02
+  - W01
+  - P01
+  - G04
+  status: done
+  required: true
+  implementation: 实现verify/deploy健康检查档位、CLI demo与日志归档；missing/blocked返回2，不用文件存在冒充实验完成。
+  deliverables:
+  - src/naheng/runtime/verification.py
+  - configs/gates.yaml
+  - tests/integration/test_acceptance_loop.py
+  acceptance:
+  - smoke/app/formal/release状态独立且失败码正确
+  - acceptance_loop同RunID贯通全部查询和执行；测试不能写固定胜出
+  validation_commands:
+  - uv run naheng verify --profile smoke
+  - uv run naheng demo --scenario acceptance_loop --out artifacts/demo
+  evidence:
+  - artifacts\validation\M1-default-demo-3916cb82\command.json
+  - artifacts/smoke_final.json
+  - artifacts/ui/acceptance.json
+  - artifacts/review/final_publication.json
+  - artifacts/validation/G00-current-integrated-full-pytest-e86614eb/command.json
+  - artifacts/validation/W01-current-final-UI-evidence-gate-dd7c1f76/command.json
+  - artifacts/validation/F04-current-complete-core-gate-af41ed1e/command.json
+  - artifacts/validation/G00-rate-first-passage-current-full-pytest-85688794/command.json
+  - artifacts/validation/G00-owner-trajectory-current-full-pytest-5bc6eaa0/command.json
+  - artifacts/validation/G00-capacity-data-rate-current-full-pytest-92fbc295/command.json
+  - artifacts/validation/D01-nonempty-exact-three-file-baseline-original-regressions-2d9c9418/command.json
+  - artifacts/validation/G00-current-preserved-data-full-pytest-e0543c4f/command.json
+  - artifacts/validation/F04-current-sixty-six-partial-full-core-gate-a3cb9e13/command.json
+  - artifacts/validation/W01-current9d-original-UI-gate-d9a7c4b5/command.json
+  - artifacts/validation/X00-current9d-release-gate-c220677b/command.json
+  - artifacts/verification/release-2d63a390ce/audit.json
+  - artifacts/verification/release-2d63a390ce/all_required_tasks.stdout.log
+  - artifacts/verification/release-2d63a390ce/formal_core.stdout.log
+  - artifacts/release-after-C02-20261014-a.json
+  - artifacts/validation/X00-current-C02-accepted-release-gates-cdd29ad9/command.json
+  - artifacts/ui/lifecycle-workbench-20261014-a/manifest.json
+  - artifacts/review/f02-completion-independent-20261014-a/handoff.json
+  - artifacts/validation/Current-public-discovery-whole-regression-65aca9b8/command.json
+  - artifacts/progress/current-discovery-regression-20261014-a/started.json
+  - artifacts/validation/Current-regression-first-failure-20261014-b-9e23c646/command.json
+  - artifacts/validation/Capacity-plan-hash-original-resume-and-observation-regression-552eafcf/command.json
+  - artifacts/validation/Current-source-full-regression-after-physical-plan-identity-fix-a9425fb7/command.json
+  - artifacts/progress/bound-regression-20261014-c/manifest.json
+  - artifacts/progress/lean-partial-archive-20261014-a.json
+  - artifacts/validation/Current-all-original-regressions-after-real-proof-refresh-3fcb5097/command.json
+  - artifacts/progress/bound-regression-20261014-d/manifest.json
+  - artifacts/validation/Current-foundation-and-residual-real-native-refresh-and-activation-01c1dd2e/command.json
+  - artifacts/validation/R02-original-release-current-complete-core-and-remaining-gates-3e09e350/command.json
+  - artifacts/release-current-core-and-workbench-20261014-a.json
+  - artifacts/validation/X00-original-default-acceptance-loop-demo-073e697a/command.json
+  - artifacts/validation/X00-real-owned-gate-timeout-and-native-error-controls-c86213ff/command.json
+  - artifacts/validation/X00-original-integration-real-lineage-and-native-profile-codes-2b025359/command.json
+  - artifacts/validation/X00-one-interval-frozen-worker-diagnostic-profile-12e6b25c/command.json
+  - artifacts/progress/x00-one-interval-profile-20261015-b/result.json
+  - artifacts/progress/x00-one-interval-profile-20261015-b/cumulative.txt
+  - artifacts/validation/X00-original-default-after-equivalent-performance-repair-896cbf0d/command.json
+  - artifacts/validation/X00-public-equivalent-performance-and-original-integration-b8bc22e7/command.json
+  - artifacts/review/x00-performance-independent-20261015-a/handoff.json
+  - artifacts/validation/X00-final-native-descendant-and-negative-cleanup-calibration-877b2ca4/command.json
+  - artifacts/validation/X00-actual-final-Job-child-exit-and-profile-code-controls-b3b5ff07/command.json
+  - artifacts/review/x00-resource-repair-20261015-a/handoff.json
+  - artifacts/validation/X00-current-production-build-with-required-ancestor-read-98023a36/command.json
+  - artifacts/ui/proof-current-c40a72af/task.json
+  - artifacts/ui/proof-current-c40a72af/normal-run-identities.json
+  - artifacts/ui/proof-current-c40a72af/routes.json
+  - artifacts/ui/proof-current-c40a72af/11-report-download.json
+  - artifacts/ui/proof-current-c40a72af/12-report-opened.json
+  - artifacts/ui/proof-current-c40a72af/18-distinct-trajectories.json
+  - artifacts/validation/Record-current-GUI-independent-publication-and-private-repair-35ca12bc/command.json
+  - artifacts/ui/proof-current-c40a72af/metadata/get-only-181ed75b/command.json
+  - artifacts/review/x00-current-GUI-independent-20261015-a/final-review.json
+  - artifacts/review/x00-current-GUI-independent-20261015-a/final-review.seal.json
+  - artifacts/validation/X00-publish-current-actual-GUI-reviewed-record-29687c5d/command.json
+  - artifacts/validation/X00-complete-GUI-reviewed-record-consistent-metadata-1adcf7bb/command.json
+  - artifacts/ui/current-reviewed-d08185a3/observations.json
+  - artifacts/ui/current-reviewed-d08185a3/publication-checks.json
+  - artifacts/validation/X00-original-current-smoke-8a5dc021/command.json
+  - artifacts/smoke-current-core-20261015-a.json
+  - artifacts/verification/release-f3de84adea/audit.json
+  - artifacts/validation/X00-current-original-calibration-first-failure-trace-fdc03671/command.json
+  - artifacts/review/x00-current-smoke-failure-diagnosis-20261015-a/diagnosis.json
+  - artifacts/validation/X00-explicit-complete-suite-budget-preserve-all-original-gates-21f1c546/command.json
+  - artifacts/progress/complete-smoke-budget-726a41c5/manifest.json
+  - docs/adr/0022-current-complete-smoke-suite-budget.md
+  - artifacts/review/x00-current139f-GUI-independent-20261015-b/budget-review.json
+  - artifacts/handoff/x00-calibration-fixture-refresh-20261015-a/handoff.json
+  - artifacts/review/x00-calibration-fixture-independent-20261015-a/handoff.json
+  - artifacts/progress/calibration-fixture-adoption-06d63bb6/manifest.json
+  - artifacts/validation/X00-adopt-independent-real-current-technical-fixture-f794e618/command.json
+  - artifacts/validation/X00-original-calibration-runtime-consumer-observer-after-real-fixture-refresh-d6d69397/command.json
+  - artifacts/ui/proof-current-139f-20261015-b/task.json
+  - artifacts/ui/proof-current-139f-20261015-b/normal-run-identities.json
+  - artifacts/ui/proof-current-139f-20261015-b/metadata/get-only-6e8bd918/partial-record.json
+  - artifacts/validation/X00-current139f-actual-GUI-GET-only-assembly-44a498f4/command.json
+  - artifacts/validation/X00-original-complete-current139f-smoke-after-real-fixture-recovery-f77feb60/command.json
+  - artifacts/smoke-current139f-core-20261015-b.json
+  - artifacts/verification/release-4eb2a84a4e/audit.json
+  - artifacts/ui/current-reviewed-42178d38/observations.json
+  - artifacts/validation/X00-publish-current139f-real-GUI-independent-complete-4ca7d44b/command.json
+  - artifacts/validation/X00-current139f-original-UI-gate-dd92596f/command.json
+  - artifacts/validation/X00-current139f-complete-scoped-UI-gate-8de79b30/command.json
+  - artifacts/review/x00-current139f-GUI-independent-20261015-b/final-review.json
+  - artifacts/validation/X00-current139f-original-lifecycle-failure-trace-355b9893/command.json
+  - artifacts/validation/X00-lifecycle-original-short-D-owner-control-21d48f16/command.json
+  - artifacts/validation/X00-explicit-1440-complete-suite-preserve-native-bounds-d01bf1db/command.json
+  - artifacts/progress/complete-smoke-budget-1440-32182324/manifest.json
+  - docs/adr/0023-full-smoke-aggregate-and-short-windows-test-owner.md
+  - artifacts/ui/proof-current-142e-20261015-c/task.json
+  - artifacts/validation/X00-current142e-actual-GUI-GET-only-assembly-0982ed66/command.json
+  - artifacts/ui/proof-current-142e-20261015-c/metadata/get-only-e336093c/partial-record.json
+  - artifacts/review/x00-current142e-GUI-independent-20261015-c/final-review.json
+  - artifacts/review/x00-current142e-GUI-independent-20261015-c/final-review.seal.json
+  - artifacts/review/x00-current142e-GUI-independent-20261015-c/BUDGET_SEAL.json
+  - artifacts/validation/X00-publish-current142e-real-GUI-independent-complete-d60f20d7/command.json
+  - artifacts/ui/current-reviewed-9c0f467d/observations.json
+  - artifacts/validation/X00-current142e-original-complete-smoke-short-owner-03bc7acf/command.json
+  - artifacts/smoke-current142e-core-20261015-c.json
+  - artifacts/verification/release-2eed78048c/audit.json
+  - artifacts/validation/X00-original-frontier-isolated-120-second-reproduction-26d0be84/command.json
+  - artifacts/review/x00-current142e-frontier-smoke-failure-diagnosis-20261015-c/final-diagnosis.json
+  - artifacts/review/x00-frontier-performance-20261015-c/timing-review.json
+  - artifacts/validation/X00-real-unchanged-frontier-case-cProfile-b323de03/command.json
+  - artifacts/performance/frontier-real-profile-58ae6804/manifest.json
+  - artifacts/validation/X00-owned-D-checked-hash-import-cache-no-source-change-d8e69138/command.json
+  - artifacts/maintenance/owned-python-import-cache-8431e9e0/cache-index.json
+  - artifacts/review/python-checked-hash-cache-independent-20261015-a/handoff.json
+  - artifacts/review/python-checked-hash-cache-independent-20261015-a/seal.json
+  - artifacts/validation/X00-original-frontier-with-owned-checked-import-cache-355c7d93/command.json
+  - docs/adr/0024-owned-checked-hash-import-cache.md
+  - artifacts/progress/session-close-20261016-a/observed-session-state.json
+  - artifacts/verification/smoke-5b18fe5230/progress.json
+  - artifacts/verification/smoke-5b18fe5230/numerical_tests.stdout.log
+  - artifacts/verification/smoke-5b18fe5230/real_demo.stdout.log
+  - artifacts/verification/release-699968c3dc/audit.json
+  - artifacts/validation/Record-interrupted-session-actual-receipts-no-native-backfill-8935d62f/command.json
+  - artifacts/validation/X00-next-session-original-complete-smoke-1ff82002/command.json
+  - artifacts/validation/X00-original-current142e-default-demo-20261016-614a94d0/command.json
+  - artifacts/handoff/x00-completion-current142e-20261016-a/executions/4da32684/command.json
+  - artifacts/handoff/x00-completion-current142e-20261016-a/runs/8a823421/result.json
+  - artifacts/validation/X00-current142e-readonly-completion-evidence-owned-baseline-dc7518ed/command.json
+  - artifacts/smoke-current142e-core-20261016-a.json
+  - artifacts/verification/release-71146b9417/audit.json
+  - artifacts/handoff/x00-completion-current142e-20261016-a/preparation.json
+  - artifacts/handoff/x00-completion-current142e-20261016-a/executions/f975a5ad/command.json
+  blocker: Original X00/M1 engineering gates passed. Full scientific/application/release
+    requirements, A02 isolation and D02 real-cell mapping remain separate unfinished
+    tasks.
+  local_acceptance_scope: 'Original complete smoke native0/1493.162s: 1061tests+23subtests
+    passed/1370.41s, smoke_demo0/51.154s, foundation0/63.082s, originalUI0/3.785s.
+    Original standalone artifacts/demo native0/116.897s within120, RunIDnh-d1295d2a51c54be6af972f4cc5ba15cf,
+    full1800s/31observations/30actions/PF64/16paths. Existing same-source142e GUI
+    independent3221+2 accepted; optional independently authored readonly reader0/14.276s/10checks/1262bytepins
+    corroborated all current native commands/artifacts. Reader date-only path adaptation
+    and first setup failures retained, not a new TASKS gate. Legacy outer cleanup
+    fields remain UNKNOWN; four inner smoke gates and readonly reader have strict
+    actual cleanup readback. Original102tests/7fixtures/45tasks/18requirements unchanged;
+    no new scientific/release/OSisolation grant.'
+  accepted_code_hash: 142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c
+- id: D01
+  milestone: M2
+  workstream: data
+  title: 真实钠电数据导入与划分
+  depends_on:
+  - D00
+  - G02
+  status: done
+  required: true
+  implementation: 确认许可和字段，下载有预算的小子集，清理单位/时间/电芯标识，固定按电芯/批次/协议的训练验证测试划分。
+  deliverables:
+  - src/naheng/data/importers.py
+  - data/manifests/public_sodium.yaml
+  - data/splits/
+  acceptance:
+  - 真实文件校验和/许可可追溯；未知许可不再分发原始数据
+  - 相邻轨迹不随机泄漏；无法获得数据则阻塞而非造数据
+  validation_commands:
+  - uv run pytest tests/unit/test_data_import.py tests/integration/test_split_leakage.py
+    -q
+  evidence:
+  - artifacts/data/D01_import_split_bound_command.json
+  - artifacts/data/rwth_browser_attempt.json
+  - docs/DATA_INGESTION.md
+  - artifacts/validation/D01-public-full-import-v2-4648ab65/command.json
+  - artifacts/validation/D01-public-step-import-v2-60541240/command.json
+  - artifacts/validation/D01-public-row-split-guard-v2-af451f28/command.json
+  - artifacts/validation/D01-import-tests-current-b5d927f1/command.json
+  - artifacts/data/public_new/independent_review.json
+  - artifacts/data/public_new/DELIVERY.md
+  - artifacts/data/public_new/ordered-delivery-v3-fa6715bc.json
+  - artifacts/validation/D01-public-complete-ordered-v3-46063265/command.json
+  - artifacts/validation/D01-ordered-data-tests-recheck-cba00dfa/command.json
+  - artifacts/review/public-v3-independent-0618a9ae/manifest.json
+  - artifacts/validation/D01-independent-public-v3-byte-review-corrected-28fc92dc/command.json
+  - artifacts/review/data-integration-local-20261013-a/handoff.json
+  - artifacts/integration/data-capacity-87b8ea70/manifest.json
+  - artifacts/review/data-integration-zenodo-public-tests-command-20261013-g/command.json
+  - artifacts/review/data-integration-zenodo-public-handoff-20261013-g/handoff.json
+  - artifacts/review/data-integration-zenodo-independent-20261013-b/report.json
+  - artifacts/review/data-integration-zenodo-independent-20261013-command-b/command.json
+  - artifacts/data/registration/canonical-views-ec7924c4/registration.json
+  - artifacts/validation/D01-register-independent-reviewed-complete-member-views-3b643061/command.json
+  - artifacts/data/registration/sign-scope-e39e3000/registration.json
+  - artifacts/review/data-integration-zenodo-central-index-read-20261013-b/report.json
+  - artifacts/review/data-integration-zenodo-validator-static-20261013-b/report.json
+  - artifacts/validation/D01-nonempty-exact-three-file-baseline-original-regressions-2d9c9418/command.json
+  - artifacts/review/data-apply-preservation-install-2b4441e8/manifest.json
+  - artifacts/validation/D01-prewrite-entry-correct-source-format-regressions-2c199c96/command.json
+  - artifacts/review/data-guard-static-integration-20261013-6b95a80a/report.json
+  - artifacts/review/data-guard-receipts-20261013-38df946a/report.json
+  - artifacts/data/public_independent/zenodo13836819-additional-20261013-a/manifest.json
+  - artifacts/review/data-integration-extra-member-budget-20261013-a/unitview-handoff.json
+  - artifacts/review/zenodo-additional-source-bytes-independent-20261013/report.json
+  - artifacts/review/zenodo-additional-unitview-independent-20261013/report.json
+  - artifacts/validation/D01-additional-member-independent-unitview-de904f4e/command.json
+  - artifacts/data/registration/additional-cli-install-2f07eafe/manifest.json
+  - artifacts/validation/D01-install-independent-reviewed-additional-member-CLI-735a49bb/command.json
+  - artifacts/data/public_independent/unitview-audit-zenodo13836819-bat1-public-20261013-a/manifest.json
+  - artifacts/validation/D01-public-additional-member-full-row-entry-635b5f34/command.json
+  - artifacts/review/additional-public-byteidentity-20261013-7ebf36d0/report-recovered.json
+  - artifacts/validation/D01-independent-public-additional-byteidentity-recovered-c1874697/command.json
+  - data/manifests/additional-unit-view-bat1-20261013-a.json
+  - artifacts/validation/D01-register-independent-reviewed-supplementary-unit-view-da978754/command.json
+  - artifacts/review/data-integration-signal-window-overlap-20261013-a/audit.py
+  - artifacts/review/data-integration-signal-window-overlap-20261013-a/report.json
+  - artifacts/review/data-integration-signal-window-overlap-calibration-command-20261013-a/command.json
+  - artifacts/review/data-integration-signal-window-overlap-20261013-root-b/report.json
+  - artifacts/validation/D01-new-versus-seven-exact-eight-row-windows-eb362b84/command.json
+  - data/splits/zenodo13836819-eight-provenance-20261013-c.json
+  - src/naheng/data/member_partitions.py
+  - tests/unit/test_member_partitions.py
+  - artifacts/validation/D01-first-frozen-policy-role-lock-tests-6a030d3c/command.json
+  - artifacts/validation/D01-current-first-policy-locked-full-member-freeze-42256f2c/command.json
+  - artifacts/validation/D01-final-reopen-after-space-851d2015/command.json
+  - artifacts/review/partition-current-independent-20261013-a/policy_locked/report.json
+  - artifacts/validation/D01-current-first-policy-locked-independent-method-and-C-metadata-7e69ef63/command.json
+  - artifacts/review/data-integration-exact-window-full-20261013-root-b/report.json
+  - artifacts/validation/D01-exact-window-reviewed-method-bounded-recovery-ebca7a23/command.json
+  - artifacts/review/exact-window-independent-method-20261013-4f8a927c/report.json
+  - artifacts/validation/D01-independent-exact-window-method-0a5a242f/command.json
+  - artifacts/review/data-integration-exact-window-interruption-20261013-root-a/manifest.json
+  - artifacts/validation/D01-exact-window-interruption-state-correct-root-1712cb7f/command.json
+  - artifacts/review/d01-final-original-scope-20261014-a/runs/5c0f636e/command.json
+  - artifacts/review/d01-final-original-scope-20261014-a/runs/5c0f636e/result/report.json
+  - artifacts/validation/G00-current-complete-regression-approved-short-path-a9de2910/command.json
+  - data/manifests/public_sodium.yaml
+  blocker: 原D01完整成员工程导入/来源分组冻结验收已满足；物理/批次/IID/整ZIP及D02科学未知项保留，不作为已完成的科学验收。
+  local_acceptance_scope: 原任务允许的小子集：八个许可真实完整成员单位视图、原行/context/异常保留、整作者/raw/组件闭包三非空角色及首冻跨路径锁；真实fullfreeze/fullreopen和原测试0，独立原范围9项门检0。物理/批次/IID/同材料外测或事故收益未授。
+- id: S02
+  milestone: M2
+  workstream: simulation
+  title: 独立钠电参考适配与能力审计
+  depends_on:
+  - G03
+  - D00
+  - S01
+  status: done
+  required: true
+  implementation: 接入锁版本PyBaMM钠电示例或已审计等价参考；记录电化学输出、求解器与参数，不含能力显式拒绝。
+  deliverables:
+  - src/naheng/models/reference_pybamm.py
+  - configs/models/reference_sodium.yaml
+  - artifacts/reference_smoke/
+  acceptance:
+  - 短轨迹实跑并输出电压/可用内部量；化学身份匹配
+  - 禁止把恒温/无副反应结果当成热或完整老化验证
+  validation_commands:
+  - uv run naheng simulate --model reference_sodium --profile probe --out artifacts/reference_smoke
+  evidence:
+  - artifacts/validation/S02-reference-cli-1519bc17/command.json
+  - artifacts/validation/S02-reference-tests-corrected-42b1c0c4/command.json
+  - artifacts/probes/lean-restored/manifest.json
+  blocker: null
+  local_acceptance_scope: G03依赖已完成；参考钠电短解与适配器验收通过。参考仿真不覆盖实际测量、热/老化/生命周期外测。
+- id: S03
+  milestone: M2
+  workstream: simulation
+  title: 热、副反应退化与容量测试协议
+  depends_on:
+  - S01
+  - D00
+  status: done
+  required: true
+  implementation: 实现声明能量平衡、热管理耗能、副反应演化、容量测试协议与退役条件；标清合成参数和未校准机制。
+  deliverables:
+  - src/naheng/models/thermal.py
+  - src/naheng/models/degradation.py
+  - src/naheng/lifecycle/capacity_protocol.py
+  acceptance:
+  - 动作改变退化和未来容量，不读取按循环编号的预制曲线
+  - 电热能量与副反应库存守恒，不重复计算损失
+  validation_commands:
+  - uv run pytest tests/unit/test_thermal_balance.py tests/unit/test_capacity_protocol.py
+    -q
+  evidence:
+  - artifacts/validation/S03-2cbe9394/command.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  blocker: null
+- id: S04
+  milestone: M2
+  workstream: simulation
+  title: 模组与完整生命周期反馈
+  depends_on:
+  - S03
+  - C00
+  - E01
+  status: done
+  required: true
+  implementation: 实现明确4串默认拓扑、共同电流/单体限制与热耦合；生命周期循环跳步、短程误差检查、维护更换和策略再优化。
+  deliverables:
+  - src/naheng/simulation/module.py
+  - src/naheng/lifecycle/runner.py
+  acceptance:
+  - 异质性或耦合会改变模组约束，不能把单体概率相乘
+  - 跳步对短逐周期运行有误差报告，RUL/更换/残值一致
+  validation_commands:
+  - uv run pytest tests/integration/test_module_topology.py tests/integration/test_lifecycle_feedback.py
+    -q
+  evidence:
+  - artifacts/validation/S04-final-frozen-82293970/command.json
+  - artifacts/lifecycle_validation/compare_cycle_maps.json
+  - artifacts/lifecycle_validation/local_replacement_case.json
+  - artifacts/smoke_final.json
+  - artifacts/review/final_publication.json
+  blocker: null
+- id: S05
+  milestone: M2
+  workstream: estimation
+  title: ICA/EIS与诊断可用性
+  depends_on:
+  - D01
+  - E00
+  - S03
+  status: done
+  required: true
+  implementation: 实现ICA质量筛选与已提供阻抗数据接口，研究合规诊断观测的信息价值；无数据时给不可用原因。
+  deliverables:
+  - src/naheng/estimation/ica.py
+  - src/naheng/estimation/impedance.py
+  - src/naheng/estimation/identifiability.py
+  acceptance:
+  - 非单调/粗采样/噪声过大不生成假ICA证据
+  - 重要隐藏状态未可识别时保留分布并提出可用诊断
+  validation_commands:
+  - uv run pytest tests/unit/test_diagnostic_features.py -q
+  evidence:
+  - artifacts/validation/S05-original-public-diagnostic-features-acceptance-8f96085e/command.json
+  - artifacts/validation/S05-session-cli-contracts-fresh-short-workspace-temp-4b601948/command.json
+  - artifacts/validation/S05-current-cli-preserved-full-member-frozen-reopen-881f1d74/command.json
+  - artifacts/validation/S05-current-complete-regression-approved-short-path-ae2b7423/command.json
+  - docs/DIAGNOSTICS.md
+  - artifacts/review/s05-independent-20261014-a/repaired-ica-impedance-report.json
+  - artifacts/validation/S05-independent-repaired-ICA-EIS-hand-and-bad-controls-11d56bd8/command.json
+  - artifacts/review/s05-independent-20261014-a/identifiability-report.json
+  - artifacts/validation/S05-independent-local-SVD-covariance-binding-and-option-controls-63a4e179/command.json
+  - artifacts/review/s05-independent-20261014-a/public-cli-report.json
+  - artifacts/validation/S05-independent-real-CLI-train-prefix-and-saved-posterior-scope-recovered-816f1d5c/command.json
+  - artifacts/diagnostics/public-train-session-20261014-a/manifest.json
+  - artifacts/diagnostics/public-train-session-20261014-a/result.json
+  - artifacts/validation/S05-public-train-prefix-real-diagnostic-entry-70bb95c0/command.json
+  - artifacts/diagnostics/saved-synthetic-session-20261014-a/manifest.json
+  - artifacts/diagnostics/saved-synthetic-session-20261014-a/result.json
+  - artifacts/validation/S05-saved-synthetic-posterior-real-local-diagnostic-entry-ea094ce0/command.json
+  blocker: null
+  local_acceptance_scope: 原质量筛选/提供阻抗接口/局部可辨识性工程范围：当前872源码，原公共63诊断测试及18接入回归0、完整531+12原子测试0；独立99/128方法及75真实CLI产物0。train256实际采用且不合条件无曲线，旧synthetic64粒子保留。无实测EIS/真实合格ICA性能/校准/全局识别或运营概率保证。
+- id: E02
+  milestone: M2
+  workstream: estimation
+  title: 状态参数校准、失配残差与条件预测升级
+  depends_on:
+  - E00
+  - D01
+  - S03
+  status: done
+  required: true
+  implementation: 校准观测与参数模型，保存训练来源；传播共同状态/参数样本到RUL风险收益；监测残差与可识别性。
+  deliverables:
+  - src/naheng/estimation/calibration.py
+  - src/naheng/estimation/discrepancy.py
+  acceptance:
+  - 参数改变不能保证后验必窄；区间性质独立评估
+  - 全模块使用一致快照，不为收益模型另造健康度
+  validation_commands:
+  - uv run pytest tests/integration/test_shared_posterior.py -q
+  evidence:
+  - artifacts/validation/E02-install-frozen-calibration-and-joint-discrepancy-methods-7dcb7917/command.json
+  - artifacts/validation/E02-current-runtime-source-units-descriptor-worker-regressions-first-b6a2a84d/command.json
+  - artifacts/validation/E02-current-repaired-real-calibration-entry-28472aff/command.json
+  - artifacts/calibration/builtin-calibration-current-20261014-a/manifest.json
+  - artifacts/review/e02-runtime-independent-20261014-a/r1/report.json
+  - artifacts/review/e02-runtime-independent-20261014-a/r2/report.json
+  - artifacts/validation/E02-current-full-regression-approved-owned-worker-c2195c56/command.json
+  - docs/CALIBRATION.md
+  - artifacts/progress/E02-current-regression-e230195d/manifest.json
+  - artifacts/validation/C01-E02-final-current-source-full-regression-approved-7824c280/command.json
+  - artifacts/calibration/builtin-calibration-current-20261014-f/manifest.json
+  - artifacts/validation/C01-current-preserved-partial-ledger-fresh-calibration-0c3392b4/command.json
+  - artifacts/calibration_consumers/public-20261014-b/manifest.json
+  - artifacts/validation/E02-final-current-common-posterior-public-consumer-148ffa29/command.json
+  - artifacts/review/calibration-observer-independent-20261014-a/report-current.json
+  - artifacts/validation/E02-independent-model-source-declared-resolved-alias-recovery-ec61ddbc/command.json
+  - artifacts/review/e02-runtime-independent-20261014-a/r5/report.json
+  - artifacts/calibration/frontier-current-20261014-b/manifest.json
+  - artifacts/validation/C01-v2-current-buffer-family-source-calibration-050425ee/command.json
+  - artifacts/baseline_frontier/public-twelve-20261014-b/registration.json
+  - artifacts/review/baseline-frontier-independent-20261014-a/artifact-report-current-v2-r1.json
+  - artifacts/progress/E02-current-regression-b0fd6775/manifest.json
+  - artifacts/review/e02-task-acceptance-scope-independent-20261014-a/scope-report-r1.json
+  - artifacts/progress/E02-current-regression-c00ee2cd/manifest.json
+  - artifacts/review/joint-gaussian-observer-independent-20261014-a/actual-current-first-review/report.json
+  - docs/JOINT_GAUSSIAN_OBSERVER.md
+  - src/naheng/estimation/joint_gaussian_observer.py
+  - src/naheng/runtime/joint_scenario_calibration.py
+  - artifacts/review/joint-gaussian-observer-independent-20261014-a/handoff.json
+  - artifacts/progress/joint-first-entry-failure-63b14c04/manifest.json
+  - artifacts/validation/E02-public-current-joint-observer-shared-posterior-acceptance-ec4b99c9/command.json
+  - artifacts/validation/E02-public-current-joint-observer-shared-posterior-quoted-recovery-2e7aba4c/command.json
+  - artifacts/validation/E02-independent-original-task-vs-downstream-scientific-gate-scope-audit-d8f96e8a/command.json
+  - artifacts/validation/E02-public-current-joint-observer-original-shared-posterior-binding-recovery-6d6617ad/command.json
+  - artifacts/validation/E02-actual-registered-descriptor-identity-and-compact-mismatch-controls-0a037e49/command.json
+  - artifacts/validation/E02-current-final-real-correlated-biased-source-calibration-5ff6581e/command.json
+  - artifacts/validation/E02-current-final-real-correlated-biased-sensor-replanning-entry-e57e10fb/command.json
+  - artifacts/validation/E02-joint-independent-current-real-artifact-scalar-Bayes-physics-RNG-ledger-d6eb90dc/command.json
+  - artifacts/validation/E02-F02-final-current-complete-regression-owned-Windows-worker-f7ffddcb/command.json
+  - artifacts/progress/E02-engineering-accepted-b95731fa/manifest.json
+  - artifacts/validation/E02-original-current-engineering-acceptance-close-with-scientific-gates-preserved-196ce380/command.json
+  - artifacts/progress/E02-current-regression-92f8fe74/manifest.json
+  - artifacts/validation/C01-D02-final-current-complete-regression-owned-Windows-worker-988efda6/command.json
+  - artifacts/progress/E02-current-regression-f9faa3a6/manifest.json
+  blocker: 完整项目科学与UI验收不由局部工程通过替代。
+  local_acceptance_scope: 原工程done；08705完整736项和23子测试实际0，新源/测试字节前后相同。
+  remaining_scientific_scope: D02 real held-out sodium/reference comparison, X03 independent
+    risk/net-profit population, W02 full Web and P03 evidence withdrawal remain their
+    original required tasks.
+- id: D02
+  milestone: M2
+  workstream: data
+  title: 公开钠电外测与参考差异报告
+  depends_on:
+  - D01
+  - S02
+  - E02
+  status: in_progress
+  required: true
+  implementation: 在持出电芯/协议中评价电压、容量、阻抗或真实已有老化指标，分别报告同体系拟合与跨体系方法迁移。
+  deliverables:
+  - experiments/public_sodium.py
+  - artifacts/public_validation/
+  - docs/DATA_VALIDATION.md
+  acceptance:
+  - 外测指标可从原始文件重算；不声称未有标签的事故验证
+  - 控制与参考共用的模型假设及盲区显式列出
+  validation_commands:
+  - uv run naheng experiment run --suite public-data --profile pilot
+  evidence:
+  - artifacts/progress/public-sodium-install-efa00505/manifest.json
+  - artifacts/validation/D02-reviewed-public-voltage-source-and-suite-installation-d2c5b680/command.json
+  - artifacts/validation/D02-public-entry-owned-job-truncated-report-and-resolved-default-guards-6eb06189/command.json
+  - artifacts/progress/task-start-D02-51cf71cf/manifest.json
+  - artifacts/validation/D02-real-public-experiment-start-original-gates-preserved-6a28a67f/command.json
+  - artifacts/validation/D02-final-current-public-frozen-licensed-voltage-transfer-pilot-fc7f8ba3/command.json
+  - artifacts/review/public-sodium-causal-independent-20261014-a/handoff.json
+  - artifacts/review/public-sodium-public-entry-independent-20261014-a/handoff.json
+  - artifacts/validation/D02-latest-hard-exit-fixed-current-public-voltage-pilot-8dbff83e/command.json
+  - artifacts/review/public-sodium-current-after-hard-exit-independent-20261014-a/handoff.json
+  - artifacts/review/public-sodium-material-mapping-20261014-a/handoff.json
+  - artifacts/validation/D02-independent-primary-material-protocol-mapping-676cd389/command.json
+  - artifacts/handoff/d02-capacity-protocol-20261014-a/handoff.json
+  - artifacts/review/next-formal-proof-integration-20261014-a/d02-capacity/handoff.json
+  - artifacts/handoff/d02-capacity-protocol-20261014-a/clock-repair-handoff.json
+  - artifacts/review/next-formal-proof-integration-20261014-a/d02-clock-recheck-20261014-a/handoff.json
+  - artifacts/review/d02-public-entry-review-a/handoff.json
+  - artifacts/review/d02-public-entry-review-b/handoff.json
+  - artifacts/validation/D02-original-public-data-plus-independent-capacity-phase-41404ae3/command.json
+  - artifacts/public_validation/current-capacity-combined-20261014-a/manifest.json
+  - artifacts/public_validation/current-capacity-combined-20261014-a/capacity/execution/command.json
+  - artifacts/public_validation/current-capacity-combined-20261014-a/voltage/execution/command.json
+  - artifacts/validation/D02-current-serial-voltage-plus-independent-capacity-rerun-fa6fb55d/command.json
+  - artifacts/public_validation/current-capacity-combined-20261014-b/manifest.json
+  - artifacts/review/current-serial-d02-independent-20261014-a/handoff.json
+  - artifacts/handoff/d02-primary-mapping-research-20261015-a/manifest.json
+  - docs/DATA_VALIDATION.md
+  - artifacts/review/d02-primary-gap-independent-20261015-a/research-report.json
+  - artifacts/review/d02-primary-gap-independent-20261015-a/seal.json
+  - artifacts/review/d02-primary-gap-independent-20261015-a/SOURCE_NOTES.md
+  - artifacts/handoff/d02-source-completion-20261016-a/handoff.json
+  - artifacts/handoff/d02-source-completion-20261016-a/REPORT.md
+  - artifacts/validation/D02-new-official-Methods-metadata-access-exact-public-hosts-6e7a3643/command.json
+  - artifacts/validation/D02-new-primary-access-saved-evidence-check-5d6ac39d/command.json
+  - artifacts/handoff/d02-source-completion-20261016-a/alternate-source-search-20261016-c.json
+  - artifacts/validation/D02-alternate-primary-source-ledger-cohort-unchanged-cb933c6d/command.json
+  blocker: 冻结cohort实物身份与物性映射仍UNKNOWN；新论文和仿真不能替代对应测量。
+  local_acceptance_scope: 补查4项作者/出版社/大学来源；另一个1.2Ah电芯与现有3.2/10Ah cohort不同，原始数据按请求提供。无持出打开、拟合、实物字段移植或科学N增加。
+- id: C01
+  milestone: M2
+  workstream: control
+  title: 名义/场景MPC和完整动作空间
+  depends_on:
+  - C00
+  - P01
+  - S03
+  - E02
+  status: done
+  required: true
+  implementation: 实现滚动规划、分SOC段倍率/截止/DoD/热管理/时序，控制器可行性与备用范围检查；固定强基线搜索接口。
+  deliverables:
+  - src/naheng/control/mpc.py
+  - src/naheng/control/scenario_mpc.py
+  - configs/policies/
+  acceptance:
+  - 只执行首动作并重规划；预测时延/不可行有记录
+  - 固定裕度也可调参形成前沿；所有方法同信息权限
+  validation_commands:
+  - uv run pytest tests/integration/test_mpc_feasibility.py -q
+  evidence:
+  - artifacts/validation/C01-integrated-proof-backed-MPC-worker-a59a9fce/command.json
+  - artifacts/validation/C01-independent-MPC-faithful-payload-review-f24c2797/command.json
+  - artifacts/review/MPC-worker-independent-49eb3017/manifest.json
+  - docs/SCENARIO_MPC.md
+  - artifacts/progress/C01-scenario-install-d5466504/manifest.json
+  - artifacts/scenario_calibration/public-20261014-b/manifest.json
+  - artifacts/validation/C01-current-public-scenario-sensor-replan-persistent-ledger-0870f5ad/command.json
+  - artifacts/review/scenario-calibration-independent-20261014-a/report-current-b-nested-recovered.json
+  - artifacts/review/scenario-calibration-independent-20261014-a/handoff.json
+  - artifacts/validation/C01-E02-final-current-source-full-regression-approved-7824c280/command.json
+  - docs/BASELINE_FRONTIER.md
+  - src/naheng/control/fixed_baseline.py
+  - src/naheng/runtime/baseline_frontier.py
+  - configs/experiments/fixed-baseline-frontier-v2.json
+  - artifacts/handoff/fixed-baseline-buffer-20261014-a/handoff.json
+  - artifacts/review/fixed-baseline-buffer-independent-20261014-a/handoff.json
+  - artifacts/validation/C01-fixed-baseline-final-real-controls-ab618304/command.json
+  - artifacts/validation/C01-public-frontier-training-freeze-paired-entry-regressions-first-07be3a33/command.json
+  - artifacts/validation/C01-final-family-frontier-case-identity-public-entry-tests-68af575d/command.json
+  - artifacts/validation/C01-v2-current-buffer-family-source-calibration-050425ee/command.json
+  - artifacts/validation/C01-twelve-fixed-baseline-family-tuning-freeze-new-paired-evaluation-5e7f94e9/command.json
+  - artifacts/baseline_frontier/public-twelve-20261014-b/manifest.json
+  - artifacts/baseline_frontier/public-twelve-20261014-b/freeze.json
+  - artifacts/review/baseline-frontier-independent-20261014-a/handoff.json
+  - artifacts/review/baseline-frontier-independent-20261014-a/run-cf7ec0d8/command.json
+  - artifacts/review/baseline-frontier-independent-20261014-a/run-03ba11dd/command.json
+  - artifacts/review/baseline-frontier-independent-20261014-a/run-40e90869/command.json
+  - artifacts/validation/C01-final-current-full-regression-fixed-frontier-0adec1eb/command.json
+  - artifacts/progress/E02-current-regression-b0fd6775/manifest.json
+  - artifacts/calibration/frontier-current-20261014-d/manifest.json
+  - artifacts/validation/C01-final-current-diagonal-source-for-repeated-v2-d5ffe1d4/command.json
+  - artifacts/validation/C01-final-current-v2-repeated-seeds-version-consistency-51cb0b73/command.json
+  - artifacts/baseline_frontier/public-twelve-20261014-d/manifest.json
+  - artifacts/review/baseline-frontier-current-after-joint-independent-20261014-a/handoff.json
+  - artifacts/validation/C01-current-after-joint-independent-all-original-artifact-checks-7a82d9eb/command.json
+  - artifacts/validation/C01-current-after-joint-independent-repeated-seed-physical-comparison-dbaed6ed/command.json
+  - artifacts/review/c01-original-action-scope-independent-20261014-a/report.json
+  - artifacts/progress/guarded-execution-install-ed08c9bd/manifest.json
+  - artifacts/progress/control-callsite-before-06429380/manifest.json
+  - artifacts/validation/C01-E02-current-original-mpc-shared-posterior-and-guarded-public-replans-7a78ca86/command.json
+  - artifacts/validation/C01-native-guard-frozen-failure-recovery-ledger-field-recovery-e83a5da6/command.json
+  - artifacts/validation/C01-actual-execution-bookkeeping-and-checkpoint-IO-database-recovery-guard-38d18820/command.json
+  - artifacts/validation/C01-original-recovery-full-boundary-ledger-and-prediction-reserve-fixes-c392f086/command.json
+  - artifacts/validation/C01-actual-hard-exit-intent-and-old-normal-checkpoint-recovery-84025691/command.json
+  - artifacts/review/guarded-execution-independent-20261014-a/handoff.json
+  - artifacts/review/c01-four-callsites-pending-original-scope-independent-20261014-a/runs/f80bf7a4/report.json
+  - artifacts/handoff/guarded-mpc-thermal-current-20261014-a/handoff.json
+  - artifacts/review/c01-four-callsites-pending-original-scope-independent-20261014-a/handoff.json
+  - artifacts/review/baseline-frontier-guarded-current-independent-20261014-a/handoff.json
+  - artifacts/progress/E02-current-regression-f9faa3a6/manifest.json
+  - docs/GUARDED_EXECUTION.md
+  - artifacts/runs/nh-727c0a6b1d814395aef75613e8bc9609/manifest.json
+  - artifacts/validation/C01-D02-current-hard-exit-fixed-complete-regression-owned-worker-9dc542c6/command.json
+  - artifacts/validation/C01-latest-current-v2-common-native-guard-paired-frontier-6c4faca1/command.json
+  - artifacts/validation/C01-latest-current-native-guarded-MPC-frozen-run-demo-e023f93f/command.json
+  - artifacts/progress/C01-engineering-accepted-bd951a89/manifest.json
+  blocker: C02生命周期收益、真实外测、运营统计、T3完整理论、七页及交付验收仍按原下游任务未完成。
+  local_acceptance_scope: 原C01工程已验收done；08705完整736项/23子测试0，三实际动作和34共同guard基线任务0，独立44/637/3067/1147/595检查通过。原首次失败/预算UNKNOWN保留。
+  remaining_scientific_scope: Original C02 lifecycle/terminal finance, D02 external
+    data, X01/X03 population/ROI, full T3/formal and W02 UI remain required.
+- id: C02
+  milestone: M2
+  workstream: control
+  title: 生命周期现金流、服务情景和Pareto
+  depends_on:
+  - C00
+  - S04
+  - C01
+  status: done
+  required: true
+  implementation: 完整记购售电、热管理、维护更换、退役残值、期末公平处理；实现可配置需量/服务收入但默认需依据才启用。
+  deliverables:
+  - src/naheng/economics/lifecycle.py
+  - src/naheng/economics/pareto.py
+  - configs/economics/
+  acceptance:
+  - 不能同时赚期末透支能量又忽略残值；衰减影子价不重复入账
+  - 收益前沿来自实际评估且事件/alpha口径清楚
+  validation_commands:
+  - uv run pytest tests/unit/test_no_double_count.py tests/unit/test_terminal_value.py
+    -q
+  evidence:
+  - artifacts/progress/task-start-C02-2a1f4ba3/manifest.json
+  - artifacts/validation/C02-dependency-satisfied-actual-staged-finance-start-bd3dba6a/command.json
+  - artifacts/validation/C02-staged-final-original-named-finance-config-asset-identity-tests-b726941e/command.json
+  - artifacts/validation/C02-independent-saved-fine-and-macro-phase-adapter-first-84225b30/command.json
+  - artifacts/progress/lifecycle-finance-install-2395769c/manifest.json
+  - artifacts/progress/lifecycle-audits-install-776d952a/manifest.json
+  - artifacts/validation/C02-reviewed-current-native-receipts-and-precise-source-install-f781127f/command.json
+  - artifacts/validation/C02-current-original-named-acceptance-after-audits-f9e71d51/command.json
+  - artifacts/validation/C02-installed-full-new-tests-fresh-short-temp-60bd6d35/command.json
+  - artifacts/validation/C02-current-installed-periodic-rejection-and-public-adoption-controls-ec3a6414/command.json
+  - artifacts/validation/C02-current-public-lifecycle-executions-common-terminal-and-frontier-69ea48c5/command.json
+  - artifacts/validation/C02-current-predeclared-real-macro-early-exit-thermal-and-primary-frontier-0abf6b33/command.json
+  - artifacts/review/lifecycle-finance-independent-20261014-c/handoff.json
+  - artifacts/review/lifecycle-endpoint-integration-20261014-a/handoff.json
+  - artifacts/review/lifecycle-public-finance-independent-20261014-a/handoff.json
+  - artifacts/review/lifecycle-finance-first-public-independent-20261014-a/handoff.json
+  - artifacts/review/lifecycle-public-current-b/handoff.json
+  - artifacts/progress/E02-current-regression-ac7bd211/manifest.json
+  - artifacts/review/lifecycle-public-current-c/handoff.json
+  - artifacts/review/lifecycle-finance-public-c-independent-20261014-a/handoff.json
+  - artifacts/validation/C02-current-eight-real-lifecycle-module-finance-executions-1e35047c/command.json
+  - artifacts/validation/C02-full-840-current-regression-fresh-D-temp-within-engineering-batch-budget-601d2f58/command.json
+  - docs/LIFECYCLE_FINANCE.md
+  - artifacts/progress/C02-engineering-accepted-51e5ed11/manifest.json
+  - artifacts/validation/C02-original-engineering-current-840-real-coupled-module-close-df8ce1af/command.json
+  - artifacts/progress/E02-current-regression-e3104b29/manifest.json
+  blocker: null
+  local_acceptance_scope: 原C02工程验收完成：当前2b4源8次真实生命周期执行，4主case、macro、32s提前退役、.96J热管理和耦合4s弱芯更换；共同终端和generation核算、有限case
+    Pareto。独立1415/831通过，完整840测试+23子测试/6warning原生0，530.44s；原360s超时2保留。
+  remaining_scientific_scope: X03/G6 operating returns, real-cell D02, full T3/formal,
+    W02 lifecycle UI and full release remain required.
+- id: W02
+  milestone: M2
+  workstream: web
+  title: 七页完整工作台与三种运行模式
+  depends_on:
+  - W01
+  - E02
+  - S04
+  - S05
+  - C02
+  status: done
+  required: true
+  implementation: 完成总览、状态、寿命、风险、策略收益、仿真对照、理论证据；交互、批量、回放、导入导出和失败状态齐全。
+  deliverables:
+  - frontend/src/pages/
+  - frontend/tests/full_flow.spec.ts
+  - src/naheng/api/reports.py
+  acceptance:
+  - 每页展示实际API结果；mode标明而非将回放当实时
+  - 用户动作可触发可追溯计算，失败/未知有明确原因
+  validation_commands:
+  - npm --prefix frontend run build
+  - npm --prefix frontend run test:e2e -- --grep full-flow
+  evidence:
+  - artifacts/ui/conditional-forecast-20261014-a/02-complete.ax.txt
+  - artifacts/ui/conditional-forecast-20261014-a/02-complete.png
+  - artifacts/ui/conditional-forecast-20261014-a/05-cancel-final.ax.txt
+  - artifacts/ui/conditional-forecast-20261014-a/download-path.json
+  - artifacts/validation/W02-forecast-refresh-and-restore-build-9d51175f/command.json
+  - artifacts/validation/W01-owned-current-workbench-server-cfcb6dc4/command.json
+  - artifacts/validation/W01-owned-current-workbench-server-a12cbd07/command.json
+  - artifacts/review/conditional-forecast-independent-20261014-a/verified-evidence.json
+  - artifacts/review/conditional-forecast-independent-20261014-a/root-readonly-20261014-c/report.json
+  - artifacts/review/conditional-forecast-independent-20261014-a/root-readonly-20261014-d/report.json
+  - artifacts/validation/W02-independent-saved-forecast-JSON-lineage-no-new-ODE-5a569eb5/command.json
+  - artifacts/validation/W02-independent-saved-forecast-annotation-repair-no-new-ODE-b34d735c/command.json
+  - artifacts/validation/W02-independent-saved-forecast-absolute-output-recovery-0b54a8aa/command.json
+  - artifacts/validation/W02-independent-saved-forecast-calibrated-scalar-readonly-e7692664/command.json
+  - artifacts/validation/W02-seal-exact-native-review-receipt-and-first-failures-d10cc959/command.json
+  - artifacts/validation/W02-current-core-view-production-build-85ae6cd1/command.json
+  - artifacts/validation/W02-current-CSV-calibrated-zero-crossing-and-original-API-28445b07/command.json
+  - artifacts/review/w02-api-review-b/handoff.json
+  - artifacts/validation/W02-core-publication-withdrawal-and-CSV-API-regression-9f019a4e/command.json
+  - artifacts/validation/W02-original-full-flow-current-production-browser-4015c4cd/command.json
+  - artifacts/validation/Current-all-original-regressions-after-real-proof-refresh-3fcb5097/command.json
+  - artifacts/progress/bound-regression-20261014-d/manifest.json
+  - artifacts/web/native-browser-722254be/manifest.json
+  - artifacts/review/current-capacity-and-import-independent-20261014-a/handoff.json
+  - artifacts/review/current-iab-sevenpages-independent-20261014-a/handoff.json
+  - artifacts/ui/current-workbench-20261014-b/TASK.json
+  - artifacts/ui/current-workbench-20261014-b/current-run-pages.json
+  - artifacts/ui/current-workbench-20261014-b/core-from-ui-summary.json
+  blocker: null
+  local_acceptance_scope: 'Original W02 engineering task accepted for source9383619:
+    seven pages use real saved API calculations; interactive, batch and registered
+    replay; changed conditional forecasting/cancel/reopen; lifecycle thermal/module
+    cases; CSV input rejection, sign/energy accounting, actual CSV/JSON/HTML download
+    and saved report replay. Production build and original3 full-flow native0; independent114+36
+    and current IAB evidence review0; complete995 tests+23subtests0 with unchanged
+    source/tests. Synthetic scope, imported model mapping/capacity/RUL unknown, no
+    operating-risk/profit/real-cell or whole-project release authority.'
+  accepted_code_hash: 9383619fc8240907258d270072ba5dc1a9392df0cdbbfcea8626c09c160e721b
+- id: F02
+  milestone: M3
+  workstream: formal
+  title: 一族状态归约、必要状态和反例
+  depends_on:
+  - F01
+  status: done
+  required: true
+  implementation: 实现n位点精确聚合条件、同总量不同演化反例、副反应输出保留及近似残差，查对已有双模拟/线性聚合。
+  deliverables:
+  - formal/Naheng/Reduction/Exact.lean
+  - formal/Naheng/Reduction/Residual.lean
+  - formal/Naheng/Reduction/Counterexample.lean
+  - docs/NOVELTY.md
+  acceptance:
+  - 一般条件命题与具体反例均实际编译；不只浮点拟合
+  - 候选新结论和经典基础分开，指明哪些输出没保留
+  validation_commands:
+  - uv run naheng formal check --suite reduction
+  evidence:
+  - artifacts/validation/F02-F03-actual-published-slice-checks-e519df2d/command.json
+  - artifacts/formal/reduction-exact-published-20261012/manifest.json
+  - artifacts/review/residual_delivery-f65e1805.json
+  - artifacts/validation/F02-residual-candidate-sum-scope-repair-0f08746b/command.json
+  - artifacts/validation/F02-rate-input-seal-regressions-f1743302/command.json
+  - artifacts/validation/F03-runner-recovery-first-failure-diagnostic-b9fdae00/command.json
+  - artifacts/validation/P01-W00-rate-rejection-artifact-API-45962590/command.json
+  - artifacts/formal/reduction-residual-recovery-20261012/manifest.json
+  - artifacts/formal/candidates/ReductionTrajectoryTime-c8d5d6cb/manifest.json
+  - artifacts/review/residual-independent-scope-20261013/report.json
+  - artifacts/review/trajectory-independent-20261013/report.json
+  - artifacts/formal/reduction-trajectory-cached-entry-20261013-67e8ab13/manifest.json
+  - artifacts/review/trajectory-publication-independent-20261013/report.json
+  - artifacts/validation/D01-F03-duplicate-read-installed-regressions-9a766de3/command.json
+  - artifacts/validation/F02-current-residual-audit-after-six-suite-window-7f7ac825/command.json
+  - artifacts/formal/residual-current-capacity-retry-20261013-acc6252e/manifest.json
+  - artifacts/validation/P01-current-residual-after-capacity-activation-6cfa0b45/command.json
+  - artifacts/validation/F01-F03-current-seven-partial-publications-5c052118/command.json
+  - artifacts/formal/variable-publication-3511d51d/manifest.json
+  - artifacts/formal/candidates/ReductionVariableTrajectory-1178f102/manifest.json
+  - artifacts/review/variable-rate-math-independent-20261013/report.json
+  - artifacts/formal/publication/variable-trajectory-37614704/manifest.json
+  - artifacts/validation/F02-variable-rate-normal-cached-publication-76699777/command.json
+  - artifacts/formal/publication/definition-modules-e0f5f7ac/manifest.json
+  - artifacts/validation/F02-F03-select-original-defining-modules-b7e16f14/command.json
+  - artifacts/formal/variable-defining-module-20261013/manifest.json
+  - artifacts/validation/F02-variable-rate-defining-module-build-audit-938e6d9a/command.json
+  - artifacts/review/heterogeneous-counterexample-preparation-20261013/manifest.json
+  - artifacts/formal/current-partials-84dd2d0f/manifest.json
+  - artifacts/validation/F01-F03-current-sixty-six-target-aggregate-binding-89b9b624/command.json
+  - artifacts/formal/variable-definition-second-20261013/manifest.json
+  - artifacts/validation/F02-variable-definition-second-bounded-audit-ea016be7/command.json
+  - artifacts/review/partial-publication-identity-20261013-635cad40/report.json
+  - artifacts/formal/candidates/ReductionHeterogeneousCounterexample-316f9eaf/manifest.json
+  - artifacts/validation/F02-heterogeneous-counterexample-body-repair-1-c9a5c006/command.json
+  - artifacts/review/data-integration-heterogeneous-independent-20261013-a/report.json
+  - artifacts/review/fixed-current-readout-author-handoff-20261013/manifest.json
+  - artifacts/validation/F02-fixed-current-readout-original-attempt-1-00de5fc5/command.json
+  - artifacts/review/fixed-current-readout-dependency-recovery-20261013/manifest.json
+  - artifacts/validation/F02-fixed-current-readout-specific-MeanValue-dependency-11e8f7d2/command.json
+  - artifacts/formal/setup/extend_deriv_meanvalue-20261013-17aa465b/manifest.json
+  - artifacts/formal/setup/single_fetch_deriv_meanvalue-20261013-94198ace/manifest.json
+  - artifacts/validation/F02-six-exact-cache-single-fetch-64ea2a4f/command.json
+  - artifacts/formal/setup/unpack_deriv_meanvalue-20261013-276eea45/manifest.json
+  - artifacts/validation/F02-six-exact-cache-ordinary-unpack-8d765516/command.json
+  - artifacts/review/fixed-current-readout-compilation-20261013/ReductionFixedCurrentReadout-8528707c/manifest.json
+  - artifacts/validation/F02-fixed-current-readout-original-after-official-cache-521fa37e/command.json
+  - artifacts/review/fixed-current-readout-final-unknown-after-official-cache-20261013/manifest.json
+  - artifacts/review/fixed-current-readout-math-independent-20261013/report.json
+  - artifacts/validation/F02-fixed-current-readout-independent-conditional-math-bbb40207/command.json
+  - artifacts/review/readout-frozen-evidence-independent-20261013-1f870aa4/report.json
+  - artifacts/validation/F02-independent-readout-unknown-accounting-recovered-842ce5bb/command.json
+  - artifacts/progress/novelty-readout-unknown-20261013/manifest.json
+  - artifacts/validation/F02-next-full-reduction-acceptance-fe820933/command.json
+  - artifacts/review/fixed-current-readout-local-diagnostic-20261013-b/report.json
+  - artifacts/validation/F02-fixed-current-readout-bounded-local-diagnostic-final-unknown-78669ca2/command.json
+  - artifacts/review/fixed-current-readout-feasible-next-20261014-a/corrected-body-final.json
+  - artifacts/review/readout-eight-independent-20261014-a/report-recovered.json
+  - artifacts/formal/publication/fixed-current-readout-1a64f3eb/manifest.json
+  - artifacts/validation/F02-readout-eight-actual-defining-module-build-and-strict-audit-1b512cfb/command.json
+  - artifacts/formal/readout-publication-ccfe9b55/manifest.json
+  - docs/FIXED_CURRENT_READOUT.md
+  - docs/NOVELTY.md
+  - artifacts/review/readout-publication-independent-20261014-a/handoff.json
+  - artifacts/formal/current-readout-partials-1fb9e802/manifest.json
+  - artifacts/validation/F02-current-original-required-reduction-suite-gate-bd955cb1/command.json
+  - artifacts/formal/reduction-required-next-20261014-b/manifest.json
+  - formal/Naheng/Reduction/HeterogeneousCounterexample.lean
+  - docs/HETEROGENEOUS_COUNTEREXAMPLE.md
+  - artifacts/formal/candidates/heterogeneous-next-20261014-a/verification.json
+  - artifacts/formal/candidates/heterogeneous-next-20261014-a/publication-delta.json
+  - artifacts/review/heterogeneous-publication-independent-20261014-a/candidate-accepted-report-r2.json
+  - artifacts/validation/F02-independent-heterogeneous-publication-byte-delta-and-current-audit-review-e6033c57/command.json
+  - artifacts/formal/publication/heterogeneous-d81fa5f9/manifest.json
+  - artifacts/validation/F02-install-reviewed-unchanged-heterogeneous-eight-eee40029/command.json
+  - artifacts/formal/current-heterogeneous-partials-7f00a1d9/manifest.json
+  - artifacts/validation/F02-all-nine-current-defining-module-builds-and-strict-axiom-audits-f6544d43/command.json
+  - artifacts/validation/F02-activate-fresh-foundation-nine-suite-publication-85fa4d46/command.json
+  - artifacts/validation/F02-activate-fresh-residual-nine-suite-publication-b48ff0cf/command.json
+  - artifacts/review/heterogeneous-publication-independent-20261014-a/handoff.json
+  - artifacts/validation/F02-independent-all-nine-fresh-publication-eighty-two-binding-and-pointer-review-7f7975d8/command.json
+  - artifacts/handoff/f02-completion-20261014-a/handoff.json
+  - artifacts/review/f02-completion-independent-20261014-a/handoff.json
+  - artifacts/formal/install-full-reduction-2f56a055/manifest.json
+  - artifacts/validation/F02-install-unchanged-26-reviewed-kernel-candidates-required-72-target-suite-96662584/command.json
+  - artifacts/validation/F02-public-ClassSufficiency-real-build-2ce72382/command.json
+  - artifacts/review/public-w01-f02-20261014-a/handoff.json
+  - artifacts/progress/E02-current-regression-458c0e74/manifest.json
+  - artifacts/formal/f02-required-public-20261014-b/manifest.json
+  blocker: null
+  local_acceptance_scope: 'Original finite-site reduction engineering: general class
+    sufficiency/necessity and physical counterexamples, trapping output conditions,
+    tighter-in-specified-cases residual and constant/variable trajectory envelopes,
+    same-current pointwise bridge; all72 public targets built and audited. No unrestricted
+    runtime, Float, actual-cell or full T3 authority.'
+  accepted_code_hash: 87ce0fccd584119bd9a437f52c4a3637b239cfa940015ab83f46ec18412e048d
+- id: F03
+  milestone: M3
+  workstream: formal
+  title: 寿命近似与协议容量/退役条件
+  depends_on:
+  - F01
+  - S03
+  status: done
+  required: true
+  implementation: 形式化声明反应扩散膜生长关系、有效近似条件，以及库存—协议容量—阈值时间链的必要假设；边界情况保留未知。
+  deliverables:
+  - formal/Naheng/Aging/Film.lean
+  - formal/Naheng/Aging/Capacity.lean
+  - formal/Naheng/Aging/Endpoint.lean
+  acceptance:
+  - 常参数结论不自动用于变温；未证明项不偷偷添加axiom
+  - 平坦/不穿阈值反例不能返回无条件RUL时间界
+  validation_commands:
+  - uv run naheng formal check --suite aging
+  evidence:
+  - artifacts/formal/aging-film-published-20261012/manifest.json
+  - artifacts/review/aging-capacity-endpoint-delivery-ace49443/manifest.json
+  - artifacts/formal/candidates/AgingCapacityEndpoint-12fe201e/manifest.json
+  - artifacts/review/aging-four-window-delivery-368f0cff/manifest.json
+  - artifacts/formal/publication/capacity-endpoint-cf96d71d/manifest.json
+  - artifacts/integration/data-capacity-87b8ea70/manifest.json
+  - artifacts/validation/D01-F03-duplicate-read-installed-regressions-9a766de3/command.json
+  - artifacts/formal/capacity-publication-f298cf0f/manifest.json
+  - artifacts/validation/F01-F03-current-six-partial-publications-78c07586/command.json
+  - artifacts/review/capacity-freshness-independent-20261013-c02e73c1/report.json
+  - artifacts/formal/variable-publication-3511d51d/aging_film/manifest.json
+  - artifacts/formal/variable-publication-3511d51d/aging_capacity_endpoint/manifest.json
+  - artifacts/validation/F03-capacity-endpoint-normal-cached-publication-eebc7027/command.json
+  - artifacts/formal/capacity-normal-cached-20261013/manifest.json
+  - artifacts/formal/capacity-defining-module-20261013/manifest.json
+  - artifacts/validation/F03-capacity-defining-module-build-audit-00b49f39/command.json
+  - artifacts/review/partial-publication-identity-20261013-635cad40/report.json
+  - artifacts/handoff/f03-completion-20261014-a/handoff.json
+  - artifacts/handoff/f03-completion-20261014-b/handoff.json
+  - artifacts/review/public-f03-thermo-20261014-a/f03-handoff.json
+  - artifacts/formal/f03-required-public-20261014-a/manifest.json
+  - artifacts/formal/install-aging-289274f1/manifest.json
+  blocker: null
+  local_acceptance_scope: 'Original F03 declared-model mathematics: constant reaction/diffusion
+    integral; thin-rate/sqrt trajectory validity/error; variable-coefficient derivative/counterexample;
+    successful protocol capacity and first-retirement existence/error with independent
+    continuity/sign/slope conditions; flat/no-crossing cases do not yield unconditional
+    RUL. Public30 build/audit0, independent136/1360. SiteModel-to-film, numerical
+    certificates and actual-cell applicability remain separate P02/science obligations.'
+  accepted_code_hash: 28a5084647bd29779f4f0bfabeb4746d96bb4858a1f2179599e96471f641d3aa
+- id: F04
+  milestone: M3
+  workstream: formal
+  title: 目标量误差、热力学与准入合同
+  depends_on:
+  - F02
+  - F03
+  status: done
+  required: true
+  implementation: 补齐同输入轨迹界、指定输出/副反应误差，开放端口热力学条件，以及严格/概率合同；审查数值和闭环输入缺口。
+  deliverables:
+  - formal/Naheng/Reduction/Trajectory.lean
+  - formal/Naheng/Chemistry/Thermodynamics.lean
+  - formal/Naheng/Contracts/Output.lean
+  acceptance:
+  - 不把标准收紧引理单独算化学创新；要连到具体误差推导
+  - 采样间/闭环不同输入和模型现实差异不越界宣称
+  validation_commands:
+  - uv run naheng formal check --suite contracts
+  evidence:
+  - artifacts/validation/F04-current-complete-core-gate-af41ed1e/command.json
+  - artifacts/formal/core-final-continuation-20261012/manifest.json
+  - artifacts/formal/install-contracts-2cf6c6d6/manifest.json
+  - artifacts/review/public-f03-thermo-20261014-a/thermo-handoff.json
+  - artifacts/validation/F04-original-public-required-contracts-c00ffdf5/command.json
+  - artifacts/formal/f04-required-public-20261014-a/manifest.json
+  - artifacts/validation/F04-public-Output-sequential-retry-16093e84/command.json
+  - artifacts/handoff/f04-public-recovery-20261014-b/manifest.json
+  - artifacts/validation/F04-official-public-Output-sequential-build-9fe9bf56/command.json
+  - artifacts/validation/F04-official-public-Thermodynamics-sequential-build-b476feed/command.json
+  - artifacts/validation/F04-official-public-PhysicalPorts-sequential-build-003e7568/command.json
+  - artifacts/validation/F04-official-public-Protocol-sequential-build-ae6d8e25/command.json
+  - artifacts/validation/F04-official-public-Admission-sequential-build-72b1631a/command.json
+  - artifacts/validation/F04-original-public-contracts-after-sequential-official-leaves-b84d30b4/command.json
+  - artifacts/formal/f04-required-public-20261014-b/manifest.json
+  - artifacts/review/next-formal-proof-integration-20261014-a/f04/semantic_readonly_review.md
+  - artifacts/review/next-formal-proof-integration-20261014-a/F04_BRIDGE_REQUIREMENTS.md
+  - artifacts/formal/f04-required-public-20261014-d/manifest.json
+  - artifacts/validation/F04-original-all-59-targets-bounded-native-audits-44dadd63/command.json
+  - artifacts/review/formal-public-gate-review-b/contracts-review-results.json
+  blocker: null
+  local_acceptance_scope: 'Original F04 model-level formal task accepted: all59 exported
+    targets built and independently reviewed, strict3 transitive audits and source/object
+    identities current. Every audit<=120s/8GiB; complete disjoint batches, no partial
+    authority. Numeric/closed-loop/real-cell conditions remain independent downstream
+    obligations; full project not complete.'
+  accepted_code_hash: 59638af496306e2afbc502986a3e8ef17f83b4730a67064cba8ef7de8f98a5b9
+- id: F05
+  milestone: M3
+  workstream: formal
+  title: 发布核心定理和信任依赖审计
+  depends_on:
+  - F04
+  status: done
+  required: true
+  implementation: 实现导出声明、statement_hash、工具链锁、build日志和传递公理白名单审计，生成可被注册表读取的证据。
+  deliverables:
+  - formal/Naheng/Exported.lean
+  - tools/audit_formal.py
+  - artifacts/formal/manifest.json
+  acceptance:
+  - sorryAx/自造公理/未审计native依赖被拒绝；有负向测试
+  - 不改目标以通过；代码变更触发重验
+  validation_commands:
+  - uv run naheng formal check --suite core
+  evidence:
+  - artifacts/progress/task-start-F05-46b297e6/manifest.json
+  - artifacts/progress/core-publication-20261014-a/manifest.json
+  - artifacts/review/core-publication-review-a/review-results.json
+  - artifacts/validation/F05-original-complete-core178-bounded-native-audits-946a571b/command.json
+  - artifacts/formal/core-required-public-20261014-a/manifest.json
+  - artifacts/validation/F05-original-negative-and-exact-core-partition-controls-5ad2154a/command.json
+  - artifacts/formal/core-required-public-20261014-b/manifest.json
+  - artifacts/validation/F05-original-core178-exact-module-partition-native-audits-26c29555/command.json
+  - artifacts/review/formal-public-gate-review-c/core-review-results.json
+  blocker: null
+  local_acceptance_scope: 'Original F05 model-level formal task accepted: all178 exported
+    targets built and independently reviewed, strict3 transitive audits and source/object
+    identities current. Every audit<=120s/8GiB; complete disjoint batches, no partial
+    authority. Numeric/closed-loop/real-cell conditions remain independent downstream
+    obligations; full project not complete.'
+  accepted_code_hash: 9383619fc8240907258d270072ba5dc1a9392df0cdbbfcea8626c09c160e721b
+- id: A00
+  milestone: M3
+  workstream: discovery
+  title: 类型化候选语言与反例数据集
+  depends_on:
+  - S00
+  - F02
+  - G04
+  status: done
+  required: true
+  implementation: 定义分组/关系/有限表达式和目标命题语法，生成满足/不满足条件的模型族，划分结构族，接入数值和解析反例。
+  deliverables:
+  - src/naheng/discovery/grammar.py
+  - src/naheng/discovery/counterexamples.py
+  - configs/discovery/
+  acceptance:
+  - 不仅预写唯一答案；候选非法与被反驳状态分离
+  - 数据构造/划分能复现，测试结构不参与搜索
+  validation_commands:
+  - uv run pytest tests/unit/test_candidate_grammar.py tests/integration/test_counterexample_replay.py
+    -q
+  evidence:
+  - artifacts/validation/A00-original-public-required-grammar-counterexample-gate-9a17c0b3/command.json
+  - artifacts/review/a00-independent-20261014-a/handoff.json
+  - artifacts/discovery/installation-9445a8fa/manifest.json
+  - artifacts/validation/A00-A01-public-original-and-adoption-and-learning-tests-35029660/command.json
+  - artifacts/progress/A00-engineering-accepted-f4dbe0eb/manifest.json
+  blocker: null
+  local_acceptance_scope: Original public23 native0; independent513/2057 candidate
+    and exact/ODE evidence0; public expanded60 timed out, not granted. Actual trained-role
+    metadata hole fixed without changing original models/templates/split/23assertions.
+  accepted_code_hash: 2e8b7cb195d918d99c19e4cb5e95edf22224556ebec35dce1f2109eb292dfbb0
+- id: A01
+  milestone: M3
+  workstream: discovery
+  title: 真正学习的候选/证据选择器
+  depends_on:
+  - A00
+  - F02
+  status: done
+  required: true
+  implementation: 使用候选特征与历史反馈训练代理/排序或GP，估计价值和成本，选择候选/参考查询；随机枚举只作基线。
+  deliverables:
+  - src/naheng/discovery/learner.py
+  - src/naheng/discovery/acquisition.py
+  - artifacts/discovery/
+  acceptance:
+  - 记录实际训练与新反馈后的选择变化，不以硬编码规则称AI
+  - UNKNOWN不标false；不以空有效域/无价值定理刷成功率
+  validation_commands:
+  - uv run naheng discover --profile pilot --out artifacts/discovery
+  evidence:
+  - artifacts/discovery/public-pilot-20261014-a/manifest.json
+  - artifacts/validation/A01-original-public-discover-pilot-541683e9/command.json
+  - artifacts/review/a01-independent-integration-20261014-a/report.json
+  - artifacts/validation/A01-independent-saved-model-matrix-feedback-choice-no-new-ODE-31137d35/command.json
+  - artifacts/progress/A01-engineering-accepted-3f204771/manifest.json
+  blocker: null
+  local_acceptance_scope: Public real108 evaluation pilot0, same-pool learned feedback
+    choices; independent1009 saved-head/negative controls0. Learned below enumeration.
+    Synthetic finite model engineering only; no new kernel or operationalN. Current
+    whole regression incomplete.
+  accepted_code_hash: 2e8b7cb195d918d99c19e4cb5e95edf22224556ebec35dce1f2109eb292dfbb0
+- id: A02
+  milestone: M3
+  workstream: discovery
+  title: 反例—修订—证明执行闭环
+  depends_on:
+  - A01
+  - F05
+  status: done
+  required: true
+  implementation: 在限制资源的子进程生成Lean候选、检查、提取反馈、修订条件并独立注册证据；可选外部LLM显式授权配置。
+  deliverables:
+  - src/naheng/discovery/proof_worker.py
+  - src/naheng/discovery/providers.py
+  - src/naheng/discovery/loop.py
+  acceptance:
+  - 候选未验证不能晋升checked；超时与权限失败可恢复
+  - 无付费LLM也有完整本地学习链；若宣称LLM成果有实际调用记录
+  validation_commands:
+  - uv run pytest tests/integration/test_discovery_loop.py tests/integration/test_proof_worker_isolation.py
+    -q
+  evidence:
+  - artifacts/handoff/a02-proof-loop-20261014-a/handoff.json
+  - artifacts/review/next-formal-proof-integration-20261014-a/A02_REVIEW.md
+  - artifacts/review/next-formal-proof-integration-20261014-a/a02-calibration.json
+  - artifacts/progress/a02-native-probe-auto-review-rejected-20261014-a.json
+  - artifacts/validation/A02-human-approved-exact-p3-native-isolation-canary-0902411a/command.json
+  - artifacts/handoff/a02-isolation-feasibility-20261014-a/canary/p3/run.json
+  - artifacts/review/a02-canary-r2-pre-run-review-a/handoff.json
+  - artifacts/validation/A02-same-reviewed-r2-after-owned-bytecode-cache-recovery-e8a68ca3/command.json
+  - artifacts/handoff/a02-isolation-feasibility-20261014-a/canary/p3/run.r2.json
+  - artifacts/validation/A02-current-pinned-compiler-supported-config-options-c9a82c73/command.json
+  - artifacts/handoff/a02-isolation-feasibility-20261014-a/compatibility-20261015-a/handoff.json
+  - artifacts/handoff/a02-isolation-feasibility-20261014-a/compatibility-20261015-a/driver-diagnostics.json
+  - artifacts/validation/A02-human-approved-same-p3-reviewed-r3-native-canary-db843d34/command.json
+  - artifacts/handoff/a02-isolation-feasibility-20261014-a/compatibility-20261015-a/run.r3.json
+  - artifacts/review/a02-canary-r3-pre-run-review-a/handoff.json
+  - artifacts/review/a02-r3-actual-failure-20261015-a/handoff.json
+  - artifacts/handoff/a02-existing-linux-environment-20261015-a/manifest.json
+  - artifacts/validation/A02-record-actual-prepared-image-and-retained-failures-4860ffdd/command.json
+  - artifacts/maintenance/a02-prepared-image-receipts-fa93c8a3/index.json
+  - artifacts/review/a02-linux-prepared-rootfs-independent-20261015-b/handoff.json
+  - artifacts/review/a02-linux-prepared-rootfs-independent-20261015-b/seal.json
+  - artifacts/review/a02-linux-prepared-rootfs-independent-20261015-b/REVIEW.md
+  - artifacts/authorization/a02-new-WSL-human-approved-20261015-a/approval.json
+  - artifacts/review/a02-linux-import-supervisor-independent-20261015-a/handoff.json
+  - artifacts/review/a02-wsl-actual-independent-20261015-a/actual-review.json
+  - artifacts/review/a02-wsl-actual-independent-20261015-a/seal.json
+  - artifacts/review/a02-wsl-actual-independent-20261015-a/execution/76a87889/command.json
+  - docs/ENVIRONMENT.md
+  - artifacts/validation/A02-sole-System32-WHvGetCapability-readonly-342ed9d9/command.json
+  - artifacts/validation/A02-four-bounded-official-MSYS2-ranges-retain-prefix-7cc958eb/command.json
+  - artifacts/validation/A02-native-System32-tar-verified-zstd-package-list-6319cef3/command.json
+  - artifacts/validation/A02-MSYS2-official-documented-signer-catalog-verification-65dfd4e6/command.json
+  - artifacts/validation/A02-Ubuntu-minimal-official-signed-metadata-c1f268a1/command.json
+  - artifacts/validation/A02-Ubuntu-cloud-documented-key-saved-metadata-verification-a39514f7/command.json
+  - artifacts/validation/A02-signed-Ubuntu-minimal-four-range-stage1-50fc71df/command.json
+  - artifacts/validation/A02-signed-runtime-DLL-dependencies-wave1-89df4ff4/command.json
+  - artifacts/validation/A02-signed-runtime-DLL-dependencies-wave1-r2-retry-ee1e496e/command.json
+  - artifacts/maintenance/a02-VM-dependency-preparation-20261016-a/snapshots.json
+  - artifacts/handoff/a02-delegated-backend-20261016-a/runtime-staging-r2-review.json
+  - artifacts/validation/A02-owned-QEMU-version-and-paused-WHPX-partition-586eded6/command.json
+  - artifacts/validation/A02-owned-paused-WHPX-supported-Windows-options-r2-d5014632/command.json
+  - artifacts/validation/A02-offline-VM-benign-cgroup-bwrap-canaries-r2-db46fc3c/command.json
+  - artifacts/validation/A02-offline-VM-real-nobody-userns-canaries-r3-747072bb/command.json
+  - artifacts/validation/A02-official-fixed-Lean419-Linux-bounded-asset-99628005/command.json
+  - artifacts/validation/A02-official-Linux-Lean-actual-full-tar-zstd-integrity-739cb6fa/command.json
+  - artifacts/validation/A02-existing-locked-imports-pinned-bundle-no-execution-93ef8fe3/command.json
+  - artifacts/validation/C-owned-Lean-libraries-standard-NTFS-compression-byte-verification-7265ef32/command.json
+  - artifacts/validation/C-own-Mathlib-data-standard-NTFS-compression-all-byte-hashes-cced7ae4/command.json
+  - artifacts/validation/A02-actual-artifact-and-dependency-footprint-readonly-db08b414/command.json
+  - artifacts/validation/A02-actual-footprint-extended-length-Windows-paths-r2-bc9b8f08/command.json
+  - artifacts/validation/A02-official-AppArmor401-bwrap-stacked-profile-source-only-93d68a1e/command.json
+  - artifacts/maintenance/a02-native-VM-progress-20261016-b/snapshots.json
+  - artifacts/maintenance/own-lean-ntfs-a271cc42d413/result.json
+  - artifacts/progress/active-dependency-size-longpaths-20261016-a.json
+  - artifacts/handoff/a02-delegated-backend-20261016-a/apparmor-profile-source.json
+  - artifacts/progress/session-close-20261016-b/observed-state.json
+  - artifacts/validation/A02-offline-VM-canaries-r6-initial-namespace-credential-readback-3573a995/command.json
+  - artifacts/validation/A02-frozen-learned-events-actual-counterexample-replay-and-source-binding-f1441279/command.json
+  - artifacts/handoff/a02-delegated-backend-20261016-a/actual-loop-sources-784c0f2a7989/result.json
+  - artifacts/validation/A02-existing-public-payload-hardlinks-small-readonly-blob-views-37384311/command.json
+  - artifacts/validation/A02-Linux-runtime-selected-size-no-extraction-1783be45/command.json
+  - artifacts/validation/A02-fixed-40-source-proof-seed-with-readonly-blobs-8e542c61/command.json
+  - artifacts/handoff/a02-delegated-backend-20261016-a/utf8-fix-not-yet-executed.json
+  - artifacts/handoff/a02-delegated-backend-20261016-a/real-outer-credential-validator-controls.json
+  - artifacts/validation/A02-real-stable-libzstd-stream-buffer-and-corruption-controls-96bc572d/command.json
+  - artifacts/validation/A02-fixed-40-source-proof-seed-UTF8-r2-f0e69815/command.json
+  - artifacts/validation/A02-real-offline-Linux-Lean-fixed-proof-workload-r1-a1ad308c/command.json
+  - artifacts/validation/A02-readonly-blob-pair-specific-guard-e8f9a5fb/command.json
+  - artifacts/handoff/a02-delegated-backend-20261016-a/boot-fixed-proofs-r2-plan.json
+  - artifacts/validation/A02-real-offline-Linux-Lean-fixed-proof-workload-r2-9ead3f77/command.json
+  - artifacts/validation/A02-real-private-Linux-proof-axiom-and-provenance-audit-51a42507/command.json
+  - artifacts/review/private-linux-proof-root-audit-332acd3ab333/report.json
+  - artifacts/validation/A02-prepare-original-tests-and-private-batch-templates-5b5a202d/command.json
+  - artifacts/validation/A02-pin-private-worker-and-original-eight-tests-d93125b2/command.json
+  - artifacts/handoff/a02-integrated-vm-worker-20261016-a/proof_worker.py
+  - artifacts/handoff/a02-integrated-vm-worker-20261016-a/trusted-backend-inputs.json
+  - artifacts/handoff/a02-integrated-vm-worker-20261016-a/README.md
+  - artifacts/validation/A02-original-eight-tests-private-real-VM-adapter-2dc2c070/command.json
+  - artifacts/validation/A02-old-pass-evidence-missing-native-start-correctly-rejected-db834c79/command.json
+  - artifacts/validation/A02-old-eight-pass-native-start-absence-confirmed-31c0f2df/command.json
+  - artifacts/review/a02-native-test-root-audit-0b60a86ddd10/report.json
+  - artifacts/validation/A02-native-Lean-start-receipt-before-timeout-preparation-39a58dbb/command.json
+  - artifacts/handoff/a02-integrated-vm-worker-20261016-b/preparation.json
+  - artifacts/validation/A02-original-eight-tests-confirmed-native-start-174be86e/command.json
+  - artifacts/validation/A02-original-eight-actual-start-cleanup-and-proofs-audit-7f2ae7c0/command.json
+  - artifacts/review/a02-native-test-root-audit-5c28a79c31c1/report.json
+  - artifacts/validation/A02-real-learned-counterexample-revision-40-declaration-loop-e0567a64/command.json
+  - artifacts/validation/A02-complete-actual-learned-loop-source-and-native-audit-3daf0328/command.json
+  - artifacts/review/a02-actual-loop-root-audit-bdd193b6f756/report.json
+  - artifacts/validation/A02-seal-native-loop-and-original-test-candidate-0110d636/command.json
+  - artifacts/handoff/a02-integrated-vm-worker-20261016-b/sealed-candidate.json
+  - artifacts/validation/A02-r3-original-eight-native-deadline-177436af/command.json
+  - artifacts/validation/A02-r3-native-receipt-root-audit-6915c2ab/command.json
+  - artifacts/review/a02-native-test-root-audit-454f3ef347fa/report.json
+  - artifacts/review/a02-independent-20261016-c/handoff.json
+  - artifacts/validation/A02-public-reviewed-delta-readonly-preconditions-d971d945/command.json
+  - artifacts/validation/A02-public-reviewed-local-adoption-1bd2a5c5/command.json
+  - artifacts/progress/public-adopted-20261016-c.json
+  - artifacts/review/a02-independent-20261016-c/completion-supplement.json
+  - artifacts/validation/A02-public-original-eight-real-isolated-Lean-f83d2adf/command.json
+  - artifacts/review/a02-public-independent-20261016-c/run-c17232dac1b2/command.json
+  - artifacts/validation/A02-public-actual-40-declaration-loop-247757a9/command.json
+  - artifacts/discovery/public-loop-0180982d14/loop/revised-attempts/proof-report.json
+  - artifacts/handoff/a02-serial-recovery-20261016-b/manifest.json
+  - artifacts/review/a02-serial-frames-root-20261016-d/report.json
+  - artifacts/validation/A02-independent-framed-serial-final-reviewed-baseline-61ddf92f/command.json
+  - artifacts/validation/A02-P02-P03-reviewed-runtime-bundle-install-39a7d236/command.json
+  - artifacts/validation/A02-framed-public-original-eight-3c331b5c/command.json
+  - artifacts/validation/A02-framed-public-original-eight-owned-D-828557a1/command.json
+  - artifacts/validation/A02-framed-current-original-eight-root-audit-432c8aae/command.json
+  - artifacts/review/a02-framed-original-eight-root-20261016-c/report.json
+  - artifacts/validation/A02-framed-public-actual40-declaration-loop-c33ad0fb/command.json
+  - artifacts/review/a02-framed-public-loop-independent-20261016-c/handoff.json
+  - artifacts/review/a02-p02-promotion-20261016-c/promotion-review.json
+  blocker: null
+  local_acceptance_scope: 'Original engineering acceptance passed: actual original8
+    timeout/recovery/isolation tests and full40 conditional counterexample/revision/proof
+    loop, independently audited. 20 checked declarations represent10 distinct conditional
+    candidates;5 actual counterexamples. No new natural-law or independent scientific
+    sample claim. Native receipts remain scoped to frozen ef44; unchanged component
+    hashes verified in0a2.'
+  accepted_at_utc: '2026-10-16T05:51:05.197014+00:00'
+- id: P02
+  milestone: M3
+  workstream: packages
+  title: 理论模型包真实进入生命周期运行
+  depends_on:
+  - P01
+  - F05
+  - A02
+  - E02
+  status: done
+  required: true
+  implementation: 将归约、寿命与输出合同关联可执行快模型；实现后验集合域检查、升阶重建不确定性、模型条件变化与调用追溯。
+  deliverables:
+  - src/naheng/packages/transition.py
+  - src/naheng/packages/contracts.py
+  - model_packages/
+  acceptance:
+  - 至少一条非平凡化学结论在真实预测或准入被调用
+  - 参数哈希变更不继承旧证据；低→高维不生成虚假精确真值
+  validation_commands:
+  - uv run pytest tests/integration/test_reduction_runtime_link.py -q
+  evidence:
+  - artifacts/handoff/p02-grouped-runtime-20261014-a/fresh-manifest.json
+  - artifacts/review/p02-fresh-review-b/handoff.json
+  - artifacts/handoff/p02-public-integration-20261015-a/manifest.json
+  - artifacts/review/p02-integration-independent-20261015-a/handoff.json
+  - artifacts/handoff/p02-projection-integrity-repair-20261015-a/handoff.json
+  - artifacts/review/p02-projection-integrity-repair-independent-20261015-a/review.json
+  - artifacts/review/p02-projection-integrity-repair-independent-20261015-a/seal.json
+  - artifacts/review/p02-physical-source-equivalence-20261015-a/handoff.json
+  - artifacts/review/p02-physical-source-equivalence-20261015-a/seal.json
+  - artifacts/review/p02-physical-mapping-root-20261016-c/review.json
+  - artifacts/validation/P02-current-reviewed-mapping-real-short-lifecycle-repaired-contract-68f8a4c3/command.json
+  - artifacts/validation/P02-private-original-lifecycle-linkage-gate-293d9c20/command.json
+  - artifacts/validation/P02-new-mapping-old-unknown-and-forged-review-boundaries-shortpath-40817f8d/command.json
+  - artifacts/validation/P02-seal-real-candidate-and-public-rebase-preconditions-ce40d70b/command.json
+  - artifacts/handoff/p02-reviewed-mapping-20261016-c/sealed-candidate.json
+  - artifacts/review/p02-independent-20261016-c/review.json
+  - artifacts/handoff/p02-production-adoption-20261016-c/handoff.json
+  - artifacts/validation/P02-root-reviewed-adoption-preflight-662a9fe4/command.json
+  - artifacts/validation/P02-public-reviewed-local-adoption-4ddb63d6/command.json
+  - artifacts/validation/P02-public-original-eight-real-lifecycle-8a6a1498/command.json
+  - artifacts/validation/P02-public-affected-forecast-runtime-regression-10a7ee66/command.json
+  - artifacts/handoff/p02-unverified-fallback-20261016-c/handoff.json
+  - artifacts/review/p02-unverified-fallback-root-1c5b3bd2/report.json
+  - artifacts/validation/P02-independent-authority-history-correct-receipt-reader-c24d0947/command.json
+  - artifacts/validation/W01-current1306-browser-record-corroboration-3abcc57c/command.json
+  - artifacts/ui/proof-current-1306-20261016-c/final-root-browser-observations.json
+  - artifacts/ui/proof-current-1306-20261016-c/completion.json
+  - artifacts/review/p02-public-independent-20261016-c/ui-current-1306/handoff.json
+  - artifacts/validation/W01-current1306-original-and-strict-eleven-UI-evidence-gates-90924ca8/command.json
+  - artifacts/validation/A02-P02-P03-pinned-final-review-runtime-preflight-e63dc9c3/command.json
+  - artifacts/validation/P02-P03-public-affected-runtime-regression-bb4e7561/command.json
+  - artifacts/validation/integrated-learning-X01-P03-security-regression-c6095b38/command.json
+  - artifacts/review/p02-public-independent-20261016-c/handoff.json
+  - artifacts/review/a02-p02-promotion-20261016-c/promotion-review.json
+  blocker: null
+  local_acceptance_scope: 'Original engineering acceptance passed: checked nontrivial
+    chemical readout conditions actually select grouped prediction; changed parameter/source
+    authority is rejected and upward reconstruction preserves uncertainty. Original8
+    linkage tests and current affected regression passed with independent API/UI evidence.
+    Synthetic model scope only; no real-cell calibration, continuous safety or profit
+    guarantee.'
+  accepted_at_utc: '2026-10-16T05:51:05.197014+00:00'
+- id: A03
+  milestone: M4
+  workstream: control
+  title: 约束BO、多保真及价值边界学习
+  depends_on:
+  - P02
+  - C01
+  - S02
+  - A01
+  status: in_progress
+  required: true
+  implementation: 慢周期优化完整策略参数，快周期滚动控制；学习低高保真差异与采样成本，比较价值查询/随机/不确定性。
+  deliverables:
+  - src/naheng/learning/constrained_bo.py
+  - src/naheng/learning/multifidelity.py
+  - src/naheng/learning/query_policy.py
+  acceptance:
+  - 真实训练代理/采集下一点评估，不能仅网格循环改名BO
+  - 不把可行概率当独立轨迹保证；记录全部调用/成本
+  validation_commands:
+  - uv run pytest tests/integration/test_learning_budget.py -q
+  - uv run naheng optimize --profile pilot
+  evidence:
+  - artifacts/validation/A03-constrained-search-budget-feedback-and-recovery-controls-r3-4b19d256/command.json
+  - artifacts/validation/A03-unknown-cost-and-atomic-recovery-controls-15d94c45/command.json
+  - artifacts/validation/A03-real-paired-low-high-operational-oracle-probe-d4984d2f/command.json
+  - artifacts/a03-probe-1cbc4791/probe.json
+  - artifacts/validation/A03-real-12-plus24-constrained-multifidelity-training-36d1e643/command.json
+  - artifacts/a03-pilot-5faf875a/result.json
+  - artifacts/validation/A03-first-training-actual-partial-rejection-audit-e9ea829a/command.json
+  - artifacts/review/a03-training-root-audit-164b3c230e/report.json
+  - artifacts/validation/A03-repaired-search-original-method-controls-039649e5/command.json
+  - artifacts/validation/A03-repaired-real-12-plus24-training-096d2be8/command.json
+  - artifacts/a03-pilot-9ba04a8b/result.json
+  - artifacts/validation/A03-repaired-complete36-training-root-audit-51f7a03d/command.json
+  - artifacts/review/a03-training-root-audit-ddb8439d7a/report.json
+  - artifacts/review/a03-independent-20261016-c/handoff.json
+  - artifacts/review/a03-independent-20261016-c/REVIEW-CLARIFICATION.md
+  - artifacts/validation/A03-actual-random-equal-budget-training-comparison-40a14103/command.json
+  - artifacts/validation/A03-actual-uncertainty-equal-budget-training-comparison-143bccc1/command.json
+  - artifacts/validation/A03-three-strategy-108-real-call-comparison-audit-bdcd3402/command.json
+  - artifacts/review/a03-comparison-root-59dfcd8faa/report.json
+  - artifacts/handoff/a03-public-policy-20261016-c/manifest.json
+  - artifacts/handoff/a03-public-policy-20261016-c/seal.json
+  - artifacts/review/a03-full-policy-root-20261016-c/report.json
+  - artifacts/validation/A03-nine-policy-independent-root-tests-and-actual-loop-3c1ee977/command.json
+  - artifacts/validation/A03-initial-low-actual-budget-diagnostic-d3cd6cf5/command.json
+  - artifacts/a03-full-initial-low-probe-20261016-c/result.json
+  - artifacts/handoff/a03-exploration-recovery-20261016-a/validation-low-bd77e59d5d10/command.json
+  - artifacts/handoff/a03-exploration-recovery-20261016-a/manifest.json
+  - artifacts/handoff/a03-low-incumbent-20261016-a/manifest.json
+  - artifacts/validation/A03-low-incumbent-independent-root-review-4b3b194c/command.json
+  - artifacts/validation/A03-matched-comparison-independent-review-40209121/command.json
+  - artifacts/validation/A03-public-nine-coordinate-original36-pilot-88a497f0/command.json
+  - artifacts/optimization/public-0a2-20261016-c/result.json
+  - artifacts/validation/A03-b-original44-independent-root-13a89de2/command.json
+  - artifacts/review/a03-b-independent-20261016-c/handoff.json
+  - artifacts/validation/A03-b-UI-label-reviewed-install-2853eb7b/command.json
+  - artifacts/progress/acquisition-b-adoption-3133c129/applied.json
+  - artifacts/progress/a03-started-b57a0169/checkpoint.json
+  - artifacts/validation/A03-public-9593-original36-25caf3b6/command.json
+  - artifacts/review/a03-new-9593-independent-20261016-c/main-4166aae4/handoff.json
+  - artifacts/validation/A03-9593-random-original36-5e5cb7d9/command.json
+  - artifacts/review/a03-new-9593-independent-20261016-c/random-7dc0856d/handoff.json
+  - artifacts/validation/A03-9593-uncertainty-original36-c9991e33/command.json
+  - artifacts/review/a03-new-9593-independent-20261016-c/uncertainty-64937204/handoff.json
+  - artifacts/validation/A03-P03-R00-current-original-targeted-tests-fe8fd72b/command.json
+  - artifacts/review/a03-label-determinism-20261016-a/diagnosis.json
+  - artifacts/review/a03-label-determinism-20261016-a/backup/sha256-before.json
+  - artifacts/a03-determinism-probe-20261016-a/report.json
+  - artifacts/a03-determinism-probe-20261016-b/report.json
+  - artifacts/a03-determinism-probe-20261016-c/report.json
+  - artifacts/a03-determinism-probe-20261016-d/report.json
+  - docs/adr/0025-fidelity-effort-in-work-units.md
+  blocker: 'Root cause found and repaired, task NOT upgraded. The prior 2/2/0 three-arm
+    result is an INVALID comparison, kept on record and not overwritten: all arms share
+    one seeded LHS design, ordinal6 is byte-identical across arms, yet it completed in
+    the learned arm and was killed at wall_s 6.024/6.037 in the other two after doing
+    the SAME 24 evaluations/128 integrations. Arms ran strictly sequentially, so host
+    load, not contention, swung identical deterministic work from 0.55s past the 6s
+    inner wall guard. Labels were therefore a function of machine load, and one flip
+    decided search.best() and each arm exit code. Per ADR0025 fidelity is now declared
+    by work units only (max_iterations 1/25 and max_candidate_evaluations 24/120 unchanged);
+    wall_budget_s became a 25s host backstop asserted not to pre-empt the 120s per-query
+    budget. Remaining: three arms must be re-run serially on one frozen source before
+    any comparison is recorded; no rho/advantage gate added; no advantage claim.'
+  local_acceptance_scope: 'Repaired-source determinism only: sealed ordinal6 low returned
+    completed 5/5 with identical utility 3.0302705698157835e-09 and identical work counters
+    (worker 0.911-1.444s); sealed ordinal12 high returned completed 3/3 with identical
+    utility 1.2052483836389859e-08, margin -1e-12 and identical per-step sequence
+    [(25,132),(27,140),(27,140),(40,192)]. test_learning_budget 12 passed exit0. Probe
+    defects fixed and first failures preserved: a stale code-hash-bound calibration packet
+    made all5 repeats unknown yet scored exit0 (vacuous pass; now exit2 unless the planner
+    was reached), and flattened per-step counters falsely flagged high fidelity. Frozen9593
+    actual108 requests and 94 targeted/security tests remain on record. scientific_N_added
+    stays 0; no UNKNOWN numeric label invented; no three-arm advantage claimed.'
+- id: P03
+  milestone: M4
+  workstream: packages
+  title: 失配、证据撤回与重新准入
+  depends_on:
+  - P02
+  - A03
+  - C02
+  status: todo
+  required: true
+  implementation: 实现残差/域/哈希失效事件传播、扩大不确定性、模型升级、备用可行性与离线追加研究；当前作业证据依赖可追溯。
+  deliverables:
+  - src/naheng/packages/validity_monitor.py
+  - src/naheng/runtime/revalidation.py
+  acceptance:
+  - 制造传感器偏置或副反应失配后不继续静默自信执行
+  - 没有可行备用则显式停止自动动作，不掩盖未服务能量
+  validation_commands:
+  - uv run pytest tests/integration/test_evidence_withdrawal.py -q
+  evidence:
+  - artifacts/handoff/p03-validity-withdrawal-20261016-c/handoff.json
+  - artifacts/handoff/p03-validity-withdrawal-20261016-d/handoff.json
+  - artifacts/handoff/p03-runtime-integration-20261016-c/handoff.json
+  - artifacts/handoff/p03-runtime-integration-20261016-d/handoff.json
+  - artifacts/review/p03-runtime-d-independent-20261016-c/handoff.json
+  - artifacts/review/p03-public-worker-independent-20261016-c/handoff.json
+  - artifacts/handoff/p03-public-worker-terminal-20261016-d/handoff.json
+  - artifacts/review/p03-public-worker-independent-20261016-c/terminal-d-review.json
+  - artifacts/handoff/p03-ui-monitor-20261016-a/manifest.json
+  - artifacts/review/p03-ui-root-20261016-c/report.json
+  - artifacts/validation/P03-real-browser-monitor-bias-saved-evidence-189b51a0/command.json
+  - artifacts/ui/p03-ef44-20261016-c/task.json
+  - artifacts/ui/p03-ef44-20261016-c/observations.json
+  - artifacts/validation/W01-public-monitor-frontend-build-readable-parent-b2d75a20/command.json
+  - artifacts/ui/p03-ef44-20261016-c/completion.json
+  - artifacts/review/p03-installed-ui-independent-20261016-c/handoff.json
+  - artifacts/validation/A03-P03-R00-current-original-targeted-tests-fe8fd72b/command.json
+  - artifacts/review/original-engineering-gates-20261016-c/handoff.json
+  blocker: Original A03 dependency remains incomplete. No extra success requirement
+    for unsupported monitored checkpoint recovery has been added.
+  local_acceptance_scope: Existing real sensor-bias/stop/unserved-energy UI and independent
+    review retained; current original withdrawal tests pass within94 combined checks.
+- id: X01
+  milestone: M4
+  workstream: validation
+  title: 冻结强基线与三组协议
+  depends_on:
+  - G04
+  - C02
+  - A03
+  - P03
+  - D02
+  - W02
+  status: todo
+  required: true
+  implementation: 实现B0–B6和E-T/E-A/E-L配置，冻结种子、可见观测、数据角色、alpha预算、失败/删失处理与收益口径。
+  deliverables:
+  - configs/experiments/pilot.yaml
+  - configs/experiments/release.yaml
+  - experiments/protocols/
+  acceptance:
+  - 方法预算/信息权限一致；固定规则有调参而非差单点
+  - 测试策略冻结后才能验收，修改协议有新revision
+  validation_commands:
+  - uv run naheng experiment preregister --config configs/experiments/pilot.yaml
+  evidence:
+  - artifacts/handoff/x01-preregistration-20261016-d/handoff.json
+  - artifacts/review/x01-preregistration-independent-20261016-c/handoff.json
+  - artifacts/validation/X01-repaired-independent-root-review-35ec33d2/command.json
+  blocker: Public integration/actual registration and D02/independent trajectory/theory-family/adapter
+    dependencies remain.
+  local_acceptance_scope: Private registration-only implementation; original29 plus21
+    regression controls pass after independent findings on self-rehashed claims, cross-role
+    observation reuse and alternate-output revision bypass were repaired. Public command
+    not yet installed; no scientific experiment executed.
+- id: X02
+  milestone: M4
+  workstream: validation
+  title: E-T理论与AI方法实验
+  depends_on:
+  - X01
+  - A02
+  - F05
+  status: todo
+  required: true
+  implementation: 运行已知恢复/必要条件反例/模型族泛化/成本对照，明确新增命题身份并产出证据与失败报告。
+  deliverables:
+  - experiments/theory.py
+  - artifacts/experiments/theory/
+  acceptance:
+  - 发布的每条已证明结论可重建，候选不会混入定理表
+  - 学习方法与人工/随机/反馈基线预算一致
+  validation_commands:
+  - uv run naheng experiment run --suite theory --profile pilot
+  evidence: []
+  blocker: 等待必需前置任务：X01, A02, F05
+- id: X03
+  milestone: M4
+  workstream: validation
+  title: E-A完整应用及独立风险收益验收
+  depends_on:
+  - X01
+  - D02
+  - S04
+  - A03
+  - P03
+  status: todo
+  required: true
+  implementation: 按冻结协议运行生命周期/模组/公开数据/失配，生成风险上界、条件RUL、成本账与前沿；正式样本量由目标计算。
+  deliverables:
+  - experiments/application.py
+  - src/naheng/risk/statistical_acceptance.py
+  - artifacts/experiments/application/
+  acceptance:
+  - k=0,N=299的单侧界单测正确，N=0不出承诺
+  - 相关时间点不算独立样本；所有数值失败和拒绝代价有记录
+  validation_commands:
+  - uv run naheng experiment run --suite application --profile pilot
+  - uv run pytest tests/unit/test_risk_upper_bound.py -q
+  evidence: []
+  blocker: 等待必需前置任务：X01, D02, S04, A03, P03
+- id: X04
+  milestone: M4
+  workstream: validation
+  title: E-L理论到应用连接消融
+  depends_on:
+  - X01
+  - P02
+  - P03
+  - W02
+  status: todo
+  required: true
+  implementation: 逐项去有效域、误差、必要状态、证据撤回和AI搜索；加仅隐藏证明徽标的零行为差负对照。
+  deliverables:
+  - experiments/linkage.py
+  - artifacts/experiments/linkage/
+  acceptance:
+  - 同数值仅隐藏徽标的轨迹一致；不能声称证明本身增加收益
+  - 实际模型/动作差异能回溯到明确条件和证据ID
+  validation_commands:
+  - uv run naheng experiment run --suite linkage --profile pilot
+  evidence: []
+  blocker: 等待必需前置任务：X01, P02, P03, W02
+- id: R00
+  milestone: M5
+  workstream: integration
+  title: 本地启动、回放与安全交付
+  depends_on:
+  - W02
+  - G04
+  - F05
+  - P03
+  status: todo
+  required: true
+  implementation: 提供依赖锁、本地统一启动、Docker可选、数据导入/HTML和结构化报告导出；做API/worker/上传/AST/密钥安全测试。
+  deliverables:
+  - tools/start_local.py
+  - compose.yaml
+  - docs/USER_GUIDE.md
+  - tests/security/
+  acceptance:
+  - 干净环境可打开七页并重放，模式/工件可追溯
+  - 默认本地无硬件写操作；上线需明确授权与配额认证
+  validation_commands:
+  - uv run pytest tests/security -q
+  - npm --prefix frontend run test:e2e
+  evidence:
+  - artifacts/review/r00-delivery-independent-20261016-c/handoff.json
+  - artifacts/validation/R00-fresh-locked-offline-dependency-environment-cba5c813/command.json
+  - artifacts/validation/R00-fresh-environment-lock-identity-f2e2ed88/command.json
+  - artifacts/validation/learning-X01-R00-reviewed-bundle-preflight-0ef7719a/command.json
+  - artifacts/validation/R00-lock-install-delivered-project-offline-2f59c5dc/command.json
+  - artifacts/validation/R00-clean-installed-browser-server-3b117ff3/command.json
+  - artifacts/ui/clean-delivery-0a2-20261016-c/independent-review.json
+  - artifacts/review/r00-clean-installed-independent-20261016-c/ui-handoff.json
+  - artifacts/validation/frontend-9593-current-build-7d0ee010/command.json
+  - artifacts/validation/frontend-9593-current-build-authorized-65c32b07/command.json
+  - artifacts/validation/frontend-9593-real-build-record-248df81f/command.json
+  - artifacts/validation/R00-9593-clean-delivery-build-f169c187/command.json
+  - artifacts/validation/R00-9593-fresh-offline-install-1c723e80/command.json
+  - artifacts/validation/R00-9593-installed-delivery-startup-check-eb201567/command.json
+  - artifacts/review/r00-clean-9593-independent-20261016-d/handoff-pre-ui.json
+  - artifacts/validation/R00-9593-manifested-source-archive-2dcfef28/command.json
+  - artifacts/validation/R00-9593-new-clean-browser-server-36138318/command.json
+  - artifacts/validation/R00-9593-original-browser-tests-a3f4e7a8/command.json
+  - artifacts/validation/UI-9593-independent-publication-920530c6/command.json
+  blocker: Original P03 dependency remains incomplete; current original Edge E2E and
+    new clean-package final independent review pending. Docker is optional. Missing
+    trusted proof closure separately blocks full M5/R02 and stays UNKNOWN in this
+    package.
+  local_acceptance_scope: New clean9593 source package626files/51locked installed
+    packages, real startup check; actual two new runs/seven pages/report/reload/replay
+    complete and independent final review pending. Existing Edge supports original
+    tests; default Chromium missing failure preserved.
+- id: R01
+  milestone: M5
+  workstream: validation
+  title: 图表、研究报告与论文素材
+  depends_on:
+  - X02
+  - X03
+  - X04
+  - R00
+  status: todo
+  required: true
+  implementation: 由原始工件生成全部图表/表格、主张—证据矩阵和已知/新增成果表；写用户报告与复现实验说明。
+  deliverables:
+  - experiments/figures.py
+  - docs/CLAIMS.md
+  - paper/
+  - artifacts/reports/
+  acceptance:
+  - 无优势/未知/失败如实呈现，不预填提升或虚构引用
+  - 每个论文数字有计算脚本和数据血缘，热/火灾/形式覆盖不越级
+  validation_commands:
+  - uv run naheng experiment summarize --include-failures
+  - uv run naheng report --profile release
+  evidence:
+  - artifacts/validation/R01-reviewed-report-only-install-1eaffa46/command.json
+  - artifacts/validation/R01-public-report39-5bb7e837/command.json
+  - artifacts/validation/R01-reviewed-ledger-figure-tool-install-ab2a67a5/command.json
+  - artifacts/review/r01-learning-figures-independent-20261016-c/handoff.json
+  - artifacts/validation/R01-public-real-three-arm-figures-22dec8a4/command.json
+  - artifacts/reports/learning-9593-20261016-d/visual-review.json
+  blocker: Original X02/X03/X04/R00 dependencies and complete research report acceptance
+    remain incomplete; progress artifacts are not release reports.
+  local_acceptance_scope: Public standalone evidence report and learning SVG renderer
+    installed with fixed hashes; original39 report controls and independent34 figure
+    controls pass. Real108-query SVG/data lineage generated, actual pixels checked,
+    all scientific claims remain unadjudicated.
+- id: R02
+  milestone: M5
+  workstream: integration
+  title: 完整发布审计与交付
+  depends_on:
+  - R01
+  - R00
+  - F05
+  - D02
+  status: todo
+  required: true
+  implementation: 在干净环境重建，验收G0–G7、全部需求与实际证据；输出完成/受阻/失败清单及可运行软件包。
+  deliverables:
+  - artifacts/release_audit.json
+  - docs/DELIVERY.md
+  - dist/
+  acceptance:
+  - 全功能/化学研究/连接/真实数据/独立验收全部有工件才release通过
+  - 任何必要项跳过/受阻返回非零，不以声明替代完成
+  validation_commands:
+  - uv run naheng verify --profile release --out artifacts/release_audit.json
+  evidence:
+  - artifacts/release_audit.json
+  - artifacts/validation/R02-final-release-audit-872ab8ad/command.json
+  - artifacts/validation/R02-current-complete-release-gate-51c91ff0/command.json
+  - artifacts/validation/X00-current9d-release-gate-c220677b/command.json
+  - artifacts/verification/release-2d63a390ce/audit.json
+  - artifacts/verification/release-2d63a390ce/all_required_tasks.stdout.log
+  - artifacts/current-release-20261014-a.json
+  - artifacts/validation/R02-current-release-required-gate-honest-status-5744b17f/command.json
+  - artifacts/progress/E02-current-regression-e230195d/manifest.json
+  - artifacts/review/final-checkpoint-independent-20261014-a/handoff.json
+  - artifacts/review/final-checkpoint-independent-20261014-a/report-chain-recovered.json
+  - artifacts/validation/Final-two-checkpoint-chain-independent-preserved-scope-review-981bb8b7/command.json
+  - artifacts/release-fixed-frontier-20261014-b.json
+  - artifacts/validation/R02-current-fixed-frontier-release-required-gates-8d3925d8/command.json
+  - artifacts/validation/C01-final-current-full-regression-fixed-frontier-0adec1eb/command.json
+  - artifacts/review/baseline-frontier-independent-20261014-a/handoff.json
+  - artifacts/release-E02-accepted-20261014-a.json
+  - artifacts/validation/R02-current-E02-accepted-required-release-gates-fb5caa79/command.json
+  - artifacts/release-discovery-current-20261014-a.json
+  - artifacts/validation/R02-current-discovery-honest-release-gates-dbd13e49/command.json
+  - artifacts/validation/Separate-complete-core-suite-wrapper-from-native120s-cap-117629e6/command.json
+  - artifacts/progress/core-verification-wrapper-20261014-a/manifest.json
+  - artifacts/validation/R02-original-release-current-complete-core-and-remaining-gates-3e09e350/command.json
+  - artifacts/release-current-core-and-workbench-20261014-a.json
+  blocker: 13 required tasks and independent theory/application/linkage/public scientific
+    audits remain incomplete.
+  last_gate_status: blocked
+  last_gate_exit_code: 2
+  local_acceptance_scope: 'Original release command actually executed: formal178 gate0,
+    all-required ledger2, aggregate2. Exact target statements/axioms/original commands
+    retained, original default core artifacts preserved before canonical republish.
+    No whole-project or scientific release granted.'

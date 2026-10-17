@@ -1,0 +1,106 @@
+{
+  "utc": "2026-10-13T18:19:12.219176+00:00",
+  "exit_code": 0,
+  "code_hash": "7d7becefc582af9e3b8b546f00b82dd59376c4e68069d43440152dc2a572d6e0",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 20,
+    "in_progress": 7,
+    "todo": 18
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/E02-install-frozen-calibration-and-joint-discrepancy-methods-7dcb7917/command.json": {
+      "sha256": "37166e1ff59eaf00114354d9f09cad80627900f0ecb63f1573ab30c9ade2fe66",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "tools/install_calibration_slice.py"
+      ],
+      "wall_s": 0.16878020000149263,
+      "timed_out": false
+    },
+    "artifacts/validation/E02-current-runtime-source-units-descriptor-worker-regressions-first-b6a2a84d/command.json": {
+      "sha256": "3c82e7cd26f917f5ac39ad94c1f11a0cc32476e4df117edaa507e52957b35cfe",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_calibration_runtime.py",
+        "tests/integration/test_shared_posterior.py",
+        "-q",
+        "--basetemp",
+        ".nh-cal-rt-20261014-a"
+      ],
+      "wall_s": 5.252403099999356,
+      "timed_out": false
+    },
+    "artifacts/validation/E02-current-repaired-real-calibration-entry-28472aff/command.json": {
+      "sha256": "1f5eabab5cf799bd2ca2d379c6c2111e6245869843d1f488833f50fa624b4791",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "calibrate",
+        "--input",
+        "../../work/runtime/calibration-e02-20261014-a/evidence/builtin-inputs-63af43a7e68a/request-recovered.json",
+        "--out",
+        "artifacts/calibration/builtin-calibration-current-20261014-a"
+      ],
+      "wall_s": 3.7224994000025617,
+      "timed_out": false
+    },
+    "artifacts/calibration/builtin-calibration-current-20261014-a/manifest.json": {
+      "sha256": "f6a0b335174a30d0e67c8707f23640f77d2cfb72565cde58254062edfa14a146"
+    },
+    "artifacts/review/e02-runtime-independent-20261014-a/r1/report.json": {
+      "sha256": "a59946f830d708e6fe780965c99ebc23f7c110a62462a9a230a39ec1f34d026e"
+    },
+    "artifacts/review/e02-runtime-independent-20261014-a/r2/report.json": {
+      "sha256": "a6b403cc33f68b23071233fee85b6e9b2e1bfa7fd2509c6f3d960a0daa473728"
+    },
+    "artifacts/validation/E02-current-full-regression-approved-owned-worker-c2195c56/command.json": {
+      "sha256": "936a772017641ef07e5b8d7d95ef04674e7a73ad3dc1ec8ec6ec9bbeb4bab384",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "tools/run_current_source_regression.py"
+      ],
+      "wall_s": 127.30630329999985,
+      "timed_out": false
+    },
+    "docs/CALIBRATION.md": {
+      "sha256": "c8b8fecb622892bdace69d382d7abe0bffe048c7c11df36922778515b6df7b3b"
+    },
+    "artifacts/review/fixed-current-readout-feasible-next-20261014-a/corrected-body-final.json": {
+      "sha256": "9fd0dc2054d1002545acc950d25739834da45e2314b8557baa22735b2cdf9802"
+    },
+    "artifacts/review/readout-eight-independent-20261014-a/report-recovered.json": {
+      "sha256": "d4578ef851d05604bab0a7f6ef0cf48c02371d63672025ad8f0e9b29a1a3116b"
+    },
+    "artifacts/formal/publication/fixed-current-readout-1a64f3eb/manifest.json": {
+      "sha256": "7f2f8bded976c9e17a3ab191bd21fa959bdcfe745ef3e412397c676f5959a1e3"
+    },
+    "artifacts/validation/F02-readout-eight-actual-defining-module-build-and-strict-audit-1b512cfb/command.json": {
+      "sha256": "811e1e6194cfa6dce450057e20b8a42e28a49e106ccd974cc0b52d187368017b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "tools/check_readout_publication.py"
+      ],
+      "wall_s": 61.670927799998026,
+      "timed_out": false
+    },
+    "artifacts/formal/readout-publication-ccfe9b55/manifest.json": {
+      "sha256": "605a8567c6af8168edb41084d372974cf31cca42fc79ca395fdd44cb240c019c"
+    }
+  },
+  "full_acceptance_complete": false
+}

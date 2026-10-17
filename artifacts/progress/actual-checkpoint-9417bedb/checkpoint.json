@@ -1,0 +1,88 @@
+{
+  "utc": "2026-10-16T03:37:45.526833+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-real-offline-Linux-Lean-fixed-proof-workload-r2-9ead3f77/command.json": {
+      "sha256": "e51e3d2dfe97165739a87b045958f2d24b9a07d15c90a70269b6631cb109b7f7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/boot_fixed_proofs_r2.py"
+      ],
+      "wall_s": 442.77932370000053,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-real-private-Linux-proof-axiom-and-provenance-audit-51a42507/command.json": {
+      "sha256": "398cdbb0b7b62d32d1a3579e59965711f21f351e3dcf617313d21a1a826129c7",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_private_linux_proofs_20261016.py",
+        "<HOST_BACKEND_ROOT>/boot-fixed-proofs-da2e3bea6268/result.json"
+      ],
+      "wall_s": 0.5073030999992625,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/private-linux-proof-root-audit-332acd3ab333/report.json": {
+      "sha256": "91c08aae465458db1fe32a634552dc84834a79fa656d3861446154e8732d8300"
+    },
+    "artifacts/validation/A02-prepare-original-tests-and-private-batch-templates-5b5a202d/command.json": {
+      "sha256": "8f1fdef3692834e77c5f038ab3600720a2d4485bcbc8174a11f6731669ccfd58",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/prepare_private_batch_templates_20261016.py"
+      ],
+      "wall_s": 0.5233713000052376,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-pin-private-worker-and-original-eight-tests-d93125b2/command.json": {
+      "sha256": "5bb10c4bfe95e043e7dd5f315fd82f435fa73411f11a3c9b4baf0e96b90af870",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/seal_private_vm_worker_20261016.py"
+      ],
+      "wall_s": 1.0111063000003924,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/a02-integrated-vm-worker-20261016-a/proof_worker.py": {
+      "sha256": "cda7ef854a3c45b9de48fad523cbd1569c1f7885e12766207133ad0cf8fb6b8b"
+    },
+    "artifacts/handoff/a02-integrated-vm-worker-20261016-a/trusted-backend-inputs.json": {
+      "sha256": "8912471772d2ad380b3fa96f0c4e1f6ae8750a198401f8589fcb407000eefb5f"
+    },
+    "artifacts/handoff/a02-integrated-vm-worker-20261016-a/README.md": {
+      "sha256": "76959ea83b43a47e341f907aae1e00796ac30fd514e03dc0a13e9cc273655e5d"
+    },
+    "artifacts/handoff/d02-source-completion-20261016-a/alternate-source-search-20261016-c.json": {
+      "sha256": "9535aa00c1bd6014600d731123a647d2715c4c15c00d8300b76c2b24172e622a"
+    },
+    "artifacts/validation/D02-alternate-primary-source-ledger-cohort-unchanged-cb933c6d/command.json": {
+      "sha256": "b684cce014062fec876c02fffdca3e4e531fd1c1372f5fb09f3e5e0b202ac8aa",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_alternate_source_ledger_20261016.py"
+      ],
+      "wall_s": 1.5604787999982364,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

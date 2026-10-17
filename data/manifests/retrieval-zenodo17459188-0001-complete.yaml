@@ -1,0 +1,94 @@
+{
+  "source_id": "zenodo17459188_cvut_sib_0001_complete",
+  "source_url": "https://zenodo.org/records/17459188",
+  "chemistry_id": "public_cvut_hakadi_sodium_4s11p_17459188",
+  "current_sign": "positive_charge",
+  "units": {
+    "time": "s",
+    "current": "A",
+    "voltage": "V",
+    "temperature": "degC"
+  },
+  "columns": {
+    "time": "time_s",
+    "current": "vendor_current_A",
+    "voltage": "voltage_V",
+    "temperature": "T1_degC"
+  },
+  "license_id": "CC-BY-4.0",
+  "license_evidence_sha256": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+  "raw_sha256": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+  "provenance_type": "public_measurement",
+  "delimiter": ",",
+  "encoding": "utf-8",
+  "decimal_separator": ".",
+  "fixed_cell_id": "cvut_hakadi_sib_4s11p_pack_group",
+  "fixed_batch_id": "cvut_single_sib_pack_campaign",
+  "fixed_trajectory_id": "cvut_sib_16V_minus15C_0001_complete",
+  "identity_evidence": "Author README maps D_0001 to one Hakadi18650 sodium-ion 4s11p pack precharged16V at ambient -15degC; no physical individual-cell serials supplied. Pack-group identity is conservative; Step IDs are instrument segments, not independent experimental units.",
+  "current_sign_evidence": "Original workbook record rows33-34 label CC DChg and Current(A)(A)=-199.9752, so discharge is negative; internal discharge-positive current=-vendor current. Charging records are not present in this selected file.",
+  "source_registry_path": null,
+  "source_registry_sha256": null,
+  "schema_version": 1,
+  "verification_status": "superseded_view_identity",
+  "author_record_doi": "10.5281/zenodo.17459188",
+  "article_doi": "10.1007/s00706-026-03469-y",
+  "original_measurement_path": "data\\raw\\public_new\\zenodo17459188\\VZ1_044_021_CVUT_D_0001_v1.xlsx",
+  "original_measurement_sha256": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+  "original_measurement_bytes": 17143,
+  "original_measurement_md5": "0d04ab461817bef013766db23b8089be",
+  "author_metadata_path": "artifacts/data/public_new/zenodo-17459188.metadata.json",
+  "author_metadata_sha256": "6581cc1c36a2916611abe10263fedf81be16d7d9533fd5e19a6fb2bf49b886a4",
+  "license_evidence_path": "data\\raw\\public_new\\zenodo17459188\\RMF-VZ1_044_021_CVUT_S.txt",
+  "derivation": {
+    "method": "stdlib XLSX XML read; complete record sheet rows; hh:mm:ss.ms converted exactly using Decimal",
+    "view": "complete",
+    "rows_in": 64,
+    "rows_out": 64,
+    "dropped_records": 0,
+    "shifted_timestamps": 0,
+    "resampled": false,
+    "temperature_mapping": "T1 measured thermocouple between pack cells; T2-T6 retained in CSV, not averaged",
+    "original_co_timed_step_boundaries": {
+      "30.000": [
+        32,
+        33
+      ],
+      "30.100": [
+        34,
+        35
+      ]
+    },
+    "instrument_steps_are_independent_samples": false
+  },
+  "physical_identity": {
+    "scope": "one 4s11p pack; 44 individual-cell identities unavailable",
+    "manufacturer": "Hakadi",
+    "cell_format": "18650",
+    "cell_capacity_Ah_approx": 1.3,
+    "pack_capacity_Ah_approx": 14,
+    "electrode_materials": null,
+    "physical_serial": null,
+    "grouping_key": "cvut_single_sib_pack_campaign"
+  },
+  "test_conditions": {
+    "ambient_temperature_degC": -15,
+    "precharge_voltage_V": 16,
+    "requested_discharge_current_A": 200,
+    "requested_pulse_duration_s": 3,
+    "actual_discharge_duration_s": 0.1,
+    "actual_minimum_pack_voltage_V": 8.3891,
+    "step_stop_observation": "CC DChg ended at0.1s near authored8.39V cutoff; not a completed3s pulse"
+  },
+  "field_compatibility": "pending_actual_import_command",
+  "frozen_split": null,
+  "external_model_validation": "not_performed",
+  "limitations": [
+    "pack terminal measurements are not single-cell truth",
+    "one physical pack cannot provide independent train/validation/test physical groups",
+    "no aging/incident population or calibrated parameter inference",
+    "lead-acid D_00011 workbook excluded from sodium dataset"
+  ],
+  "superseded_by": "data\\manifests\\retrieval-zenodo17459188-0001-complete-v2.yaml",
+  "status_note": "First observed bytes preserved; two views of this pack must use one shared source_id, not independent source identities."
+}

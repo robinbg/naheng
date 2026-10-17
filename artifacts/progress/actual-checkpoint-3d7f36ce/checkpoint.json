@@ -1,0 +1,229 @@
+{
+  "utc": "2026-10-12T19:27:25.323260+00:00",
+  "exit_code": 0,
+  "code_hash": "9d1cbd275619ef7690928981bb17bb8d7274107c29651616139b46d1ff8bc2d3",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 18,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 20
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/F01-F03-current-seven-partial-publications-5c052118/command.json": {
+      "sha256": "5d10b3a99dde83aad91a7fd006081670b2251b4282cd8044d497ab28ff8efad1",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_seven_partial_publications.py"
+      ],
+      "wall_s": 825.7021690000001,
+      "timed_out": false
+    },
+    "artifacts/formal/variable-publication-3511d51d/manifest.json": {
+      "sha256": "0ecbc631db88c523b2085a367ec51b6af88d955cf3b0d8820b0cf0a929449845"
+    },
+    "artifacts/formal/candidates/ReductionVariableTrajectory-1178f102/manifest.json": {
+      "sha256": "29aeee6fc4165336a350188fc42d229bae2f91bbf92a932e9e46111ab3fb0d48"
+    },
+    "artifacts/review/variable-rate-math-independent-20261013/report.json": {
+      "sha256": "09fbdc3380fc8736da0b127c713fa7ac51235ec803a6a258b4616320ca56b21c"
+    },
+    "artifacts/formal/publication/variable-trajectory-37614704/manifest.json": {
+      "sha256": "3656f12ed420356c0028258bc4ec97c084aa675ea279a468858d4ce0276c70b8"
+    },
+    "artifacts/validation/F02-variable-rate-normal-cached-publication-76699777/command.json": {
+      "sha256": "d818e9367ac1591e76bb7706d8eb0e4d3f209dd8747bc3872cf6e44254a228ee",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "reduction_variable_trajectory",
+        "--out",
+        "artifacts/formal/variable-normal-cached-20261013"
+      ],
+      "wall_s": 137.8862924999994,
+      "timed_out": false
+    },
+    "artifacts/formal/publication/definition-modules-e0f5f7ac/manifest.json": {
+      "sha256": "6f40717429daa291713a9eee8d136f3c9a380776cc933591b03704c96f769ed4"
+    },
+    "artifacts/validation/F02-F03-select-original-defining-modules-b7e16f14/command.json": {
+      "sha256": "00134b92c3f34a40eaae089210ce2b36e49b21455bc66232c2bae7c271a449e6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/select_partial_definition_modules.py"
+      ],
+      "wall_s": 0.47810759999993024,
+      "timed_out": false
+    },
+    "artifacts/formal/variable-defining-module-20261013/manifest.json": {
+      "sha256": "e26dce80c2ce565f15634fe7fca3d4243fc7b30b9bbb323f328778566f83fbaf"
+    },
+    "artifacts/validation/F02-variable-rate-defining-module-build-audit-938e6d9a/command.json": {
+      "sha256": "0b315286bc95aee71c0d584cecadec7575f8edb3dd6e34000b815505f47bbe00",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "reduction_variable_trajectory",
+        "--out",
+        "artifacts/formal/variable-defining-module-20261013"
+      ],
+      "wall_s": 149.4227493999997,
+      "timed_out": false
+    },
+    "artifacts/review/heterogeneous-counterexample-preparation-20261013/manifest.json": {
+      "sha256": "a07543f58eb82a01c2641541ea7de8b055ea1aae62d514884e7d85ea1b468c44"
+    },
+    "artifacts/formal/variable-publication-3511d51d/aging_film/manifest.json": {
+      "sha256": "40b1f6a3b72247309c698d8c368986209d2dd5464878852bdbec179a8f5262f0"
+    },
+    "artifacts/formal/variable-publication-3511d51d/aging_capacity_endpoint/manifest.json": {
+      "sha256": "3642f48fe3adf37576755dabfcb05641f9b4bfd86bc210c06f24c919a41ac1d7"
+    },
+    "artifacts/validation/F03-capacity-endpoint-normal-cached-publication-eebc7027/command.json": {
+      "sha256": "015c9f58eac88b1822e2b125917414e3d1047d90c28b9c570800b7d68497557d",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "aging_capacity_endpoint",
+        "--out",
+        "artifacts/formal/capacity-normal-cached-20261013"
+      ],
+      "wall_s": 128.09340669999983,
+      "timed_out": false
+    },
+    "artifacts/formal/capacity-normal-cached-20261013/manifest.json": {
+      "sha256": "a80d76df59158975fe1bede007596846575113185d7107ba945b507b6c7bb91c"
+    },
+    "artifacts/data/registration/sign-scope-e39e3000/registration.json": {
+      "sha256": "6598eea201bda4f5d26500e6603ae6b4691c02d187d211b0faca416f0cb33cb2"
+    },
+    "artifacts/review/data-integration-zenodo-central-index-read-20261013-b/report.json": {
+      "sha256": "90dd5167a8d6b53e6bb35b53e9683d8464f135e1866e8299cdad62709f686df7"
+    },
+    "artifacts/review/data-integration-zenodo-validator-static-20261013-b/report.json": {
+      "sha256": "458ae741e1e1eb9795bb88c62204ad9afabd6819cd340ab8547472da005879a0"
+    },
+    "artifacts/validation/D01-nonempty-exact-three-file-baseline-original-regressions-2d9c9418/command.json": {
+      "sha256": "c150286c21a6da16c9dee4e53ba2e2b3258421bea5bc0dee8a66dc15281b2150",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_source_manifest.py",
+        "tests/unit/test_registered_unit_view_evidence.py",
+        "-q",
+        "--basetemp",
+        "C:/nh-test-20261013-j479e",
+        "-o",
+        "cache_dir=C:/nh-cache-20261013-j479e"
+      ],
+      "wall_s": 9.682474199999888,
+      "timed_out": false
+    },
+    "artifacts/review/current-GUI-independent-b4ca7c91/report.json": {
+      "sha256": "d46b39461bc5619cf63f1a10f3d5e343a4f5b504dd4ec629fc334553e62132d3"
+    },
+    "artifacts/validation/W01-current-GUI-independent-artifacts-4a860dbe/command.json": {
+      "sha256": "105c5179ddede395348d044146379f7d6d16f5cb8103ee9e5ef123ec0a47ca81",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/ui-strict-staging-20261013-ae0913bb/review_actual.py",
+        "artifacts/ui/proof-retry-768f497e/observed-53d82756/observations.json",
+        "artifacts/ui/proof-retry-768f497e/task.json"
+      ],
+      "wall_s": 1.2552499000003081,
+      "timed_out": false
+    },
+    "artifacts/ui/proof-reviewed-57dfe55c/observations.json": {
+      "sha256": "61398466fe40fd8c344f930f2dee9d9a909be14b9c0ac3205f8fcb05de20e858"
+    },
+    "artifacts/validation/W01-publish-independent-reviewed-current-partial-GUI-b517aff0/command.json": {
+      "sha256": "aec1193da72d02eecdd94caa1d91b68c4af54b7b0f19c5988cdb2fd1aeca693c",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/attach_proof_gui_independent_review.py"
+      ],
+      "wall_s": 0.6342509999994945,
+      "timed_out": false
+    },
+    "artifacts/review/ui-scoped-proposal-6a3e5b21/handoff.json": {
+      "sha256": "19af9db6748b7492f21932483f9c16323489502640707c41231574b77af0eddf"
+    },
+    "artifacts/validation/W01-scoped-candidate-method-calibration-97f0810c/command.json": {
+      "sha256": "ced910454f4f3c8519f621bec85ce172c6f09894b2287e016325bd603ef5497e",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "../../work/runtime/calibrate_ui_scoped_6a3e5b21.py"
+      ],
+      "wall_s": 55.60552430000007,
+      "timed_out": false
+    },
+    "artifacts/review/ui-scoped-install-f348baef/manifest.json": {
+      "sha256": "2ce4b8f9928efb296f7e6edd28d2cf4127cb2542594bd6c85feeab19ea1504b8"
+    },
+    "artifacts/validation/W01-install-original-gate-preserving-scoped-audit-f85f7087/command.json": {
+      "sha256": "fb73fdecfbe505521bb66d7fe4cac9f9dcfcc91aca9a9c5de0a9b66c21ef7cbd",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/install_scoped_ui_audit.py"
+      ],
+      "wall_s": 0.4707202000008692,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-installed-scoped-audit-actual-partial-1b1b8e1d/command.json": {
+      "sha256": "bc37162ff6a4fb25ad85c626669837672aa464677e1c576181457f1464b7add7",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_ui_acceptance_scoped.py",
+        "artifacts/ui/proof-reviewed-57dfe55c/observations.json",
+        "artifacts/ui/proof-retry-768f497e/task.json"
+      ],
+      "wall_s": 0.6996397000002617,
+      "timed_out": false
+    },
+    "artifacts/validation/G00-capacity-data-rate-current-full-pytest-92fbc295/command.json": {
+      "sha256": "e28cfa31beee72d84608fcf67996f5078db756a78524d17f357a8e57c6c7de4d",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--basetemp",
+        "C:/nh-test-20261013-f381a",
+        "-o",
+        "cache_dir=C:/nh-cache-20261013-f381a"
+      ],
+      "wall_s": 294.08905369999957,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

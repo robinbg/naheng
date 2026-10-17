@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T10:18:43.187900+00:00",
+  "task_id": "A00",
+  "status": "in_progress",
+  "required_acceptance_and_contracts_unchanged": true,
+  "actual_start_receipt": "artifacts/validation/A00-A01-install-frozen-public-candidates-2dcd7c7e/command.json",
+  "actual_exit_code": 0,
+  "scientific_acceptance_complete": false
+}

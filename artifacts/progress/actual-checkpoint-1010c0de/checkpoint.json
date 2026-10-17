@@ -1,0 +1,262 @@
+{
+  "utc": "2026-10-16T04:33:14.850600+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-real-learned-counterexample-revision-40-declaration-loop-e0567a64/command.json": {
+      "sha256": "50a6c6dfc3aa4dba3f8e39f31156d8f1f83fb8f396c8c9381cec710f34886e11",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-b/invoke.py",
+        "run",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-b/evidence/actual-loop-20261016-b"
+      ],
+      "wall_s": 504.653977199996,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-complete-actual-learned-loop-source-and-native-audit-3daf0328/command.json": {
+      "sha256": "2d49a9fe173f4a18da42519338f5d3d1d29939bce4560f8ed4208a1c78aa88c0",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_actual_a02_loop_20261016.py",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-b/evidence/actual-loop-20261016-b/loop"
+      ],
+      "wall_s": 0.13458479999826523,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a02-actual-loop-root-audit-bdd193b6f756/report.json": {
+      "sha256": "504856e5207dd087a5d070d29e1391f91a9a9ce76e4fc2b6f7cca85de71f5129"
+    },
+    "artifacts/validation/A02-seal-native-loop-and-original-test-candidate-0110d636/command.json": {
+      "sha256": "c1445aff5747f95c9d48ed40f6ce6d9b5a663b66c3d9b0242fe0c394c5a8d0ee",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/seal_a02_candidate_20261016.py"
+      ],
+      "wall_s": 0.2068725999997696,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/a02-integrated-vm-worker-20261016-b/sealed-candidate.json": {
+      "sha256": "2b4af8c712e9a77b4a778a2d87c6d06b35bd8e88dfd8f5519cbf42d1294417a3"
+    },
+    "artifacts/validation/A02-r3-original-eight-native-deadline-177436af/command.json": {
+      "sha256": "013729957c7886d6988ce4a720a846b2654cbb8441dba2a999afdbfd170c993d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-c/invoke.py",
+        "tests",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-c/evidence/original-eight"
+      ],
+      "wall_s": 677.7133348000061,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-r3-native-receipt-root-audit-6915c2ab/command.json": {
+      "sha256": "ccd61e79d5f1ceb8417dbc17a0df635dbc3a2c1cca4e15fc8b219493fc708df4",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_original_a02_native_tests_r2_20261016.py",
+        "artifacts/handoff/a02-integrated-vm-worker-20261016-c",
+        "artifacts/validation/A02-r3-original-eight-native-deadline-177436af/command.json"
+      ],
+      "wall_s": 1.0914042000003974,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a02-native-test-root-audit-454f3ef347fa/report.json": {
+      "sha256": "3a8b64d9844286d4773164d691d65cd2d829c450bddf64f501f08901271d6189"
+    },
+    "artifacts/review/a02-independent-20261016-c/handoff.json": {
+      "sha256": "a39da3bd56e3d1447bd3f22cddee662c332eb45de60a39d105e266284d3710fb"
+    },
+    "artifacts/validation/A02-public-reviewed-delta-readonly-preconditions-d971d945/command.json": {
+      "sha256": "ff2eac2165b3990457805c91e0fea55c31db0ad07cdae6ff863695eb91a236f5",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/apply_a02_public_adoption_20261016.py"
+      ],
+      "wall_s": 0.6766893999956665,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/handoff/p02-reviewed-mapping-20261016-c/sealed-candidate.json": {
+      "sha256": "e169699cb5c63846049cf45d8442506e64067ca85a185faa6b7b03ce7baf9b40"
+    },
+    "artifacts/validation/P02-seal-real-candidate-and-public-rebase-preconditions-ce40d70b/command.json": {
+      "sha256": "e27fd937d0be36ffd773dbb5e6bb6367f5aec71c2dc780f28fbfba68f128e4be",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/seal_p02_candidate_20261016.py"
+      ],
+      "wall_s": 0.23015180000220425,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/p02-independent-20261016-c/review.json": {
+      "sha256": "d290c0237fb80ddc0ea310914a3a248db3fc9460da87f86315350c41dd83e3bb"
+    },
+    "artifacts/handoff/p02-production-adoption-20261016-c/handoff.json": {
+      "sha256": "468cc8f88f19b26d9b512067735ca64e6ace17c7c8d591ec2ccfc34b89a444a9"
+    },
+    "artifacts/validation/P02-root-reviewed-adoption-preflight-662a9fe4/command.json": {
+      "sha256": "ba2ef1fd9e20696d98d7b76f07e6a2c34c1342fe8e45dcb32fbc2e4b853297b1",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/p02-production-adoption-20261016-c/apply_reviewed.py"
+      ],
+      "wall_s": 0.5868295999971451,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A03-constrained-search-budget-feedback-and-recovery-controls-r3-4b19d256/command.json": {
+      "sha256": "168aa18f0556c710afb3c6d738dc791a642222ba2ba765194bd351660c7cdeea",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "artifacts/handoff/a03-constrained-search-20261016-a/tests",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "artifacts/a03-tests-4c61e83b"
+      ],
+      "wall_s": 6.745159500002046,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A03-unknown-cost-and-atomic-recovery-controls-15d94c45/command.json": {
+      "sha256": "2497e98e29796c993b40a9df564c7eba753c1a1c3400cf9b0474b11d2c059de6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "artifacts/handoff/a03-constrained-search-20261016-a/tests",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "artifacts/a03-tests-b2713ae4"
+      ],
+      "wall_s": 5.312018099997658,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A03-real-paired-low-high-operational-oracle-probe-d4984d2f/command.json": {
+      "sha256": "2d3d7b811428eb47e3f9e87081764699b40a76cd9c7faa9c10a70c3b2039be93",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a03-constrained-search-20261016-a/probe_oracle.py"
+      ],
+      "wall_s": 23.468074900003558,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/a03-probe-1cbc4791/probe.json": {
+      "sha256": "ad44f41c5f2b6031c58612d73a2d09d7d054f95bfa0079c132a96afc8cc7ba0d"
+    },
+    "artifacts/validation/A03-real-12-plus24-constrained-multifidelity-training-36d1e643/command.json": {
+      "sha256": "03b8c2cefc7447ee7189cf7ff35efd186327af5ab222728ca169b57d9deffe36",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a03-constrained-search-20261016-a/run_pilot.py"
+      ],
+      "wall_s": 314.4977851000003,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/a03-pilot-5faf875a/result.json": {
+      "sha256": "39490b967035a155810c398f1fbd3c9651990fbc626efc4cdeaf93c9ba4a6245"
+    },
+    "artifacts/validation/A03-first-training-actual-partial-rejection-audit-e9ea829a/command.json": {
+      "sha256": "f2922cb8b67f012cd54431c4160a101f463486b4953eaf06de4311be248c7f93",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_a03_training_20261016.py",
+        "artifacts/a03-pilot-5faf875a"
+      ],
+      "wall_s": 0.7207531000021845,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a03-training-root-audit-164b3c230e/report.json": {
+      "sha256": "14646993af0dcdcf1325b4859d9382fe5366dff7971bdd531d980b775a45a628"
+    },
+    "artifacts/validation/A03-repaired-search-original-method-controls-039649e5/command.json": {
+      "sha256": "3f4855619554cca7d066d340053c5b70259e5f9e2d989a1a6349c0e15bfa86ce",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "artifacts/handoff/a03-constrained-search-20261016-b/tests",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "artifacts/a03-b-test-temp-20261016"
+      ],
+      "wall_s": 10.506706499996653,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A03-repaired-real-12-plus24-training-096d2be8/command.json": {
+      "sha256": "ec13b29b32ce03164b341a531904cd74206397e6d33f58b2cfcf462c85e9bb63",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a03-constrained-search-20261016-b/run_pilot.py"
+      ],
+      "wall_s": 708.7520090999969,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/a03-pilot-9ba04a8b/result.json": {
+      "sha256": "6d4190cfe407ea238af09a3744ae8f540512b640231aa58a86beaf0a36caeed5"
+    },
+    "artifacts/validation/A03-repaired-complete36-training-root-audit-51f7a03d/command.json": {
+      "sha256": "9050b3d0a6068ccf382c1949ddc035d949f1b75dcca2370ea45fa7532dd13cb8",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_a03_training_20261016.py",
+        "artifacts/a03-pilot-9ba04a8b"
+      ],
+      "wall_s": 0.5610049000024446,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/a03-training-root-audit-ddb8439d7a/report.json": {
+      "sha256": "614e144aa586d2dd55db5ac82a9e5bde97586e9860641c4c5c0ee3dd25bc6936"
+    },
+    "artifacts/handoff/p03-validity-withdrawal-20261016-c/handoff.json": {
+      "sha256": "fabc5363290370ecb5f8ad611d2fddc83328d2cfdf5c4ab64a9212cd9ccbad90"
+    }
+  },
+  "full_acceptance_complete": false
+}

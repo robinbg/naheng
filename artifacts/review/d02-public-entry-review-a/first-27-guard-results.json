@@ -1,0 +1,369 @@
+{
+  "created_at_utc": "2026-10-14T14:41:22.389017+00:00",
+  "mode": "pure_saved_report_and_AST_exit_projection_calibration",
+  "source_before": {
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/runtime/public_capacity_session.py": "4c634a72801aca860f0a62707986c4f956ad708388b615700ad26c9a717775a8",
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/experiments/public_capacity.py": "09290f4871f2cc7bec0e4cc0963c85d328d98a3a31f271a688e606fadc96f5c2",
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/handoff.json": "5cb9d1a141e5afb0cd078153422ff1d122a9bb5b51cdc1f2fdec2da1c05651a1",
+    "artifacts/handoff/d02-capacity-protocol-20261014-a/protocol_capacity_measurement.py": "0f5f3e7f60497604c485a1fc430e5386170374b79cdee2933379ed900651e381",
+    "artifacts/handoff/d02-capacity-protocol-20261014-a/actual-frozen-report.json": "f224c349335baf08fc4ea89868eb5d0d7ee32ecaaaccebf822591929e34cc60a",
+    "data/splits/zenodo13836819-eight-provenance-20261013-c.json": "c86f34c674f77fe7972f614ad1b88d0cf37531dc51d457479b17b4f837a4b539",
+    "artifacts/review/zenodo-csv-public-12-20261013-h/member-1-Pulse_data_temp-5_bat3/manifest.json": "99c5a1dde1b2bbe17e59408449c58b7cac50010047eef92012bcccff90799ecc",
+    "artifacts/review/zenodo-csv-public-12-20261013-h/member-2-Pulse_data_temp-5_bat4/manifest.json": "4bee64fa5504ac2e51fa243010cff4d8e5d0d4058c8e34ffaefbe74d25098f90",
+    "artifacts/review/zenodo-csv-public-3-20261013-h/member-3-Pulse_data_temp15_bat3/manifest.json": "1197276c1df1bc644eea6af493092a1fbeeba3379ef36fc3e15b111b2946bddf",
+    "artifacts/review/zenodo-csv-public-4-20261013-h/member-4-Pulse_data_temp15_bat4/manifest.json": "9dbc5c0b18cfea3e1a8f7613405aa497c1bed9dc4c437ff4915945b21aa57140",
+    "artifacts/review/zenodo-csv-public-5-20261013-h/member-5-Pulse_data_temp25_bat3/manifest.json": "1b802b78c44f9384f284c88cece7ce6ddcafed82a53df47199b744fd6c4a47da",
+    "artifacts/review/zenodo-csv-public-6-20261013-h/member-6-Pulse_data_temp25_bat4/manifest.json": "9712d7d5febcbcf2d39a38d3327e6b8c4a7ed7414d20819db24c3d54e116f348",
+    "artifacts/review/zenodo-csv-public-7-20261013-i/member-7-Driving_cycle_data_temp-5_bat5/manifest.json": "228ec65d4fda40d7de9f3de46bc4b3d7d83bc77c56970bc42bb34bed6c511abe",
+    "data/processed/zenodo13836819-bat1-public-20261013-a/manifest.json": "d111e409b977bf7c301cd8881c09ceffb9242c9886e0f004cd0b8e597a2e6bf0"
+  },
+  "source_after": {
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/runtime/public_capacity_session.py": "4c634a72801aca860f0a62707986c4f956ad708388b615700ad26c9a717775a8",
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/experiments/public_capacity.py": "09290f4871f2cc7bec0e4cc0963c85d328d98a3a31f271a688e606fadc96f5c2",
+    "artifacts/handoff/d02-capacity-public-entry-20261014-a/handoff.json": "5cb9d1a141e5afb0cd078153422ff1d122a9bb5b51cdc1f2fdec2da1c05651a1",
+    "artifacts/handoff/d02-capacity-protocol-20261014-a/protocol_capacity_measurement.py": "0f5f3e7f60497604c485a1fc430e5386170374b79cdee2933379ed900651e381",
+    "artifacts/handoff/d02-capacity-protocol-20261014-a/actual-frozen-report.json": "f224c349335baf08fc4ea89868eb5d0d7ee32ecaaaccebf822591929e34cc60a",
+    "data/splits/zenodo13836819-eight-provenance-20261013-c.json": "c86f34c674f77fe7972f614ad1b88d0cf37531dc51d457479b17b4f837a4b539",
+    "artifacts/review/zenodo-csv-public-12-20261013-h/member-1-Pulse_data_temp-5_bat3/manifest.json": "99c5a1dde1b2bbe17e59408449c58b7cac50010047eef92012bcccff90799ecc",
+    "artifacts/review/zenodo-csv-public-12-20261013-h/member-2-Pulse_data_temp-5_bat4/manifest.json": "4bee64fa5504ac2e51fa243010cff4d8e5d0d4058c8e34ffaefbe74d25098f90",
+    "artifacts/review/zenodo-csv-public-3-20261013-h/member-3-Pulse_data_temp15_bat3/manifest.json": "1197276c1df1bc644eea6af493092a1fbeeba3379ef36fc3e15b111b2946bddf",
+    "artifacts/review/zenodo-csv-public-4-20261013-h/member-4-Pulse_data_temp15_bat4/manifest.json": "9dbc5c0b18cfea3e1a8f7613405aa497c1bed9dc4c437ff4915945b21aa57140",
+    "artifacts/review/zenodo-csv-public-5-20261013-h/member-5-Pulse_data_temp25_bat3/manifest.json": "1b802b78c44f9384f284c88cece7ce6ddcafed82a53df47199b744fd6c4a47da",
+    "artifacts/review/zenodo-csv-public-6-20261013-h/member-6-Pulse_data_temp25_bat4/manifest.json": "9712d7d5febcbcf2d39a38d3327e6b8c4a7ed7414d20819db24c3d54e116f348",
+    "artifacts/review/zenodo-csv-public-7-20261013-i/member-7-Driving_cycle_data_temp-5_bat5/manifest.json": "228ec65d4fda40d7de9f3de46bc4b3d7d83bc77c56970bc42bb34bed6c511abe",
+    "data/processed/zenodo13836819-bat1-public-20261013-a/manifest.json": "d111e409b977bf7c301cd8881c09ceffb9242c9886e0f004cd0b8e597a2e6bf0"
+  },
+  "source_unchanged": true,
+  "cases": [
+    {
+      "name": "valid_full_saved_shape",
+      "expected_accepted": true,
+      "actual_accepted": true,
+      "guard_met": true,
+      "error": null
+    },
+    {
+      "name": "computed_null",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "computed_nan",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "computed_inf",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "computed_string",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "computed_boolean",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "computed_capacity_missing",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "computed_no_complete_protocol",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "computed_attempt_value_disagrees",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "unknown_zero_filled",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "guard_met": true,
+      "error": null
+    },
+    {
+      "name": "unit_current_changed",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "unit_temperature_changed",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "canonical_current_sign_reversed",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "vendor_sign_no_longer_matches_view",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "diagnostic_protocol_changed",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "diagnostic_protocol_ID_changed",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "frozen_source_protocol_changed",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "nominal_source_metadata_changed",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "source_provenance_relabelled",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "manifest_SHA_wrong",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "raw_registered_binding_wrong",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "unique_content_count_wrong",
+      "expected_accepted": false,
+      "actual_accepted": true,
+      "guard_met": false,
+      "error": null
+    },
+    {
+      "name": "row_count_wrong",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "guard_met": true,
+      "error": null
+    },
+    {
+      "name": "role_changed",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "guard_met": true,
+      "error": null
+    },
+    {
+      "name": "duplicate_member",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "guard_met": true,
+      "error": null
+    },
+    {
+      "name": "D02_promoted",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "guard_met": true,
+      "error": null
+    },
+    {
+      "name": "raw_SHA_wrong",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "guard_met": true,
+      "error": null
+    }
+  ],
+  "case_count": 27,
+  "guard_failures": [
+    "computed_null",
+    "computed_nan",
+    "computed_inf",
+    "computed_string",
+    "computed_boolean",
+    "computed_capacity_missing",
+    "computed_no_complete_protocol",
+    "computed_attempt_value_disagrees",
+    "unit_current_changed",
+    "unit_temperature_changed",
+    "canonical_current_sign_reversed",
+    "vendor_sign_no_longer_matches_view",
+    "diagnostic_protocol_changed",
+    "diagnostic_protocol_ID_changed",
+    "frozen_source_protocol_changed",
+    "nominal_source_metadata_changed",
+    "source_provenance_relabelled",
+    "manifest_SHA_wrong",
+    "raw_registered_binding_wrong",
+    "unique_content_count_wrong"
+  ],
+  "aggregate_cases": [
+    {
+      "voltage_exit": 2,
+      "capacity_exit": 0,
+      "elapsed_repr": "50",
+      "aggregate_exit": 2,
+      "completed": true,
+      "budget_exceeded": false,
+      "inputs_unmutated": true,
+      "phase_original_dicts_retained": true,
+      "D02_complete": false
+    },
+    {
+      "voltage_exit": 1,
+      "capacity_exit": 0,
+      "elapsed_repr": "50",
+      "aggregate_exit": 1,
+      "completed": false,
+      "budget_exceeded": false,
+      "inputs_unmutated": true,
+      "phase_original_dicts_retained": true,
+      "D02_complete": false
+    },
+    {
+      "voltage_exit": 2,
+      "capacity_exit": 1,
+      "elapsed_repr": "50",
+      "aggregate_exit": 1,
+      "completed": false,
+      "budget_exceeded": false,
+      "inputs_unmutated": true,
+      "phase_original_dicts_retained": true,
+      "D02_complete": false
+    },
+    {
+      "voltage_exit": 0,
+      "capacity_exit": 0,
+      "elapsed_repr": "50",
+      "aggregate_exit": 2,
+      "completed": true,
+      "budget_exceeded": false,
+      "inputs_unmutated": true,
+      "phase_original_dicts_retained": true,
+      "D02_complete": false
+    },
+    {
+      "voltage_exit": 2,
+      "capacity_exit": 0,
+      "elapsed_repr": "1801",
+      "aggregate_exit": 2,
+      "completed": false,
+      "budget_exceeded": true,
+      "inputs_unmutated": true,
+      "phase_original_dicts_retained": true,
+      "D02_complete": false
+    },
+    {
+      "voltage_exit": 2,
+      "capacity_exit": 0,
+      "elapsed_repr": "nan",
+      "aggregate_exit": 2,
+      "completed": false,
+      "budget_exceeded": true,
+      "inputs_unmutated": true,
+      "phase_original_dicts_retained": true,
+      "D02_complete": false
+    }
+  ],
+  "native1_projection": {
+    "simulated": true,
+    "actual_native_worker_exit": 1,
+    "completion_validated": false,
+    "candidate_returned_phase_exit": 2,
+    "expected_returned_phase_exit": 1,
+    "worker_processes_spawned": 0,
+    "guard_met": false
+  },
+  "computed_member_shape": {
+    "required_numeric": "finite int/float capacity, excludes bool; value tied to complete attempt",
+    "units_example": {
+      "source_time": "s",
+      "source_current": "A",
+      "source_voltage": "V",
+      "source_capacity": "Ah",
+      "source_temperature": "degC",
+      "canonical_temperature": "K"
+    },
+    "policy_example": {
+      "protocol_id": "observed_cccv_3p9V_rest1800_0p2C_to1p5V_v1",
+      "charge_C_rate": 0.5,
+      "charge_cutoff_C_rate": 0.02,
+      "discharge_C_rate": 0.2,
+      "upper_V": 3.9,
+      "lower_V": 1.5,
+      "rest_s": 1800.0,
+      "max_gap_s": 60.0,
+      "bridge_max_s": 5.0,
+      "zero_current_tolerance_A": 0.01,
+      "current_relative_tolerance": 0.01,
+      "voltage_recognition_tolerance_V": 0.0001,
+      "clock_recognition_tolerance_s": 0.05,
+      "counter_tolerance_Ah": 1e-08,
+      "minimum_diagnostic_discharge_s": 300.0
+    },
+    "current_signs": {
+      "vendor_current_sign": "positive_charge",
+      "canonical_current_sign": "positive_discharge"
+    },
+    "protocol_binding": "source_protocol equals frozen member protocol; diagnostic policy/ID fixed by reviewed scanner",
+    "source_bindings": "raw/view/split/source_id/author_group/role/nominal/rows/SHA and derived unique content count"
+  },
+  "non_gate": "Post-stop temperature observation remains nongate; no new raw or boundary requirement",
+  "raw_replays": 0,
+  "worker_processes_spawned": 0,
+  "Lean_invocations": 0,
+  "UI_tested": false,
+  "scope": "Wrapper completion/aggregation guard calibration only, no public CLI acceptance",
+  "exit_code": 1
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_FOR_INTEGRATION",
+  "candidate_sha256": "5bae317a8cc60b36dbc87ddb851583ea932cb5ab1a729633e312ac2a7a713245",
+  "original_test_count": 6,
+  "common_initial_points_identical": 12,
+  "shared_failure_recovery": true,
+  "budgets": {
+    "total_queries": 36,
+    "max_high_queries": 24,
+    "single_s": 120,
+    "batch_wall_s": 1800
+  },
+  "scientific_samples_added": 0,
+  "actual_comparisons_completed": false,
+  "scope": "Verified identical initial design and availability recovery, finite budgets, UNKNOWN exclusion, final source/packet/protocol checks; actual synthetic three-arm comparisons still required"
+}

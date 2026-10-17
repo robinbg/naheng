@@ -1,0 +1,30 @@
+import { test, expect } from '@playwright/test';
+test('smoke: real user run, inputs, seven pages, evidence and replay',async({page,request})=>{
+ await page.goto('/');
+ await page.getByLabel('运行时长 (s)').fill('120');
+ await page.getByLabel('环境温度 (℃)').fill('25');
+ await page.getByLabel('售电价 (CNY/kWh)').fill('0.30');
+ const firstResponse=page.waitForResponse(response=>response.url().endsWith('/api/runs')&&response.request().method()==='POST');
+ await page.getByRole('button',{name:'创建并计算'}).click();
+ const firstCreated=await (await firstResponse).json();
+ await expect(page.getByTestId('run-id')).toHaveText(firstCreated.run_id);
+ await expect(page.getByTestId('run-state')).toHaveText('已保存');
+ const first=await page.getByTestId('run-id').innerText();
+ await expect(page.getByRole('img',{name:'电压 / V',exact:true})).toBeVisible();
+ const firstResult=await request.get(`/api/runs/${first}/manifest`);expect(firstResult.ok()).toBeTruthy();expect((await firstResult.json()).complete).toBe(true);
+ for(const name of ['状态估计','寿命预测','风险预警','策略收益','仿真对照','理论证据']) {await page.getByRole('link',{name,exact:true}).click();await expect(page.getByRole('heading',{name,exact:true})).toBeVisible();}
+ const selectedPackage=await request.get(`/api/runs/${first}/model-package`);expect(selectedPackage.ok()).toBeTruthy();const selectedPackageData=await selectedPackage.json();const selectedManifest=await firstResult.json();expect(selectedPackageData.parameter_revision).toBe(selectedManifest.parameter_revision);await expect(page.getByTestId('package-revision')).toHaveText(selectedManifest.parameter_revision);
+ await page.getByRole('button',{name:'查看基础证据'}).click();await expect(page.getByText('原因',{exact:true})).toBeVisible();
+ await page.getByRole('link',{name:'总览',exact:true}).click();
+ await page.getByLabel('环境温度 (℃)').fill('30');await page.getByLabel('售电价 (CNY/kWh)').fill('0.45');
+ const secondResponse=page.waitForResponse(response=>response.url().endsWith('/api/runs')&&response.request().method()==='POST');
+ await page.getByRole('button',{name:'创建并计算'}).click();
+ const secondCreated=await (await secondResponse).json();await expect(page.getByTestId('run-id')).toHaveText(secondCreated.run_id);
+ await expect(page.getByTestId('run-id')).not.toHaveText(first);await expect(page.getByTestId('run-state')).toHaveText('已保存');
+ const second=await page.getByTestId('run-id').innerText();expect(second).not.toBe(first);
+ const secondJob=await request.get(`/api/runs/${second}`);const actual=await secondJob.json();expect(actual.config.ambient_K).toBeCloseTo(303.15);expect(actual.config.sell_price_per_kWh).toBe(.45);
+ await page.getByRole('button',{name:'生成运行报告'}).click();const link=page.getByRole('link',{name:'下载 HTML 报告'});await expect(link).toBeVisible();
+ const report=await request.get((await link.getAttribute('href'))!);expect(report.ok()).toBeTruthy();expect(await report.text()).toContain(second);
+ await page.getByRole('link',{name:'仿真对照',exact:true}).click();await page.getByRole('button',{name:'登记当前运行回放'}).click();await expect(page.getByTestId('run-id')).not.toHaveText(second);await expect(page.getByTestId('run-state')).toHaveText('已保存');
+ const replayId=await page.getByTestId('run-id').innerText();const replay=await request.get(`/api/runs/${replayId}/manifest`);const replayData=await replay.json();expect(replayData.mode).toBe('replay');expect(replayData.independent_sample).toBe(false);expect(replayData.reused_from).toBe(second);
+});

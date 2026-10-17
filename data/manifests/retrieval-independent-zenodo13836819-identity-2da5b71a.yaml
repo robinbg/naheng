@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "source_member_manifest": "<PROJECT_ROOT>\\artifacts\\data\\public_independent\\zenodo13836819-complete-members-de471d9e\\manifest.json",
+  "source_member_manifest_sha256": "e3dc578537bb3cc4d23605f3a8fa8259c729dd3d60c22dffe875aa60f5b3e144",
+  "status": "actual_fields_and_original_bytes_audited_independent_split_blocked",
+  "audits": [
+    {
+      "member": "Pulse_data_temp-5_bat3.CSV",
+      "sha256": "7af5df8a335aad85d38303b5ccd148229dba26900a9fef4efad2891128485ddf",
+      "author_group": "zenodo13836819_10Ah_bat3",
+      "rows": 127274,
+      "exact_columns": {
+        "time": "Test Time (s)",
+        "current": "Current (A)",
+        "voltage": "Voltage (V)",
+        "temperature": "Aux_Temperature_1 (C)",
+        "sequence": "Data Point",
+        "step": "Step Index",
+        "charge_capacity": "Charge Capacity (Ah)",
+        "discharge_capacity": "Discharge Capacity (Ah)"
+      },
+      "source_units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "temperature": "degC"
+      },
+      "bounds_in_original_units": {
+        "time": [
+          1.0004,
+          87909.3635
+        ],
+        "current": [
+          -30.00584,
+          30.00412
+        ],
+        "voltage": [
+          -0.4278526,
+          4.295886
+        ],
+        "temperature": [
+          0.1182933,
+          4.610963
+        ]
+      },
+      "data_point_sequence_errors": 0,
+      "duplicate_global_time_count": 0,
+      "regressed_global_time_count": 0,
+      "positive_delta_time_s": [
+        0.00029999999969732016,
+        60.030200000008335
+      ],
+      "current_sign_evidence": {
+        "positive_current_charge_capacity_increases": 23765,
+        "negative_current_charge_capacity_increases": 0,
+        "negative_current_discharge_capacity_increases": 40714,
+        "positive_current_discharge_capacity_increases": 0
+      },
+      "negative_voltage_record_count": 60,
+      "zero_voltage_record_count": 0,
+      "measured_temperature_channel": true,
+      "raw_bytes_unchanged": true
+    },
+    {
+      "member": "Pulse_data_temp-5_bat4.CSV",
+      "sha256": "7af5df8a335aad85d38303b5ccd148229dba26900a9fef4efad2891128485ddf",
+      "author_group": "zenodo13836819_10Ah_bat4",
+      "rows": 127274,
+      "exact_columns": {
+        "time": "Test Time (s)",
+        "current": "Current (A)",
+        "voltage": "Voltage (V)",
+        "temperature": "Aux_Temperature_1 (C)",
+        "sequence": "Data Point",
+        "step": "Step Index",
+        "charge_capacity": "Charge Capacity (Ah)",
+        "discharge_capacity": "Discharge Capacity (Ah)"
+      },
+      "source_units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "temperature": "degC"
+      },
+      "bounds_in_original_units": {
+        "time": [
+          1.0004,
+          87909.3635
+        ],
+        "current": [
+          -30.00584,
+          30.00412
+        ],
+        "voltage": [
+          -0.4278526,
+          4.295886
+        ],
+        "temperature": [
+          0.1182933,
+          4.610963
+        ]
+      },
+      "data_point_sequence_errors": 0,
+      "duplicate_global_time_count": 0,
+      "regressed_global_time_count": 0,
+      "positive_delta_time_s": [
+        0.00029999999969732016,
+        60.030200000008335
+      ],
+      "current_sign_evidence": {
+        "positive_current_charge_capacity_increases": 23765,
+        "negative_current_charge_capacity_increases": 0,
+        "negative_current_discharge_capacity_increases": 40714,
+        "positive_current_discharge_capacity_increases": 0
+      },
+      "negative_voltage_record_count": 60,
+      "zero_voltage_record_count": 0,
+      "measured_temperature_channel": true,
+      "raw_bytes_unchanged": true
+    },
+    {
+      "member": "Pulse_data_temp15_bat3.CSV",
+      "sha256": "c5b9917ce613c48b61f94ece06e5d40dc1bc39bade348786a3268c38eca8d7f7",
+      "author_group": "zenodo13836819_10Ah_bat3",
+      "rows": 129176,
+      "exact_columns": {
+        "time": "Test Time (s)",
+        "current": "Current (A)",
+        "voltage": "Voltage (V)",
+        "temperature": "Aux_Temperature_1 (C)",
+        "sequence": "Data Point",
+        "step": "Step Index",
+        "charge_capacity": "Charge Capacity (Ah)",
+        "discharge_capacity": "Discharge Capacity (Ah)"
+      },
+      "source_units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "temperature": "degC"
+      },
+      "bounds_in_original_units": {
+        "time": [
+          1.0005,
+          89815.1611
+        ],
+        "current": [
+          -30.00467,
+          30.00623
+        ],
+        "voltage": [
+          -0.1969938,
+          4.107928
+        ],
+        "temperature": [
+          15.68829,
+          18.35434
+        ]
+      },
+      "data_point_sequence_errors": 0,
+      "duplicate_global_time_count": 0,
+      "regressed_global_time_count": 0,
+      "positive_delta_time_s": [
+        0.00029999999969732016,
+        60.03079999999318
+      ],
+      "current_sign_evidence": {
+        "positive_current_charge_capacity_increases": 22298,
+        "negative_current_charge_capacity_increases": 0,
+        "negative_current_discharge_capacity_increases": 44077,
+        "positive_current_discharge_capacity_increases": 0
+      },
+      "negative_voltage_record_count": 21,
+      "zero_voltage_record_count": 0,
+      "measured_temperature_channel": true,
+      "raw_bytes_unchanged": true
+    },
+    {
+      "member": "Pulse_data_temp15_bat4.CSV",
+      "sha256": "a8db95542259c6c9ebe4b3c7a14714c911abe4bcef2a06bdb61bbad58988c5c6",
+      "author_group": "zenodo13836819_10Ah_bat4",
+      "rows": 129179,
+      "exact_columns": {
+        "time": "Test Time (s)",
+        "current": "Current (A)",
+        "voltage": "Voltage (V)",
+        "temperature": "Aux_Temperature_1 (C)",
+        "sequence": "Data Point",
+        "step": "Step Index",
+        "charge_capacity": "Charge Capacity (Ah)",
+        "discharge_capacity": "Discharge Capacity (Ah)"
+      },
+      "source_units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "temperature": "degC"
+      },
+      "bounds_in_original_units": {
+        "time": [
+          1.0001,
+          89815.1392
+        ],
+        "current": [
+          -30.00552,
+          30.00423
+        ],
+        "voltage": [
+          -0.2465076,
+          4.113518
+        ],
+        "temperature": [
+          15.54767,
+          18.25311
+        ]
+      },
+      "data_point_sequence_errors": 0,
+      "duplicate_global_time_count": 0,
+      "regressed_global_time_count": 0,
+      "positive_delta_time_s": [
+        0.00039999998989515007,
+        60.03059999999823
+      ],
+      "current_sign_evidence": {
+        "positive_current_charge_capacity_increases": 22525,
+        "negative_current_charge_capacity_increases": 0,
+        "negative_current_discharge_capacity_increases": 43843,
+        "positive_current_discharge_capacity_increases": 0
+      },
+      "negative_voltage_record_count": 27,
+      "zero_voltage_record_count": 0,
+      "measured_temperature_channel": true,
+      "raw_bytes_unchanged": true
+    },
+    {
+      "member": "Pulse_data_temp25_bat3.CSV",
+      "sha256": "fe0f6fc9dd9318d612b059f053808218c43468aa83a67fd5a0ccd46205cf7b38",
+      "author_group": "zenodo13836819_10Ah_bat3",
+      "rows": 131884,
+      "exact_columns": {
+        "time": "Test Time (s)",
+        "current": "Current (A)",
+        "voltage": "Voltage (V)",
+        "temperature": "Aux_Temperature_1 (C)",
+        "sequence": "Data Point",
+        "step": "Step Index",
+        "charge_capacity": "Charge Capacity (Ah)",
+        "discharge_capacity": "Discharge Capacity (Ah)"
+      },
+      "source_units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "temperature": "degC"
+      },
+      "bounds_in_original_units": {
+        "time": [
+          1.0001,
+          92521.8696
+        ],
+        "current": [
+          -30.00449,
+          30.0035
+        ],
+        "voltage": [
+          -0.04219627,
+          4.050498
+        ],
+        "temperature": [
+          25.10242,
+          27.82061
+        ]
+      },
+      "data_point_sequence_errors": 0,
+      "duplicate_global_time_count": 0,
+      "regressed_global_time_count": 0,
+      "positive_delta_time_s": [
+        0.00029999999969732016,
+        60.03070000000298
+      ],
+      "current_sign_evidence": {
+        "positive_current_charge_capacity_increases": 24356,
+        "negative_current_charge_capacity_increases": 0,
+        "negative_current_discharge_capacity_increases": 44744,
+        "positive_current_discharge_capacity_increases": 0
+      },
+      "negative_voltage_record_count": 5,
+      "zero_voltage_record_count": 0,
+      "measured_temperature_channel": true,
+      "raw_bytes_unchanged": true
+    },
+    {
+      "member": "Pulse_data_temp25_bat4.CSV",
+      "sha256": "02f998bb21cfe4c8c8e40131d443fc619d0bee1fec3e5742563cae7cc74c9493",
+      "author_group": "zenodo13836819_10Ah_bat4",
+      "rows": 131224,
+      "exact_columns": {
+        "time": "Test Time (s)",
+        "current": "Current (A)",
+        "voltage": "Voltage (V)",
+        "temperature": "Aux_Temperature_1 (C)",
+        "sequence": "Data Point",
+        "step": "Step Index",
+        "charge_capacity": "Charge Capacity (Ah)",
+        "discharge_capacity": "Discharge Capacity (Ah)"
+      },
+      "source_units": {
+        "time": "s",
+        "current": "A",
+        "voltage": "V",
+        "temperature": "degC"
+      },
+      "bounds_in_original_units": {
+        "time": [
+          1.0001,
+          91860.4378
+        ],
+        "current": [
+          -30.00633,
+          30.00429
+        ],
+        "voltage": [
+          -0.02475786,
+          4.054657
+        ],
+        "temperature": [
+          25.18351,
+          27.73797
+        ]
+      },
+      "data_point_sequence_errors": 0,
+      "duplicate_global_time_count": 0,
+      "regressed_global_time_count": 0,
+      "positive_delta_time_s": [
+        0.00039999998989515007,
+        60.03059999999823
+      ],
+      "current_sign_evidence": {
+        "positive_current_charge_capacity_increases": 23970,
+        "negative_current_charge_capacity_increases": 0,
+        "negative_current_discharge_capacity_increases": 44438,
+        "positive_current_discharge_capacity_increases": 0
+      },
+      "negative_voltage_record_count": 4,
+      "zero_voltage_record_count": 0,
+      "measured_temperature_channel": true,
+      "raw_bytes_unchanged": true
+    }
+  ],
+  "byte_identical_duplicates": [
+    {
+      "sha256": "7af5df8a335aad85d38303b5ccd148229dba26900a9fef4efad2891128485ddf",
+      "members": [
+        {
+          "name": "Pulse_data_temp-5_bat3.CSV",
+          "group": "zenodo13836819_10Ah_bat3"
+        },
+        {
+          "name": "Pulse_data_temp-5_bat4.CSV",
+          "group": "zenodo13836819_10Ah_bat4"
+        }
+      ],
+      "cross_author_group": true
+    }
+  ],
+  "author_declared_physical_groups": [
+    "zenodo13836819_10Ah_bat3",
+    "zenodo13836819_10Ah_bat4"
+  ],
+  "conservative_cross_split_components": [
+    [
+      "zenodo13836819_10Ah_bat3",
+      "zenodo13836819_10Ah_bat4"
+    ]
+  ],
+  "independence_status": "unknown_due_cross_battery_ID_identical_original_measurements",
+  "independent_train_validation_test_ready": false,
+  "source_archive_official_md5_verified": false,
+  "corrects_first_audit_field_gap": {
+    "first_manifest_retained": "<PROJECT_ROOT>\\artifacts\\data\\public_independent\\zenodo13836819-complete-members-de471d9e\\manifest.json",
+    "issue": "Initial audit time lookup expected underscore and missed actual Test Time (s); null time bounds and zero counts were untested placeholders, not acceptance",
+    "resolution": "This separate record parses exact headers and checks every original timestamp and data point without changing first evidence or raw bytes"
+  },
+  "D01_complete": false,
+  "D02_complete": false,
+  "limitations": [
+    "The -5degC bat3 and bat4 source files are byte-identical; author ID labels alone must not grant two independent measurements.",
+    "15degC/25degC trajectories have distinct raw hashes, but cross-ID duplicate requires shared split component or author clarification.",
+    "Negative/outlying voltage values remain in original files; no filtering or calibration is performed.",
+    "Pulse tests are not validated long-term aging or operational accident probability samples.",
+    "Only 6 complete members were recovered; no incomplete trailing member, bath6 trace, or whole-archive verification is claimed."
+  ]
+}

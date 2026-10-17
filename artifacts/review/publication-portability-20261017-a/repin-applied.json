@@ -1,0 +1,47 @@
+{
+  "tool": "repin_proof_backend_portability_20261017.py",
+  "status": "applied",
+  "pinned_file_count": 2012,
+  "deviating_pinned_files": [
+    "src/naheng/discovery/offline_seed.py",
+    "src/naheng/discovery/proof_worker.py",
+    "tests/integration/test_proof_worker_isolation.py"
+  ],
+  "deviation_matches_declaration": true,
+  "host_path_scan": {
+    "trees_scanned": [
+      "src",
+      "tests",
+      "tools",
+      "configs",
+      "experiments"
+    ],
+    "hits": 0,
+    "note": "configs/discovery/proof-backend-host.json is machine-specific by design and is gitignored"
+  },
+  "assertions": {
+    "archived_copy_available": true,
+    "archived_assertion_count": 10,
+    "current_assertion_count": 10,
+    "assertions_missing_now": [],
+    "preserved": true
+  },
+  "sha256_before": {
+    "src/naheng/discovery/offline_seed.py": "5ed79c4abce91e97e122bebe8c18299dcb4d38bbd15608b8e87e70c4dd24b324",
+    "src/naheng/discovery/proof_worker.py": "d4fc6de6242ba887aa3bcf37a1496b7e2fcc7e3de1c5801651630d4429b97e0e",
+    "tests/integration/test_proof_worker_isolation.py": "25f9b59366329aef580d10925678a9f8a47084823309b247735ae394e9816214"
+  },
+  "sha256_after": {
+    "src/naheng/discovery/offline_seed.py": "71848415f440e2997cfe629ff05b276faefd190428661ca10fb475d7faeacf49",
+    "src/naheng/discovery/proof_worker.py": "83039435a412496bf74b5d86b29b6835afcedb2ef596f01861331f9212c03d3d",
+    "tests/integration/test_proof_worker_isolation.py": "33443c9e53d676645fbcbd21a33c8f0449163ddeb9246764f8963d73a1b86ae1"
+  },
+  "sha256_manifest_before": "c5d4723d8bdb9b3412b893a3c3d8b0e7e4ff3884592da61202c1e0d65969ebdc",
+  "diff_artifact": "artifacts/review/publication-portability-20261017-a/portability-diff.txt",
+  "guards_weakened": false,
+  "assertions_removed": 0,
+  "budgets_changed": false,
+  "skipped_tests_added": 1,
+  "skip_reason": "the single backend-driven test skips only when the optional isolated proof backend is undeclared; guard tests still run everywhere",
+  "sha256_manifest_after": "36018075ccd298195b73b7c7ee03a6d4f0c004227695e65dc9f2193da9aea4de"
+}

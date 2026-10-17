@@ -1,0 +1,27 @@
+{
+  "exit_code": 0,
+  "code_hash_after": "dc53da2a2f99ac01d33bf9ae7b0fb28d9b556a8cd064e9228d04edb9d1047e25",
+  "source_and_old_tests_unchanged_except_cli": true,
+  "requirements_unchanged": true,
+  "installed": {
+    "src/naheng/economics/lifecycle.py": "ee8b2c93a898977a279cfec22a3695492dfe9b2af80dbfe78011a78795411a47",
+    "src/naheng/economics/pareto.py": "e8fe1beb9584f1f6545fbaf7675ce7930cfe600f3694ede4a81b1e39831ea8eb",
+    "configs/economics/synthetic_lifecycle.json": "fbdfe8bcaca55cd6d00614e48b7e0a813e0bd48d22ecf8fb761d939a10de6179",
+    "tests/unit/test_no_double_count.py": "397ea2e12af6d1ec44c8d7213373736fb63624a0e13b6ac0202d13386aebdf89",
+    "tests/unit/test_terminal_value.py": "6b21848a1c4d45b8a7930849ac60b7924780be5626f63960e981cfe0279519a2",
+    "tests/unit/test_periodic_exposure.py": "54353336412fc3125ea7d4d0fbbdb5b1ea714f3ab4ad608addcda6d8c6ed1a47",
+    "tests/unit/test_execution_mode_rejection.py": "49b5458310ca06a5a4c2cd89fe23d5b2892e3ee1608604cfc0f42e1bd0711b74",
+    "src/naheng/runtime/lifecycle_finance_endpoints.py": "b194344981316e28f4e48f3d8cc7547f835ae870dcaabb7f5ece6daa7b6ead5a",
+    "src/naheng/runtime/lifecycle_finance_session.py": "1322e4e1105719d2f584805d11569daa04686e60b79dc1b92c725bc48b92ac0e",
+    "experiments/lifecycle_finance.py": "88d31bdee74de5700c774f5d819325c2b35cfd25818f8312e27756403f5259a1",
+    "configs/experiments/lifecycle-finance-pilot-v1.json": "acd6c957ad3beb0bcbb848f323df7b9cc8910c34a43c7fc949a1586b22afb451",
+    "tests/integration/test_lifecycle_finance_entry.py": "bc94d49e60a9472fb5531da4e154b04817e1efbc080739361ca3680f5f6e1bed",
+    "tests/fixtures/lifecycle_finance/compare_cycle_maps.json": "46e623cf1d3abfa5035ea9b0265e5814bb52035024a188d0ea34556ad3c178cb"
+  },
+  "cli_sha256": "bef51e3cf9a7efd0ca9ffd8c78a1683fb11c2d82834d50d3887a1a96415d96df",
+  "independent_reviews": {
+    "artifacts\\review\\lifecycle-finance-independent-20261014-c\\handoff.json": "a7a2510c46c9b1aaeadeca1aac605dd8055dba0bbe0da8a75c136635c524d012",
+    "artifacts\\review\\lifecycle-endpoint-integration-20261014-a\\handoff.json": "33354407b81185040399fcac1bba216dc99854311eab7e4d57303dc53a70a5f6"
+  },
+  "scope": "Exact reviewed leaves; real public experiment and new-source full acceptance still required"
+}

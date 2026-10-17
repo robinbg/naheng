@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-12T20:54:31.971940+00:00",
+  "exit_code": 0,
+  "code_hash": "9d1cbd275619ef7690928981bb17bb8d7274107c29651616139b46d1ff8bc2d3",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 18,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 20
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/review/data-integration-signal-window-overlap-20261013-a/audit.py": {
+      "sha256": "8a5bee70eead7cb9d4095c05b16ba0ebead3e2df72bf82a1d9d8178f172fc525"
+    },
+    "artifacts/review/data-integration-signal-window-overlap-20261013-a/report.json": {
+      "sha256": "462b1be49cf3bcc02f8c5ca61e66a9b5b8b24f8cc5304b107f416f0171e9b550"
+    },
+    "artifacts/review/data-integration-signal-window-overlap-calibration-command-20261013-a/command.json": {
+      "sha256": "2b5fe67eeec10b432dedc628d5888a3a1be384889218779b5bb8de5b228cc368",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/data-integration-signal-window-overlap-20261013-a/audit.py",
+        "--calibration-only"
+      ],
+      "wall_s": 0.3825649999998859,
+      "timed_out": false
+    },
+    "artifacts/review/data-integration-signal-window-overlap-20261013-root-b/report.json": {
+      "sha256": "2cc25c00d9b162c2dde7334d1660e89387e0502572ca6618f98778316a3e3549"
+    },
+    "artifacts/validation/D01-new-versus-seven-exact-eight-row-windows-eb362b84/command.json": {
+      "sha256": "3b5cc9c8a8c86a8a01f15481ed242f649bc36400be725827267b420395ac069a",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/data-integration-signal-window-overlap-20261013-a/audit.py",
+        "--out",
+        "artifacts/review/data-integration-signal-window-overlap-20261013-root-b"
+      ],
+      "wall_s": 97.47135900000103,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

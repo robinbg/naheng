@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "-B",
+    "<PROJECT_ROOT>\\artifacts\\review\\d02-public-entry-review-a\\calibrate_guards.py"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "timeout_s": 120,
+  "memory_limit_bytes": 8589934592,
+  "scope": "Pure saved-report guard calibration, no raw/native worker/Lean/GUI",
+  "memory_limit_enforced": true,
+  "exit_code": 1,
+  "wall_s": 0.6983626999999615
+}

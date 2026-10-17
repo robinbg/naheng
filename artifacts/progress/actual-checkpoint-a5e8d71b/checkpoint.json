@@ -1,0 +1,196 @@
+{
+  "utc": "2026-10-12T20:47:32.834621+00:00",
+  "exit_code": 0,
+  "code_hash": "9d1cbd275619ef7690928981bb17bb8d7274107c29651616139b46d1ff8bc2d3",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 18,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 20
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/data/public_independent/zenodo13836819-additional-20261013-a/manifest.json": {
+      "sha256": "7861afeb6f63a50c9fc710395b941b069b3e08c07a34321c4573265817cad955"
+    },
+    "artifacts/review/data-integration-extra-member-budget-20261013-a/unitview-handoff.json": {
+      "sha256": "320d690908f73fc7c655c443e063af9de14a7bc7a82347e312c3bb56ab244fa1"
+    },
+    "artifacts/review/zenodo-additional-source-bytes-independent-20261013/report.json": {
+      "sha256": "79cc3f52c4da3b56b0ed8dd3e5bce29b19e0ae7a8861a3fcae1a8cf755f2e536"
+    },
+    "artifacts/review/zenodo-additional-unitview-independent-20261013/report.json": {
+      "sha256": "3e17237ff1841dc107bf8a3fd2b4c5b4a766b4025db1465d2ba6125e18f0e41d"
+    },
+    "artifacts/validation/D01-additional-member-independent-unitview-de904f4e/command.json": {
+      "sha256": "597da6f1acceaf927f19000222937f3f030b393ffd1a40c75a9858b85d511cb5",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "artifacts/review/zenodo-additional-unitview-independent-20261013/review.py",
+        "--timeout-s",
+        "240"
+      ],
+      "wall_s": 40.98367370000051,
+      "timed_out": false
+    },
+    "artifacts/data/registration/additional-cli-install-2f07eafe/manifest.json": {
+      "sha256": "52103ce9f32650c168e9cb562543366e532bc485a4c9a2deed1bd3e40fa48f86"
+    },
+    "artifacts/validation/D01-install-independent-reviewed-additional-member-CLI-735a49bb/command.json": {
+      "sha256": "8c5c5e83814cfa90c16c79461eebb0d82f99dde87341d667e6b873f371ee7598",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/install_additional_member_cli.py",
+        "artifacts/review/zenodo-additional-unitview-independent-20261013/report.json",
+        "--review-sha",
+        "3e17237ff1841dc107bf8a3fd2b4c5b4a766b4025db1465d2ba6125e18f0e41d",
+        "--review-command",
+        "artifacts/validation/D01-additional-member-independent-unitview-de904f4e/command.json"
+      ],
+      "wall_s": 2.7613626000002114,
+      "timed_out": false
+    },
+    "artifacts/data/public_independent/unitview-audit-zenodo13836819-bat1-public-20261013-a/manifest.json": {
+      "sha256": "fd937683393777a3d44b63949de0540608d553eb84a8325f769fe6ff3b8cba63"
+    },
+    "artifacts/validation/D01-public-additional-member-full-row-entry-635b5f34/command.json": {
+      "sha256": "8ca3f375b71b0def5ee93bfd9e4e5125715eff4e041fdae53acb9e9da7a9b790",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/validate_additional_zenodo_csv.py",
+        "--root",
+        ".",
+        "--registry-sha",
+        "152bd5748eef8838e5198ba3446bf050d813a13f37b7b104ab2dfaecfbc11b44",
+        "--registry",
+        "data/manifests/pending-zenodo13836819-bat1-20261013-a.json",
+        "--out",
+        "data/processed/zenodo13836819-bat1-public-20261013-a"
+      ],
+      "wall_s": 129.1880013000009,
+      "timed_out": false
+    },
+    "artifacts/review/additional-public-byteidentity-20261013-7ebf36d0/report-recovered.json": {
+      "sha256": "aef2017ef7a3a8598c61c7e2f1fc2b33c0ec3435fdc4d430d8fbc8683100f7cc"
+    },
+    "artifacts/validation/D01-independent-public-additional-byteidentity-recovered-c1874697/command.json": {
+      "sha256": "6b81b3225153c9707f7931fceb374c28e0b685361a1f848e918e6a8462bd1605",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/additional-public-byteidentity-20261013-7ebf36d0/review-recovered.py"
+      ],
+      "wall_s": 0.4206508000006579,
+      "timed_out": false
+    },
+    "data/manifests/additional-unit-view-bat1-20261013-a.json": {
+      "sha256": "904d14e82e2e71f80a661ac82616e7f2db164a71243613709eb69979f624ac21"
+    },
+    "artifacts/validation/D01-register-independent-reviewed-supplementary-unit-view-da978754/command.json": {
+      "sha256": "5d43c7b7b2309138926a3e13854a7f06301452d7f85df8d64c4f2f39fb1b394d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/register_additional_member_view.py",
+        "artifacts/review/additional-public-byteidentity-20261013-7ebf36d0/report-recovered.json",
+        "--review-sha",
+        "aef2017ef7a3a8598c61c7e2f1fc2b33c0ec3435fdc4d430d8fbc8683100f7cc",
+        "--review-command",
+        "artifacts/validation/D01-independent-public-additional-byteidentity-recovered-c1874697/command.json"
+      ],
+      "wall_s": 1.0521177999999054,
+      "timed_out": false
+    },
+    "artifacts/formal/setup/extend_deriv_meanvalue-20261013-17aa465b/manifest.json": {
+      "sha256": "09afd182234bd858b8d7dd74b9e2495af4835d18ebc96a9b27161874ef66545a"
+    },
+    "artifacts/formal/setup/single_fetch_deriv_meanvalue-20261013-94198ace/manifest.json": {
+      "sha256": "cee274ed173110592dedca2e71bcf0ef572abda09a58ee6ec2814788fc476dce"
+    },
+    "artifacts/validation/F02-six-exact-cache-single-fetch-64ea2a4f/command.json": {
+      "sha256": "207d3740cba5da5df35fa56a89168fe6ca30d3da4e535718d09cd83a39081695",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/formal/setup/single_fetch_deriv_meanvalue-20261013-94198ace/download.py"
+      ],
+      "wall_s": 18.294277900000452,
+      "timed_out": false
+    },
+    "artifacts/formal/setup/unpack_deriv_meanvalue-20261013-276eea45/manifest.json": {
+      "sha256": "965c834d14c10a3ad12c7a13a8e5c9d0192a1ec3d9215864655b06c7668edc84"
+    },
+    "artifacts/validation/F02-six-exact-cache-ordinary-unpack-8d765516/command.json": {
+      "sha256": "99f0c6b743c16e9cd1df5fd238c1269306d88a42ea9e7fcbcaa1ebde48ad65aa",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/formal/setup/unpack_deriv_meanvalue-20261013-276eea45/unpack.py"
+      ],
+      "wall_s": 7.669908800000485,
+      "timed_out": false
+    },
+    "artifacts/review/fixed-current-readout-compilation-20261013/ReductionFixedCurrentReadout-8528707c/manifest.json": {
+      "sha256": "28499079bcfd92f92f0396fdbc280a78286c6e48e456dbaeb7586b0bcb90a8c8"
+    },
+    "artifacts/validation/F02-fixed-current-readout-original-after-official-cache-521fa37e/command.json": {
+      "sha256": "e977f201d7c2ab1a2cdfd8ae61d352777e6cd03156bc83a7f50af1e12e945c0c",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "artifacts/review/fixed-current-readout-recovery-after-official-cache-20261013/check_candidate.py",
+        "--lake-slot-released-by-root"
+      ],
+      "wall_s": 121.82367219999833,
+      "timed_out": false
+    },
+    "artifacts/review/fixed-current-readout-final-unknown-after-official-cache-20261013/manifest.json": {
+      "sha256": "13c9989a282cdb9b55042d19c4b8c214abab5cf96276660db833191f2e337768"
+    },
+    "artifacts/review/fixed-current-readout-math-independent-20261013/report.json": {
+      "sha256": "18646e2314dcee5f379ad405ae43b3a7fbb414e6528c49b8035a85bfff00a424"
+    },
+    "artifacts/validation/F02-fixed-current-readout-independent-conditional-math-bbb40207/command.json": {
+      "sha256": "eb9c2b1fedbf48f1a168d8577cf10cb7dd042de2ead332d82931b34a146312be",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "artifacts/review/fixed-current-readout-math-independent-20261013/review.py"
+      ],
+      "wall_s": 1.1860479999995732,
+      "timed_out": false
+    },
+    "artifacts/review/readout-frozen-evidence-independent-20261013-1f870aa4/report.json": {
+      "sha256": "390f31131aa53f09b7a060b11fd062583e5d7d921e7c9b388db5f88029571fc3"
+    },
+    "artifacts/validation/F02-independent-readout-unknown-accounting-recovered-842ce5bb/command.json": {
+      "sha256": "e497fcad29a7928f2e02482cc25ec680dcd2ce080b111c5efec9f11f5b389a1d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/readout-frozen-evidence-independent-20261013-1f870aa4/review.py"
+      ],
+      "wall_s": 0.3972393000003649,
+      "timed_out": false
+    },
+    "artifacts/progress/novelty-readout-unknown-20261013/manifest.json": {
+      "sha256": "bbecd3165d2ed14621646013431c84dc9969aa4998003712d896331f1c5e0001"
+    }
+  },
+  "full_acceptance_complete": false
+}

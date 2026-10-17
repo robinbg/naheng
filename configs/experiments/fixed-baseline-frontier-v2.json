@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "protocol_id": "fixed-baseline-frontier-v2-terminal-buffer",
+  "candidates": [
+    {
+      "policy_id": "rule-10mA-m0",
+      "kind": "rules",
+      "current_limit_A": 0.01,
+      "voltage_margin_V": 0,
+      "soc_margin": 0,
+      "temperature_margin_K": 0
+    },
+    {
+      "policy_id": "rule-10mA-m50mV",
+      "kind": "rules",
+      "current_limit_A": 0.01,
+      "voltage_margin_V": 0.05,
+      "soc_margin": 0,
+      "temperature_margin_K": 0
+    },
+    {
+      "policy_id": "rule-20mA-m0",
+      "kind": "rules",
+      "current_limit_A": 0.02,
+      "voltage_margin_V": 0,
+      "soc_margin": 0,
+      "temperature_margin_K": 0
+    },
+    {
+      "policy_id": "rule-20mA-m50mV",
+      "kind": "rules",
+      "current_limit_A": 0.02,
+      "voltage_margin_V": 0.05,
+      "soc_margin": 0,
+      "temperature_margin_K": 0
+    },
+    {
+      "policy_id": "nominal-10mA-m0mV-b5uSOC",
+      "kind": "nominal",
+      "current_limit_A": 0.01,
+      "voltage_margin_V": 0,
+      "soc_margin": 0,
+      "temperature_margin_K": 0,
+      "nominal_terminal_buffer": 5e-06
+    },
+    {
+      "policy_id": "nominal-10mA-m0mV-b10uSOC",
+      "kind": "nominal",
+      "current_limit_A": 0.01,
+      "voltage_margin_V": 0,
+      "soc_margin": 0,
+      "temperature_margin_K": 0,
+      "nominal_terminal_buffer": 1e-05
+    },
+    {
+      "policy_id": "nominal-10mA-m50mV-b5uSOC",
+      "kind": "nominal",
+      "current_limit_A": 0.01,
+      "voltage_margin_V": 0.05,
+      "soc_margin": 0,
+      "temperature_margin_K": 0,
+      "nominal_terminal_buffer": 5e-06
+    },
+    {
+      "policy_id": "nominal-10mA-m50mV-b10uSOC",
+      "kind": "nominal",
+      "current_limit_A": 0.01,
+      "voltage_margin_V": 0.05,
+      "soc_margin": 0,
+      "temperature_margin_K": 0,
+      "nominal_terminal_buffer": 1e-05
+    },
+    {
+      "policy_id": "nominal-20mA-m0mV-b5uSOC",
+      "kind": "nominal",
+      "current_limit_A": 0.02,
+      "voltage_margin_V": 0,
+      "soc_margin": 0,
+      "temperature_margin_K": 0,
+      "nominal_terminal_buffer": 5e-06
+    },
+    {
+      "policy_id": "nominal-20mA-m0mV-b10uSOC",
+      "kind": "nominal",
+      "current_limit_A": 0.02,
+      "voltage_margin_V": 0,
+      "soc_margin": 0,
+      "temperature_margin_K": 0,
+      "nominal_terminal_buffer": 1e-05
+    },
+    {
+      "policy_id": "nominal-20mA-m50mV-b5uSOC",
+      "kind": "nominal",
+      "current_limit_A": 0.02,
+      "voltage_margin_V": 0.05,
+      "soc_margin": 0,
+      "temperature_margin_K": 0,
+      "nominal_terminal_buffer": 5e-06
+    },
+    {
+      "policy_id": "nominal-20mA-m50mV-b10uSOC",
+      "kind": "nominal",
+      "current_limit_A": 0.02,
+      "voltage_margin_V": 0.05,
+      "soc_margin": 0,
+      "temperature_margin_K": 0,
+      "nominal_terminal_buffer": 1e-05
+    }
+  ],
+  "training_seeds": [
+    2026101403,
+    2026101404
+  ],
+  "evaluation_seeds": [
+    2026101413,
+    2026101414
+  ],
+  "execution_steps": 2,
+  "prediction_steps": 2,
+  "stages": [
+    {
+      "duration_s": 5,
+      "buy_price_per_kWh": 0.05,
+      "sell_price_per_kWh": 0.04,
+      "ambient_K": 299.15
+    },
+    {
+      "duration_s": 5,
+      "buy_price_per_kWh": 0.15,
+      "sell_price_per_kWh": 0.4,
+      "ambient_K": 299.15
+    },
+    {
+      "duration_s": 5,
+      "buy_price_per_kWh": 0.05,
+      "sell_price_per_kWh": 0.04,
+      "ambient_K": 299.15
+    }
+  ],
+  "parameters": {
+    "current_limit_A": 0.02,
+    "thermal_min_W": 0,
+    "thermal_max_W": 0,
+    "nominal_terminal_buffer": 0,
+    "prediction_max_step_s": 5,
+    "max_iterations": 25,
+    "max_candidate_evaluations": 120,
+    "wall_budget_s": 15,
+    "tariff_source": "synthetic_frontier_predeclared_tariff_v1"
+  },
+  "terminal_soc_tolerance": 1e-05,
+  "case_timeout_s": 110,
+  "batch_wall_budget_s": 1200
+}

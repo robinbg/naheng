@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "before_code_hash": "8722828ee2b0236abc2167f6354108f545446fad1e16d8e62e403c225fcffa11",
+  "after_code_hash": "1ed0fe0c01a7bf178ad54b66fa085cd04f634e3c8e0abfb491e7a3403a6fd8ef",
+  "stage_hashes": {
+    "calibration.py": "17c4673e040b715ab0563ede18fea0275beee7578e08a72a640e1423076cac51",
+    "discrepancy.py": "58017c89190072a55d8a3df41c38bca32df0d98323f1f87f27216bd7b4651be0",
+    "test_shared_posterior.py": "7dd2fa36609683240041527894f3ca8b5f50ab28099b5f30ad5d12cc0a851c4b"
+  },
+  "installed": {
+    "src\\naheng\\estimation\\calibration.py": "17c4673e040b715ab0563ede18fea0275beee7578e08a72a640e1423076cac51",
+    "src\\naheng\\estimation\\discrepancy.py": "58017c89190072a55d8a3df41c38bca32df0d98323f1f87f27216bd7b4651be0",
+    "tests\\integration\\test_shared_posterior.py": "ad5d7473f5a0b8dfdb9a47a9eda448e8c1414c4dcba3c0fee2fb5f77bd43350f"
+  },
+  "test_body_after_imports_unchanged": true,
+  "existing_files_overwritten": 0,
+  "task_status_changed": false,
+  "scope": "Installation only; real source/forward/common-consumer acceptance pending"
+}

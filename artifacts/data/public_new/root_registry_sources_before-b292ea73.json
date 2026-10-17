@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "project": "naheng",
+  "registered_on": "2026-10-09",
+  "state_definitions": {
+    "source_read": "landing page or document read; not data validation",
+    "downloaded": "local source bytes present with checksum",
+    "verified": "field/protocol/chemistry and license accepted after validation"
+  },
+  "sources": [
+    {
+      "source_id": "proposal_user_package",
+      "kind": "user_proposal",
+      "url": null,
+      "local_path": "docs/source/PROPOSAL.md",
+      "chemistry_id": "unspecified_official_cell",
+      "read_status": "read",
+      "read_on": "2026-10-09",
+      "read_origin": "current_repository",
+      "download_status": "provided_by_user",
+      "checksum": null,
+      "verification_status": "requirements_only",
+      "license": "user_provided_project_material",
+      "supports": [
+        "project requirements"
+      ],
+      "limitations": [
+        "not experimental evidence"
+      ]
+    },
+    {
+      "source_id": "lean_axioms",
+      "kind": "official_documentation",
+      "url": "https://lean-lang.org/doc/reference/latest/Axioms/",
+      "chemistry_id": null,
+      "read_status": "read",
+      "read_on": "2026-10-09",
+      "read_origin": "current_web_read",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "source_read",
+      "license": "documentation; redistribution_not_checked",
+      "supports": [
+        "transitive #print axioms audit direction"
+      ],
+      "limitations": [
+        "toolchain not yet compiled",
+        "latest docs are separate from locked toolchain"
+      ]
+    },
+    {
+      "source_id": "pybamm_sodium_25_10_2",
+      "kind": "official_model_documentation",
+      "url": "https://docs.pybamm.org/en/v25.10.2/source/examples/notebooks/models/sodium-ion.html",
+      "chemistry_id": "reference_sodium_chayambuka2022_comsol",
+      "read_status": "read",
+      "read_on": "2026-10-09",
+      "read_origin": "current_web_read",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "source_read",
+      "license": "PyBaMM license to be inspected when installed",
+      "supports": [
+        "sodium_ion.BasicDFN exists in the documented version",
+        "parameters are based on Chayambuka 2022 with COMSOL example values"
+      ],
+      "limitations": [
+        "web example is not this project solve",
+        "thermal aging and side reactions are not established by the example"
+      ]
+    },
+    {
+      "source_id": "rwth_sodium_gassing_987579",
+      "kind": "public_measurement_candidate",
+      "url": "https://publications.rwth-aachen.de/record/987579",
+      "doi": "10.18154/RWTH-2024-05745",
+      "chemistry_id": "public_rwth_commercial_sodium_gassing_cell_identity_pending",
+      "read_status": "read",
+      "read_on": "2026-10-09",
+      "read_origin": "current_web_read",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "source_read",
+      "license": "landing_page_reports_CC_BY_4.0; archive_license_pending",
+      "files": [
+        {
+          "url": "https://publications.rwth-aachen.de/record/987579/files/ReadMe.pdf",
+          "status": "not_downloaded"
+        },
+        {
+          "url": "https://publications.rwth-aachen.de/record/987579/files/Data_Failure_Mode_and_Degradation_Analysis_of_a_Commercial_Sodium-Ion_Battery_With_Severe_Gassing_Issue.zip",
+          "status": "not_downloaded"
+        }
+      ],
+      "supports": [
+        "public commercial sodium aging dataset entry exists"
+      ],
+      "limitations": [
+        "raw fields and measurement units not accepted yet",
+        "severe gassing stress population does not establish operational failure probability"
+      ]
+    },
+    {
+      "source_id": "tum_sodium_1762675",
+      "kind": "public_measurement_candidate",
+      "url": "https://mediatum.ub.tum.de/node?id=1762675",
+      "chemistry_id": "unknown_pending_read",
+      "read_status": "partial_then_blocked",
+      "read_on": "2026-10-09",
+      "read_origin": "current_web_read",
+      "original_package_status": "page_access_failed",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "blocked",
+      "license": "unknown",
+      "supports": [],
+      "limitations": [
+        "initial resource returned page metadata; subsequent requested page read returned HTTP 429",
+        "do not replace with fabricated download"
+      ]
+    },
+    {
+      "source_id": "botorch_constrained_bo",
+      "kind": "official_documentation",
+      "url": "https://botorch.org/docs/v0.17.1/tutorials/scalable_constrained_bo",
+      "chemistry_id": null,
+      "read_status": "package_reported_read_not_currently_revalidated",
+      "read_on": null,
+      "read_origin": "docs/SOURCES.md",
+      "download_status": "not_downloaded",
+      "checksum": null,
+      "verification_status": "not_currently_verified",
+      "license": "pending",
+      "supports": [
+        "implementation research entry"
+      ],
+      "limitations": [
+        "no current source read or algorithm experiment recorded"
+      ]
+    },
+    {
+      "source_id": "synthetic-two-site-v1",
+      "kind": "theory_fixture",
+      "url": null,
+      "local_path": "configs/models/two_site_research.yaml",
+      "chemistry_id": "synthetic_two_site",
+      "read_status": "implementation_read",
+      "read_on": "2026-10-10",
+      "read_origin": "project_local",
+      "download_status": "local_generated",
+      "checksum": "1d9349afbfe8b0c5f15459d50374a6ca87ef090cd087c6d63111f9ea5545f932",
+      "verification_status": "synthetic_not_calibrated",
+      "license": "project_local",
+      "supports": [
+        "algorithm and software checks within declared effective mechanism"
+      ],
+      "limitations": [
+        "not manufacturer data",
+        "not real sodium cell safety thresholds",
+        "accelerated synthetic degradation cannot imply real RUL"
+      ]
+    }
+  ],
+  "model_identities": [
+    {
+      "model_kind": "theory_fixture",
+      "chemistry_id": "synthetic_two_site",
+      "parameter_source_id": "synthetic-two-site-v1",
+      "status": "synthetic_not_calibrated"
+    },
+    {
+      "model_kind": "fast_operational",
+      "chemistry_id": "synthetic_two_site",
+      "parameter_source_id": "synthetic-two-site-v1",
+      "status": "synthetic_not_calibrated"
+    },
+    {
+      "model_kind": "reference_sodium",
+      "chemistry_id": "reference_sodium_chayambuka2022_comsol",
+      "parameter_source_id": "pybamm_sodium_25_10_2",
+      "status": "backend_probe_pending"
+    },
+    {
+      "model_kind": "public_data_case",
+      "chemistry_id": "unknown_pending_field_audit",
+      "parameter_source_id": "rwth_sodium_gassing_987579",
+      "status": "not_downloaded"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+scenario_id: mpc_loop
+chemistry_id: synthetic_two_site
+provenance_type: synthetic
+parameter_revision: synthetic-v1
+ambient_K: 298.15
+initial_soc: 0.6
+duration_s: 90
+step_s: 30
+filter_particles: 8
+forecast_paths: 4
+forecast_horizon_s: 120
+future_current_A: 0.1
+buy_price_per_kWh: 0.15
+sell_price_per_kWh: 0.3
+seed: 20261012
+mode: interactive
+policy_id: mpc-v1
+endpoint_protocol: synthetic_capacity_v1
+mpc_horizon_steps: 3
+mpc_parameters:
+  current_limit_A: 0.2
+  soc_min: 0.1
+  soc_max: 0.95
+  max_dod: 0.7
+  soc_bands:
+  - - 0.2
+    - 0.2
+    - 0.2
+  - - 0.8
+    - 0.2
+    - 0.2
+  - - 1.0
+    - 0.2
+    - 0.2
+  thermal_min_W: -0.2
+  thermal_max_W: 0.1
+  nominal_terminal_buffer: 0.001
+  max_iterations: 25
+  max_candidate_evaluations: 120
+  wall_budget_s: 25
+  tariff_source: declared_synthetic_time_schedule
+mpc_schedule:
+- duration_s: 30
+  buy_price_per_kWh: 0.05
+  sell_price_per_kWh: 0.04
+  ambient_K: 298.15
+- duration_s: 30
+  buy_price_per_kWh: 0.15
+  sell_price_per_kWh: 0.4
+  ambient_K: 298.2
+- duration_s: 30
+  buy_price_per_kWh: 0.15
+  sell_price_per_kWh: 0.2
+  ambient_K: 298.15
+- duration_s: 30
+  buy_price_per_kWh: 0.05
+  sell_price_per_kWh: 0.04
+  ambient_K: 298.2
+- duration_s: 30
+  buy_price_per_kWh: 0.15
+  sell_price_per_kWh: 0.4
+  ambient_K: 298.15

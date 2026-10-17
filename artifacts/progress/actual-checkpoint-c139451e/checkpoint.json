@@ -1,0 +1,165 @@
+{
+  "utc": "2026-10-15T18:41:00.734611+00:00",
+  "exit_code": 0,
+  "code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/A02-owned-QEMU-version-and-paused-WHPX-partition-586eded6/command.json": {
+      "sha256": "60082a4c23fe599c6bc8eb3e4be3cc063b4e28d849dd84c9622e6b61f6f45941",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/native_qemu_preflight.py",
+        "--last-result",
+        "<HOST_MAINTENANCE_ROOT>/a02-msys2-runtime-packages-20261016-a/run-b11e789a4630/result.json"
+      ],
+      "wall_s": 6.736261099999865,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-owned-paused-WHPX-supported-Windows-options-r2-d5014632/command.json": {
+      "sha256": "36b11ea43b0f69bd8ef55f5410b93ab486d132aef333783e4fa49b5d9d93ce0d",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/native_qemu_preflight_r2.py",
+        "--last-result",
+        "<HOST_MAINTENANCE_ROOT>/a02-msys2-runtime-packages-20261016-a/run-b11e789a4630/result.json"
+      ],
+      "wall_s": 2.942329799999243,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-offline-VM-benign-cgroup-bwrap-canaries-r2-db46fc3c/command.json": {
+      "sha256": "ac5764c09074c78d485c4933f68af0e30735a383b095262fa1a9370dcef2214d",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/boot_owned_canary_r2.py"
+      ],
+      "wall_s": 192.2140029000002,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-offline-VM-real-nobody-userns-canaries-r3-747072bb/command.json": {
+      "sha256": "bd09f45e0cffd2d494f07285c6964340b8a0a82bc4d7d6cdedc2898de9164bc1",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/boot_owned_canary_r3.py"
+      ],
+      "wall_s": 193.78228180000042,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-official-fixed-Lean419-Linux-bounded-asset-99628005/command.json": {
+      "sha256": "f99494f1911fdd5d3c551ed2dfffad4a71bd266e337c39b19e221937901df351",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/fetch_linux_lean.py"
+      ],
+      "wall_s": 987.9055410000001,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-official-Linux-Lean-actual-full-tar-zstd-integrity-739cb6fa/command.json": {
+      "sha256": "7d68be77769441c6a236c3b44ffc6c69f2cbcd15c2c3f467a0c508275facbe9a",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/inspect_linux_lean_archive.py"
+      ],
+      "wall_s": 8.69187150000107,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-existing-locked-imports-pinned-bundle-no-execution-93ef8fe3/command.json": {
+      "sha256": "16778b1b164870faa0ee0a0a528d3a4fc0172f5622c00c7936abd2b91641b7d6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/prepare_import_bundle.py"
+      ],
+      "wall_s": 107.40681839999888,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/C-owned-Lean-libraries-standard-NTFS-compression-byte-verification-7265ef32/command.json": {
+      "sha256": "0fab1ce1064cac757868da8e3917821745d205982b560a2294bd02cf1828b472",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/compress_owned_lean_data.py"
+      ],
+      "wall_s": 0.5115960000002815,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/C-own-Mathlib-data-standard-NTFS-compression-all-byte-hashes-cced7ae4/command.json": {
+      "sha256": "ed5bbc799cf743042fcc34a8aee90e2f6904c8d3e3a218772e2ccb45bba5cc96",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/compress_owned_mathlib_data.py"
+      ],
+      "wall_s": 132.96543649999967,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-actual-artifact-and-dependency-footprint-readonly-db08b414/command.json": {
+      "sha256": "d58c5ea65d91847ba63f1cdd0e047fea615f6fe128b548a9dd236e95509667bb",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/audit_active_dependency_footprint.py"
+      ],
+      "wall_s": 9.043077599999378,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-actual-footprint-extended-length-Windows-paths-r2-bc9b8f08/command.json": {
+      "sha256": "d92effab46ebe0cd848ab4f07d142b833c8ca1716d337ae309b2a72a1f913a7b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/audit_active_dependency_footprint_r2.py"
+      ],
+      "wall_s": 47.92884360000062,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-official-AppArmor401-bwrap-stacked-profile-source-only-93d68a1e/command.json": {
+      "sha256": "fcf0d0b1a29066bcfb2463e3fc665d5534b4ed4a93b05cf36908c27e132454f3",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/handoff/a02-delegated-backend-20261016-a/fetch_upstream_bwrap_profile.py"
+      ],
+      "wall_s": 1.8496044000003167,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/maintenance/a02-native-VM-progress-20261016-b/snapshots.json": {
+      "sha256": "e04627fd52a520ddec17ab4b6b9fdb31667ccb8797c018b6f1680f7049c462b5"
+    },
+    "artifacts/maintenance/own-lean-ntfs-a271cc42d413/result.json": {
+      "sha256": "354d5594647a3c7f332f78c2c509a065cf3aefca35ab090e5a48a695f0249c7f"
+    },
+    "artifacts/progress/active-dependency-size-longpaths-20261016-a.json": {
+      "sha256": "cf664c707642b07bd5613373ed32c48cfa94b090a312bd96ccc0ede463fbf082"
+    },
+    "artifacts/handoff/a02-delegated-backend-20261016-a/apparmor-profile-source.json": {
+      "sha256": "606c9bbdc4bc607de99d208e85e0ec5d6ddd347d9b7daba9efcd336bc598cc40"
+    }
+  },
+  "full_acceptance_complete": false
+}

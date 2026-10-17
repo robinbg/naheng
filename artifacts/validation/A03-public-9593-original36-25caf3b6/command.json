@@ -1,0 +1,47 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "naheng.cli",
+    "optimize",
+    "--profile",
+    "pilot",
+    "--out",
+    "artifacts/optimization/public-9593-20261016-c"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "executed": true,
+  "timeout_s": 1800,
+  "memory_limit_bytes": 8589934592,
+  "memory_limit_enforced": true,
+  "is_code_execution_sandbox": false,
+  "cleanup_errors": [],
+  "startup_resource_assignment": "trusted command starts before Job assignment; not candidate isolation",
+  "owned_pid": 26160,
+  "owned_final_tree_stop": {
+    "method": "windows_job_object",
+    "exit_code": 0
+  },
+  "owned_active_processes_after_cleanup": 0,
+  "owned_job_handle_closed": true,
+  "native_exit_code": 0,
+  "wall_s": 471.50243030000274,
+  "resource_cleanup_confirmed": true,
+  "status": "completed",
+  "utc": "2026-10-16T06:16:33.654810+00:00",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "naheng.cli",
+    "optimize",
+    "--profile",
+    "pilot",
+    "--out",
+    "artifacts/optimization/public-9593-20261016-c"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-public-9593-original36-25caf3b6\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-public-9593-original36-25caf3b6\\stderr.log",
+  "native_status": "passed"
+}

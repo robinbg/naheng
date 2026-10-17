@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-13T16:33:38.941930+00:00",
+  "exit_code": 0,
+  "code_hash": "cf7dcdf17c62b95e935052022d2143b397bef564f930d08e1442cbd143b38106",
+  "scope": "Original D01 engineering intake/split acceptance; not scientific independence or full product acceptance",
+  "gate_command": "artifacts/review/d01-final-original-scope-20261014-a/runs/5c0f636e/command.json",
+  "gate_report_sha256": "682801e654ddb8bd3711a88fca68ef1428eaeaed27800e0ac2ea3e6410d4987b",
+  "regression_command": "artifacts/validation/G00-current-complete-regression-approved-short-path-a9de2910/command.json",
+  "test_environment": "approved_local_windows_short_workspace_tmp",
+  "counts": {
+    "done": 19,
+    "in_progress": 7,
+    "todo": 19
+  },
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "original_gates_unchanged": true,
+  "status_changes": {
+    "D01": "done",
+    "S05": "in_progress"
+  },
+  "D02_complete": false,
+  "full_release_complete": false
+}

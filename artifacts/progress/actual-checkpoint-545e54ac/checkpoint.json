@@ -1,0 +1,104 @@
+{
+  "utc": "2026-10-16T05:19:21.935389+00:00",
+  "exit_code": 0,
+  "code_hash": "13063d277fdfdebad27928ce85404bb63e57bd31b23fbe354912c440dbf183f0",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 33,
+    "in_progress": 2,
+    "todo": 10
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/handoff/a02-serial-recovery-20261016-b/manifest.json": {
+      "sha256": "02a4b8246cd9d039950bb55445a3517d13e3e00f99b2e96af4accdf2618bde82"
+    },
+    "artifacts/review/a02-serial-frames-root-20261016-d/report.json": {
+      "sha256": "63337acc0a2fbac4e25cb3c45569837e1ffd91a64c86723006b1995fc43f28a8"
+    },
+    "artifacts/validation/A02-independent-framed-serial-final-reviewed-baseline-61ddf92f/command.json": {
+      "sha256": "39878a12a432c0f1ae3b8b24febdb15f8e8a9e3fa950eded05da370df2460b56",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/review_a02_serial_frames_20261016.py"
+      ],
+      "wall_s": 0.27689160000591073,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/ui/proof-current-1306-20261016-c/completion.json": {
+      "sha256": "2217c86020264c0e0e15756e63d6dcd0502481c0d1aacdafc4c1195848e553bd"
+    },
+    "artifacts/review/p02-public-independent-20261016-c/ui-current-1306/handoff.json": {
+      "sha256": "65a03889f128d7cdd722b43af3283a2e4a2766c8b32b7a9e049f9878b552babe"
+    },
+    "artifacts/validation/W01-current1306-original-and-strict-eleven-UI-evidence-gates-90924ca8/command.json": {
+      "sha256": "4c042a5b0cfbfb09ca7317a1270029c92c130940db890b43cfbcd180405adfc1",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/check_ui_acceptance_scoped.py",
+        "artifacts/review/p02-public-independent-20261016-c/ui-current-1306/original-eleven-record.json",
+        "artifacts/review/p02-public-independent-20261016-c/ui-current-1306/original-eleven-task.json"
+      ],
+      "wall_s": 1.4116964999993797,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/validation/A02-P02-P03-pinned-final-review-runtime-preflight-e63dc9c3/command.json": {
+      "sha256": "0e92f07e9150bda49dbd5bafde7cc8047c83515b9b67cb8d65d5a33ecd7133dc",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/apply_reviewed_runtime_bundle_20261016.py"
+      ],
+      "wall_s": 0.5357377999971504,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/review/p03-public-worker-independent-20261016-c/handoff.json": {
+      "sha256": "cec8036e40126fadfcdce24322018e83f3124b943c395eb620bd56a40b3a1ca1"
+    },
+    "artifacts/handoff/p03-public-worker-terminal-20261016-d/handoff.json": {
+      "sha256": "eece8d2c9be5718f6d69a8f1cae9b6ce64702b14ece0478d09e3ef220937f3ed"
+    },
+    "artifacts/review/p03-public-worker-independent-20261016-c/terminal-d-review.json": {
+      "sha256": "7889db2a22be11a60e5a9a4b6284795da6c09cd8cf25967eb95d2fbfac078bce"
+    },
+    "artifacts/handoff/p03-ui-monitor-20261016-a/manifest.json": {
+      "sha256": "8379c7a201bb9a6cdf77db3eb8648fe6d3145c9234693d4934d838ea6f4a91cc"
+    },
+    "artifacts/review/p03-ui-root-20261016-c/report.json": {
+      "sha256": "5bc1ba02cba80d7ccaa191442474f708dc1e46a8b45c9eb78093f6b1e8044479"
+    },
+    "artifacts/validation/A03-initial-low-actual-budget-diagnostic-d3cd6cf5/command.json": {
+      "sha256": "5a4b4234cf15708506b1e13c37ec809853c8cb1b257564a354201f5ca7a3b149",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/probe_a03_initial_low_20261016.py"
+      ],
+      "wall_s": 44.28336760000093,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    },
+    "artifacts/a03-full-initial-low-probe-20261016-c/result.json": {
+      "sha256": "9c6a55c413dd6a5197f224a719be09ffb13117ff2170b6be9a4eddd177e567e9"
+    },
+    "artifacts/handoff/a03-exploration-recovery-20261016-a/validation-low-bd77e59d5d10/command.json": {
+      "sha256": "e5832249918a2f7cad06c52507b83b7126319241dc2ef2ce58f356a9d46bfcda",
+      "exit_code": 0,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "<PROJECT_ROOT>\\artifacts\\handoff\\a03-exploration-recovery-20261016-a\\continue_original_low.py"
+      ],
+      "wall_s": 95.72828519999894,
+      "source_timing_field": "wall_s",
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

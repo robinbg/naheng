@@ -1,0 +1,182 @@
+{
+  "utc": "2026-10-14T14:07:43.742236+00:00",
+  "exit_code": 0,
+  "code_hash": "0d7160d7a940e98b6376a8d7f8a1666b08c156095f6d4d78ac42bc744b2074a6",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 29,
+    "in_progress": 4,
+    "todo": 12
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/validation/Current-regression-first-failure-20261014-b-9e23c646/command.json": {
+      "sha256": "500333de19dcd5b1ec3ca426ce56795cc3f72982ded963d6d33b90d16aa614ec",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-x",
+        "-vv",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/current-first-failure-20261014-b",
+        "--junitxml",
+        "artifacts/validation/current-first-failure-20261014-b.xml",
+        "tests"
+      ],
+      "wall_s": 133.3154713,
+      "timed_out": false
+    },
+    "artifacts/validation/Capacity-plan-hash-original-resume-and-observation-regression-552eafcf/command.json": {
+      "sha256": "414d6d05d4246ceb9ffa275737af4afc077923e06daae53566b12c312974cf57",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "<HOST_DATA_ROOT>/plan-recovery-20261014-a",
+        "tests/integration/test_checkpoint_recovery.py",
+        "tests/unit/test_capacity_observation_plan_identity.py",
+        "tests/unit/test_capacity_observation_censoring.py",
+        "tests/unit/test_capacity_observation_invalid_protocol.py"
+      ],
+      "wall_s": 94.16000139999994,
+      "timed_out": false
+    },
+    "artifacts/validation/Current-source-full-regression-after-physical-plan-identity-fix-a9425fb7/command.json": {
+      "sha256": "3c7c4367a2cdd9afb164e902ba78f9c84cf99bc757665f01eae7d620c65d17a3",
+      "exit_code": 1,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_bound_regression.py",
+        "--id",
+        "bound-regression-20261014-c",
+        "--first-failure"
+      ],
+      "wall_s": 467.0744827000003,
+      "timed_out": false
+    },
+    "artifacts/progress/bound-regression-20261014-c/manifest.json": {
+      "sha256": "d5cd10e578bcad6b3ac98f860b2ffa07ee2d3774be1a1416f3952c9c2ab8d0fa"
+    },
+    "artifacts/progress/lean-partial-archive-20261014-a.json": {
+      "sha256": "9f35f7d7b95680a1bf2d03057b43b3b35d8a968bcb5265eeae8ce17230f12333"
+    },
+    "artifacts/handoff/f04-public-recovery-20261014-b/manifest.json": {
+      "sha256": "0b769c723d9c82d358cf878139d8cdda8c6a4d17a2d10888bf5caecbfbf8a9a4"
+    },
+    "artifacts/validation/F04-official-public-Output-sequential-build-9fe9bf56/command.json": {
+      "sha256": "11f4b2af6a059d96e1a94f9cc3dd20b59c25e7b2d05ae33d1633158c85f936bd",
+      "exit_code": 0,
+      "argv": [
+        ".tools/lean/bin/lake.exe",
+        "--dir",
+        "formal",
+        "build",
+        "Naheng.Contracts.Output"
+      ],
+      "wall_s": 51.464966600000025,
+      "timed_out": false
+    },
+    "artifacts/validation/F04-official-public-Thermodynamics-sequential-build-b476feed/command.json": {
+      "sha256": "7a2a54373a85acbcbc9816d69e0eed29d7efdf34ee43078e58663503cc44da85",
+      "exit_code": 0,
+      "argv": [
+        ".tools/lean/bin/lake.exe",
+        "--dir",
+        "formal",
+        "build",
+        "Naheng.Chemistry.Thermodynamics"
+      ],
+      "wall_s": 80.4796765000001,
+      "timed_out": false
+    },
+    "artifacts/validation/F04-official-public-PhysicalPorts-sequential-build-003e7568/command.json": {
+      "sha256": "e258161a9aa123245a9ad94aa50667f6582288f370410de3dcf2f343367c0cac",
+      "exit_code": 0,
+      "argv": [
+        ".tools/lean/bin/lake.exe",
+        "--dir",
+        "formal",
+        "build",
+        "Naheng.Contracts.PhysicalPorts"
+      ],
+      "wall_s": 55.230943500000194,
+      "timed_out": false
+    },
+    "artifacts/validation/F04-official-public-Protocol-sequential-build-ae6d8e25/command.json": {
+      "sha256": "d2cf12107998ceffa27e115663f814cedf4b11d1dc9aa1c8589f5d3d6113c012",
+      "exit_code": 0,
+      "argv": [
+        ".tools/lean/bin/lake.exe",
+        "--dir",
+        "formal",
+        "build",
+        "Naheng.Contracts.Protocol"
+      ],
+      "wall_s": 88.69699440000022,
+      "timed_out": false
+    },
+    "artifacts/validation/F04-official-public-Admission-sequential-build-72b1631a/command.json": {
+      "sha256": "7353a9e56e1b659bfb692da517b6deba99e39148761a8900f3d3998883f77cfb",
+      "exit_code": 0,
+      "argv": [
+        ".tools/lean/bin/lake.exe",
+        "--dir",
+        "formal",
+        "build",
+        "Naheng.Contracts.Admission"
+      ],
+      "wall_s": 72.84370450000006,
+      "timed_out": false
+    },
+    "artifacts/validation/F04-original-public-contracts-after-sequential-official-leaves-b84d30b4/command.json": {
+      "sha256": "f1e3e96116f5bb0aedc15872d60d17b23d44490318ae3cd42e6733912e0692f2",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "contracts",
+        "--out",
+        "artifacts/formal/f04-required-public-20261014-b"
+      ],
+      "wall_s": 138.50522510000064,
+      "timed_out": false
+    },
+    "artifacts/formal/f04-required-public-20261014-b/manifest.json": {
+      "sha256": "56df716db5008601a30fd86d2626c0dbb43e609844d3a13ef6731a3542cc95d4"
+    },
+    "artifacts/review/next-formal-proof-integration-20261014-a/f04/semantic_readonly_review.md": {
+      "sha256": "5afc2ce49628e56e337b866dd9633645547e3c488f922bcc89ba8d77de0a938d"
+    },
+    "artifacts/review/next-formal-proof-integration-20261014-a/F04_BRIDGE_REQUIREMENTS.md": {
+      "sha256": "203df2933c0a44aec1ab7a1ea960887b6ba4c12b801717e19bad2a0b3096f326"
+    },
+    "artifacts/handoff/d02-capacity-protocol-20261014-a/handoff.json": {
+      "sha256": "7dbf9ca2fcfb689a4e13ae2ee8d6435f36a4527ff7d93dac75badae5d91cf639"
+    },
+    "artifacts/review/next-formal-proof-integration-20261014-a/d02-capacity/handoff.json": {
+      "sha256": "cb0a52dff5cfe16c4e3a080b5e1a6c68533db7c62eaad9be7489f7ed17a5a441"
+    },
+    "artifacts/review/next-formal-proof-integration-20261014-a/A02_REVIEW.md": {
+      "sha256": "88a13a310fbea0d9f155ea86c419a21d1fca0bc0d2f2a6fcc8804958b1dcb752"
+    },
+    "artifacts/review/next-formal-proof-integration-20261014-a/a02-calibration.json": {
+      "sha256": "0019ffeecfb6172f5ce4a3e9d325012c4b9c63d5ca75f1d35feb2a0658eea844"
+    }
+  },
+  "full_acceptance_complete": false
+}

@@ -1,0 +1,767 @@
+{
+  "tool": "diagnose_a03_label_determinism_20261016.py",
+  "scope": "read-only comparison of sealed A03 arm artifacts; no new execution",
+  "arms": {
+    "learned": "artifacts/optimization/public-9593-20261016-c",
+    "random": "artifacts/full-policy-random-6fc49921be",
+    "uncertainty": "artifacts/full-policy-uncertainty-6ecf182273"
+  },
+  "shared_initial_design_ordinals": 36,
+  "identical_input_ordinals": 12,
+  "divergent_ordinals": [
+    6
+  ],
+  "labels_reproducible_on_identical_input": false,
+  "rows": [
+    {
+      "ordinal": 0,
+      "candidate_id": "94d2bf9d2243a4a3b9fd109cfa7c5c9e3df4c0ce06d463733121801724627881",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 8.2831886999993,
+        "random": 10.57913710000139,
+        "uncertainty": 9.328434100003506
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 1,
+      "candidate_id": "73f3258a9d05e47995e4f039ef61253479bf8349eb5fa26df3a3175603862cb3",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 9.286976700001105,
+        "random": 12.59871959999873,
+        "uncertainty": 10.613952899999276
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 2,
+      "candidate_id": "4b9b07eee887e1dccb05212e129b1425f2ca8def94831ebddc0ef4827dd71d64",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 7.719225499997265,
+        "random": 9.110113299997465,
+        "uncertainty": 12.906037599997944
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 3,
+      "candidate_id": "1fbacc14a9a775192f67c33b9a217b5585e22017c2dc13feb22782e7f0270690",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 9.786692499998026,
+        "random": 10.315447399996629,
+        "uncertainty": 9.719871600005717
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 4,
+      "candidate_id": "c8b691325ef1951f05cd30cd0af1802628039826e160f8ea643ee08e80ee8ee8",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 9.279634699996677,
+        "random": 9.648006300005363,
+        "uncertainty": 8.778362500001094
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 5,
+      "candidate_id": "d46cc4a1cfb388acf013ad109adc75d55bbcb3e3a42f97019dac8ee9fcc0bcb6",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 8.448269799999252,
+        "random": 10.847840900001756,
+        "uncertainty": 10.849594600003911
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 6,
+      "candidate_id": "fba7c09c6506d37dd7463973757a8b276fc2ee38e712376ff22b4a3f92666a26",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "completed",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 20.454593499998737,
+        "random": 17.2230694999962,
+        "uncertainty": 14.19518610000523
+      },
+      "statuses_agree": false,
+      "plan_trace_per_arm": {
+        "learned": [
+          {
+            "step": 0,
+            "plan_status": "feasible",
+            "plan_wall_s": 4.827251599999727,
+            "worker_wall_s": 0.7406384999994771,
+            "timed_out": false,
+            "declared_wall_budget_s": 6.0,
+            "declared_max_iterations": 1,
+            "declared_max_candidate_evaluations": 24,
+            "candidate_evaluations": 24,
+            "completed_integrations": 128,
+            "reason": "Low computation incumbent: quantized nominal and all represented posterior checks passed; optimizer convergence is not required and optimality is not proved"
+          },
+          {
+            "step": 1,
+            "plan_status": "feasible",
+            "plan_wall_s": 3.6977315000040107,
+            "worker_wall_s": 0.6116743999955361,
+            "timed_out": false,
+            "declared_wall_budget_s": 6.0,
+            "declared_max_iterations": 1,
+            "declared_max_candidate_evaluations": 24,
+            "candidate_evaluations": 24,
+            "completed_integrations": 128,
+            "reason": "Low computation incumbent: quantized nominal and all represented posterior checks passed; optimizer convergence is not required and optimality is not proved"
+          },
+          {
+            "step": 2,
+            "plan_status": "feasible",
+            "plan_wall_s": 4.005070999999589,
+            "worker_wall_s": 0.8399588000029325,
+            "timed_out": false,
+            "declared_wall_budget_s": 6.0,
+            "declared_max_iterations": 1,
+            "declared_max_candidate_evaluations": 24,
+            "candidate_evaluations": 24,
+            "completed_integrations": 128,
+            "reason": "Low computation incumbent: quantized nominal and all represented posterior checks passed; optimizer convergence is not required and optimality is not proved"
+          },
+          {
+            "step": 3,
+            "plan_status": "feasible",
+            "plan_wall_s": 3.529224800004158,
+            "worker_wall_s": 0.5478615000029095,
+            "timed_out": false,
+            "declared_wall_budget_s": 6.0,
+            "declared_max_iterations": 1,
+            "declared_max_candidate_evaluations": 24,
+            "candidate_evaluations": 24,
+            "completed_integrations": 128,
+            "reason": "Low computation incumbent: quantized nominal and all represented posterior checks passed; optimizer convergence is not required and optimality is not proved"
+          }
+        ],
+        "random": [
+          {
+            "step": 0,
+            "plan_status": "feasible",
+            "plan_wall_s": 5.65479090000008,
+            "worker_wall_s": 1.3245395999983884,
+            "timed_out": false,
+            "declared_wall_budget_s": 6.0,
+            "declared_max_iterations": 1,
+            "declared_max_candidate_evaluations": 24,
+            "candidate_evaluations": 24,
+            "completed_integrations": 128,
+            "reason": "Low computation incumbent: quantized nominal and all represented posterior checks passed; optimizer convergence is not required and optimality is not proved"
+          },
+          {
+            "step": 1,
+            "plan_status": "unknown",
+            "plan_wall_s": 6.024083199998131,
+            "worker_wall_s": null,
+            "timed_out": true,
+            "declared_wall_budget_s": 6.0,
+            "declared_max_iterations": 1,
+            "declared_max_candidate_evaluations": 24,
+            "candidate_evaluations": null,
+            "completed_integrations": null,
+            "reason": "Owned MPC optimizer/integrator process exceeded its wall budget"
+          }
+        ],
+        "uncertainty": [
+          {
+            "step": 0,
+            "plan_status": "unknown",
+            "plan_wall_s": 6.036974200003897,
+            "worker_wall_s": null,
+            "timed_out": true,
+            "declared_wall_budget_s": 6.0,
+            "declared_max_iterations": 1,
+            "declared_max_candidate_evaluations": 24,
+            "candidate_evaluations": null,
+            "completed_integrations": null,
+            "reason": "Owned MPC optimizer/integrator process exceeded its wall budget"
+          }
+        ]
+      }
+    },
+    {
+      "ordinal": 7,
+      "candidate_id": "cbc3cf86295b8b40c4aa1570b21ddc137d2fafc162b0dc57f523f3b57f4cfedf",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 10.576609099996858,
+        "random": 8.655137299996568,
+        "uncertainty": 13.301325699998415
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 8,
+      "candidate_id": "c684802fe16793b83268487eb6e71eb6b3562ba79df98ecb73efd332c3cea852",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 7.699516200002108,
+        "random": 8.247081000001344,
+        "uncertainty": 11.856965899998613
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 9,
+      "candidate_id": "301c4da750c7a7181beacf4ae852673f8987caced3ba5df3e7d653c791be2afb",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 9.4845650999996,
+        "random": 6.917799700000614,
+        "uncertainty": 13.521465000005264
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 10,
+      "candidate_id": "0ddcd16c285f09e74bb05eef1715a7c045846932fa5a06a1778a6dd16b8a6ed0",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 13.97164150000026,
+        "random": 11.970390099995711,
+        "uncertainty": 15.120877400004247
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 11,
+      "candidate_id": "f292cf62b8dd96ffe5f74b1e4e6208c53978551514781718b4fb7b0ed9f38913",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": true,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 10.133252799998445,
+        "random": 7.008046499999182,
+        "uncertainty": 9.875514100000146
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 12,
+      "candidate_id": "fba7c09c6506d37dd7463973757a8b276fc2ee38e712376ff22b4a3f92666a26",
+      "fidelity": "high",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "completed",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 37.54203779999807,
+        "random": 8.279472900001565,
+        "uncertainty": 11.61199630000192
+      },
+      "statuses_agree": false
+    },
+    {
+      "ordinal": 13,
+      "candidate_id": "94d2bf9d2243a4a3b9fd109cfa7c5c9e3df4c0ce06d463733121801724627881",
+      "fidelity": "high",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 15.75433239999984,
+        "random": 8.48713129999669,
+        "uncertainty": 10.192906700001913
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 14,
+      "candidate_id": "73f3258a9d05e47995e4f039ef61253479bf8349eb5fa26df3a3175603862cb3",
+      "fidelity": "high",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 15.238811099996383,
+        "random": 7.571400300003006,
+        "uncertainty": 9.459343599999556
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 15,
+      "candidate_id": "9d8f6d39660fad208c3ee65c9e0b8cbb50f79368e9d56aa2b31a7eb7634f04fb",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 12.664638599999307,
+        "random": 12.674350499997672,
+        "uncertainty": 8.624496800002817
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 16,
+      "candidate_id": "bb54d788ad2e56e70eff24505265def8a38960c2ee9d7c900347b22541d9876e",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 16.850264499997138,
+        "random": 7.494170500001928,
+        "uncertainty": 10.076348399998096
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 17,
+      "candidate_id": "08eeb61dc702eb73819799414ffa1f7a4f53767a9dbcf98759be00f29854b018",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 15.142534700004035,
+        "random": 7.567806200000632,
+        "uncertainty": 10.114589600001636
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 18,
+      "candidate_id": "c81275caeec49dec2888108096ca0eeb760f995944a719742f99159fd3272eaf",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 12.885457600001246,
+        "random": 7.7096504000001005,
+        "uncertainty": 11.776086900004884
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 19,
+      "candidate_id": "667ffce7157eeb2fdbeab11ca3a8a156dbc11d85ed8a7dc00158e3bde9046f90",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "completed",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 13.802576200003386,
+        "random": 25.15248050000082,
+        "uncertainty": 11.160281000004034
+      },
+      "statuses_agree": false
+    },
+    {
+      "ordinal": 20,
+      "candidate_id": "4b875724bf31e3095eaf853fa9c950be5e2f0dfee0f3332d448f6150e9637637",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "completed",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 16.23378270000103,
+        "random": 26.313079300001846,
+        "uncertainty": 10.809301300003426
+      },
+      "statuses_agree": false
+    },
+    {
+      "ordinal": 21,
+      "candidate_id": "6ba82e621b10476f85195408d3a74e91e66f583def40b69d35c8f8d50fdf7346",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 13.054616900000838,
+        "random": 18.06967099999747,
+        "uncertainty": 12.087976900002104
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 22,
+      "candidate_id": "40dfc8877c303ef90fb7306bac3ecf42141f892aa48217a0c7443ce84ffc4544",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 11.964082400001644,
+        "random": 13.355007199999818,
+        "uncertainty": 8.291287599997304
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 23,
+      "candidate_id": "54b51bad7283ee1b944fc66c83a95957d6c9be423b7cfa445f1777d1da8f9b57",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 13.555619700004172,
+        "random": 11.76463209999929,
+        "uncertainty": 9.179013499997382
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 24,
+      "candidate_id": "79538c849866b73e282cb3e7ce53f2decbbdf50667cce6f07b19f6cc29ef0029",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 12.162638300003891,
+        "random": 9.714372599999479,
+        "uncertainty": 11.953264900002978
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 25,
+      "candidate_id": "e981126499fef369f01660b184a1cb12cb10bc096b54562ddece4841f3c2888a",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 13.336199799996393,
+        "random": 15.561100099999749,
+        "uncertainty": 10.337272199998552
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 26,
+      "candidate_id": "fb6766b57cfc0bc08d59b1046389d65f121bc42a99a4ec430c60723ced493e5d",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 11.804985800001305,
+        "random": 20.93579750000208,
+        "uncertainty": 9.555614299999434
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 27,
+      "candidate_id": "3f926293e8862f0f148a17f07cc95225a0811eeabd3bc9738e21cb2a5293cfc1",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 8.58318720000534,
+        "random": 11.64827470000455,
+        "uncertainty": 9.70331140000053
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 28,
+      "candidate_id": "c4ea690da9f98a994ecf85030b672f20f34716f3484d60942e09b7414c8b67e1",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 9.573862899997039,
+        "random": 8.64685499999905,
+        "uncertainty": 10.084752700000536
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 29,
+      "candidate_id": "2c632c38c17808a5fcd6e86d9cb110081778335721e9661ef00b6740eeff05ab",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 14.89149229999748,
+        "random": 13.600141100003384,
+        "uncertainty": 11.316740900001605
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 30,
+      "candidate_id": "c499cfc4dc41179e49c286e725c575ae3a7f2543e6038e7b37824ace604f8e3a",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 11.080515499998,
+        "random": 14.181982800000696,
+        "uncertainty": 9.503874599999108
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 31,
+      "candidate_id": "f85826aed7011e2d0a901df9adb9a8740d13eeb9a8dc747dc9d17ba5c4be418b",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 8.54725110000436,
+        "random": 17.749429899995448,
+        "uncertainty": 7.208781099994667
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 32,
+      "candidate_id": "7b8f41c7430eed554d6c7b31656e164f72370f0c8d65fb248e4561eef8aebf5f",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 7.749149300005229,
+        "random": 15.455031400000735,
+        "uncertainty": 8.157571800002188
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 33,
+      "candidate_id": "4a9b014b22d3d1e597fd3a0bda289dff2f0f1550bfd84a5e9aba4178f5552fa1",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 8.483005399997637,
+        "random": 9.678184299998975,
+        "uncertainty": 8.103050400000939
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 34,
+      "candidate_id": "1660afc0b5ad4a09ea9fffa93c8a57a9f8f6e59803efbea2054b3c8f71dba3c4",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 8.779724499996519,
+        "random": 15.609792600000219,
+        "uncertainty": 7.999031699997431
+      },
+      "statuses_agree": true
+    },
+    {
+      "ordinal": 35,
+      "candidate_id": "cfc1fdd6e7af9d19bfa3ea9a3c5029b219983d8d870245399b0a49b583e6acfa",
+      "fidelity": "low",
+      "timeout_s": 120.0,
+      "identical_declared_input": false,
+      "status_per_arm": {
+        "learned": "unknown",
+        "random": "unknown",
+        "uncertainty": "unknown"
+      },
+      "measured_cost_s_per_arm": {
+        "learned": 12.553359700003057,
+        "random": 10.690538499999093,
+        "uncertainty": 8.906274999993911
+      },
+      "statuses_agree": true
+    }
+  ],
+  "scientific_N_added": 0,
+  "risk_certificate": false,
+  "invented_labels": 0
+}

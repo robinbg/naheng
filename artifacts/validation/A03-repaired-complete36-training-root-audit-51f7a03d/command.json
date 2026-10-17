@@ -1,0 +1,19 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "tools/audit_a03_training_20261016.py",
+    "artifacts/a03-pilot-9ba04a8b"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:29:36.985535+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-repaired-complete36-training-root-audit-51f7a03d\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-repaired-complete36-training-root-audit-51f7a03d\\stderr.log",
+  "timeout_s": 120,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 32876,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 0.5610049000024446
+}

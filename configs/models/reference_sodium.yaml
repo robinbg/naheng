@@ -1,0 +1,22 @@
+schema_version: 1
+model_id: reference_sodium
+model_kind: reference_sodium
+chemistry_id: hard-carbon-NVPF-NaPF6-EC-PC
+source_id: pybamm-Chayambuka2022-COMSOL
+parameter_revision: pybamm-25.10.2-Chayambuka2022
+backend: {name: pybamm, version: 25.10.2, model: sodium_ion.BasicDFN, parameter_set: Chayambuka2022}
+materials: {negative: hard_carbon, positive: NVPF, electrolyte: NaPF6_EC_PC}
+temperature: {value: 298.15, unit: K, scope: prescribed_isothermal, assumption_status: source_parameter_fixture}
+voltage_cutoffs:
+  lower: {value: 2.0, unit: V, source_id: pybamm-Chayambuka2022-COMSOL, scope: this_parameter_set_only}
+  upper: {value: 4.2, unit: V, source_id: pybamm-Chayambuka2022-COMSOL, scope: this_parameter_set_only}
+nominal_capacity: {value: 0.003, unit: Ah, source_id: pybamm-Chayambuka2022-COMSOL, scope: source_geometry_only}
+probe: {duration_s: 10, C_rate: 0.1, provenance_type: reference_simulation}
+solver: {name: IDAKLUSolver, atol: 0.00000001, rtol: 0.000001}
+unsupported: [thermal_dynamics, thermal_management, side_reactions, aging, full_lifecycle, inventory_certificate]
+unvalidated: [two_site_to_DFN_mapping, real_cell_fit, RUL, fire_probability, revenue_improvement]
+sources:
+  manual: https://docs.pybamm.org/en/v25.10.2/source/examples/notebooks/models/sodium-ion.html
+  parameters: https://github.com/pybamm-team/PyBaMM/blob/v25.10.2/src/pybamm/input/parameters/sodium_ion/Chayambuka2022.py
+  model: https://github.com/pybamm-team/PyBaMM/blob/v25.10.2/src/pybamm/models/full_battery_models/sodium_ion/basic_dfn.py
+  paper: https://doi.org/10.1016/j.electacta.2021.139764

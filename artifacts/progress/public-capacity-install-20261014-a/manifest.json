@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "before_code_hash": "dab86512b6e9df246d590c37f9daf31d58c17347a630cab38ef7e4f004840486",
+  "code_hash": "5dcc735604c00349578ed4ea5baa6a59693bef8f5d37b5aa6095432feae8340d",
+  "files": {
+    "src/naheng/data/protocol_capacity_measurement.py": "0f5f3e7f60497604c485a1fc430e5386170374b79cdee2933379ed900651e381",
+    "experiments/public_capacity.py": "09290f4871f2cc7bec0e4cc0963c85d328d98a3a31f271a688e606fadc96f5c2",
+    "src/naheng/runtime/public_capacity_session.py": "edf1430a7a8fda803a033278ab68f124a181dc3ac9c2766b65fd880d16cb3f41"
+  },
+  "original_suite_and_voltage_bytes_preserved": true,
+  "D02_complete": false,
+  "CLI_tested": false
+}

@@ -1,0 +1,20 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "artifacts/handoff/a03-constrained-search-20261016-b/compare_queries.py",
+    "--strategy",
+    "uncertainty"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T04:24:00.309623+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-actual-uncertainty-equal-budget-training-comparison-143bccc1\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-actual-uncertainty-equal-budget-training-comparison-143bccc1\\stderr.log",
+  "timeout_s": 1800,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 28576,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 678.9114855999942
+}

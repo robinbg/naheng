@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T09:14:54.964498+00:00",
+  "task_id": "F03",
+  "code_hash": "28a5084647bd29779f4f0bfabeb4746d96bb4858a1f2179599e96471f641d3aa",
+  "counts": {
+    "done": 27,
+    "in_progress": 3,
+    "todo": 15
+  },
+  "original_gates_and_other_statuses_unchanged": true,
+  "full_project_or_science_completed": false,
+  "evidence": {
+    "artifacts/review/public-f03-thermo-20261014-a/f03-handoff.json": "003510287d22eab0f309ad695732c10cb00852f3060a9eecc5ce963992b7c4e4",
+    "artifacts/formal/f03-required-public-20261014-a/manifest.json": "3bc1ac6d54d19d9505376d469ea7f0d8a1b80b10338de2289ffaa5b956ee4805",
+    "artifacts/formal/install-aging-289274f1/manifest.json": "797f18f93b1047af436a4dbf220730449bf3dad53aebfdf6ee25492123bec237"
+  }
+}

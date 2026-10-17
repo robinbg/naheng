@@ -1,0 +1,473 @@
+{
+  "D02_complete": false,
+  "IID": "UNKNOWN",
+  "archive_md5_status": "UNKNOWN",
+  "catalog_ref": {
+    "path": "artifacts/review/data-integration-D01-next-slice-20261013-a/catalog-proposal.json",
+    "sha256": "974c6879675465e97085635fdb77f2acedb0dbe714632a4433af4f4a5c86628a"
+  },
+  "cohort_id": "zenodo13836819_eight_complete_member_provenance_candidate",
+  "components": [
+    {
+      "author_groups": [
+        "zenodo13836819_3p2Ah_bat5"
+      ],
+      "component_id": "zenodo13836819_component_09e138487541d93a",
+      "member_ids": [
+        "zenodo13836819_sodium_soc_original_members:2_Driving cycle test data/Driving_cycle_data_temp-5_bat5.CSV"
+      ],
+      "source_ids": [
+        "zenodo13836819_sodium_soc_original_members"
+      ]
+    },
+    {
+      "author_groups": [
+        "zenodo13836819_3p2Ah_bat1"
+      ],
+      "component_id": "zenodo13836819_component_3c80d115760c35fe",
+      "member_ids": [
+        "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp25_bat1.CSV"
+      ],
+      "source_ids": [
+        "zenodo13836819_sodium_soc_original_members"
+      ]
+    },
+    {
+      "author_groups": [
+        "zenodo13836819_10Ah_bat3",
+        "zenodo13836819_10Ah_bat4"
+      ],
+      "component_id": "zenodo13836819_component_61d8ea91e46f7efe",
+      "member_ids": [
+        "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp-5_bat3.CSV",
+        "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp-5_bat4.CSV",
+        "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp15_bat3.CSV",
+        "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp15_bat4.CSV",
+        "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp25_bat3.CSV",
+        "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp25_bat4.CSV"
+      ],
+      "source_ids": [
+        "zenodo13836819_sodium_soc_original_members"
+      ]
+    }
+  ],
+  "confirmed_independent_physical_cells": null,
+  "evidence_refs": [
+    {
+      "kind": "old7_author_public_entry_handoff",
+      "path": "artifacts/review/data-integration-zenodo-public-handoff-20261013-g/handoff.json",
+      "sha256": "9ce56f1fd42bb7b8408fdf43c2d98f91d7ee3693c221c1206a7d6cd05ded481b"
+    },
+    {
+      "kind": "old7_independent_member_acceptance",
+      "path": "artifacts/review/data-integration-zenodo-independent-20261013-b/report.json",
+      "sha256": "6ceab8185737cc5b14a3bdaece96cd1687ee96ac9fb7d0b0e48c42f7aa8dbe43"
+    },
+    {
+      "kind": "old7_actual_public_CLI",
+      "path": "artifacts\\review\\data-integration-zenodo-public-12-command-20261013-h\\command.json",
+      "sha256": "5d792f3bb63eaf039a647a139a7f38592f06ca728f9a130b31c30b22db004dfd"
+    },
+    {
+      "kind": "old7_actual_public_CLI",
+      "path": "artifacts\\review\\data-integration-zenodo-public-3-command-20261013-h\\command.json",
+      "sha256": "3414b82ff0c3f8c1df535f32e99a6dfc0cdae7ef2a1a52e057fc3ec34f5f3705"
+    },
+    {
+      "kind": "old7_actual_public_CLI",
+      "path": "artifacts\\review\\data-integration-zenodo-public-4-command-20261013-h\\command.json",
+      "sha256": "a2f4e09f07c277166175b85b4db342830668db7bfe7eb754a10a2e4ad24f7f63"
+    },
+    {
+      "kind": "old7_actual_public_CLI",
+      "path": "artifacts\\review\\data-integration-zenodo-public-5-command-20261013-h\\command.json",
+      "sha256": "4b79e479cb745d8bdb5e812c2893d550bf85e90f58f40cf76e093570bfbe966b"
+    },
+    {
+      "kind": "old7_actual_public_CLI",
+      "path": "artifacts\\review\\data-integration-zenodo-public-6-command-20261013-h\\command.json",
+      "sha256": "1dabbca14543899f47f54a4bb24cb94d89886ba3c5919b6fc24cd16b3749df06"
+    },
+    {
+      "kind": "old7_actual_public_CLI",
+      "path": "artifacts\\review\\data-integration-zenodo-public-7-command-20261013-i\\command.json",
+      "sha256": "b32b3dc9162c90094a706829c6dfacbb21b2810517e401bc0efa3a3d918f9a17"
+    },
+    {
+      "kind": "supplement_public_entry_acceptance",
+      "path": "artifacts/data/public_independent/unitview-audit-zenodo13836819-bat1-public-20261013-a/manifest.json",
+      "sha256": "fd937683393777a3d44b63949de0540608d553eb84a8325f769fe6ff3b8cba63"
+    },
+    {
+      "kind": "supplement_public_entry_command",
+      "path": "artifacts/validation/D01-public-additional-member-full-row-entry-635b5f34/command.json",
+      "sha256": "8ca3f375b71b0def5ee93bfd9e4e5125715eff4e041fdae53acb9e9da7a9b790"
+    },
+    {
+      "kind": "supplement_independent_unitview_review",
+      "path": "artifacts/review/zenodo-additional-unitview-independent-20261013/report.json",
+      "sha256": "3e17237ff1841dc107bf8a3fd2b4c5b4a766b4025db1465d2ba6125e18f0e41d"
+    },
+    {
+      "kind": "supplement_independent_public_identity_review",
+      "path": "artifacts/review/additional-public-byteidentity-20261013-7ebf36d0/report-recovered.json",
+      "sha256": "aef2017ef7a3a8598c61c7e2f1fc2b33c0ec3435fdc4d430d8fbc8683100f7cc"
+    },
+    {
+      "kind": "supplement_independent_public_review_command",
+      "path": "artifacts/validation/D01-independent-public-additional-byteidentity-recovered-c1874697/command.json",
+      "sha256": "6b81b3225153c9707f7931fceb374c28e0b685361a1f848e918e6a8462bd1605"
+    }
+  ],
+  "kind": "frozen_complete_member_provenance_partition",
+  "leakage_component_count": 3,
+  "members": [
+    {
+      "audit": {
+        "contexts": {
+          "7af5df8a335aad85:zenodo13836819_10Ah_bat3:time_epoch_0": 127274
+        },
+        "quality_flag_counts": {
+          "byte_identical_member_content": 127274,
+          "negative_original_voltage": 60,
+          "outside_authored_protocol_voltage_cutoffs": 5442
+        },
+        "rows": 127274,
+        "unknown_rows": 0
+      },
+      "author_group": "zenodo13836819_10Ah_bat3",
+      "leakage_component_id": "zenodo13836819_component_61d8ea91e46f7efe",
+      "member_id": "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp-5_bat3.CSV",
+      "nominal_capacity_Ah": 10.0,
+      "observations": {
+        "path": "artifacts/review/zenodo-csv-public-12-20261013-h/member-1-Pulse_data_temp-5_bat3/observations.jsonl.gz",
+        "sha256": "6ec992d83087391934cae113d69dbb15b8acf09b11102dd313330162a6bd2ecb"
+      },
+      "original_row_range": [
+        1,
+        127274
+      ],
+      "protocol": "Pulse",
+      "raw": {
+        "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp-5_bat3.CSV",
+        "sha256": "7af5df8a335aad85d38303b5ccd148229dba26900a9fef4efad2891128485ddf"
+      },
+      "role": "train",
+      "row_count": 127274,
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "view_manifest": {
+        "path": "artifacts/review/zenodo-csv-public-12-20261013-h/member-1-Pulse_data_temp-5_bat3/manifest.json",
+        "sha256": "99c5a1dde1b2bbe17e59408449c58b7cac50010047eef92012bcccff90799ecc"
+      }
+    },
+    {
+      "audit": {
+        "contexts": {
+          "7af5df8a335aad85:zenodo13836819_10Ah_bat4:time_epoch_0": 127274
+        },
+        "quality_flag_counts": {
+          "byte_identical_member_content": 127274,
+          "negative_original_voltage": 60,
+          "outside_authored_protocol_voltage_cutoffs": 5442
+        },
+        "rows": 127274,
+        "unknown_rows": 0
+      },
+      "author_group": "zenodo13836819_10Ah_bat4",
+      "leakage_component_id": "zenodo13836819_component_61d8ea91e46f7efe",
+      "member_id": "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp-5_bat4.CSV",
+      "nominal_capacity_Ah": 10.0,
+      "observations": {
+        "path": "artifacts/review/zenodo-csv-public-12-20261013-h/member-2-Pulse_data_temp-5_bat4/observations.jsonl.gz",
+        "sha256": "2f7e171e87053e169c9ae7d73858500d0e91e9f093c31811b95f501c2afd587c"
+      },
+      "original_row_range": [
+        1,
+        127274
+      ],
+      "protocol": "Pulse",
+      "raw": {
+        "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp-5_bat4.CSV",
+        "sha256": "7af5df8a335aad85d38303b5ccd148229dba26900a9fef4efad2891128485ddf"
+      },
+      "role": "train",
+      "row_count": 127274,
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "view_manifest": {
+        "path": "artifacts/review/zenodo-csv-public-12-20261013-h/member-2-Pulse_data_temp-5_bat4/manifest.json",
+        "sha256": "4bee64fa5504ac2e51fa243010cff4d8e5d0d4058c8e34ffaefbe74d25098f90"
+      }
+    },
+    {
+      "audit": {
+        "contexts": {
+          "c5b9917ce613c48b:zenodo13836819_10Ah_bat3:time_epoch_0": 129176
+        },
+        "quality_flag_counts": {
+          "negative_original_voltage": 21,
+          "outside_authored_protocol_voltage_cutoffs": 2463
+        },
+        "rows": 129176,
+        "unknown_rows": 0
+      },
+      "author_group": "zenodo13836819_10Ah_bat3",
+      "leakage_component_id": "zenodo13836819_component_61d8ea91e46f7efe",
+      "member_id": "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp15_bat3.CSV",
+      "nominal_capacity_Ah": 10.0,
+      "observations": {
+        "path": "artifacts/review/zenodo-csv-public-3-20261013-h/member-3-Pulse_data_temp15_bat3/observations.jsonl.gz",
+        "sha256": "eb14ece0417ec2b45b5a0c12d1898b393df99ff2784fe8a6d2af3f19b1ab1d30"
+      },
+      "original_row_range": [
+        1,
+        129176
+      ],
+      "protocol": "Pulse",
+      "raw": {
+        "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp15_bat3.CSV",
+        "sha256": "c5b9917ce613c48b61f94ece06e5d40dc1bc39bade348786a3268c38eca8d7f7"
+      },
+      "role": "train",
+      "row_count": 129176,
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "view_manifest": {
+        "path": "artifacts/review/zenodo-csv-public-3-20261013-h/member-3-Pulse_data_temp15_bat3/manifest.json",
+        "sha256": "1197276c1df1bc644eea6af493092a1fbeeba3379ef36fc3e15b111b2946bddf"
+      }
+    },
+    {
+      "audit": {
+        "contexts": {
+          "a8db95542259c6c9:zenodo13836819_10Ah_bat4:time_epoch_0": 129179
+        },
+        "quality_flag_counts": {
+          "negative_original_voltage": 27,
+          "outside_authored_protocol_voltage_cutoffs": 2413
+        },
+        "rows": 129179,
+        "unknown_rows": 0
+      },
+      "author_group": "zenodo13836819_10Ah_bat4",
+      "leakage_component_id": "zenodo13836819_component_61d8ea91e46f7efe",
+      "member_id": "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp15_bat4.CSV",
+      "nominal_capacity_Ah": 10.0,
+      "observations": {
+        "path": "artifacts/review/zenodo-csv-public-4-20261013-h/member-4-Pulse_data_temp15_bat4/observations.jsonl.gz",
+        "sha256": "86df8d395548d44e742cc571de19ab4231b3375c6157efa8012faa3d10aefd91"
+      },
+      "original_row_range": [
+        1,
+        129179
+      ],
+      "protocol": "Pulse",
+      "raw": {
+        "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp15_bat4.CSV",
+        "sha256": "a8db95542259c6c9ebe4b3c7a14714c911abe4bcef2a06bdb61bbad58988c5c6"
+      },
+      "role": "train",
+      "row_count": 129179,
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "view_manifest": {
+        "path": "artifacts/review/zenodo-csv-public-4-20261013-h/member-4-Pulse_data_temp15_bat4/manifest.json",
+        "sha256": "9dbc5c0b18cfea3e1a8f7613405aa497c1bed9dc4c437ff4915945b21aa57140"
+      }
+    },
+    {
+      "audit": {
+        "contexts": {
+          "fe0f6fc9dd9318d6:zenodo13836819_10Ah_bat3:time_epoch_0": 131884
+        },
+        "quality_flag_counts": {
+          "negative_original_voltage": 5,
+          "outside_authored_protocol_voltage_cutoffs": 2068
+        },
+        "rows": 131884,
+        "unknown_rows": 0
+      },
+      "author_group": "zenodo13836819_10Ah_bat3",
+      "leakage_component_id": "zenodo13836819_component_61d8ea91e46f7efe",
+      "member_id": "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp25_bat3.CSV",
+      "nominal_capacity_Ah": 10.0,
+      "observations": {
+        "path": "artifacts/review/zenodo-csv-public-5-20261013-h/member-5-Pulse_data_temp25_bat3/observations.jsonl.gz",
+        "sha256": "06d0580a35b1642f78e087ddbc604a4725262be616200b05c4ee3022947241c5"
+      },
+      "original_row_range": [
+        1,
+        131884
+      ],
+      "protocol": "Pulse",
+      "raw": {
+        "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp25_bat3.CSV",
+        "sha256": "fe0f6fc9dd9318d612b059f053808218c43468aa83a67fd5a0ccd46205cf7b38"
+      },
+      "role": "train",
+      "row_count": 131884,
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "view_manifest": {
+        "path": "artifacts/review/zenodo-csv-public-5-20261013-h/member-5-Pulse_data_temp25_bat3/manifest.json",
+        "sha256": "1b802b78c44f9384f284c88cece7ce6ddcafed82a53df47199b744fd6c4a47da"
+      }
+    },
+    {
+      "audit": {
+        "contexts": {
+          "02f998bb21cfe4c8:zenodo13836819_10Ah_bat4:time_epoch_0": 131224
+        },
+        "quality_flag_counts": {
+          "negative_original_voltage": 4,
+          "outside_authored_protocol_voltage_cutoffs": 2008
+        },
+        "rows": 131224,
+        "unknown_rows": 0
+      },
+      "author_group": "zenodo13836819_10Ah_bat4",
+      "leakage_component_id": "zenodo13836819_component_61d8ea91e46f7efe",
+      "member_id": "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp25_bat4.CSV",
+      "nominal_capacity_Ah": 10.0,
+      "observations": {
+        "path": "artifacts/review/zenodo-csv-public-6-20261013-h/member-6-Pulse_data_temp25_bat4/observations.jsonl.gz",
+        "sha256": "083a6ed974c081a5afaa3f29daac34dafb5449304082e617d563007e3f5efce9"
+      },
+      "original_row_range": [
+        1,
+        131224
+      ],
+      "protocol": "Pulse",
+      "raw": {
+        "path": "data/raw/public_independent/zenodo13836819-complete-members-de471d9e/Pulse_data_temp25_bat4.CSV",
+        "sha256": "02f998bb21cfe4c8c8e40131d443fc619d0bee1fec3e5742563cae7cc74c9493"
+      },
+      "role": "train",
+      "row_count": 131224,
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "view_manifest": {
+        "path": "artifacts/review/zenodo-csv-public-6-20261013-h/member-6-Pulse_data_temp25_bat4/manifest.json",
+        "sha256": "9712d7d5febcbcf2d39a38d3327e6b8c4a7ed7414d20819db24c3d54e116f348"
+      }
+    },
+    {
+      "audit": {
+        "contexts": {
+          "b9b24be8d04efb2a:zenodo13836819_3p2Ah_bat5:time_epoch_0": 332603
+        },
+        "quality_flag_counts": {
+          "outside_authored_protocol_voltage_cutoffs": 2799
+        },
+        "rows": 332603,
+        "unknown_rows": 0
+      },
+      "author_group": "zenodo13836819_3p2Ah_bat5",
+      "leakage_component_id": "zenodo13836819_component_09e138487541d93a",
+      "member_id": "zenodo13836819_sodium_soc_original_members:2_Driving cycle test data/Driving_cycle_data_temp-5_bat5.CSV",
+      "nominal_capacity_Ah": 3.2,
+      "observations": {
+        "path": "artifacts/review/zenodo-csv-public-7-20261013-i/member-7-Driving_cycle_data_temp-5_bat5/observations.jsonl.gz",
+        "sha256": "b9355fe207f671fc2311895198de1778fe6312bd3a6c9e27002b94c77ed51280"
+      },
+      "original_row_range": [
+        1,
+        332603
+      ],
+      "protocol": "Driving_cycle",
+      "raw": {
+        "path": "data/raw/public_independent/zenodo13836819-complete-members-8d838012/Driving_cycle_data_temp-5_bat5.CSV",
+        "sha256": "b9b24be8d04efb2a506c85fdcf9854546966d02a24db5559e76fb54db6c0f610"
+      },
+      "role": "validation",
+      "row_count": 332603,
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "view_manifest": {
+        "path": "artifacts/review/zenodo-csv-public-7-20261013-i/member-7-Driving_cycle_data_temp-5_bat5/manifest.json",
+        "sha256": "228ec65d4fda40d7de9f3de46bc4b3d7d83bc77c56970bc42bb34bed6c511abe"
+      }
+    },
+    {
+      "audit": {
+        "contexts": {
+          "97968feaed448ed3:zenodo13836819_3p2Ah_bat1:time_epoch_0": 131664
+        },
+        "quality_flag_counts": {
+          "negative_original_voltage": 37,
+          "outside_authored_protocol_voltage_cutoffs": 2310
+        },
+        "rows": 131664,
+        "unknown_rows": 0
+      },
+      "author_group": "zenodo13836819_3p2Ah_bat1",
+      "leakage_component_id": "zenodo13836819_component_3c80d115760c35fe",
+      "member_id": "zenodo13836819_sodium_soc_original_members:1_Enhanced pulse test data/Pulse_data_temp25_bat1.CSV",
+      "nominal_capacity_Ah": 3.2,
+      "observations": {
+        "path": "data/processed/zenodo13836819-bat1-public-20261013-a/observations.jsonl.gz",
+        "sha256": "ec614d1794604ed50ae9857c8ffb78bb793c5acd851121f97d35bb9310e4eb25"
+      },
+      "original_row_range": [
+        1,
+        131664
+      ],
+      "protocol": "Pulse",
+      "raw": {
+        "path": "data/raw/public_independent/zenodo13836819-additional-20261013-a/Pulse_data_temp25_bat1.CSV",
+        "sha256": "97968feaed448ed39e84f1fd541612cb73fadd811eafab09613c833dd2a93d5e"
+      },
+      "role": "test",
+      "row_count": 131664,
+      "source_id": "zenodo13836819_sodium_soc_original_members",
+      "view_manifest": {
+        "path": "data/processed/zenodo13836819-bat1-public-20261013-a/manifest.json",
+        "sha256": "d111e409b977bf7c301cd8881c09ceffb9242c9886e0f004cd0b8e597a2e6bf0"
+      }
+    }
+  ],
+  "model_fits": 0,
+  "partition_algorithm_sha256": "e4e15f5a7b39febc4c7cf93757d4db45944dc5d69a4d53471f846443e5fb71b4",
+  "physical_independence_status": "UNKNOWN",
+  "policy_ref": {
+    "path": "artifacts/review/data-integration-D01-next-slice-20261013-a/policy-proposal.json",
+    "sha256": "de3c1fcc4633097f4013378e5ed6f8566201b4581993f1b00f625d87d5f1a566"
+  },
+  "production_batch_identity": "UNKNOWN",
+  "protected_refs": [
+    {
+      "path": "data/manifests/sources.yaml",
+      "sha256": "b41c746c7514aabb28e443cf78a63c7137fc5a5025856fc7b949aab62a37740f"
+    },
+    {
+      "path": "data/manifests/additional-unit-view-bat1-20261013-a.json",
+      "sha256": "904d14e82e2e71f80a661ac82616e7f2db164a71243613709eb69979f624ac21"
+    },
+    {
+      "path": "data/manifests/pending-zenodo13836819-bat1-20261013-a.json",
+      "sha256": "152bd5748eef8838e5198ba3446bf050d813a13f37b7b104ab2dfaecfbc11b44"
+    },
+    {
+      "path": "artifacts/data/public_independent/zenodo13836819-670b8554/metadata.json.attempt1",
+      "sha256": "d735c17824b8f547d5cf608aeed678d937ec1dfec7a91c38e132d6778e3e8706"
+    },
+    {
+      "path": "artifacts/data/public_new/holdout_only_snapshot_v2.json",
+      "sha256": "93f7f123d64e7714d6997bd154caba1307c144d8b6498e4335f44aa3d918ae03"
+    },
+    {
+      "path": "artifacts/data/public_new/ordered-holdout-v3-fa6715bc.json",
+      "sha256": "a764a9b6711940e846fd6e29ce5d67328775fc9d95899cfe45f06550608a7716"
+    }
+  ],
+  "public_source_hashes": {
+    "src/naheng/data/zenodo_csv.py": "798037591e4a511b3e6ef401d2e816bd5aad5606e00b83886c0444138be8b73b",
+    "tests/unit/test_zenodo_csv.py": "63ea020b1fbd7ddfb8f70d6481cfdeb928dc21a32a5290a73ee0fb0fad961d42",
+    "tools/validate_additional_zenodo_csv.py": "13a34c2b76285fbe3bca06b7cb1f45398af2a524e8cec615f853d51bf1f9c62c",
+    "tools/validate_zenodo_csv.py": "fbb65cc886fe1c7cd2f5c22bfba53e5bb3b9d7047778107eaf4a4e2e68ecce49"
+  },
+  "role_row_counts": {
+    "test": 131664,
+    "train": 776011,
+    "validation": 332603
+  },
+  "same_chemistry_parameter_validation": false,
+  "schema_version": 1,
+  "scope": "Complete licensed member import and predeclared cross-capacity/protocol metadata transfer partition",
+  "strict_protocol_heldout": false,
+  "total_rows": 1240278
+}

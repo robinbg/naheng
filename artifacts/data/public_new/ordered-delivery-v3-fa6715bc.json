@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-12T02:21:26.180715+00:00",
+  "status": "frozen_actual_full_v3_event_order_import_slice",
+  "source_id": "zenodo17459188_cvut_sib_0001",
+  "physical_group_id": "cvut_hakadi_sib_4s11p_pack_group",
+  "batch_id": "cvut_single_sib_pack_campaign",
+  "original_measurement_bytes": 17143,
+  "original_measurement_sha256": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+  "csv_bytes_unchanged_sha256": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+  "importers_source_sha256": "67d59301cf245f48b8f782a7338ebefdd81c861c74930756eb23c1ba1ab4f4a7",
+  "ordering_tests_source_sha256": "fb9ae5fbc707697d0872657d1759022ede6cfca39b0bad401925a41ace28ff01",
+  "spec_path": "artifacts/data/public_new/ordered-complete-v3-fa6715bc.spec.json",
+  "spec_sha256": "ae8455eca084c87a7f8790b315489a9f7fae71bece29bc72764bcbae29fe8953",
+  "registry_path": "data/manifests/retrieval-zenodo17459188-0001-ordered-v3-fa6715bc.yaml",
+  "registry_sha256": "5d0802df603b57a82fc494be06718aab5114b166efd0300f6648dcad104d5de4",
+  "ordering_evidence_path": "artifacts/data/public_new/ordered-event-order-v3-fa6715bc.json",
+  "ordering_evidence_sha256": "de021924e2a205f8b3ffcf28365fd496d7a0107ef798949b1f932486c2c6c515",
+  "actual_import_path": "artifacts/data/public_new/ordered-import-v3-fa6715bc",
+  "actual_original_xml_and_persistence_audit": "artifacts/data/public_new/ordered-provenance-audit-v3-fa6715bc.json",
+  "records_original": 64,
+  "records_persisted": 64,
+  "records_dropped": 0,
+  "timestamps_shifted": 0,
+  "canonical_extra_fields": [
+    "event_index",
+    "source_row",
+    "instrument_step",
+    "raw_temperature_channels"
+  ],
+  "primary_temperature": "measured T1",
+  "raw_temperature_channels": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "T6"
+  ],
+  "co_timed_transitions": [
+    {
+      "timestamp_s": 30.0,
+      "source_rows": [
+        32,
+        33
+      ],
+      "instrument_steps": [
+        "1",
+        "2"
+      ],
+      "voltages_V": [
+        15.9002,
+        11.7819
+      ],
+      "currents_A": [
+        -0.0,
+        199.9752
+      ]
+    },
+    {
+      "timestamp_s": 30.1,
+      "source_rows": [
+        34,
+        35
+      ],
+      "instrument_steps": [
+        "2",
+        "5"
+      ],
+      "voltages_V": [
+        8.3891,
+        14.9107
+      ],
+      "currents_A": [
+        199.9752,
+        -0.0
+      ]
+    }
+  ],
+  "new_frozen_holdout": {
+    "path": "artifacts/data/public_new/ordered-holdout-v3-fa6715bc.json",
+    "sha256": "a764a9b6711940e846fd6e29ce5d67328775fc9d95899cfe45f06550608a7716",
+    "revision": "3b77279a0668bc42a7fdd08eea865e5d79bb84b5182c293d7825dcd8cc3c63a0",
+    "independent_group_count": 1,
+    "role_record_counts": {
+      "train": 0,
+      "validation": 0,
+      "test": 64
+    }
+  },
+  "preserved_original_inputs_sha256": {
+    "data/manifests/sources.yaml": "6d1da567113e4786b98974f3b52ee84473ab27867975fb6981e22dabb63213aa",
+    "artifacts/data/public_new/import_and_split_audit_v2.json": "18d6695b61090f522c8e288d8053a5084e517d0bd47b151f4a5c8b30c88c7625",
+    "artifacts/data/public_new/holdout_only_snapshot_v2.json": "93f7f123d64e7714d6997bd154caba1307c144d8b6498e4335f44aa3d918ae03",
+    "artifacts/data/public_new/independent_review.json": "71b00639e25c0f10e15dd4c9c3925aef91ed0a05b4baf373550dd0161c9c4fc3",
+    "data/raw/public_new/zenodo17459188/VZ1_044_021_CVUT_D_0001_v1.xlsx": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+    "data/raw/public_new/zenodo17459188/RMF-VZ1_044_021_CVUT_S.txt": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+    "data/raw/public_new/zenodo17459188/VZ1_044_021_CVUT_D_00011_v1.xlsx": "9f6f4d79ffab3cac7f72c78fa5ab4c0e9f45ae573fa0f82b814f25cafaf3b7b9",
+    "artifacts/data/public_new/xlsx_field_audit.json": "79650fe6adb4b3d2001b3257f9dee885852253264f36c55bbca5be36376ef2ed",
+    "artifacts/data/public_new/imported_instrument_step_v2/manifest.json": "b72f6e4eaf26f6cc2db46e8e3321410f25bae0e00dbeecd83a5c766c77a77c83",
+    "artifacts/data/public_new/imported_instrument_step_v2/observations.jsonl": "d2ef66109fced38f9e9f59d140ae75ded6b51b20771ebbb323a622f07abc5470",
+    "artifacts/data/public_new/root_registry_delivery.json": "f47932c62d63591dc716cb25780e452e0cf6d3fd1446438c35e34cb76ef10d5d",
+    "artifacts/data/public_new/cvut_sodium_0001_complete.csv": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+    "artifacts/data/public_new/cvut_sodium_0001_complete.spec.json": "d4ad8ccfbf613e986fc52d5b0cf254fa0c0259d9b19f9dc69a1e36d9612cb5bf",
+    "artifacts/data/public_new/cvut_sodium_0001_complete.v2.spec.json": "ab4a0b45ad469417a8c748874c31be0b1e6bd1db8ee0945064a1fe601a0b00d5",
+    "artifacts/data/public_new/first_complete_registry_snapshot.json": "5e3f5c9f31f7a89fde24b6688f67bebb3080321f206b3b85305b661c8b1b793a",
+    "data/manifests/retrieval-zenodo17459188-0001-complete.yaml": "873b6d61b8f42da07455e44a5df89145fc7414f45b712f1b325321ba25bbcd4c",
+    "data/manifests/retrieval-zenodo17459188-0001-complete-v2.yaml": "8cb9a464f69a85be05004846899b8231c5163873f5a4e68d1280090debdaf9eb",
+    "artifacts/data/public_new/cvut_sodium_0001_instrument_step.csv": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+    "artifacts/data/public_new/cvut_sodium_0001_instrument_step.spec.json": "1aa9f4a767c67278bc8566f33256683fda376ac7264c69e5ee82cc15b8159fed",
+    "artifacts/data/public_new/cvut_sodium_0001_instrument_step.v2.spec.json": "095133dd158d1778b2303a15216096e15829721fefe0235c8765d07cb08336a5",
+    "artifacts/data/public_new/first_instrument_step_registry_snapshot.json": "d325d0a620c963ca3a40098c553c465017c0f359e3f8f5c1bfd73a31bc4e4fec",
+    "data/manifests/retrieval-zenodo17459188-0001-instrument_step.yaml": "cd0adeaf5cfb56d5f1936559e01aad0aae6e4f37047fe218826d2dac024ed7b2",
+    "data/manifests/retrieval-zenodo17459188-0001-instrument_step-v2.yaml": "cc46da78b589c028f57ac1b7a04ddc910552039014e63ac6f907ae9b8f3b01f0",
+    "artifacts/validation/D01-public-full-import-4e991e9c/command.json": "46e840d74f1b52150a6fc2c9d71b751ca08b63abf230cbb8fda585e74d557761",
+    "artifacts/validation/D01-public-full-import-4e991e9c/stdout.log": "a97a01081c2667ef28875a8697b0bee80fee8a6f4bc6fe022e86e8623507ebe8",
+    "artifacts/validation/D01-public-full-import-4e991e9c/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-public-full-import-v2-4648ab65/command.json": "e9e78d598dbb8350b1f7f5fe64451e020e8039eb3fa6091fc241271d25d93343",
+    "artifacts/validation/D01-public-full-import-v2-4648ab65/stdout.log": "a97a01081c2667ef28875a8697b0bee80fee8a6f4bc6fe022e86e8623507ebe8",
+    "artifacts/validation/D01-public-full-import-v2-4648ab65/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "frozen_files_sha256": {
+    "src/naheng/data/importers.py": "67d59301cf245f48b8f782a7338ebefdd81c861c74930756eb23c1ba1ab4f4a7",
+    "tests/unit/test_data_event_ordering.py": "fb9ae5fbc707697d0872657d1759022ede6cfca39b0bad401925a41ace28ff01",
+    "artifacts/data/public_new/ordered_audit_v3.py": "636902886d2f7006b11b5f6c5262663c0e7c14aefe5fbdff01000cb41714a688",
+    "artifacts/data/public_new/ordered_prepare_v3.py": "5c39093ff4e886688aafbaaefdb785e9e6ab7b17d7b64f7720dbd1decdb57776",
+    "artifacts/data/public_new/ordered-preparation-v3-fa6715bc.json": "bcced2bfaed4ddb819bc9eeec79b2f6d54779e49b4f3cb8e2f0adacec9e5751b",
+    "artifacts/data/public_new/ordered-complete-v3-fa6715bc.spec.json": "ae8455eca084c87a7f8790b315489a9f7fae71bece29bc72764bcbae29fe8953",
+    "data/manifests/retrieval-zenodo17459188-0001-ordered-v3-fa6715bc.yaml": "5d0802df603b57a82fc494be06718aab5114b166efd0300f6648dcad104d5de4",
+    "artifacts/data/public_new/ordered-event-order-v3-fa6715bc.json": "de021924e2a205f8b3ffcf28365fd496d7a0107ef798949b1f932486c2c6c515",
+    "artifacts/data/public_new/ordered-import-v3-fa6715bc/manifest.json": "2a0718a3361a81c857e59bcf38582b1f39383d34fb2a7f77f5d725dd1bffbc8d",
+    "artifacts/data/public_new/ordered-import-v3-fa6715bc/observations.jsonl": "3e0d6b0cfdb978a443d9d0676965769d8ad763351660fddd6c1c318b58107396",
+    "artifacts/data/public_new/ordered-holdout-v3-fa6715bc.json": "a764a9b6711940e846fd6e29ce5d67328775fc9d95899cfe45f06550608a7716",
+    "artifacts/data/public_new/ordered-provenance-audit-v3-fa6715bc.json": "fee28a511020f2c52f00285bd678bc42a7144993aa300f909c1c3a647a628d70",
+    "artifacts/data/public_new/ordered_freeze_v3.py": "caf8cdeb71a75b562b88a7bd771f3d28d8da9e4ee522ff0d1c9bb460ffc2d272",
+    "artifacts/validation/D01-ordered-original-data-tests-88bc5ace/command.json": "a29e0309b5544fdef515db0691ff7c397dd8aa5ad8dc3ee934768a23d6dcc616",
+    "artifacts/validation/D01-ordered-original-data-tests-88bc5ace/stdout.log": "11b643e9cb2b9825bd9c79c52581dd8cc8857aacb38296443194e58182bbc72d",
+    "artifacts/validation/D01-ordered-original-data-tests-88bc5ace/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-ordered-focused-tests-first-2daa62ca/command.json": "7f55b4e9deae0baa34912afd230aaec06d33dd8b55ffbf640d2ad149b02bdeca",
+    "artifacts/validation/D01-ordered-focused-tests-first-2daa62ca/stdout.log": "96dd85830a54fe16a2b290e375efa99433415c62f05a18ced6f01716dd73edbb",
+    "artifacts/validation/D01-ordered-focused-tests-first-2daa62ca/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-ordered-data-tests-recheck-cba00dfa/command.json": "0f69a2f22505584cfa32baa97960cfbad0567c6efbce727828f029e75021b98e",
+    "artifacts/validation/D01-ordered-data-tests-recheck-cba00dfa/stdout.log": "e7aae19ff394b7dfe78de15eb0242ffb6ea5c687ea6a2a4e24448558d7a7bf58",
+    "artifacts/validation/D01-ordered-data-tests-recheck-cba00dfa/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-ordered-v3-prepare-df715551/command.json": "82ef1c58ea8d514b1952ed09442fe4744809d6623ecc3d4e284b79e9bd4a8f06",
+    "artifacts/validation/D01-ordered-v3-prepare-df715551/stdout.log": "906bcd2c73178e1f0bf73a0a365dba10b3c042e10a670dfc6bda20b05f659e98",
+    "artifacts/validation/D01-ordered-v3-prepare-df715551/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-public-complete-ordered-v3-46063265/command.json": "c94e2f58ed40e9d1c238a610d3da8fd44a837659564111bdff5ee6a789a180cc",
+    "artifacts/validation/D01-public-complete-ordered-v3-46063265/stdout.log": "7b7023f3e8f1d4d0d2fa8a264b37d115b18ffc0b38c08c4eb47518d664c6512d",
+    "artifacts/validation/D01-public-complete-ordered-v3-46063265/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-ordered-full-v3-provenance-audit-7fb4a98d/command.json": "b77bcef6609e5a70f987820c19f8b5896dc584ef015652ba9c0f776f0ec0287e",
+    "artifacts/validation/D01-ordered-full-v3-provenance-audit-7fb4a98d/stdout.log": "7ef343a7f70c893f7c34fd0f4fff6feef281848e0317b53da20f0118dc92b245",
+    "artifacts/validation/D01-ordered-full-v3-provenance-audit-7fb4a98d/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-ordered-legacy-v2-recheck-5b24dcbf/command.json": "c605fe1e1448087418e5645b27a5de6c98a1164d7aaec87dc043e3af01f4be1c",
+    "artifacts/validation/D01-ordered-legacy-v2-recheck-5b24dcbf/stdout.log": "a97a01081c2667ef28875a8697b0bee80fee8a6f4bc6fe022e86e8623507ebe8",
+    "artifacts/validation/D01-ordered-legacy-v2-recheck-5b24dcbf/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "actual_commands": {
+    "original_25_tests": {
+      "command_record": "artifacts/validation/D01-ordered-original-data-tests-88bc5ace/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_data_import.py",
+        "tests/integration/test_split_leakage.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/data/public_new/ordered-original-test-cache",
+        "--basetemp",
+        "artifacts/data/public_new/ordered-original-test-temp"
+      ],
+      "exit_code": 0,
+      "wall_s": 5.754424299999755
+    },
+    "first_focused_tests_failure": {
+      "command_record": "artifacts/validation/D01-ordered-focused-tests-first-2daa62ca/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_data_event_ordering.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/data/public_new/ordered-focused-test-cache",
+        "--basetemp",
+        "artifacts/data/public_new/ordered-focused-test-temp"
+      ],
+      "exit_code": 1,
+      "wall_s": 8.087541399999736
+    },
+    "final_original_and_focused_tests": {
+      "command_record": "artifacts/validation/D01-ordered-data-tests-recheck-cba00dfa/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_data_import.py",
+        "tests/integration/test_split_leakage.py",
+        "tests/unit/test_data_event_ordering.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/data/public_new/ordered-recheck-test-cache",
+        "--basetemp",
+        "artifacts/data/public_new/ordered-recheck-test-temp"
+      ],
+      "exit_code": 0,
+      "wall_s": 8.026975100000527
+    },
+    "actual_original_xlsx_v3_preparation": {
+      "command_record": "artifacts/validation/D01-ordered-v3-prepare-df715551/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/data/public_new/ordered_prepare_v3.py"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.1362552000000505
+    },
+    "actual_full_v3_cli_import": {
+      "command_record": "artifacts/validation/D01-public-complete-ordered-v3-46063265/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.data.importers",
+        "--csv",
+        "artifacts/data/public_new/cvut_sodium_0001_complete.csv",
+        "--spec",
+        "artifacts/data/public_new/ordered-complete-v3-fa6715bc.spec.json",
+        "--out",
+        "artifacts/data/public_new/ordered-import-v3-fa6715bc"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.31391400000029535
+    },
+    "actual_original_xlsx_persistence_identity_audit": {
+      "command_record": "artifacts/validation/D01-ordered-full-v3-provenance-audit-7fb4a98d/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/data/public_new/ordered_audit_v3.py",
+        "--preparation",
+        "artifacts/data/public_new/ordered-preparation-v3-fa6715bc.json"
+      ],
+      "exit_code": 0,
+      "wall_s": 0.6511567000006835
+    },
+    "legacy_strict_v2_actual_cli_failure_preserved": {
+      "command_record": "artifacts/validation/D01-ordered-legacy-v2-recheck-5b24dcbf/command.json",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.data.importers",
+        "--csv",
+        "artifacts/data/public_new/cvut_sodium_0001_complete.csv",
+        "--spec",
+        "artifacts/data/public_new/cvut_sodium_0001_complete.v2.spec.json",
+        "--out",
+        "artifacts/data/public_new/ordered-v2-legacy-should-not-exist-fa6715bc"
+      ],
+      "exit_code": 1,
+      "wall_s": 0.2532369999998991
+    }
+  },
+  "tests": {
+    "original_25": 25,
+    "new_focused": 31,
+    "final_combined": 56,
+    "final_exit_code": 0,
+    "pytest_s": 5.83
+  },
+  "first_failure_and_fix": "First focused suite:25 passed/1 failed, exit1. A structurally registered synthetic spec could switch to strict time and bypass registry matching. The importer now validates any supplied registry binding in either policy; the rejection expectation was retained and final56 passed.",
+  "legacy_strict_time": "Default strict_increasing_time and legacy v2 still reject CSV line33; new actual v2 CLI exit1 is preserved.",
+  "contract": "Explicit instrument_event_order requires exact registry policy/evidence/columns, original bytes, fixed complete physical-group trajectory, positive increasing indices/rows, nondecreasing global clock, and exact documented co-timed step transitions. No within-step duplicate, step regression, dropped row or shifted time is admitted.",
+  "independent_review": "Existing source/view independent review remains byte-identical; an additional new implementation review is pending because agent spawn and followup were rejected by the thread limit. Root must review this frozen slice before final D01 acceptance.",
+  "scope": "Data import software compatibility; no model fit, parameter tuning, new downloads, Lean or network execution",
+  "D01_complete": false,
+  "D02_complete": false,
+  "external_model_validation": "not_performed",
+  "limitations": [
+    "One conservative physical 4s11p sodium pack group; no independent train/validation/test group coverage.",
+    "Pack terminal data and six thermocouples are not individual-cell truth.",
+    "No model fit, aging/RUL labels, calibrated operating-risk probability or real revenue evidence."
+  ],
+  "next_command": ".venv/Scripts/python.exe tools/run_evidence.py --label D01-ordered-delivery-check --timeout 60 -- .venv/Scripts/python.exe -m pytest tests/unit/test_data_import.py tests/integration/test_split_leakage.py tests/unit/test_data_event_ordering.py -q -o cache_dir=artifacts/data/public_new/ordered-delivery-check-cache --basetemp artifacts/data/public_new/ordered-delivery-check-temp"
+}

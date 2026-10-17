@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-14T09:14:55.761836+00:00",
+  "task_id": "F04",
+  "status": "in_progress",
+  "required_acceptance_and_contracts_unchanged": true,
+  "actual_start_receipt": "artifacts/validation/F03-original-required-public-aging30-build-axiom-audit-8c5d925e/command.json",
+  "actual_exit_code": 0,
+  "scientific_acceptance_complete": false
+}

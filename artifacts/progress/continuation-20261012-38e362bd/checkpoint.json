@@ -1,0 +1,213 @@
+{
+  "client_date": "2026-10-12",
+  "recorded_host_utc": "2026-10-12T00:32:10.244571+00:00",
+  "counts": {
+    "done": 15,
+    "in_progress": 6,
+    "blocked": 1,
+    "todo": 23
+  },
+  "required_tasks": 45,
+  "all_milestones_after_M0_complete": false,
+  "evidence": {
+    "artifacts/validation/F00-dependencies-network-restored-a6fb4618/command.json": {
+      "sha256": "dbb0da7e58b5fc828a008181ca83d2d81ee4c42ebf54832629dd8da680fbd139",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/setup_lean_dependencies.py",
+        "update_verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F00-dependencies-network-restored-a6fb4618\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F00-dependencies-network-restored-a6fb4618\\stderr.log"
+    },
+    "artifacts/validation/F00-recorded-plan-audit-d2ce5281/command.json": {
+      "sha256": "6948631b7b84dbdaf8f2c607942840999bdb45a57238eb5435b4d4005753d70d",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/audit_cache_plan.py"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F00-recorded-plan-audit-d2ce5281\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F00-recorded-plan-audit-d2ce5281\\stderr.log"
+    },
+    "artifacts/validation/F00-pruned-checker-regression-a8e7b80b/command.json": {
+      "sha256": "2c8af13801d2b92780154e5694eae6626f5d79fa7a1a15fc1dd97b95ff3a1640",
+      "argv": [
+        ".bootstrap/bin/uv.exe",
+        "run",
+        "--frozen",
+        "--offline",
+        "--no-sync",
+        "--extra",
+        "dev",
+        "pytest",
+        "tests/unit/test_formal_audit.py",
+        "tests/integration/test_evidence_import.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/pytest/checker-pruned-cache",
+        "--basetemp",
+        "artifacts/pytest/checker-pruned"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F00-pruned-checker-regression-a8e7b80b\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F00-pruned-checker-regression-a8e7b80b\\stderr.log"
+    },
+    "artifacts/validation/F00-owned-job-observed-child-b0ee3715/command.json": {
+      "sha256": "8482747f826e303be062bea3ba462ce925dfa86b8c1b09dc62293b09b265b0f6",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/probe_proof_timeout.py"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F00-owned-job-observed-child-b0ee3715\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F00-owned-job-observed-child-b0ee3715\\stderr.log"
+    },
+    "artifacts/validation/F01-mean-value-incremental-plan-121dc771/command.json": {
+      "sha256": "39f5228476adf370a17b17a6eba401da77b64d85e0a709fe3c0d3ec69afb3914",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/setup_lean_dependencies.py",
+        "extend_plan",
+        "artifacts/formal/setup/selective_plan-471f349a/unpack-plan.json",
+        "Mathlib.Analysis.Calculus.MeanValue"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\F01-mean-value-incremental-plan-121dc771\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\F01-mean-value-incremental-plan-121dc771\\stderr.log"
+    },
+    "formal/Naheng/Chemistry/Trajectory.lean": {
+      "sha256": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613"
+    },
+    "formal/Naheng/Chemistry/TimeInvariant.lean": {
+      "sha256": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd"
+    },
+    "artifacts/validation/P01-root-admission-recheck-15371195/command.json": {
+      "sha256": "099029619a08e6c5ee1380f562e34fad0ebc5c7b3f6ecca813395b7f2c3b8f39",
+      "argv": [
+        ".bootstrap/bin/uv.exe",
+        "run",
+        "--frozen",
+        "--offline",
+        "--no-sync",
+        "--extra",
+        "dev",
+        "pytest",
+        "tests/integration/test_evidence_in_runtime.py",
+        "tests/integration/test_evidence_import.py",
+        "-q",
+        "-o",
+        "cache_dir=artifacts/pytest/root-admission-cache",
+        "--basetemp",
+        "artifacts/pytest/root-admission-recheck"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-root-admission-recheck-15371195\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-root-admission-recheck-15371195\\stderr.log"
+    },
+    "artifacts/validation/P01-chemistry-binding-hardened-972d71b8/command.json": {
+      "sha256": "023a35daa5bf34d2dfdb05314274fc23e242b22c6f9b5f3156db5d59e77a4118",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/integration/test_chemistry_binding.py",
+        "-q",
+        "--basetemp",
+        "artifacts/test-temp/P01-chemistry-binding-hardened",
+        "-o",
+        "cache_dir=artifacts/test-cache/P01-chemistry-binding-hardened"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\P01-chemistry-binding-hardened-972d71b8\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\P01-chemistry-binding-hardened-972d71b8\\stderr.log"
+    },
+    "artifacts/P01-chemistry-binding/handoff-74f6743b.json": {
+      "sha256": "c60b6e9171e0458bf67f5d1dc5d792ce8ba8db1db8746b5dfcb58c42ce24874e"
+    },
+    "artifacts/validation/D01-public-full-import-v2-4648ab65/command.json": {
+      "sha256": "e9e78d598dbb8350b1f7f5fe64451e020e8039eb3fa6091fc241271d25d93343",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.data.importers",
+        "--csv",
+        "artifacts/data/public_new/cvut_sodium_0001_complete.csv",
+        "--spec",
+        "artifacts/data/public_new/cvut_sodium_0001_complete.v2.spec.json",
+        "--out",
+        "artifacts/data/public_new/imported_complete_v2"
+      ],
+      "exit_code": 1,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-full-import-v2-4648ab65\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-full-import-v2-4648ab65\\stderr.log"
+    },
+    "artifacts/validation/D01-public-step-import-v2-60541240/command.json": {
+      "sha256": "f4a8e5120a026088aee8b0840dfff771d45050e3223f67ea69a7e0b20abc78c5",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.data.importers",
+        "--csv",
+        "artifacts/data/public_new/cvut_sodium_0001_instrument_step.csv",
+        "--spec",
+        "artifacts/data/public_new/cvut_sodium_0001_instrument_step.v2.spec.json",
+        "--out",
+        "artifacts/data/public_new/imported_instrument_step_v2"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-step-import-v2-60541240\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-step-import-v2-60541240\\stderr.log"
+    },
+    "artifacts/validation/D01-public-row-split-guard-v2-af451f28/command.json": {
+      "sha256": "8201b4a6f2e3b5e7fd802df799f7535b7240fcabcd3f548fa8fe7f58366ede5f",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/data/public_new/check_import_and_split_v2.py"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-row-split-guard-v2-af451f28\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-public-row-split-guard-v2-af451f28\\stderr.log"
+    },
+    "artifacts/validation/D01-import-tests-current-b5d927f1/command.json": {
+      "sha256": "e1560db9b279141ab6c69ee59d8935b506ddc0f3b769c7130af1789af7331050",
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/unit/test_data_import.py",
+        "tests/integration/test_split_leakage.py",
+        "-q",
+        "--basetemp",
+        "artifacts/test-temp/d01-public-data",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "exit_code": 0,
+      "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\D01-import-tests-current-b5d927f1\\stdout.log",
+      "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\D01-import-tests-current-b5d927f1\\stderr.log"
+    },
+    "artifacts/data/public_new/independent_review.json": {
+      "sha256": "71b00639e25c0f10e15dd4c9c3925aef91ed0a05b4baf373550dd0161c9c4fc3"
+    },
+    "artifacts/data/public_new/DELIVERY.md": {
+      "sha256": "3355a0ced35edff762d70dde2eccbdb4cf73a7bc476b8f32d5bf92ab9b730cb4"
+    }
+  },
+  "interrupted_without_inferred_exit": [
+    {
+      "directory": "artifacts/formal/setup/selective_fetch-8aa0180e",
+      "exit_code": null,
+      "status": "interrupted_without_final_manifest",
+      "note": "No exit code inferred from partial HTTP200 files or missing session"
+    },
+    {
+      "directory": "artifacts/formal/setup/parallel_fetch-35419405",
+      "exit_code": null,
+      "status": "interrupted_without_final_manifest",
+      "note": "No exit code inferred from partial HTTP200 files or missing session"
+    }
+  ],
+  "next_command": ".venv/Scripts/python.exe tools/run_evidence.py --label F00-cache-resume --timeout 960 -- .venv/Scripts/python.exe tools/fetch_cache_parallel.py artifacts/formal/setup/extend_plan-62385f1c/stdout.log"
+}

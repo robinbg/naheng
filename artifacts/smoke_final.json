@@ -1,0 +1,73 @@
+{
+  "profile": "smoke",
+  "exit_code": 2,
+  "status": "blocked",
+  "checks": [
+    {
+      "id": "numerical_tests",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/unit",
+        "tests/integration",
+        "tests/test_registry_dsl.py",
+        "--basetemp",
+        "<PROJECT_ROOT>\\artifacts\\verification\\smoke-d51b0d59d0\\tmp",
+        "-o",
+        "cache_dir=artifacts/.pytest_cache",
+        "-q"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "wall_s": 206.87179239996476,
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-d51b0d59d0"
+    },
+    {
+      "id": "real_demo",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "demo",
+        "--scenario",
+        "acceptance_loop",
+        "--out",
+        "artifacts/smoke_demo"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "wall_s": 35.221601099998225,
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-d51b0d59d0"
+    },
+    {
+      "id": "foundation",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "formal",
+        "check",
+        "--suite",
+        "foundation"
+      ],
+      "exit_code": 2,
+      "status": "blocked",
+      "wall_s": 0.6522620999603532,
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-d51b0d59d0"
+    },
+    {
+      "id": "ui_acceptance",
+      "command": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "tools/check_ui_acceptance.py"
+      ],
+      "exit_code": 2,
+      "status": "blocked",
+      "wall_s": 0.5468601000029594,
+      "logs": "<PROJECT_ROOT>\\artifacts\\verification\\smoke-d51b0d59d0"
+    }
+  ],
+  "scope": "Only listed gates; smoke is not release",
+  "utc": "2026-10-09T17:32:04.155584+00:00"
+}

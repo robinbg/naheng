@@ -1,0 +1,197 @@
+{
+  "utc": "2026-10-13T19:32:21.030675+00:00",
+  "exit_code": 0,
+  "code_hash": "fcee85ee0c6acecfbd00614ea00cf50e47c35092efe0adf30a31fa7a25f09801",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 20,
+    "in_progress": 7,
+    "todo": 18
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/README.md": {
+      "sha256": "90ecad413602884c6110025f909cc53d4a041bfa4f2fd70c04260ce8a7e350f5"
+    },
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/result-corrected.json": {
+      "sha256": "b2caedab99e3b35f263fedcdfe3212323a1c82eebbdc5f3d1be794f253a93c2d"
+    },
+    "artifacts/maintenance/c-drive-cleanup-20261013-a/native-execution-receipt.json": {
+      "sha256": "f758e259da939c366d110f6356eb66b701605e3e49c997b4038c2192403a2dfe"
+    },
+    "artifacts/review/c-drive-cleanup-independent-20261014-a/report-recovered.json": {
+      "sha256": "2bfe8baab23454e3ff18fa5ba7c03d9ccae8a746f1298b705c419bca0c301d41"
+    },
+    "artifacts/validation/C-drive-cleanup-independent-recorded-scope-review-recovered-256ba103/command.json": {
+      "sha256": "ab8224fff77ff1673fd5a0dd7fd7b4cb89fdff120285cb722f4f45f1d2d7ead1",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "artifacts/review/c-drive-cleanup-independent-20261014-a/review-recovered.py"
+      ],
+      "wall_s": 0.8956327000014426,
+      "timed_out": false
+    },
+    "docs/CALIBRATION.md": {
+      "sha256": "4502d5e10f8d965379ea99b804a4dfdfd845ec8b368d4c682174517aab276d9b"
+    },
+    "artifacts/progress/E02-current-regression-e230195d/manifest.json": {
+      "sha256": "b8f6bf383c2e8262b0967a025ae5986a3fd569d3e63400b4cf0e4a42661ca9c6"
+    },
+    "artifacts/validation/C01-E02-final-current-source-full-regression-approved-7824c280/command.json": {
+      "sha256": "12e845cde10698d1bc12498ca4ed540512e6b239a10fc705c80c7967d7705f76",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "tools/run_current_source_regression.py"
+      ],
+      "wall_s": 175.2919131000017,
+      "timed_out": false
+    },
+    "artifacts/calibration/builtin-calibration-current-20261014-f/manifest.json": {
+      "sha256": "22e81eaf4b2f9f91a59ab910f8ddff235b96dc7248848d9e39f4f9f78883631d"
+    },
+    "artifacts/validation/C01-current-preserved-partial-ledger-fresh-calibration-0c3392b4/command.json": {
+      "sha256": "61bd5d7bda88834927b4f40254711f8efc58c611e682a52154a298afd1cd08b0",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "calibrate",
+        "--input",
+        "tests/fixtures/calibration_builtin/request.json",
+        "--out",
+        "artifacts/calibration/builtin-calibration-current-20261014-f"
+      ],
+      "wall_s": 2.5560859000033815,
+      "timed_out": false
+    },
+    "artifacts/calibration_consumers/public-20261014-b/manifest.json": {
+      "sha256": "960097b13e4f070ba194f94a7b166941c9c6d7681dc5e688051a64096fbc358d"
+    },
+    "artifacts/validation/E02-final-current-common-posterior-public-consumer-148ffa29/command.json": {
+      "sha256": "3a3c090a645541231cfdb1fb9e45153390651f6c0ee35dce9dc45008f0b376d6",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "consume-calibration",
+        "--calibration-dir",
+        "artifacts/calibration/builtin-calibration-current-20261014-f",
+        "--out",
+        "artifacts/calibration_consumers/public-20261014-b",
+        "--horizon-s",
+        "5",
+        "--current-limit-A",
+        "0.02",
+        "--ambient-K",
+        "299.15",
+        "--sell-price-per-kWh",
+        "0.30",
+        "--seed",
+        "20261014"
+      ],
+      "wall_s": 3.665622299995448,
+      "timed_out": false
+    },
+    "artifacts/review/calibration-observer-independent-20261014-a/report-current.json": {
+      "sha256": "7e1902331812dea12fb4910cec2b83ca6bd48f127bcf49e555bbdf786376c634"
+    },
+    "artifacts/validation/E02-independent-model-source-declared-resolved-alias-recovery-ec61ddbc/command.json": {
+      "sha256": "9e41a8c9d5580ee43b840a89c21e25435117c10d607144f23e7e928524b33267",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "artifacts/review/e02-runtime-independent-20261014-a/r5/review.py"
+      ],
+      "wall_s": 27.344590199998493,
+      "timed_out": false
+    },
+    "artifacts/review/e02-runtime-independent-20261014-a/r5/report.json": {
+      "sha256": "c8d745cd93afb5a4759fb5d8dab35db284a61035b71e10f13fcaf072db5a8819"
+    },
+    "docs/SCENARIO_MPC.md": {
+      "sha256": "3787f1d97ad75defda683fa3279ed77a37cf067dbe313e0654ef77224e64f8be"
+    },
+    "artifacts/progress/C01-scenario-install-d5466504/manifest.json": {
+      "sha256": "cb172ea887e65df4c53b03d6678a36db9157e9e7167b85d4f903d4480a6fee61"
+    },
+    "artifacts/scenario_calibration/public-20261014-b/manifest.json": {
+      "sha256": "cb7f124eb36bb87bd3810b319057d21344909477c227d504b5ad5f5af69e4259"
+    },
+    "artifacts/validation/C01-current-public-scenario-sensor-replan-persistent-ledger-0870f5ad/command.json": {
+      "sha256": "12f2ef4ad4290d0d2437ceffe72ff3384202816e8550d5442cb1593fdfb0d412",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "scenario-calibration",
+        "--calibration-dir",
+        "artifacts/calibration/builtin-calibration-current-20261014-f",
+        "--out",
+        "artifacts/scenario_calibration/public-20261014-b"
+      ],
+      "wall_s": 6.029939200001536,
+      "timed_out": false
+    },
+    "artifacts/review/scenario-calibration-independent-20261014-a/report-current-b-nested-recovered.json": {
+      "sha256": "20a7ac577ab08ed7aa9ddede6682a738092fed25407fd799e5a2e1bbcf2158f8"
+    },
+    "artifacts/review/scenario-calibration-independent-20261014-a/handoff.json": {
+      "sha256": "71770d56bde888a73c0365bb55e5dad597744cce23102952b67af956d8ca4780"
+    },
+    "docs/FIXED_CURRENT_READOUT.md": {
+      "sha256": "c82ee24cbd5d9bdc8d47967d16d8f16c244e53b72bd4ebf5220b190e01db1d14"
+    },
+    "docs/NOVELTY.md": {
+      "sha256": "819baa11744ead071552e675c1e796ff6f9a09e896232dc946eb7603776c3a55"
+    },
+    "artifacts/formal/readout-publication-ccfe9b55/manifest.json": {
+      "sha256": "605a8567c6af8168edb41084d372974cf31cca42fc79ca395fdd44cb240c019c"
+    },
+    "artifacts/validation/F02-readout-eight-actual-defining-module-build-and-strict-audit-1b512cfb/command.json": {
+      "sha256": "811e1e6194cfa6dce450057e20b8a42e28a49e106ccd974cc0b52d187368017b",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-B",
+        "tools/check_readout_publication.py"
+      ],
+      "wall_s": 61.670927799998026,
+      "timed_out": false
+    },
+    "artifacts/review/readout-publication-independent-20261014-a/handoff.json": {
+      "sha256": "d2df0d7e8c6abdfe02b8ae35c9c8d591c35ff76f0cfa714431678177c8341b61"
+    },
+    "artifacts/formal/current-readout-partials-1fb9e802/manifest.json": {
+      "sha256": "f75bce1e496d878311a02e459aeb67394f2a5fba324328af8702f6db88646e16"
+    },
+    "artifacts/current-release-20261014-a.json": {
+      "sha256": "5f088cb5d85baa0cb4ed3e13363352c3b82516c1d34aa155ca29e59cb0d7211c"
+    },
+    "artifacts/validation/R02-current-release-required-gate-honest-status-5744b17f/command.json": {
+      "sha256": "0bb5325d5d895f4977851a373ca35cd46c55cbda699a0198baba04c9f74393c9",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "release",
+        "--out",
+        "artifacts/current-release-20261014-a.json"
+      ],
+      "wall_s": 0.6773455000002286,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

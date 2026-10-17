@@ -1,0 +1,18 @@
+{
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "tools/probe_a03_initial_low_20261016.py"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-16T05:14:00.549541+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-initial-low-actual-budget-diagnostic-d3cd6cf5\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-initial-low-actual-budget-diagnostic-d3cd6cf5\\stderr.log",
+  "timeout_s": 380,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 7716,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 44.28336760000093
+}

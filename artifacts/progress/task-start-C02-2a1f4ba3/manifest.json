@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "utc": "2026-10-13T23:49:05.544106+00:00",
+  "task_id": "C02",
+  "status": "in_progress",
+  "required_acceptance_and_contracts_unchanged": true,
+  "actual_start_receipt": "artifacts/validation/C02-staged-final-original-named-finance-config-asset-identity-tests-b726941e/command.json",
+  "actual_exit_code": 0,
+  "scientific_acceptance_complete": false
+}

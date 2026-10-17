@@ -1,0 +1,59 @@
+{
+  "package_id": "research_base-v1",
+  "chemistry_id": "synthetic_two_site",
+  "parameter_revision": "synthetic-v1",
+  "state_definition": {
+    "x1": "1",
+    "x2": "1",
+    "trapped_mol": "mol",
+    "reservoir_mol": "mol",
+    "temperature_K": "K"
+  },
+  "dynamics_ast": {
+    "model": "two_site_current_adapter_v1",
+    "states": [
+      "x1",
+      "x2",
+      "trapped_mol",
+      "reservoir_mol",
+      "temperature_K"
+    ],
+    "source": "configs/models/two_site_research.yaml"
+  },
+  "readout_ast": {
+    "model": "synthetic_voltage_thermal_v1"
+  },
+  "reduction_map": {
+    "q": "N1*x1+N2*x2"
+  },
+  "lifting_map": {
+    "kind": "uncertain_set",
+    "reason": "Total sodium alone does not identify site occupancies"
+  },
+  "domain": {
+    "temperature_K": [
+      273.15,
+      333.15
+    ],
+    "max_current_A": 0.3,
+    "channel_rates": null,
+    "drive": "bounded_effective_potential_current_root",
+    "provenance_type": "synthetic"
+  },
+  "error_contracts": [
+    {
+      "target": "voltage_V",
+      "bound": null,
+      "comparison_reference": "real_cell",
+      "status": "unknown",
+      "reason": "Uncalibrated fixture; no reality discrepancy certificate"
+    }
+  ],
+  "evidence_refs": [],
+  "validity_monitor": {
+    "on_hash_change": "stale",
+    "on_unknown": "no_strict_admission"
+  },
+  "fallback_refs": [],
+  "artifact_hashes": {}
+}

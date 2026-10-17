@@ -1,0 +1,113 @@
+{
+  "utc": "2026-10-14T00:56:04.856083+00:00",
+  "exit_code": 0,
+  "code_hash": "2b4b5c424375323d0b12ddcad03964c7c52d5e9defebfc98ebea0a2abf23a372",
+  "task_count": 45,
+  "requirement_count": 18,
+  "requirements_sha256": "50ce6be3e04ba26351985ea4f8b489c5c0633427142624018051299daeaf25d0",
+  "counts": {
+    "done": 23,
+    "in_progress": 6,
+    "todo": 16
+  },
+  "unchanged_task_status_and_acceptance": true,
+  "receipts": {
+    "artifacts/progress/C02-engineering-accepted-51e5ed11/manifest.json": {
+      "sha256": "fbac90998a36746527f765fd2cb683a3717b5a9e3571822a23f257ec4e359d9d"
+    },
+    "artifacts/validation/C02-original-engineering-current-840-real-coupled-module-close-df8ce1af/command.json": {
+      "sha256": "a255853ac2bb6a75403df7c26f45e8d626b85e4f639ea9d2ba1bab89251cbb20",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/close_c02_engineering_acceptance.py"
+      ],
+      "wall_s": 0.9369040000019595,
+      "timed_out": false
+    },
+    "artifacts/progress/E02-current-regression-ac7bd211/manifest.json": {
+      "sha256": "675d8b3f1e000cf7f9636950c8061d4beadc640c284b8470e7be4f8247de93bb"
+    },
+    "artifacts/progress/E02-current-regression-e3104b29/manifest.json": {
+      "sha256": "c0f982f2ba7afa914e29f900a5ff54fbfa3362d076638395a66e283c585d6ab0"
+    },
+    "artifacts/validation/C02-full-840-current-regression-fresh-D-temp-within-engineering-batch-budget-601d2f58/command.json": {
+      "sha256": "3c889949c67254a1461d8b1d037aa30843a0b05fbed096914eef591e7354e643",
+      "exit_code": 0,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "tools/run_current_source_regression.py",
+        "--temp-root",
+        "<HOST_DATA_ROOT>",
+        "--batch-timeout-s",
+        "600"
+      ],
+      "wall_s": 533.2139021999974,
+      "timed_out": false
+    },
+    "artifacts/review/lifecycle-public-current-c/handoff.json": {
+      "sha256": "5a246631a7a8b7ec7bdb25cf04ac5454aebaad75558301b5a477f5cd4e01e182"
+    },
+    "artifacts/review/lifecycle-finance-public-c-independent-20261014-a/handoff.json": {
+      "sha256": "cdbcfc742973f6f1cb72d48f61a9ea1d4a17bad6faa4ec9d4ee787dd25f87ffd"
+    },
+    "artifacts/ui/current-workbench-20261014-a/manifest.json": {
+      "sha256": "ee96fc40fb5a5b4a67f2dd72d61c630eb9feaf673bddee583e0d62ce0878621e"
+    },
+    "artifacts/review/current-gui-run-independent-20261014-c/actual-run-review/report.json": {
+      "sha256": "1ebc709c1d02b088e25dd4847cca34fc19477d7702f6132538d97e32c54fc072"
+    },
+    "artifacts/validation/W01-owned-current-workbench-server-8822d372/command.json": {
+      "sha256": "3112cf9d918822ab116697c0ac512df94eaa25dd3367bf2afadd951e7dd52710",
+      "exit_code": 1,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "serve",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8001"
+      ],
+      "wall_s": 600.2259020999991,
+      "timed_out": false
+    },
+    "artifacts/validation/W01-owned-current-workbench-server-6ae9bd17/command.json": {
+      "sha256": "77159f534359a43da68672f6f7a4f336a954f3738db6628ee42434287bc2dfec",
+      "exit_code": 1,
+      "argv": [
+        "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "-m",
+        "naheng.cli",
+        "serve",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8001"
+      ],
+      "wall_s": 226.90905719999864,
+      "timed_out": false
+    },
+    "artifacts/release-after-C02-20261014-a.json": {
+      "sha256": "68c91d58dc67f89c56d80c03c5d8846d022b6742895f55d543988a15bde3d7b1"
+    },
+    "artifacts/validation/X00-current-C02-accepted-release-gates-cdd29ad9/command.json": {
+      "sha256": "223184efba1c8574cf7ec271b6e30bf2795e997de7670627c70996ad0dcce832",
+      "exit_code": 2,
+      "argv": [
+        ".venv/Scripts/python.exe",
+        "-m",
+        "naheng.cli",
+        "verify",
+        "--profile",
+        "release",
+        "--out",
+        "artifacts/release-after-C02-20261014-a.json"
+      ],
+      "wall_s": 1.888735300002736,
+      "timed_out": false
+    }
+  },
+  "full_acceptance_complete": false
+}

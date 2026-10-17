@@ -1,0 +1,15 @@
+.git
+.venv
+.bootstrap
+.tools
+**/__pycache__
+**/.pytest_cache
+**/node_modules
+**/.lake
+artifacts
+.env
+.env.*
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx

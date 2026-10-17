@@ -1,0 +1,76 @@
+profiles:
+  smoke:
+  - id: numerical_tests
+    command:
+    - '{python}'
+    - -m
+    - pytest
+    - tests/unit
+    - tests/integration
+    - tests/test_registry_dsl.py
+    - --basetemp
+    - '{temp}'
+    - -o
+    - cache_dir=artifacts/.pytest_cache
+    - -q
+    timeout_s: 1440
+  - id: real_demo
+    command:
+    - '{python}'
+    - -m
+    - naheng.cli
+    - demo
+    - --scenario
+    - acceptance_loop
+    - --out
+    - artifacts/smoke_demo
+    timeout_s: 120
+  - id: foundation
+    command:
+    - '{python}'
+    - -m
+    - naheng.cli
+    - formal
+    - check
+    - --suite
+    - foundation
+    timeout_s: 120
+  - id: ui_acceptance
+    command:
+    - '{python}'
+    - tools/check_ui_acceptance.py
+  application:
+  - id: complete_application
+    command:
+    - '{python}'
+    - tools/check_release.py
+    - --scope
+    - application
+  formal:
+  - id: core
+    command:
+    - '{python}'
+    - -m
+    - naheng.cli
+    - formal
+    - check
+    - --suite
+    - core
+    timeout_s: 1500
+  release:
+  - id: all_required_tasks
+    command:
+    - '{python}'
+    - tools/check_release.py
+    - --scope
+    - release
+  - id: formal_core
+    command:
+    - '{python}'
+    - -m
+    - naheng.cli
+    - formal
+    - check
+    - --suite
+    - core
+    timeout_s: 1500

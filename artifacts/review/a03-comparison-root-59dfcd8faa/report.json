@@ -1,0 +1,141 @@
+{
+  "exit_code": 0,
+  "rows": [
+    {
+      "folder": "<PROJECT_ROOT>\\artifacts\\a03-pilot-9ba04a8b",
+      "result_sha256": "6d4190cfe407ea238af09a3744ae8f540512b640231aa58a86beaf0a36caeed5",
+      "protocol_sha256": "5c31a7598776bb24a0df720a05e9416b95508ad0167728790d9688a8d19a567d",
+      "low_calls": 17,
+      "high_calls": 19,
+      "completed": 36,
+      "actual_recorded_execution_cost_s": 682.3908766999884,
+      "best_observed_high_training_cash_CNY": 2.166833477471754e-08,
+      "initial_candidates": [
+        "5cb33f2f36db96ab93d681681311db6d5acc63ec9800113a98337e0d57b13d4c",
+        "3b4fb95404b6f334ffc1cc2a904510e056b3ba52952c4b36f39c1342ae140c80",
+        "69f8dcee368ab916d011d774264609f46ab0921afbe8ed49257979a1fafe6d82",
+        "08ed359a208e8d9ea7742442cb82dec0ecb7ee41838dc08280610fb20ac3970f",
+        "983bf5a953b4afaecaea562545d0134546a673998288686c64899b6406214375",
+        "44978a8b1f5ab51199ce04c47a2cd03cf606eb05edc5e9c093484ec1e22b39a3",
+        "a87234d893391a57a1e5c1b24a6d45827411c5ca53c713be16d43ed68c811339",
+        "2bc3614fe583fb4ff9006de3bdbd3b8f1b2d5e03482b1419192b43e2d0b86088",
+        "a781dc1b45ab8e56f4dc17b1bad0b10fe8f13776e8baa1195a43eb01ee5f3ce4",
+        "a7c05ee45f219b548479285989429b454ff418cb3c644e59c2873a3f999a6db3",
+        "9bf7146e4fccebc1333de16387004b0371aa36ccdff2cae2a3344df068d7a605",
+        "f11b87f6aa9872fd9e329e4a1148cd6f16c57833e0ac5017b1fb61f790c6ed69"
+      ],
+      "bounds": {
+        "current_limit_A": [
+          0.006,
+          0.018
+        ],
+        "voltage_margin_V": [
+          0.0,
+          0.04
+        ],
+        "terminal_buffer": [
+          5e-06,
+          2e-05
+        ]
+      },
+      "source_code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+      "selection_counts": {
+        "optimized_constrained_expected_improvement_per_cost": 21,
+        "paired_high_fidelity_discrepancy_identification": 3,
+        "initial_latin_hypercube": 12
+      }
+    },
+    {
+      "folder": "<PROJECT_ROOT>\\artifacts\\a03-random-ebd41a8a",
+      "result_sha256": "356983908a5550ae043e69b88d4a410d514f2d9d25471291800bcf9197c72a2d",
+      "protocol_sha256": "73ca095ab156cd5b11bbc8025de7b58d59f7d0d6ad145b2485f04b421ad92478",
+      "low_calls": 22,
+      "high_calls": 14,
+      "completed": 36,
+      "actual_recorded_execution_cost_s": 669.0669188000247,
+      "best_observed_high_training_cash_CNY": 2.030043133697762e-08,
+      "initial_candidates": [
+        "5cb33f2f36db96ab93d681681311db6d5acc63ec9800113a98337e0d57b13d4c",
+        "3b4fb95404b6f334ffc1cc2a904510e056b3ba52952c4b36f39c1342ae140c80",
+        "69f8dcee368ab916d011d774264609f46ab0921afbe8ed49257979a1fafe6d82",
+        "08ed359a208e8d9ea7742442cb82dec0ecb7ee41838dc08280610fb20ac3970f",
+        "983bf5a953b4afaecaea562545d0134546a673998288686c64899b6406214375",
+        "44978a8b1f5ab51199ce04c47a2cd03cf606eb05edc5e9c093484ec1e22b39a3",
+        "a87234d893391a57a1e5c1b24a6d45827411c5ca53c713be16d43ed68c811339",
+        "2bc3614fe583fb4ff9006de3bdbd3b8f1b2d5e03482b1419192b43e2d0b86088",
+        "a781dc1b45ab8e56f4dc17b1bad0b10fe8f13776e8baa1195a43eb01ee5f3ce4",
+        "a7c05ee45f219b548479285989429b454ff418cb3c644e59c2873a3f999a6db3",
+        "9bf7146e4fccebc1333de16387004b0371aa36ccdff2cae2a3344df068d7a605",
+        "f11b87f6aa9872fd9e329e4a1148cd6f16c57833e0ac5017b1fb61f790c6ed69"
+      ],
+      "bounds": {
+        "current_limit_A": [
+          0.006,
+          0.018
+        ],
+        "voltage_margin_V": [
+          0.0,
+          0.04
+        ],
+        "terminal_buffer": [
+          5e-06,
+          2e-05
+        ]
+      },
+      "source_code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+      "selection_counts": {
+        "paired_high_fidelity_discrepancy_identification": 3,
+        "initial_latin_hypercube": 12,
+        "uniform_random_query": 21
+      }
+    },
+    {
+      "folder": "<PROJECT_ROOT>\\artifacts\\a03-uncertainty-cf50f124",
+      "result_sha256": "1cd3338b3bf5717ac4d1f64e242463b0d2d95f0e2894975e6f9dc44947ecaffc",
+      "protocol_sha256": "9193daf3f76cbceff03c7ecb9c6a1b00a4778cb0a6afb4606ff3afe6b0944b6c",
+      "low_calls": 23,
+      "high_calls": 13,
+      "completed": 36,
+      "actual_recorded_execution_cost_s": 662.7470532999869,
+      "best_observed_high_training_cash_CNY": 2.0976240079470596e-08,
+      "initial_candidates": [
+        "5cb33f2f36db96ab93d681681311db6d5acc63ec9800113a98337e0d57b13d4c",
+        "3b4fb95404b6f334ffc1cc2a904510e056b3ba52952c4b36f39c1342ae140c80",
+        "69f8dcee368ab916d011d774264609f46ab0921afbe8ed49257979a1fafe6d82",
+        "08ed359a208e8d9ea7742442cb82dec0ecb7ee41838dc08280610fb20ac3970f",
+        "983bf5a953b4afaecaea562545d0134546a673998288686c64899b6406214375",
+        "44978a8b1f5ab51199ce04c47a2cd03cf606eb05edc5e9c093484ec1e22b39a3",
+        "a87234d893391a57a1e5c1b24a6d45827411c5ca53c713be16d43ed68c811339",
+        "2bc3614fe583fb4ff9006de3bdbd3b8f1b2d5e03482b1419192b43e2d0b86088",
+        "a781dc1b45ab8e56f4dc17b1bad0b10fe8f13776e8baa1195a43eb01ee5f3ce4",
+        "a7c05ee45f219b548479285989429b454ff418cb3c644e59c2873a3f999a6db3",
+        "9bf7146e4fccebc1333de16387004b0371aa36ccdff2cae2a3344df068d7a605",
+        "f11b87f6aa9872fd9e329e4a1148cd6f16c57833e0ac5017b1fb61f790c6ed69"
+      ],
+      "bounds": {
+        "current_limit_A": [
+          0.006,
+          0.018
+        ],
+        "voltage_margin_V": [
+          0.0,
+          0.04
+        ],
+        "terminal_buffer": [
+          5e-06,
+          2e-05
+        ]
+      },
+      "source_code_hash": "142e643fbb376d77e451ae5b7d5136f8aacf1e68c6b955cbc37db0c9049b190c",
+      "selection_counts": {
+        "surrogate_variance_per_measured_cost": 21,
+        "paired_high_fidelity_discrepancy_identification": 3,
+        "initial_latin_hypercube": 12
+      }
+    }
+  ],
+  "actual_calls": 108,
+  "scientific_N_added": 0,
+  "A03_complete": false,
+  "scope": "same conditional synthetic training world; computational fidelity; common count and upper budget, actual fidelity/cost differs; no heldout superiority, operating risk or lifecycle profit conclusion"
+}

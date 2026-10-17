@@ -1,0 +1,86 @@
+{
+  "exit_code": 0,
+  "before_code_hash": "13063d277fdfdebad27928ce85404bb63e57bd31b23fbe354912c440dbf183f0",
+  "code_hash": "ef4420d0b42dfaab99a962b9a0130f4bfa8fd225ef6ee86e7d98fec1c896d30a",
+  "changes": {
+    "artifacts\\handoff\\a02-delegated-backend-20261016-a\\boot_requested_batch_serial_r2.py": {
+      "before_sha256": null,
+      "after_sha256": "9024221897e222c7295b08bc54e211b761fa17a25b8f789067e6b468b1b99c43"
+    },
+    "artifacts\\handoff\\a02-delegated-backend-20261016-a\\guest_workload_bootstrap_serial_r2.py": {
+      "before_sha256": null,
+      "after_sha256": "a0f90c9a35aed40b7ee080fceb1ed8f6d790ebc2c03cdccc2714d48600cb2583"
+    },
+    "artifacts\\handoff\\a02-delegated-backend-20261016-a\\serial_frames_v1.py": {
+      "before_sha256": null,
+      "after_sha256": "56f57f4d6574b6a1663036b37b595d21b299c642f58fe465277e8b54ceca1c05"
+    },
+    "src\\naheng\\discovery\\loop.py": {
+      "before_sha256": "5d8e618ccdbc91ea1c1e9a8ac9bc5061b360d838da2140c09acd428b0c25bda9",
+      "after_sha256": "07af24f0aec903dfa790e00ef0385922e236b1c38b34d476410a180d921df130"
+    },
+    "src\\naheng\\discovery\\offline_seed.py": {
+      "before_sha256": "82470364b998f5614cce1a753f9a9c29fa9f847d4d2dcf44f92365313161fd23",
+      "after_sha256": "5ed79c4abce91e97e122bebe8c18299dcb4d38bbd15608b8e87e70c4dd24b324"
+    },
+    "src\\naheng\\discovery\\proof_worker.py": {
+      "before_sha256": "3227904a324539eb50197976786654c6aba72678b72e8baa19d2960ca8fc3d17",
+      "after_sha256": "6fba32ec503ea37cb4ea0b3a304ad50cfd4ebce1e9d2a4b8f81298f14fb2e75a"
+    },
+    "configs\\discovery\\proof-backend.json": {
+      "before_sha256": "d95f77be1adde7d57313db7c195e647b340a748f5baf7c3b14d0fba46673cbff",
+      "after_sha256": "10aacaa26877a3b209580c5afa8872db7724858e1e4328e7f03f5c5466f867d9"
+    },
+    "src\\naheng\\packages\\current_class.py": {
+      "before_sha256": "5fded234d27ac29a1f9ba9028be31ef1be3421c50dfe9ba856bd3e297679a8f3",
+      "after_sha256": "6fab89c59e7001ee0d2564a2bd411f3d0e8856a2ec063db45fed4be6c470c9a7"
+    },
+    "src\\naheng\\api\\app.py": {
+      "before_sha256": "3b77fb597b2e7f6de7ee62b8aa428f2f62b0c15410da2fb1fb19f530cc98cf68",
+      "after_sha256": "b5560a6776db48dd8ffe9a88f8f831bb3f0aba6373bb7133362fd28cd564de98"
+    },
+    "src\\naheng\\estimation\\particle_filter.py": {
+      "before_sha256": "9714e821c431451e23a5dadb5225d65bcff944746ff2179305ac27cdd0442ddd",
+      "after_sha256": "69f6830e7af2f5a59ea46530c9980bc33883be894e0ecdba0a4fa1e575c254a0"
+    },
+    "src\\naheng\\packages\\validity_monitor.py": {
+      "before_sha256": null,
+      "after_sha256": "4cadacfeb8480addbe53408ea82d5399f7a11cfbf21de1881bb6dac1409c43f2"
+    },
+    "src\\naheng\\runtime\\resumption.py": {
+      "before_sha256": "0abb44e7ee46db645853e05445f1bf51054dd72d97b44f3db929a408ac11b60a",
+      "after_sha256": "dc5487a0a76dfa5eea406d0579f5c6b2711ddcead3bbafa790cf991575f6e424"
+    },
+    "src\\naheng\\runtime\\revalidation.py": {
+      "before_sha256": null,
+      "after_sha256": "b480e2e2f2cd148d249f0e48bc57a970de196ba564ac8216161148778826b054"
+    },
+    "src\\naheng\\runtime\\runner.py": {
+      "before_sha256": "3b355b03e74e27992875baf405d5b3e7c62597799c8f497424ac944766b99dec",
+      "after_sha256": "51c53f3b97fcd4c8b467e431c245afa02dcce38841e74a9e0e337069e5d4fbd9"
+    },
+    "src\\naheng\\runtime\\validity.py": {
+      "before_sha256": null,
+      "after_sha256": "2d65401a11397eda34d291528e50ae9e8dbae789130dacc56b0c74a71c3021ec"
+    },
+    "frontend\\src\\App.tsx": {
+      "before_sha256": "a588ad6466a3c5b4fea989b3d84543ad5bcb24d7e2cacc99b0850d3bba651c33",
+      "after_sha256": "27e9c7814f8a415c3559752e2e75c67ecf5afe03cd7402fb6074f049d9fa54e0"
+    },
+    "frontend\\src\\components\\ValidityPanel.tsx": {
+      "before_sha256": null,
+      "after_sha256": "aecafa70f0286cfd9b899da07a3f4d9d1d9cdbf0afc859129e2ac32574efdc2e"
+    },
+    "tests\\integration\\test_evidence_withdrawal.py": {
+      "before_sha256": null,
+      "after_sha256": "6975fb39af7fd72953e731e8879be4a83e4ea76e73a511a676f3f67454e155ad"
+    },
+    "tests\\integration\\test_mapping_review_history.py": {
+      "before_sha256": null,
+      "after_sha256": "49a1d428a45f8acd60bf53df4c577df1af4eaa86d38cf66374752b2ca4c41166"
+    }
+  },
+  "all_original_test_function_AST_unchanged": true,
+  "user_changes_reset": false,
+  "A03_not_installed": true
+}

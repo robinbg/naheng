@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-12T02:19:32.273851+00:00",
+  "status": "actual_full_v3_instrument_event_order_import_verified",
+  "source_id": "zenodo17459188_cvut_sib_0001",
+  "records_original": 64,
+  "records_persisted": 64,
+  "records_dropped": 0,
+  "timestamps_shifted": 0,
+  "reused_csv_bytes_sha256": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+  "original_xlsx_sha256": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+  "all_original_csv_fields_match_direct_xlsx_XML": true,
+  "primary_temperature_channel": "measured T1",
+  "all_six_raw_pack_thermocouple_channels_preserved": true,
+  "thermocouples_are_independent_cells": false,
+  "co_timed_transitions_preserved": [
+    {
+      "timestamp_s": 30.0,
+      "source_rows": [
+        32,
+        33
+      ],
+      "instrument_steps": [
+        "1",
+        "2"
+      ],
+      "voltages_V": [
+        15.9002,
+        11.7819
+      ],
+      "currents_A": [
+        -0.0,
+        199.9752
+      ]
+    },
+    {
+      "timestamp_s": 30.1,
+      "source_rows": [
+        34,
+        35
+      ],
+      "instrument_steps": [
+        "2",
+        "5"
+      ],
+      "voltages_V": [
+        8.3891,
+        14.9107
+      ],
+      "currents_A": [
+        199.9752,
+        -0.0
+      ]
+    }
+  ],
+  "observed_discharge_duration_s": "0.100",
+  "planned_maximum_discharge_duration_s": "3.000",
+  "v2_strict_time_import_still_rejected": "Nonmonotonic or duplicate time in complete trajectory at CSV line 33",
+  "v3_v2_same_pack_cross_view_leakage_rejected": "Physical cell or complete trajectory leaked across splits",
+  "new_frozen_holdout": {
+    "path": "artifacts/data/public_new/ordered-holdout-v3-fa6715bc.json",
+    "sha256": "a764a9b6711940e846fd6e29ce5d67328775fc9d95899cfe45f06550608a7716",
+    "revision": "3b77279a0668bc42a7fdd08eea865e5d79bb84b5182c293d7825dcd8cc3c63a0",
+    "independent_group_count": 1,
+    "role_record_counts": {
+      "train": 0,
+      "validation": 0,
+      "test": 64
+    }
+  },
+  "versioned_files_sha256": {
+    "src/naheng/data/importers.py": "67d59301cf245f48b8f782a7338ebefdd81c861c74930756eb23c1ba1ab4f4a7",
+    "tests/unit/test_data_event_ordering.py": "fb9ae5fbc707697d0872657d1759022ede6cfca39b0bad401925a41ace28ff01",
+    "artifacts/data/public_new/ordered_audit_v3.py": "636902886d2f7006b11b5f6c5262663c0e7c14aefe5fbdff01000cb41714a688",
+    "artifacts/data/public_new/ordered_prepare_v3.py": "5c39093ff4e886688aafbaaefdb785e9e6ab7b17d7b64f7720dbd1decdb57776",
+    "artifacts/data/public_new/ordered-preparation-v3-fa6715bc.json": "bcced2bfaed4ddb819bc9eeec79b2f6d54779e49b4f3cb8e2f0adacec9e5751b",
+    "artifacts/data/public_new/ordered-complete-v3-fa6715bc.spec.json": "ae8455eca084c87a7f8790b315489a9f7fae71bece29bc72764bcbae29fe8953",
+    "data/manifests/retrieval-zenodo17459188-0001-ordered-v3-fa6715bc.yaml": "5d0802df603b57a82fc494be06718aab5114b166efd0300f6648dcad104d5de4",
+    "artifacts/data/public_new/ordered-event-order-v3-fa6715bc.json": "de021924e2a205f8b3ffcf28365fd496d7a0107ef798949b1f932486c2c6c515",
+    "artifacts/data/public_new/ordered-import-v3-fa6715bc/manifest.json": "2a0718a3361a81c857e59bcf38582b1f39383d34fb2a7f77f5d725dd1bffbc8d",
+    "artifacts/data/public_new/ordered-import-v3-fa6715bc/observations.jsonl": "3e0d6b0cfdb978a443d9d0676965769d8ad763351660fddd6c1c318b58107396",
+    "artifacts/data/public_new/ordered-holdout-v3-fa6715bc.json": "a764a9b6711940e846fd6e29ce5d67328775fc9d95899cfe45f06550608a7716"
+  },
+  "preserved_original_inputs_sha256": {
+    "data/manifests/sources.yaml": "6d1da567113e4786b98974f3b52ee84473ab27867975fb6981e22dabb63213aa",
+    "artifacts/data/public_new/import_and_split_audit_v2.json": "18d6695b61090f522c8e288d8053a5084e517d0bd47b151f4a5c8b30c88c7625",
+    "artifacts/data/public_new/holdout_only_snapshot_v2.json": "93f7f123d64e7714d6997bd154caba1307c144d8b6498e4335f44aa3d918ae03",
+    "artifacts/data/public_new/independent_review.json": "71b00639e25c0f10e15dd4c9c3925aef91ed0a05b4baf373550dd0161c9c4fc3",
+    "data/raw/public_new/zenodo17459188/VZ1_044_021_CVUT_D_0001_v1.xlsx": "3e45348dc92bd1a4131e92dfdc46b96d7e062857979ecd1eb011fd1a007f283f",
+    "data/raw/public_new/zenodo17459188/RMF-VZ1_044_021_CVUT_S.txt": "4fc6ee4edfd1a0d70319d99ed9fa10a0bcf52be44faa981144329ead19c7e3bf",
+    "data/raw/public_new/zenodo17459188/VZ1_044_021_CVUT_D_00011_v1.xlsx": "9f6f4d79ffab3cac7f72c78fa5ab4c0e9f45ae573fa0f82b814f25cafaf3b7b9",
+    "artifacts/data/public_new/xlsx_field_audit.json": "79650fe6adb4b3d2001b3257f9dee885852253264f36c55bbca5be36376ef2ed",
+    "artifacts/data/public_new/imported_instrument_step_v2/manifest.json": "b72f6e4eaf26f6cc2db46e8e3321410f25bae0e00dbeecd83a5c766c77a77c83",
+    "artifacts/data/public_new/imported_instrument_step_v2/observations.jsonl": "d2ef66109fced38f9e9f59d140ae75ded6b51b20771ebbb323a622f07abc5470",
+    "artifacts/data/public_new/root_registry_delivery.json": "f47932c62d63591dc716cb25780e452e0cf6d3fd1446438c35e34cb76ef10d5d",
+    "artifacts/data/public_new/cvut_sodium_0001_complete.csv": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+    "artifacts/data/public_new/cvut_sodium_0001_complete.spec.json": "d4ad8ccfbf613e986fc52d5b0cf254fa0c0259d9b19f9dc69a1e36d9612cb5bf",
+    "artifacts/data/public_new/cvut_sodium_0001_complete.v2.spec.json": "ab4a0b45ad469417a8c748874c31be0b1e6bd1db8ee0945064a1fe601a0b00d5",
+    "artifacts/data/public_new/first_complete_registry_snapshot.json": "5e3f5c9f31f7a89fde24b6688f67bebb3080321f206b3b85305b661c8b1b793a",
+    "data/manifests/retrieval-zenodo17459188-0001-complete.yaml": "873b6d61b8f42da07455e44a5df89145fc7414f45b712f1b325321ba25bbcd4c",
+    "data/manifests/retrieval-zenodo17459188-0001-complete-v2.yaml": "8cb9a464f69a85be05004846899b8231c5163873f5a4e68d1280090debdaf9eb",
+    "artifacts/data/public_new/cvut_sodium_0001_instrument_step.csv": "b17c41b3d245e24db4e62faf894d7eae615e9ca6cc6b7fa259a0a7f491f697d9",
+    "artifacts/data/public_new/cvut_sodium_0001_instrument_step.spec.json": "1aa9f4a767c67278bc8566f33256683fda376ac7264c69e5ee82cc15b8159fed",
+    "artifacts/data/public_new/cvut_sodium_0001_instrument_step.v2.spec.json": "095133dd158d1778b2303a15216096e15829721fefe0235c8765d07cb08336a5",
+    "artifacts/data/public_new/first_instrument_step_registry_snapshot.json": "d325d0a620c963ca3a40098c553c465017c0f359e3f8f5c1bfd73a31bc4e4fec",
+    "data/manifests/retrieval-zenodo17459188-0001-instrument_step.yaml": "cd0adeaf5cfb56d5f1936559e01aad0aae6e4f37047fe218826d2dac024ed7b2",
+    "data/manifests/retrieval-zenodo17459188-0001-instrument_step-v2.yaml": "cc46da78b589c028f57ac1b7a04ddc910552039014e63ac6f907ae9b8f3b01f0",
+    "artifacts/validation/D01-public-full-import-4e991e9c/command.json": "46e840d74f1b52150a6fc2c9d71b751ca08b63abf230cbb8fda585e74d557761",
+    "artifacts/validation/D01-public-full-import-4e991e9c/stdout.log": "a97a01081c2667ef28875a8697b0bee80fee8a6f4bc6fe022e86e8623507ebe8",
+    "artifacts/validation/D01-public-full-import-4e991e9c/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/validation/D01-public-full-import-v2-4648ab65/command.json": "e9e78d598dbb8350b1f7f5fe64451e020e8039eb3fa6091fc241271d25d93343",
+    "artifacts/validation/D01-public-full-import-v2-4648ab65/stdout.log": "a97a01081c2667ef28875a8697b0bee80fee8a6f4bc6fe022e86e8623507ebe8",
+    "artifacts/validation/D01-public-full-import-v2-4648ab65/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "original_inputs_unchanged": true,
+  "scope": "software import semantics for one complete instrument file; no fitting or independent external validation",
+  "D01_complete": false,
+  "D02_complete": false,
+  "external_model_validation": "not_performed",
+  "limitations": [
+    "One conservative physical 4s11p sodium pack group; no independent train/validation/test group coverage.",
+    "Pack terminal data and six thermocouples are not individual-cell truth.",
+    "No model fit, aging/RUL labels, calibrated operating-risk probability or real revenue evidence."
+  ]
+}

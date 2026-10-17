@@ -1,0 +1,396 @@
+{
+  "suite": "reduction_exact",
+  "status": "checked",
+  "exit_code": 0,
+  "checked": true,
+  "commands": [
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T03:40:11.991429+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 10.757,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\reduction-exact-published-20261012\\version.log"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "build",
+        "Naheng.ReductionExact"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T03:40:22.751852+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 103.206,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\reduction-exact-published-20261012\\build.log"
+    },
+    {
+      "command": [
+        "<PROJECT_ROOT>\\.tools\\lean\\bin\\lake.exe",
+        "env",
+        "lean",
+        "<PROJECT_ROOT>\\artifacts\\formal\\reduction-exact-published-20261012\\Audit.lean"
+      ],
+      "cwd": "<PROJECT_ROOT>\\formal",
+      "started_at_utc": "2026-10-12T03:42:05.962054+00:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_s": 46.258,
+      "log": "<PROJECT_ROOT>\\artifacts\\formal\\reduction-exact-published-20261012\\axioms.log"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "lean.reduction_exact.Naheng.Reduction.shared_total_rate_exact.3d5a1e1b783815a6",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Reduction.shared_total_rate_exact",
+      "statement_hash": "3d5a1e1b783815a650fe83e4630236ca4a387d143717c3fdb1f1e9a1363a6430",
+      "statement": "theorem Naheng.Reduction.shared_total_rate_exact.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι] (N a b c x : ι → ℝ)\n  (r : ℝ),\n  (∀ (i : ι), a i + b i + c i = r) →\n    Naheng.Reduction.detailedAmountRate N a b c x =\n      Naheng.Reduction.totalSource N a - r * Naheng.Reduction.totalAmount N x",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Aging/Film.lean": "6204215698aa3009e6b06255769d6a0aca12441ba7ffe7aac9b8f40602670941",
+        "formal/Naheng/AgingFilm.lean": "21a2366a99628ceff38df96e5f13589fa89f0eb3775d1ef835b01a736e1d2ef1",
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/SitesODE.lean": "62eb96c4c3e1d2f479372972552eae83a00526db5040ee0364ba3481575e976a",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+        "formal/Naheng/Reduction/Exact.lean": "1b1a53b81ba993ed8ba4cb0edc71bacf14a34bc4f1efb44cf00412faf43de392",
+        "formal/Naheng/ReductionExact.lean": "655dc45d3404da143c583ac7dd380a8401d837e2f1b45bbfda9f76b018b593ea",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "47e8d1ff62799c5871f619deb962014b1f681fb980e0e2e60997d48d19f0ae6c",
+        "artifacts/formal/reduction-exact-published-20261012/build.log": "9127d25cc76cfb68158796681c0d0eb31b252eae16f0c103a22be738a59e4e45",
+        "artifacts/formal/reduction-exact-published-20261012/axioms.log": "244924d79f028a355b9ee5cc6ef5a4bbb3359c2203d47bc0afe8fb2dee8f502a",
+        "artifacts/formal/reduction-exact-published-20261012/version.log": "22cafa9b426b14801c763cf5c42dab786c95ef2aa51622773e3d15912141d534",
+        "artifacts/formal/reduction-exact-published-20261012/Audit.lean": "7cb5321b322d3e67e3399695cd5b4be41827f7c1af24d58ce24cd38daa62280b",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "Exact shared-coefficient finite-site slice and counterexamples; not residual error, arbitrary feedback, real-cell readout or complete T1",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.reduction_exact.Naheng.Reduction.shared_total_rate_hasDerivAt.d3c13e274540252f",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Reduction.shared_total_rate_hasDerivAt",
+      "statement_hash": "d3c13e274540252fe65f4e6e7b721971b4f3c6e7e7bde537c0ecb73722c0ad38",
+      "statement": "theorem Naheng.Reduction.shared_total_rate_hasDerivAt.{u_1} : ∀ {ι : Type u_1} [inst : Fintype ι] (N : ι → ℝ),\n  (∀ (i : ι), 0 < N i) →\n    ∀ (x a b c : ℝ → ι → ℝ) (r : ℝ → ℝ),\n      (∀ (t : ℝ) (i : ι), 0 ≤ a t i) →\n        (∀ (t : ℝ) (i : ι), 0 ≤ b t i) →\n          (∀ (t : ℝ) (i : ι), 0 ≤ c t i) →\n            (∀ (t : ℝ) (i : ι), a t i + b t i + c t i = r t) →\n              Naheng.Reduction.IsSiteTrajectory x a b c →\n                ∀ (t : ℝ),\n                  HasDerivAt (fun s => Naheng.Reduction.totalAmount N (x s))\n                    (Naheng.Reduction.totalSource N (a t) - r t * Naheng.Reduction.totalAmount N (x t)) t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Aging/Film.lean": "6204215698aa3009e6b06255769d6a0aca12441ba7ffe7aac9b8f40602670941",
+        "formal/Naheng/AgingFilm.lean": "21a2366a99628ceff38df96e5f13589fa89f0eb3775d1ef835b01a736e1d2ef1",
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/SitesODE.lean": "62eb96c4c3e1d2f479372972552eae83a00526db5040ee0364ba3481575e976a",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+        "formal/Naheng/Reduction/Exact.lean": "1b1a53b81ba993ed8ba4cb0edc71bacf14a34bc4f1efb44cf00412faf43de392",
+        "formal/Naheng/ReductionExact.lean": "655dc45d3404da143c583ac7dd380a8401d837e2f1b45bbfda9f76b018b593ea",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "47e8d1ff62799c5871f619deb962014b1f681fb980e0e2e60997d48d19f0ae6c",
+        "artifacts/formal/reduction-exact-published-20261012/build.log": "9127d25cc76cfb68158796681c0d0eb31b252eae16f0c103a22be738a59e4e45",
+        "artifacts/formal/reduction-exact-published-20261012/axioms.log": "244924d79f028a355b9ee5cc6ef5a4bbb3359c2203d47bc0afe8fb2dee8f502a",
+        "artifacts/formal/reduction-exact-published-20261012/version.log": "22cafa9b426b14801c763cf5c42dab786c95ef2aa51622773e3d15912141d534",
+        "artifacts/formal/reduction-exact-published-20261012/Audit.lean": "7cb5321b322d3e67e3399695cd5b4be41827f7c1af24d58ce24cd38daa62280b",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "Exact shared-coefficient finite-site slice and counterexamples; not residual error, arbitrary feedback, real-cell readout or complete T1",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.reduction_exact.Naheng.Reduction.class_shared_total_rate_hasDerivAt.3481af857e1e4e98",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Reduction.class_shared_total_rate_hasDerivAt",
+      "statement_hash": "3481af857e1e4e982f7cfd5e4f51d2945a787f532938eca4478d21da39b398c2",
+      "statement": "theorem Naheng.Reduction.class_shared_total_rate_hasDerivAt.{u_1, u_2} : ∀ {ι : Type u_1} {κ : Type u_2}\n  [inst : Fintype ι] [inst_1 : Fintype κ] [inst_2 : DecidableEq κ] (N : ι → ℝ),\n  (∀ (i : ι), 0 < N i) →\n    ∀ (group : ι → κ) (x a b c : ℝ → ι → ℝ) (r : ℝ → κ → ℝ),\n      (∀ (t : ℝ) (i : ι), a t i + b t i + c t i = r t (group i)) →\n        Naheng.Reduction.IsSiteTrajectory x a b c →\n          ∀ (t : ℝ) (k : κ),\n            HasDerivAt (fun s => Naheng.Reduction.classAmount N group (x s) k)\n              (Naheng.Reduction.classSource N group (a t) k - r t k * Naheng.Reduction.classAmount N group (x t) k) t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Aging/Film.lean": "6204215698aa3009e6b06255769d6a0aca12441ba7ffe7aac9b8f40602670941",
+        "formal/Naheng/AgingFilm.lean": "21a2366a99628ceff38df96e5f13589fa89f0eb3775d1ef835b01a736e1d2ef1",
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/SitesODE.lean": "62eb96c4c3e1d2f479372972552eae83a00526db5040ee0364ba3481575e976a",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+        "formal/Naheng/Reduction/Exact.lean": "1b1a53b81ba993ed8ba4cb0edc71bacf14a34bc4f1efb44cf00412faf43de392",
+        "formal/Naheng/ReductionExact.lean": "655dc45d3404da143c583ac7dd380a8401d837e2f1b45bbfda9f76b018b593ea",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "47e8d1ff62799c5871f619deb962014b1f681fb980e0e2e60997d48d19f0ae6c",
+        "artifacts/formal/reduction-exact-published-20261012/build.log": "9127d25cc76cfb68158796681c0d0eb31b252eae16f0c103a22be738a59e4e45",
+        "artifacts/formal/reduction-exact-published-20261012/axioms.log": "244924d79f028a355b9ee5cc6ef5a4bbb3359c2203d47bc0afe8fb2dee8f502a",
+        "artifacts/formal/reduction-exact-published-20261012/version.log": "22cafa9b426b14801c763cf5c42dab786c95ef2aa51622773e3d15912141d534",
+        "artifacts/formal/reduction-exact-published-20261012/Audit.lean": "7cb5321b322d3e67e3399695cd5b4be41827f7c1af24d58ce24cd38daa62280b",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "Exact shared-coefficient finite-site slice and counterexamples; not residual error, arbitrary feedback, real-cell readout or complete T1",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.reduction_exact.Naheng.Reduction.class_shared_trapping_output.f26316a3c6316091",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Reduction.class_shared_trapping_output",
+      "statement_hash": "f26316a3c63160910291bf404bd817816f22385b2f3bd78ffe5b178a9a45e5be",
+      "statement": "theorem Naheng.Reduction.class_shared_trapping_output.{u_1, u_2} : ∀ {ι : Type u_1} {κ : Type u_2} [inst : Fintype ι]\n  [inst_1 : Fintype κ] [inst_2 : DecidableEq κ] (N c x : ι → ℝ) (group : ι → κ) (cClass : κ → ℝ),\n  (∀ (i : ι), c i = cClass (group i)) →\n    Naheng.Reduction.trappedRate N c x = ∑ k, cClass k * Naheng.Reduction.classAmount N group x k",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Aging/Film.lean": "6204215698aa3009e6b06255769d6a0aca12441ba7ffe7aac9b8f40602670941",
+        "formal/Naheng/AgingFilm.lean": "21a2366a99628ceff38df96e5f13589fa89f0eb3775d1ef835b01a736e1d2ef1",
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/SitesODE.lean": "62eb96c4c3e1d2f479372972552eae83a00526db5040ee0364ba3481575e976a",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+        "formal/Naheng/Reduction/Exact.lean": "1b1a53b81ba993ed8ba4cb0edc71bacf14a34bc4f1efb44cf00412faf43de392",
+        "formal/Naheng/ReductionExact.lean": "655dc45d3404da143c583ac7dd380a8401d837e2f1b45bbfda9f76b018b593ea",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "47e8d1ff62799c5871f619deb962014b1f681fb980e0e2e60997d48d19f0ae6c",
+        "artifacts/formal/reduction-exact-published-20261012/build.log": "9127d25cc76cfb68158796681c0d0eb31b252eae16f0c103a22be738a59e4e45",
+        "artifacts/formal/reduction-exact-published-20261012/axioms.log": "244924d79f028a355b9ee5cc6ef5a4bbb3359c2203d47bc0afe8fb2dee8f502a",
+        "artifacts/formal/reduction-exact-published-20261012/version.log": "22cafa9b426b14801c763cf5c42dab786c95ef2aa51622773e3d15912141d534",
+        "artifacts/formal/reduction-exact-published-20261012/Audit.lean": "7cb5321b322d3e67e3399695cd5b4be41827f7c1af24d58ce24cd38daa62280b",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "Exact shared-coefficient finite-site slice and counterexamples; not residual error, arbitrary feedback, real-cell readout or complete T1",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.reduction_exact.Naheng.Reduction.class_shared_trapping_hasDerivAt.41c2bfbd49d4c3ad",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Reduction.class_shared_trapping_hasDerivAt",
+      "statement_hash": "41c2bfbd49d4c3ade64c5e6fbd765ddac4624bab6f3cca0dc55d12ecf7b5e9ea",
+      "statement": "theorem Naheng.Reduction.class_shared_trapping_hasDerivAt.{u_1, u_2} : ∀ {ι : Type u_1} {κ : Type u_2}\n  [inst : Fintype ι] [inst_1 : Fintype κ] [inst_2 : DecidableEq κ] (N : ι → ℝ) (group : ι → κ) (c x : ℝ → ι → ℝ)\n  (cClass : ℝ → κ → ℝ) (y : ℝ → ℝ),\n  (∀ (t : ℝ) (i : ι), c t i = cClass t (group i)) →\n    (∀ (t : ℝ), HasDerivAt y (Naheng.Reduction.trappedRate N (c t) (x t)) t) →\n      ∀ (t : ℝ), HasDerivAt y (∑ k, cClass t k * Naheng.Reduction.classAmount N group (x t) k) t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Aging/Film.lean": "6204215698aa3009e6b06255769d6a0aca12441ba7ffe7aac9b8f40602670941",
+        "formal/Naheng/AgingFilm.lean": "21a2366a99628ceff38df96e5f13589fa89f0eb3775d1ef835b01a736e1d2ef1",
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/SitesODE.lean": "62eb96c4c3e1d2f479372972552eae83a00526db5040ee0364ba3481575e976a",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+        "formal/Naheng/Reduction/Exact.lean": "1b1a53b81ba993ed8ba4cb0edc71bacf14a34bc4f1efb44cf00412faf43de392",
+        "formal/Naheng/ReductionExact.lean": "655dc45d3404da143c583ac7dd380a8401d837e2f1b45bbfda9f76b018b593ea",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "47e8d1ff62799c5871f619deb962014b1f681fb980e0e2e60997d48d19f0ae6c",
+        "artifacts/formal/reduction-exact-published-20261012/build.log": "9127d25cc76cfb68158796681c0d0eb31b252eae16f0c103a22be738a59e4e45",
+        "artifacts/formal/reduction-exact-published-20261012/axioms.log": "244924d79f028a355b9ee5cc6ef5a4bbb3359c2203d47bc0afe8fb2dee8f502a",
+        "artifacts/formal/reduction-exact-published-20261012/version.log": "22cafa9b426b14801c763cf5c42dab786c95ef2aa51622773e3d15912141d534",
+        "artifacts/formal/reduction-exact-published-20261012/Audit.lean": "7cb5321b322d3e67e3399695cd5b4be41827f7c1af24d58ce24cd38daa62280b",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "Exact shared-coefficient finite-site slice and counterexamples; not residual error, arbitrary feedback, real-cell readout or complete T1",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.reduction_exact.Naheng.Reduction.equal_total_different_rate_counterexample.be1bff632b073361",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Reduction.equal_total_different_rate_counterexample",
+      "statement_hash": "be1bff632b07336186d48388230825b3829d1fe84306c65a0784c849c368fcb0",
+      "statement": "theorem Naheng.Reduction.equal_total_different_rate_counterexample : Naheng.Reduction.totalAmount Naheng.Reduction.ceN\n      Naheng.Reduction.ceX =\n    1 ∧\n  Naheng.Reduction.totalAmount Naheng.Reduction.ceN Naheng.Reduction.ceZ = 1 ∧\n    Naheng.Reduction.detailedAmountRate Naheng.Reduction.ceN Naheng.Reduction.ceA Naheng.Reduction.ceB\n          Naheng.Reduction.ceC Naheng.Reduction.ceX =\n        -(1 / 2) ∧\n      Naheng.Reduction.detailedAmountRate Naheng.Reduction.ceN Naheng.Reduction.ceA Naheng.Reduction.ceB\n          Naheng.Reduction.ceC Naheng.Reduction.ceZ =\n        1 / 2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Aging/Film.lean": "6204215698aa3009e6b06255769d6a0aca12441ba7ffe7aac9b8f40602670941",
+        "formal/Naheng/AgingFilm.lean": "21a2366a99628ceff38df96e5f13589fa89f0eb3775d1ef835b01a736e1d2ef1",
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/SitesODE.lean": "62eb96c4c3e1d2f479372972552eae83a00526db5040ee0364ba3481575e976a",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+        "formal/Naheng/Reduction/Exact.lean": "1b1a53b81ba993ed8ba4cb0edc71bacf14a34bc4f1efb44cf00412faf43de392",
+        "formal/Naheng/ReductionExact.lean": "655dc45d3404da143c583ac7dd380a8401d837e2f1b45bbfda9f76b018b593ea",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "47e8d1ff62799c5871f619deb962014b1f681fb980e0e2e60997d48d19f0ae6c",
+        "artifacts/formal/reduction-exact-published-20261012/build.log": "9127d25cc76cfb68158796681c0d0eb31b252eae16f0c103a22be738a59e4e45",
+        "artifacts/formal/reduction-exact-published-20261012/axioms.log": "244924d79f028a355b9ee5cc6ef5a4bbb3359c2203d47bc0afe8fb2dee8f502a",
+        "artifacts/formal/reduction-exact-published-20261012/version.log": "22cafa9b426b14801c763cf5c42dab786c95ef2aa51622773e3d15912141d534",
+        "artifacts/formal/reduction-exact-published-20261012/Audit.lean": "7cb5321b322d3e67e3399695cd5b4be41827f7c1af24d58ce24cd38daa62280b",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "Exact shared-coefficient finite-site slice and counterexamples; not residual error, arbitrary feedback, real-cell readout or complete T1",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    {
+      "evidence_id": "lean.reduction_exact.Naheng.Reduction.common_total_rate_different_trapping_counterexample.af203a178e93b113",
+      "status": "checked",
+      "category": "formal_kernel",
+      "declaration": "Naheng.Reduction.common_total_rate_different_trapping_counterexample",
+      "statement_hash": "af203a178e93b113159a405356ee9f39db0f640b651ffc4d0f89c894d0e4a3aa",
+      "statement": "theorem Naheng.Reduction.common_total_rate_different_trapping_counterexample : (∀ (i : Fin 2),\n    Naheng.Reduction.sideA i + Naheng.Reduction.sideB i + Naheng.Reduction.sideC i = 2) ∧\n  Naheng.Reduction.totalAmount Naheng.Reduction.ceN Naheng.Reduction.ceX = 1 ∧\n    Naheng.Reduction.totalAmount Naheng.Reduction.ceN Naheng.Reduction.ceZ = 1 ∧\n      Naheng.Reduction.detailedAmountRate Naheng.Reduction.ceN Naheng.Reduction.sideA Naheng.Reduction.sideB\n            Naheng.Reduction.sideC Naheng.Reduction.ceX =\n          0 ∧\n        Naheng.Reduction.detailedAmountRate Naheng.Reduction.ceN Naheng.Reduction.sideA Naheng.Reduction.sideB\n              Naheng.Reduction.sideC Naheng.Reduction.ceZ =\n            0 ∧\n          Naheng.Reduction.trappedRate Naheng.Reduction.ceN Naheng.Reduction.sideC Naheng.Reduction.ceX = 3 / 4 ∧\n            Naheng.Reduction.trappedRate Naheng.Reduction.ceN Naheng.Reduction.sideC Naheng.Reduction.ceZ = 1 / 4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "artifacts": {
+        "formal/Naheng/Aging/Film.lean": "6204215698aa3009e6b06255769d6a0aca12441ba7ffe7aac9b8f40602670941",
+        "formal/Naheng/AgingFilm.lean": "21a2366a99628ceff38df96e5f13589fa89f0eb3775d1ef835b01a736e1d2ef1",
+        "formal/Naheng/Chemistry/Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+        "formal/Naheng/Chemistry/Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+        "formal/Naheng/Chemistry/Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+        "formal/Naheng/Chemistry/SitesODE.lean": "62eb96c4c3e1d2f479372972552eae83a00526db5040ee0364ba3481575e976a",
+        "formal/Naheng/Chemistry/Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+        "formal/Naheng/Chemistry/TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+        "formal/Naheng/Chemistry/Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+        "formal/Naheng/Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+        "formal/Naheng/Reduction/Exact.lean": "1b1a53b81ba993ed8ba4cb0edc71bacf14a34bc4f1efb44cf00412faf43de392",
+        "formal/Naheng/ReductionExact.lean": "655dc45d3404da143c583ac7dd380a8401d837e2f1b45bbfda9f76b018b593ea",
+        "formal/Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8",
+        "formal/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "formal/lakefile.toml": "1d57f18f2efb160592aa832243bfc1e912c0878a95a10e5ba599b7fafc9e03ab",
+        "formal/exports.json": "47e8d1ff62799c5871f619deb962014b1f681fb980e0e2e60997d48d19f0ae6c",
+        "artifacts/formal/reduction-exact-published-20261012/build.log": "9127d25cc76cfb68158796681c0d0eb31b252eae16f0c103a22be738a59e4e45",
+        "artifacts/formal/reduction-exact-published-20261012/axioms.log": "244924d79f028a355b9ee5cc6ef5a4bbb3359c2203d47bc0afe8fb2dee8f502a",
+        "artifacts/formal/reduction-exact-published-20261012/version.log": "22cafa9b426b14801c763cf5c42dab786c95ef2aa51622773e3d15912141d534",
+        "artifacts/formal/reduction-exact-published-20261012/Audit.lean": "7cb5321b322d3e67e3399695cd5b4be41827f7c1af24d58ce24cd38daa62280b",
+        "formal/lake-manifest.json": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+      },
+      "scope": "Exact shared-coefficient finite-site slice and counterexamples; not residual error, arbitrary feedback, real-cell readout or complete T1",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    }
+  ],
+  "reason": "Build and all exported declaration axiom audits passed",
+  "generated_at_utc": "2026-10-12T03:40:11.982945+00:00",
+  "source_hashes": {
+    "Naheng\\Aging\\Film.lean": "d0fb83e747e5d62539d46e765c93baddc2f9b1f289b8d2381cc822415fe309b7",
+    "Naheng\\AgingFilm.lean": "e653674696a21ea0dd82e8e458c8bedd1a38d932d527d15bde59a5b8a876c195",
+    "Naheng\\Chemistry\\Balance.lean": "59c4ee7fc9994b6b4a73b926727c55f70c00d4cc44db4743424b177b1caa5ae1",
+    "Naheng\\Chemistry\\Reaction.lean": "4fd928bd122ddb1e80c1828f595fc84a06a17c2d6aaa09700966e295f0362445",
+    "Naheng\\Chemistry\\Sites.lean": "5d810895dacd6a0144a98b0b246353892674d4fa615888b10a0bdf34d22e1664",
+    "Naheng\\Chemistry\\SitesODE.lean": "6430168933654881d19161a80718feeb45bd361fd59bc9953d36063b0edf306e",
+    "Naheng\\Chemistry\\Species.lean": "1842be639030e2a1b8a9166791818c4b0d1c9a8fde644cc1608f806076f7d51e",
+    "Naheng\\Chemistry\\TimeInvariant.lean": "4c463178ca11c20081ec8f7f5b8cc752826925bb2e9354caffecd98d8ad5ebbd",
+    "Naheng\\Chemistry\\Trajectory.lean": "ca98bb63ed60bdd2f703fb34dfb9dd123855f448761397aca91205defb783613",
+    "Naheng\\Foundation.lean": "923d40a0f06a21f6c26d2d7743d7cd43b9dec0cd45c47a1bd076851e07c9f0ad",
+    "Naheng\\Reduction\\Exact.lean": "193ef31deebf6eadd6e6820a48c12fa6a9cb2e2ed8a7a13aeaf549102db0bf19",
+    "Naheng\\ReductionExact.lean": "34acc166f434a08c919f3073014df368ee330c84d7101d6fe5a2e2f80f715580",
+    "Naheng.lean": "c80274b8daf88271ebcb3de9c659f0a6843b455aeacc1eb47cc0e67a078766e8"
+  },
+  "targets": [
+    "Naheng.Reduction.shared_total_rate_exact",
+    "Naheng.Reduction.shared_total_rate_hasDerivAt",
+    "Naheng.Reduction.class_shared_total_rate_hasDerivAt",
+    "Naheng.Reduction.class_shared_trapping_output",
+    "Naheng.Reduction.class_shared_trapping_hasDerivAt",
+    "Naheng.Reduction.equal_total_different_rate_counterexample",
+    "Naheng.Reduction.common_total_rate_different_trapping_counterexample"
+  ],
+  "audit": {
+    "status": "passed",
+    "targets": {
+      "Naheng.Reduction.shared_total_rate_exact": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Reduction.shared_total_rate_hasDerivAt": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Reduction.class_shared_total_rate_hasDerivAt": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Reduction.class_shared_trapping_output": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Reduction.class_shared_trapping_hasDerivAt": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Reduction.equal_total_different_rate_counterexample": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "Naheng.Reduction.common_total_rate_different_trapping_counterexample": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "missing": [],
+    "rejected": {},
+    "duplicates": [],
+    "trust_level": "lean_kernel_core"
+  },
+  "toolchain_lock": "leanprover/lean4:v4.19.0",
+  "lean_version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "declarations_output_sha256": "a150c56e692343ee657a02875dc90e6ae3edbf67428a955921e166a4da91bb8e",
+  "dependencies_sha256": "aa01e89d18dc57d33714f91818c15b6782ebef7458907cf8cb9b163d0fa737c3"
+}
