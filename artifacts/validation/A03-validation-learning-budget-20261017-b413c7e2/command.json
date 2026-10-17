@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "<PROJECT_ROOT>/.venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/integration/test_learning_budget.py",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-17T08:45:19.448502+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-validation-learning-budget-20261017-b413c7e2\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-validation-learning-budget-20261017-b413c7e2\\stderr.log",
+  "timeout_s": 600,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 20508,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 7.724864499999967
+}

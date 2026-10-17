@@ -1,0 +1,139 @@
+{
+  "strategy": "uncertainty",
+  "space_id": "synthetic-site-full-policy-v1",
+  "bounds": {
+    "charge_low_A": [
+      0.006,
+      0.02
+    ],
+    "charge_high_A": [
+      0.003,
+      0.015
+    ],
+    "discharge_low_A": [
+      0.003,
+      0.015
+    ],
+    "discharge_high_A": [
+      0.006,
+      0.02
+    ],
+    "cutoff_voltage_V": [
+      3.15,
+      3.4
+    ],
+    "max_dod": [
+      2e-05,
+      0.002
+    ],
+    "cooling_permission_W": [
+      0.0,
+      0.02
+    ],
+    "heating_permission_W": [
+      0.0,
+      0.02
+    ],
+    "rest_duration_s": [
+      0.0,
+      5.0
+    ]
+  },
+  "units": {
+    "charge_low_A": "A",
+    "charge_high_A": "A",
+    "discharge_low_A": "A",
+    "discharge_high_A": "A",
+    "cutoff_voltage_V": "V",
+    "max_dod": "1",
+    "cooling_permission_W": "W",
+    "heating_permission_W": "W",
+    "rest_duration_s": "s"
+  },
+  "sources": {
+    "fixed-training-full-policy-world-2026101401": "train",
+    "heldout-full-policy-2026101411": "test"
+  },
+  "limits": {
+    "initial_points": 12,
+    "iterations": 24,
+    "high_fidelity_calls": 24,
+    "single_execution_s": 120.0,
+    "wall_s": 1800.0,
+    "retry_limit": 2,
+    "seed": 20261016
+  },
+  "code_hash": "3f11e5846633edcffe07954f55e27f8738dbabd1d3264758961395e9c9b4a375",
+  "implementations": {
+    "multifidelity.py": "7575464c9e94359afaeaf1ad8c06f38fa08c1e95723b3e7967454019b86ba248",
+    "query_policy.py": "1c59c4165a5cd7faa0ca6c203acf4bcab445641188d359ada3050bf00cac2db5",
+    "constrained_bo.py": "40d3f1758d44d796435021863a06b5f5e06c8cb73df4b9d2d1a0f7dd9ac42a98",
+    "policy_space.py": "76dd22f75f94314687c6534bc7f4f212775dd0fb9462cc5747059e63ab45a7d3",
+    "strategy_mpc.py": "e1d1b5df48275f68cba3bdff9a885c5e237ec9e489910005fdce46e59f9b9944",
+    "operational_oracle.py": "c22b8f9c9665c552c99db67b86485e75cc6eab31eee244c2f619f1430684544f",
+    "pilot.py": "6e0847ce44277f4e6ef4a958f552165aa65c0bfd180876cc7db2d33d388c4e60",
+    "calibration_request.json": "a87ca08d4827ad6cea342be8ff76115ab0a568d096cf723574b513bd4012c6af"
+  },
+  "comparison_driver_sha256": "dd5a2142e5da75ee2f353c8484ae7d53055240f3c6df4677395c4734e356344f",
+  "world": {
+    "world_id": "synthetic-fixed-tariff-ten-second-service-v1",
+    "stages": [
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.15,
+        "sell_price_per_kWh": 0.4,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.15,
+        "sell_price_per_kWh": 0.4,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      },
+      {
+        "duration_s": 2.5,
+        "buy_price_per_kWh": 0.05,
+        "sell_price_per_kWh": 0.04,
+        "ambient_K": 299.15
+      }
+    ],
+    "execution_steps": 4,
+    "prediction_steps": 4,
+    "service_seconds": 10.0,
+    "clock_step_s": 2.5,
+    "tariff_source": "synthetic_frontier_predeclared_tariff_v1",
+    "provenance_type": "synthetic",
+    "scientific_N_added": 0
+  },
+  "calibration_packet": "<PROJECT_ROOT>\\artifacts\\calibration\\comparison-uncertainty-f35de48333",
+  "calibration_manifest_sha256": "22b8b954ade06176ac1c0789faa33c21123c180575d21b63c5bef98618ed67b1",
+  "scope": "Same fixed conditional synthetic training service; computational effort levels only",
+  "common_failure_recovery": "failed low majority probes untried high while total high attempts are below min(3, high cap); shared with main search",
+  "heldout_results_seen": false,
+  "scientific_N_added": 0,
+  "risk_certificate": false
+}

@@ -1,9 +1,9 @@
 schema_version: 1
 protocol_id: naheng-joint-experiments-pilot
-revision: 4
+revision: 5
 supersedes:
-  path: artifacts/handoff/x01-preregistration-20261016-c/evidence/pilot-v3/registration.json
-  sha256: bab86a7ec9070a473f4392c7ecbf365a695fceb55068d41e0ac6f005ee4e330d
+  path: artifacts/experiments/preregistrations/naheng-joint-experiments-pilot/r4/registration.json
+  sha256: 4f84b5c7444fb6e6f4116e695b426c22b906ea735ecb895c7a1c3c39c47ee3f4
 profile: pilot
 purpose: Freeze E-T/E-A/E-L design before results; absent scientific prerequisites
   forbid execution

@@ -1,18 +1,21 @@
 project: naheng
 schema_version: 1
 created_at: '2026-10-09'
-status_note: 'All45 tasks18 requirements retained;35done2in_progress8todo, no task upgraded
-  this round. The06:37 smoke command actually completed and FAILED (exit1, numerical
-  4failed/1153passed/23subtests in928.18s, other three gates 0); that result was recorded
-  as pending and is now corrected in docs/STATUS.md. A03 root cause found - the three-arm
-  comparison is not reproducible because an inner wall-clock guard made labels depend on
-  host load, so the prior2/2/0 result is invalid and kept on record. Repaired per ADR0025
-  (fidelity by work units only) and verified by repeated execution of sealed candidates;
-  arms not yet re-run, so A03 stays in_progress. smoke gate4 failures diagnosed per ADR0026
-  (unauthorized pytest tmp_path as proof output; Windows260-char temp path; undeclared
-  text encoding decoding UTF-8 JSON evidence as GBK) and repaired with every assertion
-  preserved; targeted suites pass (8passed/523.80s and 5passed/89.74s and 12passed), full
-  smoke re-run in flight and NOT claimed green. release remains exit2.'
+status_note: 'All45 tasks18 requirements retained;38done1in_progress6todo. R00
+  granted done on its two original commands with owned receipts: tests/security
+  57 passed exit0, and the four Edge end-to-end flows (upload/accounting/export,
+  conditional-prediction cancellation lineage, lifecycle thermal and four-series
+  modules, seven pages plus replay) 4 passed in 408s exit0. One earlier security
+  run failed test_valid_source_and_assets_copy_and_verify once and did not
+  reproduce across four later runs; that first-failure receipt is retained rather
+  than discarded. A03 and P03 granted earlier this session on their original
+  validation commands. X01 preregistration stands at revision5 superseding r4.
+  Remaining six tasks are all gated on D02 (in_progress, blocked on physical
+  material mapping for the frozen cohort): D02 blocks every E-T/E-A/E-L suite
+  through ORIGINAL_DEPENDENCY_INCOMPLETE, and X01-X04 additionally need the three
+  experiment runners, whose preregistered runner fields are still null. R01 and
+  R02 sit behind X02-X04. Public repo github.com/robinbg/naheng at 14581ef; CI
+  workflow authored but unpublished pending token scope.'
 status_values:
 - todo
 - in_progress
@@ -1847,7 +1850,7 @@ tasks:
   - C01
   - S02
   - A01
-  status: in_progress
+  status: done
   required: true
   implementation: 慢周期优化完整策略参数，快周期滚动控制；学习低高保真差异与采样成本，比较价值查询/随机/不确定性。
   deliverables:
@@ -1912,6 +1915,13 @@ tasks:
   - artifacts/a03-determinism-probe-20261016-c/report.json
   - artifacts/a03-determinism-probe-20261016-d/report.json
   - docs/adr/0025-fidelity-effort-in-work-units.md
+  - artifacts/optimization/public-repaired-20261017-a/result.json
+  - artifacts/validation/A03-repaired-source-learned-arm-20261017-b-69dd02f2/command.json
+  - artifacts/full-policy-random-a8f03fb149/result.json
+  - artifacts/validation/A03-repaired-source-random-arm-20261017-805152c9/command.json
+  - artifacts/full-policy-uncertainty-d7b0c38fe0/result.json
+  - artifacts/validation/A03-repaired-source-uncertainty-arm-20261017-12f7c525/command.json
+  - artifacts/validation/A03-validation-learning-budget-20261017-b413c7e2/command.json
   blocker: 'Root cause found and repaired, task NOT upgraded. The prior 2/2/0 three-arm
     result is an INVALID comparison, kept on record and not overwritten: all arms share
     one seeded LHS design, ordinal6 is byte-identical across arms, yet it completed in
@@ -1942,7 +1952,7 @@ tasks:
   - P02
   - A03
   - C02
-  status: todo
+  status: done
   required: true
   implementation: 实现残差/域/哈希失效事件传播、扩大不确定性、模型升级、备用可行性与离线追加研究；当前作业证据依赖可追溯。
   deliverables:
@@ -1972,6 +1982,7 @@ tasks:
   - artifacts/review/p03-installed-ui-independent-20261016-c/handoff.json
   - artifacts/validation/A03-P03-R00-current-original-targeted-tests-fe8fd72b/command.json
   - artifacts/review/original-engineering-gates-20261016-c/handoff.json
+  - artifacts/validation/P03-validation-evidence-withdrawal-20261017-60074741/command.json
   blocker: Original A03 dependency remains incomplete. No extra success requirement
     for unsupported monitored checkpoint recovery has been added.
   local_acceptance_scope: Existing real sensor-bias/stop/unserved-energy UI and independent
@@ -2028,8 +2039,11 @@ tasks:
   - 学习方法与人工/随机/反馈基线预算一致
   validation_commands:
   - uv run naheng experiment run --suite theory --profile pilot
-  evidence: []
-  blocker: 等待必需前置任务：X01, A02, F05
+  evidence:
+  - src/naheng/experiments/et_runner.py
+  - experiments/theory.py
+  - tests/integration/test_et_runner_measurement.py
+  blocker: 'Runner implemented and unit-verified but NOT registered, and the suite is blocked. src/naheng/experiments/et_runner.py implements the ten preregistered E-T metrics from real evaluations (applicable_domain_coverage 1.0, checked_theorem_rate 723/1167 across 59 manifests, heldout_model_family_generalization 16/16, counterexample_replay_rate 48/48, candidate_count 144) and reports downstream_value and known_vs_new_result_identity as null with reasons because they are not computable in this suite. experiments/theory.py is the bounded worker. execute() calls require_authorization first and refuses with exit 2 without writing a result while the registration denies E-T; registering the adapter is a separate reviewable step (REGISTERED_ADAPTERS) and was not self-certified. Suite authorization additionally stays blocked by D02 through ORIGINAL_DEPENDENCY_INCOMPLETE, and by THEORY_FAMILY_SPLIT_MISSING and the B0-B6 baseline runners.'
 - id: X03
   milestone: M4
   workstream: validation
@@ -2086,7 +2100,7 @@ tasks:
   - G04
   - F05
   - P03
-  status: todo
+  status: done
   required: true
   implementation: 提供依赖锁、本地统一启动、Docker可选、数据导入/HTML和结构化报告导出；做API/worker/上传/AST/密钥安全测试。
   deliverables:
@@ -2120,6 +2134,9 @@ tasks:
   - artifacts/validation/R00-9593-new-clean-browser-server-36138318/command.json
   - artifacts/validation/R00-9593-original-browser-tests-a3f4e7a8/command.json
   - artifacts/validation/UI-9593-independent-publication-920530c6/command.json
+  - artifacts/validation/R00-security-suite-20261017-b-5cb20e86/command.json
+  - artifacts/validation/R00-e2e-edge-original-four-20261017-25bee079/command.json
+  - artifacts/validation/R00-security-suite-20261017-471a05a4/command.json
   blocker: Original P03 dependency remains incomplete; current original Edge E2E and
     new clean-package final independent review pending. Docker is optional. Missing
     trusted proof closure separately blocks full M5/R02 and stays UNKNOWN in this

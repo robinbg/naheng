@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "<PROJECT_ROOT>/.venv/Scripts/python.exe",
+    "tools/compare_full_policy_queries_20261016.py",
+    "--strategy",
+    "random"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-17T08:07:01.956807+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-repaired-source-random-arm-20261017-805152c9\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-repaired-source-random-arm-20261017-805152c9\\stderr.log",
+  "timeout_s": 1800,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 29360,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 566.2548410000018
+}

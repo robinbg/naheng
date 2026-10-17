@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "<PROJECT_ROOT>/.venv/Scripts/python.exe",
+    "-m",
+    "naheng.cli",
+    "optimize",
+    "--profile",
+    "pilot",
+    "--out",
+    "artifacts/optimization/public-repaired-20261017-a"
+  ],
+  "cwd": "<PROJECT_ROOT>",
+  "utc": "2026-10-17T07:55:02.937396+00:00",
+  "stdout": "<PROJECT_ROOT>\\artifacts\\validation\\A03-repaired-source-learned-arm-20261017-b-69dd02f2\\stdout.log",
+  "stderr": "<PROJECT_ROOT>\\artifacts\\validation\\A03-repaired-source-learned-arm-20261017-b-69dd02f2\\stderr.log",
+  "timeout_s": 1800,
+  "memory_limit_bytes": 8589934592,
+  "status": "completed",
+  "exit_code": 0,
+  "owned_pid": 25860,
+  "memory_limit_enforced": true,
+  "timed_out": false,
+  "wall_s": 522.2045128000027
+}

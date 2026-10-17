@@ -36,15 +36,18 @@
 - CONTRIBUTING.md：环境、跑测试、Windows 260 字符路径与主机负载
   两个已知陷阱、验收门、提交规范、欢迎接手的问题清单。
 - docs/PROOF_BACKEND.md：可选隔离证明后端的声明方式与缺失语义。
-- GitHub Actions：可移植性扫描、Python 3.11–3.13 矩阵、前端构建、
-  发布包引用核对；Lean 形式核心按需触发（178 条声明 + 三公理审计）。
+- CI 工作流已就绪但**未随本次发布**：GitHub 拒绝没有 `workflow` 权限的
+  令牌创建工作流文件（远程已实测拒绝）。`.github/workflows/ci.yml`
+  保留在工作树，维护者运行 `gh auth refresh -h github.com -s workflow`
+  后放回即可启用；CONTRIBUTING.md 已写明此状态与本地跑测试的方式。
 - issue 模板含"质疑一条主张"，因为本项目的主张与证据一一绑定。
 
 已验证（在 D:/naheng-clonetest 的干净副本上，模拟真实 clone）：
   pytest tests/unit tests/security
     → 558 passed, 11 skipped（跳过均带数据缺失原因）, 0 failed
-  pytest tests/integration → 见 <HOST_TEMP_ROOT>.txt
-发布包：15.95 MiB、820 个文件、残留本机路径 0、README 引用失效 0。
+  pytest tests/integration
+    → 565 passed, 60 skipped（均带原因）, 0 failed
+发布包：15.96 MiB、822 个文件、残留本机路径 0、README 引用失效 0。
 
 边界：完整发布门 verify --profile release 仍为退出码 2；A03 三臂
 对比尚未在修复后的源码上重跑，不声称任何查询策略优势。
